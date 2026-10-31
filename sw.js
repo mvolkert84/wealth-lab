@@ -1,5 +1,5 @@
-const CACHE = 'wealth-lab-v3.0.0-home';
-const FILES = ['./', './index.html','./home-v3.css','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
+const CACHE = 'wealth-lab-v4.0.0-learn';
+const FILES = ['./', './index.html','./home-v3.css','./learn-v4.css','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
 });
