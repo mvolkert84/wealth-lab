@@ -1,0 +1,50 @@
+/* Wealth Lab Academy · More v1.0 · compact settings and resource sections */
+.wl-more{padding:0 0 35px;min-height:calc(100vh - 90px);color:#f7ead7;background:linear-gradient(145deg,#03231b,#06392a 55%,#04271d);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.wl-more *{box-sizing:border-box}
+.wl-more button{cursor:pointer}
+.wl-more button:focus-visible,.wl-more a:focus-visible,.wl-more summary:focus-visible{outline:2px solid #f5d48a;outline-offset:3px}
+.wm-head{background:linear-gradient(120deg,#012017,#124030 90%);border-bottom:1px solid #46775d;padding:21px 18px 19px}
+.wm-brand{display:flex;align-items:center;gap:9px;color:#f5d37f}
+.wm-brand>svg{width:36px;height:36px;max-width:36px;max-height:36px;flex:none}
+.wm-brand>span{display:flex;flex-direction:column}
+.wm-brand strong{font:700 21px/1.05 Georgia,'Times New Roman',serif;letter-spacing:.3px;color:#ffe4af}
+.wm-brand small{margin-top:3px;font:700 8px Georgia,serif;letter-spacing:1.8px;color:#ecc676}
+.wm-heading{margin-top:18px}
+.wm-eyebrow{font:750 10px system-ui;letter-spacing:1.8px;color:#edc873;text-transform:uppercase}
+.wm-heading h1{margin:4px 0 6px;font:700 37px/1.08 Georgia,'Times New Roman',serif;color:#fdf0dc}
+.wm-heading p{margin:0;font-size:12px;line-height:1.5;color:#c7d8cc;max-width:420px}
+.wm-content{display:flex;flex-direction:column;gap:11px;padding:14px 13px 25px}
+.wm-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.wm-stat{background:linear-gradient(155deg,#0b3b2b,#06291f);border:1px solid #608871;border-radius:11px;padding:12px 6px 11px;text-align:center;display:flex;flex-direction:column;gap:6px}
+.wm-stat strong{font:700 23px/1 Georgia,serif;color:#f1ce77;overflow-wrap:anywhere}
+.wm-stat small{font-size:10px;color:#d1ddce;line-height:1.25}
+.wm-fold{border:1px solid #547e62;border-radius:13px;background:#072d22;overflow:hidden}
+.wm-fold>summary{display:flex;align-items:center;gap:12px;list-style:none;cursor:pointer;user-select:none;padding:14px 13px;color:#f5ead8}
+.wm-fold>summary::-webkit-details-marker{display:none}
+.wm-fold>summary>svg:first-child{width:24px;height:24px;max-width:24px;max-height:24px;flex:none;color:#efc771}
+.wm-fold-title{min-width:0;display:flex;flex:1;flex-direction:column;gap:4px}
+.wm-fold-title strong{font:700 17px/1.15 Georgia,serif;color:#f9eddb}
+.wm-fold-title small{font-size:10px;color:#b9d0bf;line-height:1.4}
+.wm-chevron{font:700 20px/1 system-ui;color:#edc776;transform:rotate(90deg);transition:transform .15s}
+.wm-fold[open] .wm-chevron{transform:rotate(-90deg)}
+.wm-fold[open]>summary{border-bottom:1px solid #456f54;background:#123e2e}
+.wm-panel{display:flex;flex-direction:column;gap:11px;padding:13px 14px 15px}
+.wm-panel p{margin:0;font-size:12px;line-height:1.52;color:#c6d6c7}
+.wm-setting{display:flex;justify-content:space-between;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid #3b5e49}
+.wm-setting:last-child{border-bottom:0}
+.wm-setting>span{font-size:12px;color:#e6ebdf}
+.wm-setting strong{color:#f0cd80;font-size:13px}
+.wm-font-toggle{padding:9px 11px;border-radius:9px;border:1px solid #bc9e5d;background:#163c2a;color:#f2d28a;font-size:12px;font-weight:700;white-space:nowrap}
+.wm-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.wm-btn{display:flex;align-items:center;justify-content:center;min-height:42px;text-align:center;padding:10px 8px;border-radius:10px;border:1px solid #6c9475;background:#103c2d;color:#f5ebdb;font-size:12px;font-weight:750}
+.wm-btn-primary{background:linear-gradient(#ffe0a1,#dbb05c);border-color:#eccb77;color:#163322}
+.wm-sources{display:flex;flex-direction:column;max-height:320px;overflow:auto;border:1px solid #456d53;border-radius:10px}
+.wm-sources a{font-size:12px;line-height:1.35;padding:10px 12px;color:#f0d28c;text-decoration:none;border-bottom:1px solid #395f48}
+.wm-sources a:last-child{border-bottom:0}
+.wm-sources a:hover{text-decoration:underline}
+.wm-warning{border-left:2px solid #e2b960;border-radius:4px;background:#143a2b;padding:10px;font-size:11px!important}
+.wm-danger{margin-top:5px;border:1px solid #a86b65;border-radius:9px;background:transparent;color:#f2b3a6;padding:10px;font-size:12px;text-align:left}
+.wm-footer{font-size:11px!important;text-align:center;color:#9cbca5!important;padding:6px 12px}
+@media(min-width:620px){.wm-head{padding:25px 30px 23px}.wm-content{max-width:680px;margin:auto;padding:20px 25px 30px;gap:13px}.wm-stats{gap:12px}.wm-fold>summary{padding:16px}.wm-panel{padding:17px 19px}.wm-heading h1{font-size:42px}}
+@media(max-width:370px){.wm-content{padding:12px 9px 24px}.wm-head{padding:17px 12px}.wm-heading h1{font-size:33px}.wm-fold-title strong{font-size:15px}.wm-fold>summary{gap:8px;padding:12px 10px}.wm-stat strong{font-size:20px}.wm-setting{gap:6px}}
+@media(prefers-reduced-motion:reduce){.wm-chevron{transition:none}}
