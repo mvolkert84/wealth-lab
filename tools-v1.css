@@ -112,7 +112,7 @@
 .wl-tools .wl-calc-field .range-header>label{
  font:700 14px/1.2 Georgia,serif;color:#f3eddb
 }
-.wl-tools .wl-calc-field .range-header>strong{font-size:12px;color:#eac877;white-space:nowrap;tabular-nums:true}
+.wl-tools .wl-calc-field .range-header>strong{font-size:12px;color:#eac877;white-space:nowrap;font-variant-numeric:tabular-nums}
 .wl-tools .wl-calc-field input[type=range]{
  display:block;width:100%;margin:9px 0 9px;height:22px;
  accent-color:#dcb866;cursor:pointer
