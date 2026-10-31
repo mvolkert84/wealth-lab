@@ -207,6 +207,7 @@
   <link rel="stylesheet" href="./tools-v1.css?v=1.2.0">
   <link rel="stylesheet" href="./notebook-v1.css?v=1.2.0">
   <link rel="stylesheet" href="./more-v1.css?v=1.0.2">
+  <link rel="stylesheet" href="./reader-v1.css?v=1.0.0">
   <title>Wealth Lab — Learn. Plan. Build.</title>
   
   
@@ -842,7 +843,54 @@ function articleLearn(s){if(TEXTBOOK[s.id])return textbookReader(s);return `<div
 function articleExample(s){if(TEXTBOOK[s.id])return textbookCases(s);return `<div class="article"><div class="eyebrow" style="color:#537f62">WORKED EXAMPLE · ${s.id}</div><h2>${escapeHtml(s.example.title)}</h2><p>Work through each input. These are teaching assumptions, not a quote, offer, or forecast.</p><table class="table-lite"><tbody>${s.example.lines.map(([a,b])=>`<tr><td>${escapeHtml(a)}</td><td>${escapeHtml(b)}</td></tr>`).join('')}</tbody></table><div class="inside"><strong>What the numbers mean</strong><p>${escapeHtml(s.example.bottom)}</p></div>${deepCompare(s)}${academyAssignment(s)}<p class="disclaimer">Illustrative figures. Relevant taxes, loan terms, market losses, transaction fees, and legal exceptions may not be included.</p></div>`}
 function articlePractice(s){if(TEXTBOOK[s.id])return textbookPractice(s);let ans=state.quiz[s.id];return `<div class="article"><div class="eyebrow" style="color:#537f62">CHECK YOUR UNDERSTANDING</div><h2>Apply what you learned.</h2><p class="intro">${escapeHtml(s.quiz.q)}</p><div class="quizard">${s.quiz.options.map((a,i)=>`<button type="button" class="answer ${ans===i?'chosen':''}" data-answer="${i}">${String.fromCharCode(65+i)}. ${escapeHtml(a)}</button>`).join('')}</div>${ans!==undefined?`<div class="feedback"><strong>${ans===s.quiz.answer?'Exactly right.':'Here is the reasoning.'}</strong><br>${escapeHtml(s.quiz.feedback)}</div>`:'<p class="disclaimer" style="margin-top:11px">Choose an answer to see the reasoning. There is no penalty for getting it wrong.</p>'}${academyAssignment(s)}<div style="margin-top:20px"><button class="secondary wide" data-go="tools">Explore the calculators ↗</button></div></div>`}
 function articleNotes(s){return `<div class="noteeditor"><div class="eyeline">YOUR NOTES · ${s.id}</div><h3 style="margin:9px 0">What did this make you think about?</h3><p class="muted small">Questions, calculations, and things to investigate. Saved only in this browser.</p><textarea class="note-input" data-note="${s.id}" placeholder="For a home purchase, I wonder whether…">${escapeHtml(state.notes[s.id]||'')}</textarea><div class="note-actions" style="margin-top:12px"><button class="secondary mini-btn" data-chat="${s.id}">Ask ChatGPT ↗</button><button class="secondary mini-btn" data-action="export">Export backup ↓</button></div><p class="help" style="margin-top:12px">Keep your private financial figures out of public repositories. Export backups before switching devices.</p></div>`}
-function reader(){const s=activeSection(),m=moduleOf(s.id),idx=sectionIndex(s),p=prog(m),globalIndex=ALL_SECTIONS.findIndex(x=>x.id===s.id),prev=ALL_SECTIONS[globalIndex-1],next=ALL_SECTIONS[globalIndex+1];return `<section class="page"><div class="reader-overhead"><button class="back" data-module="${m.id}">← ${escapeHtml(m.title)}</button><span class="eyeline">${s.id}</span><button class="circle-btn" style="width:31px;height:31px;font-size:17px" data-action="bookmark" title="Toggle bookmark" aria-label="Toggle bookmark">${state.bookmarks.includes(s.id)?'★':'☆'}</button></div><div class="reader-hero ${s.academy?'academy-hero academy-hero-'+m.id.toLowerCase():''}"><div class="hero-lesson-meta">CHAPTER ${CURRICULUM.indexOf(m)+1} · SECTION ${idx+1} OF ${m.sections.length}</div><h1>${escapeHtml(s.title)}</h1><p>${escapeHtml(s.subtitle)}</p></div><div class="lesson-progress"><span>${p}% complete</span><div class="meter"><span style="width:${p}%"></span></div><span>${completed(m)}/${m.sections.length}</span></div><div class="segmented" role="tablist" aria-label="Lesson views">${['Learn','Examples','Try It','Notes'].map(tab=>`<button role="tab" aria-selected="${state.tab===tab}" data-tab="${tab}">${tab}</button>`).join('')}</div>${state.tab==='Learn'?articleLearn(s):state.tab==='Examples'?articleExample(s):state.tab==='Try It'?articlePractice(s):articleNotes(s)}${m.id==='M2'?`<button class="state-tool-link" data-go="states" style="margin-top:14px">⌖ Explore ${escapeHtml(chosenState(state.stateCode)?.[1]||'your state')} programs & rates →</button>`:''}<div class="reader-actions"><button class="secondary mini-btn" data-action="complete">${state.completed[s.id]?'✓ Completed · Undo':'✓ Mark section complete'}</button><button class="secondary mini-btn" data-chat="${s.id}">◉ Discuss in ChatGPT</button></div><div class="reader-actions"><button class="ghost" ${!prev?'disabled':''} data-section="${prev?prev.id:''}">← Previous</button><button class="primary" ${!next?'disabled':''} data-section="${next?next.id:''}">Next section →</button></div><details class="sources"><summary>View the original references and reading sources</summary>${s.sourceKeys.map(k=>SOURCES[k]).filter(Boolean).map(x=>`<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(x.name)} ↗</a>`).join('')}<p class="help">Source pages can change. Review current rules and actual contracts for time-sensitive decisions.</p></details><p class="footer-note">Stable reference ${s.id} · Curriculum v2.0 · Discuss this section in ChatGPT using the button above.</p></section>`}
+function reader(){
+ const s=activeSection(),m=moduleOf(s.id),idx=sectionIndex(s),p=prog(m),
+ globalIndex=ALL_SECTIONS.findIndex(x=>x.id===s.id),prev=ALL_SECTIONS[globalIndex-1],next=ALL_SECTIONS[globalIndex+1],
+ marked=state.bookmarks.includes(s.id);
+ return `<section class="wl-reader" aria-label="Wealth Lab Academy lesson reader">
+ <header class="wlr-hero"><div class="wlr-hero-inner">
+  <div class="wlr-masthead">
+   <div class="wlr-brand">${homeGlyph('book')}<span><strong>WEALTH LAB</strong><small>— A C A D E M Y —</small></span></div>
+   <button type="button" class="wlr-topcontrol" data-go="more" aria-label="Settings">${homeGlyph('settings')}</button>
+  </div>
+  <button type="button" class="wlr-back" data-module="${m.id}">← Back to ${escapeHtml(m.title)}</button>
+  <div class="wlr-hero-copy">
+   <div class="wlr-kicker">LEARN · CHAPTER ${CURRICULUM.indexOf(m)+1} · SECTION ${idx+1} OF ${m.sections.length}</div>
+   <h1>${escapeHtml(s.title)}</h1>
+   <p>${escapeHtml(s.subtitle)}</p>
+   <div class="wlr-hero-foot"><span class="wlr-reference">${s.id}</span>
+    <button class="wlr-bookmark" type="button" data-action="bookmark" aria-pressed="${marked?'true':'false'}" aria-label="${marked?'Remove lesson bookmark':'Bookmark this lesson'}">${homeGlyph('bookmark')} ${marked?'Saved':'Save Lesson'}</button>
+   </div>
+  </div>
+ </div></header>
+ <div class="wlr-main">
+  <div class="wlr-progress" role="group" aria-label="Chapter completion">
+   <div class="wlr-progress-top"><strong>Learning progress</strong><span>${completed(m)} of ${m.sections.length} completed · ${p}%</span></div>
+   <div class="meter" role="progressbar" aria-label="Chapter progress" aria-valuenow="${p}" aria-valuemin="0" aria-valuemax="100"><span style="width:${p}%"></span></div>
+  </div>
+  <nav class="wlr-tabs" role="tablist" aria-label="Lesson views">
+   ${['Learn','Examples','Try It','Notes'].map(tab=>`<button type="button" role="tab" aria-selected="${state.tab===tab}" data-tab="${tab}">${tab}</button>`).join('')}
+  </nav>
+  <div class="wlr-body">${state.tab==='Learn'?articleLearn(s):state.tab==='Examples'?articleExample(s):state.tab==='Try It'?articlePractice(s):articleNotes(s)}</div>
+  ${m.id==='M2'?'<button type="button" class="wlr-state-link" data-go="tools">Explore state homebuyer programs and mortgage tools →</button>':''}
+  <div class="wlr-footer-actions">
+   <div class="wlr-action-row">
+    <button type="button" class="secondary" data-action="complete">${state.completed[s.id]?'✓ Completed · Undo':'✓ Mark Complete'}</button>
+    <button type="button" class="secondary" data-chat="${s.id}">Discuss in ChatGPT</button>
+   </div>
+   <div class="wlr-action-row">
+    <button type="button" class="ghost" ${!prev?'disabled':''} data-section="${prev?prev.id:''}">← Previous Lesson</button>
+    <button type="button" class="primary" ${!next?'disabled':''} data-section="${next?next.id:''}">Next Lesson →</button>
+   </div>
+  </div>
+  <details class="wlr-refs"><summary>References and further reading</summary>
+   ${s.sourceKeys.map(k=>SOURCES[k]).filter(Boolean).map(x=>`<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(x.name)} ↗</a>`).join('')}
+   <p>Information and laws may change. Verify current rules and actual financial terms before making decisions.</p>
+  </details>
+  <p class="wlr-bottomnote">Wealth Lab Academy · Stable lesson reference ${s.id} · Progress saved locally</p>
+ </div></section>`;
+}
+
 const COLORS=['#4dd69a','#dfc58a','#789f95','#b7a4a0','#7589ae'];
 function payment(){
  const c=state.calc,price=Math.max(0,Number(c.price)||0),down=Math.min(100,Math.max(0,Number(c.down)||0));
@@ -1335,7 +1383,7 @@ async function stateChatCopy(){
  const success=await copyText('Wealth Lab v2.2 · State Explorer comparison research\n'+request);
  toast(success?(comparison?'Two-state comparison prompt copied. Paste it into ChatGPT.':'State research prompt copied. Paste it into ChatGPT.'):'Copy unavailable; try again in your browser.');
 }
-function render(scroll=true){const view={home,learn,reader,tools,notebook,more,states:stateExplorer}[state.view]||home;$('#app').classList.toggle('v3-home-active',state.view==='home');$('#app').classList.toggle('wl-learn-active',state.view==='learn');$('#app').classList.toggle('wlnb-active',state.view==='notebook');$('#app').classList.toggle('wm-active',state.view==='more');$('#app').innerHTML=(state.view==='home'||state.view==='learn'||state.view==='tools'||state.view==='notebook'||state.view==='more'?'':topBar())+view()+bottomNav();if(state.view==='learn'&&state.learnTab==='all')wlLearnRefreshSearch();if(state.view==='notebook'&&['search','all'].includes(state.nbView))nbSearchFilter();document.documentElement.style.setProperty('--reader-size',state.font+'px');if(scroll)window.scrollTo({top:0,behavior:'instant'});document.title=state.view==='reader'?`${activeSection().id} · ${activeSection().title} — Wealth Lab`:'Wealth Lab — Learn. Plan. Build.';persist()}
+function render(scroll=true){const view={home,learn,reader,tools,notebook,more,states:stateExplorer}[state.view]||home;$('#app').classList.toggle('v3-home-active',state.view==='home');$('#app').classList.toggle('wl-learn-active',state.view==='learn');$('#app').classList.toggle('wlnb-active',state.view==='notebook');$('#app').classList.toggle('wm-active',state.view==='more');$('#app').innerHTML=(state.view==='home'||state.view==='learn'||state.view==='reader'||state.view==='tools'||state.view==='notebook'||state.view==='more'?'':topBar())+view()+bottomNav();if(state.view==='learn'&&state.learnTab==='all')wlLearnRefreshSearch();if(state.view==='notebook'&&['search','all'].includes(state.nbView))nbSearchFilter();document.documentElement.style.setProperty('--reader-size',state.font+'px');if(scroll)window.scrollTo({top:0,behavior:'instant'});document.title=state.view==='reader'?`${activeSection().id} · ${activeSection().title} — Wealth Lab`:'Wealth Lab — Learn. Plan. Build.';persist()}
 function routeSection(id,tab='Learn'){if(!SECTION_BY_ID[id])return;state.view='reader';state.section=id;state.module=moduleOf(id).id;state.tab=tab;render()}
 function routeModule(id){if(!CURRICULUM.find(x=>x.id===id))return;state.module=id;state.learnTab='all';state.learnCourse=id;state.learnTopic='';state.learnLevel='all';state.learnStatus='all';state.learnQuery='';state.view='learn';render()}
 async function copyText(txt){try{await navigator.clipboard.writeText(txt);return true}catch(e){try{let a=document.createElement('textarea');a.value=txt;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();let ok=document.execCommand('copy');a.remove();return ok}catch(e){return false}}}
