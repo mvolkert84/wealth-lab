@@ -46,7 +46,7 @@ for (const selector of [
   '.wl-reader', '.wlr-hero', '.wlr-tabs', '.wlr-progress',
   '.wl-reader .article', '.wl-reader .book-sheet',
   '.wl-reader .noteeditor', '.wl-reader .book-case-file',
-  '.wl-reader .textbook-practice'
+  '.wl-reader .book-quiz-card'
 ]) {
   assert.ok(css.includes(selector), 'Missing universal reader theme selector: ' + selector);
 }
