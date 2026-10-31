@@ -1,4 +1,4 @@
-const CACHE = 'wealth-lab-v1.4.0';
+const CACHE = 'wealth-lab-v1.5.0';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
