@@ -1077,7 +1077,7 @@ function nbDate(iso){if(!iso)return 'Lesson note';const d=new Date(iso);return N
 function nbSnippet(text){return String(text||'').replace(/\s+/g,' ').trim().slice(0,95)}
 function nbNoteRow(n){
  const section=n.kind==='lesson',name=section?'Lesson '+n.sectionId:nbBookName(n.bookId);
- return `<button type="button" class="wlnb-note-row" ${section?`data-section="${escapeHtml(n.sectionId)}" data-tab-next="Notes"`:`data-nb-open="${escapeHtml(n.id)}"`}>${homeGlyph('notes')}<span><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(nbSnippet(n.content)||'Open this note to continue writing.')} · ${escapeHtml(name)}</small></span><span class="wlnb-row-meta">${escapeHtml(nbDate(n.updatedAt))}</span></button>`;
+ return `<button type="button" class="wlnb-note-row" ${section?`data-section="${escapeHtml(n.sectionId)}" data-tab-next="Notes"`:`data-nb-open="${escapeHtml(n.id)}"`}>${homeGlyph('note-lines')}<span><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(nbSnippet(n.content)||'Open this note to continue writing.')} · ${escapeHtml(name)}</small></span><time class="wlnb-row-meta">${escapeHtml(nbDate(n.updatedAt))}</time>${homeGlyph('more')}</button>`;
 }
 function nbNoteList(notes,empty){
  if(!notes.length)return `<div class="wlnb-empty">${escapeHtml(empty||'No notes here yet. Create a note or add one while studying a lesson.')}</div>`;
@@ -1087,16 +1087,20 @@ function nbMasthead(){return `<div class="wlnb-head"><div class="wlnb-brand">${h
 function nbDashboard(){
  const notes=nbNotes(),books=nbBooks(),tasks=state.nbTasks||[],keyIdeas=notes.filter(n=>n.kind==='personal'&&n.type==='idea').length;
  const actions=[['new','pencil','New Note'],['newbook','folder-plus','New Notebook'],['saved','bookmark','Saved & Bookmarks'],['import','download','Import Notes'],['search','search','Search Notes']];
- return `<div class="wlnb-hero"><div class="wlnb-hero-inner">${nbMasthead()}<div class="wlnb-hero-copy"><span class="wlnb-kicker">NOTEBOOK</span><h1>Your Learning Notebook</h1><p>Capture notes, ideas, insights, and plans as you learn and build your financial knowledge.</p></div></div></div>
+ return `<div class="wlnb-hero"><div class="wlnb-hero-inner">${nbMasthead()}<div class="wlnb-hero-copy"><span class="wlnb-kicker">NOTEBOOK</span><h1>Your Learning<br class="wlnb-headline-break"> Notebook</h1><p>Capture notes, ideas, insights, and plans as you learn and build your financial knowledge.</p></div></div></div>
  <div class="wlnb-actions">${actions.map((a,i)=>`<button type="button" class="wlnb-action ${i===0?'primary':''}" data-nb-action="${a[0]}">${homeGlyph(a[1])}<span>${a[2]}</span></button>`).join('')}</div>
  <div class="wlnb-body">
- <div class="wlnb-shelf"><section><div class="wlnb-sectiontop"><h2>My Notebooks (${books.length})</h2><button type="button" data-nb-action="books">All Notebooks →</button></div><div class="wlnb-book-grid">${books.slice(0,6).map(b=>`<button type="button" class="wlnb-book wlnb-book--${b.custom?'custom':b.id}" data-nb-book="${escapeHtml(b.id)}"><strong>${escapeHtml(b.title)}</strong><small>${nbBookCount(b.id)} ${nbBookCount(b.id)===1?'note':'notes'}</small></button>`).join('')}</div></section>
- <section class="wlnb-glance"><h3>Notes at a Glance</h3>${[['notes','Total Notes',notes.length],['layers','Notebooks',books.length],['bookmark','Saved Items',nbSaved()],['brain','Key Ideas',keyIdeas]].map(x=>`<div class="wlnb-glance-row">${homeGlyph(x[0])}<span>${x[1]}</span><strong>${x[2]}</strong></div>`).join('')}</section></div>
- <div class="wlnb-lower"><section><div class="wlnb-sectiontop"><h2>Recent Notes</h2><button type="button" data-nb-action="all">View All Notes →</button></div><div class="wlnb-recent">${nbNoteList(notes.slice(0,4),'No notes yet. Choose New Note or add a note inside a lesson to begin.')}</div></section>
- <section class="wlnb-quicklists"><h3>Quick Lists</h3>${NB_LISTS.map(x=>`<button type="button" class="wlnb-quick-row" data-nb-list="${x.id}">${homeGlyph('check')}<strong>${x.title}</strong><span>${tasks.filter(t=>t.type===x.id&&!t.done).length}</span>${homeGlyph('chevron')}</button>`).join('')}</section></div>
- <p class="wlnb-banner">Your notebooks are saved on this device. Use More → Export Backup to keep a copy before clearing browser data or changing phones.</p>
+ <section class="wlnb-notebooks"><div class="wlnb-sectiontop"><h2>My Notebooks (${books.length})</h2><button type="button" data-nb-action="books">All Notebooks →</button></div>
+ <div class="wlnb-book-grid">${books.slice(0,6).map(b=>`<button type="button" class="wlnb-book wlnb-book--${b.custom?'custom':b.id}" data-nb-book="${escapeHtml(b.id)}"><strong>${escapeHtml(b.title)}</strong><small>${nbBookCount(b.id)} ${nbBookCount(b.id)===1?'note':'notes'}</small></button>`).join('')}</div></section>
+ <div class="wlnb-summaryrow"><section class="wlnb-recent-panel"><div class="wlnb-sectiontop"><h2>Recent Notes</h2><button type="button" data-nb-action="all">View All →</button></div><div class="wlnb-recent">${nbNoteList(notes.slice(0,3),'No notes yet. Create a note, or save one while reading a lesson.')}</div></section>
+ <section class="wlnb-glance"><h3>Notes at a Glance</h3>${[['note-lines','Total Notes',notes.length],['folder-plus','Notebooks',books.length],['bookmark','Saved Items',nbSaved()],['brain','Key Ideas',keyIdeas]].map(x=>`<div class="wlnb-glance-row">${homeGlyph(x[0])}<span>${x[1]}</span><strong>${x[2]}</strong></div>`).join('')}</section></div>
+ <section class="wlnb-lists-section"><div class="wlnb-sectiontop"><h2>Quick Lists</h2></div>
+ <div class="wlnb-quickgrid">${NB_LISTS.map(x=>{const list=tasks.filter(t=>t.type===x.id),open=list.filter(t=>!t.done).length,complete=list.some(t=>t.done);return `<button type="button" class="wlnb-quick-row" data-nb-list="${x.id}"><span class="wlnb-quick-box ${complete?'is-checked':''}">${complete?'✓':''}</span><strong>${x.title} <span>(${open})</span></strong>${homeGlyph('chevron')}</button>`;}).join('')}</div>
+ </section>
+ <p class="wlnb-banner">Your notebooks are saved on this device. Export a backup before changing devices or clearing browser data.</p>
  </div>`;
 }
+
 function nbOptions(selected){return [...nbBooks(),{id:'unfiled',title:'Unfiled'}].map(b=>`<option value="${escapeHtml(b.id)}" ${b.id===selected?'selected':''}>${escapeHtml(b.title)}</option>`).join('')}
 function nbStartNote(id){
  const n=(state.nbNotes||[]).find(n=>n.id===id);
