@@ -1,28 +1,45 @@
+/* Wealth Lab v4.2: sharp full-bleed thumbnail crops.
+   The v4.1 contact sheet contains deliberate blurred top and bottom bands.
+   Enlarge each central subject into the whole thumbnail instead of showing those bands.
+   Class mappings retain all 20 lesson/topic subjects. */
 
-/* Wealth Lab v4.1 — coherent, topic-specific visual thumbnails. Single cached sprite for offline reliability. */
-
-.wl-learn .wl-row-art[class*="wl-thumb-"],.wl-learn .wl-feature-art[class*="wl-thumb-"],.wl-learn .wl-topic-card[class*="wl-thumb-"]{background-color:#0b2c23;background-image:url("./assets/lesson-thumbnails.webp")!important;background-repeat:no-repeat;background-size:500% 400%;}
-.wl-learn .wl-row-art[class*="wl-thumb-"]{border:1px solid rgba(221,185,111,.19);overflow:hidden;}
-.wl-learn .wl-topic-card[class*="wl-thumb-"]{background-color:#0c2d24;}
-.wl-learn .wl-topic-card[class*="wl-thumb-"]::after{opacity:.22;}
-.wl-learn .wl-topic-card[class*="wl-thumb-"] .wl-topic-icon{opacity:.64;}
-.wl-learn .wl-thumb-wealth{background-position:0% 0.0000%;}
-.wl-learn .wl-thumb-cash{background-position:25% 0.0000%;}
-.wl-learn .wl-thumb-math{background-position:50% 0.0000%;}
-.wl-learn .wl-thumb-time{background-position:75% 0.0000%;}
-.wl-learn .wl-thumb-home{background-position:100% 0.0000%;}
-.wl-learn .wl-thumb-interest{background-position:0% 33.3333%;}
-.wl-learn .wl-thumb-mortgage{background-position:25% 33.3333%;}
-.wl-learn .wl-thumb-keys{background-position:50% 33.3333%;}
-.wl-learn .wl-thumb-equity{background-position:75% 33.3333%;}
-.wl-learn .wl-thumb-emergency{background-position:100% 33.3333%;}
-.wl-learn .wl-thumb-insurance{background-position:0% 66.6667%;}
-.wl-learn .wl-thumb-taxes{background-position:25% 66.6667%;}
-.wl-learn .wl-thumb-markets{background-position:50% 66.6667%;}
-.wl-learn .wl-thumb-allocation{background-position:75% 66.6667%;}
-.wl-learn .wl-thumb-retirement{background-position:100% 66.6667%;}
-.wl-learn .wl-thumb-estate{background-position:0% 100.0000%;}
-.wl-learn .wl-thumb-protection{background-position:25% 100.0000%;}
-.wl-learn .wl-thumb-business{background-position:50% 100.0000%;}
-.wl-learn .wl-thumb-rental{background-position:75% 100.0000%;}
-.wl-learn .wl-thumb-legacy{background-position:100% 100.0000%;}
+.wl-learn .wl-row-art[class*="wl-thumb-"],
+.wl-learn .wl-feature-art[class*="wl-thumb-"],
+.wl-learn .wl-topic-card[class*="wl-thumb-"] {
+  background-color:#0b2c23;
+  background-image:url("./assets/lesson-thumbnails.webp") !important;
+  background-repeat:no-repeat !important;
+  background-size:950% 1000% !important;
+}
+.wl-learn .wl-row-art[class*="wl-thumb-"] {
+  border:1px solid rgba(221,185,111,.24);
+  overflow:hidden;
+}
+.wl-learn .wl-topic-card[class*="wl-thumb-"] {
+  background-color:#0c2d24;
+}
+.wl-learn .wl-topic-card[class*="wl-thumb-"]::before {
+  background:linear-gradient(180deg,rgba(2,19,15,.05) 0%,rgba(2,19,15,.04) 33%,rgba(2,19,15,.72) 100%);
+}
+.wl-learn .wl-topic-card[class*="wl-thumb-"]::after { display:none; }
+.wl-learn .wl-topic-card[class*="wl-thumb-"] .wl-topic-icon { opacity:.85; }
+.wl-learn .wl-thumb-wealth{background-position:5.2941% 8.3333% !important;}
+.wl-learn .wl-thumb-cash{background-position:27.6471% 8.3333% !important;}
+.wl-learn .wl-thumb-math{background-position:50.0000% 8.3333% !important;}
+.wl-learn .wl-thumb-time{background-position:72.3529% 8.3333% !important;}
+.wl-learn .wl-thumb-home{background-position:94.7059% 8.3333% !important;}
+.wl-learn .wl-thumb-interest{background-position:5.2941% 36.1111% !important;}
+.wl-learn .wl-thumb-mortgage{background-position:27.6471% 36.1111% !important;}
+.wl-learn .wl-thumb-keys{background-position:50.0000% 36.1111% !important;}
+.wl-learn .wl-thumb-equity{background-position:72.3529% 36.1111% !important;}
+.wl-learn .wl-thumb-emergency{background-position:94.7059% 36.1111% !important;}
+.wl-learn .wl-thumb-insurance{background-position:5.2941% 63.8889% !important;}
+.wl-learn .wl-thumb-taxes{background-position:27.6471% 63.8889% !important;}
+.wl-learn .wl-thumb-markets{background-position:50.0000% 63.8889% !important;}
+.wl-learn .wl-thumb-allocation{background-position:72.3529% 63.8889% !important;}
+.wl-learn .wl-thumb-retirement{background-position:94.7059% 63.8889% !important;}
+.wl-learn .wl-thumb-estate{background-position:5.2941% 91.6667% !important;}
+.wl-learn .wl-thumb-protection{background-position:27.6471% 91.6667% !important;}
+.wl-learn .wl-thumb-business{background-position:50.0000% 91.6667% !important;}
+.wl-learn .wl-thumb-rental{background-position:72.3529% 91.6667% !important;}
+.wl-learn .wl-thumb-legacy{background-position:94.7059% 91.6667% !important;}
