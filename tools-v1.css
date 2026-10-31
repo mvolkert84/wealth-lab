@@ -202,3 +202,43 @@
 .wl-tools .wl-calc-number-wrap{padding:0 7px}
 .wl-tools .wl-calc-number-wrap input{font-size:13px}
 }
+
+
+/* State Homebuyer Explorer moves from More to the Tools overview. */
+.wl-tools .wt-state-feature{
+ border:1px solid #bb9c5f;
+ background:linear-gradient(130deg,#124332 0%,#082d23 66%,#173e2c 100%);
+ border-radius:15px;padding:14px 13px 13px;
+ display:flex;flex-direction:column;gap:10px;
+ box-shadow:0 5px 14px rgba(0,15,8,.18);
+}
+.wl-tools .wt-state-heading{display:flex;align-items:center;gap:11px}
+.wl-tools .wt-state-heading>svg{width:31px;height:31px;flex:none;color:#f2d080}
+.wl-tools .wt-state-heading>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.wl-tools .wt-state-heading strong{font:700 21px/1.1 Georgia,'Times New Roman',serif;color:#ffedcd}
+.wl-tools .wt-state-heading span{font:11px/1.4 system-ui;color:#d7e4d8}
+.wl-tools .wt-state-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.wl-tools .wt-state-controls .state-select-label{flex:0 0 100%;margin:1px 0 -3px;color:#efd59c;font-size:11px}
+.wl-tools .wt-state-controls .state-select{flex:1 1 170px;min-width:0;width:auto;max-width:100%;min-height:44px;margin:0;border-radius:9px;background:#06291f;color:#f5efdb;border:1px solid #80a080;padding:10px;font-size:13px}
+.wl-tools .wt-state-controls button{
+ flex:1 1 140px;min-height:44px;border-radius:9px;
+ background:linear-gradient(#ffe5a6,#dfb667);
+ border:1px solid #f1d284;color:#0e2d20;
+ font-weight:750;font-size:12px;padding:11px 12px
+}
+.wl-tools .wt-state-feature>p{font-size:10px;line-height:1.45;margin:0;color:#bcd4c3}
+.state-page .state-back-tools{
+ background:transparent;border:0;
+ color:#f4cd82;font-size:12px;font-weight:700;
+ padding:7px 0 13px;display:flex;align-items:center;gap:6px
+}
+@media(min-width:620px){
+ .wl-tools .wt-state-feature{padding:17px 18px}
+ .wl-tools .wt-state-heading strong{font-size:23px}
+ .wl-tools .wt-state-controls .state-select{flex:2 1 220px}
+ .wl-tools .wt-state-controls button{flex:0 1 195px}
+}
+@media(max-width:365px){
+ .wl-tools .wt-state-feature{padding:11px}
+ .wl-tools .wt-state-heading strong{font-size:18px}
+}
