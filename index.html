@@ -800,7 +800,7 @@ document.addEventListener('change',e=>{if(e.target.id==='importFile'){importBack
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e});
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 // Deep link to a lesson: index.html#L2.S3
-const hash=decodeURIComponent(location.hash.slice(1));if(SECTION_BY_ID[hash]){state.section=hash;state.module=moduleOf(hash).id;state.view='reader'}else if(hash==='states'){state.view='states'}
+const hash=decodeURIComponent(location.hash.slice(1));if(SECTION_BY_ID[hash]){state.section=hash;state.module=moduleOf(hash).id;state.tab='Learn';state.view='reader'}else if(hash==='states'){state.view='states'}
 render(false);
 })();
 </script></body>
