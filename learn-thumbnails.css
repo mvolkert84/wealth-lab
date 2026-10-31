@@ -43,3 +43,26 @@
 .wl-learn .wl-thumb-business{background-position:50.0000% 91.6667% !important;}
 .wl-learn .wl-thumb-rental{background-position:72.3529% 91.6667% !important;}
 .wl-learn .wl-thumb-legacy{background-position:94.7059% 91.6667% !important;}
+
+/* By Topic v4.3 — independent high-resolution subject photography.
+ * The local sprite is intentionally used only for tiny lesson rows.
+ * The topic cards have their own native-resolution source images;
+ * the CSS never scales a 100-pixel sprite tile to a large card. */
+.wl-learn .wl-topic-card[class*="wl-thumb-"]{
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+.wl-learn .wl-topic-card[class*="wl-thumb-"]::before{
+  background:linear-gradient(to bottom,rgba(2,18,13,.04) 0%,rgba(2,18,13,.04) 35%,rgba(1,19,14,.74) 80%,rgba(1,18,13,.91) 100%) !important;
+}
+.wl-learn .wl-topic-card[class*="wl-thumb-"]::after{display:none !important}
+.wl-learn .wl-topic-card.wl-thumb-home{background-image:url("https://images.unsplash.com/photo-1751239837215-c21ca4571663?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-cash{background-image:url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-insurance{background-image:url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-taxes{background-image:url("https://images.unsplash.com/photo-1762151717091-4e0633e0c431?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-math{background-image:url("https://images.unsplash.com/photo-1554224154-26032fced8bd?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-retirement{background-image:url("https://images.unsplash.com/photo-1686900248731-5a492eb9a5e2?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-business{background-image:url("https://images.unsplash.com/photo-1696861273647-92dfe8bb697c?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-estate{background-image:url("https://images.unsplash.com/photo-1767972463877-b64ba4283cd0?auto=format&fit=crop&w=900&q=82") !important}
+.wl-learn .wl-topic-card.wl-thumb-wealth{background-image:url("https://images.unsplash.com/photo-1774898988393-5c752e4d55e9?auto=format&fit=crop&w=900&q=82") !important}
