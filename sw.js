@@ -1,4 +1,4 @@
-const CACHE = 'wealth-lab-v5.5.0-more-folds-state-tools';
+const CACHE = 'wealth-lab-v5.5.1-more-css-link-fix';
 const FILES = ['./', './index.html','./home-v3.css','./learn-v4.css','./learn-thumbnails.css','./tools-v1.css','./notebook-v1.css','./more-v1.css','./assets/notebook-approved-hero.webp','./assets/notebook-home.webp','./assets/notebook-invest.webp','./assets/notebook-taxes.webp','./assets/notebook-insurance.webp','./assets/notebook-retirement.webp','./assets/notebook-estate.webp','./assets/lesson-thumbnails.webp','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
