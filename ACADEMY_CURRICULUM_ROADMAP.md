@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.1 textbook depth expansion
+**Updated:** October 31, 2026 · **Release:** v6.2 textbook depth expansion
 
 ## What this is, and isn't
 
@@ -17,7 +17,7 @@ External course blueprints:
 
 ## Current verified state
 
-There are **16 courses, 59 stable lessons and 18 full six-part textbook chapters**, with 41 shorter lessons still awaiting expansion. This release adds these six chapter upgrades, using the same stable IDs and Academy reader:
+There are **16 courses, 59 stable lessons and 24 full six-part textbook chapters**, with **35 shorter lessons** still awaiting expansion. Two waves have added twelve chapters under their existing stable lesson IDs:
 
 | Lesson | Title / contribution | Core competency |
 | --- | --- | --- |
@@ -27,10 +27,16 @@ There are **16 courses, 59 stable lessons and 18 full six-part textbook chapters
 | L10.S1 | Asset Allocation and Goal Buckets | Risk capacity, allocations, correlation, rebalancing, investment policy |
 | L13.S2 | Permanent Life Insurance and Policy Loans | Protection, guaranteed vs nonguaranteed cash values, loan interest, lapse, trust/tax issues |
 | L15.S3 | Debt and Arbitrage Claims | Leverage, carry, HELOCs, margin calls, tax spreads, lawful engineering versus deceptive manipulation |
+| L7.S2 | Rates, Central Banks & Bonds | Policy transmission, real rates, term structure, duration, floating indices |
+| L7.S4 | Economic Indicators and Cycles | GDP, CPI, labor market, data vintages, forecasts, scenario analysis |
+| L8.S1 | Stock Ownership | Equity rights, capitalization, dilution, governance, creditors |
+| L8.S4 | Dividends, Buybacks & Shareholder Returns | Total return, payout sustainability, capital allocation, tax |
+| L9.S2 | Savings, CDs & Treasuries | Deposit insurance, APR/APY, maturity, liquidity, tax comparison |
+| L9.S3 | ETFs, Mutual Funds & Indexes | NAV, ETF spreads, tracking, fund fees, tax distributions |
 
 Each expansion has **six reading parts, three substantive explanatory paragraphs per part, original numerical worked examples, part-specific terminology and practitioner commentary, two interactive part questions, three additional final questions and one professional case study**.
 
-For the six newly expanded lessons this totals **36 parts, 72 part checks, 18 final checks and six case studies**. Existing original section question remains additionally available for each.
+Across the **twelve modularly expanded lessons** this totals **72 parts, 144 part checks, 36 additional final checks and 12 professional case studies**. Each section's original question remains available separately. The other twelve earlier expanded textbook chapters retain their existing material.
 
 The mastery rule remains unchanged: answer all the chapter's part checks and final questions, score at least 80% overall, and get at least 75% correct on chapter-level checks. Reading completion and mastery are separate.
 
@@ -55,19 +61,15 @@ A learner should be able to gather trustworthy inputs, identify conflicts of int
 ## Depth expansion queue for existing lessons
 
 ### Next wave — investment mechanics and tax/account foundations
-Expand the following 12 shorter sections:
-1. L7.S2 — Rates, Central Banks & Bonds: monetary policy transmission and yield curves
-2. L7.S4 — Economic Indicators and Cycles: CPI, GDP, growth, labor, rates and uncertainty
-3. L8.S1 — What a Stock Actually Owns: equity claims, dilution and shareholder rights
-4. L8.S4 — Dividends, Buybacks and Returns: total shareholder return and capital allocation
-5. L9.S2 — Savings, CDs and Treasuries: safety/availability/insurance distinctions
-6. L9.S3 — ETFs, Mutual Funds and Indexes: tracking, fees, tax and fund mechanics
-7. L9.S4 — REITs, Annuities and Alternatives: alternatives and hidden liquidity constraints
-8. L10.S2 — Diversification and Correlation: deeper covariance and empirical risk
-9. L10.S3 — Rebalancing and Costs: expense ratios, bid-ask spreads, taxes and tracking
-10. L10.S4 — Building an Investment Policy: implementation and behavioral pitfalls
-11. L11.S1 — From Income to Tax: US filing concepts, taxable income and schedules
-12. L11.S2 — Marginal vs Effective Tax Rate: bracket calculations and after-tax decisions
+Six completed in v6.2: **L7.S2, L7.S4, L8.S1, L8.S4, L9.S2, L9.S3**.
+
+The next six existing chapters to expand:
+1. **L9.S4** — REITs, Annuities and Alternatives: liquidity and product structure
+2. **L10.S2** — Diversification and Correlation: covariance, beta, stress testing
+3. **L10.S3** — Rebalancing and Costs: spreads, taxes, turnover and fees
+4. **L10.S4** — Building an Investment Policy: policy design, governance, implementation
+5. **L11.S1** — From Income to Tax: US taxable income, withholding and return mechanics
+6. **L11.S2** — Marginal vs Effective Tax Rate: brackets, marginal choices and comparisons
 
 ### Following wave — applied personal finance and generational wealth
 Expand L11.S4, all of M12 (retirement), L13.S1/S3/S4 (insurance and estates), all of M14 (rentals), L15.S1/S2/S4 (business ownership and wealth vehicles), and all of M16 (financial-adviser practice and capstone). Also expand any remaining short foundational sections in M2–M6, keeping existing IDs.
@@ -99,6 +101,7 @@ When evaluating a 'money strategy', compare **capital required, access to liquid
 - One independent file per new chapter: `academy-chapters/<section-id>.js`.
 - Offline PWA cache: `sw.js` includes every chapter with exact versioned URLs.
 - Retain existing `wealthlab-state-v1` and all saved progress, bookmarks and notes.
+- v6.2 offline PWA includes all 12 modular chapter files; verify with the latest cache key.
 - Run these checks on every curricular change:
   - `node scripts/check-lesson-reader.mjs`
   - `node scripts/check-visual-system.mjs`
