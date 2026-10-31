@@ -91,7 +91,7 @@ WealthLabRegisterDeepChapter({id:"L8.S4",title:"Dividends, Buybacks and Sharehol
  Q("A strong dividend research memo should include:",["Only yield","Cash-flow coverage, debt, price and total return","Only quarterly headlines","A guarantee of distributions"],1,"Sustainability depends on company cash and obligations.")],
  ["Investment committee","Judge total shareholder return and capital allocation across a full cycle, not only an indicated yield.","SEC EDGAR · Annual reports",edgar])
  ],
- caseStudy:{title:"A 9% dividend yield: income bargain or warning sign?",
+ caseStudy:{title:"A 10% dividend yield: income bargain or warning sign?",
  scenario:"Company A pays a $4 annual dividend on a $40 stock but operating free cash flow is deteriorating. Company B pays a $1 dividend on a $40 stock, maintains substantial reserves and reinvests in profitable projects. A learner needs both near-term rent reserves and eventual retirement growth.",
  steps:[["Company A indicated yield","$4 ÷ $40 = 10%"],["Company B indicated yield","$1 ÷ $40 = 2.5%"],["Missing sustainability evidence","FCF coverage, debt maturity, dividend policy"],["Appropriateness check","Income needs and principal risk, not yield alone"]],
  decision:"Create a total-return and payout-sustainability comparison, and explain why neither equity dividend should replace money reserved for next month's housing obligations."},
