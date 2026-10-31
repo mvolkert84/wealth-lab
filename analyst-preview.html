@@ -257,6 +257,29 @@ body{background:radial-gradient(ellipse 90% 340px at 50% 0,#0e3d34,#051b17 65%,#
 .analyst-lesson .part-quiz-footer{color:#a6cbbb;border-top-color:#315d4e}
 .analyst-lesson .part-quiz .eyeline{color:#d9c891}
 
+
+/* Option 2 course discovery refinement */
+.analyst-course-header{background:radial-gradient(ellipse at 85% 0,#145e50 0,transparent 61%),linear-gradient(135deg,#103f37,#092721);border:1px solid #3a7c67;border-radius:21px;padding:23px 19px 13px;overflow:hidden;margin:7px 0 13px}
+.analyst-course-header h1{font:31px/1.1 Georgia,serif;color:#f5f4e9;max-width:310px;margin:10px 0}
+.analyst-course-header p{font-size:13px;line-height:1.58;color:#c6e0d4;max-width:330px}
+.analyst-course-header svg{display:block;width:100%;height:69px;margin:5px 0 3px;opacity:.75}
+.analyst-course-header small{font-size:10px;color:#9cdac4}
+.academy-page .academy-overview{border:0;background:transparent;gap:9px;padding:0}.academy-page .academy-overview>div{background:#0c302c;border:1px solid #30695a;border-radius:14px;padding:13px 6px}
+.academy-page .academy-mastery{background:linear-gradient(125deg,#12493b,#0a302c);border:1px solid #4a8a74;position:relative;overflow:hidden}
+.academy-page .academy-mastery:after{content:'◇';position:absolute;right:8px;bottom:-34px;color:#76e8b01f;font-size:125px;pointer-events:none}
+.academy-page .academy-mastery>strong{font:21px Georgia,serif;color:#f3edd8}
+.academy-page .academy-intro{background:#0e302a;border:1px solid #376657;border-radius:13px;padding:12px;margin:12px 0 20px}
+.academy-page .academy-intro summary{cursor:pointer;color:#c6e9d5;font-size:13px}
+.academy-page .academy-intro p{font-size:12px;color:#b4cec4;margin:10px 0 0}
+.academy-page .academy-level{background:linear-gradient(135deg,#124339,#092e29);border:1px solid #3d6d5b;border-radius:17px;overflow:hidden;margin:9px 0}
+.academy-page .academy-level:nth-of-type(3){background:linear-gradient(135deg,#193f44,#0a2f30)}
+.academy-page .academy-level:nth-of-type(4){background:linear-gradient(135deg,#183b32,#0a2a23)}
+.academy-page .academy-level summary{min-height:72px;padding:12px 14px;align-items:center}
+.academy-page .academy-level-no{background:#1c6e56!important;color:#eef4e8!important;box-shadow:inset 0 0 0 1px #55a78255;border-radius:12px}
+.academy-page .academy-active{border:1px solid #3b7768;background:linear-gradient(135deg,#0d3631,#0b2925)}
+.academy-page .module{background:#0b302b;border:1px solid #376654;border-radius:12px}
+.academy-page .module.current{background:#164d3e;border-color:#73b592}
+.academy-page .academy-section-list{margin-top:14px}
 </style>
   <title>Wealth Lab — Learn. Plan. Build.</title>
   
@@ -496,9 +519,9 @@ function masteryBadge(s){if(!TEXTBOOK[s.id])return ' · Outline';const m=mastery
 function learn(){
  const m=CURRICULUM.find(x=>x.id===state.module)||CURRICULUM[0];
  const checks=courseCheck(m),available=ALL_SECTIONS.length;
- return `<section class="page academy-page"><div class="top-intro"><div class="eyebrow">WEALTH LAB · FINANCIAL PLANNING ACADEMY</div><h1>Learn the whole system.</h1><p class="muted">An independent, structured financial education. Build from first principles to professional-style cases; ${Object.keys(TEXTBOOK).length} topics now have full multi-part textbook chapters; the remaining units are shorter study outlines pending expansion. Every topic has an example and knowledge check.</p></div>
+ return `<section class="page academy-page"><div class="analyst-course-header"><div class="eyebrow">ACADEMY · YOUR COURSE CATALOG</div><h1>Find your next breakthrough.</h1><p>Structured learning, real numerical cases, and a clear path to mastery—at your pace.</p><svg viewBox="0 0 340 70" aria-hidden="true"><path d="M0 63H340" stroke="#427164"/><path d="M0 58 L39 54 L74 57 L116 39 L160 43 L192 29 L230 34 L277 15 L340 5" fill="none" stroke="#57e4bb" stroke-width="3"/><circle cx="277" cy="15" r="5" fill="#d8ca9a"/></svg><small>${Object.keys(TEXTBOOK).length} textbook chapters available · ${available} learning units across ${CURRICULUM.length} courses</small></div>
  <div class="academy-overview"><div><span>COURSES</span><strong>${CURRICULUM.length}</strong></div><div><span>TOPIC UNITS</span><strong>${available}</strong></div><div><span>COMPLETED</span><strong>${totalDone()}</strong></div></div>
- <div class="academy-mastery panel"><div class="eyeline">UNDERSTANDING IS SEPARATE FROM FINISHING</div><strong>${masteryTotals().mastered} / ${masteryTotals().available} full chapters mastered</strong><p class="muted small">A chapter counts as mastered only after every practice question and chapter check has been attempted, at least 80% are correct overall, and at least 3 of the 4 chapter-check questions are correct. You may still mark reading complete separately.</p></div><div class="academy-intro"><strong>Study path · Four levels</strong><p>Each level groups related courses. Expand a level, select a course, and move through its numbered lessons. All existing section references remain valid.</p><p class="academy-note">Designed around broad CFP® knowledge domains and investment-adviser exam subject areas, but Wealth Lab does not grant certification, academic credit or authority to give regulated advice.</p></div>
+ <div class="academy-mastery panel"><div class="eyeline">UNDERSTANDING IS SEPARATE FROM FINISHING</div><strong>${masteryTotals().mastered} / ${masteryTotals().available} full chapters mastered</strong><p class="muted small">A chapter counts as mastered only after every practice question and chapter check has been attempted, at least 80% are correct overall, and at least 3 of the 4 chapter-check questions are correct. You may still mark reading complete separately.</p></div><details class="academy-intro"><summary><strong>How the four-level study path works</strong></summary><p>Expand a level, select a course, then choose a numbered unit. Completion tracks reading; mastery requires demonstrated understanding. Original section references remain intact.</p><p class="academy-note">Independent self-study only. Wealth Lab is not an accredited program and does not grant CFP certification or authorization to give regulated advice.</p></details>
  ${ACADEMY_LEVELS.map(t=>{const courses=t.modules.map(id=>CURRICULUM.find(x=>x.id===id)).filter(Boolean);const selected=courses.some(x=>x.id===m.id);const done=courses.reduce((n,x)=>n+completed(x),0);const total=courses.reduce((n,x)=>n+x.sections.length,0);return `<details class="academy-level" ${selected?'open':''}><summary><span class="academy-level-no">${t.id.toString().padStart(2,'0')}</span><span class="academy-level-label"><strong>${escapeHtml(t.name)}</strong><small>${courses.length} courses · ${done} / ${total} lessons completed</small></span><span class="academy-level-arrow">⌄</span></summary><div class="academy-level-inside"><p>${escapeHtml(t.detail)}</p>${courses.map(x=>moduleCard(x,CURRICULUM.indexOf(x))).join('')}</div></details>`}).join('')}
  <div class="academy-active panel" id="academy-active"><div class="eyeline">SELECTED COURSE · ${escapeHtml(m.id)}</div><h2>${escapeHtml(m.title)}</h2><p class="muted">${escapeHtml(m.deck)}</p><div class="academy-pulse"><span>${completed(m)}/${m.sections.length} sections completed</span><span>${masteryTotals(m.sections).mastered}/${masteryTotals(m.sections).available} full chapters mastered</span></div>${progressBar(prog(m))}
  <div class="academy-section-list">${m.sections.map((s,i)=>`<button class="module ${s.id===state.section?'current':''}" data-section="${s.id}"><span class="module-num" style="width:30px;height:30px;font-size:13px">${state.completed[s.id]?'✓':i+1}</span><span class="module-body"><span class="module-title">${escapeHtml(s.title)}${masteryBadge(s)}</span><span class="module-sub">${s.id} · ${escapeHtml(s.subtitle)}</span></span><span class="module-next">›</span></button>`).join('')}</div>
