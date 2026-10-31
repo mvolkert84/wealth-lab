@@ -39,7 +39,7 @@
 html{background:var(--wl-emerald-950);text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{background:var(--wl-emerald-950);color:var(--wl-cream);font-family:var(--wl-type-sans);-webkit-font-smoothing:antialiased}
 .app{background:var(--wl-emerald-950);color:var(--wl-cream)}
-:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more,.state-page){
+:is(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more,.state-page){
   font-family:var(--wl-type-sans);
   color:var(--wl-cream);
   background:linear-gradient(155deg,var(--wl-emerald-950) 0%,var(--wl-emerald-900) 52%,#041c17 100%);
@@ -417,4 +417,36 @@ body{background:var(--wl-emerald-950);color:var(--wl-cream);font-family:var(--wl
   :where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) *{
     scroll-behavior:auto;
   }
+}
+
+
+/* Safe installed-app update notice. Never reload while a learner is typing. */
+#wl-update-prompt{
+  position:fixed;
+  z-index:1003;
+  bottom:calc(78px + env(safe-area-inset-bottom,0px));
+  left:50%;
+  transform:translateX(-50%);
+  width:min(calc(100% - 26px),440px);
+  padding:11px 12px;
+  border:1px solid #a48c54;
+  border-radius:13px;
+  background:#092d23;
+  color:#f4ebdc;
+  box-shadow:0 15px 36px rgba(0,13,9,.42);
+  font:600 12px/1.35 var(--wl-type-sans);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+#wl-update-prompt button{
+  min-height:36px;
+  border:1px solid #e0bd73;
+  border-radius:9px;
+  padding:7px 13px;
+  background:linear-gradient(#ecd18f,#c9a24d);
+  color:#132a20;
+  font:750 12px/1.2 var(--wl-type-sans);
+  white-space:nowrap;
 }
