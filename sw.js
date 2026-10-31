@@ -1,4 +1,4 @@
-const CACHE = 'wealth-lab-v5.2.0-notebook-academy';
+const CACHE = 'wealth-lab-v5.3.0-notebook-proof-fidelity';
 const FILES = ['./', './index.html','./home-v3.css','./learn-v4.css','./learn-thumbnails.css','./tools-v1.css','./notebook-v1.css','./assets/lesson-thumbnails.webp','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
