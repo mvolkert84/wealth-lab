@@ -47,7 +47,7 @@ assert.ok(html.includes('<meta name="theme-color" content="#031915">'),'Browser 
 assert.equal(manifest.background_color.toLowerCase(),'#031915');
 assert.equal(manifest.theme_color.toLowerCase(),'#031915');
 assert.ok(sw.includes("'./visual-polish-v1.css'"),'Offline PWA must precache shared stylesheet');
-assert.ok(sw.includes("wealth-lab-v6.0.0"),'Offline PWA cache version must be bumped');
+assert.ok(/wealth-lab-v6\.[1-9]\d*\./.test(sw),'Offline PWA cache version must be bumped');
 assert.ok(html.includes('id = \'wl-update-prompt\''),'Installed PWA must offer a safe update prompt');
 assert.ok(html.includes('New Wealth Lab design is ready.'),'Update prompt copy missing');
 assert.ok(html.includes('function reader(){'),'Canonical lesson reader must be preserved');
