@@ -16,3 +16,7 @@ A mobile-first financial education experience featuring 19 numbered sections in 
 - Content is educational and does not constitute a specific legal, tax, mortgage, or insurance recommendation. Verify current rates, rules, and eligibility for real decisions.
 
 Built from the approved Wealth Lab Professional Dark design.
+
+## State Explorer (v1.2)
+
+Visit Home → **Explore states & programs**, Tools → **State programs**, or More → **Select a state**. Coverage includes all 50 states plus Washington, D.C., with official HFA agencies and directory links. National FHA, USDA, VA and conventional loan introductions are linked to primary sources. The Freddie Mac rates displayed are explicitly dated **October 29, 2026** and are a historical *national benchmark*, not live quotes or guaranteed state-specific rates. Real offers, program funding, assistance amounts, county/property tax rules, closing costs and mortgage approval must be verified with the relevant agency or lender. The selected state persists using the existing local save key, preserving lesson progress and notes.
