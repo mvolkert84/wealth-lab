@@ -2,8 +2,8 @@
 (function(){
 const Q=(q,options,answer,why)=>({q,options,answer,why});
 const P=(heading,concept,paragraphs,example,pitfall,exercise,terms,checks,insight)=>({heading,concept,paragraphs,example,pitfall,exercise,terms,checks,insight});
-const sec="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds";
-const fees="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds/fees-and-expenses";
+const sec="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds";
+const fees="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin";
 const distributions="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/fund-distributions-investor-bulletin";
 WealthLabRegisterDeepChapter({id:"L9.S3",title:"ETFs, Mutual Funds and Indexes: Ownership, Tracking, Costs and Tax Efficiency",
  sources:[sec,fees,distributions],
