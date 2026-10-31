@@ -7,20 +7,26 @@ on:
       - index.html
       - reader-v1.css
       - visual-polish-v1.css
+      - academy-depth-core.js
+      - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
       - scripts/check-visual-system.mjs
+      - scripts/check-expanded-chapters.mjs
       - .github/workflows/academy-reader-check.yml
   pull_request:
     paths:
       - index.html
       - reader-v1.css
       - visual-polish-v1.css
+      - academy-depth-core.js
+      - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
       - scripts/check-visual-system.mjs
+      - scripts/check-expanded-chapters.mjs
       - .github/workflows/academy-reader-check.yml
 
 jobs:
@@ -38,3 +44,4 @@ jobs:
         run: |
           node scripts/check-lesson-reader.mjs
           node scripts/check-visual-system.mjs
+          node scripts/check-expanded-chapters.mjs
