@@ -1,4 +1,4 @@
-name: Academy lesson reader design check
+name: Wealth Lab visual and curriculum design check
 
 on:
   push:
@@ -6,22 +6,26 @@ on:
     paths:
       - index.html
       - reader-v1.css
+      - visual-polish-v1.css
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
+      - scripts/check-visual-system.mjs
       - .github/workflows/academy-reader-check.yml
   pull_request:
     paths:
       - index.html
       - reader-v1.css
+      - visual-polish-v1.css
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
+      - scripts/check-visual-system.mjs
       - .github/workflows/academy-reader-check.yml
 
 jobs:
   lesson-reader:
-    name: Verify every lesson uses the Academy reader
+    name: Verify shared lesson reader and global visual design
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -31,4 +35,6 @@ jobs:
         with:
           node-version: '22'
       - name: Check shared lesson design and curriculum
-        run: node scripts/check-lesson-reader.mjs
+        run: |
+          node scripts/check-lesson-reader.mjs
+          node scripts/check-visual-system.mjs
