@@ -201,6 +201,7 @@
 
 .academy-mastery{margin:12px 0 15px;padding:15px}.academy-mastery strong{display:block;margin:8px 0;font:22px Georgia,serif;color:#e8d5ac}.academy-mastery p{line-height:1.6;margin:0}.book-case-file{border:1px solid #ccd4c6;background:#f5f3ea;color:#173d2d;border-radius:14px;padding:15px;margin:15px 0}.book-case-file h3{font:24px Georgia,serif;color:#154834;margin:9px 0}.book-case-file p{color:#3b5848;font-size:14px;line-height:1.7}.book-case-file .book-thinking{background:#e9eee3;color:#174532;margin:13px 0 0;padding:13px;border-radius:11px}.book-case-file .book-thinking p{margin:5px 0 0}
 </style>
+<link rel="stylesheet" href="./home-v3.css">
   <title>Wealth Lab — Learn. Plan. Build.</title>
   
   
@@ -390,7 +391,63 @@ function topBar(){return `<header class="topbar"><div class="brand"><div class="
 const navItems=[['home','⌂','Home'],['learn','▤','Learn'],['tools','⚒','Tools'],['notebook','▣','Notebook'],['more','☷','More']];
 function bottomNav(){return `<nav class="bottom" aria-label="Main navigation">${navItems.map(([v,icon,label])=>`<button type="button" data-go="${v}" class="${state.view===v||((state.view==='reader')&&v==='learn')||(state.view==='states'&&v==='tools')?'active':''}" ${state.view===v?'aria-current="page"':''}><span aria-hidden="true">${icon}</span><small>${label}</small></button>`).join('')}</nav>`}
 function progressBar(pct){return `<div class="meter" aria-label="${pct}% complete"><span style="width:${pct}%"></span></div>`}
-function home(){const next=bestNext(),m=moduleOf(next.id),p=Math.round(totalDone()/ALL_SECTIONS.length*100);return `<section class="page"><div class="hero"><div class="hero-kicker">YOUR FINANCIAL FIELD GUIDE</div><h1>Build knowledge.<br>Build options.<br>Build a legacy.</h1><p>Understand the system. Make informed decisions.</p></div><div class="section-heading"><h3>Your learning journey</h3><span class="source-pill">${totalDone()} / ${ALL_SECTIONS.length} sections</span></div><div class="progress-card"><div class="progress-row"><div><div class="eyeline">YOU'RE MAKING PROGRESS</div><p class="muted" style="margin-top:7px">Small steps. Better financial decisions.</p><strong style="font-size:13px">${totalDone()} sections completed</strong></div><div class="round-progress" style="--value:${p}%"><span>${p}%</span></div></div></div><div class="continue-card"><div class="progress-row"><div><div class="eyeline">CONTINUE LEARNING · ${next.id}</div><h3 style="margin:7px 0 4px">${escapeHtml(next.title)}</h3><p class="muted small">${escapeHtml(m.title)}</p></div><button type="button" class="primary mini-btn" data-section="${next.id}" aria-label="Continue ${next.title}">Continue →</button></div>${progressBar(prog(m))}</div><div class="btn-grid"><button class="tile" data-go="learn"><span class="tile-icon">▤</span><strong>Lessons</strong><small>Guided learning</small></button><button class="tile" data-go="tools"><span class="tile-icon">▦</span><strong>Calculators</strong><small>Make the numbers real</small></button><button class="tile" data-go="notebook"><span class="tile-icon">▣</span><strong>Notebook</strong><small>Your saved insights</small></button><button class="tile" data-action="resources"><span class="tile-icon">☷</span><strong>References</strong><small>Verify the sources</small></button></div><div class="panel state-teaser"><div class="eyeline">NATIONWIDE HOME BUYING</div><h3 style="margin:7px 0">Explore all 50 states</h3><p class="muted small">Compare named homebuyer programs, assistance structures and official sources. Choose your state—no Connecticut default.</p><button class="primary wide" data-go="states">Explore states & programs →</button></div><div class="section-heading"><h3>Your learning path</h3><button class="linkish" data-go="learn">View all →</button></div>${CURRICULUM.slice(0,5).map((m,i)=>moduleCard(m,i)).join('')}<p class="footer-note">Wealth Lab v1.3.1 · Educational, not personalized legal, tax, or investment advice.</p></section>`}
+function homeGlyph(name, cls=''){
+ const shapes={
+  book:'<path d="M3 5.5c3.8-1.8 7.1-1.7 10 0v14c-2.9-1.7-6.2-1.8-10 0z"/><path d="M21 5.5c-3.8-1.8-7.1-1.7-10 0v14c2.9-1.7 6.2-1.8 10 0z"/>',
+  calculator:'<rect x="4" y="2.5" width="16" height="19" rx="2"/><rect x="7" y="5.5" width="10" height="3" rx=".6"/><path d="M8 12h1m4 0h1m3 0h.1M8 16h1m4 0h1m3 0h.1M8 19h1m4 0h1m3 0h.1" stroke-width="2.6"/>',
+  brain:'<path d="M11.9 6.1C10 3.5 6 4 5.5 6.6 2.2 7.4 2.2 11c-1 2 .1 4 2 4.8.1 3.2 3 4.8 5.8 3.3.3 1.1 1.1 1.7 2 1.7s1.7-.6 2-1.7c2.9 1.5 5.8-.1 5.9-3.3 2-.8 3-2.8 2-4.8 0-3.6-3.3-3.6-3.3-4.4-1-2.6-4.5-3.1-6.5-.5"/><path d="M12 6v12m-5-7c2 0 3 1 3 3m7-3c-2 0-3 1-3 3M7 7c0 1 1 2 3 2m7-2c0 1-1 2-3 2"/>',
+  notes:'<path d="M5 3h12l3 3v15H5z"/><path d="M16 3v4h4M8 11h9m-9 4h6"/><path d="m13 19 5-5 2 2-5 5-3 1z"/>',
+  chart:'<path d="M4 20V13h3v7M10.5 20V8h3v12M17 20V4h3v16"/>',
+  home:'<path d="m3 11 9-8 9 8v10h-6v-7H9v7H3z"/>',
+  more:'<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
+  chevron:'<path d="m9 5 7 7-7 7"/>',
+  arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',
+  play:'<path d="m8 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
+  settings:'<circle cx="12" cy="12" r="3"/><path d="m10 2 .5 2.2a8 8 0 0 0-2.2 1l-2-1.1-2 2 1.1 2a8 8 0 0 0-1 2.3L2 11v3l2.3.5a8 8 0 0 0 1 2.2l-1.1 2 2 2 2-1.1a8 8 0 0 0 2.2 1L11 23h3l.5-2.4a8 8 0 0 0 2.2-1l2 1.1 2-2-1.1-2a8 8 0 0 0 1-2.2L23 14v-3l-2.4-.5a8 8 0 0 0-1-2.2l1.1-2-2-2-2 1.1a8 8 0 0 0-2.2-1L14 2z"/>',
+  check:'<path d="m5 12 5 5L20 7"/>',
+  layers:'<path d="m12 2 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5m-18 4 9 5 9-5"/>',
+  trophy:'<path d="M7 3h10v6a5 5 0 0 1-10 0zM7 5H4v3c0 3 3 4 5 4m8-7h3v3c0 3-3 4-5 4M12 14v5m-4 2h8"/>',
+  bookmark:'<path d="M6 3h12v18l-6-4-6 4z"/>',
+  bell:'<path d="M18 8a6 6 0 0 0-12 0c0 8-3 8-3 10h18c0-2-3-2-3-10M10 21h4"/>'
+ };
+ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${shapes[name]||shapes.book}</svg>`;
+}
+function home(){
+ const resume=SECTION_BY_ID[state.section]||bestNext();
+ const course=moduleOf(resume.id);
+ const chapter=TEXTBOOK[resume.id],part=chapter?Math.min(chapter.pages.length-1,Math.max(0,Number(state.chapterPages?.[resume.id]||0))):0;
+ const partTotal=chapter?.pages.length||1;
+ const percentage=Math.round(totalDone()/ALL_SECTIONS.length*100);
+ const master=masteryTotals();
+ const level=ACADEMY_LEVELS.find(l=>l.modules.includes(course.id))?.id||1;
+ const practiceCount=Object.values(PART_CHECKS).reduce((n,parts)=>n+parts.reduce((a,p)=>a+p.length,0),0);
+ const notesCount=Object.values(state.notes||{}).filter(x=>typeof x==='string'&&x.trim()).length;
+ const actionData=[['book','Courses',CURRICULUM.length,'learn'],['calculator','Calculators',4,'tools'],['brain','Practice',practiceCount,'practice'],['notes','Notebook',notesCount,'notebook']];
+ const activePct=chapter?Math.round((part+1)/partTotal*100):state.completed[resume.id]?100:0;
+ const learningLevels=ACADEMY_LEVELS.map(l=>{
+  const courses=l.modules.map(id=>CURRICULUM.find(c=>c.id===id)).filter(Boolean);
+  const units=courses.flatMap(c=>c.sections),done=units.filter(s=>state.completed[s.id]).length;
+  return {...l,units,done,total:units.length,pct:units.length?Math.round(done/units.length*100):0};
+ });
+ return `<section class="v3-home" aria-label="Wealth Lab Academy home">
+  <div class="v3-hero">
+   <div class="v3-hero-content">
+    <div class="v3-hero-header">
+     <div class="v3-identity" aria-label="Wealth Lab Academy">${homeGlyph('book','v3-identity-icon')}<div><strong>WEALTH LAB</strong><span>— A C A D E M Y —</span></div></div>
+     <div class="v3-hero-controls"><button type="button" data-go="notebook" aria-label="Open your notebook">${homeGlyph('bookmark')}</button><button type="button" data-go="more" aria-label="Open settings">${homeGlyph('settings')}</button></div>
+    </div>
+    <div class="v3-hero-message"><p class="v3-kicker">YOUR FINANCIAL EDUCATION</p><h1>Build Knowledge.<br>Build Wealth.</h1><p class="v3-hero-tagline">Learn how money works, make informed decisions, and create lasting financial security.</p><button type="button" class="v3-continue" data-section="${resume.id}">${homeGlyph('play')}<span>Continue Learning</span></button><p class="v3-current-ref">${escapeHtml(resume.id)} · ${escapeHtml(resume.title)}</p></div>
+   </div>
+  </div>
+  <div class="v3-home-content">
+   <div class="v3-quick-actions" aria-label="Quick actions">${actionData.map(([icon,label,count,destination])=>`<button type="button" class="v3-action" ${destination==='practice'?`data-section="${resume.id}" data-tab-next="Try It"`:`data-go="${destination}"`} aria-label="${label}">${homeGlyph(icon)}<strong>${label}</strong><small>${count}</small></button>`).join('')}</div>
+   <section class="v3-progress-card" aria-label="Your learning progress"><div class="v3-progress-ring" style="--v3-progress:${percentage}%" role="img" aria-label="${percentage}% lessons completed"><div><strong>${percentage}%</strong><span>OVERALL<br>PROGRESS</span></div></div><div class="v3-progress-stats"><div class="v3-section-top"><h2>Your Progress</h2><button data-go="learn" type="button">View Details ${homeGlyph('arrow')}</button></div><div class="v3-stat-row">${homeGlyph('book')}<span>Reading Completed</span><div class="v3-meter"><i style="width:${percentage}%"></i></div><b>${totalDone()} / ${ALL_SECTIONS.length}</b></div><div class="v3-stat-row">${homeGlyph('trophy')}<span>Chapters Mastered</span><div class="v3-meter v3-meter-gold"><i style="width:${master.available?Math.round(master.mastered/master.available*100):0}%"></i></div><b>${master.mastered} / ${master.available}</b></div><div class="v3-stat-row">${homeGlyph('layers')}<span>Current Level</span><div class="v3-level-value">Level ${level}</div></div></div></section>
+   <button class="v3-resume" type="button" data-section="${resume.id}" aria-label="Resume ${escapeHtml(resume.title)}"><span class="v3-resume-photo"></span><span class="v3-resume-data"><span class="v3-resume-kicker">RESUME YOUR STUDIES</span><strong>${escapeHtml(resume.title)}</strong><span class="v3-resume-sub">${chapter?`Part ${part+1} of ${partTotal} · ${escapeHtml(chapter.pages[part].heading)}`:escapeHtml(course.title)}</span><span class="v3-resume-bar"><i style="width:${activePct}%"></i></span></span><span class="v3-resume-end"><span class="v3-play-round">${homeGlyph('play')}</span><small>${activePct}%</small></span></button>
+   <div class="v3-path-top"><h2>Your Learning Path</h2><button type="button" data-go="learn">All Courses ${homeGlyph('arrow')}</button></div>
+   <div class="v3-learning-path">${learningLevels.map(l=>`<button type="button" class="v3-level ${l.id===level?'is-current':''} ${l.pct===100?'is-done':''}" data-module="${l.modules[0]}" aria-label="Open Level ${l.id}: ${escapeHtml(l.name)}"><span class="v3-step">${l.pct===100?homeGlyph('check'):l.id}</span><strong>Level ${l.id}: ${escapeHtml(l.id===1?'Financial Foundations':l.id===2?'Investments & Markets':l.id===3?'Advanced Wealth Planning':'Professional Strategies')}</strong><span class="v3-level-meter"><i style="width:${l.pct}%"></i></span><span class="v3-level-pct">${l.pct}%</span>${homeGlyph('chevron','v3-chevron')}</button>`).join('')}</div>
+  </div>
+ </section>`;
+}
 function moduleCard(m,i){let p=prog(m);return `<button type="button" class="module ${m.id===moduleOf(bestNext().id).id?'current':''}" data-module="${m.id}"><span class="module-num">${i+1}</span><span class="module-body"><span class="module-title">${escapeHtml(m.title)}</span><span class="module-sub">${escapeHtml(m.short)} · ${completed(m)}/${m.sections.length} sections</span><span class="module-meter"><span style="width:${p}%"></span></span></span><span class="module-pct">${p}%</span><span class="module-next">›</span></button>`}
 const ACADEMY_LEVELS=[
  {id:1,name:'Foundations & Financial Mathematics',detail:'Build the concepts and mathematics behind financial decisions.',modules:['M1','M2','M7']},
@@ -825,7 +882,7 @@ async function stateChatCopy(){
  const success=await copyText('Wealth Lab v2.2 · State Explorer comparison research\n'+request);
  toast(success?(comparison?'Two-state comparison prompt copied. Paste it into ChatGPT.':'State research prompt copied. Paste it into ChatGPT.'):'Copy unavailable; try again in your browser.');
 }
-function render(scroll=true){const view={home,learn,reader,tools,notebook,more,states:stateExplorer}[state.view]||home;$('#app').innerHTML=topBar()+view()+bottomNav();document.documentElement.style.setProperty('--reader-size',state.font+'px');if(scroll)window.scrollTo({top:0,behavior:'instant'});document.title=state.view==='reader'?`${activeSection().id} · ${activeSection().title} — Wealth Lab`:'Wealth Lab — Learn. Plan. Build.';persist()}
+function render(scroll=true){const view={home,learn,reader,tools,notebook,more,states:stateExplorer}[state.view]||home;$('#app').classList.toggle('v3-home-active',state.view==='home');$('#app').innerHTML=(state.view==='home'?'':topBar())+view()+bottomNav();document.documentElement.style.setProperty('--reader-size',state.font+'px');if(scroll)window.scrollTo({top:0,behavior:'instant'});document.title=state.view==='reader'?`${activeSection().id} · ${activeSection().title} — Wealth Lab`:'Wealth Lab — Learn. Plan. Build.';persist()}
 function routeSection(id,tab='Learn'){if(!SECTION_BY_ID[id])return;state.view='reader';state.section=id;state.module=moduleOf(id).id;state.tab=tab;render()}
 function routeModule(id){if(!CURRICULUM.find(x=>x.id===id))return;state.module=id;state.view='learn';render()}
 async function copyText(txt){try{await navigator.clipboard.writeText(txt);return true}catch(e){try{let a=document.createElement('textarea');a.value=txt;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();let ok=document.execCommand('copy');a.remove();return ok}catch(e){return false}}}
