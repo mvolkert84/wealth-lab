@@ -1035,7 +1035,186 @@ ${toolContent()}<p class="wt-footer">Scenarios are illustrative. Actual products
 }
 function tools(){return `<section class="wl-tools" aria-label="Wealth Lab Academy financial tools">${toolsMode==='home'?wtHome():toolsMode==='calculator'?wtCalculator():wtDirectory()}</section>`}
 
-function notebook(){let all=ALL_SECTIONS.filter(s=>state.notes[s.id]&&state.notes[s.id].trim()),items=state.noteFilter==='saved'?all:state.noteFilter==='bookmarks'?ALL_SECTIONS.filter(s=>state.bookmarks.includes(s.id)):ALL_SECTIONS.filter(s=>s.id.toLowerCase().includes(state.search.toLowerCase())||s.title.toLowerCase().includes(state.search.toLowerCase()));return `<section class="page"><div class="top-intro"><div class="eyebrow">YOUR PRIVATE RESEARCH</div><h1>My Notebook</h1><p class="muted">Save insights, bookmark important sections, and carry your questions into ChatGPT.</p></div><div class="segmented" role="tablist">${[['all','All sections'],['saved','My notes'],['bookmarks','Bookmarks']].map(([id,label])=>`<button role="tab" aria-selected="${state.noteFilter===id}" data-filter="${id}">${label}</button>`).join('')}</div>${state.noteFilter==='all'?`<input class="searchbox" aria-label="Search lesson sections" placeholder="Search topics or section IDs..." data-search value="${escapeHtml(state.search)}">`:''}${items.length===0?'<div class="empty"><strong>Nothing here yet.</strong>Read a section, add a note, or bookmark an idea to start your research notebook.</div>':items.map(s=>`<div class="note-card"><div class="progress-row"><span class="tag">${s.id}</span><button class="linkish" data-section="${s.id}">Open ↗</button></div><h3 style="margin-top:9px">${escapeHtml(s.title)}</h3>${state.notes[s.id]?`<p>${escapeHtml(state.notes[s.id])}</p>`:'<p>This section is ready for your notes and questions.</p>'}<div class="note-actions"><button class="secondary mini-btn" data-section="${s.id}" data-tab-next="Notes">✎ ${state.notes[s.id]?'Edit':'Add'} note</button><button class="secondary mini-btn" data-chat="${s.id}">◉ Discuss</button></div></div>`).join('')}<button class="secondary wide" style="margin-top:15px" data-action="export">↓ Export notes and progress</button><p class="help" style="margin-top:9px">Your notes and progress are stored on this device/browser only. They do not sync with ChatGPT or GitHub automatically.</p></section>`}
+
+/* Notebook Academy · new notebooks coexist with legacy lesson notes and bookmarks. */
+const NB_CATEGORIES=[
+ {id:'home',title:'Homeownership',modules:['M2','M14']},
+ {id:'invest',title:'Investing',modules:['M4','M8','M9','M10']},
+ {id:'taxes',title:'Taxes',modules:['M6','M11']},
+ {id:'insurance',title:'Insurance',modules:['M5']},
+ {id:'retirement',title:'Retirement',modules:['M12']},
+ {id:'estate',title:'Estate & Legacy',modules:['M3','M13','M16']}
+];
+const NB_LISTS=[
+ {id:'action',title:'Action Items'},
+ {id:'research',title:'Research'},
+ {id:'question',title:'Questions'},
+ {id:'goal',title:'Goals'},
+ {id:'followup',title:'Follow Up'}
+];
+function nbId(){return 'nb-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9)}
+function nbBooks(){return [...NB_CATEGORIES,...(state.nbBooks||[]).map(b=>({id:b.id,title:b.title,modules:[],custom:true}))]}
+function nbBookName(id){return nbBooks().find(b=>b.id===id)?.title||'Unfiled'}
+function nbLessonBook(section){let m=moduleOf(section.id).id;return NB_CATEGORIES.find(b=>b.modules.includes(m))?.id||'unfiled'}
+function nbNotes(){
+ const personal=(state.nbNotes||[]).filter(n=>n&&typeof n==='object'&&typeof n.title==='string').map(n=>({...n,kind:'personal',content:String(n.content||'')}));
+ const lessons=ALL_SECTIONS.filter(s=>typeof state.notes[s.id]==='string'&&state.notes[s.id].trim()).map(s=>({id:'lesson:'+s.id,sectionId:s.id,title:s.title,content:state.notes[s.id],bookId:nbLessonBook(s),kind:'lesson',updatedAt:'',type:'note',saved:false}));
+ return [...personal,...lessons].sort((a,b)=>String(b.updatedAt||'').localeCompare(String(a.updatedAt||'')));
+}
+function nbBookCount(id){return nbNotes().filter(n=>n.bookId===id).length}
+function nbSaved(){return nbNotes().filter(n=>n.saved).length+(state.bookmarks||[]).length}
+function nbDate(iso){if(!iso)return 'Lesson note';const d=new Date(iso);return Number.isFinite(d.getTime())?d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):''}
+function nbSnippet(text){return String(text||'').replace(/\s+/g,' ').trim().slice(0,95)}
+function nbNoteRow(n){
+ const section=n.kind==='lesson',name=section?'Lesson '+n.sectionId:nbBookName(n.bookId);
+ return `<button type="button" class="wlnb-note-row" ${section?`data-section="${escapeHtml(n.sectionId)}" data-tab-next="Notes"`:`data-nb-open="${escapeHtml(n.id)}"`}>${homeGlyph('notes')}<span><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(nbSnippet(n.content)||'Open this note to continue writing.')} · ${escapeHtml(name)}</small></span><span class="wlnb-row-meta">${escapeHtml(nbDate(n.updatedAt))}</span></button>`;
+}
+function nbNoteList(notes,empty){
+ if(!notes.length)return `<div class="wlnb-empty">${escapeHtml(empty||'No notes here yet. Create a note or add one while studying a lesson.')}</div>`;
+ return notes.map(nbNoteRow).join('');
+}
+function nbMasthead(){return `<div class="wlnb-head"><div class="wlnb-brand">${homeGlyph('book')}<span><strong>WEALTH LAB</strong><small>— A C A D E M Y —</small></span></div><div class="wlnb-head-actions"><button type="button" data-go="learn" aria-label="Go to learning">${homeGlyph('bookmark')}</button><button type="button" data-go="more" aria-label="Settings">${homeGlyph('settings')}</button></div></div>`}
+function nbDashboard(){
+ const notes=nbNotes(),books=nbBooks(),tasks=state.nbTasks||[],keyIdeas=notes.filter(n=>n.kind==='personal'&&n.type==='idea').length;
+ const actions=[['new','notes','New Note'],['newbook','layers','New Notebook'],['saved','bookmark','Saved & Bookmarks'],['import','notes','Import Notes'],['search','search','Search Notes']];
+ return `<div class="wlnb-hero"><div class="wlnb-hero-inner">${nbMasthead()}<div class="wlnb-hero-copy"><span class="wlnb-kicker">NOTEBOOK</span><h1>Your Learning Notebook</h1><p>Capture notes, ideas, insights, and plans as you learn and build your financial knowledge.</p></div></div></div>
+ <div class="wlnb-actions">${actions.map((a,i)=>`<button type="button" class="wlnb-action ${i===0?'primary':''}" data-nb-action="${a[0]}">${homeGlyph(a[1])}<span>${a[2]}</span></button>`).join('')}</div>
+ <div class="wlnb-body">
+ <div class="wlnb-shelf"><section><div class="wlnb-sectiontop"><h2>My Notebooks (${books.length})</h2><button type="button" data-nb-action="books">All Notebooks →</button></div><div class="wlnb-book-grid">${books.slice(0,6).map(b=>`<button type="button" class="wlnb-book wlnb-book--${b.custom?'custom':b.id}" data-nb-book="${escapeHtml(b.id)}"><strong>${escapeHtml(b.title)}</strong><small>${nbBookCount(b.id)} ${nbBookCount(b.id)===1?'note':'notes'}</small></button>`).join('')}</div></section>
+ <section class="wlnb-glance"><h3>Notes at a Glance</h3>${[['notes','Total Notes',notes.length],['layers','Notebooks',books.length],['bookmark','Saved Items',nbSaved()],['brain','Key Ideas',keyIdeas]].map(x=>`<div class="wlnb-glance-row">${homeGlyph(x[0])}<span>${x[1]}</span><strong>${x[2]}</strong></div>`).join('')}</section></div>
+ <section><div class="wlnb-sectiontop"><h2>Recent Notes</h2><button type="button" data-nb-action="all">View All Notes →</button></div><div class="wlnb-recent">${nbNoteList(notes.slice(0,4),'No notes yet. Choose New Note or add a note inside a lesson to begin.')}</div></section>
+ <section class="wlnb-quicklists"><h3>Quick Lists</h3>${NB_LISTS.map(x=>`<button type="button" class="wlnb-quick-row" data-nb-list="${x.id}">${homeGlyph('check')}<strong>${x.title}</strong><span>${tasks.filter(t=>t.type===x.id&&!t.done).length}</span>${homeGlyph('chevron')}</button>`).join('')}</section>
+ <p class="wlnb-banner">Your notebooks are saved on this device. Use More → Export Backup to keep a copy before clearing browser data or changing phones.</p>
+ </div>`;
+}
+function nbOptions(selected){return [...nbBooks(),{id:'unfiled',title:'Unfiled'}].map(b=>`<option value="${escapeHtml(b.id)}" ${b.id===selected?'selected':''}>${escapeHtml(b.title)}</option>`).join('')}
+function nbStartNote(id){
+ const n=(state.nbNotes||[]).find(n=>n.id===id);
+ state.nbEditingId=n?.id||'';
+ state.nbDraft=n?{title:n.title,content:n.content,bookId:n.bookId,type:n.type||'note',saved:!!n.saved}:{title:'',content:'',bookId:state.nbSelectedBook||'home',type:'note',saved:false};
+ state.nbView='edit';state.view='notebook';render();
+}
+function nbDetail(){
+ const books=nbBooks(),notes=nbNotes(),kind=state.nbView,book=books.find(b=>b.id===state.nbSelectedBook);
+ let body='',title='',sub='';
+ if(kind==='edit'){
+  const d=state.nbDraft||{};
+  title=state.nbEditingId?'Edit Note':'New Note';sub='Write freely. Notes remain private on this device until you export them.';
+  body=`<div class="wlnb-form"><label>Note title<input type="text" data-nb-draft="title" maxlength="120" value="${escapeHtml(d.title||'')}" placeholder="What are you working on?"></label>
+   <label>Notebook<select data-nb-draft="bookId">${nbOptions(d.bookId)}</select></label>
+   <label>Note type<select data-nb-draft="type"><option value="note" ${d.type!=='idea'?'selected':''}>Study Note</option><option value="idea" ${d.type==='idea'?'selected':''}>Key Idea</option></select></label>
+   <label>Content<textarea data-nb-draft="content" rows="10" placeholder="Capture what you learned, ideas to investigate, figures to check, and next steps...">${escapeHtml(d.content||'')}</textarea></label>
+   <label class="wlnb-checkline"><input type="checkbox" data-nb-draft="saved" ${d.saved?'checked':''}> Save to bookmarks</label>
+   <div class="wlnb-form-actions"><button type="button" class="wlnb-primary" data-nb-action="save">Save Note</button><button type="button" class="wlnb-secondary" data-nb-action="cancel">Cancel</button>${state.nbEditingId?'<button type="button" class="wlnb-danger" data-nb-action="delete">Delete Note</button>':''}</div></div>`;
+ }else if(kind==='newbook'){
+  title='New Notebook';sub='Create a subject collection for your notes.';
+  body=`<div class="wlnb-form"><label>Notebook name<input type="text" data-nb-bookname maxlength="50" value="${escapeHtml(state.nbBookDraft||'')}" placeholder="e.g., Connecticut Home Purchase"></label><div class="wlnb-form-actions"><button class="wlnb-primary" type="button" data-nb-action="createbook">Create Notebook</button><button class="wlnb-secondary" type="button" data-nb-action="cancel">Cancel</button></div></div>`;
+ }else if(kind==='books'){
+  title='All Notebooks';sub='Your six subject notebooks and any collections you create.';
+  body=`<div class="wlnb-book-grid">${books.map(b=>`<button type="button" class="wlnb-book wlnb-book--${b.custom?'custom':b.id}" data-nb-book="${escapeHtml(b.id)}"><strong>${escapeHtml(b.title)}</strong><small>${nbBookCount(b.id)} notes</small></button>`).join('')}</div>`;
+ }else if(kind==='book'){
+  const id=state.nbSelectedBook;title=book?.title||'Unfiled Notes';sub=nbBookCount(id)+' saved notes';
+  body=`<div class="wlnb-form-actions"><button type="button" class="wlnb-primary" data-nb-action="new">+ New Note</button>${book?.custom?'<button type="button" class="wlnb-danger" data-nb-action="deletebook">Delete Notebook</button>':''}</div><div class="wlnb-recent">${nbNoteList(notes.filter(n=>n.bookId===id),'No notes in this notebook yet.')}</div>`;
+ }else if(kind==='saved'){
+  title='Saved & Bookmarks';sub='Starred notes and lessons you bookmarked for later.';
+  const starred=notes.filter(n=>n.saved);
+  const lessons=(state.bookmarks||[]).map(id=>SECTION_BY_ID[id]).filter(Boolean);
+  body=`<div class="wlnb-recent">${nbNoteList(starred,'No starred notes yet.')}</div><div class="wlnb-sectiontop"><h2>Bookmarked Lessons (${lessons.length})</h2></div><div class="wlnb-recent">${lessons.length?lessons.map(s=>`<button type="button" class="wlnb-note-row" data-section="${escapeHtml(s.id)}"><span style="color:#efc977">${homeGlyph('bookmark')}</span><span><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.id)}</small></span><span class="wlnb-row-meta">Open</span></button>`).join(''):'<p class="wlnb-empty">Bookmark a lesson from its reading page to see it here.</p>'}</div>`;
+ }else if(kind==='list'){
+  const l=NB_LISTS.find(x=>x.id===state.nbListType)||NB_LISTS[0];
+  title=l.title;sub='Keep track of things to investigate or do.';
+  const items=(state.nbTasks||[]).filter(x=>x.type===l.id);
+  body=`<div class="wlnb-composebar"><input type="text" id="nb-new-task" maxlength="220" placeholder="Add a ${escapeHtml(l.title.toLowerCase())} item" aria-label="New list item"><button type="button" class="wlnb-primary" data-nb-action="addtask">Add</button></div><div class="wlnb-recent">${items.length?items.map(t=>`<div class="wlnb-task ${t.done?'is-done':''}"><button type="button" data-nb-toggle="${escapeHtml(t.id)}" aria-label="${t.done?'Mark not done':'Mark complete'}">${t.done?'✓':''}</button><span>${escapeHtml(t.text)}</span><button type="button" class="wlnb-delete" data-nb-task-delete="${escapeHtml(t.id)}" aria-label="Delete item">Delete</button></div>`).join(''):'<div class="wlnb-empty">No items yet. Add your first item above.</div>'}</div>`;
+ }else{
+  title='All Notes';sub='Search standalone notes and notes saved inside lessons.';
+  const results=kind==='search'?notes:notes;
+  body=`<label class="wlnb-search">${homeGlyph('search')}<input type="search" id="wlnb-search-field" data-nb-search placeholder="Search titles, topics and note text" value="${escapeHtml(state.nbQuery||'')}" autocomplete="off"></label><div class="wlnb-recent" id="wlnb-search-results">${nbNoteList(results,'No notes found yet.')}</div><p class="wlnb-empty wlnb-no-match" hidden>No matching notes found.</p>`;
+ }
+ return `<div class="wlnb-detail"><button class="wlnb-back" type="button" data-nb-action="back">← Notebook</button><span class="wlnb-kicker">MY NOTEBOOK</span><h1>${escapeHtml(title)}</h1><p class="wlnb-detail-sub">${escapeHtml(sub)}</p>${body}</div>`;
+}
+function nbSearchFilter(){
+ const q=(state.nbQuery||'').trim().toLowerCase();
+ const rows=Array.from(document.querySelectorAll('#wlnb-search-results .wlnb-note-row'));
+ let visible=0;
+ for(const el of rows){const match=el.textContent.toLowerCase().includes(q)||!!(q&&nbNotes().find(n=>el.dataset.nbOpen===n.id&&n.content.toLowerCase().includes(q)));el.hidden=!match;if(match)visible++;}
+ const empty=document.querySelector('.wlnb-no-match');if(empty)empty.hidden=visible>0||rows.length===0;
+}
+function notebook(){return `<section class="wlnb" aria-label="Wealth Lab Academy notebook">${state.nbView==='home'?nbDashboard():nbDetail()}<input type="file" id="wlnb-import-file" accept=".txt,.md,.json,text/plain,application/json" hidden></section>`}
+function nbSaveDraft(){
+ const d=state.nbDraft||{},title=String(d.title||'').trim(),content=String(d.content||'').trim();
+ if(!title||!content){toast('Add a title and note content before saving.');return}
+ const bookId=[...nbBooks().map(b=>b.id),'unfiled'].includes(d.bookId)?d.bookId:'unfiled',now=new Date().toISOString();
+ const existing=(state.nbNotes||[]).find(n=>n.id===state.nbEditingId);
+ if(existing){Object.assign(existing,{title:title.slice(0,120),content:content.slice(0,150000),bookId,type:d.type==='idea'?'idea':'note',saved:!!d.saved,updatedAt:now})}
+ else state.nbNotes.push({id:nbId(),title:title.slice(0,120),content:content.slice(0,150000),bookId,type:d.type==='idea'?'idea':'note',saved:!!d.saved,createdAt:now,updatedAt:now});
+ state.nbEditingId='';state.nbDraft={};state.nbView='home';render();toast('Note saved.');
+}
+function nbClick(d){
+ if(d.nbAction){
+  const action=d.nbAction;
+  if(action==='new'){nbStartNote();return true}
+  if(action==='newbook'){state.nbBookDraft='';state.nbView='newbook';render();return true}
+  if(action==='import'){document.getElementById('wlnb-import-file')?.click();return true}
+  if(action==='search'){state.nbView='search';state.nbQuery='';render();document.getElementById('wlnb-search-field')?.focus();return true}
+  if(['all','books','saved'].includes(action)){state.nbView=action;render();return true}
+  if(action==='back'||action==='cancel'){state.nbView='home';state.nbEditingId='';render();return true}
+  if(action==='save'){nbSaveDraft();return true}
+  if(action==='createbook'){
+   const name=String(state.nbBookDraft||'').trim().slice(0,50);
+   if(!name){toast('Enter a notebook name.');return true}
+   if(nbBooks().some(b=>b.title.toLowerCase()===name.toLowerCase())){toast('A notebook with that name already exists.');return true}
+   const id=nbId();state.nbBooks.push({id,title:name});state.nbSelectedBook=id;state.nbBookDraft='';state.nbView='book';render();toast('Notebook created.');return true
+  }
+  if(action==='delete'){
+   const n=state.nbNotes.find(n=>n.id===state.nbEditingId);
+   if(n&&window.confirm('Delete "'+n.title+'"? This cannot be undone.')){state.nbNotes=state.nbNotes.filter(x=>x.id!==n.id);state.nbView='home';state.nbEditingId='';render();toast('Note deleted.')}
+   return true
+  }
+  if(action==='deletebook'){
+   const b=state.nbBooks.find(b=>b.id===state.nbSelectedBook);
+   if(b&&window.confirm('Delete notebook "'+b.title+'"? Its notes will move to Unfiled.')){state.nbBooks=state.nbBooks.filter(x=>x.id!==b.id);state.nbNotes.forEach(n=>{if(n.bookId===b.id)n.bookId='unfiled'});state.nbView='home';render();toast('Notebook deleted; notes retained in Unfiled.')}
+   return true
+  }
+  if(action==='addtask'){
+   const field=document.getElementById('nb-new-task'),value=String(field?.value||'').trim();
+   if(!value){toast('Type a list item first.');return true}
+   state.nbTasks.push({id:nbId(),type:state.nbListType||'action',text:value.slice(0,220),done:false});
+   render(false);toast('Item added.');return true
+  }
+  return false
+ }
+ if(d.nbBook){state.nbSelectedBook=d.nbBook;state.nbView='book';render();return true}
+ if(d.nbOpen){nbStartNote(d.nbOpen);return true}
+ if(d.nbList){state.nbListType=d.nbList;state.nbView='list';render();return true}
+ if(d.nbToggle){const t=state.nbTasks.find(x=>x.id===d.nbToggle);if(t){t.done=!t.done;render(false)}return true}
+ if(d.nbTaskDelete){const t=state.nbTasks.find(x=>x.id===d.nbTaskDelete);if(t&&window.confirm('Delete this list item?')){state.nbTasks=state.nbTasks.filter(x=>x.id!==t.id);render(false)}return true}
+ return false
+}
+async function nbImportNotes(file){
+ if(!file)return;
+ try{
+  if(file.size>1024*1024)throw Error('Choose a file smaller than 1 MB.');
+  const raw=await file.text(),name=String(file.name||'').toLowerCase();
+  if(name.endsWith('.txt')||name.endsWith('.md')){
+   if(!raw.trim())throw Error('This file is empty.');
+   state.nbNotes.push({id:nbId(),title:String(file.name).replace(/\.[^.]+$/,'').slice(0,120)||'Imported note',content:raw.slice(0,150000),bookId:'unfiled',type:'note',saved:false,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()});
+   state.nbView='home';render();toast('Text note imported.');return;
+  }
+  if(!name.endsWith('.json'))throw Error('Use a .txt, .md, or Wealth Lab .json backup.');
+  const obj=JSON.parse(raw);
+  if(obj.app!=='Wealth Lab'||obj.schema!==1||!obj.state||typeof obj.state!=='object')throw Error('This is not a compatible Wealth Lab backup.');
+  const b=obj.state;
+  const localIds=new Set((state.nbNotes||[]).map(n=>n.id));let added=0,legacy=0;
+  if(Array.isArray(b.nbBooks))for(const book of b.nbBooks){if(book&&typeof book.id==='string'&&typeof book.title==='string'&&!nbBooks().some(x=>x.id===book.id)){state.nbBooks.push({id:book.id.slice(0,90),title:book.title.slice(0,50)})}}
+  if(Array.isArray(b.nbNotes))for(const n of b.nbNotes){
+   if(!n||typeof n.id!=='string'||typeof n.title!=='string'||typeof n.content!=='string'||localIds.has(n.id))continue;
+   const id=n.id.slice(0,90);state.nbNotes.push({id,title:n.title.slice(0,120),content:n.content.slice(0,150000),bookId:nbBooks().some(x=>x.id===n.bookId)?n.bookId:'unfiled',type:n.type==='idea'?'idea':'note',saved:!!n.saved,createdAt:n.createdAt||new Date().toISOString(),updatedAt:n.updatedAt||new Date().toISOString()});localIds.add(id);added++;
+  }
+  if(b.notes&&typeof b.notes==='object'&&!Array.isArray(b.notes))for(const [id,value] of Object.entries(b.notes)){if(SECTION_BY_ID[id]&&typeof value==='string'&&value.trim()&&!String(state.notes[id]||'').trim()){state.notes[id]=value.slice(0,150000);legacy++}}
+  state.nbView='home';render();toast('Imported '+added+' standalone and '+legacy+' lesson notes. Existing notes kept.');
+ }catch(e){toast('Import failed: '+(e?.message||'Invalid file'))}
+}
+
 function more(){return `<section class="page"><div class="top-intro"><div class="eyebrow">YOUR WEALTH LAB</div><h1>Settings & Resources</h1><p class="muted">Control the reading experience and keep a backup of your work.</p></div><div class="panel"><h3>State homebuying explorer</h3><p class="muted small">All 50 states and Washington, D.C. · 81 named assistance programs · official agency links.</p><button class="primary wide" data-go="states" style="margin-top:12px">Select a state →</button></div><div class="panel" style="margin-top:14px"><h3>Reading preferences</h3><div class="settings-row"><span>Lesson text size</span><button class="toggle" data-action="font">${state.font}px · Change</button></div><div class="settings-row"><span>Completed sections</span><strong>${totalDone()}/${ALL_SECTIONS.length}</strong></div><div class="settings-row"><span>Saved notes</span><strong>${Object.values(state.notes).filter(x=>x.trim()).length}</strong></div><div class="settings-row" style="border:0"><span>Bookmarked sections</span><strong>${state.bookmarks.length}</strong></div></div><div class="panel" style="margin-top:14px"><h3>Keep your work safe</h3><p class="muted" style="margin-top:9px;font-size:12px">Data stays in this browser's local storage. If you clear site data or change phones, it may be lost unless you export a backup.</p><div class="note-actions"><button class="primary mini-btn" data-action="export">↓ Export backup</button><button class="secondary mini-btn" data-action="import">↑ Import backup</button></div><input id="importFile" type="file" accept="application/json,.json" hidden><button class="linkish" style="margin-top:12px" data-action="reset">Clear local learning data (confirmation required)</button></div><div class="panel" style="margin-top:14px"><h3>Verified source library</h3><p class="muted small" style="margin-top:9px">Official agencies are linked below. Verify current rules before any financial decision.</p>${Object.values(SOURCES).map(x=>`<div class="settings-row"><a href="${escapeHtml(x.url)}" target="_blank" rel="noopener noreferrer" style="font-size:12px">${escapeHtml(x.name)} ↗</a></div>`).join('')}</div><div class="install-tip"><strong>Install on Android</strong><br>Once Wealth Lab is hosted over HTTPS, open it in Chrome and choose “Install app” or “Add to Home screen” from the browser menu. The downloaded HTML file can be previewed locally but cannot be installed as a full PWA from a file link.</div><div class="panel"><h3>Curriculum details</h3><p class="muted small" style="margin-top:9px">Version 1.3.1 · 16 courses · 59 structured lessons · no tracking, ads, accounts, or external JavaScript.</p><p class="help">Lessons are general financial education and not a substitute for legal, tax, lending, insurance, or investment advice. Calculator values are hypothetical by default.</p></div><p class="footer-note">Made for learning deeply, deciding carefully, and building a lasting foundation.</p></section>`}
 const STATE_REFERENCE_DATE='October 29, 2026';
 function chosenState(code){return STATE_HFAS.find(x=>x[0]===code)||null}
