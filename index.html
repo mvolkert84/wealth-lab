@@ -398,11 +398,15 @@ function bestNext(){return ALL_SECTIONS.find(s=>!state.completed[s.id])||ALL_SEC
 function sectionIndex(s){return moduleOf(s.id).sections.findIndex(x=>x.id===s.id)}
 function topBar(){return `<header class="topbar"><div class="brand"><div class="logo" aria-hidden="true"></div><div><div class="brandname">Wealth Lab</div><div class="brand-sub">LEARN · PLAN · BUILD · PROTECT</div></div></div><div class="top-actions"><button class="circle-btn" title="Reading size" aria-label="Adjust reading size" data-action="font">Aa</button><button class="circle-btn" title="Settings" aria-label="Open settings" data-go="more">⋯</button></div></header>`}
 const navItems=[['home','⌂','Home'],['learn','▤','Learn'],['tools','⚒','Tools'],['notebook','▣','Notebook'],['more','☷','More']];
-function bottomNav(){return `<nav class="bottom" aria-label="Main navigation">${navItems.map(([v,icon,label])=>`<button type="button" data-go="${v}" class="${state.view===v||((state.view==='reader')&&v==='learn')||(state.view==='states'&&v==='tools')?'active':''}" ${state.view===v?'aria-current="page"':''}><span aria-hidden="true">${icon}</span><small>${label}</small></button>`).join('')}</nav>`}
+function bottomNav(){return `<nav class="bottom" aria-label="Main navigation">${navItems.map(([v,icon,label])=>`<button type="button" data-go="${v}" class="${state.view===v||((state.view==='reader')&&v==='learn')||(state.view==='states'&&v==='tools')?'active':''}" ${state.view===v?'aria-current="page"':''}><span aria-hidden="true">${state.view==='notebook'?homeGlyph(v==='notebook'?'note-lines':v==='learn'?'book':v==='tools'?'briefcase':v==='more'?'more':'home'):icon}</span><small>${label}</small></button>`).join('')}</nav>`}
 function progressBar(pct){return `<div class="meter" aria-label="${pct}% complete"><span style="width:${pct}%"></span></div>`}
 function homeGlyph(name, cls=''){
  const shapes={
-  shield:'<path d="m12 2 9 4v6c0 5-4 8-9 10-5-2-9-5-9-10V6z"/><path d="m8 12 3 3 5-6"/>',
+  pencil:'<path d="m4 20 4.5-1L20 7.5a2.1 2.1 0 0 0-3-3L5.5 16 4 20z"/><path d="m14.5 6.5 3 3"/>',
+  'folder-plus':'<path d="M3 6v13h18V9H11L8 6H3z"/><path d="M16 11v7m-3.5-3.5h7"/>',
+  download:'<path d="M12 3v13m-5-5 5 5 5-5M4 18v3h16v-3"/>',
+  'note-lines':'<rect x="4" y="2" width="16" height="20" rx="1.5"/><path d="M8 7h8m-8 4h8m-8 4h5"/>',
+    shield:'<path d="m12 2 9 4v6c0 5-4 8-9 10-5-2-9-5-9-10V6z"/><path d="m8 12 3 3 5-6"/>',
   umbrella:'<path d="M2 12a10 10 0 0 1 20 0H2zM12 12v7c0 3 5 3 5 0"/>',
   briefcase:'<rect x="2.5" y="7" width="19" height="14" rx="2"/><path d="M8 7V4h8v3M3 13h18m-9 0v3"/>',
   scales:'<path d="M12 3v18M6 21h12M4 8h16M6 8 3 14h6L6 8zm12 0-3 6h6l-3-6z"/>',
@@ -1082,14 +1086,14 @@ function nbNoteList(notes,empty){
 function nbMasthead(){return `<div class="wlnb-head"><div class="wlnb-brand">${homeGlyph('book')}<span><strong>WEALTH LAB</strong><small>— A C A D E M Y —</small></span></div><div class="wlnb-head-actions"><button type="button" data-nb-list="followup" aria-label="Open follow-up list">${homeGlyph('bell')}</button><button type="button" data-go="more" aria-label="Settings">${homeGlyph('settings')}</button></div></div>`}
 function nbDashboard(){
  const notes=nbNotes(),books=nbBooks(),tasks=state.nbTasks||[],keyIdeas=notes.filter(n=>n.kind==='personal'&&n.type==='idea').length;
- const actions=[['new','notes','New Note'],['newbook','layers','New Notebook'],['saved','bookmark','Saved & Bookmarks'],['import','notes','Import Notes'],['search','search','Search Notes']];
+ const actions=[['new','pencil','New Note'],['newbook','folder-plus','New Notebook'],['saved','bookmark','Saved & Bookmarks'],['import','download','Import Notes'],['search','search','Search Notes']];
  return `<div class="wlnb-hero"><div class="wlnb-hero-inner">${nbMasthead()}<div class="wlnb-hero-copy"><span class="wlnb-kicker">NOTEBOOK</span><h1>Your Learning Notebook</h1><p>Capture notes, ideas, insights, and plans as you learn and build your financial knowledge.</p></div></div></div>
  <div class="wlnb-actions">${actions.map((a,i)=>`<button type="button" class="wlnb-action ${i===0?'primary':''}" data-nb-action="${a[0]}">${homeGlyph(a[1])}<span>${a[2]}</span></button>`).join('')}</div>
  <div class="wlnb-body">
  <div class="wlnb-shelf"><section><div class="wlnb-sectiontop"><h2>My Notebooks (${books.length})</h2><button type="button" data-nb-action="books">All Notebooks →</button></div><div class="wlnb-book-grid">${books.slice(0,6).map(b=>`<button type="button" class="wlnb-book wlnb-book--${b.custom?'custom':b.id}" data-nb-book="${escapeHtml(b.id)}"><strong>${escapeHtml(b.title)}</strong><small>${nbBookCount(b.id)} ${nbBookCount(b.id)===1?'note':'notes'}</small></button>`).join('')}</div></section>
  <section class="wlnb-glance"><h3>Notes at a Glance</h3>${[['notes','Total Notes',notes.length],['layers','Notebooks',books.length],['bookmark','Saved Items',nbSaved()],['brain','Key Ideas',keyIdeas]].map(x=>`<div class="wlnb-glance-row">${homeGlyph(x[0])}<span>${x[1]}</span><strong>${x[2]}</strong></div>`).join('')}</section></div>
- <section><div class="wlnb-sectiontop"><h2>Recent Notes</h2><button type="button" data-nb-action="all">View All Notes →</button></div><div class="wlnb-recent">${nbNoteList(notes.slice(0,4),'No notes yet. Choose New Note or add a note inside a lesson to begin.')}</div></section>
- <section class="wlnb-quicklists"><h3>Quick Lists</h3>${NB_LISTS.map(x=>`<button type="button" class="wlnb-quick-row" data-nb-list="${x.id}">${homeGlyph('check')}<strong>${x.title}</strong><span>${tasks.filter(t=>t.type===x.id&&!t.done).length}</span>${homeGlyph('chevron')}</button>`).join('')}</section>
+ <div class="wlnb-lower"><section><div class="wlnb-sectiontop"><h2>Recent Notes</h2><button type="button" data-nb-action="all">View All Notes →</button></div><div class="wlnb-recent">${nbNoteList(notes.slice(0,4),'No notes yet. Choose New Note or add a note inside a lesson to begin.')}</div></section>
+ <section class="wlnb-quicklists"><h3>Quick Lists</h3>${NB_LISTS.map(x=>`<button type="button" class="wlnb-quick-row" data-nb-list="${x.id}">${homeGlyph('check')}<strong>${x.title}</strong><span>${tasks.filter(t=>t.type===x.id&&!t.done).length}</span>${homeGlyph('chevron')}</button>`).join('')}</section></div>
  <p class="wlnb-banner">Your notebooks are saved on this device. Use More → Export Backup to keep a copy before clearing browser data or changing phones.</p>
  </div>`;
 }
