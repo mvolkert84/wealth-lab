@@ -205,7 +205,7 @@
   <link rel="stylesheet" href="./learn-v4.css?v=4.3.0">
   <link rel="stylesheet" href="./learn-thumbnails.css?v=4.3.0">
   <link rel="stylesheet" href="./tools-v1.css?v=1.1.0">
-  <link rel="stylesheet" href="./notebook-v1.css?v=1.0.0">
+  <link rel="stylesheet" href="./notebook-v1.css?v=1.0.1">
   <title>Wealth Lab — Learn. Plan. Build.</title>
   
   
@@ -1079,7 +1079,7 @@ function nbNoteList(notes,empty){
  if(!notes.length)return `<div class="wlnb-empty">${escapeHtml(empty||'No notes here yet. Create a note or add one while studying a lesson.')}</div>`;
  return notes.map(nbNoteRow).join('');
 }
-function nbMasthead(){return `<div class="wlnb-head"><div class="wlnb-brand">${homeGlyph('book')}<span><strong>WEALTH LAB</strong><small>— A C A D E M Y —</small></span></div><div class="wlnb-head-actions"><button type="button" data-go="learn" aria-label="Go to learning">${homeGlyph('bookmark')}</button><button type="button" data-go="more" aria-label="Settings">${homeGlyph('settings')}</button></div></div>`}
+function nbMasthead(){return `<div class="wlnb-head"><div class="wlnb-brand">${homeGlyph('book')}<span><strong>WEALTH LAB</strong><small>— A C A D E M Y —</small></span></div><div class="wlnb-head-actions"><button type="button" data-nb-list="followup" aria-label="Open follow-up list">${homeGlyph('bell')}</button><button type="button" data-go="more" aria-label="Settings">${homeGlyph('settings')}</button></div></div>`}
 function nbDashboard(){
  const notes=nbNotes(),books=nbBooks(),tasks=state.nbTasks||[],keyIdeas=notes.filter(n=>n.kind==='personal'&&n.type==='idea').length;
  const actions=[['new','notes','New Note'],['newbook','layers','New Notebook'],['saved','bookmark','Saved & Bookmarks'],['import','notes','Import Notes'],['search','search','Search Notes']];
