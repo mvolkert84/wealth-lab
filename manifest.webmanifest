@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Wealth Lab — Financial Learning",
+  "short_name": "Wealth Lab",
+  "description": "Financial learning with real-number examples, interactive tools, and section-based study.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061c18",
+  "theme_color": "#061c18",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
