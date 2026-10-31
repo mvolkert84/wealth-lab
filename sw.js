@@ -1,4 +1,4 @@
-const CACHE = 'wealth-lab-v4.1.1-shared-learn-hero';
+const CACHE = 'wealth-lab-v4.2.0-sharp-thumbnails-and-fresh-css';
 const FILES = ['./', './index.html','./home-v3.css','./learn-v4.css','./learn-thumbnails.css','./assets/lesson-thumbnails.webp','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
@@ -11,6 +11,25 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
+  // Stylesheets are network-first, so app upgrades do not remain stuck on a
+  // previous cache-first design. Offline uses the last cached version.
+  if (new URL(request.url).pathname.endsWith('.css')) {
+    event.respondWith((async () => {
+      try {
+        const response = await fetch(request, {cache:'no-store'});
+        if (response.ok) {
+          const cache = await caches.open(CACHE);
+          await cache.put(request, response.clone());
+        }
+        return response;
+      } catch {
+        return (await caches.match(request)) ||
+               (await caches.match(request, {ignoreSearch:true})) ||
+               Response.error();
+      }
+    })());
+    return;
+  }
   if (request.mode === 'navigate') {
     // Network-first for pages so installed learners receive new lesson and program versions.
     event.respondWith((async () => {
