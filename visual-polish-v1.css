@@ -1,0 +1,420 @@
+/* Wealth Lab Academy · Visual Polish 6.0
+   Locked 2026-10-31: Deep Emerald + Rich Gold.
+   LOAD LAST after every page-specific stylesheet.
+   Cosmetic only: no changes to lesson IDs, state, navigation or saved data. */
+
+:root{
+  --wl-emerald-950:#031915;
+  --wl-emerald-900:#05231d;
+  --wl-emerald-850:#0a3027;
+  --wl-emerald-800:#0e3a2f;
+  --wl-emerald-700:#145141;
+  --wl-gold-500:#c9a24d;
+  --wl-gold-400:#d8b668;
+  --wl-gold-300:#e7c987;
+  --wl-cream:#f4ebdc;
+  --wl-cream-soft:#d9d0c2;
+  --wl-sage:#b7c7be;
+  --wl-green-border:#355a4a;
+  --wl-image-radius:12px;
+  --wl-card-radius:14px;
+  --wl-type-serif:Georgia,"Times New Roman",serif;
+  --wl-type-sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  /* Retrofit existing design variables, preserving their semantic roles. */
+  --bg:#031915;
+  --surface:#05231d;
+  --surface2:#0a3027;
+  --surface3:#0e3a2f;
+  --border:rgba(133,171,145,.29);
+  --text:#f4ebdc;
+  --muted:#c1d0c5;
+  --dim:#a6b9ab;
+  --accent:#51bd90;
+  --accent-dark:#145141;
+  --gold:#d8b668;
+  --cream:#f4ebdc;
+  --ink:#142c23;
+  color-scheme:dark;
+}
+html{background:var(--wl-emerald-950);text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{background:var(--wl-emerald-950);color:var(--wl-cream);font-family:var(--wl-type-sans);-webkit-font-smoothing:antialiased}
+.app{background:var(--wl-emerald-950);color:var(--wl-cream)}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more,.state-page){
+  font-family:var(--wl-type-sans);
+  color:var(--wl-cream);
+  background:linear-gradient(155deg,var(--wl-emerald-950) 0%,var(--wl-emerald-900) 52%,#041c17 100%);
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(h1,h2,h3,h4){
+  font-family:var(--wl-type-serif);
+  letter-spacing:-.35px;
+  text-wrap:balance;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(p,small,button,summary,input,textarea,select){
+  overflow-wrap:break-word;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(button,summary,a,input,textarea,select):focus-visible{
+  outline:2px solid var(--wl-gold-300);
+  outline-offset:3px;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(button,a,summary){
+  -webkit-tap-highlight-color:transparent;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(img){
+  display:block;
+  max-width:100%;
+  height:auto;
+  object-fit:cover;
+  border-radius:var(--wl-image-radius);
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(.eyeline,.eyebrow){
+  font-family:var(--wl-type-sans);
+  font-size:11px;
+  line-height:1.35;
+  letter-spacing:1.25px;
+  font-weight:750;
+  text-transform:uppercase;
+  color:var(--wl-gold-300);
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(.muted,.help,.disclaimer){
+  color:var(--wl-sage);
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(.primary,.cream-btn){
+  background:linear-gradient(155deg,#f0d99b 0%,var(--wl-gold-400) 64%,var(--wl-gold-500) 100%);
+  border:1px solid #e0bd73;
+  color:#18291f;
+  font-weight:750;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(.secondary,.ghost){
+  border-color:var(--wl-green-border);
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :where(button):disabled{
+  opacity:.52;
+}
+/* These shared heading sizes apply only to named, reliably section-level elements. */
+.v3-home :is(.v3-section-top,.v3-path-top) h2,
+.wl-learn .wl-title-line h2,
+.wl-tools .wt-section-heading h2,
+.wlnb .wlnb-sectiontop h2{
+  font:700 clamp(21px,5.3vw,27px)/1.16 var(--wl-type-serif);
+  letter-spacing:-.4px;
+  color:var(--wl-cream);
+  margin:0;
+}
+.v3-home :is(.v3-kicker,.v3-resume-kicker),
+.wl-learn :is(.wl-kicker,.wl-feature-copy small),
+.wl-tools :is(.wt-kicker,.wl-cal-results-kicker),
+.wlnb :is(.wlnb-kicker,.wlnb-row-meta),
+.wl-reader :is(.wlr-kicker,.book-part-label),
+.wl-more .wm-eyebrow{
+  font-family:var(--wl-type-sans);
+  font-size:clamp(10px,2.6vw,12px);
+  font-weight:760;
+  line-height:1.35;
+  letter-spacing:1.2px;
+  color:var(--wl-gold-300);
+  text-transform:uppercase;
+}
+.v3-home :is(.v3-hero-tagline,.v3-resume-sub),
+.wl-learn :is(.wl-feature-copy>span,.wl-row-copy small),
+.wl-tools :is(.wt-detail-desc,.wt-collection span),
+.wlnb :is(.wlnb-detail-sub,.wlnb-hero-copy p),
+.wl-reader .wlr-hero-copy p,
+.wl-more .wm-heading p{
+  color:#d5e0d3;
+  line-height:1.48;
+}
+
+/* All heroes: keep the architectural/photo subject visible; remove heavy glow.
+   The overlays protect headings only, without washing out the photography. */
+.v3-home .v3-hero,
+.wl-learn .wl-learn-hero,
+.wl-tools .wt-hero,
+.wl-reader .wlr-hero,
+.wlnb .wlnb-hero{
+  background-color:var(--wl-emerald-900);
+  background-repeat:no-repeat;
+  background-size:cover;
+  border-bottom:1px solid rgba(216,182,104,.34);
+  filter:none;
+}
+.v3-home .v3-hero{background-position:56% 48%}
+.v3-home .v3-hero::before{
+  background:linear-gradient(90deg,rgba(2,22,16,.83) 0%,rgba(3,27,21,.59) 43%,rgba(2,22,16,.09) 100%),
+    linear-gradient(0deg,rgba(1,16,12,.46),transparent 31%);
+}
+.wl-learn .wl-learn-hero{
+  background-image:linear-gradient(90deg,rgba(2,23,16,.79),rgba(2,24,17,.38) 48%,rgba(2,22,17,.07)),url('./assets/academy-hero.webp');
+  background-position:52% 48%;
+}
+.wl-tools .wt-hero{background-position:52% 49%}
+.wl-tools .wt-hero:before{
+  background:linear-gradient(90deg,rgba(2,23,17,.81),rgba(2,23,17,.46) 50%,rgba(2,23,17,.06)),
+    linear-gradient(0deg,rgba(2,20,15,.34),transparent 28%);
+}
+.wl-reader .wlr-hero{background-position:54% 48%}
+.wl-reader .wlr-hero:before{
+  background:linear-gradient(90deg,rgba(1,21,15,.86),rgba(1,23,17,.55) 49%,rgba(1,22,16,.11)),
+    linear-gradient(0deg,rgba(0,17,12,.47),transparent 35%);
+}
+/* Keep the specifically approved Notebook fountain-pen photo. */
+.wlnb .wlnb-hero{
+  background-image:url("./assets/notebook-approved-hero.webp")!important;
+  background-position:50% 48%!important;
+  background-size:cover!important;
+  filter:none!important;
+}
+.wlnb .wlnb-hero:before{
+  background:linear-gradient(90deg,rgba(1,23,17,.67),rgba(1,25,19,.36) 49%,rgba(1,22,16,.07) 100%),
+    linear-gradient(0deg,rgba(1,22,16,.32),transparent 35%)!important;
+}
+.v3-home .v3-hero h1,
+.wl-learn .wl-hero-text h1,
+.wl-tools .wt-hero-message h1,
+.wl-reader .wlr-hero h1,
+.wlnb .wlnb-hero h1{
+  font:700 clamp(30px,7.2vw,41px)/1.08 var(--wl-type-serif);
+  letter-spacing:-.65px;
+  color:#fff4e4;
+  text-shadow:0 2px 6px rgba(0,16,11,.48);
+  text-wrap:balance;
+}
+.wl-more .wm-heading h1{font:700 clamp(30px,7.2vw,39px)/1.08 var(--wl-type-serif);color:#fff1db}
+.wl-more .wm-head{background:linear-gradient(125deg,#031d17,#0a3c2f);border-bottom-color:#547453}
+.wl-more .wm-heading p{font-size:13px;max-width:400px}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :is(.v3-identity strong,.wl-brand strong,.wt-brand strong,.wlr-brand strong,.wlnb-brand strong,.wm-brand strong){
+  color:#f4dcab;
+}
+:where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) :is(.v3-identity-icon,.wt-brand>svg,.wl-brand>svg,.wlr-brand>svg,.wlnb-brand>svg,.wm-brand>svg){
+  color:var(--wl-gold-400);
+}
+
+/* Home: card borders, resume thumbnail, progress markers, crisp hierarchy. */
+.v3-home .v3-home-content{gap:15px}
+.v3-home :is(.v3-action,.v3-progress-card,.v3-resume,.v3-level){
+  background-color:var(--wl-emerald-850);
+  border-color:var(--wl-green-border);
+  border-radius:var(--wl-card-radius);
+}
+.v3-home .v3-action{background:linear-gradient(155deg,#0d3b2f,#06271f)}
+.v3-home .v3-action svg{color:var(--wl-gold-300)}
+.v3-home .v3-action strong{font:650 12px/1.2 var(--wl-type-sans)}
+.v3-home .v3-action small{font:500 11px/1.25 var(--wl-type-sans);color:#c5d6c9}
+.v3-home .v3-resume-photo{
+  background-position:center;
+  background-size:cover;
+  width:108px;
+  height:84px;
+  flex:none;
+  border:1px solid #456c56;
+  border-radius:var(--wl-image-radius);
+  filter:none;
+}
+.v3-home .v3-resume-data strong{font:700 18px/1.18 var(--wl-type-serif)}
+.v3-home .v3-level.is-current{background:#173c2c;border-color:var(--wl-gold-500)}
+.v3-home .v3-progress-card{background:linear-gradient(145deg,#0c362a,#06241c)}
+.v3-home :is(.v3-meter-gold,.v3-level.is-current .v3-step){accent-color:var(--wl-gold-400)}
+.v3-home .v3-path-top h2,.v3-home .v3-section-top h2{white-space:normal}
+
+/* Learn: consistent, clear crops across each card type.
+   The 20-topic thumbnail contact-sheet positioning remains untouched so
+   individual curriculum images do not accidentally switch subjects. */
+.wl-learn .wl-learn-body{gap:18px}
+.wl-learn .wl-lesson-row{
+  grid-template-columns:68px minmax(0,1fr) 28px;
+  gap:11px;
+  min-height:88px;
+  border-color:#3d6a54;
+  background:#092d24;
+  border-radius:var(--wl-card-radius);
+  padding:9px;
+}
+.wl-learn .wl-row-art{
+  width:68px;
+  height:68px;
+  border-radius:var(--wl-image-radius);
+  background-repeat:no-repeat;
+  filter:none;
+}
+.wl-learn .wl-feature-art{
+  width:108px;
+  height:81px;
+  border:1px solid #5d7962;
+  border-radius:var(--wl-image-radius);
+  flex:none;
+  background-repeat:no-repeat;
+  filter:none;
+}
+.wl-learn .wl-feature-copy strong{font:700 18px/1.15 var(--wl-type-serif)}
+.wl-learn .wl-feature-copy>span{font-size:12px}
+.wl-learn .wl-row-copy strong{font:700 15px/1.2 var(--wl-type-serif)}
+.wl-learn .wl-row-copy small{font-size:11px}
+.wl-learn .wl-topic-card{
+  min-height:158px;
+  border-color:#4f795f;
+  border-radius:var(--wl-card-radius);
+  background-repeat:no-repeat;
+  filter:none;
+}
+.wl-learn .wl-topic-card:before{
+  background:linear-gradient(180deg,rgba(0,14,10,.01) 0%,rgba(0,14,10,.07) 31%,rgba(2,25,18,.84) 100%)!important;
+}
+.wl-learn .wl-topic-card:after{opacity:.2}
+.wl-learn .wl-topic-icon svg{width:35px;height:35px;color:var(--wl-gold-300)}
+.wl-learn .wl-topic-copy strong{font:700 clamp(15px,3.7vw,19px)/1.16 var(--wl-type-serif)}
+.wl-learn .wl-level-art{height:74px;background-repeat:no-repeat}
+.wl-learn .wl-level-art:before{background:linear-gradient(0deg,rgba(0,22,16,.75),rgba(0,22,16,.02) 68%)}
+.wl-learn .wl-level-card{border-color:var(--wl-green-border);background-color:#082b21}
+.wl-learn .wl-status-filters button,.wl-learn .wl-filters select{font-size:11px}
+.wl-learn .wl-tabbar button{font-family:var(--wl-type-sans);font-size:12px;letter-spacing:.1px}
+.wl-learn .wl-feature{border-color:var(--wl-green-border);background:#0a3428}
+
+/* Tools: photographic library thumbnails and calculator typography. */
+.wl-tools .wt-category-grid{gap:10px}
+.wl-tools .wt-category{
+  height:166px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:var(--wl-emerald-850);
+  border-color:#58775b;
+  border-radius:var(--wl-card-radius);
+  filter:none;
+}
+.wl-tools .wt-category:before{
+  background:linear-gradient(180deg,rgba(1,16,11,.01) 0%,rgba(1,16,11,.07) 32%,rgba(1,20,15,.84) 100%);
+}
+.wl-tools .wt-category svg{color:var(--wl-gold-300)}
+.wl-tools .wt-category strong{font-family:var(--wl-type-serif);color:#fff0dc}
+.wl-tools :is(.wt-quick,.wt-collection,.wt-directory-row,.tool-panel){
+  border-color:var(--wl-green-border);
+  border-radius:var(--wl-card-radius);
+  background-color:#0a3027;
+}
+.wl-tools .wt-quick{background:linear-gradient(155deg,#0e3a2e,#06251e)}
+.wl-tools .wt-quick svg,.wl-tools .wt-collection>svg:first-child{color:var(--wl-gold-300)}
+.wl-tools .wt-quick strong{font:700 12px/1.17 var(--wl-type-sans)}
+.wl-tools .wt-collection strong{font:700 17px/1.17 var(--wl-type-serif)}
+.wl-tools :is(.wt-detail-title,.wl-calc-subhead,.wl-cal-breaktitle){
+  color:var(--wl-cream);
+}
+.wl-tools .wl-cal-primary>strong{color:#f2d89d}
+.wl-tools .wl-cal-pill{color:var(--wl-gold-300);border-color:#977c41}
+.wl-tools :is(input,select){accent-color:var(--wl-gold-500)}
+
+/* Notebook: original approved hero/photo category imagery retained. */
+.wlnb .wlnb-body{color:var(--wl-cream)}
+.wlnb .wlnb-book-grid{gap:10px}
+.wlnb .wlnb-book{
+  aspect-ratio:1.26 / 1;
+  min-height:142px;
+  border-radius:var(--wl-card-radius);
+  border-color:#5c7d5e;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  filter:none!important;
+}
+.wlnb .wlnb-book:before{
+  background:linear-gradient(180deg,rgba(1,18,13,.01),rgba(1,18,13,.1) 45%,rgba(1,19,14,.91) 100%);
+}
+.wlnb .wlnb-book strong{font:700 clamp(15px,4vw,20px)/1.12 var(--wl-type-serif)}
+.wlnb .wlnb-book small{font:500 11px/1.3 var(--wl-type-sans);color:#f4ead7}
+.wlnb :is(.wlnb-action,.wlnb-note-row,.wlnb-quick-row,.wlnb-quick-box,.wlnb-recent-panel){
+  border-color:var(--wl-green-border);
+}
+.wlnb :is(.wlnb-primary,.wlnb-action.primary){
+  background:linear-gradient(#edd18c,#c9a24d);
+  color:#142d23;
+}
+
+/* Reader: unify heading rhythm, gold actions, callouts and readable long form. */
+.wl-reader{
+  --lr-deep:var(--wl-emerald-950);
+  --lr-surface:var(--wl-emerald-900);
+  --lr-raised:var(--wl-emerald-850);
+  --lr-border:var(--wl-green-border);
+  --lr-gold:var(--wl-gold-400);
+  --lr-cream:var(--wl-cream);
+}
+.wl-reader .wlr-progress{
+  background:#0a3026;
+  border-color:var(--wl-green-border);
+}
+.wl-reader .wlr-progress-top strong{font:700 13px/1.2 var(--wl-type-serif);color:#edd59e}
+.wl-reader .wlr-reference,.wl-reader .wlr-bookmark{border-color:#9f8045;color:var(--wl-gold-300)}
+.wl-reader .wlr-tabs{border-color:#496e53;background:#041d17}
+.wl-reader .wlr-tabs button{font:750 12px/1.2 var(--wl-type-sans)}
+.wl-reader .wlr-tabs button[aria-selected="true"]{
+  background:linear-gradient(#efd697,#c9a24d);
+  color:#162b20;
+}
+.wl-reader .article,.wl-reader .noteeditor{
+  background:linear-gradient(150deg,#0a3429,#05261f)!important;
+  border-color:#436b52;
+  line-height:1.7;
+}
+.wl-reader .article h2,.wl-reader .book-sheet>h2{
+  font-family:var(--wl-type-serif);
+  letter-spacing:-.4px;
+  color:#fff0db;
+}
+.wl-reader .article .eyebrow,.wl-reader .article .eyeline{color:var(--wl-gold-300)!important}
+.wl-reader .book-sheet{
+  background:linear-gradient(150deg,#0d3a2d,#082c23);
+  border-color:#53715a;
+  border-left-color:var(--wl-gold-500);
+}
+.wl-reader :is(.book-case-card,.book-quiz-card,.book-case-file,.book-numbers,.book-thinking){
+  border-color:#53745c;
+}
+.wl-reader .book-part-label,.wl-reader .book-lede{color:#ecd195!important}
+.wl-reader .article :is(p,li),.wl-reader .book-paragraph{line-height:1.73}
+.wl-reader .wlr-footer-actions button{font-family:var(--wl-type-sans);font-size:12px}
+
+/* More: same editorial hierarchy, calmer, deeper disclosure surfaces. */
+.wl-more .wm-content{gap:12px}
+.wl-more .wm-stat{background:linear-gradient(145deg,#0d372b,#07261e);border-color:var(--wl-green-border)}
+.wl-more .wm-stat strong{color:var(--wl-gold-300)}
+.wl-more .wm-fold{background:#082b22;border-color:var(--wl-green-border);border-radius:var(--wl-card-radius)}
+.wl-more .wm-fold-title strong{font:700 18px/1.2 var(--wl-type-serif)}
+.wl-more .wm-fold-title small{font-size:11px;color:#c4d4c7}
+.wl-more .wm-fold>summary>svg:first-child{color:var(--wl-gold-300)}
+.wl-more .wm-btn-primary{background:linear-gradient(#efd697,#c9a24d);color:#182c21}
+
+/* State Explorer and program cards are within the same product theme. */
+.state-page{background:linear-gradient(150deg,#041f19,#0a3027)}
+.state-page :is(.state-hero,.state-region,.program-panel,.program-card,.local-card,.compare-two-columns,.compare-detail-column){
+  border-color:var(--wl-green-border);
+}
+.state-page :is(h1,h2,h3){font-family:var(--wl-type-serif);color:var(--wl-cream)}
+.state-page :is(.eyebrow,.eyeline){color:var(--wl-gold-300)}
+/* Consistent tab bar, including pages with bespoke scoped navigation. */
+.app .bottom{background:#041f19;border-top-color:#456950}
+.app .bottom button.active{color:var(--wl-gold-300)}
+.app .bottom button.active:after{background:var(--wl-gold-400)}
+/* Minimum clarity on a phone; no 8px navigation/caption text. */
+@media(max-width:390px){
+  .wl-learn .wl-lesson-row{grid-template-columns:60px minmax(0,1fr) 24px;gap:8px;padding:7px}
+  .wl-learn .wl-row-art{width:60px;height:60px}
+  .wl-learn .wl-feature-art{width:91px;height:74px}
+  .wl-learn .wl-feature-copy strong{font-size:16px}
+  .wl-learn .wl-row-copy strong{font-size:14px}
+  .wl-learn .wl-topic-card{min-height:146px}
+  .wlnb .wlnb-book{min-height:128px}
+  .wl-tools .wt-category{height:146px}
+  .v3-home .v3-action strong{font-size:11px}
+  .wl-reader .wlr-tabs button{font-size:11px}
+  .wl-more .wm-heading h1{font-size:32px}
+}
+@media(min-width:650px){
+  .wl-learn .wl-row-art{width:76px;height:76px}
+  .wl-learn .wl-lesson-row{grid-template-columns:76px minmax(0,1fr) 35px}
+  .wl-learn .wl-feature-art{width:120px;height:90px}
+  .wl-learn .wl-topic-card{min-height:182px}
+  .wl-tools .wt-category{height:180px}
+}
+@media(prefers-reduced-motion:reduce){
+  :where(.v3-home,.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more) *{
+    scroll-behavior:auto;
+  }
+}
