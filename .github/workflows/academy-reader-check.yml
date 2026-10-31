@@ -1,0 +1,34 @@
+name: Academy lesson reader design check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - reader-v1.css
+      - sw.js
+      - manifest.webmanifest
+      - scripts/check-lesson-reader.mjs
+      - .github/workflows/academy-reader-check.yml
+  pull_request:
+    paths:
+      - index.html
+      - reader-v1.css
+      - sw.js
+      - manifest.webmanifest
+      - scripts/check-lesson-reader.mjs
+      - .github/workflows/academy-reader-check.yml
+
+jobs:
+  lesson-reader:
+    name: Verify every lesson uses the Academy reader
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check shared lesson design and curriculum
+        run: node scripts/check-lesson-reader.mjs
