@@ -77,3 +77,128 @@
 
 /* Hidden search matches must remain hidden despite card display rules. */
 .wl-tools [hidden]{display:none!important}
+
+/* Calculators v1.1 — Academy editorial lab, consistent with approved Tools.
+   Scoped so Home, Learn, Notebook and State Explorer retain their styling. */
+.wl-tools .wt-detail {gap:13px}
+.wl-tools .wt-detail-title{font-size:clamp(27px,7.5vw,36px);line-height:1.03}
+.wl-tools .wt-detail-desc{line-height:1.55;color:#d0dacd}
+.wl-tools .wt-detail .tool-chooser{border-bottom:1px solid #3f6854;padding:0 0 12px;margin-bottom:1px;gap:7px}
+.wl-tools .wt-detail .tool-chooser button{
+ border:1px solid #4e7961;border-radius:999px;min-height:36px;padding:8px 12px;
+ background:#062a20;color:#e7e5d6;white-space:nowrap;font-size:11px;flex:none
+}
+.wl-tools .wt-detail .tool-chooser button.active{
+ background:linear-gradient(#fce2a1,#dcae58);border-color:#f3cb74;color:#1a3022;font-weight:750
+}
+.wl-tools .tool-panel{
+ background:linear-gradient(145deg,#11382c,#07271f 55%,#092f24);border:1px solid #47725b;
+ box-shadow:0 8px 24px rgba(0,0,0,.1);border-radius:17px;margin-top:0;padding:18px 14px 20px;color:#f4f1e5
+}
+.wl-tools .tool-panel .eyeline{color:#ebc777;letter-spacing:1.35px;font-weight:750;font-size:10px}
+.wl-tools .tool-panel h2{font-size:26px;line-height:1.12;margin:9px 0 8px!important}
+.wl-tools .tool-panel>.muted,.wl-tools .tool-panel>.help,.wl-tools .tool-panel .wl-calc-description{
+ color:#c6d8c9;font-size:12px;line-height:1.55
+}
+.wl-tools .wl-calc-subhead{
+ margin:22px 0 8px;font:700 19px/1.12 Georgia,serif;color:#f9e9c7;
+ padding-bottom:10px;border-bottom:1px solid #466c53;letter-spacing:-.2px
+}
+.wl-tools .wl-calc-field{
+ background:#06271fa8;border:1px solid #3b6452;border-radius:13px;
+ padding:12px 12px 11px;margin:9px 0
+}
+.wl-tools .wl-calc-field .range-header{margin-bottom:4px;gap:8px;align-items:baseline}
+.wl-tools .wl-calc-field .range-header>label{
+ font:700 14px/1.2 Georgia,serif;color:#f3eddb
+}
+.wl-tools .wl-calc-field .range-header>strong{font-size:12px;color:#eac877;white-space:nowrap;tabular-nums:true}
+.wl-tools .wl-calc-field input[type=range]{
+ display:block;width:100%;margin:9px 0 9px;height:22px;
+ accent-color:#dcb866;cursor:pointer
+}
+.wl-tools .wl-calc-inputs{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.wl-tools .wl-calc-inputs:has(.wl-calc-number:nth-child(2)){grid-template-columns:repeat(2,minmax(0,1fr))}
+.wl-tools .wl-calc-number{
+ min-width:0;display:flex;flex-direction:column;gap:6px;font-size:10px;color:#c1d2c4;font-weight:600
+}
+.wl-tools .wl-calc-number-wrap{
+ min-height:42px;border:1px solid #63856c;border-radius:10px;background:#031c16;
+ display:flex;align-items:center;gap:4px;padding:0 9px;overflow:hidden
+}
+.wl-tools .wl-calc-number-wrap:focus-within{border-color:#ebc675;box-shadow:0 0 0 1px #ebc67588}
+.wl-tools .wl-calc-number-wrap b{color:#f0cc80;font:700 15px Georgia,serif;flex:none}
+.wl-tools .wl-calc-number-wrap input{
+ border:0!important;outline:0!important;background:transparent!important;color:#f9f1e2!important;
+ min-width:0;width:100%;font:650 15px system-ui,-apple-system,"Segoe UI",sans-serif;
+ padding:8px 0;appearance:textfield;box-shadow:none!important
+}
+.wl-tools .wl-calc-number-wrap input::-webkit-inner-spin-button,
+.wl-tools .wl-calc-number-wrap input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.wl-tools .wl-calc-context{font-size:10px;color:#e3c985;line-height:1.4;margin-top:9px}
+.wl-tools .wl-calc-context:empty{display:none}
+.wl-tools .wl-calc-select{
+ display:flex;flex-direction:column;gap:8px;color:#efdfbd;font-size:12px;font-weight:700;
+ margin:12px 0
+}
+.wl-tools .wl-calc-select select{
+ color:#f9f0df;background:#04251c;border:1px solid #63856c;
+ border-radius:10px;min-height:45px;width:100%;font-size:13px;padding:10px 12px
+}
+.wl-tools .wl-cal-results{
+ border:1px solid #567d60;border-radius:16px;background:linear-gradient(155deg,#0d382a,#041e17 84%);
+ padding:14px;margin-top:22px
+}
+.wl-tools .wl-cal-results-kicker{
+ letter-spacing:1.25px;font-size:10px;color:#efd082;font-weight:750;padding-bottom:12px;
+ border-bottom:1px solid #365d4a
+}
+.wl-tools .wl-cal-primary{display:flex;flex-direction:column;gap:4px;margin:15px 0}
+.wl-tools .wl-cal-primary>span:first-child{font-size:12px;color:#d3ded1}
+.wl-tools .wl-cal-primary>strong{font:700 clamp(27px,8.5vw,39px)/1.06 Georgia,serif;color:#ffe8b2;letter-spacing:-.6px;overflow-wrap:anywhere}
+.wl-tools .wl-cal-primary>strong small{font:500 12px system-ui;color:#d6ddce;letter-spacing:0}
+.wl-tools .wl-cal-pill{
+ align-self:flex-start;border:1px solid #a58a50;border-radius:999px;color:#f4d38a;
+ font-size:10px;line-height:1.5;padding:5px 8px;max-width:100%
+}
+.wl-tools .wl-cal-statgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.wl-tools .wl-cal-statgrid>div{
+ min-width:0;min-height:91px;background:#092a20;border:1px solid #345d49;border-radius:11px;
+ padding:10px 9px;display:flex;flex-direction:column;gap:5px
+}
+.wl-tools .wl-cal-statgrid>div>span{font-size:10px;line-height:1.3;color:#bdcfbf}
+.wl-tools .wl-cal-statgrid>div>strong{font:700 18px/1.12 Georgia,serif;color:#ffebc5;overflow-wrap:anywhere}
+.wl-tools .wl-cal-statgrid>div>small{font-size:9px;line-height:1.3;color:#dfc78b}
+.wl-tools .wl-cal-breaktitle{font:700 17px Georgia,serif;color:#f7edd9;margin-top:18px}
+.wl-tools .wl-cal-breakbar{margin:11px 0 6px;height:11px}
+.wl-tools .wl-cal-breaklist{margin:0 0 8px}
+.wl-tools .wl-cal-breaklist .breakline{
+ gap:8px;border-bottom:1px solid #315444;font-size:11px;padding:9px 0;color:#e9f0e5
+}
+.wl-tools .wl-cal-breaklist .breakline>span{min-width:0;display:flex;align-items:center}
+.wl-tools .wl-cal-breaklist .breakline .swatch{flex:none}
+.wl-tools .wl-cal-breaklist .breakline>strong{
+ flex:none;display:flex;align-items:flex-end;flex-direction:column;color:#f1e5c5;font-size:12px
+}
+.wl-tools .wl-cal-breaklist .breakline>strong small{color:#a8c8aa;font-size:9px}
+.wl-tools .wl-cal-total{
+ display:flex;justify-content:space-between;gap:12px;align-items:center;
+ background:#2a3825;border:1px solid #8f7c49;border-radius:11px;padding:11px;margin-top:12px
+}
+.wl-tools .wl-cal-total span{font-size:11px;color:#e5e4ce}
+.wl-tools .wl-cal-total strong{font:700 18px Georgia,serif;color:#f8d58c;text-align:right;white-space:nowrap}
+.wl-tools .wl-cal-tip{
+ font-size:11px;line-height:1.5;background:#0d4130;
+ border-left:2px solid #6fd29c;padding:10px;color:#d4e9d3;margin-top:12px
+}
+.wl-tools .wl-calc-sources{display:flex;flex-direction:column;gap:9px;border-top:1px solid #42604b;padding-top:13px;margin-top:18px}
+.wl-tools .wl-calc-sources a{color:#f0cb81;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.wl-tools .wt-directory-row:focus-visible,.wl-tools .wl-calc-select select:focus-visible{outline:2px solid #eeca81;outline-offset:2px}
+@media(max-width:375px){
+.wl-tools .tool-panel{padding:14px 10px}
+.wl-tools .wl-cal-results{padding:11px}
+.wl-tools .wl-cal-statgrid>div>strong{font-size:16px}
+.wl-tools .wl-cal-total strong{font-size:15px}
+.wl-tools .wl-calc-number-wrap{padding:0 7px}
+.wl-tools .wl-calc-number-wrap input{font-size:13px}
+}
