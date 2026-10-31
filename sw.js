@@ -1,4 +1,4 @@
-const CACHE = 'wealth-lab-v4.2.0-sharp-thumbnails-and-fresh-css';
+const CACHE = 'wealth-lab-v4.3.0-restored-header-hd-topics';
 const FILES = ['./', './index.html','./home-v3.css','./learn-v4.css','./learn-thumbnails.css','./assets/lesson-thumbnails.webp','./assets/academy-hero.webp','./assets/resume-house.webp', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
@@ -10,7 +10,25 @@ self.addEventListener('activate', event => {
 });
 self.addEventListener('fetch', event => {
   const request = event.request;
-  if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
+  if (request.method !== 'GET') return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) {
+    if (url.hostname === 'images.unsplash.com') {
+      event.respondWith((async () => {
+        const cache = await caches.open(CACHE);
+        const saved = await cache.match(request);
+        try {
+          const fresh = await fetch(request);
+          if (fresh.ok || fresh.type === 'opaque') {
+            try { await cache.put(request, fresh.clone()); } catch {}
+            return fresh;
+          }
+          return saved || fresh;
+        } catch { return saved || Response.error(); }
+      })());
+    }
+    return;
+  }
   // Stylesheets are network-first, so app upgrades do not remain stuck on a
   // previous cache-first design. Offline uses the last cached version.
   if (new URL(request.url).pathname.endsWith('.css')) {
