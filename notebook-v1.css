@@ -104,3 +104,151 @@
 .wlnb-form .wlnb-checkline input{width:18px;height:18px;min-width:18px;accent-color:#e6bf70;margin:0}
 .wlnb-quick-row:active,.wlnb-note-row:active,.wlnb-book:active{filter:brightness(1.08)}
 .wlnb-action:active{transform:translateY(1px)}
+
+
+/* NOTEBOOK ACADEMY v1.1 — fidelity pass against the approved October 31 proof.
+   Actual note counts stay data-driven, not populated from illustration data.
+   A narrow handset must stack the side panels to retain legible controls. */
+
+/* The originally approved design is wide. Expand only Notebook's app shell
+   at desktop widths rather than distorting other Wealth Lab pages. */
+.app.wlnb-active{max-width:1040px}
+.app.wlnb-active>.bottom{width:min(100%,1040px)}
+.app.wlnb-active .bottom{background:#031b15f5;border-top:1px solid #44825e;border-radius:24px 24px 0 0;padding:10px 5px calc(13px + env(safe-area-inset-bottom));box-shadow:0 -10px 24px #010d0a50}
+.app.wlnb-active .bottom button{color:#f0ede2;gap:5px;padding:6px 0}
+.app.wlnb-active .bottom button svg{height:23px;width:23px;stroke-width:1.6}
+.app.wlnb-active .bottom button.active{color:#eec56c}
+.app.wlnb-active .bottom button.active:after{content:'';height:3px;width:60%;max-width:68px;background:#f2cb73;border-radius:3px;margin-top:2px;box-shadow:0 1px 5px #f3c86445}
+.app.wlnb-active .bottom button small{font-size:11px;color:inherit}
+
+.wlnb{background:linear-gradient(160deg,#00271c,#003323 52%,#002219)}
+.wlnb-hero{
+ min-height:270px;
+ background-color:#051c16;
+ background-image:url("https://images.unsplash.com/photo-1782913462654-2235885c266e?auto=format&fit=crop&w=1600&q=86");
+ background-size:cover;
+ background-position:70% 57%;
+ border-bottom:1px solid #266341
+}
+.wlnb-hero:before{
+ background:linear-gradient(90deg,#001a12f4 0%,#002319dc 34%,#00231986 56%,#00211813 100%),
+ linear-gradient(0deg,#001c14ba 0%,transparent 44%);
+}
+.wlnb-hero-inner{min-height:270px;padding:17px 18px 24px}
+.wlnb-hero-copy{max-width:560px}
+.wlnb-hero h1{font-size:clamp(29px,4.5vw,48px);line-height:1.08;letter-spacing:-.5px;max-width:560px;text-wrap:balance;margin-bottom:8px}
+.wlnb-hero p{font-size:clamp(12px,1.5vw,16px);max-width:450px;line-height:1.45;color:#f6f1e5}
+.wlnb-head{align-items:center}
+.wlnb-brand>svg{width:42px;height:42px;max-width:42px;max-height:42px}
+.wlnb-brand strong{font-size:clamp(19px,3.3vw,29px);letter-spacing:.5px}
+.wlnb-brand small{font-size:clamp(8px,1.5vw,11px);letter-spacing:2px}
+.wlnb-head-actions{gap:8px}
+.wlnb-head-actions button{height:37px;width:37px;border-color:#d7bb7460;background:#03251c99}
+.wlnb-head-actions svg{height:22px;width:22px}
+.wlnb-kicker{color:#f4d27c}
+.wlnb-kicker:after{width:48px;height:3px;margin:7px 0 11px;background:#f2cf7f}
+
+.wlnb-actions{
+ gap:7px;grid-template-columns:repeat(5,minmax(0,1fr));
+ padding:10px 13px 13px;background:#00291c;
+ border-bottom:1px solid #235943
+}
+.wlnb-action{min-height:82px;gap:7px;border-radius:13px;background:linear-gradient(155deg,#093e2b,#00271a);border-color:#88a97e;padding:10px 2px}
+.wlnb-action.primary{background:linear-gradient(135deg,#37432b,#122c1e 70%);border:2px solid #f5d47b;box-shadow:0 0 0 1px #0006 inset}
+.wlnb-action svg{height:30px;width:30px;stroke-width:1.9}
+.wlnb-action span{font:700 12px/1.12 Georgia,serif}
+.wlnb-body{padding:15px 13px 28px;gap:19px}
+.wlnb-shelf,.wlnb-lower{display:grid;grid-template-columns:minmax(0,1fr);gap:15px;align-items:start}
+.wlnb-sectiontop{margin-bottom:10px}
+.wlnb-sectiontop h2{font-size:clamp(23px,3.4vw,30px)}
+.wlnb-sectiontop button{font:700 12px Georgia,serif;color:#f3c971}
+.wlnb-book-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.wlnb-book{height:118px;min-height:0;border-radius:12px;border-color:#74996d;padding:7px 3px 9px}
+.wlnb-book:before{background:linear-gradient(180deg,#051e1014,#082b1d14 28%,#051b12a8 77%,#03140eea 100%)}
+.wlnb-book strong{font-size:clamp(11px,1.8vw,16px);line-height:1.04}
+.wlnb-book small{font-size:10px;margin-top:4px}
+.wlnb-book--home{background-image:url("./assets/resume-house.webp")}
+.wlnb-book--invest{background-position:50% 45%;filter:saturate(1.12)}
+.wlnb-book--taxes{background-position:55% 45%}
+.wlnb-book--retirement{background-position:55% 47%}
+.wlnb-book--insurance{
+ background-image:url("https://d2xsxph8kpxj0f.cloudfront.net/310519663412439958/KbwHKFteLeBURBn6otA54j/bits_hipaa_section-jgbm9tPzoLNxntxWst2AeP.webp");
+ background-position:center 43%;
+}
+.wlnb-book--estate{
+ background-image:url("https://jpnba.or.jp/images/common/nav01.jpg");
+ background-position:50% 48%;
+}
+.wlnb-glance,.wlnb-quicklists{border-radius:14px;border:1px solid #709b70;padding:14px 15px;background:linear-gradient(145deg,#0b3928,#002d20 80%)}
+.wlnb-glance h3,.wlnb-quicklists h3{font-size:clamp(20px,2.8vw,26px);margin:0 0 12px}
+.wlnb-glance-row{min-height:48px;padding:8px 1px;grid-template-columns:30px minmax(0,1fr) auto;gap:8px}
+.wlnb-glance-row strong{font-size:24px;color:#efca78}
+.wlnb-note-row{border-radius:12px;border-color:#608c66;min-height:61px;background:linear-gradient(145deg,#0b3b29,#00291b);grid-template-columns:32px minmax(0,1fr) auto}
+.wlnb-note-row>svg{color:#f4c96f;background:linear-gradient(125deg,#3b4727,#142d1c);border-radius:7px}
+.wlnb-note-row strong{color:#fff1df;font-size:clamp(13px,1.7vw,17px)}
+.wlnb-note-row small{color:#d4e1d3}
+.wlnb-note-row time,.wlnb-note-row .wlnb-row-meta{color:#f2c870}
+.wlnb-quicklists{padding:14px 12px}
+.wlnb-quick-row{min-height:40px;border-color:#789c70;margin-top:5px}
+.wlnb-quick-row strong{font-size:clamp(12px,1.7vw,16px)}
+.wlnb-banner{font-size:11px;margin:4px 0 0}
+
+@media(max-width:459px){
+ .wlnb-hero,.wlnb-hero-inner{min-height:247px}
+ .wlnb-hero-inner{padding:12px 12px 17px}
+ .wlnb-hero{background-position:69% center}
+ .wlnb-hero:before{background:linear-gradient(90deg,#00180fee,#001c13d5 52%,#001a1250),linear-gradient(0deg,#001b12ab,transparent 45%)}
+ .wlnb-hero h1{font-size:30px;max-width:345px;line-height:1.06}
+ .wlnb-hero p{font-size:12px;max-width:345px}
+ .wlnb-brand>svg{width:34px;height:34px}
+ .wlnb-brand strong{font-size:19px}
+ .wlnb-brand small{font-size:8px;letter-spacing:1.5px}
+ .wlnb-head-actions button{width:31px;height:31px;padding:6px}
+ .wlnb-head-actions svg{width:19px;height:19px}
+ .wlnb-actions{padding:9px 8px 11px;gap:5px}
+ .wlnb-action{min-height:77px;padding:7px 1px;gap:6px;border-radius:11px}
+ .wlnb-action svg{width:25px;height:25px}
+ .wlnb-action span{font-size:10px}
+ .wlnb-body{padding:13px 10px 22px;gap:16px}
+ .wlnb-book{height:112px}
+ .wlnb-book strong{font-size:12px}
+ .wlnb-sectiontop h2{font-size:23px}
+ .wlnb-sectiontop button{font-size:11px}
+ .wlnb-glance-row{min-height:45px}
+ .wlnb-quick-row{grid-template-columns:22px minmax(0,1fr) auto 17px}
+ .wlnb-quick-row strong{font-size:14px}
+}
+@media(min-width:460px){
+ .wlnb-hero,.wlnb-hero-inner{min-height:290px}
+ .wlnb-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .wlnb-book{height:133px;min-height:0}
+ .wlnb-actions{gap:9px;padding:12px 16px 14px}
+ .wlnb-body{padding:16px 17px 30px;gap:20px}
+ .wlnb-action{min-height:90px}
+ .wlnb-action span{font-size:13px}
+ .wlnb-hero-inner{padding:18px 21px 25px}
+}
+@media(min-width:730px){
+ .wlnb-hero,.wlnb-hero-inner{min-height:325px}
+ .wlnb-hero{background-position:75% center}
+ .wlnb-hero:before{background:linear-gradient(90deg,#00180fe9 0%,#002318c5 34%,#00221832 65%,#001a1100),linear-gradient(0deg,#001b1290,transparent 36%)}
+ .wlnb-hero h1{font-size:48px}
+ .wlnb-hero p{font-size:17px}
+ .wlnb-head-actions button{height:44px;width:44px}
+ .wlnb-shelf,.wlnb-lower{grid-template-columns:minmax(0,2.05fr) minmax(0,1fr);gap:17px}
+ .wlnb-body{gap:24px;padding:19px 21px 35px}
+ .wlnb-actions{gap:12px;padding:14px 24px 19px}
+ .wlnb-action{min-height:113px}
+ .wlnb-action svg{height:36px;width:36px}
+ .wlnb-action span{font-size:16px}
+ .wlnb-book-grid{gap:10px}
+ .wlnb-book{height:157px}
+ .wlnb-book strong{font-size:20px}
+ .wlnb-book small{font-size:12px}
+ .wlnb-glance,.wlnb-quicklists{min-height:100%}
+ .wlnb-glance-row{padding:15px 0;min-height:68px}
+ .wlnb-note-row{min-height:75px}
+ .wlnb-note-row strong{font-size:17px}
+ .wlnb-note-row small{font-size:12px}
+ .wlnb-quick-row{min-height:49px}
+}
