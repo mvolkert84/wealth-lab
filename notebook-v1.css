@@ -98,3 +98,9 @@
 @media(min-width:460px){.wlnb-hero,.wlnb-hero-inner{min-height:326px}.wlnb-hero-inner{padding:20px 21px 27px}.wlnb-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.wlnb-actions{gap:8px;padding:14px 18px}.wlnb-body{padding:14px 18px 30px}.wlnb-book{min-height:145px}}
 @media(max-width:380px){.wlnb-head{gap:4px}.wlnb-brand>svg{width:34px;height:34px}.wlnb-brand strong{font-size:18px}.wlnb-brand small{font-size:7px;letter-spacing:1.5px}.wlnb-hero,.wlnb-hero-inner{min-height:283px}.wlnb-hero-inner{padding:14px 11px 18px}.wlnb-actions{gap:4px;padding:9px 8px 13px}.wlnb-action{min-height:83px;border-radius:11px;padding:7px 1px;gap:6px}.wlnb-action svg{width:22px;height:22px}.wlnb-action span{font-size:9px}.wlnb-sectiontop h2{font-size:22px}.wlnb-book{min-height:133px}.wlnb-book strong{font-size:14px}.wlnb-note-row{grid-template-columns:30px minmax(0,1fr) auto}.wlnb-note-row>svg{width:24px;height:24px}.wlnb-note-row strong{font-size:13px}.wlnb-note-row time,.wlnb-note-row .wlnb-row-meta{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.wlnb{animation:none}}
+
+/* Keep the saved/starred note control compact and touch-friendly. */
+.wlnb-form .wlnb-checkline{display:flex;flex-direction:row;align-items:center;gap:10px;cursor:pointer}
+.wlnb-form .wlnb-checkline input{width:18px;height:18px;min-width:18px;accent-color:#e6bf70;margin:0}
+.wlnb-quick-row:active,.wlnb-note-row:active,.wlnb-book:active{filter:brightness(1.08)}
+.wlnb-action:active{transform:translateY(1px)}
