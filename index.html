@@ -1429,7 +1429,35 @@ document.addEventListener('click',e=>{if(e.target.id==='chatDialog')$('#chatDial
 document.addEventListener('input',e=>{let t=e.target;if(t.dataset.localInput){state.localAreas[t.dataset.localInput]=t.value.slice(0,90);persist()}else if(t.dataset.range){setCalcValue(t.dataset.range,t.value);persist();refreshTool()}else if(t.dataset.calcInput!==undefined){if(t.value.trim()!==''){setCalcValue(t.dataset.calcInput,t.value);persist();refreshTool()}}else if(t.dataset.note){state.notes[t.dataset.note]=t.value;persist()}else if(t.dataset.nbDraft!==undefined){state.nbDraft[t.dataset.nbDraft]=t.type==='checkbox'?t.checked:t.value;persist()}else if(t.hasAttribute('data-nb-bookname')){state.nbBookDraft=t.value;persist()}else if(t.hasAttribute('data-nb-search')){state.nbQuery=t.value;persist();nbSearchFilter()}else if(t.hasAttribute('data-tools-search')){const q=t.value.trim().toLowerCase();let shown=0;for(const card of document.querySelectorAll('[data-tools-filter]')){const ok=card.dataset.toolsFilter.includes(q);card.hidden=!ok;if(ok)shown++}const empty=document.querySelector('.wt-search-empty');if(empty)empty.hidden=shown>0}else if(t.hasAttribute('data-learn-search')){state.learnQuery=t.value;persist();wlLearnRefreshSearch()}else if(t.hasAttribute('data-search')){state.search=t.value;persist();/* Preserve cursor: filter matching note cards in place. */for(let card of document.querySelectorAll('.note-card')){let text=card.innerText.toLowerCase();card.style.display=text.includes(state.search.toLowerCase())?'':'none'}}});
 document.addEventListener('change',e=>{if(e.target.id==='wlnb-import-file'){nbImportNotes(e.target.files?.[0]);e.target.value=''}else if(e.target.dataset.nbDraft!==undefined){state.nbDraft[e.target.dataset.nbDraft]=e.target.type==='checkbox'?e.target.checked:e.target.value;persist()}else if(e.target.hasAttribute('data-tax-status')){state.calc.taxStatus=e.target.value;persist();render(false)}else if(e.target.dataset.calcInput!==undefined){setCalcValue(e.target.dataset.calcInput,e.target.value||0);persist();refreshTool()}else if(e.target.hasAttribute('data-learn-level')){state.learnLevel=e.target.value;render(false)}else if(e.target.hasAttribute('data-learn-sort')){state.learnSort=e.target.value;render(false)}else if(e.target.id==='importFile'){importBackup(e.target.files[0]);e.target.value=''}else if(e.target.dataset.statePick==='state-primary'){state.stateCode=e.target.value;persist();render(false)}else if(e.target.dataset.statePick==='state-compare'){state.compareStateCode=e.target.value;persist();render(false)}});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e});
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+// A new release is offered, not silently reloaded: preserve in-progress lesson work.
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => {
+    const wasControlled = !!navigator.serviceWorker.controller;
+    const offerUpdate = () => {
+      if (!wasControlled || document.getElementById('wl-update-prompt')) return;
+      const notice = document.createElement('div');
+      notice.id = 'wl-update-prompt';
+      notice.setAttribute('role', 'status');
+      notice.innerHTML = '<span>New Wealth Lab design is ready.</span><button type="button">Refresh</button>';
+      notice.querySelector('button').addEventListener('click', () => {
+        persist();
+        window.location.reload();
+      });
+      document.body.appendChild(notice);
+    };
+    navigator.serviceWorker.register('./sw.js').then(registration => {
+      if (registration.waiting) offerUpdate();
+      registration.addEventListener('updatefound', () => {
+        const installing = registration.installing;
+        if (installing) installing.addEventListener('statechange', () => {
+          if (installing.state === 'installed') offerUpdate();
+        });
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', offerUpdate);
+      registration.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
 // Deep link to a lesson: index.html#L2.S3
 const hash=decodeURIComponent(location.hash.slice(1));if(SECTION_BY_ID[hash]){state.section=hash;state.module=moduleOf(hash).id;state.tab='Learn';state.view='reader'}else if(hash==='states'){state.view='states'}
 render(false);
