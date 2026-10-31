@@ -22,7 +22,7 @@ const sandbox={
 };
 sandbox.window=sandbox;
 runInNewContext(read('academy-depth-core.js'),sandbox,{filename:'academy-depth-core.js'});
-const chapters=['L7.S3','L8.S3','L9.S1','L10.S1','L13.S2','L15.S3'];
+const chapters=["L7.S3","L8.S3","L9.S1","L10.S1","L13.S2","L15.S3","L7.S2","L7.S4","L8.S1","L8.S4","L9.S2","L9.S3"];
 for(const id of chapters){
  const path='academy-chapters/'+id+'.js';
  assert.ok(html.includes('src="./'+path+'?v=1.0.0"'),'Not loaded by canonical app: '+path);
@@ -44,6 +44,6 @@ for(const id of chapters){
   assert.ok(sw.includes("'./academy-chapters/"+id+".js?v=1.0.0'"),'Offline cache missing '+id);
 }
 assert.ok(sw.includes("'./academy-depth-core.js?v=1.0.0'"),'Offline registry missing');
-assert.ok(sw.includes('wealth-lab-v6.1.0-expanded-textbooks'),'PWA version not refreshed');
-console.log('PASS: '+chapters.length+' complete new chapters, 36 parts, 72 part checks, 18 final checks.');
+assert.ok(sw.includes('wealth-lab-v6.2.0-expanded-textbooks-wave2'),'PWA version not refreshed');
+console.log('PASS: '+chapters.length+' modular chapters, '+(chapters.length*6)+' reading parts, '+(chapters.length*12)+' part checks, '+(chapters.length*3)+' final checks.');
 console.log('PASS: Stable 59 section IDs, real reading depth, cases, sources and offline cache.');
