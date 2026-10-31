@@ -48,3 +48,12 @@
 @media(min-width:620px){.wm-head{padding:25px 30px 23px}.wm-content{max-width:680px;margin:auto;padding:20px 25px 30px;gap:13px}.wm-stats{gap:12px}.wm-fold>summary{padding:16px}.wm-panel{padding:17px 19px}.wm-heading h1{font-size:42px}}
 @media(max-width:370px){.wm-content{padding:12px 9px 24px}.wm-head{padding:17px 12px}.wm-heading h1{font-size:33px}.wm-fold-title strong{font-size:15px}.wm-fold>summary{gap:8px;padding:12px 10px}.wm-stat strong{font-size:20px}.wm-setting{gap:6px}}
 @media(prefers-reduced-motion:reduce){.wm-chevron{transition:none}}
+
+/* Match the bottom-navigation icon treatment used by approved Notebook. */
+.wm-panel .wm-btn svg{height:17px;width:17px;flex:none;margin-right:6px}
+.app.wm-active .bottom{background:#031c15f5;border-top:1px solid #477c59;border-radius:20px 20px 0 0;padding:10px 5px calc(13px + env(safe-area-inset-bottom))}
+.app.wm-active .bottom button{color:#e7ede0;gap:5px}
+.app.wm-active .bottom button svg{height:23px;width:23px;stroke-width:1.6}
+.app.wm-active .bottom button.active{color:#efc778}
+.app.wm-active .bottom button.active:after{content:"";width:60%;max-width:65px;height:3px;margin-top:3px;background:#f1ce79;border-radius:4px}
+.app.wm-active .bottom button small{font-size:11px;color:inherit}
