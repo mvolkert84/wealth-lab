@@ -450,3 +450,47 @@ body{background:var(--wl-emerald-950);color:var(--wl-cream);font-family:var(--wl
   font:750 12px/1.2 var(--wl-type-sans);
   white-space:nowrap;
 }
+
+
+/* State homebuyer-program details: remove the last legacy ivory panels. */
+.state-page .state-agency{
+  background:linear-gradient(155deg,#0b3529,#06261e);
+  border-color:#557258;
+  color:var(--wl-cream);
+}
+.state-page .state-agency h3{color:#f5e3c1}
+.state-page .state-agency p{color:#ccdacc}
+.state-page .state-agency .eyeline{color:var(--wl-gold-300)}
+.state-page .state-link{
+  background:#135641;
+  border:1px solid #477b59;
+  color:#fff0db!important;
+}
+.state-page .state-select{
+  background:#082a21;
+  color:#f5eddd;
+  border:1px solid #678269;
+}
+.state-page .state-rates>div,.state-page .local-card{
+  background:#092f25;
+  border-color:var(--wl-green-border);
+}
+.state-page .program-card{background:linear-gradient(155deg,#0d382b,#07261f)}
+.state-page .compare-detail-column{background:#092d23;border-color:var(--wl-green-border)}
+.state-page .comparison-table{border-color:var(--wl-green-border)}
+.state-page .state-big-code{background:#103e2e;color:#e8c982;border-color:#7a8060}
+.state-page .program-amount,.state-page .state-rates strong{color:var(--wl-gold-300)}
+
+/* Harmonize editable text controls without affecting radio/checkbox/range inputs. */
+:is(.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more,.state-page) :is(
+ input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+ textarea,select
+){
+  color:#f4ebdc;
+  border-color:#648168;
+  accent-color:var(--wl-gold-500);
+}
+:is(.wl-learn,.wl-tools,.wl-reader,.wlnb,.wl-more,.state-page) :is(
+ input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+ textarea,select
+)::placeholder{color:#b4c5b6;opacity:1}
