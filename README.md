@@ -20,3 +20,11 @@ Built from the approved Wealth Lab Professional Dark design.
 ## State Explorer (v1.2)
 
 Visit Home → **Explore states & programs**, Tools → **State programs**, or More → **Select a state**. Coverage includes all 50 states plus Washington, D.C., with official HFA agencies and directory links. National FHA, USDA, VA and conventional loan introductions are linked to primary sources. The Freddie Mac rates displayed are explicitly dated **October 29, 2026** and are a historical *national benchmark*, not live quotes or guaranteed state-specific rates. Real offers, program funding, assistance amounts, county/property tax rules, closing costs and mortgage approval must be verified with the relevant agency or lender. The selected state persists using the existing local save key, preserving lesson progress and notes.
+
+## Actual assistance catalog (v1.3 · October 31, 2026)
+
+State Explorer lists **81 named homeownership and down-payment programs** across all **50 states and Washington, DC**. Each program card displays its advertised assistance description, likely repayment structure, key restrictions, status note, and an official housing-agency program URL. The selected state and comparison state persist in the same local storage used in previous releases; this update does not reset progress, quizzes, bookmarks or notes.
+
+The entries are **research references rather than live eligibility or reservation offers**. Some funding rounds may close or reopen. Advertised amounts are ceilings, examples, or program-specific figures, and can require loan pricing trade-offs, second lien repayment, homebuyer education, residency, income and geographic conditions. The app uses a dated Freddie Mac national rate benchmark instead of inventing a state-specific lender quote. Users must verify current availability with the agency and a participating lender.
+
+Research sources: primary state agency pages, [NCSHA](https://www.ncsha.org/housing-help/), and selected adapted descriptions from [DPA Finder Open Data](https://dpafinder.org/data/) made available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit to DPA Finder for its compilation and checking of program information. Some listings carry an explicit "agency confirmation needed" label where independently confirmed terms/funds remain uncertain.
