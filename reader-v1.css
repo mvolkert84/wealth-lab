@@ -192,3 +192,37 @@
  .wlr-hero h1{font-size:40px}
 }
 @media(prefers-reduced-motion:reduce){.wl-reader *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Deeper learning, concept comparisons and casework in the same theme.
+   These older sections had ivory backgrounds with dark-on-dark text. */
+.wl-reader .deep-dive{border-top:1px solid #4d7858;margin:18px 0 8px;padding-top:17px}
+.wl-reader .deep-marker{color:#f3d48d}
+.wl-reader .article .deep-head h3{font:700 22px/1.16 Georgia,serif;color:#fae9c8}
+.wl-reader .article .deep-head p{color:#d9e9d9!important;font-size:calc(var(--reader-size) - 1px);line-height:1.6}
+.wl-reader .deep-steps{background:#082f23;border:1px solid #54795d;border-radius:12px;padding:4px 12px}
+.wl-reader .deep-step{border-bottom:1px solid #45664f;gap:10px}
+.wl-reader .deep-step .step-num{background:#bf9456;color:#0c2519}
+.wl-reader .deep-step .step-text strong{color:#f2d291;font-size:11px}
+.wl-reader .deep-step .step-text b{color:#f8ebd4;font:700 18px/1.2 Georgia,serif}
+.wl-reader .deep-step .step-text small{color:#c5d4c4;font-size:12px}
+.wl-reader .deep-more{background:#082d22;border:1px solid #587b5f;border-radius:11px;margin:11px 0}
+.wl-reader .deep-more summary{color:#f3d184;font-size:12px}
+.wl-reader .deep-more[open] summary{border-bottom:1px solid #44694f}
+.wl-reader .deep-inner{color:#e4efdf;font-size:12px}
+.wl-reader .deep-inner>strong{color:#f4deaf}
+.wl-reader .deep-inner>p{color:#e2ecdf}
+.wl-reader .deep-row{border-bottom:1px solid #43644e}
+.wl-reader .deep-row>span{color:#e5e9da}
+.wl-reader .deep-row small{color:#b5ccb8}
+.wl-reader .deep-row b{color:#f4d78b}
+.wl-reader .deep-footnote{color:#baceb8!important}
+.wl-reader .deep-prompt{background:#113e2d;border:1px solid #6d8f68;color:#e9f0e4}
+.wl-reader .deep-prompt span{color:#f3d08a}
+.wl-reader .deep-prompt p{color:#e1eade}
+.wl-reader .academy-note{color:#bed5c0!important}
+/* High-contrast practice and source callouts are never pale paper panels. */
+.wl-reader .book-case-file .book-thinking{background:#123d2c;color:#eaf0e2}
+.wl-reader .book-case-file .book-thinking p{color:#e1eadc!important}
+.wl-reader .book-practitioner .practitioner-copy a{color:#e9c676}
+.wl-reader .book-practitioner .practitioner-copy small{color:#bbd3bd}
