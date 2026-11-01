@@ -52,7 +52,7 @@ assert.equal(env.WealthLabInvestingLabMarkup({id:'L3.S3'}),'','Numerical labs mu
 assert.ok(!lab.includes('localStorage')&&!lab.includes('fetch('),'New practice inputs must remain local and never be stored or uploaded');
 assert.ok(html.includes('WealthLabInvestingLabMarkup(s)'),'Examples tab must attach investing practice');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Saved progress and notes key must not change');
-const sw=read('sw.js');assert.ok(sw.includes('wealth-lab-v6.8.0-insurance-gold-edition'));
+const sw=read('sw.js');assert.ok(sw.includes('wealth-lab-v6.9.0-tax-gold-edition'));
 assert.ok(sw.includes("'./academy-gold-investing-labs.js?v=2.0.0'"));
 const source3=read('academy-chapters/L4.S3-edition2.js');
 assert.ok(source3.includes('2026')&&source3.includes('$7,500')&&source3.includes('taxable compensation'),'Current IRA limits must be dated, qualified and sourced');
