@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.4 Foundations gold-standard conversion
+**Updated:** October 31, 2026 · **Release:** v6.5 Mortgage gold-standard conversion
 
 ## What this is, and isn't
 
@@ -59,7 +59,33 @@ All four existing Foundations lessons, L1.S1 through L1.S4, now use 12-part gold
 | L1.S3 · Compound Growth | 4,125 | Compounding, fees and purchasing power |
 | L1.S4 · Debt and Leverage | 4,175 | Amortizing loan payments |
 
-**Gold-standard progress: 4 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
+**Gold-standard progress: 7 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
+
+## Mortgage curriculum completed · Gold Edition v6.5
+
+All three existing **M2 mortgage lessons** have twelve-part second editions with original reading positions and saved-answer keys preserved. Live mortgage arithmetic workbooks run locally in the **Examples** tab and do not save users' entries.
+
+| Lesson | Verified reading words | Financial competence |
+|---|---:|---|
+| L2.S1 · What a Mortgage Really Is | 4,113 | Deed versus note versus security lien; fixed/adjustable rates; Loan Estimates; underwriting; cash after closing |
+| L2.S2 · Down Payment vs. Reserves | 4,147 | Closing funds, LTV, mortgage insurance, repair reserves, CHFA assistance and contingent second liens |
+| L2.S3 · The Anatomy of a Mortgage | 4,053 | Loan amortization, escrow, points, refinancing, insurance and property-cost stress |
+
+**M1 + M2 gold total: 7 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
+
+**Next existing course: M3 · Trusts and Estate Planning.** L3.S2 already has a brief six-part textbook that needs comprehensive expansion. L3.S1 and L3.S3 are shorter legacy lessons; they need to become full textbook chapters using a new adapter that preserves their current single-lesson IDs and answers. Following M3, continue through the remaining M4–M16 curriculum, expanding the current 17 non-gold multi-part lessons and 35 short-form lessons before adding new courses.
+
+### Required coverage in the remaining existing lessons
+
+- **Estate and inheritance:** trust creation and funding; revocable versus irrevocable control; beneficial ownership, trustees, heirs, mortgages, state-law limits and maintaining inherited property
+- **Equity and investing:** statements, stock ownership, funds, diversification, correlation, taxes, risk-adjusted returns and portfolio policy
+- **Insurance:** mortality protection, cash-value mechanics, loans, lapse tax consequences, health/disability coverage and insurance suitability
+- **Tax:** taxable income, withholding, capital-gain basis, marginal versus effective rates, account wrappers, trusts and estate planning
+- **Retirement:** contribution limits and eligibility as-of-date, accumulation, withdrawals, inflation and sequence-of-return risk
+- **Real estate and business:** rental cash flows, NOI, financing, leverage, ownership structures, capex, capital budgeting and business risk
+- **Professional-level application:** accounting foundations, quantitative methods, behavioral finance, fiduciary and ethics casework, independent data research and full financial plan capstone
+
+No degree-credit or professional certification should be implied by this independent curriculum. Maintain two separate statuses: **existing content expanded to gold depth** and **external accreditation (not provided)**.
 
 ## Curriculum objectives by level
 
