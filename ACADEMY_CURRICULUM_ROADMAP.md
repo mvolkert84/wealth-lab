@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** November 1, 2026 · **Release:** v6.8 Insurance gold-standard conversion
+**Updated:** November 1, 2026 · **Release:** v6.9 Taxes and Advanced Strategies gold-standard conversion
 
 ## What this is, and isn't
 
@@ -59,7 +59,7 @@ All four existing Foundations lessons, L1.S1 through L1.S4, now use 12-part gold
 | L1.S3 · Compound Growth | 4,125 | Compounding, fees and purchasing power |
 | L1.S4 · Debt and Leverage | 4,175 | Amortizing loan payments |
 
-**Gold-standard progress: 15 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
+**Gold-standard progress: 17 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
 
 ## Mortgage curriculum completed · Gold Edition v6.5
 
@@ -71,9 +71,9 @@ All three existing **M2 mortgage lessons** have twelve-part second editions with
 | L2.S2 · Down Payment vs. Reserves | 4,147 | Closing funds, LTV, mortgage insurance, repair reserves, CHFA assistance and contingent second liens |
 | L2.S3 · The Anatomy of a Mortgage | 4,053 | Loan amortization, escrow, points, refinancing, insurance and property-cost stress |
 
-**M1 + M2 + M3 + M4 + M5 gold total: 15 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
+**M1 + M2 + M3 + M4 + M5 + M6 gold total: 17 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
 
-**Next existing course: M6 · Taxes and Advanced Strategies.** M5 has now been upgraded from two legacy short lessons to full academic textbooks. There are 44 lessons left to reach gold depth: 29 short-form lessons requiring full conversion and 15 existing multi-part textbooks requiring full revision. All existing lesson IDs and answers remain unchanged.
+**Next existing course: M7 · Economics and Financial Math.** M6's two original short-form lessons now have complete academically deep textbooks and practical cases. There are 42 existing lessons left: 27 older short-form conversions and 15 existing multi-part textbook revisions. All existing lesson IDs and answers remain unchanged.
 
 ### Required coverage in the remaining existing lessons
 
@@ -101,7 +101,7 @@ The M3 group adds **36 reading parts, 72 part-specific questions, 18 additional 
 
 The new `academy-gold-short-converter.js` makes it possible to upgrade the other legacy short lessons without replacing user notes and bookmarks. `scripts/check-gold-estates.mjs` validates the new material and old question structure.
 
-**Gold-standard progress: 15/59; 44 existing lessons remain.** The next course is M6 Taxes and Advanced Strategies. Gold depth is a self-study quality measure, not accreditation, college credit or an official professional qualification.
+**Gold-standard progress: 17/59; 42 existing lessons remain.** The next course is M7 Economics and Financial Math. Gold depth is a self-study quality measure, not accreditation, college credit or an official professional qualification.
 
 ## Investing and Growth complete · Gold Edition v6.7
 
@@ -133,6 +133,21 @@ Both original M5 lessons are now comprehensive **12-part textbooks** built from 
 The original `L5.S1` and `L5.S2` section IDs and short-form quiz questions are preserved, and the standard `wealthlab-state-v1` notes, progress and bookmarks remain intact. `scripts/check-gold-insurance.mjs` validates chapter length, question quality, source registration, offline cache and private workbooks alongside earlier courses.
 
 **Current completed coverage: 15 / 59 lessons across M1–M5.** Remaining are 44 pre-existing lessons: 29 short-form conversions and 15 existing multi-part textbook revisions. Next is **M6 Taxes and Advanced Strategies**, followed by the advanced investing, retirement, property and financial-planning courses. This is independent self-study, not formal university accreditation.
+
+## Taxes and Advanced Strategies complete · Gold Edition v6.9
+
+Two existing M6 short-form lessons have been upgraded to full academic textbooks using verified IRS 2026 tax guidance, IRS Publications 551 and 523, and Connecticut Department of Revenue Services guidance.
+
+| Existing lesson | Verified instructional words | Demonstrated competencies |
+| --- | ---: | --- |
+| L6.S1 · Taxes: The Rules of the Game | 4,036 | Gross versus taxable income, progressive brackets, credits and deductions, standard versus itemizing, withholding, capital gains and cost basis, home-sale proceeds versus gains, gift and inheritance basis, tax-year-specific credits and Connecticut tax |
+| L6.S2 · The High-Stakes Fine Print | 4,773 | Trust tax classification, life-insurance loan taxation, loan and lien accounting, inherited property, 2026 gift and estate law, rental conversion, benefit rights, promoted tax-avoidance claims and evidence-based decision memos |
+
+**M6 adds 24 textbook reading parts, 8,809 instructional words, 48 part-specific questions, 12 cumulative checks, two detailed professional cases and two local-only numerical workbooks.** The calculators teach deduction effects versus credits and house-sale gain versus closing proceeds, as well as stressed home equity and separately compounding insurance-policy loan liabilities. Values are hypothetical and do not constitute personal tax calculations or legal opinions.
+
+The original L6.S1 and L6.S2 lesson identifiers, first-edition standalone quizzes, notes, bookmarks and `wealthlab-state-v1` key remain unchanged. `scripts/check-gold-tax.mjs` and prior curriculum tests passed in GitHub Actions. Current full-course Gold Edition coverage is **17/59 existing lessons (M1–M6)**; 42 remain, including 27 short-form lessons and 15 older multi-part textbooks.
+
+**Next existing course: M7 Economics and Financial Math.** Complete the existing lessons before adding new topics. This independent self-study program is not an accredited educational qualification.
 
 ## Curriculum objectives by level
 
