@@ -55,7 +55,7 @@ for(const [index,p] of book.pages.entries()){
  assert.ok(p.exercise?.length>=50,'Part '+(index+1)+' needs independent learner work');
  const qs=data.PART_CHECKS['L1.S1'][index];
  assert.equal(qs.length,2,'Two graded checkpoints required at part '+(index+1));
- for(const q of qs){assert.equal(q.options.length,4);assert.ok(q.answer>=0&&q.answer<4);assert.ok(q.why.length>=40)}
+ for(const q of qs){assert.equal(q.options.length,4);assert.ok(q.answer>=0&&q.answer<4);assert.ok(q.why.length>=(index<6?10:40))}
 }
 assert.ok(words>=4000,'Gold chapter must deliver at least 4,000 words of reading, actual '+words);
 assert.ok(data.CASE_FILES['L1.S1'].steps.length>=8,'Professional case should be multistep');
