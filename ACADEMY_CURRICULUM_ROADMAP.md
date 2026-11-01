@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.2 textbook depth expansion
+**Updated:** October 31, 2026 · **Release:** v6.3 rigorous textbook revision
 
 ## What this is, and isn't
 
@@ -15,9 +15,17 @@ External course blueprints:
 - https://www.consumerfinance.gov/consumer-tools/educator-tool/your-money-your-goals/toolkit/
 - https://www.investor.gov/introduction-investing
 
+## Curriculum quality decision · v6.3
+
+**Freeze adding new lesson IDs or modules until the existing 59 lessons are properly taught.** The first accepted pilot is **L1.S1 — The Wealth Equation (Edition 2)**: 12 substantive reading parts, more than 4,000 explanatory words, 24 part-specific questions, seven chapter-check questions, a multi-step financial advisory case, and a live balance-sheet worksheet with numerical self-checks. The original lesson question is retained, bringing the complete chapter to 32 check questions across formats.
+
+This gold standard is not automatically met by the other 23 multi-part chapters. Existing lesson depth is now **a separate quality measure** from whether a lesson has a chapter renderer. Upgrade first **L1.S2, L1.S3, L1.S4**, then the original mortgage and estate units, followed by the advanced chapters. Preserve existing lesson IDs and saved responses as the content grows.
+
+See [ACADEMY_GOLD_STANDARD.md](ACADEMY_GOLD_STANDARD.md) for teaching, math, assessment, evidence, compatibility and mobile requirements.
+
 ## Current verified state
 
-There are **16 courses, 59 stable lessons and 24 full six-part textbook chapters**, with **35 shorter lessons** still awaiting expansion. Two waves have added twelve chapters under their existing stable lesson IDs:
+There are **16 courses, 59 stable lessons and 24 multi-part textbook chapters**, including **one gold-standard 12-part second edition**. **35 lessons are still short-form**, and the other previously expanded textbooks will also need a quality pass against the new gold standard. Two waves have added twelve chapters under their existing stable lesson IDs:
 
 | Lesson | Title / contribution | Core competency |
 | --- | --- | --- |
