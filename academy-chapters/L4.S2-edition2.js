@@ -116,7 +116,7 @@ P("Inflation, interest rates and the real return the family can spend","Nominal 
 "Growing nominal wealth can conceal declining purchasing power, particularly when inflation, taxes and fees outpace investment returns.",
 "Forecast a $20,000 future expense under 2%, 3% and 4% inflation and compare with nominal and real investment scenarios.",
 [["Nominal return","Investment return measured in current dollars before adjusting for inflation."],["Real return","Growth adjusted for changes in purchasing power under a stated price index."]],
-[Q("5% nominal return and 3% inflation imply exact real return closest to:",["8%","5%","2.00%","1.94%"],3,"(1.05/1.03)−1≈0.019417, or 1.94%."),
+[Q("5% nominal return and 3% inflation imply exact real return closest to:",["8%","5%","2.00%","1.94%"],3,"Exact one-year real return equals (1.05/1.03)−1≈0.019417, or 1.94%, before other costs and taxes."),
 Q("A twenty-year future cost should be compared with:",["Only today's nominal account value","A future amount in the same dollar units and price assumptions","A guaranteed stock price","Only last year's inflation"],1,"Align future dollars and purchasing power with the goal date and assumptions.")],
 ["Real-return analyst","Show both purchasing-power-adjusted and nominal balances for long-term goals.","Investor.gov · Compound growth",SEC]),
 P("Rebalancing, drift and tax-aware portfolio maintenance","Market movements change risk exposures even when an investor never deposits or sells a security.",[
