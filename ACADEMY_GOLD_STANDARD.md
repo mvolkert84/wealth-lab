@@ -69,7 +69,7 @@ Added Features:
 
 Four original lessons have complete 12-part Gold Edition second editions: L1.S1 (4,159 instructional words), L1.S2 (4,070), L1.S3 (4,125), and L1.S4 (4,175). The three newer chapters use a reusable edition engine that appends new reading parts and assessments while preserving original question order, stable IDs and local notes/progress. Each of the three newer chapters includes an interactive, unsaved cash-flow, compound-interest or loan-math worksheet. All four chapters have a multi-step case, at least 24 part questions, and cumulative chapter checks.
 
-**Current verified gold-standard coverage is 7 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+**Current verified gold-standard coverage is 10 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
 
 ## Mortgage course completion — v6.5
 
@@ -82,7 +82,15 @@ Key teaching standards for mortgage-related legal and financial claims:
 - The buyer's lender approval and the family's real disposable cash are different calculations.
 - Every worked case distinguishes illustrative inputs from current official product offers and tests repayment and home repair risks.
 
-Gold progress is now **7 of 59** lessons; M3 is next and requires a validated conversion path for legacy short-form chapters while retaining stable section IDs and original questions.
+Gold progress is now **10 of 59** lessons; M3 is complete and M4 Investing and Growth is next. The validated conversion path supports other legacy short-form chapters while retaining stable section IDs and original questions.
+
+## Trusts and Estates Gold Edition v6.6 — verified
+
+M3's original lessons now have comprehensive second editions: L3.S1 (4,088 explanatory words), L3.S2 (4,033), and L3.S3 (4,094). Two were originally short lessons and have been converted to first-class textbook chapters using `academy-gold-short-converter.js` without changing the stable original lesson IDs or standalone questions. The existing six parts and prior question positions of L3.S2 remain unchanged. All three have twelve parts with calculations and casework.
+
+The estate curriculum explicitly distinguishes trust legal title, economic control, liquidity, tax ownership, creditor rights, mortgage liens, insurance contract obligations, beneficiary distributions and family continuity. Simplified financial examples are not Connecticut legal conclusions or individualized tax advice. Three unsaved numerical workbooks demonstrate property equity, trustee costs, inheritance carry and sale proceeds.
+
+`scripts/check-gold-estates.mjs` validates the new short-form conversion path, academic depth, official references, practice questions, original IDs, private workbooks and offline cache. **Gold depth stands at 10/59 existing lessons**. The remaining 49 require revision or conversion: 16 existing multi-part textbooks and 33 short-form lessons. Next academic subject is M4 Investing and Growth.
 
 ## Remaining work — repair before expansion
 
