@@ -16,6 +16,7 @@ on:
       - academy-gold-estate-labs.js
       - academy-gold-investing-labs.js
       - academy-gold-insurance-labs.js
+      - academy-gold-tax-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -28,6 +29,7 @@ on:
       - scripts/check-gold-estates.mjs
       - scripts/check-gold-investing.mjs
       - scripts/check-gold-insurance.mjs
+      - scripts/check-gold-tax.mjs
       - .github/workflows/academy-reader-check.yml
   pull_request:
     paths:
@@ -43,6 +45,7 @@ on:
       - academy-gold-estate-labs.js
       - academy-gold-investing-labs.js
       - academy-gold-insurance-labs.js
+      - academy-gold-tax-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -55,6 +58,7 @@ on:
       - scripts/check-gold-estates.mjs
       - scripts/check-gold-investing.mjs
       - scripts/check-gold-insurance.mjs
+      - scripts/check-gold-tax.mjs
       - .github/workflows/academy-reader-check.yml
 
 jobs:
@@ -79,3 +83,4 @@ jobs:
           node scripts/check-gold-estates.mjs
           node scripts/check-gold-investing.mjs
           node scripts/check-gold-insurance.mjs
+          node scripts/check-gold-tax.mjs
