@@ -128,3 +128,11 @@ Each is a six-part original text with calculations, terminology, practitioner co
 Content lives in `academy-chapters/<lesson-id>.js`, registered by `academy-depth-core.js` without modifying the original section IDs or local storage. `index.html` includes the scripts after the curriculum registry, and `sw.js` precaches their versioned URLs for offline use. GitHub Actions runs `scripts/check-expanded-chapters.mjs` alongside the lesson reader and visual theme regression checks.
 
 See **[Academic Curriculum Roadmap](ACADEMY_CURRICULUM_ROADMAP.md)** for the 41 remaining lesson upgrades, missing university-level finance topics, learning outcomes, quality standards and credential disclaimer. This independent learning app is not an accredited degree or CFP/CFA credential.
+
+## Gold Standard Edition 2 · v6.3 (October 31, 2026)
+
+We are **revising the 59 existing lessons before building new curriculum modules**. The first pilot revises existing **L1.S1 — The Wealth Equation** in place, keeping its stable lesson ID, first six reading positions, earlier question IDs, local learning notes, bookmarks and completion flags. Edition 2 delivers **12 reading parts and more than 4,000 words of explanation**, 24 part questions, seven cumulative checks, the original section quiz, detailed financial examples and a multi-step household/mortgage case.
+
+The **Examples** tab now includes a local-only interactive balance-sheet and liquidity worksheet with three free-entry numeric calculations and explanatory feedback. User-entered figures are **not saved**. New edition questions are required to earn the expanded edition's mastery status; earlier stored answers remain unchanged.
+
+The new [Gold Standard Teaching Contract](ACADEMY_GOLD_STANDARD.md) defines the instructional and quantitative quality level required for all future existing-lesson revisions. The updated [curriculum roadmap](ACADEMY_CURRICULUM_ROADMAP.md) prioritizes Foundations before further course creation. The release regression adds `scripts/check-gold-standard.mjs`, verifying more than 4,000 reading words, example depth, lesson compatibility, workbook and offline assets. This is still an **independent self-study product, not an accredited qualification**.
