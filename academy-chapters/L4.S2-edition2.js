@@ -181,7 +181,7 @@ finalChecks:[
 Q("$6,000 needed soon loses 25% in equities. Remaining balance:",["$1,500","$4,500","$5,000","$7,500"],1,"A 25% loss on $6,000 leaves $4,500, below the immediate cash goal."),
 Q("Risk capacity describes:",["Personal emotional comfort only","Financial ability to withstand loss without compromising obligations","The stock exchange opening time","Guaranteed returns"],1,"Capacity is economic loss tolerance, distinct from emotional willingness."),
 Q("60% stocks returning −25%, 30% bonds +3%, 10% cash 0% produces return:",["−25%","−14.1%","+3%","+14.1%"],1,"Weighted return equals −15% + 0.9% = −14.1%."),
-Q("A $100 account earning +20% then −20% ends at:",["$80","$96","$100","$120"],1,"Compounded outcome $100×1.20×0.80=$96."),
+Q("A $100 account earning +20% then −20% ends at:",["$80","$96","$100","$120"],1,"Compounded outcome $100×1.20×0.80=$96, so the total holding-period return is a 4% loss."),
 Q("A 5% nominal return with 3% inflation has real return nearest:",["8%","5%","1.94%","3%"],2,"Exact real return is 1.05/1.03−1, approximately 1.94%."),
 Q("A sound investment policy should include:",["Only historical average returns","Goals, cash dates, downside stress and rules for reserves and allocation","A promised future refinance","A guarantee the market cannot fall"],1,"Good risk management links allocation to real cash requirements and adverse outcomes.")
 ],
