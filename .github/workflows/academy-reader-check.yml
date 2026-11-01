@@ -9,6 +9,8 @@ on:
       - visual-polish-v1.css
       - academy-depth-core.js
       - academy-gold-lab.js
+      - academy-gold-standard-core.js
+      - academy-gold-foundations-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -16,6 +18,7 @@ on:
       - scripts/check-visual-system.mjs
       - scripts/check-expanded-chapters.mjs
       - scripts/check-gold-standard.mjs
+      - scripts/check-gold-foundations.mjs
       - .github/workflows/academy-reader-check.yml
   pull_request:
     paths:
@@ -24,6 +27,8 @@ on:
       - visual-polish-v1.css
       - academy-depth-core.js
       - academy-gold-lab.js
+      - academy-gold-standard-core.js
+      - academy-gold-foundations-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -31,6 +36,7 @@ on:
       - scripts/check-visual-system.mjs
       - scripts/check-expanded-chapters.mjs
       - scripts/check-gold-standard.mjs
+      - scripts/check-gold-foundations.mjs
       - .github/workflows/academy-reader-check.yml
 
 jobs:
@@ -50,3 +56,4 @@ jobs:
           node scripts/check-visual-system.mjs
           node scripts/check-expanded-chapters.mjs
           node scripts/check-gold-standard.mjs
+          node scripts/check-gold-foundations.mjs
