@@ -69,10 +69,23 @@ Added Features:
 
 Four original lessons have complete 12-part Gold Edition second editions: L1.S1 (4,159 instructional words), L1.S2 (4,070), L1.S3 (4,125), and L1.S4 (4,175). The three newer chapters use a reusable edition engine that appends new reading parts and assessments while preserving original question order, stable IDs and local notes/progress. Each of the three newer chapters includes an interactive, unsaved cash-flow, compound-interest or loan-math worksheet. All four chapters have a multi-step case, at least 24 part questions, and cumulative chapter checks.
 
-**Current verified gold-standard coverage is 4 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+**Current verified gold-standard coverage is 7 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+
+## Mortgage course completion — v6.5
+
+M2 Gold Editions added **L2.S1 (4,113 instructional words), L2.S2 (4,147), and L2.S3 (4,053)**. Each preserves its original six reading positions, part questions and final answers while adding six advanced parts, independent worked scenarios, 12 new part-check questions and four new cumulative questions. The reader integrates all three with mobile-friendly private numeric worksheets covering loan comparisons, down payment and closing reserves, and amortization/escrow.
+
+Key teaching standards for mortgage-related legal and financial claims:
+- Loan Estimate and Closing Disclosure have distinct purposes; the latter is normally delivered with advance review time, subject to product-specific exceptions.
+- Different loan types have different mortgage insurance and program eligibility rules. Do not invent fixed/current mortgage rates, CHFA program awards, or approved down-payment assistance.
+- A trust, forgivable loan or deferred second lien cannot be assumed to cancel an existing mortgage or waive repayment conditions.
+- The buyer's lender approval and the family's real disposable cash are different calculations.
+- Every worked case distinguishes illustrative inputs from current official product offers and tests repayment and home repair risks.
+
+Gold progress is now **7 of 59** lessons; M3 is next and requires a validated conversion path for legacy short-form chapters while retaining stable section IDs and original questions.
 
 ## Remaining work — repair before expansion
 
-**Next priority:** M1 Foundations is complete at Gold Edition depth. Revise M2 mortgage and Connecticut housing lessons next, followed by M3 estate fundamentals, M4 investing and the other existing lessons. Hold off on adding course IDs until the existing 59 have been strengthened. Finish or substantially deepen all **59 existing lessons** before adding modules or titles.
+**Next priority:** M1 Foundations and M2 Mortgage are both gold-standard complete. Build M3 Trusts and Estate Planning in gold depth (including converting two short-form legacy lessons), then systematically revise M4–M16. Do not create new section IDs while existing lessons remain below standard. Hold off on adding course IDs until the existing 59 have been strengthened. Finish or substantially deepen all **59 existing lessons** before adding modules or titles.
 
 This framework will be updated as a lesson is genuinely revised and tested; do not mark a lesson complete based only on paragraph count. The learning app should teach a reader to **explain, calculate, challenge and decide**, not only recognize a definition.
