@@ -73,7 +73,7 @@ assert.ok(!lab.includes('localStorage'),'Financial figures must not be persisted
 assert.ok(html.includes('WealthLabGoldLabV2Markup(s)'),'Examples tab must mount workbook');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Saved progress key may not change');
 const sw=read('sw.js');
-assert.ok(sw.includes('wealth-lab-v6.5.0-mortgage-gold-edition'));
+assert.ok(sw.includes('wealth-lab-v6.6.0-estate-gold-edition'));
 assert.ok(sw.includes("'./academy-gold-foundations-labs.js?v=2.0.0'"));
 assert.ok(sw.includes("'./academy-gold-standard-core.js?v=2.0.0'"));
 console.log('PASS: Three original Foundations chapters fully upgraded; '+count+' reading words.');
