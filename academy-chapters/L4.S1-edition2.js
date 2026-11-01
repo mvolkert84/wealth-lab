@@ -177,7 +177,10 @@ P("Produce a professional stock-versus-fund recommendation","Selecting between a
 Q("A professional recommendation should provide:",["Only a forecast share price","Goal, security details, evidence, costs, adverse cases and a defensible alternative","Only an online advertisement","Guaranteed returns"],1,"An auditable investment choice connects financial objectives to verified economics, risk and liquidity.")],
 ["Portfolio selection committee","Review risk suitability and primary documents rather than projecting returns from slogans.","Investor.gov · Introduction to investing",SEC])
 ];
-WealthLabConvertShortChapter({id:"L4.S1",title:"Stocks, Funds, and Ownership — Financial Markets and Security Analysis",sources:[SEC,STOCK,FUNDS,ETF,DIVERSE],pages:parts,
+const keepOldPartOrder=[0,7,2,9,10,11];
+const addAdvancedParts=[1,3,4,5,6,8];
+const enriched=keepOldPartOrder.map(i=>{const p=parts[i];return{paragraphs:p.paragraphs,example:p.example,pitfall:p.pitfall,exercise:p.exercise}});
+WealthLabUpgradeChapter({id:"L4.S1",title:"Stocks, Funds, and Ownership — Financial Markets and Security Analysis",sources:[SEC,STOCK,FUNDS,ETF,DIVERSE],enrich:enriched,extraParts:addAdvancedParts.map(i=>parts[i]),
 finalChecks:[
 Q("Share price times shares outstanding is:",["Return on equity","Market capitalization","Net asset value","Expense ratio"],1,"Equity market capitalization measures total common share market value at a specific price."),
 Q("A $100 stock sold for $108 with a $3 dividend has simple total return:",["3%","8%","11%","108%"],2,"$8 in share appreciation plus $3 dividend equals $11 of return on $100 invested."),
