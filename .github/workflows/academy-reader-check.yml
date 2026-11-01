@@ -11,6 +11,7 @@ on:
       - academy-gold-lab.js
       - academy-gold-standard-core.js
       - academy-gold-foundations-labs.js
+      - academy-gold-mortgage-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -19,6 +20,7 @@ on:
       - scripts/check-expanded-chapters.mjs
       - scripts/check-gold-standard.mjs
       - scripts/check-gold-foundations.mjs
+      - scripts/check-gold-mortgages.mjs
       - .github/workflows/academy-reader-check.yml
   pull_request:
     paths:
@@ -29,6 +31,7 @@ on:
       - academy-gold-lab.js
       - academy-gold-standard-core.js
       - academy-gold-foundations-labs.js
+      - academy-gold-mortgage-labs.js
       - 'academy-chapters/**'
       - sw.js
       - manifest.webmanifest
@@ -37,6 +40,7 @@ on:
       - scripts/check-expanded-chapters.mjs
       - scripts/check-gold-standard.mjs
       - scripts/check-gold-foundations.mjs
+      - scripts/check-gold-mortgages.mjs
       - .github/workflows/academy-reader-check.yml
 
 jobs:
@@ -57,3 +61,4 @@ jobs:
           node scripts/check-expanded-chapters.mjs
           node scripts/check-gold-standard.mjs
           node scripts/check-gold-foundations.mjs
+          node scripts/check-gold-mortgages.mjs
