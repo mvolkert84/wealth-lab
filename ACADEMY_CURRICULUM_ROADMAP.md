@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.6 Estate gold-standard conversion
+**Updated:** October 31, 2026 · **Release:** v6.7 Investing gold-standard conversion
 
 ## What this is, and isn't
 
@@ -59,7 +59,7 @@ All four existing Foundations lessons, L1.S1 through L1.S4, now use 12-part gold
 | L1.S3 · Compound Growth | 4,125 | Compounding, fees and purchasing power |
 | L1.S4 · Debt and Leverage | 4,175 | Amortizing loan payments |
 
-**Gold-standard progress: 10 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
+**Gold-standard progress: 13 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
 
 ## Mortgage curriculum completed · Gold Edition v6.5
 
@@ -71,9 +71,9 @@ All three existing **M2 mortgage lessons** have twelve-part second editions with
 | L2.S2 · Down Payment vs. Reserves | 4,147 | Closing funds, LTV, mortgage insurance, repair reserves, CHFA assistance and contingent second liens |
 | L2.S3 · The Anatomy of a Mortgage | 4,053 | Loan amortization, escrow, points, refinancing, insurance and property-cost stress |
 
-**M1 + M2 + M3 gold total: 10 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
+**M1 + M2 + M3 + M4 gold total: 13 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
 
-**Next existing course: M4 · Investing and Growth.** M3 has now been fully expanded, including conversion of two legacy short-form lessons. There are 49 lessons left to reach gold depth: 33 short-form lessons requiring full conversion and 16 existing multi-part textbooks requiring full revision. All existing lesson IDs and answers remain unchanged.
+**Next existing course: M5 · Insurance and Protection.** M4 has now been fully upgraded, including in-place expansion of L4.S1 and conversion of two legacy short lessons. There are 46 lessons left to reach gold depth: 31 short-form lessons requiring full conversion and 15 existing multi-part textbooks requiring full revision. All existing lesson IDs and answers remain unchanged.
 
 ### Required coverage in the remaining existing lessons
 
@@ -101,7 +101,23 @@ The M3 group adds **36 reading parts, 72 part-specific questions, 18 additional 
 
 The new `academy-gold-short-converter.js` makes it possible to upgrade the other legacy short lessons without replacing user notes and bookmarks. `scripts/check-gold-estates.mjs` validates the new material and old question structure.
 
-**Gold-standard progress: 10/59; 49 existing lessons remain.** The next course is M4 Investing and Growth. Gold depth is a self-study quality measure, not accreditation, college credit or an official professional qualification.
+**Gold-standard progress: 13/59; 46 existing lessons remain.** The next course is M5 Insurance and Protection. Gold depth is a self-study quality measure, not accreditation, college credit or an official professional qualification.
+
+## Investing and Growth complete · Gold Edition v6.7
+
+M4 now delivers comprehensive market and tax education while retaining the original section IDs and standalone questions.
+
+| Existing lesson | Verified reading words | Major learning outcomes |
+| --- | ---: | --- |
+| L4.S1 · Stocks, Funds, and Ownership | 4,791 | Equity claims, market capitalization, financial statements, NAV and ETFs, fees, return calculations, diversification, research and due diligence |
+| L4.S2 · Risk, Time, and Liquidity | 4,146 | Goal deadlines, financial risk capacity, drawdowns, weighted portfolios, correlation, rebalancing, inflation, fixed-income sensitivity, withdrawal sequence and IPS |
+| L4.S3 · Investing with Tax Advantages | 4,064 | Traditional and Roth IRA mechanics, workplace match and vesting, 2026 IRS contribution limits, tax basis, HSA and 529 principles, after-tax alternatives and household liquidity |
+
+**New depth: 13,001 instructional reading words and 36 reading parts**, with 72 part-specific knowledge checks, 18 new cumulative questions, three professional decision cases and three locally calculated independent workbooks.
+
+The original six-part L4.S1 textbook was expanded in place, with its original headings, original question sequence and answer positions preserved; L4.S2 and L4.S3 were upgraded from older short lessons through the validated conversion engine. Source references prioritize Investor.gov and current IRS pages. Tax amounts are always dated (e.g., 2026), and no investment gains, retirement eligibility or tax savings are represented as guaranteed.
+
+`scripts/check-gold-investing.mjs` verifies the course, the original storage structure, calculation exercises and PWA offline inclusion. **Four whole existing courses now meet the Gold Edition standard: 13/59 lessons.** Continue with existing M5 insurance lessons, then M6 taxation before revising any remaining advanced material.
 
 ## Curriculum objectives by level
 
