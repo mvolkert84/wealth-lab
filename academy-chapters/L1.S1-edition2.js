@@ -52,6 +52,11 @@ const extended=[
 ];
 for(let i=0;i<6;i++)t.pages[i].paragraphs.push(...extended[i]);
 t.pages[0].pitfall="Income, net worth and safe-to-spend are different measurements. Transferring savings between accounts or taking a loan does not create new personal wealth.";
+t.pages[1].exercise="Estimate a realistic resale price for a used car, subtract its lender payoff, and explain why unused credit limits and historical purchase prices do not improve current net worth.";
+t.pages[2].exercise="Build the full pre-closing and post-closing balance sheets for the $250,000 home purchase. Check that both statements reconcile and separately identify cash costs and the mortgage liability.";
+t.pages[3].pitfall="A positive monthly budget does not prove the rent can be paid on time. Use dated income deposits and bill due dates; borrowing to conceal a shortfall can add more financial risk.";
+t.pages[4].exercise="Prepare a transaction bridge for a $400 payment of $360 principal plus $40 interest, a $200 transfer between cash accounts, and a new $5,000 loan deposited into checking.";
+t.pages[5].pitfall="A beneficiary may inherit a valuable property without the funds to maintain it. A trust does not automatically eliminate the property mortgage, ownership expenses or tax obligations."
 t.pages[1].example=[["Vehicle estimated sale value","$14,000"],["Vehicle loan payoff","$17,000"],["Vehicle equity","$14,000 − $17,000 = −$3,000"],["Credit line","$1,000 limit − $300 owed: only $300 is a liability; unused credit is not an asset"]];
 t.pages[4].example=[["Loan principal payment from existing cash","Assets −$400; liabilities −$400; net-worth change $0"],["Interest charge paid in cash","Assets −$40; liabilities unchanged; net-worth change −$40"],["New loan deposited in checking","Assets +$10,000; liabilities +$10,000; net-worth change $0"]];
 t.pages[5].example=[["Inherited home value","$250,000"],["Ongoing monthly property expenses (hypothetical)","$700"],["One-year carrying-cost reserve","$700 × 12 = $8,400; not including major repairs"]];
