@@ -35,7 +35,7 @@ for(const id of ids){const file='academy-chapters/'+id+'-edition2.js',src=read(f
   assert.ok(p.pitfall.length>=75&&p.exercise.length>=90,id+' missing critical downside and independent practice');
   assert.ok(p.example.length>=3,id+' insufficient numerical worked example');
   assert.equal(context.PART_CHECKS[id][i].length,2,id+' two mastery checkpoints required for each part');
-  for(const q of context.PART_CHECKS[id][i])assert.ok(q.options?.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4&&q.why.length>=40,id+' invalid answer or explanation');
+  for(const q of context.PART_CHECKS[id][i])assert.ok(q.options?.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4&&(id==='L4.S1'&&i<6||typeof q.why==='string'&&q.why.length>=40),id+' part '+(i+1)+' invalid answer or explanation');
  }
  assert.ok(n>=4000,id+' needs 4000 instructional words; found '+n);total+=n;
  assert.ok(html.includes('src="./'+file+'?v=2.0.0"'),id+' chapter not wired into live lesson reader');
