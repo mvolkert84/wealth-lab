@@ -48,7 +48,7 @@ assert.equal(env.WealthLabInsuranceLabMarkup({id:'L4.S1'}),'','Insurance labs mu
 assert.ok(!lab.includes('localStorage')&&!lab.includes('fetch('),'Independent financial input must not be saved or transmitted');
 assert.ok(html.includes('WealthLabInsuranceLabMarkup(s)'),'Existing Examples reader hook should include insurance workbooks');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Existing notes/progress persistence key must remain unchanged');
-assert.ok(read('sw.js').includes('wealth-lab-v6.8.0-insurance-gold-edition'));
+assert.ok(read('sw.js').includes('wealth-lab-v6.9.0-tax-gold-edition'));
 assert.ok(read('sw.js').includes("'./academy-gold-insurance-labs.js?v=2.0.0'"));
 assert.ok(read('academy-chapters/L5.S1-edition2.js').includes('www.irs.gov/publications/p525'),'Life-policy tax claims need IRS source');
 assert.ok(read('academy-chapters/L5.S2-edition2.js').includes('floodsmart.gov'),'Flood-risk source needs FEMA');
