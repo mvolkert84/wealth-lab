@@ -73,7 +73,7 @@ assert.ok(!lab.includes('localStorage'),'Financial figures must not be persisted
 assert.ok(html.includes('WealthLabMortgageLabMarkup(s)'),'Examples tab must mount workbook');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Saved progress key may not change');
 const sw=read('sw.js');
-assert.ok(sw.includes('wealth-lab-v6.6.0-estate-gold-edition'));
+assert.ok(sw.includes('wealth-lab-v6.7.0-investing-gold-edition'));
 assert.ok(sw.includes("'./academy-gold-mortgage-labs.js?v=2.0.0'"));
 assert.ok(sw.includes("'./academy-gold-standard-core.js?v=2.0.0'"));
 console.log('PASS: Three original Mortgage chapters fully upgraded; '+count+' reading words.');
