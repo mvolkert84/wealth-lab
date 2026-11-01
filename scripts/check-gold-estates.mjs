@@ -79,7 +79,7 @@ assert.ok(!lab.includes('localStorage'),'Estate numeric entries must not persist
 assert.ok(html.includes('WealthLabEstateLabMarkup(s)'),'Examples tab must show estate workbook');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Do not modify previous progress and notes storage');
 const sw=read('sw.js');
-assert.ok(sw.includes('wealth-lab-v6.8.0-insurance-gold-edition'));
+assert.ok(sw.includes('wealth-lab-v6.9.0-tax-gold-edition'));
 for(const asset of ['./academy-gold-short-converter.js?v=2.0.0','./academy-gold-estate-labs.js?v=2.0.0'])
  assert.ok(sw.includes("'"+asset+"'"),asset+' must be offline precached');
 console.log('PASS: Three original M3 lessons expanded/converted, '+wordTotal+' instructional words.');
