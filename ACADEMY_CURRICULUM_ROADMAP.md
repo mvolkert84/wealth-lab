@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.5 Mortgage gold-standard conversion
+**Updated:** October 31, 2026 · **Release:** v6.6 Estate gold-standard conversion
 
 ## What this is, and isn't
 
@@ -59,7 +59,7 @@ All four existing Foundations lessons, L1.S1 through L1.S4, now use 12-part gold
 | L1.S3 · Compound Growth | 4,125 | Compounding, fees and purchasing power |
 | L1.S4 · Debt and Leverage | 4,175 | Amortizing loan payments |
 
-**Gold-standard progress: 7 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
+**Gold-standard progress: 10 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
 
 ## Mortgage curriculum completed · Gold Edition v6.5
 
@@ -71,9 +71,9 @@ All three existing **M2 mortgage lessons** have twelve-part second editions with
 | L2.S2 · Down Payment vs. Reserves | 4,147 | Closing funds, LTV, mortgage insurance, repair reserves, CHFA assistance and contingent second liens |
 | L2.S3 · The Anatomy of a Mortgage | 4,053 | Loan amortization, escrow, points, refinancing, insurance and property-cost stress |
 
-**M1 + M2 gold total: 7 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
+**M1 + M2 + M3 gold total: 10 / 59 lessons.** The M2 group adds 36 new reading parts including 72 part-level questions, 12 new cumulative questions and three professional cases, while retaining all earlier original questions. These are educational examples; current rates, underwriting, property taxes and government-program conditions require verification.
 
-**Next existing course: M3 · Trusts and Estate Planning.** L3.S2 already has a brief six-part textbook that needs comprehensive expansion. L3.S1 and L3.S3 are shorter legacy lessons; they need to become full textbook chapters using a new adapter that preserves their current single-lesson IDs and answers. Following M3, continue through the remaining M4–M16 curriculum, expanding the current 17 non-gold multi-part lessons and 35 short-form lessons before adding new courses.
+**Next existing course: M4 · Investing and Growth.** M3 has now been fully expanded, including conversion of two legacy short-form lessons. There are 49 lessons left to reach gold depth: 33 short-form lessons requiring full conversion and 16 existing multi-part textbooks requiring full revision. All existing lesson IDs and answers remain unchanged.
 
 ### Required coverage in the remaining existing lessons
 
@@ -86,6 +86,22 @@ All three existing **M2 mortgage lessons** have twelve-part second editions with
 - **Professional-level application:** accounting foundations, quantitative methods, behavioral finance, fiduciary and ethics casework, independent data research and full financial plan capstone
 
 No degree-credit or professional certification should be implied by this independent curriculum. Maintain two separate statuses: **existing content expanded to gold depth** and **external accreditation (not provided)**.
+
+## Trusts and Inheritance completed · Gold Edition v6.6
+
+All three original **M3 Estate and Trust** lessons now have 12 substantial parts each, official Connecticut Probate Court and federal guidance links, assessed practice, a professional case, and an interactive local-only financial workbook.
+
+| Lesson | Verified instructional words | Core competence |
+|---|---:|---|
+| L3.S1 · A Trust Is Not a Money Machine | 4,088 | Settlor, trustee, funding, fiduciary responsibilities, title, taxes, creditors and secured debts |
+| L3.S2 · Revocable vs. Irrevocable | 4,033 | Control and retained powers, grantor tax treatment, creditors, benefit rules, property transfers and liquidity |
+| L3.S3 · Planning for a Daughter | 4,094 | Beneficiary protections, inherited-home costs, insurance, mortgage servicing, trust distributions and retain-vs-sell |
+
+The M3 group adds **36 reading parts, 72 part-specific questions, 18 additional final checks, three professional decision cases and three numerical workbooks**. Total M3 explanatory reading length is **12,215 words**. The existing L3.S2 answers were preserved; L3.S1 and L3.S3 were converted from short-form to full textbooks while retaining their original standalone lesson questions and their stable section IDs.
+
+The new `academy-gold-short-converter.js` makes it possible to upgrade the other legacy short lessons without replacing user notes and bookmarks. `scripts/check-gold-estates.mjs` validates the new material and old question structure.
+
+**Gold-standard progress: 10/59; 49 existing lessons remain.** The next course is M4 Investing and Growth. Gold depth is a self-study quality measure, not accreditation, college credit or an official professional qualification.
 
 ## Curriculum objectives by level
 
