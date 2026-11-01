@@ -1,6 +1,6 @@
 # Wealth Lab Academy — Gold Standard Textbook Quality Contract
 
-**Effective:** 2026-10-31 · **First pilot:** L1.S1 Edition 2.0 · **Status:** This is the mandatory depth target for future *revisions of existing lessons*. It does not mean other lessons have already reached this level.
+**Effective:** 2026-10-31 · **First completed course:** M1 Foundations, L1.S1–L1.S4 Edition 2.0 · **Status:** This is the mandatory depth target for future *revisions of existing lessons*. It does not mean other lessons have already reached this level.
 
 ## Mission
 
@@ -65,8 +65,14 @@ Added Features:
 - SEC Investor.gov — [Define Your Goals](https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/define-your-goals)
 - CFPB — [Your Money, Your Goals](https://www.consumerfinance.gov/consumer-tools/educator-tool/your-money-your-goals/toolkit/)
 
+## Foundations course v6.4 — verified
+
+Four original lessons have complete 12-part Gold Edition second editions: L1.S1 (4,159 instructional words), L1.S2 (4,070), L1.S3 (4,125), and L1.S4 (4,175). The three newer chapters use a reusable edition engine that appends new reading parts and assessments while preserving original question order, stable IDs and local notes/progress. Each of the three newer chapters includes an interactive, unsaved cash-flow, compound-interest or loan-math worksheet. All four chapters have a multi-step case, at least 24 part questions, and cumulative chapter checks.
+
+**Current verified gold-standard coverage is 4 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+
 ## Remaining work — repair before expansion
 
-**Next priority sequence:** L1.S2 Cash Flow vs Net Worth, L1.S3 Compound Growth, L1.S4 Debt and Leverage; then existing mortgage L2 parts; then investing, taxes, insurance and estate textbooks. Finish or substantially deepen all **59 existing lessons** before adding modules or titles.
+**Next priority:** M1 Foundations is complete at Gold Edition depth. Revise M2 mortgage and Connecticut housing lessons next, followed by M3 estate fundamentals, M4 investing and the other existing lessons. Hold off on adding course IDs until the existing 59 have been strengthened. Finish or substantially deepen all **59 existing lessons** before adding modules or titles.
 
 This framework will be updated as a lesson is genuinely revised and tested; do not mark a lesson complete based only on paragraph count. The learning app should teach a reader to **explain, calculate, challenge and decide**, not only recognize a definition.
