@@ -1,6 +1,6 @@
 # Wealth Lab Academy — College-Level Finance Study Roadmap
 
-**Updated:** October 31, 2026 · **Release:** v6.3 rigorous textbook revision
+**Updated:** October 31, 2026 · **Release:** v6.4 Foundations gold-standard conversion
 
 ## What this is, and isn't
 
@@ -25,7 +25,7 @@ See [ACADEMY_GOLD_STANDARD.md](ACADEMY_GOLD_STANDARD.md) for teaching, math, ass
 
 ## Current verified state
 
-There are **16 courses, 59 stable lessons and 24 multi-part textbook chapters**, including **one gold-standard 12-part second edition**. **35 lessons are still short-form**, and the other previously expanded textbooks will also need a quality pass against the new gold standard. Two waves have added twelve chapters under their existing stable lesson IDs:
+There are **16 courses, 59 stable lessons and 24 multi-part textbook chapters**, including **four gold-standard 12-part second editions**. **35 lessons remain short-form**, and **20 previously expanded textbooks** still need academic-depth review. Two waves have added twelve chapters under their existing stable lesson IDs:
 
 | Lesson | Title / contribution | Core competency |
 | --- | --- | --- |
@@ -47,6 +47,19 @@ Each expansion has **six reading parts, three substantive explanatory paragraphs
 Across the **twelve modularly expanded lessons** this totals **72 parts, 144 part checks, 36 additional final checks and 12 professional case studies**. Each section's original question remains available separately. The other twelve earlier expanded textbook chapters retain their existing material.
 
 The mastery rule remains unchanged: answer all the chapter's part checks and final questions, score at least 80% overall, and get at least 75% correct on chapter-level checks. Reading completion and mastery are separate.
+
+## Foundations gold-standard progress (v6.4)
+
+All four existing Foundations lessons, L1.S1 through L1.S4, now use 12-part gold-standard second editions with original part indices and answers preserved.
+
+| Lesson | Verified instructional words | Added numerical workbook |
+|---|---:|---|
+| L1.S1 · The Wealth Equation | 4,159 | Balance sheet and liquidity |
+| L1.S2 · Cash Flow vs. Net Worth | 4,070 | Dated cash and payroll |
+| L1.S3 · Compound Growth | 4,125 | Compounding, fees and purchasing power |
+| L1.S4 · Debt and Leverage | 4,175 | Amortizing loan payments |
+
+**Gold-standard progress: 4 of 59 lessons.** Next, revise the existing M2 mortgage lessons, then M3 estate lessons, M4 investing fundamentals, M5–M6 insurance and taxes, followed by all advanced content. Do not create new lesson IDs until existing material reaches the agreed standard.
 
 ## Curriculum objectives by level
 
