@@ -130,7 +130,7 @@ const addedChecks=[
   Q("Taking a new $5,000 loan deposited in cash immediately changes net worth by:",["+$5,000","−$5,000","$0","+$10,000"],2,"Assets and liabilities each increase by $5,000.")],
  [Q("House price $225,000, selling costs $13,500, mortgage $237,500. Net cash from sale is:",["+$12,500","−$26,000","−$12,500","+$211,500"],1,"$225,000 less $13,500 costs and $237,500 debt leaves a $26,000 gap."),
   Q("Home equity with value $225,000 and debt $237,500 equals:",["+$12,500","$0","−$12,500","+$237,500"],2,"Market value minus secured debt is negative $12,500.")],
- [Q("$9,000 cash minus $2,400 committed bills and $4,000 reserve leaves:",["$6,600","$2,600","$4,000","$9,000"],1,"$9,000 − $2,400 − $4,000 = $2,600."),
+ [Q("$9,000 cash minus $2,400 committed bills and $4,000 reserve leaves:",["$6,600","$2,600","$4,000","$9,000"],1,"$9,000 total cash minus $2,400 committed bills minus $4,000 protected reserves equals $2,600 flexible cash."),
   Q("A $6,000 three-month reserve target implies monthly essential expenses of:",["$500","$1,000","$2,000","$18,000"],2,"$6,000 divided by three months equals $2,000 per month.")],
  [Q("Which is the strongest basis for a mortgage purchase recommendation?",["The property must always appreciate","Cash, debt, due dates, risks and multiple supported scenarios","The seller's asking price alone","Unused credit card limits"],1,"Affordability and downside resilience require more than a price or forecast."),
   Q("Which change should trigger a new affordability analysis?",["A home inspection revealing a large repair obligation","A new app accent color","An unrelated stock ticker","A different font in the syllabus"],0,"Major changes to real obligations affect financing and reserve decisions.")]
