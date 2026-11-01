@@ -75,7 +75,7 @@ assert.ok(html.includes('window.WealthLabGoldLabMarkup(s)'),'Examples tab must d
 const sw=read('sw.js');
 assert.ok(sw.includes("academy-chapters/L1.S1-edition2.js?v=2.0.0"));
 assert.ok(sw.includes("academy-gold-lab.js?v=2.0.0"));
-assert.ok(sw.includes('wealth-lab-v6.8.0-insurance-gold-edition'),'Release cache version expected');
+assert.ok(sw.includes('wealth-lab-v6.9.0-tax-gold-edition'),'Release cache version expected');
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"),'Must preserve old saved-data key');
 console.log('PASS: L1.S1 edition 2.0 '+book.pages.length+' parts and '+words+' instructional words.');
 console.log('PASS: 24 part questions + 7 final checks + original single lesson quiz.');
