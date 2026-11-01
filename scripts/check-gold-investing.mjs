@@ -12,16 +12,18 @@ assert.equal(lessonIds.length,19,'Original Foundations lesson IDs and order shou
 for(const id of ids)assert.ok(originalIds.has(id)&&html.includes("S('"+id+"'"),id+' must exist as original lesson');
 const names=['TEXTBOOK','PART_CHECKS','PART_TERMS','PRACTITIONER_NOTES','CASE_FILES','TEXTBOOK_CHECKS'];
 const context=Object.fromEntries(names.map(name=>[name,getJson(name)]));
-for(const id of ids)assert.equal(context.TEXTBOOK[id],undefined,id+' must be legacy short before conversion');
+const oldS1=context.TEXTBOOK['L4.S1'];assert.equal(oldS1.pages.length,6,'L4.S1 must preserve six original parts');
+const oldTitles=oldS1.pages.map(p=>p.heading),oldQuestions=context.PART_CHECKS['L4.S1'].map(qa=>qa.map(q=>q.q)),oldFinal=context.TEXTBOOK_CHECKS['L4.S1'].map(q=>q.q);
+for(const id of ids.filter(x=>x!=='L4.S1'))assert.equal(context.TEXTBOOK[id],undefined,id+' must be legacy short before conversion');
 context.ALL_SECTIONS=lessonIds.map(id=>({id}));context.window=context;
-const core=read('academy-gold-short-converter.js');new Script(core,{filename:'academy-gold-short-converter.js'});runInNewContext(core,context);
+for(const file of ['academy-gold-standard-core.js','academy-gold-short-converter.js']){const core=read(file);new Script(core,{filename:file});runInNewContext(core,context);}
 let total=0;
 for(const id of ids){const file='academy-chapters/'+id+'-edition2.js',src=read(file);
  new Script(src,{filename:file});runInNewContext(src,context,{filename:file});
  const book=context.TEXTBOOK[id];assert.equal(book.pages.length,12,id+' needs twelve separate substantive parts');
  assert.equal(context.PART_TERMS[id].length,12,id+' needs distinct terminology groups');
  assert.equal(context.PART_CHECKS[id].length,12,id+' needs two checks per part');
- assert.equal(context.TEXTBOOK_CHECKS[id].length,6,id+' needs cumulative assessment');
+ assert.equal(context.TEXTBOOK_CHECKS[id].length,id==='L4.S1'?oldFinal.length+6:6,id+' needs cumulative assessment');
  assert.ok(book.sources.length>=2,id+' needs primary sources');
  assert.ok(book.sources.some(x=>x.includes('investor.gov')||x.includes('irs.gov')),id+' needs public investor or tax official source');
  assert.ok(context.CASE_FILES[id]?.steps?.length>=8,id+' needs applied multistep case');
@@ -40,6 +42,9 @@ for(const id of ids){const file='academy-chapters/'+id+'-edition2.js',src=read(f
  assert.ok(read('sw.js').includes("'./"+file+"?v=2.0.0'"),id+' chapter unavailable offline');
  console.log('PASS: '+id+' 12-part investing textbook, '+n+' instructional words, 24 part checks, 6 final checks.');
 }
+assert.deepEqual(JSON.parse(JSON.stringify(context.TEXTBOOK['L4.S1'].pages.slice(0,6).map(p=>p.heading))),oldTitles,'Original L4.S1 textbook headings and order changed');
+assert.deepEqual(JSON.parse(JSON.stringify(context.PART_CHECKS['L4.S1'].slice(0,6).map(qa=>qa.map(q=>q.q)))),oldQuestions,'Original L4.S1 part questions changed');
+assert.deepEqual(JSON.parse(JSON.stringify(context.TEXTBOOK_CHECKS['L4.S1'].slice(0,oldFinal.length).map(q=>q.q))),oldFinal,'Original L4.S1 final questions changed');
 const lab=read('academy-gold-investing-labs.js');new Script(lab,{filename:'academy-gold-investing-labs.js'});
 const env={document:{addEventListener(){},documentElement:{}},MutationObserver:class{observe(){}}};env.window=env;runInNewContext(lab,env);
 for(const id of ids){const markup=env.WealthLabInvestingLabMarkup({id});assert.ok(markup.includes('data-wli="'+id+'"')&&markup.includes('data-wli-check'));assert.ok(markup.includes('data-wli-answer="2"'))}
@@ -54,5 +59,5 @@ assert.ok(source3.includes('2026')&&source3.includes('$7,500')&&source3.includes
 assert.ok(Math.abs(100*(1.2)*(0.8)-96)<1e-8,'Drawdown model is mathematically consistent');
 assert.ok(Math.abs(0.6*(-25)+0.3*3+0.1*0+14.1)<1e-8,'Weighted portfolio return model is consistent');
 assert.ok(Math.abs(3000+2000-5000)<1e-8,'Tax and account example check');
-console.log('PASS: All three M4 originals converted to gold; '+total+' total instructional words; 72 part checks, 18 final checks and 3 cases.');
+console.log('PASS: M4 expanded one original textbook and converted two short lessons to gold; '+total+' total instructional words; 72 part checks, 18 final checks and 3 cases.');
 console.log('PASS: Market mechanics, IRS 2026 dated rules, fixed IDs, original quizzes, PWA cache, private local-only numerical labs.');
