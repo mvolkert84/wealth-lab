@@ -42,7 +42,7 @@ assert.deepEqual(JSON.parse(JSON.stringify(data.PART_CHECKS['L1.S1'].slice(0,6).
 assert.deepEqual(JSON.parse(JSON.stringify(data.TEXTBOOK_CHECKS['L1.S1'].slice(0,3).map(q=>q.q))),originalFinalQuestions,'Do not overwrite existing final question IDs');
 assert.equal(data.PART_CHECKS['L1.S1'].length,12);
 assert.equal(data.PART_TERMS['L1.S1'].length,12);
-assert.equal(data.PRACTITIONER_NOTES['L1.S1'].length,12);
+for(let i=6;i<12;i++) assert.equal(data.PRACTITIONER_NOTES['L1.S1'][i]?.length,4,'Practitioner insight for advanced part '+(i+1));
 assert.equal(data.TEXTBOOK_CHECKS['L1.S1'].length,7);
 let words=0;
 for(const [index,p] of book.pages.entries()){
