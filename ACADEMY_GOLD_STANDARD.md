@@ -69,7 +69,7 @@ Added Features:
 
 Four original lessons have complete 12-part Gold Edition second editions: L1.S1 (4,159 instructional words), L1.S2 (4,070), L1.S3 (4,125), and L1.S4 (4,175). The three newer chapters use a reusable edition engine that appends new reading parts and assessments while preserving original question order, stable IDs and local notes/progress. Each of the three newer chapters includes an interactive, unsaved cash-flow, compound-interest or loan-math worksheet. All four chapters have a multi-step case, at least 24 part questions, and cumulative chapter checks.
 
-**Current verified gold-standard coverage is 10 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+**Current verified gold-standard coverage is 13 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
 
 ## Mortgage course completion — v6.5
 
@@ -82,7 +82,7 @@ Key teaching standards for mortgage-related legal and financial claims:
 - The buyer's lender approval and the family's real disposable cash are different calculations.
 - Every worked case distinguishes illustrative inputs from current official product offers and tests repayment and home repair risks.
 
-Gold progress is now **10 of 59** lessons; M3 is complete and M4 Investing and Growth is next. The validated conversion path supports other legacy short-form chapters while retaining stable section IDs and original questions.
+Gold progress is now **13 of 59** lessons; M3 is complete and M5 Insurance and Protection is next. The validated conversion path supports other legacy short-form chapters while retaining stable section IDs and original questions.
 
 ## Trusts and Estates Gold Edition v6.6 — verified
 
@@ -90,7 +90,17 @@ M3's original lessons now have comprehensive second editions: L3.S1 (4,088 expla
 
 The estate curriculum explicitly distinguishes trust legal title, economic control, liquidity, tax ownership, creditor rights, mortgage liens, insurance contract obligations, beneficiary distributions and family continuity. Simplified financial examples are not Connecticut legal conclusions or individualized tax advice. Three unsaved numerical workbooks demonstrate property equity, trustee costs, inheritance carry and sale proceeds.
 
-`scripts/check-gold-estates.mjs` validates the new short-form conversion path, academic depth, official references, practice questions, original IDs, private workbooks and offline cache. **Gold depth stands at 10/59 existing lessons**. The remaining 49 require revision or conversion: 16 existing multi-part textbooks and 33 short-form lessons. Next academic subject is M4 Investing and Growth.
+`scripts/check-gold-estates.mjs` validates the new short-form conversion path, academic depth, official references, practice questions, original IDs, private workbooks and offline cache. **Gold depth stands at 13/59 existing lessons**. The remaining 46 require revision or conversion: 15 existing multi-part textbooks and 31 short-form lessons. Next academic subject is M4 Investing and Growth.
+
+## Investing & Growth Gold Edition v6.7 — verified
+
+M4's three existing lessons now have full twelve-part textbooks: **L4.S1 (4,791 instructional words), L4.S2 (4,146), L4.S3 (4,064)**. L4.S1 retained its original six-part textbook headings, questions and answer order while adding six more advanced parts and enriching the originals. L4.S2 and L4.S3 were safely converted from legacy short-form lessons, retaining original IDs and existing standalone quizzes.
+
+The 36 reading parts teach ownership claims, valuation and financial statements, securities and pooled fund mechanics, cost and dividend analysis, diversification, volatility and correlation, liquidity, goal-based allocation, tax-advantaged account restrictions, current-year IRS rules and a sustainable household investment policy. Three workbooks let learners calculate stock total return, a funding gap and weighted portfolio return, and equal-current-cost traditional versus Roth tax scenarios. All numbers are editable fictional scenarios; personal inputs are not persisted.
+
+`scripts/check-gold-investing.mjs` validates a minimum of 4,000 substantive words per chapter, two questions per part, case studies, original question preservation, local-only workbook integration and service-worker offline asset inclusion. Official SEC Investor.gov and IRS sources support the educational explanations, while investments are never presented as guaranteeing market performance.
+
+**Gold depth stands at 13/59 existing lessons.** Next is the existing M5 Insurance and Protection curriculum. Continue revising in sequence; academic depth is not formal accreditation.
 
 ## Remaining work — repair before expansion
 
