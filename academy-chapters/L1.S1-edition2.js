@@ -61,7 +61,7 @@ t.pages[1].example=[["Vehicle estimated sale value","$14,000"],["Vehicle loan pa
 t.pages[4].example=[["Loan principal payment from existing cash","Assets −$400; liabilities −$400; net-worth change $0"],["Interest charge paid in cash","Assets −$40; liabilities unchanged; net-worth change −$40"],["New loan deposited in checking","Assets +$10,000; liabilities +$10,000; net-worth change $0"]];
 t.pages[5].example=[["Inherited home value","$250,000"],["Ongoing monthly property expenses (hypothetical)","$700"],["One-year carrying-cost reserve","$700 × 12 = $8,400; not including major repairs"]];
 const P=(heading,concept,paragraphs,example,pitfall,exercise)=>({heading,concept,paragraphs,example,pitfall,exercise});
-const Q=(q,options,answer,why)=>({q,options,answer,why});
+
 const more=[
  P("Build the opening statement and check every claim",
  "A defendable net-worth statement begins with evidence, a valuation date, and an explicit definition of each asset and debt.",
