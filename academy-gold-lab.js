@@ -28,7 +28,7 @@ window.WealthLabGoldLabMarkup=function(s){
  '<div><span>Total assets</span><strong data-wlg-output="assets">—</strong></div>'+
  '<div><span>Total liabilities</span><strong data-wlg-output="liabilities">—</strong></div>'+
  '<div class="wlg-focus"><span>Net worth · assets − debts</span><strong data-wlg-output="networth">—</strong></div>'+
- '<div><span>Debt-free assets? Not necessarily.</span><strong data-wlg-output="equity">—</strong></div>'+
+ '<div><span>Vehicle and property equity</span><strong data-wlg-output="equity">—</strong></div>'+
  '</div></details>'+
  '<details class="wlg-details"><summary>02 · Cash you can actually use</summary>'+
  '<p>Assign upcoming obligations and emergency funds before estimating flexible cash. Do not count home equity, retirement funds or unused credit as checking-account money.</p>'+
