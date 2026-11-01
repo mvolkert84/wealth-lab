@@ -44,6 +44,6 @@ for(const id of chapters){
   assert.ok(sw.includes("'./academy-chapters/"+id+".js?v=1.0.0'"),'Offline cache missing '+id);
 }
 assert.ok(sw.includes("'./academy-depth-core.js?v=1.0.0'"),'Offline registry missing');
-assert.ok(sw.includes('wealth-lab-v6.3.0-gold-textbook'),'PWA version not refreshed');
+assert.ok(sw.includes('wealth-lab-v6.4.0-foundations-gold-edition'),'PWA version not refreshed');
 console.log('PASS: '+chapters.length+' modular chapters, '+(chapters.length*6)+' reading parts, '+(chapters.length*12)+' part checks, '+(chapters.length*3)+' final checks.');
 console.log('PASS: Stable 59 section IDs, real reading depth, cases, sources and offline cache.');
