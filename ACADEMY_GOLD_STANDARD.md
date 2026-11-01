@@ -69,7 +69,7 @@ Added Features:
 
 Four original lessons have complete 12-part Gold Edition second editions: L1.S1 (4,159 instructional words), L1.S2 (4,070), L1.S3 (4,125), and L1.S4 (4,175). The three newer chapters use a reusable edition engine that appends new reading parts and assessments while preserving original question order, stable IDs and local notes/progress. Each of the three newer chapters includes an interactive, unsaved cash-flow, compound-interest or loan-math worksheet. All four chapters have a multi-step case, at least 24 part questions, and cumulative chapter checks.
 
-**Current verified gold-standard coverage is 15 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
+**Current verified gold-standard coverage is 17 of 59 lessons.** There are 20 other multi-part textbooks and 35 short-form lessons to review and expand; passing a source-code depth check does not imply university accreditation or external grading.
 
 ## Mortgage course completion — v6.5
 
@@ -82,7 +82,7 @@ Key teaching standards for mortgage-related legal and financial claims:
 - The buyer's lender approval and the family's real disposable cash are different calculations.
 - Every worked case distinguishes illustrative inputs from current official product offers and tests repayment and home repair risks.
 
-Gold progress is now **15 of 59** lessons; M3 is complete and M6 Taxes and Advanced Strategies is next. The validated conversion path supports other legacy short-form chapters while retaining stable section IDs and original questions.
+Gold progress is now **15 of 59** lessons; M3 is complete and M7 Economics and Financial Math is next. The validated conversion path supports other legacy short-form chapters while retaining stable section IDs and original questions.
 
 ## Trusts and Estates Gold Edition v6.6 — verified
 
@@ -90,7 +90,7 @@ M3's original lessons now have comprehensive second editions: L3.S1 (4,088 expla
 
 The estate curriculum explicitly distinguishes trust legal title, economic control, liquidity, tax ownership, creditor rights, mortgage liens, insurance contract obligations, beneficiary distributions and family continuity. Simplified financial examples are not Connecticut legal conclusions or individualized tax advice. Three unsaved numerical workbooks demonstrate property equity, trustee costs, inheritance carry and sale proceeds.
 
-`scripts/check-gold-estates.mjs` validates the new short-form conversion path, academic depth, official references, practice questions, original IDs, private workbooks and offline cache. **Gold depth stands at 15/59 existing lessons**. The remaining 44 require revision or conversion: 15 existing multi-part textbooks and 29 short-form lessons. Next academic subject is M4 Investing and Growth.
+`scripts/check-gold-estates.mjs` validates the new short-form conversion path, academic depth, official references, practice questions, original IDs, private workbooks and offline cache. **Gold depth stands at 15/59 existing lessons**. The remaining 42 require revision or conversion: 15 existing multi-part textbooks and 27 short-form lessons. Next academic subject is M4 Investing and Growth.
 
 ## Investing & Growth Gold Edition v6.7 — verified
 
@@ -111,6 +111,16 @@ The curriculum explicitly separates guaranteed contractual protection from non-g
 Two interactive workbooks use fictional input and calculate premium differences, policy loan interest and reduced death benefit, plus home wind deductible, flood shortfall and earnings lost during a disability elimination period. They save or transmit no numbers. `scripts/check-gold-insurance.mjs` verifies minimum word count, genuine terms, independent questions, cases, official references, original lesson identities and offline PWA integration.
 
 **Completed curriculum gold coverage: 15 / 59** existing lessons. Remaining 44 existing lessons require deeper teaching: 29 short-form and 15 multi-part chapter revisions. Next in sequence is **M6 Taxes and Advanced Strategies**, following official IRS and Connecticut tax authorities. Independent study, not an accredited award.
+
+## Taxes & Advanced Strategies Gold Edition v6.9 — verified
+
+M6 now consists of two complete, verified twelve-part editions: **L6.S1 Taxes: The Rules of the Game (4,036 instructional words)** and **L6.S2 The High-Stakes Fine Print (4,773)**. Both preserve their original section identifiers and standalone quiz questions.
+
+Teaching spans tax year 2026 federal brackets, filing-year deductions and credits, payroll reconciliation, marginal versus average tax, property-sale gain and cash settlement, gift and inherited basis, Connecticut estate/gift issues, grantor and nongrantor trusts, policy loan compounding, secured liens and lender protections, benefits eligibility, rental property tax distinctions and detecting abusive tax promotions. IRS and Connecticut official sources are given; numerical examples clearly distinguish dated published rules from fictional rates and eligibility.
+
+Two local-only workbooks separately evaluate modeled deductions/credits, home-sale gain versus closing cash, insurance-policy debt accumulation and stressed equity after property liens. The 24 parts have 48 section questions, 12 cumulative checks and two comprehensive professional cases. New practice inputs are neither stored nor transmitted.
+
+`scripts/check-gold-tax.mjs` verifies academic length, content and official sources, original IDs, saved state key, workbooks and offline pre-cache. **Gold coverage now stands at 17/59 original lessons.** Remaining: 27 original short-form conversions and 15 original multi-part textbook revisions. Next is **M7 Economics and Financial Math**.
 
 ## Remaining work — repair before expansion
 
