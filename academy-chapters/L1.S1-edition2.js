@@ -145,7 +145,8 @@ const notes=[
 ];
 PART_CHECKS[id].push(...addedChecks);
 PART_TERMS[id].push(...addedTerms);
-PRACTITIONER_NOTES[id].push(...notes);
+if(Array.isArray(PRACTITIONER_NOTES[id])) PRACTITIONER_NOTES[id].push(...notes);
+else for(let i=0;i<notes.length;i++) PRACTITIONER_NOTES[id][i+6]=notes[i];
 TEXTBOOK_CHECKS[id].push(
  Q("A $400 loan payment comprises $360 principal and $40 interest. Net-worth change from this payment alone:",["+$360","−$40","$0","−$400"],1,"Cash is down $400 and debt down $360: net worth is down $40."),
  Q("A $250,000 house with $237,500 mortgage falls to $225,000 in market value. Its equity before sale costs is:",["$25,000","$12,500","−$12,500","$0"],2,"$225,000 minus $237,500 equals negative $12,500."),
