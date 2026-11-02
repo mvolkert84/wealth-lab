@@ -156,8 +156,8 @@
       "worked": [
         "Original loan $240,000 at 7.00% over 360 months: original P&I ≈$1,596.73.",
         "After 48 on-time installments, modeled balance ≈$229,138.91.",
-        "Refinanced balance $229,138.91 at 6.00%, new 360-month term ⇒ new P&I approximately $1,373.72.",
-        "Monthly difference ≈$223.01; $4,000 cash closing fee gives naive payment payback ≈17.94 months.",
+        "Refinanced balance $229,138.91 at 6.00%, new 360-month term ⇒ new P&I approximately $1,373.80.",
+        "Monthly difference ≈$222.92; $4,000 cash closing fee gives naive payment payback ≈17.94 months.",
         "Yet maturity moves 48 months later, and new-vs-old unpaid balances must be compared at the planned sale horizon."
       ],
       "practice": [
