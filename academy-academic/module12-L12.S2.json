@@ -1,0 +1,299 @@
+{
+  "id": "L12.S2",
+  "title": "Traditional and Roth Accounts",
+  "subtitle": "Tax location, IRA eligibility, equal-cost comparisons, conversion taxation and lifetime account design",
+  "prerequisites": [
+    "L11.S1 income and adjusted-gross-income calculations",
+    "L11.S2 marginal versus effective tax rate",
+    "L12.S1 workplace plan design and contribution limits",
+    "L7.S3 compound growth and present value"
+  ],
+  "objectives": [
+    "Compare traditional versus Roth saving at equal after-tax household cost",
+    "Apply 2026 IRA combined limits, compensation rules and income phaseouts",
+    "Distinguish Roth IRA from designated Roth 401(k) eligibility and distributions",
+    "Analyze rollover, conversion, Form 8606 and aggregation pitfalls",
+    "Quantify future net retirement value under alternative tax scenarios",
+    "Explain Roth distribution ordering, five-year conditions and early-withdrawal risks",
+    "Evaluate multi-account tax diversification for family and estate objectives"
+  ],
+  "sections": [
+    {
+      "title": "Retirement tax treatment is a timeline, not a label of 'tax free'",
+      "body": [
+        "A traditional retirement account generally defers income taxation: eligible contributions may reduce taxable income now, investment income can compound without current annual tax inside the account, and later pretax distributions are generally ordinary taxable income. Roth arrangements generally invest after-tax dollars and can offer income-tax-free qualified withdrawals. Neither system guarantees an investment return, and neither automatically makes the account liquid for emergencies.",
+        "An employer Roth 401(k) and a personal Roth IRA use similar names but different income eligibility, five-year distribution and plan administration rules. Income limits can restrict direct Roth IRA contributions, while designated Roth 401(k) elective deferrals generally do not use Roth IRA modified-AGI contribution restrictions. Employer contributions are separately tracked and may be taxable or Roth according to permitted plan elections and the latest plan rules. Tax sources need explicit labeling.",
+        "Choosing a wrapper is distinct from choosing assets. A Roth IRA holding a highly concentrated individual stock remains risky; a traditional retirement account holding a low-cost diversified fund may be appropriate for a different goal. The household's objective should be stated in after-tax dollars available at retirement, including distribution constraints."
+      ],
+      "worked": [
+        "Traditional pre-tax $5,000 contribution at stable 22% marginal tax can save about $1,100 current federal ordinary income tax.",
+        "Roth $5,000 eligible contribution generally has no immediate deduction.",
+        "Both may invest the same dollars but require different current after-tax cash outlay.",
+        "Future qualified Roth withdrawals can be excluded from federal income tax; pretax traditional distributions are ordinarily taxable."
+      ],
+      "practice": [
+        [
+          "Does 'Roth account' guarantee that every early withdrawal is tax free and penalty free?",
+          "No. Qualification and ordering depend on account type, holding period, age and whether the withdrawn sum is a contribution, conversion or earnings."
+        ],
+        [
+          "Why do account tax labels not determine asset risk?",
+          "Tax treatment changes the timing of taxes, not the return distribution or concentration risk of the securities held inside the account."
+        ]
+      ]
+    },
+    {
+      "title": "Equal after-tax savings is the fair traditional versus Roth comparison",
+      "body": [
+        "Comparing $3,000 traditional against $3,000 Roth often ignores the traditional tax saving. Suppose a worker can reduce current take-home cash by $3,000, the marginal federal rate today is 22%, and a fully deductible traditional contribution is permitted. That after-tax cost could support $3,000 ÷ (1−0.22) ≈ $3,846.15 of gross traditional saving under a simplified constant-rate model, versus $3,000 Roth. Both represent the same current cash sacrifice, not the same account deposit.",
+        "Assume the funds compound for 20 years at a fixed illustrative 6% annual rate with no fees. If the future traditional distribution faces 12% federal ordinary tax and Roth earnings qualify, future after-tax traditional value is $3,846.15 × 1.06^20 × 0.88, while Roth becomes $3,000 × 1.06^20. The traditional approach wins in this controlled example because the tax rate later is lower; with the same 22% current/future rate, after-tax values are equal before other rules. Change the rate, liquidity, fee and investment assumptions and the decision may reverse.",
+        "Employer match, IRA deductibility, credit phaseouts, Medicare premiums, state taxes, future RMDs and Social Security taxation can modify this simple result. Comparison must explicitly state whether a refund or tax saving is reinvested or spent. A recommendation that credits the traditional contribution for its tax deduction yet assumes a Roth contribution of equal gross amount uses unequal budgets."
+      ],
+      "worked": [
+        "Current after-tax saving capacity $3,000; 22% tax today.",
+        "Gross traditional equivalent $3,000/(1−0.22)≈$3,846.15; Roth deposits $3,000.",
+        "20-year growth factor 1.06^20≈3.207135.",
+        "At 12% future traditional rate: trad after-tax ≈$10,853, Roth ≈$9,621, before other costs and taxes."
+      ],
+      "practice": [
+        [
+          "Why is comparing equal gross contributions not always a fair tax-vehicle comparison?",
+          "The traditional contribution can create current tax savings, making its net cash cost lower. An equal-after-tax-cost model controls for that advantage."
+        ],
+        [
+          "When do equal-cost traditional and Roth portfolios produce the same after-tax value under simplifying assumptions?",
+          "If the contribution is fully deductible, Roth distributions qualify, tax rates at contribution and withdrawal are equal, and investment/fee assumptions match."
+        ]
+      ]
+    },
+    {
+      "title": "2026 IRA limits and how compensation determines eligibility",
+      "body": [
+        "For 2026, the traditional and Roth IRA combined regular contribution limit is $7,500 for an eligible individual under age 50, and $8,600 for an eligible individual age 50 or older, reflecting a $1,100 catch-up. These are combined limits: $5,000 Roth plus $2,500 traditional already fills the $7,500 limit. IRA contributions generally cannot exceed eligible taxable compensation, though special spousal IRA provisions can allow contributions based on compensation on a joint return.",
+        "The traditional IRA deduction is not always available simply because a contribution is allowed. When the contributor is covered by an employer retirement plan, the 2026 deduction phases out at modified AGI $81,000–$91,000 for single/head-of-household filers or $129,000–$149,000 married filing jointly. A married person not covered by a work plan but with a covered spouse can encounter a separate $242,000–$252,000 range. Income-phaseout arithmetic can require official worksheets and legal eligibility checks.",
+        "Direct Roth IRA contributions have their own 2026 modified-AGI phaseouts: $153,000–$168,000 for single/head-of-household and $242,000–$252,000 for married joint filers, with special separate-filing rules. These income limits do not impose an additional cap on contributions to an employer Roth 401(k) when the workplace plan permits that feature. Avoid combining the two as though they are one account."
+      ],
+      "worked": [
+        "Single age 42 2026 eligible IRA maximum $7,500, subject to sufficient compensation and modified-AGI rules.",
+        "Age 52 2026 eligible limit $7,500+$1,100=$8,600.",
+        "$3,000 traditional IRA+$4,500 Roth IRA uses the shared $7,500 under-50 contribution ceiling.",
+        "A single filer at $100,000 MAGI may lose a traditional IRA deduction if covered at work, while income-limited direct Roth eligibility is a separate question."
+      ],
+      "practice": [
+        [
+          "If someone contributes $7,500 to a traditional IRA, can they also put $7,500 into a Roth IRA for 2026 at age 42?",
+          "No. The $7,500 annual under-50 contribution limit generally applies to the combined traditional and Roth IRA contributions, subject to earned compensation."
+        ],
+        [
+          "Does a nondeductible traditional IRA contribution mean the contribution is prohibited?",
+          "Not necessarily. IRA contribution eligibility and the deductibility of an otherwise eligible traditional contribution are separate determinations."
+        ]
+      ]
+    },
+    {
+      "title": "Roth IRA distribution ordering, five-year rules and early withdrawals",
+      "body": [
+        "Roth IRA regular contributions are generally considered distributed before conversions and earnings under statutory ordering rules. As a result, withdrawing amounts corresponding to regular Roth IRA contributions can have different tax treatment from distributing appreciation. Conversion dollars follow their own ordering and potentially separate five-year penalty clocks. A tax-year-based five-year rule applies to making distributions qualified, and qualifying conditions generally include age 59½, death, disability or limited first-home provisions.",
+        "The IRS makes distinctions that a one-line 'Roth is tax free' slogan conceals. A 30-year-old who directly contributed $5,000 and later has $8,000 total could generally withdraw up to $5,000 of regular contributions without the same income-tax treatment as $3,000 of earnings, assuming accurate records and no competing distributions. Early withdrawal of earnings may be taxable and can incur a 10% additional tax absent an exception. A converted amount distributed too early can have its own additional-tax implications.",
+        "Roth 401(k) nonqualified distribution ordering is not the same as Roth IRA regular-contribution ordering; an employer plan distribution can include a pro-rata earnings portion. Direct rollovers and carefully tracked dates matter. Never recommend using retirement funds for a home down payment based solely on generic withdrawal language; determine the precise account type and facts."
+      ],
+      "worked": [
+        "Roth IRA regular contributions to date $5,000; total value $8,000 before withdrawals.",
+        "Simplified distribution $4,000 first from regular-contribution layer leaves remaining regular contribution layer $1,000.",
+        "A further $3,000 withdrawal can reach conversion/earnings layers depending on account history.",
+        "Tax and penalty assessment requires a complete transaction and conversion history; a single balance cannot establish the result."
+      ],
+      "practice": [
+        [
+          "Why should an adviser ask whether the account is a Roth IRA or Roth 401(k) before discussing an early withdrawal?",
+          "The tax ordering, qualified distribution conditions and handling of nonqualified earnings differ across account types."
+        ],
+        [
+          "Can someone assume a new Roth IRA's $3,000 investment profit is withdrawable tax free after one year?",
+          "No. Earnings need qualified-distribution conditions for tax-free treatment; early nonqualified withdrawals may create taxes and additional penalties."
+        ]
+      ]
+    },
+    {
+      "title": "Roth conversions change tax character, not total economic wealth overnight",
+      "body": [
+        "A Roth conversion shifts eligible pretax traditional IRA or plan money into Roth tax treatment, generally recognizing income tax on previously untaxed value in the conversion year. The converted asset does not instantly increase in economic value: it is still the same underlying property in a different tax wrapper, with a tax liability paid from the conversion or other resources. When paying tax from outside funds, the household is adding a larger total after-tax cash sacrifice than the IRA balance screenshot suggests.",
+        "Consider converting $20,000 of entirely pretax traditional IRA assets in a year when the conversion's incremental ordinary federal tax is 12%, producing about $2,400 current federal tax under a stable bracket assumption. If the same conversion were marginally taxed at 24%, the simple federal tax becomes $4,800. The true result can cross brackets, affect taxable Social Security, Medicare IRMAA, ACA subsidies or Connecticut taxes. Form 8606 and other forms may be required.",
+        "Conversions are often most attractive when a temporary low-income year creates unusually low marginal rates, or when long-run estate and RMD considerations justify paying tax earlier. They can also backfire when the tax must be borrowed at high rates, the conversion inflates current costs, or the household needs cash for a home purchase. A serious plan compares 'convert' to 'do not convert' under multiple future tax-rate and mortality scenarios."
+      ],
+      "worked": [
+        "Convert $20,000 fully pretax at simplified stable 12% marginal federal rate: additional federal tax $2,400.",
+        "At a stable 24% marginal rate the same amount implies $4,800 additional federal income tax.",
+        "A conversion from an account with after-tax basis may have a partially nontaxable portion calculated under aggregation rules.",
+        "The converted $20,000 does not create extra net worth simply through retitling as Roth."
+      ],
+      "practice": [
+        [
+          "Is a $20,000 Roth conversion automatically a $20,000 federal taxable addition?",
+          "No. The taxable portion depends on pretax and after-tax basis and applicable conversion rules, including traditional IRA aggregation and Form 8606."
+        ],
+        [
+          "Why can paying conversion tax out of an emergency reserve undermine an otherwise tax-efficient plan?",
+          "It sacrifices necessary liquidity and can force costly borrowing; the conversion's expected long-term benefit must justify a real immediate cash cost."
+        ]
+      ]
+    },
+    {
+      "title": "Nondeductible basis, Form 8606 and the IRA pro-rata trap",
+      "body": [
+        "A nondeductible traditional IRA contribution establishes after-tax basis that must be tracked so it is not taxed again when distributed or converted. Form 8606 is central to this recordkeeping. When a taxpayer has both after-tax basis and pretax balances across traditional, SEP and SIMPLE IRAs, the tax calculation generally aggregates eligible IRA balances, instead of allowing the taxpayer to select only a newly funded nondeductible lot for conversion.",
+        "For a clean mathematical illustration, suppose total traditional/SEP/SIMPLE IRA value relevant to the simplified year-end pro-rata calculation plus the amount converted is $100,000, and $10,000 is nondeductible basis. If the owner converts $10,000, the nontaxable fraction is approximately 10%, making $1,000 tax-free basis recovery and $9,000 taxable conversion. The remaining basis is preserved for later calculations. The exact annual Form 8606 includes specific adjusted-value and distribution inputs.",
+        "Calling this sequence 'backdoor Roth' does not change the legal calculation. A pre-existing IRA rollover can create a substantial pro-rata taxable conversion unexpectedly. Direct trustee transfers, pretax IRA rollovers to an eligible workplace plan when allowed, conversion timing and any 2026 applicable limits require individual documentation and professional review. This is not a guaranteed way around income tax."
+      ],
+      "worked": [
+        "Aggregate hypothetical denominator $100,000; nondeductible basis $10,000 ⇒ basis ratio 10%.",
+        "Convert $10,000: nontaxable portion $1,000, taxable portion $9,000.",
+        "At simplified 22% marginal rate, current federal tax on taxable $9,000 ≈$1,980.",
+        "Remaining nondeductible IRA basis after the conversion ≈$9,000, subject to actual Form 8606 rules."
+      ],
+      "practice": [
+        [
+          "Why is simply converting a newly contributed $10,000 nondeductible IRA amount not necessarily tax-free?",
+          "Other existing pretax IRA balances can enter the aggregate pro-rata calculation, making much of the nominal $10,000 conversion taxable."
+        ],
+        [
+          "What financial records are required to avoid double taxation of nondeductible IRA contributions?",
+          "A history of nondeductible IRA basis and Forms 8606, plus distributions, conversions, rollovers and year-end IRA values."
+        ]
+      ]
+    },
+    {
+      "title": "Asset location and tax diversification among accounts",
+      "body": [
+        "Asset allocation describes total stock, bond and cash exposures, while asset location describes which exposures are held in taxable brokerage, traditional retirement or Roth accounts. The location can alter timing and character of taxes. Taxable bond interest commonly creates annual taxable income in a brokerage account, while a broad equity index fund may distribute relatively little gain before shares are sold. A Roth account can shelter long-run compounding from regular federal income tax when withdrawals qualify.",
+        "The location decision is constrained by actual account access and beneficiary needs. A 30-year home purchase fund belongs in investments matched to its short horizon rather than in aggressive equities simply because Roth long-run returns sound tax-advantaged. Traditional retirement withdrawals may increase later adjusted gross income and interact with Social Security tax and Medicare costs. Roth balances can help manage taxable income later, but they do not eliminate market risk.",
+        "Some holdings have their own special tax rules: Treasury interest, municipal funds, REIT distributions and foreign tax credits cannot be assigned a one-size location without checking fund holdings, state residency and tax character. An academic comparison lists the total household after-tax value and accounts for fees, constraints, liquidity and the cost of accessing each account."
+      ],
+      "worked": [
+        "Hypothetical taxable interest-bearing assets $10,000 yielding 4% ⇒ $400 interest before federal/state tax.",
+        "At a stable illustrative 22% federal marginal rate, tax on that interest ≈$88 before state effects.",
+        "A qualifying Roth account generally does not tax annual internal interest in the same current way; eventual distribution rules govern.",
+        "Tax-efficiency alone cannot justify taking 30% stock drawdown risk on next year's down payment."
+      ],
+      "practice": [
+        [
+          "How does asset location differ from asset allocation?",
+          "Allocation chooses overall economic risk exposures; location chooses which tax and legal account holds each exposure."
+        ],
+        [
+          "What limitation prevents automatically placing every growth asset in a Roth account?",
+          "Contribution limits, taxes on conversions, estate goals, liquidity, diversification and future risk needs constrain what can be placed there."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut retirement-income treatment is a second independent calculation",
+      "body": [
+        "Connecticut state treatment of pensions and IRA distributions can differ materially from the federal return. A 2025 Connecticut General Assembly research report describes a pension/annuity subtraction subject to adjusted-gross-income eligibility and phaseout, and an IRA distribution subtraction rising to 100% in 2026 for qualifying taxpayers under the same income thresholds and phaseout schedule. Federal taxes can still apply even if the state subtraction eliminates the Connecticut component.",
+        "For a typical married joint filer with federal adjusted gross income below $100,000, qualifying pension or annuity income can be eligible for a full Connecticut subtraction, subject to statutory definitions. Above that threshold, an income-dependent phaseout can extend until the benefit is eliminated by $150,000 joint AGI. The corresponding single-filer full threshold is $75,000 with phaseout generally to $100,000. Connecticut's current DRS calculators and final tax-year instructions must govern the actual return.",
+        "These rules make a Roth conversion decision especially fact-sensitive for someone expecting to retire in Connecticut. A conversion raises current federal taxable income and can affect Connecticut AGI and income-tested subtractions. Before promising any tax savings, model both jurisdictions, the person's actual filing status and income level, and other modifications. A legislative proposal is not an enacted law."
+      ],
+      "worked": [
+        "Assumed Connecticut MFJ federal AGI $90,000 and a qualifying taxable pension distribution $12,000 already included in AGI.",
+        "Under current threshold-based illustration, that distribution may be eligible for full state subtraction, subject to definition and return rules.",
+        "The federal ordinary income tax on the same distribution can remain positive.",
+        "If conversion raises federal AGI above the state threshold, recalculate state subtraction and any phaseout; don't use a fixed marginal estimate."
+      ],
+      "practice": [
+        [
+          "Does Connecticut's pension subtraction remove the pension income from federal adjusted gross income?",
+          "No. The state subtraction is generally a Connecticut-specific modification after federal income reporting, not a revision to the federal tax calculation."
+        ],
+        [
+          "Why is a 2026 Roth conversion different for a Connecticut retiree with income near a phaseout threshold?",
+          "Added conversion income can increase federal AGI and change eligibility for Connecticut retirement-income subtractions or other income-tested provisions."
+        ]
+      ]
+    },
+    {
+      "title": "The lifetime account map and beneficiary transition",
+      "body": [
+        "Build a balance-sheet map of retirement accounts with owner, custodian, pretax amount, after-tax basis, Roth five-year dates, employer vesting and designated beneficiaries. A 401(k) statement and an IRA account statement may have different ownership and inherited-account rules. Beneficiary designation often governs where retirement money goes at death; a will or revocable trust does not automatically override every qualified plan or IRA designation.",
+        "Non-spouse beneficiaries of retirement accounts may be subject to a ten-year distribution requirement, with annual distributions in some circumstances and special rules for eligible designated beneficiaries. Spouses have options that many other beneficiaries do not. The timing of inherited pretax distributions can create significant income tax for heirs. Contributing to a Roth does not necessarily mean a beneficiary can ignore all distribution deadlines.",
+        "The educational objective is a legally coherent household retirement map, not a trick for putting an account 'inside' a trust to escape taxes. The family must coordinate designated beneficiaries, marriage rights, trust language, required distributions, incapacity planning and estate goals with legal/tax professionals. A living account owner's unrestricted choice does not mean beneficiaries can later ignore statutory rules."
+      ],
+      "worked": [
+        "Identify $50,000 pretax 401(k), $10,000 Roth IRA regular contributions and $5,000 taxable brokerage.",
+        "Total visible assets $65,000, but current access and future tax differ by account.",
+        "For a taxable inherited pretax account, the time and manner of distributions can create beneficiary ordinary taxable income.",
+        "Estate recommendation must identify actual account forms, designated beneficiaries and applicable death-year distribution rules."
+      ],
+      "practice": [
+        [
+          "Can a trust be named beneficiary without checking retirement plan and tax rules?",
+          "The designation may be permitted but trust terms, documentation, look-through status and required distribution rules can materially change outcomes; specialist coordination is essential."
+        ],
+        [
+          "Do Roth accounts always remain entirely undistributed to heirs forever?",
+          "No. Qualified Roth tax treatment does not eliminate beneficiary distribution requirements, including potential ten-year distribution rules."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS October 2026 IRA education bulletin",
+      "https://www.irs.gov/newsroom/saving-for-retirement-iras-are-an-option"
+    ],
+    [
+      "IRS 2026 IRA contribution and Roth income phaseout details",
+      "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    ],
+    [
+      "IRS IRA contribution limits and compensation rules",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+    ],
+    [
+      "IRS Publication 590-A, IRA contributions and conversion mechanics",
+      "https://www.irs.gov/publications/p590a"
+    ],
+    [
+      "IRS Publication 590-B, withdrawals and Roth ordering",
+      "https://www.irs.gov/publications/p590b"
+    ],
+    [
+      "IRS Form 8606 for nondeductible IRA basis and conversions",
+      "https://www.irs.gov/instructions/i8606"
+    ],
+    [
+      "IRS designated Roth accounts",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-designated-roth-account"
+    ],
+    [
+      "Connecticut OLR retirement-income exemptions 2025-R-0152",
+      "https://www.cga.ct.gov/2025/rpt/pdf/2025-R-0152.pdf"
+    ],
+    [
+      "Connecticut DRS senior tax guidance",
+      "https://portal.ct.gov/drs/individuals/connecticut-tax-tips-for-senior-citizens"
+    ],
+    [
+      "IRS beneficiary distribution rules",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary"
+    ]
+  ],
+  "assessment": {
+    "title": "Equal-cost account policy, 2026 eligibility and conversion scenario",
+    "prompt": "For a 42-year-old Connecticut worker, compare a $3,000 AFTER-TAX household saving cost invested as qualified Roth versus fully deductible traditional at 22% current federal marginal tax for 20 years at a smooth 6% hypothetical return. Compute future outcomes at 12%, 22%, and 32% future withdrawal tax rates, stating modeling limits. Independently calculate 2026 combined IRA contribution capacity, then illustrate a $10,000 IRA conversion from $100,000 of aggregate pretax/aftertax IRA assets containing $10,000 nondeductible basis. Write a two-page planning memo about $6,000 emergency reserves, a future house, state subtraction eligibility and beneficiary paperwork.",
+    "rubric": [
+      "Equal after-tax-cost comparison and sensitivity (25%)",
+      "2026 contribution, compensation and income phaseouts (20%)",
+      "Form 8606 and pro-rata conversion calculations (20%)",
+      "Roth ordering and distribution limitations (15%)",
+      "Connecticut, liquidity and beneficiary planning (20%)"
+    ],
+    "answerKey": [
+      "Equal cost $3,000 Roth vs traditional $3,000/(1−.22)=$3,846.153846 gross contribution.",
+      "Assume 20 years at 6%: growth factor 3.207135; Roth value about $9,621.40, while traditional gross value about $12,335.13 before future tax.",
+      "At 12% future tax traditional after-tax ≈$10,854.91; 22% ≈$9,621.40; 32% ≈$8,387.89 (rounding based on precise factor).",
+      "2026 IRA joint traditional+Roth total limit under age 50 $7,500 or eligible compensation if less; age 50+ generally $8,600.",
+      "Pro-rata: 10% nondeductible basis on $10k conversion gives $1,000 nontaxable and $9,000 taxable, subject to actual Form 8606 inputs.",
+      "The memo preserves essential near-term reserves and distinguishes federal income tax, CT state subtractions, withdrawal qualification and the ten-year beneficiary context."
+    ]
+  }
+}
