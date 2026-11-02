@@ -37,16 +37,16 @@ function chapterMarkup(id){
  const exam='<section class="wl-m3-assessment"><h2>Written and numerical chapter assessment</h2><h3>'+esc(L.assessment.title)+'</h3><p>'+esc(L.assessment.prompt)+'</p><h3>Evaluation rubric</h3><ul>'+L.assessment.rubric.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><p>Self-check answers are instructional; a formally graded written submission would require an independent reviewer.</p></section>';
  const cap=data.capstone;
  const capstone=id==="L3.S3"?'<details class="wl-m3-capstone"><summary>Module 3 · Comprehensive cumulative case and detailed solution</summary><h2>'+esc(cap.title)+'</h2><p>'+esc(cap.intro)+'</p><h3>Facts</h3><ol>'+cap.scenario.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><h3>Required independent deliverables</h3><ol>'+cap.tasks.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><details><summary>Show worked solution after trying</summary><ol>'+cap.answer.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details><h3>Scoring</h3><ul>'+cap.rubric.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></details>':"";
- return '<div class="article wl-academic wl-m3-academic"><p class="wl-acad-kicker">TRUSTS &amp; INHERITANCE · UNIVERSITY-STYLE STUDY</p><h1>'+esc(L.title)+'</h1><p class="wl-acad-explain">'+esc(L.subtitle)+'</p><p class="wl-acad-explain">Academic expansion added to the original lesson, not a replacement. Existing saved work remains in the Learn, Try It and Notes tabs.</p><details class="wl-m3-toc"><summary>Learning objectives and chapter map · '+L.sections.length+' extended sections</summary><h3>Prerequisites</h3><ul>'+L.prerequisites.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><h3>Learning outcomes</h3><ol>'+L.objectives.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>'+L.sections.map((s,i)=>'<p><a href="#'+esc(id)+'.A'+(i+1)+'">'+esc(id)+'.A'+(i+1)+' · '+esc(s.title)+'</a></p>').join('')+'</details>'+content+labMarkup(id)+exam+sources+capstone+'<p class="wl-acad-foot">Independent university-style self-study, not an accredited course or professional legal, tax or lending advice. The lab saves no inputs and does not change existing progress.</p></div>';
+ return '<div class="article wl-academic wl-m3-academic"><p class="wl-acad-kicker">TRUSTS &amp; INHERITANCE · UNIVERSITY-STYLE STUDY</p><h1>'+esc(L.title)+'</h1><p class="wl-acad-explain">'+esc(L.subtitle)+'</p><details class="wl-m3-toc"><summary>Learning objectives and chapter map · '+L.sections.length+' extended sections</summary><h3>Prerequisites</h3><ul>'+L.prerequisites.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><h3>Learning outcomes</h3><ol>'+L.objectives.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>'+L.sections.map((s,i)=>'<p><a href="#'+esc(id)+'.A'+(i+1)+'">'+esc(id)+'.A'+(i+1)+' · '+esc(s.title)+'</a></p>').join('')+'</details>'+content+labMarkup(id)+exam+sources+capstone+'<p class="wl-acad-foot">Educational self-study, not college credit or individualized legal, tax, financial or lending advice. Verify current rules and terms.</p></div>';
 }
 function update(root){
- const id=root.dataset.m2Lab,def=LABS[id];if(!def)return;
- let v={};for(const el of root.querySelectorAll("[data-m3-input]"))v[el.dataset.m2Input]=Number(el.value);
+ const id=root.dataset.m3Lab,def=LABS[id];if(!def)return;
+ let v={};for(const el of root.querySelectorAll("[data-m3-input]"))v[el.dataset.m3Input]=Number(el.value);
  const ok=[...root.querySelectorAll("[data-m3-input]")].every(el=>el.value.trim()!=="")&&valid(id,v);
  const out=ok?calculate(id,v):{};
  for(const el of root.querySelectorAll("[data-m3-output]")){
-  const item=def.out.find(row=>row[0]===el.dataset.m2Output);
-  const value=out[el.dataset.m2Output];
+  const item=def.out.find(row=>row[0]===el.dataset.m3Output);
+  const value=out[el.dataset.m3Output];
   el.textContent=!ok?"Check inputs":item?.[2]==="percentage"?percentage(value):item?.[2]==="number"?num(value):money(value);
  }
  const w=root.querySelector("[data-m3-warning]");
@@ -54,7 +54,7 @@ function update(root){
  return {ok,out};
 }
 function check(root){
- const r=update(root),def=LABS[root.dataset.m2Lab];if(!r.ok)return;
+ const r=update(root),def=LABS[root.dataset.m3Lab];if(!r.ok)return;
  let score=0,details=[];
  for(const key of def.check){
   const el=root.querySelector('[data-m3-answer="'+key+'"]'),expected=r.out[key];
