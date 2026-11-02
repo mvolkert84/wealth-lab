@@ -1,0 +1,266 @@
+{
+  "id": "L13.S1",
+  "title": "How to Calculate Insurance Needs",
+  "subtitle": "Financial risk capacity, human capital, coverage gaps, disability protection and independent underwriting",
+  "prerequisites": [
+    "L1.S1 wealth equation and liquidity",
+    "L7.S3 time value of money",
+    "L5.S1 insurance risk transfer",
+    "L12.S3 Social Security and survivor income"
+  ],
+  "objectives": [
+    "Distinguish insurable loss from investment risk and expected loss from worst-case loss",
+    "Calculate household life insurance using needs and present-value income methods",
+    "Compare term coverage, existing assets, survivor income and insurance duration",
+    "Calculate insurance affordability against cash-flow and debt stress",
+    "Estimate disability income gaps, benefit caps and elimination periods",
+    "Evaluate underwriting, insurer claims-paying capacity, exclusions and policy ownership",
+    "Write an unbiased coverage recommendation rather than a product pitch"
+  ],
+  "sections": [
+    {
+      "title": "What insurance actually purchases",
+      "body": [
+        "Insurance is a contract in which a premium transfers specified contingent financial consequences to an insurer, subject to definitions, exclusions, limits and claims-paying ability. Risk pooling allows uncertain severe losses to be funded collectively. A life policy pays if its insured death condition is satisfied; it is not a guaranteed investment profit in the ordinary household portfolio sense. Disability coverage has its own definition of inability to work and cannot be inferred from life insurance.",
+        "Expected loss is probability multiplied by loss severity, but a household often cares about the catastrophic tail of a rare event, not merely its actuarial average. A family that cannot fund five years of living costs after a breadwinner dies can rationally buy coverage even though expected premiums exceed expected payout under insurer pricing. Premiums also pay administration, reserves, distribution and profit.",
+        "Risk management should first identify the exposure and existing controls: savings, other income, employer benefits, Social Security survivor benefits, pensions, public assistance, family support and accessible credit. Buying a product without checking the exposure can cause overlapping coverage, unnecessary expenses or dangerous underinsurance. State the insured event, required payout, duration and household capacity before selecting a policy."
+      ],
+      "worked": [
+        "Hypothetical 0.2% annual insured-event probability and $500,000 loss imply expected annual loss $1,000.",
+        "A $1,300 annual premium may still be rational to transfer a loss the household cannot bear.",
+        "Premium minus expected loss is not automatically 'wasted money': claims pooling and risk protection have value.",
+        "No numerical expected-loss estimate replaces an insurer's actual underwriting quote."
+      ],
+      "practice": [
+        [
+          "Why could a household rationally buy insurance with expected payout less than total expected premiums?",
+          "Catastrophic financial loss can threaten basic housing or dependent care; transferring tail risk is valuable even with administrative loads."
+        ],
+        [
+          "Is cash-value growth the primary analytical definition of a life insurance need?",
+          "No. Begin with the effect of the insured person's death on survivors' obligations and resources; cash value is a separate feature."
+        ]
+      ]
+    },
+    {
+      "title": "A detailed death-benefit needs worksheet",
+      "body": [
+        "The needs method inventories debts that the survivor would reasonably need to discharge, living-support needs, education, childcare and special-care obligations, final expenses and a transition reserve. It then subtracts genuinely available resources such as liquid assets, existing transferable life insurance, pensions and realistic survivor support. The result is a funding gap rather than an instruction to insure every outstanding dollar regardless of whether debts should be paid.",
+        "Suppose a household has a $220,000 mortgage, $250,000 target for survivor support, $30,000 education need, $10,000 final-cost estimate and $40,000 accessible savings. The basic needs result is $470,000. The model must not count the home value as immediate liquid money while simultaneously assuming the family will remain in that home. Nor should it assume an unvested workplace death benefit is portable.",
+        "Coverage sizing depends on dependents' ages and needs. A child with twenty years until financial independence creates a different horizon from an independent adult. The household can select level-term protection for a period, consider decreasing needs over time, or create layered policies. Every recommendation records contract definitions, premium affordability and whether survivor needs persist after the term expires."
+      ],
+      "worked": [
+        "Mortgage $220,000 + income support target $250,000 + education $30,000 + final expenses $10,000 = $510,000.",
+        "Less usable resources $40,000 = estimated $470,000 uncovered need.",
+        "If an existing portable $100,000 policy is confirmed and not otherwise allocated, modeled new gap could fall to $370,000.",
+        "Recalculate if surviving spouse continues the mortgage instead of paying it off; this changes assumptions, not facts."
+      ],
+      "practice": [
+        [
+          "Can a family count full home equity as emergency cash while also expecting to keep living in the same home?",
+          "No. Doing so double-uses the home; sale, refinancing or borrowing can be expensive or infeasible after death."
+        ],
+        [
+          "Why is the worksheet result not an automatic life insurance quote?",
+          "It omits underwriting, coverage term, survivor benefits, income changes and insurer policy restrictions."
+        ]
+      ]
+    },
+    {
+      "title": "Human-capital present value and replacement horizon",
+      "body": [
+        "Human capital represents the economic value of a person's future contributions to household finances and care. A rigorous life insurance model can discount the net contribution the household loses each year, rather than equating a worker's full pretax wage with the amount survivors need. Subtract the decedent's personal consumption, payroll taxes and costs that disappear, then add household services and childcare replacement that would now require money.",
+        "Suppose a person contributes $30,000 per year to household living support for twenty years and the relevant real discount rate is 3%. The value of a constant real annuity is $30,000×[1−(1.03)^−20]/0.03, approximately $446,324. Earnings growth, tax changes, inflation and death timing are deliberately simplified. A replacement-value calculation should be reconciled to the needs worksheet; adding both full estimates without considering overlap double-counts survivor support.",
+        "Discount rates are not the advertised investment returns from a permanent life illustration. A realistic analyst stress-tests zero, moderate and higher real rates, duration of dependents' needs and survivor ability to work. Coverage need can decline over time as debts fall and savings grow, yet a permanent need can remain for a disabled dependent or estate liquidity objective."
+      ],
+      "worked": [
+        "Annual real net support contribution $30,000 for 20 years.",
+        "Real discount rate assumed 3%; annuity factor [1−(1.03)^−20]/0.03 ≈14.8775.",
+        "Human-capital present value ≈$446,325, subject to rounding.",
+        "Combine with other debts and resources without counting the same living-support obligation twice."
+      ],
+      "practice": [
+        [
+          "Why discount future lost support rather than adding twenty undiscounted annual amounts?",
+          "Money needed years later has a time value; a present reserve can potentially earn returns while supporting future obligations, though rates are uncertain."
+        ],
+        [
+          "Why is the gross salary often too high for a replacement-needs calculation?",
+          "Not all gross earnings would have been spent on survivors; personal consumption, taxes and changing costs must be accounted for."
+        ]
+      ]
+    },
+    {
+      "title": "Term policy duration, layering and the portability trap",
+      "body": [
+        "Term life protection offers a specified death benefit for a contractual period, typically without an accessible cash-value account. Premiums generally depend on underwriting, age, health, coverage and policy type. A level-premium term can be useful for a mortgage and dependent-income need that ends at a foreseeable date. Renewal and conversion rights may differ dramatically between two policies both described as 'term life'.",
+        "Employer-provided coverage can be convenient and sometimes subsidized. But a person changing jobs, becoming disabled or losing employer eligibility may discover that group coverage ended or conversion prices are high. A comparison should ask whether coverage can be continued independently, whether amounts are reduced at certain ages and whether accelerated-death or waiver-of-premium riders change the terms.",
+        "Layering can match different needs to different periods—for example a 20-year $300,000 income-replacement layer and a 10-year $150,000 debt layer. The combined first-decade death benefit is $450,000, falling to $300,000 in years 11–20. This can be more affordable than keeping unnecessary maximum coverage for 30 years, but every quoted policy and beneficiary must be checked."
+      ],
+      "worked": [
+        "20-year level term layer $300,000 plus 10-year additional layer $150,000.",
+        "Years 1–10 total $450,000 insured death benefit if both contracts remain active.",
+        "Years 11–20 total $300,000 if first policy remains active and second expires.",
+        "After year 20 coverage from these two contracts is $0 unless renewed or replaced."
+      ],
+      "practice": [
+        [
+          "Why might an employer-paid group policy be insufficient by itself?",
+          "Coverage can end or change with job status, and portability, conversion and guaranteed terms vary by employer contract."
+        ],
+        [
+          "Does the phrase '20-year term' mean guaranteed affordable renewal into retirement?",
+          "No. Check expiration, premiums, renewal guarantees, conversion deadlines and policy documents."
+        ]
+      ]
+    },
+    {
+      "title": "Disability risk may be more immediate than death risk",
+      "body": [
+        "Disability insurance can protect earnings while the insured is alive but cannot work. Contract language is decisive: own-occupation coverage can differ from any-occupation terms, partial/residual disability, benefit periods, mental-health limitations, exclusions and the requirement to document continuing impairment. Social Security Disability Insurance has its own eligibility rules and delays; it should not be treated as a seamless substitute for private coverage.",
+        "Suppose a worker's take-home pay is $3,200 per month, essential expenses are $2,700, and a disability policy is expected to provide $1,900 monthly after a 90-day elimination period. The essential gap after benefit begins is $800 monthly, before considering taxation of disability benefits or other resources. The first three months may require $8,100 of essential funding if no other income arrives; that exceeds a $6,000 emergency reserve.",
+        "Benefit taxation depends partly on whether premiums were employer-paid or after-tax employee-paid and how coverage was structured. Check offsets for workers' compensation, SSDI and other benefits. A policy that advertises '60% of income' may have a monthly dollar cap, taxable benefit and a waiting period, so the true household cash-flow benefit could be less than the headline rate."
+      ],
+      "worked": [
+        "Essential outflow $2,700/month, 90-day elimination period approximated as three months.",
+        "Unfunded essential wait-period need $2,700×3=$8,100.",
+        "After a hypothetical $1,900/month disability benefit starts, essential gap $800/month.",
+        "A $6,000 cash reserve leaves $2,100 short for the wait period without other aid."
+      ],
+      "practice": [
+        [
+          "Why should an income-replacement quote disclose an elimination period?",
+          "Benefits often begin only after a waiting period, requiring the household to self-fund the initial expenses."
+        ],
+        [
+          "Is '60% of income' guaranteed to equal 60% of after-tax wages received?",
+          "No. Benefit caps, offsets, exclusions and tax treatment can alter what is actually payable."
+        ]
+      ]
+    },
+    {
+      "title": "Insurance economics: premiums versus saving the difference",
+      "body": [
+        "An honest comparison of term and permanent coverage begins by holding the death-benefit need and the household's budget constant. A policy that includes cash value generally requires a different premium commitment than term insurance. The incremental cost can be considered alongside separate IRA, workplace plan or brokerage investing. It is misleading to compare only the accumulated cash value of a high-premium policy against a low-premium term policy while pretending the premium difference disappears.",
+        "Suppose two hypothetical contracts cover the same death risk, a term premium is $35/month and a permanent policy premium is $250/month. The monthly cost difference is $215. At an assumed 6% annual nominal return compounded monthly for 20 years, investing $215 at each month end could accumulate roughly $99,300 before taxes, investment fees and market volatility. Real returns can be negative; this model is not proof that separate investing always wins.",
+        "A permanent policy can provide benefits not replicated by a simple term-plus-brokerage strategy, such as lifetime death coverage, particular guarantees and insurance-specific planning features. But they must be weighed against surrender charges, funding strain, liquidity restrictions and the ability to keep premiums current. The appropriate recommendation comes from side-by-side guaranteed and non-guaranteed illustrations, not slogans."
+      ],
+      "worked": [
+        "Term premium $35/month versus permanent premium $250/month => difference $215/month.",
+        "Monthly investment rate hypothetical 6%/12=0.5%.",
+        "Future value for 240 monthly end contributions $215×[(1.005^240−1)/0.005]≈$99,300.",
+        "Term death benefit still needs to be considered; separate portfolio capital is not a guaranteed insurer benefit."
+      ],
+      "practice": [
+        [
+          "Why is comparing policy cash values without comparing premiums unfair?",
+          "Different premium outlays create different funding costs. Equal-budget analysis must account for every cash dollar diverted or invested."
+        ],
+        [
+          "Does a hypothetical 6% account return make investing the difference risk-free?",
+          "No. Returns fluctuate, fees and taxes matter, and a brokerage account does not guarantee an immediate death benefit."
+        ]
+      ]
+    },
+    {
+      "title": "Contract underwriting, exclusions and insurer solvency",
+      "body": [
+        "Life and disability insurance underwriting can consider age, health, occupation, coverage size and other legally permitted factors. A quoted premium is not a binding contract until applied, underwritten and accepted. Misstatements and contestability periods may affect claims. Financial-strength ratings help examine insurer ability to pay but cannot prove a policy is risk-free; state guaranty associations have limitations and are not substitutes for due diligence.",
+        "Request the policy schedule, application, rider definitions, grace-period terms, exclusions, conversion conditions and claims process. For permanent policies, collect guaranteed cash values and current non-guaranteed illustration columns; for disability policies, get benefit caps, renewability, elimination period and a written summary of occupation standards. Sales representations made orally are not a substitute for the contract.",
+        "Policy replacement is a separate risk. Surrendering an older contract may forfeit guarantees, create taxable gain or restart exclusions or suicide/contestability provisions in a new policy. The National Association of Insurance Commissioners recommends careful comparison and not canceling existing coverage before a replacement is approved and operational. Document the costs and alternatives."
+      ],
+      "worked": [
+        "Coverage $500,000 at hypothetical $50/month costs $600 annually; two decades of premiums $12,000 without renewal changes.",
+        "A second quote of $80/month costs $960 annually; price difference $360/year.",
+        "The cheaper quote may exclude desirable riders or have different conversion and underwriting terms.",
+        "Rate and cost comparisons are valid only after confirming comparable benefit triggers and financial strength."
+      ],
+      "practice": [
+        [
+          "What is the danger of canceling a current policy before a new one is active?",
+          "The applicant can be rejected or receive new restrictions, leaving the family uninsured and losing existing guarantees."
+        ],
+        [
+          "Does a high insurer rating make every proposed contract a good fit?",
+          "No. Contract benefits, restrictions, pricing and household needs still determine suitability."
+        ]
+      ]
+    },
+    {
+      "title": "From risk audit to household protection recommendation",
+      "body": [
+        "A university-level protection recommendation documents assets, liabilities, beneficiaries, household dependents, future incomes, health coverage, disability risks, insurance contracts and alternative protection methods. It explicitly identifies any double counting between the income-replacement method and debt-payoff method. A recommendation must state what risks the household chooses to retain because unlimited insurance would be unaffordable.",
+        "Use a hypothetical Connecticut family pursuing homeownership with $250–$500 available monthly. Protect essential bills and short-term housing reserves before funding any long-premium commitment. Compare at least three outcomes: affordable term coverage with separate savings, smaller coverage with increased liquid reserve and permanent coverage requiring rigorous guaranteed-value review. The analysis does not presume a permanent policy should be purchased merely because a loan might one day be available.",
+        "Finish with implementation gates: written underwriting quote, full insurer illustration, independent fee/premium comparison, documented beneficiary designations, automatic premium affordability, and annual review after changes in health, dependents or mortgage size. Financial literacy means the household can explain what protection it is buying and what is not covered."
+      ],
+      "worked": [
+        "Needs: mortgage $220k + support $250k + education $30k + final costs $10k−assets $40k = $470k.",
+        "Affordable term policy might target a rounded $450k–$500k subject to actual underwriting, with uncovered deviations documented.",
+        "A permanent premium exceeding household saving capacity can increase lapse risk and reduce mortgage-funding liquidity.",
+        "Protection recommendation includes a decision log and signed plan to revisit beneficiaries each year."
+      ],
+      "practice": [
+        [
+          "Why can a policy with attractive projected cash value still be unsuitable?",
+          "Premium obligations may exceed safe monthly surplus, trigger lapse risk and crowd out protected bills or a home-purchase reserve."
+        ],
+        [
+          "Which five items should accompany a recommendation?",
+          "Need calculation, timeline, comparable contracts, premium sustainability, beneficiaries and renewal/review checkpoints."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "NAIC choosing life insurance and policy needs",
+      "https://content.naic.org/article/consumer-insight-what-type-life-insurance-right-you"
+    ],
+    [
+      "NAIC insurance illustrations and guarantees",
+      "https://content.naic.org/insurance-topics/life-insurance-illustrations"
+    ],
+    [
+      "IRS death benefit taxation",
+      "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/life-insurance-disability-insurance-proceeds/life-insurance-disability-insurance-proceeds"
+    ],
+    [
+      "Investor.gov financial planning and asset allocation",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "SSA disability insurance eligibility",
+      "https://www.ssa.gov/benefits/disability/"
+    ],
+    [
+      "Connecticut Insurance Department consumer insurance assistance",
+      "https://portal.ct.gov/cid/consumer-affairs/consumer-affairs"
+    ],
+    [
+      "IRS disability benefit taxation",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "NAIC life insurance consumer overview",
+      "https://content.naic.org/consumer/life-insurance"
+    ]
+  ],
+  "assessment": {
+    "title": "Fiduciary-style household protection study",
+    "prompt": "Analyze a hypothetical household with $220k mortgage, $250k survivor support need, $30k education, $10k final expense and $40k genuinely accessible assets. Model $30k constant real annual contributions for 20 years at 3% real discount rate without double counting needs. Analyze a three-month disability elimination period for $2,700 monthly essentials and a $1,900 thereafter benefit. Compare $35/month term against $250/month permanent policy and invest the $215/month difference for 20 years under hypothetical 6% nominal rate, with risk and tax caveats. Write a detailed recommendation covering insurer, beneficiary, contract and monthly affordability.",
+    "rubric": [
+      "Death-benefit needs and double-count prevention (25%)",
+      "Present-value analysis and real/nominal assumptions (15%)",
+      "Disability and emergency liquidity funding (20%)",
+      "Premium tradeoffs with independent protection comparisons (20%)",
+      "Documentary evidence, suitability and ethical reporting (20%)"
+    ],
+    "answerKey": [
+      "Needs-based coverage gap $470,000.",
+      "Human-capital support PV $30,000×(1−1.03^−20)/.03≈$446,325; don't add to $250k support need without reconciliation.",
+      "Three-month essential elimination gap $8,100; thereafter essential gap $800/month.",
+      "$215 monthly invested at 6%/12 for 240 months yields approximately $99k before fees/taxes with investment risk.",
+      "Do not recommend a permanent commitment solely to access policy loans; require full insurer illustration, solvency and beneficiary review."
+    ]
+  }
+}
