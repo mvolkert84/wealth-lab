@@ -1,0 +1,209 @@
+{
+  "id": "L2.S1",
+  "title": "What a Mortgage Really Is",
+  "subtitle": "Property rights, secured credit, underwriting and household solvency",
+  "prerequisites": [
+    "L1.S1 household balance sheet",
+    "L1.S2 dated cash-flow calendar",
+    "L1.S3 discounting",
+    "L1.S4 fixed-payment debt"
+  ],
+  "objectives": [
+    "Construct buyer and lender closing balance sheets without double-counting equity",
+    "Derive the level-payment formula from discounted cash flows",
+    "Calculate LTV, DTI, household cash margin and stress exposures",
+    "Identify the instruments and parties that make a mortgage enforceable",
+    "Evaluate a purchase with an unfavorable appraisal and uncertain repair costs"
+  ],
+  "sections": [
+    {
+      "title": "The home, the debt, and the legal claim are three different objects",
+      "body": [
+        "A mortgage transaction brings together a home purchase and a financing contract. The borrower acquires an ownership interest in real property; the lender supplies money that the borrower promises to repay; a recorded security instrument creates a claim against property if that promise is not fulfilled. The note, mortgage or deed of trust, deed, title search, and insurance contracts have different purposes. They should never be described as interchangeable documents. State law controls how the security instrument operates and how foreclosure proceeds.",
+        "The buyer's asset is the property at a supportable economic value, not the original purchase price forever. The buyer's liability is the loan payoff balance plus any other enforceable obligations. Home equity is the difference between the asset value and secured claims, but is not an extra asset to add on top of the property value. In a household balance sheet record the house and loan separately; this is also how professionals detect falling collateral coverage.",
+        "Suppose a Connecticut household pays $250,000 for a home using $12,500 cash down and $237,500 of first-mortgage financing. At closing the house enters the balance sheet at an assumed $250,000 value and the loan enters at $237,500. The equity is $12,500. If the buyer paid an additional $7,500 in nonrecoverable transaction costs, that expenditure reduces cash and net worth; the down payment itself merely shifts wealth from cash into the property. This distinction avoids the false claim that getting a mortgage immediately creates wealth.",
+        "Mortgage lenders care about the borrower's ability to pay and collateral value because the contract is a stream of uncertain future payments secured by property. The lender may fund a loan through deposits, warehouse credit, or secondary-market financing; a servicer may later collect the payments on someone else's behalf. Selling or transferring the loan does not automatically alter the signed note terms. The economics of credit pricing reflect funding, default risk, expected prepayment, servicing, capital, and market conditions."
+      ],
+      "worked": [
+        "Purchase price $250,000; down payment $12,500; new secured loan $237,500.",
+        "Before closing: cash $30,000, no other assets or liabilities in this isolated illustration; net worth $30,000.",
+        "Closing cash: $12,500 down + $7,500 unrecoverable fees = $20,000; remaining cash $10,000.",
+        "After closing: property $250,000 + cash $10,000 − mortgage $237,500 = $22,500 net worth.",
+        "Thus transaction costs, not the $12,500 down payment, caused the modeled $7,500 decline in net worth."
+      ],
+      "practice": [
+        [
+          "Why does recording home equity as a separate asset double-count wealth?",
+          "Because the home asset minus the mortgage already determines equity; adding it separately counts the same ownership interest twice."
+        ],
+        [
+          "If the property loses 8% immediately and the debt is unchanged, calculate equity.",
+          "Property value $230,000; equity −$7,500, before selling costs."
+        ]
+      ]
+    },
+    {
+      "title": "Discounting mortgage payments: why amortization has this formula",
+      "body": [
+        "A fixed-rate fully amortizing mortgage promises equal scheduled principal-and-interest payments at regular intervals, with the last payment retiring the debt. The loan amount today must equal the present value of those promised payments discounted at the contractual periodic rate. This is the same time-value-of-money idea introduced in Module 1, now applied from the lender's perspective. The rate per month is the contractual annual nominal rate divided by twelve if the note uses that monthly convention; actual daily-interest and first-payment details can differ.",
+        "Let principal P be advanced at time zero, r be the periodic interest rate, n the number of monthly payments, and A the fixed payment. The discounted-value identity is P=A/(1+r)+A/(1+r)^2+...+A/(1+r)^n. Multiply by (1+r) and subtract the original series. Cancellation yields P r=A[1−(1+r)^(-n)]. Rearrange to obtain A=P r/[1−(1+r)^(-n)]. At r=0, take the limiting value A=P/n rather than divide by zero.",
+        "The interest portion of month k is the opening balance multiplied by r; principal repaid is the installment minus interest. The outstanding balance follows B_k=B_(k−1)(1+r)−A. An equivalent closed form is B_k=P(1+r)^k−A[((1+r)^k−1)/r]. These identities give two independent ways to validate a spreadsheet. If either schedule does not reconcile to the note's payment and maturity, inspect rate units, payment dates, rounding and fees.",
+        "A fixed monthly payment does not imply fixed interest dollars. As principal declines, each future month's interest falls and more of the same payment goes toward principal. Negative amortization describes the opposite possibility: unpaid interest is added to the balance under certain product structures. It is not a feature of the assumed conventional fully amortizing schedule. Mortgage insurance, property taxes and hazard insurance sit outside the P&I equation, even when paid in the same monthly transfer."
+      ],
+      "worked": [
+        "Assume loan P=$237,500; note rate 6.50% annually; monthly r=0.065/12; term n=360.",
+        "Payment A=$237,500×(0.065/12)/[1−(1+0.065/12)^(-360)] = approximately $1,501.16.",
+        "Month-one interest: $237,500×0.065/12=$1,286.46; month-one principal ≈ $214.70.",
+        "After 12 payments B_12≈$234,845.40; principal reduced ≈$2,654.60.",
+        "After 60 payments B_60≈$222,326.07. The unpaid balance remains substantial despite $90,069.60 of cumulative scheduled P&I."
+      ],
+      "practice": [
+        [
+          "What does the P&I payment omit?",
+          "Property tax, homeowners insurance, mortgage insurance, HOA or association assessments, utilities, repairs and possible separately charged fees."
+        ],
+        [
+          "Why is first-month principal small?",
+          "Interest is charged on nearly the full opening balance; with a long term and positive rate, much of the early level payment covers interest."
+        ]
+      ]
+    },
+    {
+      "title": "Underwriting is not the same as household affordability",
+      "body": [
+        "Underwriting evaluates whether an applicant satisfies the lender and product's documented risk constraints. Common inputs include credit history, verifiable income, employment continuity, existing obligations, assets, property characteristics, appraisal, and collateral title. Approval does not prove that a mortgage is comfortable for an individual's real household. A lender may exclude costs that are economically unavoidable, or assess gross income while the family's bills are paid from net pay.",
+        "Loan-to-value (LTV) generally compares financing to an eligible collateral value; for a purchase, underwriting may depend on the lower of purchase price and appraised value under program rules. Combined loan-to-value (CLTV) adds eligible subordinate liens in the numerator. Debt-to-income (DTI) compares defined recurring monthly debt obligations to qualifying gross monthly income. It is not the percentage of take-home pay that remains after groceries, medical care, commuting, and irregular household needs.",
+        "Consider a $250,000 agreed price with an appraisal of $240,000. A lender using the lesser figure to enforce a 95% maximum first-lien LTV would cap the mortgage at $228,000, not the $237,500 originally planned. The transaction then needs another $9,500 of buyer cash, seller price reduction, or a different eligible financing arrangement. A lower appraisal does not itself imply the home must be bought at the agreed price; the purchase contract and financing contingencies matter.",
+        "Use both a lender-compliance worksheet and a household survival worksheet. The first shows verified gross earnings and underwriting debts. The second lists actual cash after taxes, utilities, food, transportation, disability coverage, childcare, periodic replacements, home maintenance and reserves. If the home can be approved but the latter budget has no shock capacity, the prudent recommendation may be to buy less, save more, modify debts or delay."
+      ],
+      "worked": [
+        "Hypothetical gross monthly income $6,000; car/other lender-counted debt $450; proposed housing payment including taxes, insurance and mortgage insurance $2,050.",
+        "Back-end DTI=($2,050+$450)/$6,000=41.67%; no universal lender approval rule follows.",
+        "Cash take-home $4,550; housing $2,050; $450 existing debt; $1,600 essential nondebt spending; $300 repair reserve leaves $150.",
+        "On a $250,000 property, $237,500 loan is 95% nominal price LTV; against $240,000 appraisal the same loan is 98.96%.",
+        "At a hypothetical 95% collateral LTV cap, permitted first loan $228,000; additional purchase-cash shortfall $9,500."
+      ],
+      "practice": [
+        [
+          "Calculate DTI if $700 extra debt is added to the $2,500 monthly obligations.",
+          "($2,500+$700)/$6,000 = 53.33%; discuss underwriting and cash-flow consequences."
+        ],
+        [
+          "Why might an applicant pass DTI but fail personal stress testing?",
+          "Gross income and a lender's defined obligations do not capture all taxes, necessities, unexpected home repairs, job changes or goals."
+        ]
+      ]
+    },
+    {
+      "title": "Rates, fees, incentives, and risk ownership",
+      "body": [
+        "The mortgage note rate is not a full price comparison. Fees, discount points, third-party charges, lender credits and timing of cash flows change economic borrowing cost. Annual percentage rate (APR) is a regulated disclosure intended to include specified finance charges; it is generally different from the advertised note rate. An APR cannot, by itself, forecast refinance timing, property taxes, or future adjustable-rate changes. Compare contracts with the same amount, term and assumptions rather than isolate one headline number.",
+        "A discount point usually costs one percent of the principal per point and can buy a lower contractual rate. The exchange is uncertain because the homeowner may sell or refinance before savings repay the upfront cost. In the simplified comparison of a $237,500 30-year loan at 6.50% versus 6.25%, the lower-rate payment is approximately $38.83 per month lower. Paying $2,375 for that rate implies a naive cash-payment break-even around 61.2 months; an accurate comparison also considers differing remaining balances and the time value of the upfront fee.",
+        "Borrowers face payment and income risk; lenders or investors face default and prepayment risk; title insurers insure specified title defects rather than promising property values will not fall. Mortgage insurance generally protects the lender or guarantor against some credit losses, not the borrower's equity. Distinguish who receives a payment, what claim it covers, and whether it makes the household more resilient.",
+        "A refinance is not free money. It extinguishes or modifies old borrowing through a new transaction subject to prevailing prices, fees, underwriting, and possibly an appraisal. A shorter remaining term on the old loan makes a nominally lower new 30-year monthly payment especially deceptive: the borrower may pay for longer. Financial professionals model cash interest and fees, payoff balances, the repayment horizon and alternative uses of cash; they also keep the decision reversible if refinancing is only theoretical."
+      ],
+      "worked": [
+        "Illustrative principal $237,500, 360 months. Offer A 6.50%: payment ≈$1,501.16.",
+        "Offer B 6.25%: payment ≈$1,462.33; upfront point cost $2,375.",
+        "Monthly P&I saving ≈$38.83; simple break-even = $2,375/$38.83 ≈61.2 months.",
+        "After 60 installments, unpaid balance A ≈$222,326.07, B ≈$221,675.95, a $650.12 difference in principal wealth.",
+        "A complete 5-year comparison incorporates payments, points, payoff balance difference, discounting and taxes under declared assumptions."
+      ],
+      "practice": [
+        [
+          "Would one point universally reduce the note rate by 0.25 percentage points?",
+          "No. The exchange rate between points and note rate depends on the lender, product and market; the example assumes a specific negotiated offer."
+        ],
+        [
+          "Why is a five-year horizon informative even for a 30-year mortgage?",
+          "A sale or refinance may stop the original payment stream well before contractual maturity; compare the expected holding period and downside horizons."
+        ]
+      ]
+    },
+    {
+      "title": "Closing evidence, servicing, and default",
+      "body": [
+        "The federally regulated Loan Estimate normally arrives early in covered transactions, and the Closing Disclosure supplies final loan terms near settlement. Under the CFPB's general TRID framework, qualifying application information triggers a Loan Estimate deadline measured in three business days, while the Closing Disclosure must be received at least three business days before consummation. Some products, including HELOCs and reverse mortgages, use different disclosure forms. A student must identify the loan type before applying the rule mechanically.",
+        "A mortgage package is evidence of a sequence, not simply paperwork to sign. Check the buyers' names, vesting of title, location and legal description, interest-rate lock, type of loan, whether principal or payment can change, points, escrows, lender credits, cash to close, closing attorney and lender instructions. Read both promissory note and security instrument. A recorded deed controls the stated ownership interest; a beneficiary designation on another asset does not necessarily change real-property title.",
+        "A loan servicing transfer means the recipient of payments may change while the legal note terms remain. The borrower should verify transfer notices and payment instructions against a trusted channel to avoid wire and payment redirection scams. Keep annual escrow and tax statements, insurance records, correspondence and payment history. If a rate adjusts or escrow changes, the total amount due can shift even if principal amortization was modeled correctly at origination.",
+        "Missed payments lead to remedies specified by contract, federal servicing rules and state law, potentially including foreclosure, deficiency questions, credit consequences and loss of housing. A secured loan creates meaningful downside asymmetry: a household can lose its down payment and have additional obligations. Professional planning therefore keeps sufficient emergency liquidity and evaluates insurance, disability, job stability and legal support before borrowing at the upper end of any modeled limit."
+      ],
+      "worked": [
+        "On a hypothetical Loan Estimate: interest rate 6.50%, APR 6.78%, 30-year fixed, total estimated cash to close $19,500.",
+        "Do not substitute 6.78% into the amortization calculation: the scheduled principal-and-interest payment uses the note-rate conventions.",
+        "Compare the Closing Disclosure line by line: note rate, loan amount, loan terms, points, lender credits, third-party fees, escrow, and cash to close.",
+        "If escrow expenses rise $1,200 per year, required monthly funding may increase by about $100 before shortage repayment, subject to the actual annual analysis.",
+        "Record documentary mismatches and request corrections before signing instead of relying on verbal assurances."
+      ],
+      "practice": [
+        [
+          "What is the difference between an APR and a note rate?",
+          "The note rate sets scheduled contractual interest under the note; APR includes specified upfront finance charges for comparison and can differ materially."
+        ],
+        [
+          "Why preserve the original Loan Estimate after closing?",
+          "It provides evidence for comparing disclosed terms and categories of charges against the final Closing Disclosure."
+        ]
+      ]
+    },
+    {
+      "title": "Independent mortgage risk memo",
+      "body": [
+        "A professional recommendation is a conditional statement supported by measured evidence. The analyst starts with the household's economic objective: stable shelter, sufficient cash, appropriate title, and an affordable long-run payment. Next the analyst separately estimates income, unavoidable spending, reserves, valuation, financing, closing costs, property-condition risk and alternative housing choices. A single maximum qualifying loan is not a recommendation.",
+        "Build a base case, a cash shock and an asset-value shock. For the $250,000 property and $237,500 initial mortgage, imagine an 8% value decline soon after closing. The property is worth $230,000 and the household has −$7,500 home equity before selling costs. A 6% hypothetical selling cost would absorb another $13,800, making estimated gross-sale proceeds after debt −$21,300 if the loan balance had not been reduced. Negative proceeds mean the seller would need additional funds, negotiation or other resolution; the model does not predict legal remedies.",
+        "Now test income, not just equity. If housing costs are $2,050, existing debt payments $450, essential nondebt spending $1,600 and repairs reserve $300, the family needs $4,400 of monthly cash for these allocations. Net income of $4,550 leaves a $150 buffer, but a one-month loss of 25% of take-home pay produces a $987.50 deficit for that month. This is why the lender's DTI ratio and cash reserves cannot be examined independently.",
+        "The final memo should state what is known, what is an assumption, what must be verified in writing and which options remain possible. Score proposals on affordability and resilience, not the excitement of owning an asset. Compare purchase now, buy a lower-cost home, rent longer while growing reserves, or restructure an existing expensive debt. State which missing evidence could reverse the recommendation and who should verify it: lender, licensed inspector, attorney, insurer or local assessor."
+      ],
+      "worked": [
+        "Asset shock: $250,000 × 0.92 = $230,000 estimated property value.",
+        "Equity: $230,000 − $237,500 = −$7,500 before selling expense.",
+        "6% sale expense: $230,000 × 0.06 = $13,800; proceeds net of mortgage and modeled sale costs = −$21,300.",
+        "Household cash margin: $4,550 − $2,050 − $450 − $1,600 − $300 = $150/month.",
+        "At 75% of normal take-home, monthly income $3,412.50; with $4,400 obligations and allocations, deficit $987.50."
+      ],
+      "practice": [
+        [
+          "Draft one paragraph defending the decision to delay even when lender underwriting approves.",
+          "A valid answer quantifies a thin cash margin, credible stress and the benefit of growing unrestricted reserves; distinguish the lender's requirements from personal affordability."
+        ],
+        [
+          "What evidence could justify purchasing now instead?",
+          "Verified durable income, reliable reserves after closing, lower house expense, repair report, realistic insurance and tax estimates, and contractually verified loan terms."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFPB · Mortgage Loan Estimate",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB · Closing Disclosure and timing",
+      "https://www.consumerfinance.gov/owning-a-home/close/review-documents-before-closing/"
+    ],
+    [
+      "CFPB · DTI",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/"
+    ],
+    [
+      "CFPB · LTV",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-to-value-ratio-and-how-does-it-relate-to-my-costs-en-121/"
+    ],
+    [
+      "CFPB · Points and lender credits",
+      "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/"
+    ]
+  ],
+  "assessment": {
+    "title": "Loan analysis memo",
+    "prompt": "Prepare a one-page recommendation for the buyer using the $250,000 case. Supply the at-closing balance sheet, one-year amortization check, collateral stress scenario, household DTI versus cash-budget comparison and three annotated source citations. Explicitly defend a buy, renegotiate or delay recommendation.",
+    "rubric": [
+      "Reconciled closing balance sheet (20%)",
+      "Correct payment, interest and loan-balance calculations (20%)",
+      "Distinct LTV, DTI and cash-flow analyses (20%)",
+      "Quantified adverse scenario and plausible alternatives (20%)",
+      "Source quality, assumptions and professional judgment (20%)"
+    ]
+  }
+}
