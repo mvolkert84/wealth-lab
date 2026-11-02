@@ -31,7 +31,7 @@ for(let k=0;k<3;k++){
 }
 assert.ok(count>=18&&words>=5300&&open>=36);
 assert.ok(env.WealthLabAcademicM3Markup('L8.S1').includes('unavailable'));
-assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('window.WealthLabAcademicM3Markup?.(s.id)'));
 assert.ok(html.includes('window.WealthLabAcademicM3Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
