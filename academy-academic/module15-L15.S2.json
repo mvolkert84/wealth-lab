@@ -1,0 +1,271 @@
+{
+  "id": "L15.S2",
+  "title": "LLCs, Corporations and Asset Protection",
+  "subtitle": "Connecticut entity formation, S elections, pass-through tax, personal guarantees, QBI, payroll and governance",
+  "prerequisites": [
+    "L13.S3 deeds, estate and beneficiary coordination",
+    "L15.S1 business profit/cash distinction",
+    "L11.S1 taxable income and marginal brackets",
+    "L12.S1 payroll retirement benefits"
+  ],
+  "objectives": [
+    "Separate state legal organization from federal tax status",
+    "Calculate Connecticut official LLC filing and recurring report fees",
+    "Analyze personal guarantee and entity separateness limits",
+    "Explain S shareholder reasonable compensation and distributions",
+    "State 2026 QBI thresholds and deduction limits accurately",
+    "Compare partner allocations with cash distributions",
+    "Create employer/contractor compliance and founder governance audit"
+  ],
+  "sections": [
+    {
+      "title": "Entity law and federal tax classification are different axes",
+      "body": [
+        "A business legal form allocates ownership, fiduciary rights, contracting capacity, and possible exposure to claims under state law. Federal income tax classification is another layer. A Connecticut single-member LLC is often disregarded as separate from its owner for federal income tax unless it makes a valid election, while a multi-member LLC generally defaults to partnership status. An LLC can potentially elect federal corporation and, if eligible, S-corporation treatment. Writing 'LLC' on an invoice does not prove a specific federal return is due.",
+        "Sole proprietors generally operate without a separate business legal person, and the owner often bears direct personal business risk. State-law LLCs may limit some liability for business obligations when maintained and governed correctly, but owners remain liable for their own wrongdoing, fraud, taxes, and contracts they personally guarantee. Corporate owners also face separation and governance requirements. Each structure has distinct creation, ongoing records and dissolution steps.",
+        "An academic entity chart has four columns: legal owner of each asset; party that signed the contract; federal tax filer/classification; and who ultimately owes a specified debt. A registered-agent address and an EIN do not, by themselves, create a shield against every creditor or remove federal tax. Apply actual legal agreements, insurance and regulatory duties before advising a formation."
+      ],
+      "worked": [
+        "A one-owner Connecticut LLC can be disregarded for federal income tax while remaining a state-law LLC.",
+        "A two-member LLC without special election generally has partnership federal tax classification.",
+        "An LLC can elect an eligible S corporation tax status without transforming 'S corporation' into a universal state entity form.",
+        "Business contract liability must be separately tested from a human's personally signed guarantee."
+      ],
+      "practice": [
+        [
+          "Is S corporation always a distinct Connecticut legal entity separate from an LLC?",
+          "No. S corporation is federal tax treatment elected by qualifying corporations, and some LLCs can elect it while keeping LLC state-law form."
+        ],
+        [
+          "Does an EIN alone provide personal asset protection?",
+          "No. It identifies a taxpayer or employer; liability limits depend on state entity law, actual conduct and contracts."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut LLC formation costs and ongoing compliance",
+      "body": [
+        "Connecticut's Secretary of the State publishes a $120 filing fee for LLC formation and an $80 domestic LLC annual-report fee under current published guidance. Those are official filing fees, not a complete estimate of a business's legal, tax or operating cost. An operating agreement, registered agent arrangements, accounting system, local licenses, insurance and possible professional advice can cost more. Business requirements vary by activity and municipality.",
+        "Suppose two owners form a Connecticut LLC for a handmade goods business. They must resolve membership percentages, management authority, initial capital, distributions, exit and deadlock provisions. Without written terms, a disagreement about production labor, intellectual property, marketing costs or liability for a supplier invoice can be far more expensive than filing costs. Annual reporting does not replace sales tax registration, employment duties or other licenses.",
+        "Before filing an entity, compare the benefit from formalized governance and potential liability separation against the cash required to keep it compliant. Deliberately avoid portraying an LLC as a federal tax deduction. If owners are sharing responsibility and profit, a lawyer and tax adviser should coordinate ownership and federal partnership versus corporate tax classification."
+      ],
+      "worked": [
+        "Connecticut LLC formation published filing cost $120; domestic annual report $80.",
+        "Hypothetical first-year official formation plus one annual report $200, excluding other costs.",
+        "Two years of reports under unchanged $80 fee adds $160; total including formation $280.",
+        "Actual legal and tax compliance costs can be materially higher."
+      ],
+      "practice": [
+        [
+          "Is Connecticut's $120 filing fee an all-inclusive legal formation budget?",
+          "No. Operating agreement, insurance, taxes, local approvals, accounting and professional needs may be additional."
+        ],
+        [
+          "Why should two founders write down ownership and distribution rules?",
+          "Clear governance reduces future disputes over capital, labor, decision authority, profit-sharing and exits."
+        ]
+      ]
+    },
+    {
+      "title": "Personal guarantees, commingling, insurance and property title",
+      "body": [
+        "A borrower who signs a personal guarantee creates a separate contractual obligation even if an LLC is the named borrower. Business creditors may demand security interests in assets, and certain conduct can create individual liability. Separateness should be documented with designated bank accounts, written contracts, adequate capitalization, records and accurate signatures. No structure removes the need for relevant liability and property coverage.",
+        "Consider LLC-owned equipment financed by a $50,000 loan. If the owner personally guarantees the note, the lender can potentially enforce the guarantee according to its terms after default; entity ownership does not cancel the person's independent promise. If the owner's home is pledged as collateral, residence risk can rise sharply. Limited liability can be valuable, but only within its real legal boundaries.",
+        "Transferring a personally mortgaged home or rental property to an LLC can raise due-on-sale, title, lender-consent, insurance, subsidy and tax questions. The conditional federal living-trust exception discussed in Module 13 should not be casually applied to every LLC transfer. Always examine exact deed and note before moving real property into a new entity."
+      ],
+      "worked": [
+        "LLC loan $50,000, owner's personally guaranteed portion contractually $50,000.",
+        "Business collateral liquidation returns hypothetical $32,000, leaving $18,000 unpaid principal before other costs.",
+        "Owner's contractual guarantee could expose the owner to the $18,000 deficiency subject to actual terms.",
+        "LLC formation by itself does not produce $18,000 loan forgiveness."
+      ],
+      "practice": [
+        [
+          "Why might an LLC owner still owe a lender after the LLC defaults?",
+          "An independent personal guarantee can obligate the human to satisfy the debt even though the business is a separate legal owner."
+        ],
+        [
+          "Is moving a mortgaged personal residence into an LLC automatically harmless?",
+          "No. Review lender covenants, property title, insurance, taxes and assistance-program rules with legal counsel."
+        ]
+      ]
+    },
+    {
+      "title": "S corporation compensation is not an unlimited payroll-tax bypass",
+      "body": [
+        "The IRS requires an S corporation to pay shareholder-employees reasonable wages for services before treating other payments to them as nonwage distributions. Wages generally involve payroll tax withholding and business reporting. Nonwage distributions can have different federal employment-tax effects, but they are not a free replacement for legitimate labor pay. The appropriate wage depends on duties, hours, experience, comparative pay and how the revenue was generated.",
+        "Suppose a corporation has $100,000 cash before wages and other relevant owner compensation, and a working shareholder reasonably earns $65,000 for substantial services. Ignoring employer payroll-tax cost and other expenses solely for illustration, at most $35,000 remains after gross wage cost. Treating the full $100,000 as distributions because an election exists can result in IRS wage reclassification and back tax/penalty exposure. A $65,000 salary estimate requires documented market support, not a universal formula.",
+        "A tax comparison of Schedule C versus S status must include employer and employee payroll taxes, reasonable wage, accounting costs, state reporting, benefit restrictions and distributions basis. Some businesses gain from S classification; low-profit operations can lose from payroll setup and returns. Business status should be elected after economics, not as a social-media 'zero-tax' trick."
+      ],
+      "worked": [
+        "Illustrative total available owner compensation pool $100,000.",
+        "Stipulated reasonable wage $65,000; hypothetical remainder $35,000 BEFORE employer payroll tax and other costs.",
+        "Actual S corporation payroll cost makes unrestricted cash for distributions lower than this simple residual.",
+        "IRS can reclassify distributions as wages when reasonable compensation was not paid."
+      ],
+      "practice": [
+        [
+          "Can a working S-corporation shareholder report zero wages and all business distributions without scrutiny?",
+          "Not safely. Reasonable compensation for services is generally required before nonwage distributions, with IRS authority to recharacterize payments."
+        ],
+        [
+          "Why must payroll administration cost enter an S-election comparison?",
+          "Employer employment taxes, filings, payroll service costs and legal compliance can consume hoped-for savings."
+        ]
+      ]
+    },
+    {
+      "title": "Pass-through profit, QBI and marginal income tax",
+      "body": [
+        "Many sole proprietors and owners of eligible pass-through businesses can potentially claim the qualified business income (QBI) deduction under Internal Revenue Code section 199A. The common introductory starting point is up to 20% of eligible QBI, but this is not 20% of gross business revenue, not necessarily 20% of net cash available, and not a credit against the taxpayer's tax bill. The deduction faces taxable-income limits, wage/property and specified-service-business restrictions in relevant cases.",
+        "For 2026, IRS published the QBI threshold at $201,750 for most non-joint filers and $403,500 for married joint filers, with phase-in ranges up to $276,750 and $553,500 respectively. These are taxable-income-related thresholds, not a single earnings cap for every owner. Other statutory conditions and a minimum deduction for qualifying active QBI may be relevant. Compute actual QBI with proper deductions and treatment rather than simply multiplying Schedule C profit by 20%.",
+        "Under a simplified eligibility-and-taxable-income-cap assumption, $40,000 QBI can suggest an $8,000 deduction before other limitations. At an illustrative 12% federal marginal rate that could imply roughly $960 less regular income tax, not $8,000 of free cash and not exemption from self-employment tax. State rates and eligibility change the result. Use current Form 8995/8995-A instructions for the actual return."
+      ],
+      "worked": [
+        "Eligible QBI stipulated $40,000; rough starting deduction 20%×$40,000=$8,000.",
+        "At illustrative 12% marginal regular income tax, simple tax sensitivity $8,000×.12=$960.",
+        "2026 threshold single/most others $201,750; MFJ $403,500, with separate phase-ins.",
+        "A QBI deduction is not a $8,000 tax credit and does not generally eliminate self-employment tax."
+      ],
+      "practice": [
+        [
+          "Does a 20% QBI deduction mean owners keep 20% of their sales free of tax?",
+          "No. The base is qualifying business income subject to multiple restrictions, and a deduction reduces taxable income rather than directly refunding the same amount."
+        ],
+        [
+          "Why should a model list QBI, taxable income and self-employment tax separately?",
+          "Each has different calculation rules; a QBI deduction does not automatically reduce the separate self-employment tax base."
+        ]
+      ]
+    },
+    {
+      "title": "Partnership taxes, allocations and distributions",
+      "body": [
+        "A partnership or LLC taxed as a partnership generally files a partnership return and issues Schedule K-1 information allocating taxable income and other items to partners under legal and tax rules. Cash distributions can occur at different dates and amounts than allocated taxable profit. Partner basis, debt allocations, guaranteed payments and distribution restrictions create further complexity. A new owner must understand the possibility of tax on profit not received in cash.",
+        "Suppose two 50/50 partners have a $60,000 partnership taxable-profit allocation, and each is attributed $30,000 while receiving only $10,000 cash this year. Each may need to consider the $30,000 K-1 amount for individual tax despite the lower distribution, subject to classification and other tax items. A written operating agreement can include permitted tax distributions to fund tax obligations, but business liquidity may prevent them.",
+        "Do not label a 50/50 distribution as salary or pretend all money paid to a partner is automatically deductible. Partner services may involve guaranteed payments under their own rules. An analyst should reconcile the partnership's bookkeeping profit, taxable allocations, partner basis and bank cash instead of using any one number as a comprehensive measure of take-home income."
+      ],
+      "worked": [
+        "Partnership allocated taxable profit $60,000, 50% each = $30,000 partner taxable allocation.",
+        "Cash distributed to each partner $10,000.",
+        "Partner income allocation exceeds cash received by $20,000 in the example.",
+        "Tax distribution policy and estimated personal tax liquidity should be documented in agreement."
+      ],
+      "practice": [
+        [
+          "Why can a partner face a tax bill larger than a year's cash distributions?",
+          "Pass-through taxable income can be allocated to partners even when funds are retained for inventory, expansion, debt or reserves."
+        ],
+        [
+          "Does a partner's cash distribution by itself establish a deductible business wage?",
+          "No. Partnership allocations, guaranteed payments, distributions and wage rules differ and need classification."
+        ]
+      ]
+    },
+    {
+      "title": "Payroll, contractors, sales tax and control environment",
+      "body": [
+        "Hiring introduces employer obligations: correct worker classification, minimum wage and overtime requirements, withholding, employment tax returns and insurance where applicable. Labeling someone an independent contractor in a contract does not necessarily settle their legal status. Misclassification can expose a small business to back payroll taxes and labor claims. Connecticut sales and use tax also depends on the actual goods, services, exemption conditions and registration; the LLC entity form alone does not determine taxability.",
+        "A payroll model should show gross salary plus employer payroll tax and any worker compensation insurance, unemployment, benefit and service costs. If gross annual wages are $30,000 and illustrative additional employer costs 12%, fully loaded cash labor cost is $33,600, not $30,000. The 12% is a scenario assumption, not an authoritative Connecticut payroll tax rate. Worker duties and employment laws must be verified separately.",
+        "Internal controls matter for tiny companies as much as large ones. Separate collection reconciliation, refund approval, merchant-account access, inventory count and tax-reserve tracking. A founder who cannot trace orders to bank settlements cannot accurately compute net profit or satisfy a lender's diligence. Keep sensitive customer and employee data private and retain required records."
+      ],
+      "worked": [
+        "Gross hypothetical wages $30,000 with assumed employer-side additional cost 12%.",
+        "Total labor cash burden $30,000×1.12=$33,600.",
+        "A $3,600 extra amount is a modeled assumption, not CT state tax quote.",
+        "Separate collected sales tax and employee tax withholding from owner revenue/cash."
+      ],
+      "practice": [
+        [
+          "Why is contractor classification not decided only by a 1099 form?",
+          "Tax and labor law consider actual control and working relationships, not merely a label on a contract or payment form."
+        ],
+        [
+          "Why should the business protect collected taxes from owner withdrawals?",
+          "Those funds may belong to taxing authorities and using them for owner spending creates compliance and cash-flow risk."
+        ]
+      ]
+    },
+    {
+      "title": "Governance case: two owners, two objectives and succession",
+      "body": [
+        "A founders' governance agreement should distinguish ownership shares, paid production labor, management authority, reimbursement for expenses, profit sharing, intellectual property and decision deadlocks. Two people can each own 50% but contribute very different working hours or capital; a thoughtful operating agreement must explain what the owners intended. A successor manager and buy-sell terms can matter if one founder becomes disabled or dies.",
+        "Create a risk map with the business checking account, outstanding customer commitments, raw inventory, product designs, domain and social accounts, liability insurance, lender contracts and ownership rights. The business is not automatically owned by a spouse's child simply because the owners hope the company becomes an inheritance. State law, agreements and estate documents coordinate who can transfer membership interests and run the company.",
+        "A valuation and exit plan should estimate fair value, funding of a buyout, owner absence, tax consequences, and what happens if the business earns less than expected. A $20,000 operating-profit company with no cash to buy a deceased founder's share can face forced liquidation or serious conflict. Management continuity and reserve funding can be worth more than an elaborate tax election."
+      ],
+      "worked": [
+        "Two founders own 50% each, hypothetical business net equity $60,000.",
+        "Each ownership claim indicative $30,000 before discounts, contracts and taxes.",
+        "Business current cash only $5,000: cannot automatically fund a $30,000 cash buyout.",
+        "Analyze installment buyout, appropriate insurance funding, successor authority and legal restrictions."
+      ],
+      "practice": [
+        [
+          "Why can equal ownership shares and equal salary be economically inappropriate?",
+          "Ownership and compensation pay for different things—capital/risk ownership versus actual work and management duties."
+        ],
+        [
+          "Does a will alone guarantee a specific person can immediately run an LLC?",
+          "No. Entity operating agreement, applicable law, manager appointments and trust or estate process affect control and continuity."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CT Secretary of State LLC formation fees",
+      "https://business.ct.gov/knowledge-base/articles/entity-transactions-forms-and-fees"
+    ],
+    [
+      "CT Secretary of State domestic annual report fees",
+      "https://business.ct.gov/knowledge-base/articles/domestic-annual-report-forms-and-fees"
+    ],
+    [
+      "Connecticut Uniform LLC Act",
+      "https://cga.ct.gov/current/PUB/chap_613a.htm"
+    ],
+    [
+      "IRS LLC federal classification and election",
+      "https://www.irs.gov/instructions/iss4"
+    ],
+    [
+      "IRS S corporation shareholder compensation",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues"
+    ],
+    [
+      "IRS 2026 QBI taxable income thresholds",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ],
+    [
+      "26 USC 199A statutory qualified business income",
+      "https://uscode.house.gov/us/usc/119-124/t26/s199A/"
+    ],
+    [
+      "IRS Publication 334 owner responsibilities",
+      "https://www.irs.gov/publications/p334"
+    ],
+    [
+      "IRS paying yourself rules",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/paying-yourself"
+    ]
+  ],
+  "assessment": {
+    "title": "Connecticut entity and owner-tax classification committee",
+    "prompt": "Compare a sole proprietor, two-member Connecticut LLC default partnership, Connecticut LLC taxed as S corporation when eligible, and C corporation. Separate ownership liability from federal return and cash treatment. Calculate CT $120 formation plus $80 report, hypothetical LLC borrower $50k personal guaranteed and collateral liquidation $32k. Illustrate reasonable compensation $65k from $100k owner pool BEFORE employer payroll tax. Compare $40k fully eligible QBI with 20% deduction and 12% marginal tax sensitivity; cite 2026 thresholds. For a 50/50 partnership allocated $60k profit and distributed $10k cash each, explain tax liquidity. Propose founder operating agreement and successor controls.",
+    "rubric": [
+      "Legal form vs tax classification (25%)",
+      "Liability, guarantees and contracts (20%)",
+      "Reasonable pay, distributions and tax modeling (25%)",
+      "Connecticut fees and compliance (15%)",
+      "Founder governance and estate plan (15%)"
+    ],
+    "answerKey": [
+      "Published CT LLC formation $120 and domestic annual report $80 (plus any other costs).",
+      "$50k guaranteed debt after $32k recovery may create $18k deficiency despite LLC.",
+      "$100k compensation pool−$65k stipulated reasonable salary leaves at most $35k before employer payroll costs.",
+      "$40k eligible QBI×20%=$8k initial deduction; ×12% illustrative income-tax savings ~$960, subject to other rules.",
+      "2026 QBI threshold $201,750 most non-joint, $403,500 MFJ; phase-in and eligibility limits still apply.",
+      "Partnership $60k profit at 50/50 = $30k allocated tax income each though only $10k distributed, potentially creating tax liquidity issues."
+    ]
+  }
+}
