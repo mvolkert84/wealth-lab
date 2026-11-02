@@ -1,0 +1,243 @@
+{
+  "id": "L9.S2",
+  "title": "Savings, CDs and Treasuries",
+  "subtitle": "Deposit insurance, liquidity ladders, after-tax yield, contractual penalties and cash-preservation engineering",
+  "prerequisites": [
+    "L7.S1 inflation-adjusted savings",
+    "L7.S3 nominal, effective and periodic yields",
+    "L9.S1 Treasury yield and bond cash flows"
+  ],
+  "objectives": [
+    "Classify insured deposits and uninsured securities correctly",
+    "Apply FDIC and NCUA deposit categories and limits",
+    "Compare CD early-withdrawal penalties with Treasury bill market risk",
+    "Compute after-tax and after-inflation yields consistently",
+    "Model dated cash ladders without treating reinvestment rates as guaranteed",
+    "Build a home-purchase and emergency liquidity policy"
+  ],
+  "sections": [
+    {
+      "title": "The purpose of cash: meet obligations when markets do not cooperate",
+      "body": [
+        "Cash and near-cash holdings are tools for meeting contractual expenses, not merely low-return investments. A household may need rent or mortgage payments, a car repair, an emergency deductible or closing funds on a fixed date. The cost of being unable to pay a required bill can exceed years of small interest-rate differences. Evaluate each instrument by legal ownership, insured amount, access date, withdrawal restrictions, issuer credit, settlement and after-tax return.",
+        "An emergency reserve should remain spendable during bank business-hour, transfer or settlement delays. Even an FDIC-insured deposit account can be operationally inaccessible for a short period during a technical outage, account freeze or branch disruption. Keep access redundancy and understand ACH hold times. A TreasuryDirect security can be secure against US Treasury default under customary assumptions yet not immediately transferrable to cash without following its custody and sale rules.",
+        "Distinguish principal preservation from fixed market quote. An insured savings account generally maintains nominal deposit balance, subject to insured limits and contract terms; a security sold before maturity changes price. A money market fund seeks a stable share value in many structures but is an investment security, not an FDIC-insured deposit. A household that calls every high-yield product 'savings' risks misunderstanding withdrawals during a market shock.",
+        "Model obligations across two different horizons. A $6,000 emergency target belongs in accessible funds, while a $12,000 home closing requirement twelve months out can be scheduled with appropriately maturing claims. A $250 monthly savings capacity does not automatically fund an extra $6,000 closing gap in twelve months, because contributions total only $3,000 before returns. The plan must solve the required cash rather than assume a favorable quoted APY makes up the difference."
+      ],
+      "worked": [
+        "Emergency reserve required immediately $6,000; future closing cash $12,000.",
+        "Available cash $15,000 ⇒ simple funding gap $3,000 if both goals must be funded now.",
+        "At $250/month for twelve months contributions total $3,000 before interest or taxes.",
+        "A fixed-income market price loss just before closing could reopen that gap.",
+        "Liquidity can be worth more than marginal expected yield on a date-sensitive expense."
+      ],
+      "practice": [
+        [
+          "Why is a Treasury security with a known maturity different from an instantly accessible savings balance?",
+          "The Treasury's scheduled payment happens at a specified time, while early sale or transfer depends on custody, settlement and prevailing market price."
+        ],
+        [
+          "What error results from funding a twelve-month nonoptional down payment with a risky investment's hoped-for return?",
+          "The household may have too little cash at closing when prices fall, making expected return an unsuitable substitute for required liquidity."
+        ]
+      ]
+    },
+    {
+      "title": "FDIC coverage by depositor, bank and ownership category",
+      "body": [
+        "Federal Deposit Insurance Corporation (FDIC) deposit coverage generally protects eligible deposits at insured banks up to $250,000 per depositor, per insured bank, per applicable ownership category. Checking, savings, money market deposit accounts and CDs are deposit products within eligible categories. The FDIC aggregates balances at the same bank in the same ownership category; simply opening two savings accounts under the same owner's category does not double insured limits. Brokerage securities, mutual funds and crypto products are not covered just because offered through a bank website.",
+        "A fictional single person holds $190,000 savings and $100,000 CDs in their sole ownership category at the same FDIC bank. Under the simple standard rule, aggregated deposits equal $290,000 and excess above the $250,000 insured limit is $40,000. Moving a portion to a separately insured bank may change coverage if both accounts remain properly titled. Joint, trust and other ownership categories have additional requirements that must be independently verified, not presumed.",
+        "FDIC coverage addresses insured-bank failure and certain insured deposits; it does not guarantee a bank's quoted investment advisory service, prevent inflation losses, or remove CD penalties for contractually voluntary early withdrawal. Check the institution using the FDIC BankFind directory and review current coverage calculations rather than trust a financial advertisement. FDIC pass-through deposit coverage arranged through fintech products may depend on actual bank deposit placement and maintained records.",
+        "For substantial balances, use the FDIC's official Electronic Deposit Insurance Estimator (EDIE) and list exact bank legal identities, ownership, beneficiaries and account categories. A family trust can change titling and eligibility, but it is unsafe to promise unlimited protection by adding beneficiary names without verifying current regulatory rules."
+      ],
+      "worked": [
+        "Single-owner savings $190,000 and CD $100,000 at same FDIC-insured bank.",
+        "Same ownership category aggregate $290,000.",
+        "Standard eligible insured capacity $250,000 ⇒ excess $40,000 in this simplified case.",
+        "Opening another individually owned savings account at the same bank does not increase the standard limit.",
+        "A separately insured bank may provide a separate applicable standard limit if account requirements are met."
+      ],
+      "practice": [
+        [
+          "What is wrong with claiming two separate $200,000 personal savings accounts at the same bank are always each fully FDIC insured?",
+          "The FDIC aggregates eligible deposits held by the same depositor in the same category at that insured bank; account count alone does not create new coverage."
+        ],
+        [
+          "Does FDIC insurance protect an ETF purchased from a brokerage division affiliated with an insured bank?",
+          "No. Securities are not bank deposits merely because a bank group or bank website provides the distribution service."
+        ]
+      ]
+    },
+    {
+      "title": "Credit unions and brokerage money market products are different legal structures",
+      "body": [
+        "Federally insured credit union shares can have National Credit Union Share Insurance Fund coverage administered by NCUA, generally using a $250,000 standard maximum under applicable membership and ownership categories. The financial instrument is a qualifying credit-union deposit or share account, not every investment sold by a credit union. Confirm the institution's current NCUA coverage and whether special ownership categories apply. State-chartered credit unions may have differing arrangements that should be verified rather than assumed federally insured.",
+        "A money market deposit account (MMDA) is a bank account potentially covered by FDIC insurance when held at an eligible institution and within limits. A money market mutual fund (MMF) is a pooled security under investment-company regulations. Some MMFs seek to maintain a stable share value; others, especially certain institutional or prime categories, have distinct liquidity, NAV and redemption provisions. No share class should be labeled deposit-insured simply because its displayed yield resembles savings-account APY.",
+        "Securities Investor Protection Corporation (SIPC) protection at a qualifying brokerage responds under specified conditions to missing securities or cash when a brokerage firm fails, subject to limits and eligibility; it does not insure an ETF or fund against stock, bond or other investment losses. This is distinct from FDIC/NCUA deposit insurance and US Treasury obligations. A brokerage sweep deposit program can involve real bank deposits placed at partner banks, requiring exact bank and ownership verification.",
+        "An advisor should draw the custody chain: household account, broker or bank, underlying institution or fund issuer, legal title, regulatory protections and redemption procedure. The same mobile banking interface may display a federally insured deposit beside an uninsured stock mutual fund; user interface proximity does not change legal status."
+      ],
+      "worked": [
+        "A federally insured credit union qualifies for NCUSIF rules subject to ownership and eligibility.",
+        "An insured bank MMDA and a money market mutual fund can display comparable yields but different protection.",
+        "A $20,000 mutual fund declining 2% becomes $19,600 before costs, despite the account being held by a reputable brokerage.",
+        "SIPC does not reverse ordinary market declines or replace FDIC deposit coverage.",
+        "Verify actual sweep bank placement before assuming combined coverage across institutions."
+      ],
+      "practice": [
+        [
+          "Why is a money market deposit account different from a money market mutual fund?",
+          "An MMDA is an eligible bank deposit when legal conditions apply, while an MMF is an investment company security without ordinary deposit insurance."
+        ],
+        [
+          "Why does SIPC protection not guarantee the market value of a bond mutual fund purchased through a brokerage?",
+          "SIPC addresses specified missing customer assets in qualifying broker failures, not losses caused by changing security prices or fund portfolios."
+        ]
+      ]
+    },
+    {
+      "title": "Certificate of deposit math, early withdrawal and reinvestment exposure",
+      "body": [
+        "A CD is a deposit with contractual term, interest convention, account insurance conditions and specified early-withdrawal terms. Fixed-rate CDs lock the contract rate under their conditions, while variable or callable CDs can differ. Brokered CDs may be resold at fluctuating secondary market prices and involve transaction spreads; the investor may not have the same simple early-withdrawal provisions as a directly issued retail bank CD. Read the issuer, custody, insurance and withdrawal agreements before treating a brokered CD as ordinary savings.",
+        "Compare a $10,000 CD with stated 4% effective APY and a twelve-month term. Assuming one-year effective accrual without other charges, ending value is $10,400 before taxes. If withdrawn early when interest earned under a simpler illustration is $200 and the contract penalty is 90 days of approximate interest at a 4% annual simple rate, penalty would be about $98.63 using 90/365 timing. Remaining accrued interest may be only $101.37 before taxes. Actual penalty language and compounding can differ materially.",
+        "An interest rate lock creates reinvestment risk: the money might mature when new deposits earn less, while a fixed rate may feel unattractive if rates rise. A short CD ladder spreads reset dates but cannot promise future yields. An early-withdrawal penalty can exceed earned interest and reduce principal under some contract terms. Certain no-penalty CDs provide more flexible access in exchange for different offered rates or conditions.",
+        "CD comparisons must use the same after-tax basis, insurance category, penalty horizon and APY calculation. A rate difference of 0.25 percentage points on $5,000 is only $12.50 annually before tax in a simple one-year approximation; risking a required mortgage payment to gain that amount may be irrational. The most suitable CD can be the one whose maturity and access rules best match a known expense."
+      ],
+      "worked": [
+        "Illustrative $10,000 CD with 4% effective annual yield for one year ⇒ $10,400 before tax.",
+        "Hypothetical midterm earned interest $200; 90-day penalty modeled at $10,000×4%×90/365≈$98.63.",
+        "Net earned interest after hypothetical penalty ≈$101.37, before tax and actual contract rules.",
+        "APY and penalty conventions should be aligned with the issuer's binding agreement.",
+        "Rate uncertainty begins again at CD maturity; future yields cannot be assumed."
+      ],
+      "practice": [
+        [
+          "Why can a brokered CD sold before maturity lose principal despite being issued by an FDIC-insured bank?",
+          "Secondary sale price may decline with rates or spreads; deposit insurance for eligible issuer failure differs from market-price protection on a voluntary sale."
+        ],
+        [
+          "How should a consumer decide whether a CD early-withdrawal penalty is acceptable?",
+          "Model exactly when money might be needed, how the contract computes the penalty, whether principal can be reduced and the available accessible reserve elsewhere."
+        ]
+      ]
+    },
+    {
+      "title": "Treasury bills, note cash flows and settlement-specific liquidity",
+      "body": [
+        "Treasury bills are short-term US government obligations commonly sold at a discount to face and redeemed at par at maturity, subject to auction terms. TreasuryDirect currently lists standard bills with maturities between four and fifty-two weeks, including several intermediate week terms; auction schedules and available instruments can change. A buyer paying $9,800 for a bill with $10,000 face receives a modeled $200 at maturity, not $200 coupon checks along the way. A bill's investment rate, discount rate and holding-period return use different day-count and denominator conventions.",
+        "On the hypothetical $9,800 purchase redeemed at $10,000 after 26 weeks, simple holding-period gain is $200/$9,800≈2.0408%. A crude 52/26 annualization of that simple period return gives approximately 4.0816%, while compounding the half-year period factor twice gives roughly 4.123%. Actual auction pricing uses specified day count and yield conventions; a live market quote cannot be inferred from the example.",
+        "Direct Treasury securities are generally subject to federal income tax on interest but exempt from state and local income tax. Interest on bank CDs may be treated differently for state purposes. A Treasury security held through a broker may be sold in a secondary market with market-price risk; a TreasuryDirect-held security may require transfer steps before a pre-maturity sale. The high certainty of scheduled federal payment does not mean every custody channel offers immediate cash any day.",
+        "An effective cash-management analysis includes bill auction and settlement dates, maturity dates, reinvestment instructions, federal withholding, tax reports and bank transfer cutoffs. If a homeowner must bring a wire to closing by a particular date, a T-bill maturing afterward is not funded cash even when its promised payment is sound."
+      ],
+      "worked": [
+        "Bill purchase $9,800, redemption $10,000 ⇒ $200 interest if held and paid as stated.",
+        "26-week simple holding-period return $200/$9,800≈2.0408%.",
+        "Doubling that period rate gives rough annual simple 4.0816%; compound two equal periods ≈4.123%.",
+        "Actual Treasury bill investment and discount quoted yields use specified conventions and time bases.",
+        "Interest generally subject to federal, not state/local income tax under applicable Treasury rules."
+      ],
+      "practice": [
+        [
+          "Why does a 26-week bill's 2.04% holding-period gain not mean the quoted annual yield is exactly 2.04%?",
+          "Holding-period and annualized measures use different periods, day counts and quote conventions; convert before comparing to bank APY."
+        ],
+        [
+          "What operational error can prevent a Treasury bill from funding a planned house closing even without default?",
+          "The redemption or sale proceeds may settle or become transferable after the required wire date; custody and maturity timing are crucial."
+        ]
+      ]
+    },
+    {
+      "title": "After-tax, real cash returns and inflation loss",
+      "body": [
+        "Nominal deposit growth differs from spendable purchasing power. Model gross interest first, subtract legally applicable tax on that interest, then adjust resulting cash for inflation over the same period. For a simplified $10,000 account earning 4% taxable annual interest, interest is $400. At a hypothetical marginal income tax rate of 22%, modeled federal tax is $88, leaving $312 net interest and $10,312 nominal cash. At 3% annual inflation, real value is $10,312/1.03≈$10,011.65, only slightly above the initial $10,000 of spending power.",
+        "Do not subtract the tax rate directly from the principal as if a 22% income tax consumes 22% of the whole bank balance. Taxes often apply to the earned interest, and some investments have different timing, account wrapper or exemption rules. A Treasury security's federal and state tax mix can alter the ranking compared with a CD even when quoted pretax yields are close. Real return comparisons require consistent units, dates and jurisdiction.",
+        "A $10,000 cash balance earning zero for one year under 5% inflation has purchasing-power equivalent $10,000/1.05≈$9,523.81. Cash can therefore lose real purchasing power even when nominal deposit principal is safe. That does not automatically imply the household should use volatile equities for emergency money: the cost of a timed funding shortfall may be larger than slow real erosion. Different assets solve different types of risk.",
+        "Introduce a two-objective policy: protect enough immediately accessible nominal cash for unexpected bills, while investing long-horizon surplus in suitably diversified assets for potential growth. Test an adverse inflation case and a job-loss case. An accessible reserve is a service provided to the household and should not be evaluated solely by expected percentage return."
+      ],
+      "worked": [
+        "$10,000 balance ×4% nominal taxable interest ⇒ $400 annual interest.",
+        "At illustrative 22% tax on interest, $88 tax; nominal after-tax balance $10,312.",
+        "At 3% inflation, real equivalent $10,312/1.03≈$10,011.65.",
+        "At 0% nominal on $10,000, 5% inflation reduces prior-year purchasing power to ≈$9,523.81.",
+        "Tax rules and effective inflation rate must be checked for actual products."
+      ],
+      "practice": [
+        [
+          "Why should income tax on cash-account yield not be calculated as 22% of the entire account principal?",
+          "Ordinary interest taxation generally applies to taxable earnings, not automatic tax on previously owned deposit principal."
+        ],
+        [
+          "How can holding some real-return-negative cash still be a financially rational decision?",
+          "Accessible nominal funds prevent forced asset sales, missed bills, penalties and refinancing stress during near-term emergencies, benefits that nominal yield alone cannot measure."
+        ]
+      ]
+    },
+    {
+      "title": "A cash allocation and documented contingency plan",
+      "body": [
+        "A complete household liquidity plan divides money by obligation, priority and time. First list bills due before the next paycheck, a minimum emergency reserve and a dated mortgage closing target. Then select legal account types with compatible access: immediately available insured deposits for emergency funds, suitable short-term deposits or maturities for future expenses, and longer-term risk assets only for money that can tolerate drawdowns. Keep actual bank account restrictions and insurance totals documented.",
+        "Suppose a person has $18,000 liquid assets and needs $6,000 ongoing emergency cash plus $12,000 potential closing within twelve months. No spare risk capital remains from that $18,000 under the basic segmentation. If the person saves an additional $250 monthly, twelve contributions total $3,000, but this new money should not be casually counted both as a future closing contribution and as extra permanent risk investing. If a $2,500 car repair occurs, recalculate both buffers.",
+        "Build an allocation grid: instrument, institution, legal protection, amount, ownership category, interest rate convention, first available date, early access cost, estimated tax and matching liability. Verify FDIC/NCUA coverage rather than rely on a badge. Avoid treating a money market mutual fund as a deposit, and do not assume the highest-yielding CD can always be liquidated without a penalty.",
+        "The academic output is a cash-defense policy that survives a sudden bank app outage, a three-week job interruption, and interest-rate changes. The policy should specify who can authorize transfers, what happens when a bill matures, and which asset may be sold first without violating the household's essential liquidity floor."
+      ],
+      "worked": [
+        "Accessible cash $18,000 = emergency allocation $6,000 plus closing allocation $12,000.",
+        "Unallocated existing risk capital=$0 under these two stated obligations.",
+        "Twelve monthly new $250 contributions=$3,000 before interest.",
+        "Unexpected $2,500 deductible reduces aggregate reserves to $15,500 unless replenished.",
+        "A plan must rebalance reserves after expenses rather than double count funds."
+      ],
+      "practice": [
+        [
+          "What is the main error when the same $12,000 is shown as both closing money and a freely investable stock allocation?",
+          "It double counts one economic asset against incompatible obligations, ignoring the liquidity required for the planned housing purchase."
+        ],
+        [
+          "What should be recorded for every deposit or short-term security in the household's cash map?",
+          "Legal issuer, account type and owner, applicable protection, restrictions, date funds become available, yield/tax convention and the required expense it funds."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "FDIC Deposit Insurance Basics",
+      "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance"
+    ],
+    [
+      "FDIC Deposit Insurance FAQ",
+      "https://www.fdic.gov/resources/deposit-insurance/faq"
+    ],
+    [
+      "NCUA Share Insurance",
+      "https://ncua.gov/consumers/share-insurance-coverage"
+    ],
+    [
+      "TreasuryDirect T-bill Facts",
+      "https://www.treasurydirect.gov/marketable-securities/treasury-bills/"
+    ],
+    [
+      "TreasuryDirect Tax Rules",
+      "https://www.treasurydirect.gov/marketable-securities/tax-forms-and-withholding/"
+    ],
+    [
+      "SEC Investor.gov Money Market Funds",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds"
+    ],
+    [
+      "SIPC What SIPC Protects",
+      "https://www.sipc.org/for-investors/what-sipc-protects"
+    ]
+  ],
+  "assessment": {
+    "title": "Emergency reserve, CD and Treasury cash-flow audit",
+    "prompt": "Design a $6,000 immediate emergency and $12,000 twelve-month home-closing cash plan. Audit two deposit balances ($190,000 savings and $100,000 CDs) under basic FDIC single-ownership rules, price a 26-week $9,800-to-$10,000 bill, calculate after-tax and real value of $10,000 interest-bearing savings, model a 90-day CD early-withdrawal penalty and explain how a money market mutual fund differs from a bank MMDA and SIPC coverage. Produce a dated transfer and custody checklist.",
+    "rubric": [
+      "Insurance and legal product classification (25%)",
+      "CD, bill, after-tax and inflation mathematics (25%)",
+      "Maturity and liquidity engineering (25%)",
+      "Counterparty and custody operational risks (15%)",
+      "Sources and verification checklist (10%)"
+    ]
+  }
+}
