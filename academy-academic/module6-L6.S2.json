@@ -1,0 +1,310 @@
+{
+  "id": "L6.S2",
+  "title": "The High-Stakes Fine Print",
+  "subtitle": "Tax-efficient transactions, trusts, insurance, real estate, fraud screening and audit-grade financial decisions",
+  "prerequisites": [
+    "L6.S1 income-tax mechanics and credits",
+    "L3.S2 trust legal control and basis",
+    "L5.S1 life insurance loans and lapse",
+    "L2.S5 home financing and assistance liens"
+  ],
+  "objectives": [
+    "Audit multi-step financial strategies across legal and economic systems",
+    "Distinguish substance, title, cash proceeds and actual tax savings",
+    "Analyze policy loans and lapse/surrender exposure",
+    "Stress test trust transfers, basis and estate/gift consequences",
+    "Calculate cash-versus-gain on a financed home sale",
+    "Evaluate rental property and business deductions with documentation",
+    "Reject abusive shelter claims and support realistic alternatives",
+    "Prepare an integrated Connecticut family financing memo"
+  ],
+  "sections": [
+    {
+      "title": "Follow five ledgers whenever a strategy claims to create wealth",
+      "body": [
+        "Complex financial arrangements involve at least five separate ledgers: economic assets and liabilities; actual cash flow; legal title and contractual rights; federal and state tax consequences; and contingent risks under stress. A promoter may discuss only one ledger and leave others invisible. Borrowing against a cash-value life policy increases available cash and an equal secured liability; putting cash in a trust may change legal management; buying a house creates an asset and usually a lender claim. None of those actions alone generates net wealth at the moment of transfer.",
+        "Before accepting a strategy, draw a timeline of every legal action: initial premium, policy cash-value accumulation, loan issue, home down payment, first mortgage, trust deed, trust beneficiary designations, policy repayment or lapse, and the future home sale or death. For each date record whether a transaction creates, moves or extinguishes property; who receives cash; who owes debt; and which rule might recognize income or gain. Separate tax deferral from tax exclusion and distinguish a permitted deduction from a higher economic return.",
+        "Consider a person with $20,000 cash-value collateral and a house purchase opportunity. Borrowing $12,000 from the insurer may provide $12,000 available for closing, but creates a $12,000 policy-secured loan before interest. If the buyer then has $12,000 more in home equity, the original balance sheet has not become richer by $12,000; the policy-related borrowing remains a liability, and insurance benefits might be impaired. The mortgage lender also checks the real down-payment source and loan obligations.",
+        "An audit should begin with 'what must be true for this to work?'—sustainable premiums, positive net policy value, eligibility under lender and assistance agreements, sufficient home cash, accurate tax basis, enforceable trust terms and reasonable fees. If any condition fails, the promised outcome may vanish. The student's job is to build a falsifiable financial model with documentary proof rather than admire a complicated ownership diagram."
+      ],
+      "worked": [
+        "Original liquid collateral represented as policy cash value $20,000, no policy loan.",
+        "Borrow $12,000; cash +$12,000 and loan liability +$12,000.",
+        "Net economic wealth from the borrowing event remains unchanged before interest and fees.",
+        "At 7% annually, debt after five capitalized-interest years ≈$16,831.",
+        "Loan interest economic cost ≈$4,831 if no repayments, whether or not a policy continues to credit some interest or dividends."
+      ],
+      "practice": [
+        [
+          "What is the missing ledger in a presentation showing the $12,000 policy-loan proceeds but no loan balance?",
+          "The balance sheet omits the insurer debt secured by policy values, accruing interest, possible reduced net death benefit and lapse exposure. Loan proceeds are not pure new assets."
+        ],
+        [
+          "Why must a tax benefit be evaluated after cash fees and future obligations?",
+          "A legal reduction in a tax payment may be smaller than transaction costs, new debt interest, lost liquidity, reduced investment growth or future contingent taxes."
+        ]
+      ]
+    },
+    {
+      "title": "Substance-over-form and assignment-of-income controls",
+      "body": [
+        "The IRS distinguishes lawful trusts from abusive tax schemes. Federal tax law considers substance rather than simply the name on a document. Courts and statutes generally prevent individuals from assigning wages or personal income-producing activities to a shell arrangement while retaining economic control and then claiming the earnings are no longer taxable. A trust is not a machine that converts groceries, household housing or family education expenses into business deductions.",
+        "A legal trust can be a grantor trust, a separately taxed nongrantor trust, or produce income taxable to beneficiaries depending on retained powers, trust terms and the tax rules. Ordinary income created by the grantor's retained powers may remain taxable to the grantor even when investments sit in a trust-titled account. The IRS has repeatedly warned about abusive trust structures that promise to eliminate tax through repeated transfers of the same assets while the promoter or taxpayer continues to enjoy or manage them as before.",
+        "Investigate a fictional claim: a worker earns $80,000 W-2 wages, transfers those wages to a trust bank account and pays $15,000 household groceries and rent from the trust. Simply rerouting money does not eliminate the $80,000 compensation income, and personal expenses do not automatically become deductible trust business expenses. If the trust receives genuine investment interest, classification and reporting remain necessary. The correct tax inquiry is the legally recognized earning party, deductible expense character and actual ownership rights.",
+        "Ask for the governing instrument, income source documents, actual account control, asset title and tax filings, not a social-media testimonial. Have an independent CPA or tax attorney evaluate any proposed trust tax arrangement, especially when a promoter tells the family not to disclose the transactions to the accountant or says the IRS is prohibited from examining the trust. Compliance creates a defensible paper trail; elaborate terminology is not evidence of tax authorization."
+      ],
+      "worked": [
+        "Worker earns $80,000 of reportable W-2 wages.",
+        "Transfers $20,000 to a trust account: transfer of existing cash, not a $20,000 wage deduction.",
+        "Trust pays $15,000 household groceries and rent: private expenses are not magically eligible tax deductions.",
+        "If no other qualifying deductions arise, wage tax base is not reduced by $35,000 because of these transfers.",
+        "A genuine trust may have tax obligations for its income or its grantor/beneficiaries under the correct classification."
+      ],
+      "practice": [
+        [
+          "What is the flaw in believing a person can deduct personal groceries by paying them through a newly established trust?",
+          "The character of a personal living expense does not become an ordinary business expense merely by changing the paying account. Substance and statutory deduction rules control."
+        ],
+        [
+          "Why should independent tax review be required for promoters promising near-zero tax from salary paid through a trust?",
+          "Such structures can violate assignment-of-income and substance principles, expose users to taxes, penalties or fraud, and rely on claims inconsistent with the IRS's abusive-trust guidance."
+        ]
+      ]
+    },
+    {
+      "title": "Life-policy borrowing, income tax and exit-event traps",
+      "body": [
+        "Cash-value insurance can provide policy loans, but its loan proceeds and taxable events must be analyzed together. A loan may not initially constitute ordinary income under many non-MEC conditions, yet interest grows and is not free. The borrowing terms, premium commitments, underlying cash value, surrender charges and available death benefit differ by policy. A policy that remains fully in force under a favored illustration might fail under adverse credited returns or when the owner cannot sustain premiums. No insurer can guarantee an unchecked current-assumption projection.",
+        "Assume $15,000 initial policy loan at 7% compounded annually, no repayments for eight years. Loan balance is $15,000×1.07^8≈$25,773, so capitalized interest adds about $10,773. If policy values available to support the debt grow too slowly, extra premium contributions or a partial repayment might be required to avoid lapse. Illustrative death benefit $250,000 may be reduced by outstanding debt under policy terms, not increased because borrowing was used to acquire a residence.",
+        "Tax consequences on surrender or lapse can surprise owners. A hypothetical contract with $30,000 gross surrender value, $18,000 loan paid off from surrender and $22,000 adjusted tax basis might yield $12,000 actual cash and $8,000 potential ordinary taxable gain under a simplified contract surrender treatment. Modified endowment contracts can produce different loan and withdrawal tax treatment. A purported 'tax-free loan forever' strategy must establish contract status and demonstrate that coverage is maintained rather than assume no exit will occur.",
+        "Analyze the transaction across three outcomes: insured dies while policy is in force, borrower repays, and policy collapses or is surrendered while debt is high. Track cash, net benefit, premiums, tax and estate consequences in each. If the purpose is a home purchase, compare conventional down-payment saving and a standard mortgage against the policy strategy on identical dates. Only a real insurer in-force illustration and a loan officer's treatment of borrowed funds can support actual choices."
+      ],
+      "worked": [
+        "Loan principal $15,000, annual interest 7%, years 8 ⇒ balance≈$25,773.",
+        "Debt interest accumulation≈$10,773, independent of the use of proceeds.",
+        "Hypothetical $250,000 death benefit less loan ≈$224,227, before contract-specific changes.",
+        "Separate illustrative surrender: $30,000 gross value, $18,000 loan and $22,000 basis ⇒ $12,000 net cash and possible $8,000 gain.",
+        "A marginal 22% rate on $8,000 of legally reportable ordinary gain implies $1,760 conditional tax, not a universal policy result."
+      ],
+      "practice": [
+        [
+          "What happens to the apparent 'free cash' claim when policy interest is added to the balance for eight years?",
+          "Debt compounds to about $25,773 on $15,000 at 7%, and interest reduces collateral margin and possibly the net death benefit. Cash obtained originally has a growing financial cost."
+        ],
+        [
+          "Why can policy lapse be more consequential than the policyholder receiving no cash on surrender?",
+          "Cancellation or lapse with unpaid loans can create taxable gain even when net cash is small or zero; legal status and tax basis must be verified."
+        ]
+      ]
+    },
+    {
+      "title": "Trust ownership, income attribution, estate inclusion and basis",
+      "body": [
+        "Estate planning and income tax are related but not interchangeable. A revocable trust often remains a grantor trust for federal income tax and usually does not remove assets from the settlor's gross estate simply because title changes. An irrevocable trust can still be a grantor trust; estate inclusion depends on retained rights and other statutory facts. A completed lifetime gift to an irrevocable trust might trigger gift-tax reporting without producing immediate gift tax, depending on exclusions and remaining lifetime credit. Estate tax exemption thresholds are not property-tax exemptions or creditor protections.",
+        "IRS Revenue Ruling 2023-2 analyzes a completed gift of assets to a grantor trust whose assets were not included in the grantor's gross estate. Under the ruling's facts, death of the grantor did not adjust basis to date-of-death fair market value. That can matter for families transferring appreciating investments or a house before death. Other arrangements can have different basis and estate-inclusion outcomes. A trust designed to minimize one tax may create an unfavorable future capital gain when heirs sell.",
+        "Use a simplified appreciated asset: $100,000 donor adjusted basis, $300,000 current value and $310,000 later sale. A qualifying lifetime gift with carryover basis for gain could yield $210,000 modeled realized gain; qualifying inherited property receiving $300,000 adjusted date-of-death basis could yield $10,000. The $200,000 difference is in *taxable gain*, not a $200,000 tax refund. Income characterization, taxpayer, state, transfer conditions, losses and exceptional rules alter final liability.",
+        "For 2026 the federal estate basic exclusion is $15 million, and Connecticut's stated estate and gift exemption is separately $15 million. Below-threshold estates can still face probate or state estate filing requirements. A typical household below the thresholds should not assume an irrevocable trust will create extraordinary estate tax savings. A defensible analysis is about beneficiary needs, control, tax basis, legal costs and continuity, with attorney review before transferring property."
+      ],
+      "worked": [
+        "Lifetime gift hypothetical basis $100,000; later sale $310,000 ⇒ gain-side carryover gain $210,000.",
+        "Qualifying inherited basis $300,000; later sale $310,000 ⇒ gain $10,000.",
+        "Difference in modeled realized gain $200,000, not a dollar-for-dollar difference in tax.",
+        "2026 federal estate basic exclusion $15,000,000; Connecticut 2026 estate exemption $15,000,000 under distinct law.",
+        "Neither threshold establishes an automatic exclusion from reporting or a deduction for living expenses."
+      ],
+      "practice": [
+        [
+          "Why can an irrevocable trust used for estate planning make a later sale more taxable?",
+          "When a completed lifetime transfer excludes the asset from the grantor's gross estate, ordinary gift carryover basis may apply rather than a qualifying death-time basis adjustment. Exact provisions control."
+        ],
+        [
+          "What evidence would you demand before a claim that a trust removes all future state and federal taxes?",
+          "The executed trust, deed and account registration, retained powers, income classification, beneficiary rights, source-year tax law, estate inclusion and basis analysis; blanket immunity claims are unsound."
+        ]
+      ]
+    },
+    {
+      "title": "Home trusts, mortgages, subordinate liens and sale taxation",
+      "body": [
+        "An asset-protection story involving a financed home must separate title from collateral. The first lender's lien and any subordinate assistance loan do not vanish when a deed changes to a trustee. Federal law offers a specified due-on-sale exception for certain transfers into inter vivos trusts in which the borrower remains a beneficiary and the transfer does not change occupancy rights, but eligibility is conditional. Subordinate mortgage, grant and assistance documents can contain independent transfer, repayment or occupancy terms, and some loans are not covered by a particular federal exemption.",
+        "A fictional house worth $260,000 has a $220,000 first mortgage and a $12,000 currently enforceable subordinate lien. The owner's gross equity is $28,000, but a sale at the stated value with 6% expenses leaves $12,400 modeled cash proceeds. At a 10% decline in sale price, $234,000 sale less 6% expenses, less the $232,000 debts, yields negative $12,040. Those amounts are economic proceeds, not taxable gains. A trust cannot remove the lien's payment obligation or selling costs.",
+        "Now separately model tax gain. If the same property has $210,000 adjusted basis and sells for $260,000 with $15,600 qualifying selling expenses, amount realized is $244,400 and simplified taxable realized gain is $34,400 before any Section 121 exclusion. Home mortgage payoff does not appear as another reduction of adjusted basis. A qualifying taxpayer may have eligible principal-residence exclusion, but trust ownership and occupancy tests require fact-specific review. The $12,400 sale cash and $34,400 modeled gain are perfectly compatible.",
+        "Before transferring or selling, collect the executed notes, mortgage and lien records, lender payoff statement, assistance program's current terms, deed, tax basis records and homeowner occupancy history. Ask counsel whether transfer causes acceleration or repayment, and the lender how down-payment loans are counted for qualification. A tax deduction or anticipated benefit cannot be claimed until the underlying legal transaction is eligible and correctly recorded."
+      ],
+      "worked": [
+        "Home $260,000 less first debt $220,000 and subordinate lien $12,000 ⇒ gross equity $28,000.",
+        "Selling costs 6%×$260,000=$15,600; net cash $260,000−$15,600−$232,000=$12,400.",
+        "At sale price $234,000, sale costs $14,040 and net −$12,040.",
+        "Adjusted basis $210,000, tax amount realized $244,400 ⇒ gain $34,400 before exclusion.",
+        "Net cash and taxable gain have different denominators and are not synonyms."
+      ],
+      "practice": [
+        [
+          "Why is $34,400 modeled tax gain not the same as $12,400 net cash on a leveraged property sale?",
+          "Gain uses adjusted basis and amount realized; cash proceeds use sales price less costs and actual secured loan payoff. The mortgage does not alter basis in the same way."
+        ],
+        [
+          "Why is federal due-on-sale trust protection not enough to approve a house title transfer with a subordinate assistance lien?",
+          "Other recorded contracts can impose distinct transfer, repayment, occupancy and forgiveness terms even where a particular first-lien due-on-sale clause cannot be exercised."
+        ]
+      ]
+    },
+    {
+      "title": "Business deductions, recordkeeping and the ordinary-and-necessary test",
+      "body": [
+        "A legitimate business may deduct qualifying ordinary and necessary expenses under applicable law, but a household's personal spending does not become a business expense merely because the owner forms an LLC or trust. Business income, basis, capitalization, depreciable property, inventory and use of a home require distinct analysis. A transaction must have a real business purpose and meet the rule for its tax character. A new entity may add state registrations, filings, accounting obligations and additional costs without producing any income-tax benefit.",
+        "Consider a small crafts business with $25,000 gross receipts, $8,000 legitimate material and shipping costs and $2,000 documented business software and supplies. Before other qualifying items, economic business profit is $15,000. If the owner also spends $4,000 on their own living-room furniture with no legitimate business use, labeling that $4,000 an 'operating expense' would misrepresent the profit and could create tax exposure. Allocation of mixed personal-business use needs evidence and appropriate percentage methods.",
+        "Self-employment can involve both income tax and self-employment tax subject to the appropriate statutory mechanics. Business profit is not always identical to gross sales, deposits into a bank account or owner draws. Moving $5,000 of profit from a business account to the owner's personal account may be an owner draw rather than an additional tax expense or a second taxable sale, depending on the entity classification. The type of entity and its tax election matter.",
+        "Build a contemporaneous expense register: vendor, date, purpose, customer project where relevant, amount, proof of payment, business use fraction, capitalization decision and supporting invoice. Do not invent receipts or rely on a promoter promising that any personal vacation becomes deductible when a business meeting is scheduled on one afternoon. An independent CPA can help structure real business expenses, not retroactively make personal consumption into deductible activity."
+      ],
+      "worked": [
+        "Craft business gross receipts $25,000, substantiated material/shipping $8,000 and software/supplies $2,000.",
+        "Simplified business profit $25,000−$8,000−$2,000=$15,000 before remaining legal tax adjustments.",
+        "Personal furniture $4,000 with no genuine business use does not automatically create a $4,000 business deduction.",
+        "Moving $5,000 between owner's accounts does not itself establish a new business cost.",
+        "A tax deduction at a hypothetical 22% rate never refunds the full economic cost of a legitimate $1,000 expense."
+      ],
+      "practice": [
+        [
+          "Why is an LLC formation certificate insufficient to turn family expenses into deductible trade expenses?",
+          "Entity formation does not change the economic purpose of spending or override deductibility law. The expense must be legitimately business-related and substantiated."
+        ],
+        [
+          "Why is gross business revenue not an appropriate estimate of after-tax owner income?",
+          "Legitimate operating expenses, payroll, capital assets, financing, income/self-employment taxes and owner distribution rules change actual income and cash availability."
+        ]
+      ]
+    },
+    {
+      "title": "Rental property, depreciation and the difference between book loss and cash",
+      "body": [
+        "Rental real estate introduces different rules from a personal residence. Gross rent collected is not the owner's spendable return. Legitimate operating expenses, mortgage interest, repairs and depreciation may affect taxable income, while principal payments use cash but do not generally count as ordinary current interest deductions. Depreciation allocates qualifying building basis over a legal recovery period; land is not depreciated. Passive activity loss restrictions and personal use may constrain whether a paper loss offsets wages.",
+        "Suppose a hypothetical rental collects $24,000 annually, pays $7,000 ordinary eligible operating costs, $8,000 deductible mortgage interest and $5,000 current allowed tax depreciation, ignoring other rules. Simplified taxable rental income is $4,000. If the same loan also requires $6,000 principal payments, cash before taxes and other costs is $24,000−$7,000−$8,000−$6,000=$3,000. The $4,000 taxable rental income differs from $3,000 cash flow because principal consumes cash while depreciation is noncash. Real property tax, insurance, vacancy and capital repairs may alter all of these.",
+        "Depreciation can lower present taxable income but generally affects adjusted basis and later sale taxation, and depreciation-related gains can face special rates or recapture treatment. A property marketed as an 'income tax shelter' may produce weak real cash or force an investor to fund repairs with credit. A negative taxable number on Schedule E does not guarantee a tax reduction on wages because passive limitations, income thresholds, grouping and at-risk rules apply.",
+        "Analyze total return with NOI, cap rate, debt service, cash-on-cash return, reserves and eventual sale costs, not solely deductions. Identify tenant-law obligations, insurance, financing covenants and independent management expenses. In a Connecticut property and a Maine property comparison, state withholding, source-income taxation and owner domicile may differ; do not infer either state's rules from a national real estate influencer."
+      ],
+      "worked": [
+        "Annual rent $24,000 less $7,000 eligible expense, $8,000 mortgage interest and $5,000 depreciation ⇒ modeled taxable rental income $4,000.",
+        "Cash after $7,000 expenses, $8,000 interest and $6,000 mortgage principal ⇒ $3,000 before other items and taxes.",
+        "Difference between taxable income $4,000 and cash $3,000 reflects $5,000 noncash depreciation versus $6,000 non-deductible current principal.",
+        "Depreciation may reduce basis, affecting later tax calculations, subject to specific provisions.",
+        "A property producing a taxable loss is not necessarily eligible to offset the owner's employment wages."
+      ],
+      "practice": [
+        [
+          "How can cash flow be $3,000 while simplified taxable rental income is $4,000?",
+          "Current mortgage principal is a cash outflow but generally not an ordinary expense, while eligible depreciation is a noncash deduction. Reconciling both yields different numbers."
+        ],
+        [
+          "Why is a rental's negative tax income not automatically an allowable offset against a worker's wages?",
+          "Passive activity loss restrictions, at-risk provisions, income limits and other legal tests can suspend or limit the tax benefit."
+        ]
+      ]
+    },
+    {
+      "title": "Tax deferral, 1031 transactions and 1031's limits",
+      "body": [
+        "Deferral delays certain recognition and payment; it is not identical to permanent tax forgiveness or an increase in economic return. A qualifying Section 1031 exchange generally concerns business or investment real property exchanged for other qualifying real property under detailed rules. It does not ordinarily permit a homeowner to sell a personal-use primary residence and roll proceeds into another primary residence while claiming a generic tax-free real estate swap. Tax-deferred structures can still incur transaction, intermediary and financing costs.",
+        "Section 1031 requires strict identifying deadlines and acquisition timing, qualified intermediary practices in many arrangements, and proper characterization of relinquished and replacement property. Receipt of cash or other non-like-kind property may create taxable 'boot' and debt changes can matter. Basis typically carries forward with adjustments rather than magically becoming replacement fair value. The estate planning treatment and eventual property sale need future analysis; the transaction is not a write-off of mortgage debt.",
+        "Take a simplified investment property sale with $200,000 adjusted basis, $300,000 net amount realized, and $100,000 gain before special rules. If the investor completes a fully eligible exchange meeting every requirement with no recognized boot, that $100,000 may be deferred into replacement basis calculation, rather than instantly forgiven. If the investor instead sells for cash without a qualifying exclusion, taxable gain may be recognized. The choice depends on business and investment objectives, costs, risk and legal eligibility.",
+        "The tax comparison must include investment quality and constraints. Replacing a good property with a poor one solely to defer capital gain can create an economic loss exceeding the deferred tax's present value. A student should compute expected sale cash, outstanding liens, replacement debt, financing rates, new operating cash flow, likely future recapture and legal time limits before concluding an exchange is sensible."
+      ],
+      "worked": [
+        "Illustrative qualifying investment property amount realized $300,000 and adjusted basis $200,000.",
+        "Gain before special treatment $100,000.",
+        "A fully qualifying exchange with no recognized boot may defer gain rather than create a $100,000 income-tax refund.",
+        "Tax basis of replacement property requires statutory carryover and adjustment calculations.",
+        "The family's personal primary residence cannot simply be relabeled investment property by forming a trust to satisfy all Section 1031 rules."
+      ],
+      "practice": [
+        [
+          "Why is Section 1031 normally not a universal strategy for transferring one's primary home into a trust and buying a second residence?",
+          "The exchange rules generally require qualifying business or investment real property and strict exchange procedures. A personal-use residence does not qualify merely by changing title labels."
+        ],
+        [
+          "How could a 1031 exchange produce a worse economic outcome despite deferring tax?",
+          "High transaction costs, poorer replacement cash flow, excessive debt, risk or future taxable events can exceed the present value of the tax deferral."
+        ]
+      ]
+    },
+    {
+      "title": "Integrate the strategy with a Connecticut family inheritance and housing plan",
+      "body": [
+        "An integrated plan should solve a real family problem: housing affordability, resilience during disability or death, support for an intended daughter, tax-efficient investing, and clear property succession. Financial sophistication does not require maximizing leverage or multiplying accounts. Begin with the household's income and essential expenses, the mortgage's expected total monthly carrying cost, a realistic cash buffer, and the likely ability to save $250–$500 monthly. Only then consider permanent insurance, trusts, business structures or complex tax deferral.",
+        "Build three alternatives over identical dates. Alternative A saves liquid cash for a home down payment, purchases adequate insurance protection separately, and uses appropriate low-cost retirement vehicles. Alternative B adds a revocable trust to coordinate beneficiary and incapacity planning while preserving the economic mortgage obligations. Alternative C adds a complex permanent-insurance loan and irrevocable trust strategy, with professional fees, premium commitments, income-tax and basis considerations, policy lapse risk and assistance-lien restrictions. The goal is to identify additional value and additional failure modes of each.",
+        "Quantify tradeoffs. A $250 premium each month equals $3,000 annual cash cost, consuming 60% of an illustrative $5,000 annual saving capacity; a $50 term premium leaves $200 monthly for liquidity under the same gross premium assumption, though real premiums and coverage differ. A $12,000 loan compounding at 7% for five years grows to about $16,831. If a homeowner simultaneously faces $1,200 monthly mortgage, $500 other monthly housing cash, and $300 insurance premium, the plan must fund $2,000 monthly before food, transportation or other expenses.",
+        "Prepare a source-backed decision memo with a balance sheet, net-of-tax cash forecast and risk matrix. Include legal unknowns, beneficiaries' rights, basis, loan covenants, tax-year changes and a list of professionals whose confirmation is required. The student should never equate 'permitted under a carefully drafted document' with 'guaranteed beneficial for this household.' The defensible recommendation minimizes uninsured risk, unsupported tax assumptions and forced cash shortfalls, then considers advanced structures only when they serve an articulated goal."
+      ],
+      "worked": [
+        "Premium $250/month = $3,000/year; a hypothetical $5,000/year savings capacity would be reduced by 60%.",
+        "Alternative term premium $50/month instead frees $200/month for other goals, but does not duplicate permanent policy benefits.",
+        "A $12,000 insurance loan at 7% interest without repayment for five years ≈$16,831.",
+        "Monthly modeled home P&I $1,200 + other housing costs $500 + proposed permanent policy premium $300 ⇒ $2,000/month.",
+        "Assess these commitments before calling an insurance-trust-home plan financially sustainable."
+      ],
+      "practice": [
+        [
+          "Why is a detailed financial plan that uses all remaining monthly cash on insurance and mortgage payments fragile?",
+          "Even if tax deductions apply, required living expenses, emergencies, loan interest, repairs and benefit eligibility can create a negative cash position and force expensive borrowing or surrender."
+        ],
+        [
+          "What is the best first step when evaluating a newly advertised trust-policy-home-financing strategy?",
+          "Demand an explicit dated asset/liability and cash-flow model, actual contract and loan documents, tax analysis, alternative costs and an independent professional review before irreversible transfers."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS · Abusive trust tax evasion: substance over form",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/abusive-trust-tax-evasion-schemes-law-and-arguments-section-i"
+    ],
+    [
+      "IRS · Abusive trust questions and answers",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/abusive-trust-tax-evasion-schemes-questions-and-answers"
+    ],
+    [
+      "IRS · Revenue Ruling 2023-2 inherited basis in certain trusts",
+      "https://www.irs.gov/irb/2023-16_IRB"
+    ],
+    [
+      "IRS · Publication 551 adjusted basis",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "IRS · Publication 523 home sale gain",
+      "https://www.irs.gov/publications/p523"
+    ],
+    [
+      "IRS · Publication 525 life insurance surrender and income",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "IRS · Like-kind exchanges instructions",
+      "https://www.irs.gov/instructions/i8824"
+    ],
+    [
+      "IRS · Rental property income and deductions",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "Connecticut DRS · 2026 estate and gift taxes",
+      "https://portal.ct.gov/drs/individuals/individual-income-tax-portal/estate-and-gift-taxes/tax-information"
+    ],
+    [
+      "United States Code §1701j-3 trust transfer due-on-sale conditions",
+      "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section1701j-3&num=0&edition=prelim"
+    ]
+  ],
+  "assessment": {
+    "title": "Multi-system financial strategy audit committee",
+    "prompt": "Evaluate a $260,000 Connecticut house with $220,000 mortgage and $12,000 assistance lien, a $12,000 policy loan at 7% over five years, and a proposed trust for a daughter. Model net property sale cash and taxable gain separately; compare a qualifying inheritance versus lifetime-gift basis, tax impact of surrender, reasonable business deductions versus personal spending, and a rental property cash/tax reconciliation. Include IRS substance-over-form warning and 2026 estate figures. Deliver a reasoned comparison of cash savings, revocable trust, and permanent policy/irrevocable trust structures with a signed-assumptions register.",
+    "rubric": [
+      "Transaction and financing ledgers (25%)",
+      "Tax recognition and basis classifications (25%)",
+      "Policy loan, home sale and business/rental mathematics (25%)",
+      "Creditor, beneficiary and legal caveats (15%)",
+      "Evidence and documented counterarguments (10%)"
+    ]
+  }
+}
