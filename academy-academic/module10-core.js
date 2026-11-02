@@ -39,7 +39,7 @@ function valid(type,v){if(Object.values(v).some(x=>!Number.isFinite(x)||Math.abs
  if(type==="drift")return v.stock>=0&&v.bond>=0&&v.stock+v.bond>0&&v.target>=0&&v.target<=100&&v.band>=0&&v.band<=100;
  if(type==="contribute")return v.stock>0&&v.bond>=0&&v.target>0&&v.target<=100&&v.monthly>0&&v.stock/(v.stock+v.bond)>=v.target/100;
  if(type==="taxtrade")return v.proceeds>=0&&v.basis>=0&&v.rate>=0&&v.rate<=100&&v.spread>=0&&v.spread<=100;
- if(type==="shockRebalance")return v.stock>=0&&v.bond>=0&&v.stockReturn>=-100&&v.bondReturn>=-100&&v.stock*(1+pct(v.stockReturn))+v.bond*(1+pct(v.bondReturn))>0&&v.stockTarget>=0&&v.stockTarget<=100;
+ if(type==="shockRebalance")return v.stock>=0&&v.bond>=0&&v.stockReturn>=-100&&v.bondReturn>=-100&&v.stock*(1+v.stockReturn/100)+v.bond*(1+v.bondReturn/100)>0&&v.stockTarget>=0&&v.stockTarget<=100;
  if(type==="ipsmix")return v.value>0&&v.stockWeight>=0&&v.bondWeight>=0&&v.stockWeight+v.bondWeight<=100&&v.stockFall>=0&&v.stockFall<=100&&v.bondFall>=0&&v.bondFall<=100;
  if(type==="floor")return v.floor>=0&&v.current>=0&&v.monthly>0;
  if(type==="twr")return v.start>0&&v.before>0&&v.deposit>=0&&v.before+v.deposit>0&&v.end>=0;
