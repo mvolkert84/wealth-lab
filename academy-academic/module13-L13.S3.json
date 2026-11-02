@@ -1,0 +1,267 @@
+{
+  "id": "L13.S3",
+  "title": "Deeds, Beneficiaries and Probate",
+  "subtitle": "Connecticut property title, funded trusts, incapacity, probate workflow, mortgages and heir coordination",
+  "prerequisites": [
+    "L1.S1 ownership and liabilities",
+    "L6.S2 mortgage deed, equity and lending",
+    "L12.S2 inherited retirement beneficiary obligations",
+    "L13.S1 beneficiary protection needs"
+  ],
+  "objectives": [
+    "Build an asset-by-asset transfer map including jointly held assets and beneficiary contracts",
+    "Distinguish survivorship, tenancy in common, probate title and trust ownership",
+    "Identify probate duties and Connecticut estate-tax return filing even below tax threshold",
+    "Explain the difference between signing a trust and legally funding it",
+    "Analyze mortgage due-on-sale statutory protections and risks during trust transfers",
+    "Quantify the estate's actual net transferable home equity after debt and costs",
+    "Create an incapacity and after-death implementation checklist"
+  ],
+  "sections": [
+    {
+      "title": "Estate transfer is an asset-by-asset legal system",
+      "body": [
+        "On death, a family does not simply hand its net worth statement to the heirs. Real property follows the deed and applicable succession law; bank and brokerage accounts may pass by payable-on-death/transfer-on-death designation, survivorship or estate administration; life insurance follows the contract's beneficiary; retirement accounts follow beneficiary and federal rules. The will controls assets subject to the decedent's probate estate but generally cannot override a valid separate beneficiary designation.",
+        "Create a ledger for each item: legal owner, current market value, associated debt, title form, named beneficiary, contingent beneficiary, probate status, applicable taxes and responsible administrator. For a $300,000 home with $200,000 mortgage, the economic equity starts at $100,000, but that is before liens, repairs, sale expenses and legal costs. Net worth is not the same as cash immediately available to children.",
+        "Separate ownership from intended inheritance. A married person might want the spouse to occupy a home and the child eventually to inherit; an outright deed transfer, a will and a trust can produce different results depending on marital rights and beneficiary language. The correct starting point is the actual recorded deed and signed designations, not the owner's recollection of a planning conversation."
+      ],
+      "worked": [
+        "Home $300,000; mortgage $200,000; simplified equity $100,000.",
+        "Assume 6% sale costs on $300,000 => $18,000, reducing sale proceeds net of mortgage to $82,000 before other estate expenses.",
+        "A trust naming an heir without an actual deed transfer is not proof that trust owns the home.",
+        "List owner, debt, beneficiary and creditor claims separately to avoid overstating accessible inheritance."
+      ],
+      "practice": [
+        [
+          "Does a will necessarily override a valid life-insurance beneficiary designation?",
+          "Generally no. The insurance contract designation can control outside the will, subject to relevant legal constraints."
+        ],
+        [
+          "Can an heir assume a $300,000 mortgage-encumbered house is equivalent to $300,000 of liquid inheritance?",
+          "No. Debt, sale costs, liens and timing affect net realizable value."
+        ]
+      ]
+    },
+    {
+      "title": "Deeds and tenancy: survivorship is not a universal default",
+      "body": [
+        "Real property can be held in various forms: individual title, tenancy in common, joint tenancy with right of survivorship where legally established, and trust-owned title. Exact available forms and consequences depend on state law and deed wording. Tenancy in common generally allows a deceased owner's fractional interest to pass under an estate or other governing arrangement, while valid survivorship ownership can transfer the surviving owner's interest outside ordinary probate title distribution.",
+        "An individual cannot safely create survivorship merely by adding a family member's name without reviewing mortgage terms, gift consequences and creditor risk. Co-owners may have rights to partition or attach interests, and a child's divorce or judgments can complicate a parent's housing security. For Connecticut real property, a recorded deed and competent local examination establish what actually changed.",
+        "Suppose an unmarried owner with 100% title wishes one child to inherit. A funded revocable trust could hold title during life, subject to mortgage and drafting review, while a will could route probate assets via a pour-over provision. Neither automatically eliminates the need to handle claims, taxes or deeds properly. Probate avoidance is only one objective among control, cost, tax basis, creditor and incapacity issues."
+      ],
+      "worked": [
+        "Hypothetical house value $300,000, owner A has 50% tenancy-in-common share with B.",
+        "A's gross economic share is $150,000 before share-specific liens and expenses.",
+        "It does not automatically become B's property merely because B co-owns the other half.",
+        "A valid right-of-survivorship arrangement would produce different title outcomes, subject to applicable state law."
+      ],
+      "practice": [
+        [
+          "Does ordinary tenancy in common always pass a deceased co-owner's share to surviving co-owner?",
+          "No. That differs from survivorship title; the deceased person's share may pass through the estate or other valid transfer structure."
+        ],
+        [
+          "Why should a homeowner avoid adding a child to a deed solely for probate avoidance?",
+          "It can create gift, creditor, tax-basis, divorce, control and financing risks that outweigh expected probate benefits."
+        ]
+      ]
+    },
+    {
+      "title": "What Connecticut probate courts actually do",
+      "body": [
+        "Connecticut Probate Courts administer deceased persons' estates, adjudicate some will and trust disputes, establish title to certain assets and oversee fiduciaries in defined cases. Estate administration can require an appointed fiduciary, identifying property, notifying creditors and beneficiaries, paying valid claims and taxes, and distributing what remains. Probate is not by definition a 'government confiscation' of family property; it is a legal process designed partly to settle competing rights.",
+        "A revocable living trust may reduce formal probate requirements for assets actually funded into the trust, but assets left individually titled can still need probate proceedings. A pour-over will provides a backstop for some property but generally does not erase the need for probate administration of unfunded assets. Estate and probate tax reporting can remain even for nonprobate assets.",
+        "Under current 2026 Connecticut guidance, estates at or below $15 million of Connecticut taxable estate generally file a CT-706 NT with the appropriate Probate Court, subject to specific exceptions such as a state QTIP election, even if no Connecticut estate tax is due. Over the threshold, CT-706/709 filing with the Department of Revenue Services and Probate Court is generally required. Distinguish no tax liability from no tax or court filing responsibilities."
+      ],
+      "worked": [
+        "Connecticut resident dies in 2026 with stipulated $500,000 Connecticut taxable estate.",
+        "This is below the $15 million estate tax exemption so Connecticut estate tax is generally $0 under simplified assumptions.",
+        "However, a CT-706 NT Probate Court filing may still be required.",
+        "Probate fees and legal expenses are not the same as state estate tax and can exist even when tax is zero."
+      ],
+      "practice": [
+        [
+          "If Connecticut estate tax is $0, does that always eliminate state estate return filing?",
+          "No. CT-706 NT can still be required with the Probate Court, with exceptions and rules described by DRS."
+        ],
+        [
+          "Does creating a revocable trust remove all creditors and probate court obligations?",
+          "No. Funding, asset ownership, applicable creditor rights, court processes and tax filings must still be evaluated."
+        ]
+      ]
+    },
+    {
+      "title": "Funding a revocable trust is an administrative act",
+      "body": [
+        "A revocable living trust is a legal relationship governed by its signed terms and trustee powers. Creating a document does not automatically assign a house, brokerage account or bank balance to the trust. Real property typically requires appropriate deeds and land-record steps; certain account ownership changes require the custodian's paperwork. Beneficiary designations may be coordinated with a trust but should not be changed blindly, especially for tax-sensitive retirement accounts.",
+        "Consider a household signing a trust that directs a daughter to inherit the house. If the deed remains solely in the parent's name and no effective transfer or other mechanism operates, the trust may not directly own or control that house at death. The transfer ledger should list proof: deed recording book/page, bank trust certificate, trustee identification and confirmed beneficiary forms. An unfunded document is not proof of completed planning.",
+        "The trustee must be capable of administering property, filing tax returns, keeping accounts and following distribution standards after death or incapacity. A trustee appointment without permission to access relevant records, maintain insurance and pay mortgage expenses can cause avoidable delays. Review funding after refinancing, moving, changing jobs and opening new accounts."
+      ],
+      "worked": [
+        "Trust instrument signed; deed remains in owner's sole individual name.",
+        "Trust-controlled real estate assets evidenced by recorded transfer: $0, unless another operative arrangement applies.",
+        "A $300,000 house is still $300,000 of owned property but not necessarily an asset owned by that trust.",
+        "After properly executed and recorded deed transfer (assuming valid), trust property ledger can include the house subject to mortgage."
+      ],
+      "practice": [
+        [
+          "Does listing a house on a schedule attached to a trust always replace a properly executed real-estate deed?",
+          "No. Title law and transfer formalities govern; a recorded deed or other valid conveyance may be necessary."
+        ],
+        [
+          "What should a post-funding audit verify?",
+          "Official deed/custodian ownership records, insurer and mortgage documents, trustee contact and updated beneficiary designations."
+        ]
+      ]
+    },
+    {
+      "title": "Mortgage due-on-sale clauses and transfer to living trusts",
+      "body": [
+        "Moving a mortgaged home into a living trust raises a question under loan contracts. The federal Garn–St. Germain Depository Institutions Act restricts a lender's ability to enforce a due-on-sale clause for certain transfers into an inter vivos trust where the borrower is and remains a beneficiary and the transfer does not relate to transfer of occupancy rights. That statutory protection is specific; it does not guarantee every transaction involving any trust is free from lender objections or administrative requirements.",
+        "The statute does not itself forgive the mortgage or make a child immune to lender claims. The note, mortgage security instrument, homeowners insurance, title insurer and the terms of down-payment assistance or state housing programs can create separate conditions. A homeowner should obtain a local property/estate attorney's review and follow necessary lender and insurer notification requirements rather than assuming a copy-pasted deed will preserve every benefit.",
+        "If a home is worth $300,000 and debt $220,000, transferring the deed to a qualifying revocable trust generally does not create $80,000 additional equity. The economic value and debt remain in place; only title/control and later transition procedures may change. A deed transfer may also have different implications for Medicaid eligibility, homestead protection, state/local taxes or refinance underwriting."
+      ],
+      "worked": [
+        "Home $300,000; mortgage $220,000; equity $80,000 before costs.",
+        "Deed transfer to a qualifying revocable living trust does not extinguish $220,000 note or create new net worth.",
+        "Statutory due-on-sale exception is conditional on trust/borrower/occupancy facts.",
+        "A transfer to an ILIT or an unrelated family trust must not be assumed to qualify for the same statutory exception."
+      ],
+      "practice": [
+        [
+          "Does every transfer of mortgaged property to any trust automatically qualify for federal due-on-sale protection?",
+          "No. The statutory inter vivos trust exception includes beneficiary and occupancy conditions and does not override every other legal/contractual issue."
+        ],
+        [
+          "Does placing the mortgaged home in a trust pay off the mortgage?",
+          "No. The lien and loan obligations remain unless properly discharged."
+        ]
+      ]
+    },
+    {
+      "title": "Incapacity planning and fiduciary continuity",
+      "body": [
+        "Estate planning covers the years when an owner is alive but cannot manage accounts. A durable financial power of attorney, healthcare representative, advance directive, trustee succession provisions and an organized account inventory solve different problems. A revocable trust can give a successor trustee authority over trust assets, while assets left outside the trust may require a properly executed power of attorney or a court-appointed conservator.",
+        "An incapacitated homeowner may still owe mortgage, property tax, utilities and insurance. Family members need legitimate authority to pay those obligations and maintain asset records. Without proper designation, a spouse or adult child may not have access to accounts despite a good relationship with the owner. Powers of attorney and trustee authority can be limited or subject to acceptance rules; documents need local review.",
+        "Modern household planning also includes securely organized digital account access, the location of originals, business revenue, recurring bills and tax documents. The goal is to let fiduciaries respond promptly without sharing private passwords indiscriminately or violating account-provider policies. Include contact lists for insurance carriers, mortgage servicer, accountant and qualified attorney."
+      ],
+      "worked": [
+        "Monthly housing obligations $1,200 rent/mortgage equivalent + $300 tax/insurance + $200 utilities = $1,700.",
+        "A three-month incapacitation period creates $5,100 housing cash needs before other living costs.",
+        "Trustee/agent authority may permit proper management but does not create the needed $5,100 in cash.",
+        "Hold an accessible emergency reserve with clear authorized access rules."
+      ],
+      "practice": [
+        [
+          "Why is a will alone not an incapacity plan?",
+          "A will primarily governs after death; during life, agents, healthcare decision makers, and successor trustees need separate legal authority."
+        ],
+        [
+          "Why must trust funding be reconciled with powers of attorney?",
+          "A trustee may control only trust-held property; assets outside the trust may need an agent or other authority."
+        ]
+      ]
+    },
+    {
+      "title": "Beneficiary designations, retirement accounts and children",
+      "body": [
+        "Life insurance, workplace plans and IRAs often transfer under beneficiary designations rather than through will provisions. Verify primary and contingent beneficiaries and the specific name/relationship details each custodian has recorded. An old beneficiary form can unintentionally direct assets away from current dependents. Marriage and qualified retirement plan spousal-consent rights can limit simple attempts to redirect certain benefits.",
+        "Naming a minor child outright can require guardianship or restricted administration rather than immediate independent control of money. A carefully drafted trust can specify ages, support standards, disability benefits protection and trustee authority. But naming a trust as retirement account beneficiary can change required-minimum-distribution classification and tax treatment; the beneficiary plan should be built with retirement tax law, not simply copied from life insurance.",
+        "Benefits paid to disabled dependents may affect means-tested public programs. A special needs trust or ABLE account can have roles, but their rules and limits need specialist review. The family should distinguish supporting a child from creating a tax-only mechanism; practical continuity, caregivers and trustees matter as much as the legal title."
+      ],
+      "worked": [
+        "Retirement account $120,000 and life insurance $300,000, both intended to support a daughter.",
+        "Combined nominal intended support $420,000 before possible taxes, account distribution restrictions and costs.",
+        "One outdated beneficiary form for $120,000 can reroute approximately 28.6% of the nominal intended assets.",
+        "A checklist catches this risk without requiring any new financial product purchase."
+      ],
+      "practice": [
+        [
+          "Why may naming an individual minor child directly create additional administration?",
+          "Minors generally lack full legal capacity to manage large assets and may need guardianship or trust management depending on jurisdiction."
+        ],
+        [
+          "Does naming a trust as IRA beneficiary guarantee all inherited IRAs avoid income tax?",
+          "No. Beneficiary classifications and required distributions affect taxes; drafting must coordinate with retirement law."
+        ]
+      ]
+    },
+    {
+      "title": "The Connecticut deed and probate implementation file",
+      "body": [
+        "A complete estate implementation packet contains current recorded deeds, a title analysis, mortgage statements, property insurance, documented bank/brokerage account titles, every beneficiary form, wills, trust documents, agent appointments and an administration timeline. The analyst must distinguish intended changes from changes already legally effective. A 'trust-owned' label in a spreadsheet does not transfer real property.",
+        "Compare three approaches for a hypothetical $300,000 Connecticut home with $200,000 mortgage: individual title plus will, valid survivorship title where appropriate, and funded revocable trust. Each has probate, tax basis, control, creditor and administrative differences; no strategy erases the $200,000 debt. Evaluate whether heirs will keep the home, sell it or refinance and the availability of cash to pay property taxes while title is resolved.",
+        "The final memo identifies an estate attorney's decision points and operational steps—not just a generic recommendation to 'put the home in a trust.' These include current deed form, marital property rights, lender and insurance conditions, gift-tax impact of deeds, local land record fees, trust terms, property tax benefits and future down-payment assistance eligibility."
+      ],
+      "worked": [
+        "Home value $300,000 and mortgage $200,000 imply $100,000 gross equity.",
+        "At 6% hypothetical selling costs, $18,000 costs leave $82,000 before other expenses.",
+        "Probate-avoidance instrument changes legal process but not these basic economic figures.",
+        "Document surviving occupant's cash needs; ownership transfer without liquidity may be ineffective."
+      ],
+      "practice": [
+        [
+          "What is the difference between a trust signed and a funded trust?",
+          "A signed document establishes terms; funding requires valid transfers or designations giving the trust enforceable ownership/control over applicable assets."
+        ],
+        [
+          "What is an estate attorney's first practical input for a deed plan?",
+          "The current recorded deed, mortgage documents, occupancy and family beneficiary objectives, rather than an assumed universal deed form."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Connecticut Probate Courts trusts and estate administration",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "Connecticut DRS 2026 estate/gift filing thresholds",
+      "https://portal.ct.gov/drs/individuals/individual-income-tax-portal/estate-and-gift-taxes/tax-information"
+    ],
+    [
+      "US Code 12 USC 1701j-3 due on sale transfers to trusts",
+      "https://uscode.house.gov/us/usc/119-118/t12/s1701j-3/"
+    ],
+    [
+      "Connecticut probate fee and expense calculator",
+      "https://www.ctprobate.gov/fees-expenses-calculators"
+    ],
+    [
+      "IRS Publication 559 estates, executors and beneficiaries",
+      "https://www.irs.gov/publications/p559"
+    ],
+    [
+      "IRS inherited IRA beneficiary rules",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary"
+    ],
+    [
+      "IRS federal estate tax inclusion and filing",
+      "https://www.irs.gov/instructions/i706"
+    ],
+    [
+      "Connecticut Department of Consumer Protection real estate resources",
+      "https://portal.ct.gov/dcp"
+    ]
+  ],
+  "assessment": {
+    "title": "Connecticut family asset-transfer and incapacity audit",
+    "prompt": "Create the complete ownership/transfer matrix for a fictional $300,000 Connecticut home with $200,000 mortgage, two bank accounts, a $120,000 IRA, a $300,000 life policy, vehicle, and one jointly owned account. Compare current individual deed plus will versus survivorship and funded revocable trust with a daughter as intended beneficiary. Calculate home net proceeds assuming 6% sale cost; explain CT-706 NT, due-on-sale exception conditions, mortgage obligations, incapacity agents, IRA trust beneficiaries and minor-child risks. Build a six-month implementation roadmap with attorney review gates.",
+    "rubric": [
+      "Deeds and estate versus nonprobate distinctions (25%)",
+      "Connecticut filing and probate process (20%)",
+      "Trust funding, successor authority and mortgage review (20%)",
+      "Beneficiary/retirement/minor planning (20%)",
+      "Cash-flow, net equity and evidence quality (15%)"
+    ],
+    "answerKey": [
+      "House $300k−mortgage $200k = $100k pre-sale equity; 6% sale expense $18k leads $82k gross net sale liquidity before other costs.",
+      "Trust is not automatically funded by a signed instrument; proper title/deed/documentary proof is required.",
+      "CT-706 NT may be required despite $0 CT estate tax for qualifying under-$15m 2026 estate.",
+      "Garn–St. Germain due-on-sale exception for certain inter vivos trusts requires borrower remaining beneficiary and occupancy-right condition; not every trust transfer qualifies.",
+      "IRA beneficiary and life-insurance ownership require separate custodian/insurer records and tax planning.",
+      "Incapacity plan adds durable attorney, healthcare documents, trustee succession and secured fiduciary access."
+    ]
+  }
+}
