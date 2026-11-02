@@ -34,8 +34,8 @@ function calculate(type,v){const o={},p=x=>x/100,amt=(P,r,n)=>r===0?P/n:P*r/(1-M
  return o;}
 function valid(type,v){const p=x=>x/100;
  if(Object.values(v).some(x=>!Number.isFinite(x)||x<0||x>1e12))return false;
- if(type==="rent")return v.units>=1&&Number.isInteger(v.units)&&v.vacancy<=12*v.units&&v.credit+v.vacancy*v.rent<=v.units*v.rent*12;
- if(type==="noi")return v.effective>=v.tax+v.insurance+v.repair+v.manage+v.utilities;
+ if(type==="rent")return v.units>=1&&Number.isInteger(v.units)&&v.vacancy<=12&&v.credit+v.vacancy*v.rent<=v.units*v.rent*12;
+ if(type==="noi")return true;
  if(type==="breakeven")return v.vacancy<100;
  if(type==="ctDeposit")return Number.isInteger(v.age)&&v.age<=120&&v.deposit<=v.rent*(v.age>=62?1:2);
  if(type==="cap")return v.price>0&&v.market>0&&v.market<=100;
@@ -50,7 +50,7 @@ function valid(type,v){const p=x=>x/100;
  if(type==="stress")return v.debt>0;
  if(type==="depreciation")return v.price>0&&v.land<=v.price&&v.years<=27.5;
  if(type==="passive")return true;
- if(type==="sale")return v.price>=v.costs+v.mortgage;
+ if(type==="sale")return v.price>=v.costs;
  if(type==="gain1250")return true;
  if(type==="exchange")return v.boot<=1e12;
  return true; }
