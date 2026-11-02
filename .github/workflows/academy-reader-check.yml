@@ -36,6 +36,7 @@ on:
       - scripts/check-module15-academic.mjs
       - scripts/check-module16-academic.mjs
       - scripts/check-curriculum-editorial.mjs
+      - scripts/check-ui-unification.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -132,3 +133,4 @@ jobs:
           node scripts/check-module15-academic.mjs
           node scripts/check-module16-academic.mjs
           node scripts/check-curriculum-editorial.mjs
+          node scripts/check-ui-unification.mjs
