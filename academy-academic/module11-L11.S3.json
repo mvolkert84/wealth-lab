@@ -1,0 +1,261 @@
+{
+  "id": "L11.S3",
+  "title": "Capital Gains, Basis & Dividends",
+  "subtitle": "Tax-lot accounting, disposition character, preferential-rate stacking and investment reporting",
+  "prerequisites": [
+    "L8.S1 stock ownership and corporate actions",
+    "L9.S3 ETF and fund mechanics",
+    "L11.S1 taxable-income reconciliation",
+    "L11.S2 bracket and preferential-rate mathematics"
+  ],
+  "objectives": [
+    "Build a complete adjusted-cost-basis ledger with purchases, reinvestments and dispositions",
+    "Distinguish amount realized, realized gain, recognized taxable gain and unrealized appreciation",
+    "Determine short/long holding categories and net short/long results",
+    "Read 1099-DIV and 1099-B without double counting or blind trust in reported basis",
+    "Compute simplified 2026 qualified-dividend and long-term-gain tax using the stacking rule",
+    "Diagnose NIIT exposure, retirement-account location and inheritance basis exceptions"
+  ],
+  "sections": [
+    {
+      "title": "The economic investment return is not the taxable gain",
+      "body": [
+        "An investment earns economic return from price changes and income. The tax return normally measures realized and recognized events rather than all changes in quoted market value. Price appreciation in an unsold stock usually has no current capital-gain tax, yet a cash dividend paid by the company can be taxable even if immediately reinvested. An investment can thus have an excellent one-year economic return and little realized capital gain, or negative total return while producing taxable distributions.",
+        "For a taxable sale, realized gain or loss generally equals amount realized minus adjusted basis. Amount realized commonly starts with sales proceeds, reduced by eligible selling costs where applicable. Adjusted basis generally begins with what was paid, including appropriate acquisition costs, and can change through corporate actions, return-of-capital distributions and prior wash-sale adjustments. Recognition determines how much of the realized amount is actually included under tax rules. Realized and recognized are not interchangeable when special exclusions or deferrals exist.",
+        "An investment accountant reconciles trade confirmation, account statement and tax forms, with dates, lot IDs, quantity, fees and basis adjustments. A market value graph cannot substitute for transaction records. Tax-aware investing starts with consistent records, not with hunting for a clever deduction at year-end."
+      ],
+      "worked": [
+        "Purchase shares for $10,000 and sell for gross $13,000 with $100 eligible selling costs.",
+        "Amount realized $12,900; original adjusted basis $10,000; realized gain $2,900.",
+        "If fully taxable and recognized, the gain enters the applicable short- or long-term netting calculation.",
+        "Unrealized price increase before sale is tracked for planning but is not normally current realized capital gain."
+      ],
+      "practice": [
+        [
+          "Does a $3,000 increase in an unsold stock automatically create $3,000 current taxable capital gain?",
+          "No, normal tax recognition generally follows sale or another disposition; holding-market appreciation by itself is ordinarily unrealized."
+        ],
+        [
+          "Why can return-of-capital distributions raise the gain on a later sale?",
+          "They can reduce the investment's basis, subject to limits and specific rules, increasing later realized gain for the same disposal proceeds."
+        ]
+      ]
+    },
+    {
+      "title": "Build an adjusted-basis ledger with dividend reinvestment",
+      "body": [
+        "Cost basis is a history, not merely a broker's current number. Imagine 100 shares bought at $50 each, then $300 of taxable dividends automatically reinvested into six new shares at $50 each. The economic account value has increased by the dividends and subsequent market changes, but the reinvestment adds a new $300 acquisition lot. Total basis is $5,300 across 106 shares. Omitting the reinvestment would overstate future taxable gain by $300.",
+        "Stock splits reallocate aggregate basis over a new share count rather than generally creating a gain on the split alone. A 2-for-1 split of 100 shares with $5,000 aggregate basis creates 200 shares with $25 per-share basis if all holdings are identical for that lot. Spin-offs can allocate basis according to prescribed relative market values. Employee equity compensation can require additional reconciliation to avoid taxing wages and later sale gains inconsistently. These specialized issues deserve issuer notices and professional verification.",
+        "Basis rules are not identical for every asset. Real estate adjusts for certain closing costs, capital improvements and depreciation. Digital assets have their own tracing and reporting complexities. Mutual funds may permit an average-basis method under conditions, but individual stock sales commonly rely on tax-lot identification rules. A defensible ledger lists the authority for each adjustment."
+      ],
+      "worked": [
+        "Lot A 100 shares at $50 ⇒ basis $5,000.",
+        "Reinvested dividend $300 acquires 6 shares at $50 ⇒ Lot B basis $300.",
+        "Combined basis $5,300 on 106 shares; do not subtract dividends from taxable income because reinvested.",
+        "If all 106 sold for $6,360 and no selling costs, total gain $1,060."
+      ],
+      "practice": [
+        [
+          "Why do reinvested taxable dividends count as basis in newly purchased shares?",
+          "The dividend can be taxable when paid, while the reinvestment is an additional purchase that acquires an asset with its own cost basis. Omitting basis could tax the same value again at sale."
+        ],
+        [
+          "What happens to a lot's aggregate basis in a simple 2-for-1 stock split?",
+          "Normally aggregate basis is spread across twice as many shares, making per-share basis half the prior figure, absent special corporate-action rules."
+        ]
+      ]
+    },
+    {
+      "title": "Tax-lot selection is part of portfolio implementation",
+      "body": [
+        "An investor who bought 100 shares at $40 and 100 at $70 has two $4,000 and $7,000 original basis lots. If 100 shares are sold at $80, realized gain is $4,000 from the low-basis lot or $1,000 from the high-basis lot. Which lot is treated as sold depends on permitted identification procedures and actual broker execution. A retrospective spreadsheet selection that was not properly designated at the time of sale cannot magically change the tax lot.",
+        "Specific identification generally requires identifying the particular shares in the manner and time allowed and receiving broker confirmation. If adequate identification is absent, first-in, first-out can apply. Average-basis elections are available for certain eligible mutual-fund shares and dividend-reinvestment plans, with rules and consequences. Confirm the method with the custodian and account type before trading; an investor may be unable to reverse an election casually.",
+        "A lower gain today is not always the best long-term strategy. Selling high-basis shares can conserve low-basis lots for a later low-rate year or leave larger potential gains for heirs if an applicable date-of-death basis adjustment is available. But that future treatment is uncertain and differs for lifetime gifts, jointly owned interests and estate situations. The strategy must consider diversification, opportunity cost and estate objectives, not just immediate tax."
+      ],
+      "worked": [
+        "100 shares at $40 = Lot A basis $4,000; 100 shares at $70 = Lot B basis $7,000.",
+        "Sell 100 shares for $8,000 gross proceeds.",
+        "Lot A recognized gain could be $4,000; Lot B gain $1,000, assuming valid specific identification.",
+        "At hypothetical 15% long-term tax rate, isolated current difference is $450; future consequences are not modeled."
+      ],
+      "practice": [
+        [
+          "Can a taxpayer choose an arbitrary high-basis lot when filing months after a sale?",
+          "No. Tax-lot identification must satisfy applicable contemporaneous rules and broker records; a later preference alone is insufficient."
+        ],
+        [
+          "What non-tax risk can arise from refusing to sell a low-basis position?",
+          "Avoiding realized tax may leave an investor overconcentrated in a risky security and expose the household to losses exceeding the modeled tax benefit."
+        ]
+      ]
+    },
+    {
+      "title": "Holding period and capital-loss netting",
+      "body": [
+        "Most capital assets sold after more than one year are long-term; those held one year or less are short-term. Certain rules alter holding periods, including some corporate actions and wash-sale replacement shares. Short-term net gains are generally taxed at ordinary income rates while qualifying net long-term gains may use preferential rates. Special asset categories, such as collectibles and some real-property depreciation gains, can have separate maximum rates; a generic 15% calculation does not apply to every sale.",
+        "Capital gains and losses are aggregated with short-term and long-term subtotals on Schedule D. A net short-term loss can offset net long-term gain under the netting rules, and vice versa. If overall capital loss exceeds gains, individuals can generally deduct up to $3,000 per year against other income, or $1,500 if married filing separately, with eligible remaining losses carried forward subject to applicable rules. The deduction limitation is not a permanent forgiveness of every loss.",
+        "Practical timing matters: a sale dated December 31 can be in one tax year while a January sale belongs to the next. But attempts to manipulate prices or invent sales are not tax planning. Trade and settlement records, account type and the IRS reporting conventions control. Portfolio models should distinguish a theoretical unrealized loss from a legitimate, completed disposition."
+      ],
+      "worked": [
+        "Tax year net short-term capital loss −$2,000 and net long-term capital gain +$4,000.",
+        "After required cross-category netting, simplified net capital gain +$2,000 remains.",
+        "Another example: net loss −$8,000 with no other capital gains, single filer.",
+        "Up to $3,000 generally offsets ordinary income in that year; $5,000 potentially carries forward, subject to actual return rules."
+      ],
+      "practice": [
+        [
+          "Can the full $8,000 net capital loss always offset wages in one year?",
+          "No. For individuals, the usual ordinary-income capital-loss deduction limit is $3,000 per year ($1,500 married filing separately); eligible remaining losses carry forward."
+        ],
+        [
+          "Why do we keep separate short- and long-term schedules until netting is finished?",
+          "They initially have different tax character and the prescribed netting process determines what preferential gain remains or how losses carry forward."
+        ]
+      ]
+    },
+    {
+      "title": "Capital gains are stacked above ordinary taxable income",
+      "body": [
+        "The 2026 federal maximum zero and 15% thresholds for eligible net long-term capital gain and qualified dividends depend on taxable income, not on the gain amount alone. For an unmarried filer, the zero rate stops at $49,450 taxable income and the 15% tier stops at $545,500. For married filing jointly, the respective thresholds are $98,900 and $613,700. The regular 0/15/20% rates are not universal to every gain, and the separate 3.8% NIIT can add to total burden for certain taxpayers.",
+        "The computational sequence is to identify ordinary taxable income after deductions, add eligible preferential income, and fill zero-rate space first, then 15% and if necessary 20%. An investor with $46,000 ordinary taxable income and $7,000 eligible long-term gains has only $3,450 of 0% space left, so $3,550 is in the 15% band and tax on the gains is about $532.50. A person who looks at a headline 0% rate without stacking would wrongly assume all gains are untaxed.",
+        "The filing return uses a Qualified Dividends and Capital Gain Tax Worksheet or Schedule D Tax Worksheet as applicable. It is an error to simply multiply the entire taxable income by the capital-gain rate. A professional model should isolate non-preferred categories, netting, and any additional investment taxes before reporting the actual liability."
+      ],
+      "worked": [
+        "Single ordinary taxable base $46,000; eligible net long-term gain $7,000; total taxable $53,000.",
+        "Zero-rated portion max(0, $49,450−$46,000) = $3,450.",
+        "Remaining $3,550×15% = $532.50 simplified tax on gain.",
+        "No assumed NIIT, special gain category, tax-table effects or credit phaseout."
+      ],
+      "practice": [
+        [
+          "How does ordinary income affect 0% capital-gain capacity?",
+          "Ordinary taxable income occupies the lower portion of the taxable-income scale, reducing or eliminating the space available for preferential gains at zero percent."
+        ],
+        [
+          "Why might the statutory '0% capital gains' headline mislead a retiree?",
+          "Other taxable income can fill the zero-rate range; state taxes, NIIT and other taxable events may still apply. Full return context matters."
+        ]
+      ]
+    },
+    {
+      "title": "Dividends: cash yield, ordinary classification and the qualified subset",
+      "body": [
+        "A dividend is a distribution from a corporation or fund, but tax character is determined by the payer's reporting and eligibility rules, not by the word 'dividend' on a trading screen. Form 1099-DIV Box 1a generally reports ordinary dividends. Box 1b identifies those within Box 1a that are qualified dividends, potentially eligible for preferential rates. Capital-gain distributions can be reported separately, and nondividend distributions may change basis. A fund's advertised yield is not necessarily its after-tax investor return.",
+        "For many common stock dividends, preferential eligibility normally requires the shareholder to hold the stock more than 60 days within the 121-day window beginning 60 days before the ex-dividend date; other eligibility and hedge/related-payment rules may apply. Some preferred shares have different holding-period requirements. Merely holding a share on the record date is not enough to prove qualified treatment. Dividend reinvestment does not by itself erase the year's dividend tax liability in a taxable account.",
+        "Compare two fictional portfolios both receiving $1,000 of dividends: one entirely nonqualified and subject to 22% ordinary marginal tax, one entirely qualified at an applicable 15% rate. With no secondary effects the modeled current federal tax is $220 versus $150. This $70 difference is economically meaningful but not sufficient to select a fund: price risk, diversification, total return, expense ratio, state taxes and account location also matter."
+      ],
+      "worked": [
+        "1099-DIV Box 1a = $1,000 ordinary dividends; Box 1b = $700 qualified.",
+        "Total dividend income $1,000, not $1,700.",
+        "If ordinary unqualified $300 is taxed at 22% and qualified $700 at 15%, simplified tax = $66+$105=$171.",
+        "Cash dividend reinvestment can increase acquisition cost basis while still generating taxable dividends."
+      ],
+      "practice": [
+        [
+          "Why is Box 1b not added on top of Box 1a?",
+          "Qualified dividends are included within total ordinary dividends and are singled out only for preferential tax-rate computations."
+        ],
+        [
+          "Can a dividend be unqualified even when it comes from a large familiar company?",
+          "Yes. Eligibility depends on holding-period and other conditions in addition to the issuer's character."
+        ]
+      ]
+    },
+    {
+      "title": "NIIT, special assets and account location",
+      "body": [
+        "The net investment income tax is a separate 3.8% federal levy on the smaller of defined net investment income or modified AGI exceeding a filing-status threshold. As of the current guidance, thresholds include $200,000 single or head of household, $250,000 married filing jointly and $125,000 married filing separately. It cannot be approximated just by applying 3.8% to every investment account distribution. Retirement distributions have their own treatment and can affect modified AGI even when excluded from the definition of net investment income.",
+        "Taxable brokerage accounts, traditional tax-deferred accounts and Roth accounts can create very different current tax reporting for the same underlying ETF. A dividend inside an IRA generally does not produce the same immediate 1099-DIV liability as a dividend in a regular taxable brokerage account; eventual distributions and eligibility rules govern later taxation. Asset location is not the same as asset allocation. A highly tax-efficient holding in a taxable account may outperform moving it solely to avoid current income when withdrawal restrictions and future tax are included.",
+        "Inheritance and gifting introduce another dimension. Property inherited from a decedent generally receives a tax basis determined under date-of-death valuation rules, subject to statutory exceptions; lifetime gifts can involve carryover and dual-basis rules. A revocable trust does not automatically generate a new basis merely because property is retitled. Review ownership, inclusion in the estate, asset type, beneficiary facts and current tax law with a qualified professional."
+      ],
+      "worked": [
+        "Single taxpayer MAGI $212,000; defined net investment income $8,000.",
+        "MAGI excess over $200,000 NIIT threshold is $12,000.",
+        "NIIT base = min($8,000,$12,000)=$8,000 ⇒ NIIT $304 at 3.8%.",
+        "Tax-deferred/Roth account consequences require distinct retirement-account rules."
+      ],
+      "practice": [
+        [
+          "If MAGI exceeds a NIIT threshold by $5,000 and net investment income is $20,000, what is the basic NIIT base?",
+          "The lower amount is $5,000, so the simple 3.8% computation is $190; detailed rules can change the definition of MAGI and net investment income."
+        ],
+        [
+          "Does placing appreciated stock in a revocable trust automatically reset its tax basis immediately?",
+          "No. Titling alone does not create a basis step-up; inheritance, estate inclusion and other statutory conditions control when a basis adjustment is available."
+        ]
+      ]
+    },
+    {
+      "title": "Prepare a tax-lot investment memorandum",
+      "body": [
+        "The final analytical task combines actual brokerage workflows and tax theory. Construct a lot-level schedule with acquisition date, quantity, acquisition price, reinvested dividends, adjusted basis, disposition date, amount realized, gain or loss, recognized amount, short/long category and the source document backing every field. Independently reconcile aggregated sales to Forms 1099-B and 8949 and the resulting Schedule D. Isolate capital-gain distributions and qualified dividends from 1099-DIV without duplication.",
+        "Then compare two defensible portfolio actions: sell an overweight low-basis holding now, or use contributions and alternative lots to reduce concentration over time. Quantify estimated federal and state taxes and what the family gains in diversification and access to cash. Delaying a tax bill can have present value, but concentrating every dollar to avoid a 15% gain tax can put a house fund at unacceptable market risk.",
+        "State what the model omits: relevant tax-year capital-gain thresholds, different character of certain gains, NIIT, timing, broker lot identification, residency and estate uncertainties. Show a reviewer exactly which assumptions would reverse your recommendation. This is applied investment accounting, not a universal instruction to trade or defer taxation."
+      ],
+      "worked": [
+        "Create a worksheet with at least three tax lots and one reinvested dividend.",
+        "Reconcile 1099-B sales proceeds less basis to lot-by-lot gain.",
+        "Compute gain under a valid high-basis sale and a low-basis sale, reporting the difference.",
+        "Write a risk memo on diversification and household liquidity before endorsing a tax-driven trade."
+      ],
+      "practice": [
+        [
+          "What makes a basis ledger suitable for third-party review?",
+          "Each material field ties to a dated broker record, corporate action or verified adjustment, with a consistent lot-selection and holding-period method."
+        ],
+        [
+          "When can paying capital-gain tax now be a sound decision?",
+          "When de-risking, diversification, needed liquidity or future tax uncertainty outweighs the present value of deferring tax on an overly concentrated position."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS Publication 550—investment income, adjusted basis, dividends and holding period",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "IRS Schedule D instructions—netting and wash sales",
+      "https://www.irs.gov/instructions/i1040sd"
+    ],
+    [
+      "IRS Form 8949 instructions",
+      "https://www.irs.gov/instructions/i8949"
+    ],
+    [
+      "IRS 2026 rates and capital-gain ceilings",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ],
+    [
+      "IRS Net Investment Income Tax topic",
+      "https://www.irs.gov/taxtopics/tc559"
+    ],
+    [
+      "IRS Publication 551—Basis of Assets",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "IRS Publication 559—survivors, executors and administrators",
+      "https://www.irs.gov/publications/p559"
+    ]
+  ],
+  "assessment": {
+    "title": "Brokerage lot reconciliation and investment-tax committee",
+    "prompt": "Construct a three-lot brokerage tax ledger: buy 100 shares at $40, 100 at $70 and acquire six additional shares by reinvesting a $300 dividend at $50. Assume all purchases held more than one year. Sell 100 shares for $8,000 with properly documented specific identification of Lot A versus Lot B; compare federal capital-gain effect at an assumed 15% applicable rate. Separately reconcile a Form 1099-DIV reporting $1,000 Box 1a dividends, $700 Box 1b qualified dividends. Then analyze a single filer with $46,000 ordinary taxable income and $7,000 eligible long-term gain in 2026, and write a one-page defense of trading now versus waiting based on concentration and a home down-payment obligation.",
+    "rubric": [
+      "Acquisition and reinvestment ledger accuracy: 20 points",
+      "Lot selection, gain and holding-period analysis: 20 points",
+      "Dividend reporting without duplication: 15 points",
+      "2026 capital-gain stacking and independent recomputation: 25 points",
+      "Liquidity, diversification, NIIT and ethical caveats: 20 points"
+    ],
+    "answerKey": [
+      "Lots A/B/reinvestment basis $4,000/$7,000/$300; aggregate basis $11,300.",
+      "100-share disposal at $8,000 yields $4,000 gain on A, $1,000 on B; at assumed 15% isolated taxes $600 and $150 (difference $450).",
+      "Box 1a $1,000 is total ordinary dividend, Box 1b $700 subset; unqualified remainder $300.",
+      "2026 stack $46,000 ordinary plus $7,000 gain: $3,450 zero rate, $3,550 at 15% ⇒ $532.50.",
+      "Valid conclusions consider actual lot identification, state tax, concentration, fees and future rates."
+    ]
+  }
+}
