@@ -32,7 +32,7 @@ function calculate(type,v){const o={},p=x=>x/100;
  if(type==="rmd"){o.rmd=v.balance/v.divisor;o.tax=o.rmd*p(v.rate);o.cash=o.rmd-o.tax;}
  if(type==="shock"){o.afterShock=v.start*(p(v.stockWeight)*(1-p(v.stockLoss))+(1-p(v.stockWeight))*(1-p(v.bondLoss)));o.afterDraw=o.afterShock-v.withdraw;o.next=v.withdraw*(1+p(v.inflation));o.rate=100*o.next/o.afterDraw;}
  return o;}
-function valid(type,v){if(Object.values(v).some(x=>!Number.isFinite(x)||Math.abs(x)>1e12))return false;
+function valid(type,v){const p=x=>x/100;if(Object.values(v).some(x=>!Number.isFinite(x)||Math.abs(x)>1e12))return false;
  const nonneg=Object.values(v).every(x=>x>=0);if(!nonneg && !(type==="fees" &&v.gross<0&&v.gross> -100) && !(type==="equal" &&v.growth<0&&v.growth> -100))return false;
  if(type==="match")return v.salary>0&&v.deferral<=100&&v.max<=100&&v.rate<=100;
  if(type==="paymatch")return v.salary>0&&v.periods>0&&Number.isInteger(v.periods)&&v.deferral<=100&&v.match<=100&&v.missed<=v.periods&&Number.isInteger(v.missed);
