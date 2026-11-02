@@ -1,0 +1,239 @@
+{
+  "id": "L8.S2",
+  "title": "Reading the Three Statements",
+  "subtitle": "Double-entry accounting, accrual earnings, working capital, cash-flow bridges and earnings quality",
+  "prerequisites": [
+    "L1.S1 the wealth equation",
+    "L8.S1 corporate equity and liabilities",
+    "L7.S3 discounted cash flows"
+  ],
+  "objectives": [
+    "Reconcile assets=liabilities+equity across corporate transactions",
+    "Interpret revenue, margins, expenses and earnings by period",
+    "Bridge net income to operating cash flow with working capital",
+    "Reconstruct free cash flow and owner-available cash after financing",
+    "Compute liquidity, leverage, turnover and return-on-capital ratios",
+    "Recognize accrual estimates and red flags in public-company filings"
+  ],
+  "sections": [
+    {
+      "title": "Accounting equation, statement periods and financial reporting controls",
+      "body": [
+        "The balance sheet is a dated snapshot of assets, liabilities and equity: A=L+E. The income statement records recognized revenue and expenses across a period; the cash flow statement classifies cash generated or used by operating, investing and financing activities across that period. The statement of shareholders' equity explains changes in retained earnings, accumulated comprehensive income, paid-in equity, distributions and treasury stock. All four statements are linked by underlying transactions even though each answers a different question.",
+        "Double-entry logic preserves the accounting equation. A company borrows $100,000 in cash: cash assets rise $100,000 and debt liabilities rise $100,000, but equity does not jump because the loan is not profit. A cash purchase of a $40,000 machine transfers cash into property and equipment without immediately creating an expense equal to purchase price. Later depreciation expense spreads a qualifying cost across useful life under applicable accounting assumptions. Cash and accounting income therefore can move in different periods.",
+        "Read the financial statement period and the audit context. A fiscal year may not match the calendar year, a quarter is not a full-year period, and comparable figures can be restated. US public companies generally prepare financial statements under US GAAP, while other companies may report under IFRS or distinct standards; models must be normalized before cross-company comparison. Consolidation can include controlled subsidiaries and noncontrolling ownership interests, which complicate simple parent-shareholder ratios.",
+        "Use the SEC's financial-statement guide and the 10-K financial statements and footnotes as primary sources. Examine auditor opinions and material weaknesses in internal controls, accounting changes and estimates. An attractive reported net income number cannot independently establish cash collections, contractual debt capacity or reliability of financial controls."
+      ],
+      "worked": [
+        "Beginning assets $500,000, liabilities $300,000, equity $200,000: accounting equation balances.",
+        "Borrow $100,000 cash ⇒ assets $600,000 and liabilities $400,000, equity $200,000.",
+        "Buy $40,000 equipment with cash ⇒ asset mix changes, total assets remain $600,000 initially.",
+        "Subsequent depreciation can reduce reported income and property book value without an equal current cash outflow.",
+        "Financial statement dates and accounting bases must align across comparisons."
+      ],
+      "practice": [
+        [
+          "Why does a corporation's $100,000 new bank loan not constitute $100,000 of net earnings?",
+          "Cash increases with a matching repayment liability; financing creates neither revenue nor residual equity by itself under the assumed transaction."
+        ],
+        [
+          "What is the missing fourth statement when students discuss only the balance sheet, income statement and cash flow statement?",
+          "The statement of stockholders' equity explains share issuance, repurchases, dividends, retained earnings and other equity changes across the reporting period."
+        ]
+      ]
+    },
+    {
+      "title": "Income statement margins and the layers of economic performance",
+      "body": [
+        "An income statement begins with recognized revenues and subtracts cost of sales to derive gross profit. It then accounts for selling, general, administrative, research and other operating expenses to estimate operating income. Financing costs, other nonoperating gains and losses and income tax lead to net income. Basic earnings per share divides earnings attributable to common shareholders by weighted-average common shares under the applicable reporting convention; diluted earnings per share accounts for specified potentially dilutive securities. Analysts must match EPS to the right numerator and denominator.",
+        "Consider a fictional company with $1 million in net sales, $600,000 cost of revenue, $250,000 operating expenses, $30,000 interest expense and $30,000 tax expense. Gross profit is $400,000 (40% margin), operating income $150,000 (15% margin), pretax income $120,000 and reported net income $90,000 (9% net margin). A 10% decline in sales does not always produce a 10% decline in profit when fixed expenses, pricing and volume costs respond differently.",
+        "Revenue recognition requires judgment. Credit sales can increase recognized revenue before customers pay. Refund rights, customer incentives, unbilled receivables, deferred contract liabilities and multi-year service obligations can affect timing. An increase in accounts receivable faster than sales can signal changing payment terms, weaker collections or simply business mix; it is a question to investigate rather than automatic evidence of fraudulent reporting. Segment margins can conceal a loss-making product behind profitable divisions.",
+        "Follow the footnotes and MD&A for accounting policies, customer concentration, restructuring items, changes in estimated useful lives and one-off gains. Companies often discuss adjusted earnings measures, which can exclude costs management considers exceptional. Reconstruct all adjustments and do not treat recurring stock compensation or recurring restructuring charges as imaginary costs. A ratio is a useful diagnostic, not proof the business has durable cash earnings."
+      ],
+      "worked": [
+        "Revenue $1,000,000 − cost of revenue $600,000 ⇒ gross profit $400,000 and gross margin 40%.",
+        "Operating expenses $250,000 ⇒ operating income $150,000 and operating margin 15%.",
+        "Interest $30,000 and income tax $30,000 ⇒ net income $90,000 and margin 9%.",
+        "At 30,000 weighted-average basic shares, basic EPS would be $3 in this simplified case.",
+        "An unusual gain included in net income should not be assumed repeatable without evidence."
+      ],
+      "practice": [
+        [
+          "Why can a company display a strong gross margin but weak free cash flow?",
+          "Operating costs, interest, taxes, working capital investment and capital expenditures can consume cash after gross profit; accrual timing also differs."
+        ],
+        [
+          "Why is dividing net income by shares outstanding on the final day potentially different from reported basic EPS?",
+          "Financial reporting generally uses weighted-average shares for the earnings period and earnings attributable to the appropriate common stock class, not necessarily the period-end share count."
+        ]
+      ]
+    },
+    {
+      "title": "Operating cash flow: converting accrual profit into actual cash",
+      "body": [
+        "Operating cash flow under the indirect presentation begins with net income and adjusts for noncash charges plus changes in relevant operating assets and liabilities. Adding back depreciation does not mean depreciation was a fake economic cost; it corrects the timing of a noncash accounting expense relative to current cash outlays. Rising receivables typically use cash relative to booked revenue; rising payables can temporarily preserve cash by delaying supplier payments. Each adjustment reflects an actual balance-sheet movement and requires correct sign.",
+        "Suppose net income is $90,000, depreciation is $20,000, receivables rise $35,000, inventory rises $15,000 and payables rise $10,000, with no other changes. Simplified operating cash flow is $90,000+$20,000−$35,000−$15,000+$10,000=$70,000. Positive profit therefore exceeds operating cash collected and retained under this illustrative bridge. If receivables climb faster than reported revenue for several years, investigate customers, collectability and revenue recognition rather than assuming growth guarantees cash.",
+        "Working capital links income statement to funding requirements. Accounts receivable are customer amounts owed; inventory represents held inputs and goods; accounts payable represent amounts owed to suppliers. A business can grow revenue and require additional cash for raw materials and longer customer credit. Conversely, some high-turnover retailers receive customer cash before paying suppliers and can have favorable working-capital economics. A cash flow surge from stretching payables may not be a permanent margin improvement.",
+        "Cash flow needs context: an operating cash inflow can coexist with major debt due next year; the company may borrow to finance share repurchases or buy equipment, both of which belong outside operating cash flow. Compare multi-year cash generation with earnings, working-capital balances, and cash-flow statement footnotes. Because cash balances vary with financing and investment decisions, the existence of cash in a bank account at year end does not by itself prove sustainable operations."
+      ],
+      "worked": [
+        "Net income $90,000 + depreciation $20,000 = $110,000 pre-working-capital bridge.",
+        "Receivables increase $35,000 ⇒ subtract $35,000; inventory rises $15,000 ⇒ subtract $15,000.",
+        "Accounts payable increase $10,000 ⇒ add $10,000 in this simplified model.",
+        "Operating cash flow $110,000−$35,000−$15,000+$10,000=$70,000.",
+        "Operating cash differs from net income by negative $20,000 despite positive reported profit."
+      ],
+      "practice": [
+        [
+          "Why is an increase in accounts receivable usually a subtraction when reconciling income to cash under an indirect method?",
+          "A company can record sales before collecting payment; higher unpaid customer balances mean less cash than accrual revenue would suggest."
+        ],
+        [
+          "Why does adding back depreciation in CFO not prove capital equipment is free to replace?",
+          "Depreciation was a noncash current expense, but replacing or maintaining physical equipment can demand substantial investing cash outflows over time."
+        ]
+      ]
+    },
+    {
+      "title": "Investing and financing activities: free cash flow is not cash in the bank",
+      "body": [
+        "Operating, investing and financing cash classifications distinguish business generation from financing choices. Purchases of equipment and facilities normally appear as investing outflows. Debt issuance, principal repayment, stock issuance, repurchases and dividends normally appear as financing flows under US GAAP; some classifications can differ under other accounting regimes. The change in total cash reconciles all cash flow categories plus currency and other reconciling effects, but not every inflow is operating success.",
+        "A simplified free cash flow to firm starting point is operating cash flow less capital expenditures under a common analyst convention, although precise definitions vary, especially with interest classification, acquisitions, leases and working capital normalization. In the preceding scenario, if CFO is $70,000 and capital spending is $45,000, a basic CFO−capex FCF measure is $25,000. That $25,000 is not automatically cash payable to shareholders: debt service, acquisitions, working capital shocks and contractual restrictions can remain.",
+        "Suppose the issuer borrows an additional $80,000 and spends $60,000 buying back shares. End-of-year bank cash can increase from borrowing despite modest business FCF. An investor looking only at the higher cash account could infer improving operations incorrectly. Similarly a company can pay a dividend from debt or cash reserves for a time even when normal operations fail to cover distributions. Compare returns of capital with sustainable cash generation and capital requirements.",
+        "A careful model distinguishes maintenance capital expenditure needed to preserve the productive base from growth expenditure intended to create future returns, recognizing that filings may not separately identify them. EBITDA ignores capital expenditures, working capital and often certain fixed cash commitments. Evaluate cash conversion, economic return on invested capital, net borrowing and dilution together before declaring shareholders wealthy."
+      ],
+      "worked": [
+        "Operating CFO $70,000 and capex $45,000 ⇒ simplified FCF $25,000.",
+        "New borrowing $80,000 is financing inflow, not sales revenue.",
+        "Repurchases $60,000 are financing outflow, not a deduction from net income.",
+        "CFO−capex FCF $25,000 does not equal all available distributable shareholder cash.",
+        "Repeat capex and debt maturity analysis before assuming long-term distribution capacity."
+      ],
+      "practice": [
+        [
+          "Why can cash in the bank grow even when operations are weak?",
+          "Borrowing, selling assets or issuing new shares can generate cash inflows independent of core operating performance; classify cash by its source."
+        ],
+        [
+          "Why is a positive EBITDA figure inadequate evidence that all required debt payments are affordable?",
+          "EBITDA excludes capital expenditure, working-capital funding, interest, principal and tax obligations; those can consume much of the firm's cash."
+        ]
+      ]
+    },
+    {
+      "title": "Balance-sheet liquidity, leverage and solvency stress",
+      "body": [
+        "Liquidity is the ability to meet near-term obligations, while solvency concerns the longer-term capacity of assets and cash flows to support all claims. Current ratio is current assets divided by current liabilities; quick ratio restricts qualifying liquid assets. A current ratio above one is not a legal assurance of financial health because inventory could be difficult to sell, receivables may be overdue and a large debt maturity may fall just outside the classification period. Operating cash generation and committed credit availability supplement the snapshot.",
+        "Consider current assets $300,000 including $100,000 cash, $120,000 receivables and $80,000 inventory; current liabilities $200,000. Current ratio 1.5. A rough quick ratio using cash plus receivables is ($100,000+$120,000)/$200,000=1.1. If $60,000 of receivables become doubtful, true liquidity is worse than the unadjusted ratio implies. A company can also have apparently high liquidity because it just issued expensive short-term debt.",
+        "Leverage analysis compares debt with cash generation and asset collateral. Net debt can be defined as interest-bearing debt minus available cash, but restricted cash, leases and obligations require careful adjustments. Interest coverage based on EBIT divided by interest expense is an accrual metric, not a direct schedule of debt repayment capacity. A floating-rate loan repricing upward can weaken coverage even when EBIT is unchanged. Maturity ladders, covenants and refinancing conditions can determine survival in an economic slowdown.",
+        "Use at least two downside scenarios: a 15% revenue decline and a 2 percentage-point increase in borrowing cost. Trace operating earnings, collections, debt interest and capital spending rather than assume profitability falls proportionally. A research analyst should identify the maximum credible loss and the financing actions management might take, including dilutive issuance or asset sales."
+      ],
+      "worked": [
+        "Current assets $300,000, current liabilities $200,000 ⇒ current ratio 1.50.",
+        "Cash $100,000 + receivables $120,000, excluding inventory $80,000 ⇒ simplified quick ratio 1.10.",
+        "If receivables of $60,000 are unrecoverable, liquid near-assets fall materially, even though the old ratio was 1.10.",
+        "Interest-bearing debt $250,000 less unrestricted cash $100,000 ⇒ net debt $150,000 under simple definition.",
+        "Interest coverage should be stress-tested against earnings and refinancing shocks."
+      ],
+      "practice": [
+        [
+          "Why is a current ratio of 1.5 insufficient evidence that a company can definitely pay every current bill?",
+          "Inventory and receivables may be illiquid or uncollectible, and debt maturities, covenants or seasonal cash needs can be more restrictive than the balance-sheet ratio."
+        ],
+        [
+          "How can a company have positive shareholders' equity but still experience financial distress?",
+          "Book assets may not be readily liquidated at carrying value, bills can become due before cash arrives, and refinancing or covenant conditions may fail."
+        ]
+      ]
+    },
+    {
+      "title": "Earnings quality, accrual estimates and financial reporting red flags",
+      "body": [
+        "Earnings quality evaluates whether reported accounting profit is supported by durable operations, sound recognition policies and eventual cash receipts. A rising earnings-per-share number can result from operating improvements, lower tax rate, share repurchases or a one-time asset sale. A single metric cannot distinguish those drivers. Reconcile net income, CFO, recurring capital investment and share count changes across multiple reports to identify why EPS changed.",
+        "Common analytical questions include receivables growth substantially above sales growth, inventory build despite slowing demand, unusually frequent restructuring add-backs, changes in useful-life depreciation estimates, gains on asset disposals, goodwill impairment indicators, aggressive acquisition accounting or negative operating cash in periods reporting strong profit. None is proof of fraud alone. Disclosures, audit qualifications, accounting policies and actual customer receipts are needed before alleging misconduct.",
+        "A simple accrual signal is net income minus operating cash flow, though noncash taxes, growth working capital and industry differences matter. In a fictional company reporting $200,000 net income and $120,000 CFO, the gap is $80,000. If capital expenditure is $70,000, FCF is only $50,000. Net income of $200,000 does not mean $200,000 of distributable cash and does not justify a dividend equal to all net income. Analysts should track change in receivables and working capital to explain the difference.",
+        "GAAP statements, auditor reports, footnotes and company claims of adjusted non-GAAP performance should be reconciled, not merely repeated. A reputable primary-source investment memo should mark all figures as reported, calculated or assumed; quantify adjustments; and disclose if the analyst could not reconcile an account. Financial analysis supports skepticism without presuming every difference between cash and earnings is wrongdoing."
+      ],
+      "worked": [
+        "Company reports net income $200,000 and CFO $120,000 ⇒ net income−CFO gap $80,000.",
+        "Capital expenditures $70,000 ⇒ CFO−capex FCF $50,000.",
+        "Net income/FCF ratio =4.0× under this specific simplified definition.",
+        "If a $100,000 dividend is declared and paid, it exceeds modeled annual FCF by $50,000.",
+        "An observed mismatch is an investigatory signal, not a fraud determination."
+      ],
+      "practice": [
+        [
+          "What is one reason a profitable fast-growing manufacturer might report lower CFO than net income without fraud?",
+          "Growing receivables or inventory can use operating cash as output increases, so earnings recognition and customer collections differ in timing."
+        ],
+        [
+          "Why can repeated 'adjusted earnings' exclusions warrant skepticism?",
+          "Costs called nonrecurring can occur regularly, and excluding actual compensation or restructuring obligations can make a reported profitability narrative overly optimistic."
+        ]
+      ]
+    },
+    {
+      "title": "A fully reconciled fictional-company financial statement assignment",
+      "body": [
+        "Build a four-statement model with clearly identified start and end dates. Start with a balanced beginning balance sheet, record the transactions creating revenue and expenses, then reconcile ending net income through retained earnings and other equity changes. Explain operating CFO in terms of net income and every balance-sheet operating working-capital change. Calculate investing and financing cash flows independently and tie their sum to the movement in cash on the ending balance sheet.",
+        "An analyst should not plug the model with unexplained 'other' cash flows simply to force agreement. If cash does not reconcile, check whether currency, acquisitions, restricted cash or statement classification was overlooked. Likewise debt cannot disappear from the balance sheet when a company spends loan proceeds on a repurchase. Reported tax expense and actual tax cash paid may differ due to deferred taxes and working capital. Transparency about an unidentified difference is superior to inventing an accounting line.",
+        "Required output includes income statement margins, basic and diluted EPS assumptions, current and quick ratios, net debt, interest coverage, CFO−capex FCF, revenue and receivable growth, and the share count bridge. Compare two fiscal periods and explain whether cash conversion improved. Read issuer annual reports directly, with dated evidence of the fiscal year, filing amendments and whether the auditor expressed an unqualified or qualified opinion.",
+        "End with a written assessment: is the company generating sufficient recurring cash to preserve operations, finance debt and reward shareholders? What exact assumptions are necessary to recommend a valuation and what events would invalidate them? This closes the gap between elementary bookkeeping and professional investment decisions without using an attractive EPS alone as the answer."
+      ],
+      "worked": [
+        "Hypothetical net income $90,000, depreciation $20,000, receivables increase $35,000, inventory increase $15,000, payables increase $10,000.",
+        "Calculate CFO $70,000; deduct $45,000 capex to obtain $25,000 simple FCF.",
+        "If current assets are $300,000 and liabilities $200,000, current ratio 1.5.",
+        "If shares are 30,000 weighted-average, simplified EPS $3 on net income $90,000 before attributable-profit adjustments.",
+        "A complete model must reconcile income, cash, debt and equity without unexplained balancing entries."
+      ],
+      "practice": [
+        [
+          "What is the strongest basic check that the three main statements were linked correctly?",
+          "Changes in balance-sheet cash should reconcile to reported operating, investing and financing cash movement after applicable reconciliation items, while net income updates equity under the proper rules."
+        ],
+        [
+          "Why must an analyst report both cash flow and profitability before choosing whether a stock is undervalued?",
+          "Accrual profit, cash collections, investment requirements, leverage and share counts jointly determine possible shareholder cash returns and survival risk."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Beginners' Guide to Financial Statements",
+      "https://www.sec.gov/investor/pubs/begfinstmtguide.htm"
+    ],
+    [
+      "Investor.gov How to Read a 10-K",
+      "https://www.investor.gov/introduction-investing/getting-started/researching-investments/how-read-10-k"
+    ],
+    [
+      "SEC EDGAR reporting documents",
+      "https://www.sec.gov/edgar/search/"
+    ],
+    [
+      "SEC Financial Reporting Manual",
+      "https://www.sec.gov/corpfin/cf-manual"
+    ],
+    [
+      "FASB Accounting Standards Codification information",
+      "https://www.fasb.org/"
+    ],
+    [
+      "Investor.gov Researching Investments",
+      "https://www.investor.gov/introduction-investing/getting-started/researching-investments"
+    ]
+  ],
+  "assessment": {
+    "title": "Four-statement earnings-quality and cash-conversion audit",
+    "prompt": "Reconstruct a fictional public issuer's revenue and earnings with $1m sales, $600k cost of revenue, $250k operating expense, $30k interest and $30k taxes. Build an indirect CFO reconciliation from $90k net income, $20k depreciation, $35k receivables increase, $15k inventory increase and $10k payables increase. Deduct $45k capex. Compute current/quick ratios, basic EPS and cash conversion. Explain what further notes and cash-flow items would be required to close a fully balanced four-statement model.",
+    "rubric": [
+      "Accounting equation and correctly classified statements (15%)",
+      "Income statement and EPS reconciliation (20%)",
+      "Indirect CFO and working-capital signs (25%)",
+      "Capital spending, liquidity and financing analysis (20%)",
+      "Documented earnings-quality skepticism and primary filings (20%)"
+    ]
+  }
+}
