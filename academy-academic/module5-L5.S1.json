@@ -1,0 +1,266 @@
+{
+  "id": "L5.S1",
+  "title": "Term vs. Permanent Life Insurance",
+  "subtitle": "Mortality risk, contracts, premiums, reserve mechanics, policy loans and estate coordination",
+  "prerequisites": [
+    "L1.S1 household assets and liabilities",
+    "L1.S3 present values and cash-flow math",
+    "L3.S2 trust rights and tax basis",
+    "L4.S2 investment risk"
+  ],
+  "objectives": [
+    "Differentiate protection risk transfer from savings and investment",
+    "Estimate the household death-benefit need from obligations and resources",
+    "Compare guaranteed and nonguaranteed policy illustrations",
+    "Model cash-value, surrender-charge and policy-loan scenarios",
+    "Distinguish loan liquidity from free wealth or insured deposits",
+    "Explain policy ownership, beneficiary and estate coordination"
+  ],
+  "sections": [
+    {
+      "title": "Risk pooling, insurable interest and the insurance balance sheet",
+      "body": [
+        "Life insurance is a contingent financial contract. Policyholders pay premiums to an insurer, and the insurer promises a benefit after a covered insured death if policy conditions are satisfied. The death benefit is not a claim the insured can spend while alive simply because it appears on the declarations page. Underwriting estimates mortality and related risk; premiums also support acquisition costs, servicing, statutory reserves and insurer capital. State law and contract wording govern the exact promise. The insured life, contract owner, premium payer and beneficiary can be different parties with different legal rights.",
+        "Insurers aggregate independent or partially correlated mortality exposures, invest premiums and maintain reserves against expected claims. An insurer's solvency cannot be established by a single glossy projection or dividend history. Regulatory supervision, financial strength, claims practices and state guaranty rules matter. Consumer protection arrangements have eligibility and monetary limits and should not be treated as an unconditional federal guarantee. The policyholder's best practical defense is to understand the legally guaranteed values and avoid premiums that cannot be sustained.",
+        "Insurance purchasing should start with the financial loss caused by death. A surviving adult may lose wages, noncash household work, health coverage access, childcare, or the ability to pay a mortgage. A child may need support for many years. Conversely, a person with no dependents, sufficient savings and no liabilities may need relatively little coverage for income replacement. A policy should match economic obligations and the time those obligations last, not a marketing rule that all people need the same face amount.",
+        "Use source-dated evidence: the insurer's filed policy form, full illustration where relevant, declarations and riders, beneficiary form and premium schedule, plus regulatory materials from the NAIC and Connecticut Insurance Department. Distinguish a general financial education example from an individual underwriting quote. The coverage amount, lapse terms, renewal choices and exclusions must be verified before drawing conclusions about a specific contract."
+      ],
+      "worked": [
+        "Hypothetical annual premium $360 for a level term policy, with $250,000 stated death benefit.",
+        "The $250,000 is conditional protection, not present cash-value savings; assumed term cash surrender value is $0.",
+        "A beneficiary may receive $250,000 after covered death if policy remains in force and exclusions or adjustments do not apply.",
+        "Ten-year gross term-premium outlay $360×10=$3,600, disregarding time value and changes in premiums.",
+        "Compare the $3,600 premium cost with the probability-weighted protection value and household risk objective, not a guaranteed monetary investment return."
+      ],
+      "practice": [
+        [
+          "Why is a $250,000 term-life death benefit not added to today's bank account balance?",
+          "It is a conditional payment triggered by an insured event and contract conditions, not an unconditional current deposit or readily accessible living cash asset."
+        ],
+        [
+          "How can a life policy be financially valuable even when no death benefit is paid during the term?",
+          "The household has purchased risk protection against a potentially catastrophic loss; insurance value is not solely the monetary return on premiums in the no-claim outcome."
+        ]
+      ]
+    },
+    {
+      "title": "Determine the coverage need using a dated survivors' balance sheet",
+      "body": [
+        "The death-benefit need is a liability-and-income problem. One approach is needs analysis: identify funeral and settlement costs, debt payoff, dependents' ongoing living expenses, education support and transitional costs, then subtract liquid assets and dependable survivor benefits already available. The result is a provisional funding gap rather than an automatic policy recommendation. If a spouse could cover the mortgage and expenses on their own income, coverage may focus on the remaining gap; if an adult provides unpaid caregiving, replacing that work can also be expensive.",
+        "Discount recurring expenses when translating a stream of annual shortfalls into capital today. For an end-of-year constant annual shortfall C for n years and a model annual discount rate r, PV=C×[1−(1+r)^(-n)]/r, with PV=C×n when r=0. An inflation-sensitive stream needs consistent nominal growth and nominal discount assumptions, or an explicitly real calculation. A simple multiple-of-salary rule ignores taxes, duration, savings and dependent needs. The calculation should consider both life expectancy and the specified duration of family dependency.",
+        "For example, suppose a survivor would face a $20,000 annual net income gap for ten years, a $100,000 mortgage payoff goal, $15,000 immediate expenses and $40,000 accessible assets. At a hypothetical 4% discount rate, the ten-year end-of-year shortfall has present value about $162,218. Adding mortgage and immediate expense goals and subtracting cash suggests a coverage gap around $237,218. This is not a quote or legal assumption about loan acceleration; it is one illustration of funding adequate survivor capital.",
+        "Before recommending coverage, identify existing employer group life benefits, their portability, policy exclusions, social security survivor eligibility where applicable, insurance already held, available cash and outstanding creditors. Reassess after purchase of a home, a child's birth or adulthood, job changes and beneficiary changes. A larger face amount does not replace the need for correct beneficiary designations and an organized claims process."
+      ],
+      "worked": [
+        "Annual survivor cash shortfall $20,000 for ten year-end periods.",
+        "Illustrative discount rate 4%; discounted gap PV≈$20,000×[1−1.04^(-10)]/0.04≈$162,218.",
+        "Other needs: $100,000 mortgage-payoff objective + $15,000 immediate costs − $40,000 liquid assets.",
+        "Modeled coverage gap ≈$237,218; actual plan may prioritize continuing mortgage payments over payoff.",
+        "A $250,000 proposed face amount exceeds the modeled gap by about $12,782 under these specific assumptions."
+      ],
+      "practice": [
+        [
+          "Why may income replacement be a better starting point than an automatic ten-times-salary formula?",
+          "A dated expense gap can account for actual survivors' earning capacity, dependent years, debt, liquid reserves and real financial obligations, whereas a fixed salary multiple does not."
+        ],
+        [
+          "What would change the calculated need if a surviving adult had a reliable pension or existing life coverage?",
+          "Those dependable benefits could offset the modeled funding gap, subject to their eligibility, timing, taxes and termination conditions; the policy need should be recalculated."
+        ]
+      ]
+    },
+    {
+      "title": "Term insurance contracts, renewal and conversion economics",
+      "body": [
+        "Term insurance provides protection for a specified duration, often with level premiums over an initial guaranteed period if the contract provides that structure. A 20-year level-term promise does not guarantee that the same rate applies forever or that coverage will remain affordable after the term. Renewal provisions and conversion privileges vary. Conversion may permit moving to specified permanent coverage without new evidence of insurability, but pricing and product options depend on the contract. Eligibility today does not guarantee a future life policy at an attractive price.",
+        "Term insurance often offers more initial death benefit per premium dollar than permanent coverage. That makes it useful when the primary objective is temporary income replacement during child dependency or while a mortgage is large. Its lack of savings value is not a defect if the purpose is protection. Money no longer spent on large permanent-policy premiums can be saved or invested, but the household must actually follow through for the strategy to build wealth.",
+        "Compare a hypothetical $30 monthly term policy with a $250 monthly permanent policy for the same insured and initially equal face amount. Over ten years, premiums are $3,600 and $30,000, respectively, before time-value adjustment. The $26,400 difference is not automatically profit from term, since the policies can have different guarantees, term length and survival benefits. But it is genuine cash capacity available for other objectives if the cheaper suitable contract is chosen. At $220 saved monthly for ten years, contributions alone total $26,400.",
+        "Ask about increasing premiums, guaranteed renewal age, conversion deadline, exclusions, the financial consequences of cancellation and the insured's health and employment. Group coverage at work can be valuable but may end or shrink after leaving employment. An adequate insurance plan survives realistic job transitions and a family cash-flow shock instead of relying solely on benefits tied to the current employer."
+      ],
+      "worked": [
+        "Illustrative level term premium $30/month and permanent premium $250/month.",
+        "Over ten years term premiums $3,600 versus permanent premiums $30,000, a $26,400 cash outlay difference.",
+        "If the family directs $220 monthly to savings with no yield, it contributes $26,400 over 120 months.",
+        "At hypothetical nominal 4% annually compounded monthly, $220 ordinary end-month contributions grow to approximately $32,338.",
+        "The investment value and term premium future costs remain uncertain; do not call this a guaranteed better outcome."
+      ],
+      "practice": [
+        [
+          "Why is it misleading to say term insurance wastes premiums if the insured lives past the term?",
+          "Protection against a specified event was provided throughout the covered period. Premiums purchase contingent risk transfer, much like homeowners protection, not a promise of cash accumulation."
+        ],
+        [
+          "What contract feature could be relevant if health deteriorates before a level-term policy expires?",
+          "A contractual conversion privilege may allow conversion to specified permanent coverage without new medical evidence, subject to deadlines, eligible products and pricing."
+        ]
+      ]
+    },
+    {
+      "title": "Permanent contracts: guaranteed values, credits and required premiums",
+      "body": [
+        "Permanent life insurance combines a death-benefit contract with values that may accumulate under the product design. Whole life, universal life, indexed universal life and variable policies have materially different rules for premiums, cash value, credited return, insurance charges, charges for withdrawals and surrender, investment risk and coverage guarantees. A participating whole-life dividend is generally a nonguaranteed element even when some base premium and cash-value schedule is guaranteed. Indexed credits are not the same as owning an index fund, and floors and caps do not establish a guaranteed positive policy-wide return after insurance costs.",
+        "Universal-life structures deduct specified costs of insurance and administration from an account value; crediting rates can change and some benefits may have distinct guarantees requiring certain premium patterns. Cash value can decline or coverage can lapse if funding and credited returns do not meet costs. Variable policies may expose account value to securities performance. Read the guaranteed illustration separately from the current-assumption and alternative scenarios, and inspect annual statements to verify actual performance.",
+        "Present-value comparisons cannot be made from premium totals alone. A $250 premium that buys insurance and a cash balance differs economically from a $30 pure risk premium; compute premiums, cash surrender value net of charges, outstanding loans, net death benefit, coverage term and alternative investment accumulations at consistent dates. Avoid using a hypothetical illustration as proof that a contract will deliver a particular dividend or crediting rate. The NAIC model-illustration rules warn explicitly against presenting nonguaranteed elements as guaranteed.",
+        "A buyer should request the insurer's current and guaranteed policy illustration, complete product contract and riders, policy fees, surrender schedule, projected in-force performance under adverse rates, guaranteed death benefit provisions, and an explanation of what happens after missed premiums. The agent's license and insurer status should be checked with Connecticut Insurance Department records. Insurance is a complex long-term commitment and should not be treated as a stand-alone high-yield savings account."
+      ],
+      "worked": [
+        "Model ten years of $250 monthly premiums: cash paid $30,000 before time-value adjustment.",
+        "Suppose a fictional year-10 illustration shows $21,000 cash surrender value and $250,000 death benefit, with no outstanding loan.",
+        "Surrender at that year would yield $21,000 before tax or transaction adjustments, not the full $30,000 paid.",
+        "The $9,000 premium-minus-surrender gap includes the economic cost of risk coverage and contract charges; it cannot be labeled only an investment loss.",
+        "A different illustrated nonguaranteed rate could alter cash values, future premiums and lapse projections."
+      ],
+      "practice": [
+        [
+          "Why is an insurer's nonguaranteed illustration not suitable as a guaranteed mortgage down-payment savings forecast?",
+          "Dividend and crediting assumptions, contract charges, premiums and coverage conditions can change. The enforceable guaranteed schedule and an adverse scenario may differ substantially."
+        ],
+        [
+          "How does a whole-life cash surrender value differ from the death benefit amount?",
+          "Cash surrender value is an amount available on surrender under contract conditions after relevant deductions, while the death benefit is a contingent insured-death payment, often net of outstanding loans."
+        ]
+      ]
+    },
+    {
+      "title": "Policy loans: borrowing against collateral without creating equity",
+      "body": [
+        "A policy loan ordinarily allows the contract owner to borrow from the insurer subject to available policy loan value, with the policy securing repayment. It is still a debt. The policy's gross cash value, available loan value, cash surrender value and net death proceeds are different quantities. Loan interest accrues under contract terms; if interest is not paid out of pocket, a balance may compound. Some whole-life contracts maintain interest or dividend credits on gross scheduled values, but crediting on the underlying asset does not make loan interest free or cancel lender claims.",
+        "Assume a hypothetical owner has $20,000 policy loan value and borrows $12,000 at an annually compounded 7% loan interest rate, without repayments. The balance after five years is $12,000×1.07^5, about $16,831. Its growth consumes more of the policy's collateral margin, regardless of whether cash values also grow under a separate schedule. A $100,000 hypothetical death benefit with unchanged face amount would be reduced by the unpaid loan and loan interest under a typical loan-offset structure, potentially leaving about $83,169 before other adjustments.",
+        "The policy's remaining loan capacity is not cash already owned in a bank. The household may spend loan proceeds for a down payment, but it now owns a secured policy loan. If the funds are transferred to purchase real estate, the household may hold more home equity or cash at closing but less net insurance collateral; there is no double wealth created by borrowing against the policy. The mortgage lender may also need to document the financing source and obligations; it is not automatically acceptable 'gift cash'.",
+        "A dangerous feedback loop occurs when loan interest capitalizes while policy value underperforms its illustration. Loan and charges may erode the collateral, cause the need for new premium funding or threaten lapse. If the owner cannot afford continuing premiums and loan costs, the strategy can collapse exactly when the family needs protection. Evaluate annual in-force illustrations with the actual loan balance, interest assumptions, cash values and lapse threshold, not only an initial quote."
+      ],
+      "worked": [
+        "Hypothetical policy loan principal $12,000, annual rate 7%, no payment for five years.",
+        "Ending loan debt = $12,000×1.07^5≈$16,831.",
+        "Illustrative gross death benefit $100,000 less loan ≈$83,169, before policy-specific adjustments.",
+        "Even if the policy earns a credit on some value, the loan's contracted debt has not disappeared.",
+        "The $12,000 loan proceeds can be spent once; loan liability must remain on the household economic balance sheet."
+      ],
+      "practice": [
+        [
+          "Why is taking a policy loan to buy a house not a financial method that creates new net worth on the borrowing date?",
+          "The borrower receives cash and simultaneously incurs debt secured by policy rights. A change in how cash is invested does not eliminate loan principal or interest."
+        ],
+        [
+          "What would you request before trusting a policy-loan illustration with five years of capitalized interest?",
+          "A current insurer-produced in-force illustration showing guaranteed and nonguaranteed policy values, actual existing loans, interest capitalization, surrender values, planned premiums and possible lapse dates."
+        ]
+      ]
+    },
+    {
+      "title": "Lapse, surrender and taxation: why the exit matters",
+      "body": [
+        "Life-insurance death benefits paid by reason of death are generally excluded from federal gross income under ordinary rules, with important exceptions such as transfer-for-value arrangements. Interest paid on retained death proceeds can be taxable. Surrender of a cash-value contract can generate ordinary taxable income when proceeds exceed the owner's investment in the contract under the tax rules. Those statements are different tax events. One cannot conclude every policy transaction is tax free simply because the death benefit is usually excluded.",
+        "Outstanding policy loans can complicate surrender or lapse accounting. Suppose a contract has an adjusted investment in contract of $22,000, a cash surrender value of $30,000 before loan-offset and an unpaid loan of $18,000. A simplified full-surrender economic result could involve $12,000 net cash plus discharge or setoff of $18,000 debt, an aggregate $30,000 of value accounted for. Under a simplified taxable surrender approach, $30,000 less $22,000 basis yields $8,000 potential taxable gain. Actual tax treatment requires contract and accounting records, including prior distributions, MEC status and adjustments.",
+        "A modified endowment contract, or MEC, is a life insurance contract that meets statutory premium-funding tests triggering different distribution-tax rules. Loans or other value accessed from a MEC may be treated differently for taxation and potential additional taxes. The label 'permanent life' does not establish that a contract is or is not a MEC. Even non-MEC arrangements can create adverse tax events upon surrender or lapse with policy loans. IRS Publication 525 and competent tax review are better starting points than marketing statements about tax-free loans.",
+        "Plan the exit before paying the first premium: what if the policy is surrendered in year five, transferred into a trust, partially withdrawn, assigned to a lender, or ends with a high loan balance? Identify the contractual nonforfeiture rights, tax basis, guaranteed net surrender value, beneficiary and estate consequences, and whether premiums can be maintained during unemployment. Tax treatment and legal transfer restrictions are specific to the facts and should not be invented by a calculator."
+      ],
+      "worked": [
+        "Hypothetical policy basis $22,000; gross surrender value $30,000; outstanding loan $18,000.",
+        "Net cash on full surrender before other charges $30,000−$18,000=$12,000.",
+        "Economic value received may include $12,000 cash plus $18,000 extinguished loan = $30,000.",
+        "Simplified potential taxable gain $30,000−$22,000=$8,000, subject to exact contract and tax characterization.",
+        "At an illustrative 22% marginal rate, $8,000 recognized ordinary taxable gain could imply $1,760 tax before other return effects."
+      ],
+      "practice": [
+        [
+          "Why can life-insurance surrender create taxable income even when the owner receives little net cash after an outstanding loan is settled?",
+          "Tax accounting can treat the extinguished policy loan as value in the surrender transaction. Net cash received and the amount compared with policy investment basis are not identical."
+        ],
+        [
+          "Why must an insured confirm whether a contract is a modified endowment contract before planning loans?",
+          "MEC classification can alter the tax treatment of loans and distributions and may raise additional tax issues. The contract's funding history and statutory rules must be examined."
+        ]
+      ]
+    },
+    {
+      "title": "Insurable household comparison: permanent coverage versus term plus reserves",
+      "body": [
+        "The appropriate product depends on the problem. If a family needs $250,000 of death protection for two decades and can afford $250–$500 of monthly saving, a large permanent premium could compete directly with emergency reserves and a future home purchase. Conversely, some households with long-lasting coverage needs, special beneficiaries or specific estate liquidity problems may have reasons to evaluate permanent insurance despite higher costs. It is not academically sound to universally say term is always best or permanent is a magical asset-building method.",
+        "Construct an apples-to-apples comparison with the same insured, underwriting class, face amount, required coverage horizon and credible premium assumptions. Path A pays a hypothetical $30 monthly term premium and directs $220 monthly elsewhere. Path B pays a hypothetical $250 permanent policy premium. The alternatives differ in lapse risk, liquidity, guarantees, investment exposure, surrender values and beneficiary outcomes. Explicitly note whether the term coverage expires before modeled death and whether a replacement policy is available.",
+        "At 4% nominal annual saving return compounded monthly, $220 invested at each month-end for ten years produces approximately $32,338. That is before tax and investment costs, and it could be much smaller after adverse markets. A fictional permanent policy might have a year-10 surrender value of $21,000 with a death benefit still in force. Comparing $32,338 and $21,000 alone is invalid if it ignores the insurance cost after year ten, the differences in permanent guarantees or risk-adjusted value. Use both financial statements and insurance protection scenarios.",
+        "Stress-test household affordability. If $250 premium would consume half of a $500 monthly savings capacity, ask whether a $1,200 medical bill or property repair would force policy lapse or debt. Include the opportunity cost of a late premium payment and the uncertainty of future coverage. Make the ultimate recommendation conditional on product documents, present and future insurance needs, and a sustainable full budget."
+      ],
+      "worked": [
+        "Term premium $30/month and permanent premium $250/month, same hypothetical initial coverage face.",
+        "Monthly cash difference $220; 120 months of contributions $26,400.",
+        "At 4% nominal annual monthly compounding, future savings ≈$32,338 before fees and tax.",
+        "Compare with fictional year-10 permanent surrender value $21,000 and continuing coverage, but do not infer product superiority from these two figures alone.",
+        "If available household surplus is $400/month, a $250 permanent premium uses 62.5% of available monthly surplus."
+      ],
+      "practice": [
+        [
+          "What important information is missing from a comparison that only contrasts year-ten bank savings with permanent policy surrender value?",
+          "Remaining life coverage, premium obligations after year ten, guaranteed cash values, lapse risk, taxes, alternative investment risks and death-benefit differences must all be compared."
+        ],
+        [
+          "Why is it risky to purchase a permanent policy primarily to borrow for a house soon afterward?",
+          "Early cash value can be limited, surrender or loan access may be costly, loan interest continues, and premium obligations and mortgage affordability remain separate."
+        ]
+      ]
+    },
+    {
+      "title": "Policy ownership, trusts, beneficiaries and inheritance coordination",
+      "body": [
+        "A life policy has distinct roles: owner, insured, beneficiary and often contingent beneficiary. The owner generally controls permitted contract transactions; the beneficiary receives proceeds according to valid designations and policy terms after an insured event. A revocable trust may serve as beneficiary or owner under an appropriate estate plan, but title and policy rights need actual insurer forms. A life-insurance trust may have more restrictive administration and tax implications. Simply changing a beneficiary designation does not make a mortgage loan disappear.",
+        "Estate-tax inclusion depends on policy ownership, retained incidents of ownership, beneficiary arrangements and the applicable statutory rules, including potential issues with transfers close to death. A trust is not a universal exclusion mechanism. Estate taxes and the ordinary income-tax exclusion for death benefits are different regimes. An irrevocable trust may change who controls and receives proceeds, but an improperly drafted or funded arrangement can frustrate the family's objective or cause avoidable costs.",
+        "Many families have modest estates relative to 2026 federal and Connecticut estate-tax exemptions; sophisticated irrevocable life-insurance trusts are not automatically justified. Coordination can still matter for a minor beneficiary or property that must be maintained during settlement. The NAIC reminds consumers that naming a minor beneficiary may require a trust or estate-management arrangement. A trustee may legally receive proceeds but still need sufficient liquidity to cover immediate mortgage, insurance and household expenses.",
+        "An integrated inheritance plan records the policies, contract owner, beneficiary percentages, backups, claims instructions, policy loans, premiums and trust authority. A family wishing to leave a home to a daughter must also review deed, first mortgage, subordinate assistance liens and probate or trust documents. An insured's death can generate money but it does not guarantee that the property becomes debt-free without deliberate allocation of those funds."
+      ],
+      "worked": [
+        "Hypothetical $250,000 death benefit; outstanding policy loan plus interest $16,831.",
+        "Common net benefit illustration $250,000−$16,831=$233,169 before other contract adjustments.",
+        "If two beneficiaries share equally under valid designations, each would receive $116,584.50 in this simplified example.",
+        "No portion of the mortgage principal disappears automatically merely because death benefit is payable.",
+        "A policy owned by a trust and a policy naming trust as beneficiary are distinct legal structures that require review."
+      ],
+      "practice": [
+        [
+          "Why can changing a policy's beneficiary to a trust fail to achieve the same estate outcome as transferring contract ownership?",
+          "Ownership rights, beneficiaries, retained control and tax inclusion can differ. Valid insurer records and legal review determine who has rights before and after death."
+        ],
+        [
+          "What should an heir verify before treating a life benefit as cash available to pay off a home's mortgage?",
+          "Policy in-force status, covered claim, loan offset, named beneficiary, processing time, trust restrictions and whether the beneficiary has legal authority to allocate proceeds to debt."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "NAIC · Life insurance consumer guide",
+      "https://content.naic.org/consumer/life-insurance.htm"
+    ],
+    [
+      "NAIC · Life insurance illustrations rules",
+      "https://content.naic.org/sites/default/files/committee_related_documents/committees_lhatf_582.pdf"
+    ],
+    [
+      "Connecticut Insurance Department · Life and annuities FAQs",
+      "https://portal.ct.gov/cid/consumer-information-center/life-and-annuities"
+    ],
+    [
+      "California DOI · Policy types, loans, surrender and lapse guidance",
+      "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/07-life/life-ins-guide.cfm"
+    ],
+    [
+      "IRS Publication 525 · Life insurance income and surrender",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "Connecticut Insurance Department · Verify an insurance license",
+      "https://portal.ct.gov/cid/consumer-information-center"
+    ]
+  ],
+  "assessment": {
+    "title": "Insurance design and policy-loan forensic case",
+    "prompt": "A household requires 10 years of $20,000 annual survivor income shortfall, $100,000 mortgage objective, $15,000 immediate costs and $40,000 cash. Evaluate coverage need using 4% nominal annual discounting; compare term and permanent premiums; model a $12,000 policy loan accruing 7% for five years and how death benefit changes; model a taxable surrender with basis $22,000 and $18,000 loan. Write a professional memo distinguishing policy guarantees from projections, owners and beneficiaries, loan interest and tax unknowns.",
+    "rubric": [
+      "Correct death-benefit needs model (20%)",
+      "Policy type and illustration analysis (20%)",
+      "Loan, lapse and surrendered-value mathematics (25%)",
+      "Tax, ownership and beneficiary legal caveats (20%)",
+      "Evidence, documents and ethical recommendation (15%)"
+    ]
+  }
+}
