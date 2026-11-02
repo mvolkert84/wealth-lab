@@ -1,0 +1,295 @@
+{
+  "id": "L12.S3",
+  "title": "Social Security and Retirement Income",
+  "subtitle": "Lifetime benefit formula, claiming age, earnings test, tax interaction, longevity and Connecticut household coordination",
+  "prerequisites": [
+    "L7.S3 time value of money and cash-flow timelines",
+    "L11.S1 taxable-income reconciliation",
+    "L11.S2 progressive federal rates",
+    "L12.S2 traditional versus Roth distribution mechanics"
+  ],
+  "objectives": [
+    "Explain Social Security covered earnings, 35-year indexing and progressive PIA formula",
+    "Compare claiming at 62, full retirement age, and 70 with dated cohorts",
+    "Calculate gross cumulative break-even ages without misrepresenting uncertainty",
+    "Apply 2026 SSA retirement earnings test and subsequent FRA recalculation caveat",
+    "Explain federal taxation of benefits and Connecticut-specific adjustments",
+    "Model inflation, spouse/survivor considerations and Medicare enrollment",
+    "Build a household retirement-income bridge covering savings, pensions and benefits"
+  ],
+  "sections": [
+    {
+      "title": "Social Security is social insurance, not an individual brokerage balance",
+      "body": [
+        "Social Security retirement benefits are based primarily on the worker's covered lifetime earnings and the claiming age, not on a private account in which contributions purchase shares. Payroll taxes help finance a social insurance system that also pays survivors and disability benefits. An individual's tax contributions, payroll history and future benefit are related by law but do not create a separate portfolio statement. This distinction matters when comparing retirement savings accounts to government benefits.",
+        "The Social Security Administration typically selects the worker's highest 35 years of covered wage earnings after applying wage indexing where required, divides indexed annual earnings into average indexed monthly earnings (AIME), and applies a progressive primary insurance amount (PIA) formula. Years with no covered earnings can enter as zeros and lower the average; replacing a zero with a new substantial work year can increase future PIA. A worker with more than 35 years of earnings may improve the average by replacing a lower indexed year.",
+        "Social Security statements provide personalized estimates based on SSA records and assumed future earnings. They are not guaranteed account statements; law, recorded wages, claim date and family benefits can alter the result. The learner should verify their earnings history and use an SSA official account or estimator rather than treating an average national monthly benefit as their own."
+      ],
+      "worked": [
+        "Hypothetical 35-year indexed earnings total $1,680,000.",
+        "AIME = $1,680,000/(35×12)=$4,000/month.",
+        "A missing year counted as zero affects the numerator without reducing the 420-month denominator.",
+        "Use the worker's actual SSA earnings statement to validate the calculation; not every salary is covered equally."
+      ],
+      "practice": [
+        [
+          "Why are two workers with equal current salaries not guaranteed equal Social Security benefits?",
+          "Lifetime covered earnings, indexing, years of zero or low earnings, claiming age and other eligibility rules can produce different benefits."
+        ],
+        [
+          "Is Social Security payment tied to the current market value of a personal tax-funded equity account?",
+          "No. Retirement benefits are statutory social insurance calculated from covered earnings and claiming conditions, not investment shares in a personal account."
+        ]
+      ]
+    },
+    {
+      "title": "AIME, bend points and the 2026 PIA formula",
+      "body": [
+        "The PIA formula is progressive: it replaces a higher percentage of low averaged indexed earnings than high averaged indexed earnings. For workers first eligible in 2026, SSA lists bend points of $1,286 and $7,749. The gross monthly formula before special adjustments is 90% of the first $1,286 of AIME, plus 32% of AIME above $1,286 through $7,749, plus 15% above $7,749. The PIA is subsequently rounded and can be affected by indexing/eligibility timing and other statutory provisions.",
+        "For the fictional $4,000 AIME worker, a simplified unrounded PIA is 0.9×$1,286 + 0.32×($4,000−$1,286) = $1,157.40+$868.48=$2,025.88. This is a 2026 formula illustration, not an individualized monthly benefit quote. Delayed retirement, early claiming, COLAs, family maximums and benefit adjustments all occur later in the modeling chain.",
+        "The formula shows why one extra dollar of AIME does not translate to one extra dollar of monthly PIA. In the first segment, marginal benefit is approximately 90 cents per dollar of monthly AIME, in the middle 32 cents, and in the upper segment 15 cents. Because AIME is itself a 35-year average, additional covered wages in a particular late-career year can have a smaller or zero impact if they do not enter the highest 35 years."
+      ],
+      "worked": [
+        "SSA 2026 eligibility bend points $1,286 and $7,749.",
+        "For AIME $4,000, 90%×$1,286=$1,157.40.",
+        "32%×($4,000−$1,286)=32%×$2,714=$868.48.",
+        "Illustrative unrounded PIA $2,025.88/month; actual SSA computation has statutory rounding and further rules."
+      ],
+      "practice": [
+        [
+          "Why does an added dollar of annual salary not automatically increase PIA by a full dollar?",
+          "It may or may not enter the 35 highest indexed earning years, then is averaged over 420 months and multiplied by a progressive PIA formula."
+        ],
+        [
+          "What do 2026 bend points represent?",
+          "They are thresholds of average indexed monthly earnings used in computing the initial primary insurance amount for an applicable eligibility cohort, not gross salary tax brackets."
+        ]
+      ]
+    },
+    {
+      "title": "The claim-age choice changes lifetime cash-flow timing",
+      "body": [
+        "For workers born in 1960 or later, full retirement age is 67. An eligible worker's benefit at age 62 is generally approximately 70% of their PIA and at age 70 roughly 124% of PIA, absent other adjustments. Claiming early gives more years of smaller checks; delaying gives fewer initial years but a larger ongoing benefit. Neither path always wins because mortality, taxes, household survivors, investment opportunity cost and health differ.",
+        "Let a fictional worker have $2,000 monthly PIA at full retirement age. The simplified comparisons are $1,400/month at 62, $2,000 at 67 and $2,480 at 70. These are constant-dollar starting illustrations using current claiming percentages, not an SSA personal forecast or account guarantee. A person who cannot work until age 70 could fund the delay from savings, requiring a bridge that uses money and faces investment and inflation risk.",
+        "The decision often depends on a spouse and survivor situation. For a couple, delaying the higher earner's benefit can be more valuable because the higher benefit may influence what a surviving spouse can receive. However, spousal and survivor formulas differ from worker retirement reduction charts, and the appropriate order of claiming should be modeled on actual ages, health and SSA benefit records."
+      ],
+      "worked": [
+        "Hypothetical FRA age 67 monthly PIA $2,000.",
+        "Age 62 ≈70%×$2,000=$1,400/month.",
+        "Age 67 ≈$2,000/month; age 70 ≈124%×$2,000=$2,480/month.",
+        "Annual nominal checks at those rates: $16,800, $24,000 and $29,760 (before tax and inflation)."
+      ],
+      "practice": [
+        [
+          "Does claiming at age 70 always produce more total lifetime benefits?",
+          "No. Monthly benefit is higher but payments start later, so the outcome depends on longevity, inflation, taxes, opportunity cost and household benefits."
+        ],
+        [
+          "Why should a married couple model the higher earner's claiming age separately?",
+          "The decision can affect survivor income and lifetime household security, not merely the higher earner's individual break-even age."
+        ]
+      ]
+    },
+    {
+      "title": "Break-even ages are useful but incomplete mathematics",
+      "body": [
+        "A gross cash-flow break-even calculation asks when the cumulative checks from a later claiming strategy catch up with those from an earlier strategy. It is not a return forecast. Compare a 62 claim of $1,400 per month with a 70 claim of $2,480. The earlier claimant receives eight years of checks before the delayed claimant begins: 96×$1,400=$134,400. After age 70 the monthly difference is $1,080, so catching up takes $134,400/$1,080≈124.44 months, or roughly age 80 years and 4 months.",
+        "This gross comparison assumes identical constant dollars, no discounting, no benefit taxes, no SSA recalculation, no survivor effect and no specific cost-of-living adjustment differences. A present-value comparison discounts each payment by an appropriate uncertain rate and tests lifespan scenarios. Applying the same nominal discount rate to COLA-adjusted versus non-COLA cash flows without making units consistent is a common error.",
+        "An advanced model plots cumulative cash receipts, then separately after-tax present value and a household survivor scenario. At age 75, age 62 claiming may have produced more cash than age 70; at age 90, the higher age 70 benefit may dominate the simplified nominal cumulative receipts. The objective is to understand which assumption causes a reversal, not to announce a universal claiming age."
+      ],
+      "worked": [
+        "Age 62 claim: 96 months ×$1,400 = $134,400 received before age 70.",
+        "At age 70, monthly late-claim benefit $2,480 versus early $1,400 ⇒ difference $1,080.",
+        "Break-even months after 70 = $134,400/$1,080≈124.44.",
+        "Approximate gross break-even age 80.37, ignoring discounting, COLA, taxes and other benefits."
+      ],
+      "practice": [
+        [
+          "What does a simple gross break-even age omit?",
+          "Discounting, changes in earnings and benefits, federal/state tax, inflation, survival probabilities, survivor rights and opportunity costs of bridge assets."
+        ],
+        [
+          "Can two equally reasoned households choose different claiming ages?",
+          "Yes. Longevity, spouse coverage, income needs, insurance and balance-sheet constraints alter the financial value of later versus earlier benefits."
+        ]
+      ]
+    },
+    {
+      "title": "Working while collecting benefits: 2026 retirement earnings test",
+      "body": [
+        "The Social Security retirement earnings test can withhold benefits from someone receiving retirement benefits before full retirement age and earning above specified limits from work. For 2026, the general annual earnings limit is $24,480 for a recipient who remains under full retirement age all year, and SSA withholds $1 of benefits for each $2 of earnings above the limit, subject to actual payment mechanics. In the year the worker reaches FRA, the applicable higher 2026 limit is $65,160 for earnings in months before FRA and the withholding rule is $1 per $3 above that amount.",
+        "SSA does not generally count investment dividends, interest, pensions or annuity income as work earnings for this particular test, even though those items can be taxable and affect other household planning. At or after the month full retirement age is reached, the retirement earnings test stops reducing benefits. SSA later recalculates benefits to credit months in which amounts were reduced or withheld, so the withholding is not always equivalent to a permanently lost pension stream.",
+        "Imagine an under-FRA worker in 2026 earning $33,400 in wages with a $9,600 annual gross retirement benefit. Earnings exceed the $24,480 threshold by $8,920, producing $4,460 test withholding; gross benefits actually paid could be roughly $5,140 under the simplified annual illustration. Special first-year monthly rules, payment administration and recalculation can change the exact real case."
+      ],
+      "worked": [
+        "2026 under-FRA annual earned wages $33,400.",
+        "Excess wages = $33,400−$24,480 = $8,920.",
+        "Required simplified benefit withholding = $8,920/2=$4,460.",
+        "Annual entitled benefit $9,600 ⇒ remaining gross cash received ≈$5,140 for that year's example."
+      ],
+      "practice": [
+        [
+          "Do retirement account dividends count the same as wages toward the SSA earnings test?",
+          "Generally no. The earnings test focuses on wages and net self-employment earnings, although investment income can affect tax and means-tested programs."
+        ],
+        [
+          "Is the full $4,460 necessarily gone forever?",
+          "Not necessarily. SSA can recompute benefits at full retirement age to credit months of benefits withheld, subject to applicable rules."
+        ]
+      ]
+    },
+    {
+      "title": "Taxation of Social Security has its own definition of provisional income",
+      "body": [
+        "Federal taxable Social Security is determined with a provisional or combined-income method that generally adds half of the Social Security benefits to other relevant income, including certain tax-exempt interest. For single filers, common lower and upper base amounts are $25,000 and $34,000; for married joint filers, $32,000 and $44,000. Depending on the calculation, up to 50% or up to 85% of benefits can become includible in federal taxable income. This does not mean Social Security is subject to a flat 85% tax rate.",
+        "Consider an unmarried worker with $22,000 annual Social Security and $20,000 of other relevant income without special exclusions. Combined income is $20,000 +0.5×$22,000=$31,000. In a simplified first-tier case, $6,000 above the $25,000 lower threshold can make up to $3,000 (50% of that excess, subject to the allowable cap) of Social Security taxable. The amount of tax on the resulting income depends separately on deductions and marginal income-tax brackets.",
+        "Traditional IRA withdrawals or Roth conversions can increase other income and cause a larger fraction of benefits to become taxable; qualified Roth distributions generally have different effects. Tax-aware withdrawal sequencing can reduce avoidable interactions, but a complete return needs the IRS Publication 915 worksheets, eligibility and current-year law. State treatment is not identical."
+      ],
+      "worked": [
+        "Annual Social Security benefit $22,000; other relevant income $20,000.",
+        "Combined income $20,000+$11,000=$31,000.",
+        "Illustrative first-tier taxable Social Security amount min($11,000, 0.5×($31,000−$25,000)) = $3,000.",
+        "The taxpayer's income-tax liability on the resulting taxable-income base must be calculated separately."
+      ],
+      "practice": [
+        [
+          "Does '85% of Social Security taxable' mean an 85% tax rate?",
+          "No. It means as much as 85% of benefit dollars may be included in taxable income, which is then taxed using applicable income-tax rates."
+        ],
+        [
+          "Why can a traditional retirement distribution affect taxation of Social Security?",
+          "It can increase other relevant income within the provisional-income worksheet, causing a larger share of Social Security benefits to enter federal taxable income."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut Social Security deductions are different from federal taxation",
+      "body": [
+        "Connecticut's retirement income treatment can be comparatively favorable for eligible beneficiaries while retaining its own income limits. DRS guidance says Social Security benefits included in federal adjusted gross income can be fully exempt from Connecticut tax when federal AGI is below $75,000 for single or married separate filers, and below $100,000 for joint filers and heads of household. Individuals above those thresholds may still qualify for a partial subtraction with statutory calculation, rather than a simplistic complete loss of state benefit.",
+        "A fictitious married household with $38,000 Social Security and federal adjusted gross income of $70,000 can be eligible to subtract the federal taxable portion for Connecticut purposes under that threshold illustration. That does not revise the federal Form 1040 tax on Social Security. The state-specific subtraction is added in its own modified-AGI computation, and actual rules, filing status and state schedules control.",
+        "Retirement tax planning must separate three cash-flow layers: Social Security cash received, federal taxable portion and Connecticut taxable portion. A claim that 'Social Security is tax free in Connecticut' without income qualifications or federal distinctions can mislead homeowners, particularly when Roth conversions or RMDs increase AGI. Use the official DRS Social Security benefit adjustment calculator before final filing."
+      ],
+      "worked": [
+        "Hypothetical MFJ federal AGI $70,000 with qualifying federally taxable Social Security included.",
+        "Since $70,000 is below CT's cited $100,000 MFJ threshold, the federal taxable Social Security component can qualify for full CT subtraction under current rules.",
+        "This Connecticut deduction does not remove federal Social Security tax.",
+        "At higher AGI, the state adjustment must be calculated under state worksheets rather than assumed zero."
+      ],
+      "practice": [
+        [
+          "Does a Connecticut Social Security subtraction necessarily eliminate federal income tax on benefits?",
+          "No. Federal and Connecticut income tax calculations are separate; the subtraction affects the Connecticut return, not the federal base."
+        ],
+        [
+          "Why should Roth conversion size be coordinated with Connecticut's retirement-income rules?",
+          "The conversion can increase federal AGI and alter state exemptions or phaseouts, changing the combined after-tax outcome."
+        ]
+      ]
+    },
+    {
+      "title": "Medicare, survivor income and the retirement-income floor",
+      "body": [
+        "Social Security claiming should not be confused with Medicare enrollment. Most people become eligible for Medicare around age 65 regardless of whether they delay Social Security until 70; missing Medicare enrollment windows can generate penalties or coverage gaps without an applicable exception. Medicare premiums, Part B and Part D income-related adjustments, private coverage, and out-of-pocket healthcare expenses affect the retirement spending budget. A larger gross Social Security check is not the same as the same increase in spendable cash.",
+        "Survivor benefits, spousal benefits, pension survivor options and longevity insurance shape household security. One spouse may outlive the other by decades; the survivor often loses one benefit stream but retains much of the household's housing and healthcare cost. A retirement model should therefore include both spouses, benefit election rights, age differences, disability and survivor income rather than merely projecting one portfolio balance.",
+        "Separately build a baseline retirement income floor from Social Security and guaranteed pension amounts, and a flexible draw from investments for discretionary purchases. Stress healthcare inflation, unexpected home repair and long-term care. This is not an instruction to buy an annuity: all guarantees depend on contractual terms, issuer strength, inflation provisions, fees and suitability."
+      ],
+      "worked": [
+        "Hypothetical household essential spending $3,400/month.",
+        "Social Security $2,200/month plus dependable pension $700/month ⇒ floor $2,900/month before taxes/premiums.",
+        "Essential gap before taxes/healthcare = $500/month, or $6,000/year.",
+        "A widow(er) scenario might remove one income source while retaining much of spending; recompute rather than assuming household needs halve."
+      ],
+      "practice": [
+        [
+          "Why is SSA's $2,200 benefit not necessarily $2,200 spendable cash?",
+          "Federal taxes, state treatment, Medicare premiums, healthcare charges and household cash-flow constraints can reduce net spendable funds."
+        ],
+        [
+          "Why can survivor benefits change the value of waiting to claim?",
+          "The higher earner's delayed benefit can alter what a survivor may receive, making the decision a household lifetime insurance choice."
+        ]
+      ]
+    },
+    {
+      "title": "Integrate personal savings, Social Security and an evidence-based claiming memo",
+      "body": [
+        "A professional retirement income memorandum starts with a documented SSA benefit statement for each eligible person, a realistic end-of-work date, current savings, expected contributions, pension rights, full retirement age, a credible mortality range, and estimated taxes. Compare claim ages 62, FRA and 70 using gross annual payments, present values and survivor scenarios. Identify years in which retirement savings must bridge the income gap.",
+        "The analysis should model claiming alternatives under pessimistic, central and optimistic investment returns and the same inflation assumptions. Social Security COLAs help preserve purchasing power under law, while fixed nominal pensions may lose real value. Real versus nominal model consistency is crucial: a 3% future price increase is not an after-tax investment return. The analyst should show uncertainty rather than choose a retirement age using just one break-even number.",
+        "Financial planning ethics require distinguishing government benefit estimates from guaranteed personal benefit outcomes, treating benefit taxation accurately and acknowledging legislative and longevity risk. A defensible memo can conclude that a smaller benefit now is best if the household faces immediate income needs or severe health risks; it can equally justify delayed claiming when bridge assets and survivor protection support that choice."
+      ],
+      "worked": [
+        "For a fictional 1960+ birth cohort worker, compare $1,400 at age 62, $2,000 at FRA 67 and $2,480 at age 70.",
+        "Compute 8-year gross catch-up from age 62 to 70 = $134,400; subsequent monthly advantage $1,080.",
+        "Compare lifetime gross receipts at death ages 75, 80, 85 and 95 plus discounted present values.",
+        "State assumptions for Medicare premiums, withholding, spouse, inflation and actual SSA earnings history."
+      ],
+      "practice": [
+        [
+          "Why should a claim-age analysis display more than one longevity horizon?",
+          "Benefit timing trades earlier income against later larger income, so the winner depends on lifespan and the ability to finance the waiting period."
+        ],
+        [
+          "What is missing from a 'largest lifetime gross sum' decision?",
+          "Discount rates, tax, healthcare, survivor protections, inflation, household liquidity, personal health and the risk of running out of savings."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SSA official 2026 Social Security cost-of-living and earnings facts",
+      "https://www.ssa.gov/cola/factsheets/2026.html"
+    ],
+    [
+      "SSA 2026 full retirement age and benefit information",
+      "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2026/fast_facts26.html"
+    ],
+    [
+      "SSA benefits for individuals born in 1960 or later",
+      "https://www.ssa.gov/benefits/retirement/planner/1960.html"
+    ],
+    [
+      "SSA delayed claiming percentages for 1960+ workers",
+      "https://www.ssa.gov/benefits/retirement/planner/1960-delay.html"
+    ],
+    [
+      "SSA retirement earnings test and 2026 rules",
+      "https://www.ssa.gov/benefits/retirement/planner/whileworking.html"
+    ],
+    [
+      "SSA lifetime earnings and retirement estimates",
+      "https://www.ssa.gov/retirement"
+    ],
+    [
+      "IRS Publication 915 taxability of Social Security",
+      "https://www.irs.gov/publications/p915"
+    ],
+    [
+      "Connecticut DRS guidance for retirees and Social Security",
+      "https://portal.ct.gov/drs/individuals/connecticut-tax-tips-for-senior-citizens"
+    ],
+    [
+      "Medicare timing and initial enrollment",
+      "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-can-i-sign-up-for-medicare"
+    ]
+  ],
+  "assessment": {
+    "title": "Social Security statement reconstruction and claiming committee",
+    "prompt": "Assume a hypothetical person born in 1960 or later has $2,000/month primary insurance amount at full retirement age 67. Compute checks at 62, 67 and 70 using SSA standard approximate percentages; annual cash flows, cumulative benefits at ages 75/80/85/95, and gross age-62-versus-age-70 break-even. Compute the 2026 earnings test for an under-FRA worker with $33,400 earnings and $9,600 gross benefit. Separately compute simplified first-tier Social Security taxable portion for single taxpayer with $22,000 benefits and $20,000 other income. Provide an 800–1,200-word household recommendation explaining COLA, mortality, taxes, survivor and Medicare considerations and verified SSA evidence.",
+    "rubric": [
+      "PIA, benefit percentages and cohort assumptions (25%)",
+      "Cumulative and present-value logic with caveats (20%)",
+      "2026 earnings test and FRA recalculation explanation (15%)",
+      "Social Security provisional-income taxation and Connecticut adjustment (20%)",
+      "Medicare, survivor and professional judgment (20%)"
+    ],
+    "answerKey": [
+      "For FRA 67 / PIA $2,000: approximately $1,400 at 62, $2,000 at 67, $2,480 at 70.",
+      "Gross annual benefits $16,800/$24,000/$29,760 when receiving a full 12 months.",
+      "62 vs 70 catch-up: 96 months×$1,400=$134,400 early benefits; monthly later advantage $1,080; break-even 124.444 months after age 70, approximately age 80.37.",
+      "2026 earnings test: ($33,400−$24,480)/2=$4,460, with $5,140 of annual $9,600 gross benefits remaining in the simplified illustration.",
+      "Single combined income $20,000+$11,000=$31,000; simplified first-tier taxable benefit $3,000, subject to exact worksheet.",
+      "Strong analysis distinguishes gross receipts from present value, federal tax, CT tax and Medicare/survivor considerations."
+    ]
+  }
+}

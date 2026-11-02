@@ -1,0 +1,297 @@
+{
+  "id": "L12.S4",
+  "title": "Sequence Risk and Withdrawals",
+  "subtitle": "Retirement withdrawal mathematics, risk capacity, RMDs, decumulation taxes and household survival",
+  "prerequisites": [
+    "L7.S3 time value of money, annuities and inflation",
+    "L10.S1 portfolio risk and goal buckets",
+    "L10.S4 investment policy and governance",
+    "L11.S3 tax character and gains",
+    "L12.S2 retirement account treatment",
+    "L12.S3 Social Security and retirement cash flows"
+  ],
+  "objectives": [
+    "Calculate sustainable-needs funding gaps and initial withdrawal percentages without treating them as guarantees",
+    "Demonstrate path dependency and sequence-of-returns effects with equal nominal investment returns",
+    "Model fixed-real, percentage-of-portfolio and guardrail spending approaches",
+    "Build nominal versus real annual cash-flow tables with healthcare/repair stresses",
+    "Apply simplified RMD formula, owner and inherited-account restrictions and tax effects",
+    "Evaluate traditional/Roth/taxable withdrawal order with multiple tax sources",
+    "Build a defensible retirement spending IPS with liquidity, rebalancing and estate governance"
+  ],
+  "sections": [
+    {
+      "title": "Retirement changes the direction of the cash-flow system",
+      "body": [
+        "Before retirement, labor income often funds contributions and the investment portfolio grows without planned withdrawals. After retirement, assets must fund spending while still absorbing market risk, inflation, fees and taxes. This transition is called decumulation. A household's net worth can remain high while it is unable to pay a new roof repair, healthcare bill or property-tax increase without selling depreciated securities. Portfolio design now begins with dated spending liabilities and an income floor.",
+        "Start with essential spending after tax, discretionary spending, expected Social Security, pensions, annuity income, mortgage costs and healthcare. A spendable income gap must be financed by withdrawals or other work. A simplistic retirement target such as 'ten times salary' may mislead a homeowner with large housing maintenance, dependents or unusually high medical costs. Express the requirement in annual real purchasing-power units and map when benefits actually begin.",
+        "Households also face longevity risk: nobody knows the year of last withdrawal. The goal is not to compute a single terminal account balance at age 90 but to keep a feasible household plan through favorable, average and severe outcomes. Scenario analysis cannot guarantee a minimum return, and a probabilistic success rate is meaningful only when the return, inflation, longevity and tax assumptions are disclosed."
+      ],
+      "worked": [
+        "Essential annual expenses $42,000; income floor from Social Security and pensions $30,000.",
+        "Initial essential spending gap $12,000/year before state/federal taxes or other omitted expenses.",
+        "If discretionary spending $6,000 is desired, total $18,000 annual withdrawal need before tax adjustments.",
+        "Compare with genuinely withdrawable portfolio value, protected cash and lifespan scenarios."
+      ],
+      "practice": [
+        [
+          "Does a retirement portfolio with large net worth guarantee next month's mortgage payment?",
+          "No. Tax, volatility, liquidity, restrictions and timing can prevent economical access to sufficient cash when it is needed."
+        ],
+        [
+          "Why should essential income shortfall be separated from discretionary spending?",
+          "Essentials need more reliable financing, while flexible discretionary spending can respond to markets, taxes and unexpected costs."
+        ]
+      ]
+    },
+    {
+      "title": "Withdrawal rates are initial spending rules, not investment returns",
+      "body": [
+        "The initial withdrawal rate equals first-year gross withdrawals divided by the portfolio value at the start of retirement. A $24,000 first-year withdrawal from a $600,000 portfolio is 4%. The historical '4% rule' is usually discussed as an initial withdrawal followed by inflation-adjusted dollar increases, not a recommendation to withdraw exactly 4% of the remaining account every year. The two methods are mathematically different under a market decline.",
+        "An inflation-adjusted fixed-real policy can create stable spending if assets support it, but fixed spending raises portfolio stress when markets fall. A constant percentage-of-current-portfolio policy reduces withdrawals after losses and increases them after gains, offering greater portfolio flexibility at the expense of volatile household income. A guardrail policy allows controlled spending adjustments when portfolio funded status changes, but requires written thresholds and a workable minimum spending floor.",
+        "A research-based plan tests horizon, asset allocation, taxes, fees and health-cost uncertainty before selecting a number. Historic withdrawal-rate studies rely on particular markets and assumptions, and cannot guarantee future real returns. For a 45-year retirement horizon, high inflation or a low-return regime, a 4% fixed-real starting rate may not be appropriate."
+      ],
+      "worked": [
+        "Opening portfolio $600,000; first-year gross withdrawal $24,000 ⇒ 4.00% initial rate.",
+        "If portfolio declines to $450,000, a constant 4% current-balance policy yields $18,000/year.",
+        "An unchanged $24,000 nominal dollar policy would now withdraw 5.33% of $450,000 before inflation.",
+        "If fixed-real spending rises 3% for inflation, next-year target becomes $24,720, or 5.49% of the reduced $450,000."
+      ],
+      "practice": [
+        [
+          "Is the historical 4% heuristic a guarantee of 30 years of retirement spending?",
+          "No. It depends on investment markets, portfolio mix, inflation, expenses and horizon, and does not promise a specific survival probability."
+        ],
+        [
+          "What is the trade-off of withdrawing a constant percentage of current assets?",
+          "It mechanically scales spending to portfolio value, reducing pressure after losses but causing potentially large drops in household income."
+        ]
+      ]
+    },
+    {
+      "title": "Sequence risk: identical average returns can produce different cash outcomes",
+      "body": [
+        "Investment returns multiply account balances, but withdrawals subtract a fixed number of dollars between market periods. When a negative return arrives early, more shares must be sold to generate the same spending, leaving less capital to participate in recovery. With no withdrawals, two annual returns of −30% and +30% produce the same ending balance regardless of order: $100,000×0.7×1.3=$91,000. The product is the same. With a withdrawal between those returns, the end balances diverge.",
+        "Apply a $10,000 withdrawal after the first year's investment result. If the portfolio falls 30% first, $100,000 becomes $70,000; withdraw $10,000 to $60,000; then a +30% return ends at $78,000. If the market rises 30% first, $100,000 becomes $130,000; withdraw $10,000 to $120,000; then a −30% return ends at $84,000. The same returns, same withdrawal and same two-year arithmetic average create a $6,000 difference.",
+        "This effect is why retirement income planning cannot be evaluated using only a smooth annual average expected return. An investment with 6% estimated average return does not deliver a predictable 6% cash interest payment. Early drawdowns, inflation and large mandatory expenses can interact destructively. The appropriate stress test applies realistic sequences rather than a single deterministic growth curve."
+      ],
+      "worked": [
+        "Loss-first: $100,000×0.70−$10,000=$60,000; ×1.30=$78,000.",
+        "Gain-first: $100,000×1.30−$10,000=$120,000; ×0.70=$84,000.",
+        "Difference between ending values = $6,000, despite identical return observations.",
+        "With no intermediate withdrawal, both sequences end at $91,000 (100k×0.7×1.3)."
+      ],
+      "practice": [
+        [
+          "Why do equal arithmetic-average returns not imply equal retirement outcomes?",
+          "The timing of returns relative to withdrawals changes the number of shares remaining to participate in subsequent gains and losses."
+        ],
+        [
+          "Does the example prove one market sequence is always better without considering withdrawals?",
+          "No. In this simplified multiplicative model without withdrawals, reversing the return order produces the same final value. Withdrawals introduce path dependency."
+        ]
+      ]
+    },
+    {
+      "title": "Inflation is a liability shock that compounds in retirement",
+      "body": [
+        "An inflation-adjusted spending plan specifies whether a dollar amount is expressed in today's purchasing power or future nominal dollars. If a household needs $24,000 in spending in year one and annual inflation is a hypothetical steady 3%, the nominal amount required after two annual increases is $24,000×1.03²=$25,461.60. This increase is not investment profit; it is the higher number of nominal dollars required for similar purchasing power.",
+        "Healthcare, insurance premiums, property taxes and home repairs can rise at rates different from general consumer inflation. A homeowner living in Connecticut may have a fixed-rate mortgage payment, yet insurance, municipal property tax, utilities and maintenance are not fixed by that mortgage. A blanket 3% assumption can conceal significant spending dispersion. Model separate categories and avoid replacing actual local tax/insurance quotes with national inflation averages.",
+        "High unexpected inflation can be especially damaging with long-duration nominal bonds, cash balances and fixed pensions. Treasury inflation-protected securities and indexed Social Security can help with some inflation exposures but have their own price, tax and timing risks. Explicitly compare real returns, nominal returns and cash-flow needs in consistent units."
+      ],
+      "worked": [
+        "Annual spending requirement $24,000; annual inflation assumed 3%.",
+        "Year 2 nominal requirement $24,720.",
+        "Year 3 nominal requirement $25,461.60.",
+        "At 6% nominal investment return and 3% inflation, exact real return =1.06/1.03−1≈2.9126%, before fees and taxes."
+      ],
+      "practice": [
+        [
+          "Is a 6% nominal investment gain the same as a 6% increase in purchasing power with 3% inflation?",
+          "No. The real purchasing-power return is approximately 2.91% using (1.06/1.03)−1, before taxes and fees."
+        ],
+        [
+          "Why should homeowners stress property taxes separately from mortgage principal and interest?",
+          "A fixed-rate mortgage may stabilize debt service while taxes, insurance and maintenance expenses still rise or fluctuate."
+        ]
+      ]
+    },
+    {
+      "title": "Liquidity buckets, bond ladders and the danger of false certainty",
+      "body": [
+        "A retirement cash-flow policy may reserve one or more years of near-term withdrawals in liquid deposits or short-dated high-quality bonds, while keeping a diversified long-horizon portfolio. This goal-matching approach can reduce the need to sell equities during a downturn, but buckets do not create higher market returns or remove inflation and rollover risk. Every bucket must have a refill rule, estimated taxes and an audit trail.",
+        "Suppose essential net portfolio withdrawals are estimated at $12,000 annually. A 24-month withdrawal reserve requires $24,000 before allowing for taxes, unexpected repairs and investment return on the reserve. That $24,000 is already part of household assets, not a new bonus in addition to the brokerage balance. A ladder of individual bonds can mature on spending dates, but issuer credit, reinvestment and interest-rate valuation risk still matter, particularly if bonds are sold before maturity.",
+        "During a downturn, a retiree could use earmarked cash to meet expenses while allowing diversified stocks time to recover; no recovery timetable is guaranteed. An emergency rule should specify when spending is reduced, how the reserve is replenished, and what happens if the market does not rebound for five years. Claims that the bucket method eliminates sequence risk are overstated."
+      ],
+      "worked": [
+        "Annual essential portfolio withdrawal requirement $12,000.",
+        "Two-year protected withdrawal reserve = 2×$12,000=$24,000, before tax and repair buffers.",
+        "A $30,000 emergency and withdrawal reserve is not $30,000 extra net worth beyond the recorded accounts.",
+        "An additional $8,000 roof repair stress reduces accessible cash and forces a refill/spending decision."
+      ],
+      "practice": [
+        [
+          "Why should a retirement cash bucket not be counted again as extra wealth?",
+          "It is simply a designated portion of existing assets, and counting it separately from portfolio value double counts the same dollars."
+        ],
+        [
+          "Can a ladder of maturing bonds guarantee no loss under all conditions?",
+          "No. Credit default, inflation, issuer provisions, liquidity needs before maturity and reinvestment can still create risk."
+        ]
+      ]
+    },
+    {
+      "title": "Required minimum distributions: tax recognition on a statutory schedule",
+      "body": [
+        "Required minimum distributions (RMDs) compel minimum withdrawals from many pretax IRAs and employer retirement plans under age- and beneficiary-based rules. The starting age depends on birth year under SECURE 2.0, so a 2026 calculator must not assume every future retiree begins at exactly 73. For a typical owner at age 73 subject to the Uniform Lifetime Table, the IRS denominator is 26.5. The generic RMD is prior December 31 account balance divided by the applicable life expectancy denominator; another table can apply if a spouse who is the sole beneficiary is more than ten years younger.",
+        "With a prior-year traditional IRA balance of $400,000 and Uniform Lifetime Table divisor 26.5, a simplified required minimum distribution is $15,094.34. The RMD is not an added investment return: it transfers money out of a tax-deferred wrapper and generally increases taxable ordinary income to the extent the account was untaxed. The owner can reinvest the after-tax proceeds in a brokerage account if other rules permit, but cannot simply roll over the RMD back into a tax-deferred plan.",
+        "The first distribution may be delayed to April 1 of the year after the first RMD year where law permits, but that can require taking two taxable distributions in one calendar year. An employer-plan still-working exception may apply to some participants but not to traditional IRAs or certain owners. Roth IRAs and designated Roth accounts generally have no lifetime RMDs for the original owner, while inherited Roth accounts can still require distributions."
+      ],
+      "worked": [
+        "Previous December 31 traditional IRA balance $400,000.",
+        "Age 73 Uniform Lifetime divisor 26.5.",
+        "RMD ≈$400,000/26.5=$15,094.34 for the year in this qualifying example.",
+        "At a hypothetical stable 22% federal marginal rate, isolated tax effect on fully pretax withdrawal ≈$3,320.75, not a final tax return."
+      ],
+      "practice": [
+        [
+          "Is the annual RMD calculated by simply taking a fixed 4% of all traditional IRAs?",
+          "No. It uses the prior year-end value and an IRS life expectancy denominator, which varies by age and some spouse circumstances."
+        ],
+        [
+          "If a retiree spends only $5,000 but is required to distribute $15,094, can the remainder stay inside the same IRA as an unwithdrawn RMD?",
+          "No. The required amount must be distributed. After any applicable tax, unused cash may be invested elsewhere subject to normal rules."
+        ]
+      ]
+    },
+    {
+      "title": "Distribution order is a tax modeling problem, not a universal recipe",
+      "body": [
+        "Retirees may have taxable brokerage assets with basis and gains, fully pretax IRA money, Roth contributions/earnings, pensions and Social Security. The mix determines tax character and potential provisional income, preferential capital gain rates and Medicare income-related premium thresholds. A fixed order such as 'always empty taxable accounts first' can create unnecessary future RMD pressure. But the reverse claim 'always convert the entire traditional account to Roth immediately' can push the household into high current brackets.",
+        "An effective annual model starts with cash required after tax, maps required RMDs and Social Security, and compares discretionary withdrawals from available account sources. It estimates ordinary income, capital gains, qualified dividends, state modifications and estimated tax. It then checks Medicare premium effects and public-benefit eligibility as relevant. Because one federal tax dollar can alter another tax calculation, simplistic add-two-marginal-rates arithmetic may be unreliable.",
+        "Roth balances can be valuable as flexible qualified-distribution reserves, particularly to fund an expensive home repair without increasing taxable ordinary income. They are not costless: Roth contributions and conversions consumed after-tax savings in prior years. The plan must consider heirs and the opportunity cost of reducing protected Roth assets."
+      ],
+      "worked": [
+        "Retirement essentials require $42,000/year; pensions/SSA gross cash $30,000/year.",
+        "Gross cash gap before tax adjustments $12,000, but taxable withdrawals may need to exceed $12,000 to deliver that net amount.",
+        "A $12,000 fully pretax IRA distribution at stable illustrative 12% tax rate leaves $10,560 after federal tax alone.",
+        "A qualified Roth distribution of $12,000 may provide $12,000 cash without the same federal ordinary tax, but prior after-tax funding costs remain."
+      ],
+      "practice": [
+        [
+          "Why is a gross $12,000 traditional IRA withdrawal not necessarily $12,000 of spendable income?",
+          "Taxable portions usually create federal and potentially state income tax, and other income-tested calculations can change."
+        ],
+        [
+          "Why is it unsafe to claim Roth distributions are universally the best first withdrawal source?",
+          "Doing so can consume scarce tax-free flexibility unnecessarily, while realizing taxable income in low bracket years or taking required distributions could be better across a lifetime."
+        ]
+      ]
+    },
+    {
+      "title": "Inherited retirement accounts and the final decade risk",
+      "body": [
+        "Retirement accounts often transfer according to beneficiary designations rather than solely through probate documents. For most non-eligible designated beneficiaries after the owner's death, a ten-year full-distribution rule applies under the SECURE Act, although annual minimum payments can be required when death occurs after the required beginning date. Surviving spouses, eligible designated beneficiaries, minors who are children of the decedent and certain disabled or chronically ill beneficiaries can have distinct rules. A trust beneficiary can complicate rather than simplify the distribution schedule.",
+        "An heir who receives a large pretax IRA can face significant ordinary income tax when distributions are compressed into a short period. A Roth IRA beneficiary may often receive tax-free qualified distributions but is not exempt from all payout deadlines. Estate-tax inclusion, income-tax basis, life insurance and direct versus trust beneficiary decisions require independent legal review. Inherited IRA management is not the same as simply placing the balance in a joint brokerage account.",
+        "A professional household plan includes incapacity, survivor spending, a contact list of custodians, beneficiary designation confirmations and tax return preparation logistics. The academically defensible answer sometimes is that the person needs an estate attorney and enrolled agent or CPA; no investment calculator substitutes for those decisions."
+      ],
+      "worked": [
+        "Inherited pretax IRA $150,000 with a ten-year full payout requirement in a simplified scenario.",
+        "Equal nominal principal-only payouts would average $15,000/year, but actual year-end distributions, investment changes and required annual amounts vary.",
+        "A $150,000 one-year distribution can be taxed very differently from spreading withdrawals across allowed years.",
+        "Verify beneficiary type and death-year RMD status before using the ten-year illustration; no automatic universal ten-year equal-payout rule."
+      ],
+      "practice": [
+        [
+          "Does the ten-year inherited IRA rule mean every beneficiary may wait until the final day of year ten to distribute everything?",
+          "No. Some beneficiary classes and post-required-beginning-date deaths can create annual minimum distribution obligations, and other special rules apply."
+        ],
+        [
+          "Can designating a trust automatically avoid income tax on pretax retirement distributions?",
+          "No. Trust terms and beneficiary classification can change payout taxation and timing, sometimes adversely; professional estate/tax coordination is needed."
+        ]
+      ]
+    },
+    {
+      "title": "A multi-year retirement policy and stress-test committee",
+      "body": [
+        "The cumulative decumulation project starts with essential and discretionary annual spending, household longevity, Social Security start dates, property tax and insurance escalation, current investment accounts and restrictions, and planned beneficiary transfers. Separate the nominal and real timeline. Calculate the initial withdrawal rate, tax effects and a minimum liquid reserve, then run a sequence-of-returns crisis where stocks fall 35%, bonds fall 5%, inflation reaches 5% and a $10,000 home repair occurs.",
+        "A 60/40 retirement portfolio of $200,000 exposed to stocks falling 35% and bonds falling 5% declines to $200,000×[0.6×0.65+0.4×0.95]=$154,000 before fees and withdrawals. If a planned $8,000 gross withdrawal follows, the portfolio falls to $146,000, and the next year's $8,000 spending is over 5.48% of that new balance even without inflation. Add a 5% inflation adjustment and a $10,000 roof repair, and the household must decide whether to reduce discretionary spending, use reserves or alter asset sales.",
+        "The final policy names spending guardrails, liquidity floor, allocation targets, annual tax review, RMD deadlines, surviving-spouse continuity and exception approvals. It should be auditable by another analyst and usable by a partner who did not write it. The objective is a resilient plan under adverse conditions, not a claim that any withdrawal method guarantees retirement success."
+      ],
+      "worked": [
+        "60% of $200,000 stocks = $120,000, losing 35% ⇒ $78,000.",
+        "40% bonds = $80,000 losing 5% ⇒ $76,000.",
+        "Portfolio post-shock $78,000+$76,000=$154,000; after $8,000 planned withdrawal $146,000.",
+        "Without inflation, $8,000/$146,000≈5.48%; with 5% annual spending increase $8,400/$146,000≈5.75%, before extra home repair."
+      ],
+      "practice": [
+        [
+          "Why is 4% of the starting $200,000 not still 4% of the portfolio after a market crash?",
+          "The withdrawal amount stays $8,000 but the denominator falls; the withdrawal rate on remaining assets rises substantially, increasing stress."
+        ],
+        [
+          "What makes a retirement investment policy operational rather than merely theoretical?",
+          "Documented cash floors, withdrawal order, taxes, RMD dates, stress triggers, spending cuts, rebalancing conditions, beneficiary procedures and responsible review roles."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS RMD rules and age-based denominators",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds"
+    ],
+    [
+      "IRS 2025 Publication 590-B with 2026 RMD examples and Uniform Lifetime Table",
+      "https://www.irs.gov/publications/p590b"
+    ],
+    [
+      "IRS retirement plan and IRA RMD FAQs",
+      "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs"
+    ],
+    [
+      "IRS beneficiary rules",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary"
+    ],
+    [
+      "IRS Publication 915 federal Social Security income treatment",
+      "https://www.irs.gov/publications/p915"
+    ],
+    [
+      "IRS 2026 retirement contribution limit explanation",
+      "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+    ],
+    [
+      "Investor.gov risk and allocation basics",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "Connecticut DRS retirement income taxation and subtraction",
+      "https://portal.ct.gov/drs/individuals/connecticut-tax-tips-for-senior-citizens"
+    ],
+    [
+      "Social Security full retirement and delayed benefits",
+      "https://www.ssa.gov/retirement"
+    ]
+  ],
+  "assessment": {
+    "title": "Cumulative retirement income stress-test and decumulation investment policy",
+    "prompt": "Write an investment-policy and tax-source memorandum for a Connecticut couple with a $200,000 60/40 taxable retirement portfolio; protected separate emergency fund $6,000; essential living expenses $42,000; annual gross Social Security and pension income $30,000; planned pre-tax $12,000 withdrawal gap; and a separate 73-year-old's $400,000 traditional IRA (Uniform Lifetime denominator 26.5). Compute an initial $8,000 4%-of-$200k test, stock loss 35%, bond loss 5%, $8,000 withdrawal after shock, and a 5% inflation adjusted following spending level. Calculate RMD from the IRA, tax at an assumed stable 22% federal ordinary rate, and alternatives for taking required cash. Compare loss-first and gain-first $100k portfolio paths with $10k intermediate withdrawals. Recommend a cash-reserve, guardrail and taxable/traditional/Roth draw policy, including Connecticut tax, survivor risks and beneficiary deadlines, with at least three adverse scenarios.",
+    "rubric": [
+      "Portfolio shock and sequence-return calculations (25%)",
+      "RMD and distribution tax calculations with limitations (20%)",
+      "Initial versus flexible withdrawal and inflation modeling (20%)",
+      "Household liquidity and survivor/inheritance design (20%)",
+      "Source quality, reporting limits, and stress-tested professional judgment (15%)"
+    ],
+    "answerKey": [
+      "$200,000×[0.60×0.65+0.40×0.95]=$154,000 after market shock; after $8,000 withdrawal $146,000.",
+      "Initial $8,000/$200,000=4.00%; after shock and draw, next $8,000/$146,000≈5.479%; 5% higher next withdrawal $8,400/$146,000≈5.753%.",
+      "RMD $400,000/26.5=$15,094.3396; illustrative 22% federal tax effect ≈$3,320.75 when fully pretax, before all other taxes/interactions.",
+      "Loss-first $78,000 and gain-first $84,000; no intermediate draw both $91,000.",
+      "Essential annual gap before tax $42,000−$30,000=$12,000; must gross up for tax and consider timing and restricted cash.",
+      "The written policy recognizes one-time repairs, income uncertainty, state subtractions, Medicare, inherited IRA RMDs, and does not guarantee a particular safe withdrawal rate."
+    ]
+  }
+}

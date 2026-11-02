@@ -38,7 +38,7 @@ assert.ok(data.capstone.answers.length>=16);
 assert.ok(data.capstone.sources.length>=5);
 assert.ok(vm.WealthLabAcademicM11Markup('L11.S4').includes('Module 11 cumulative'));
 assert.ok(vm.WealthLabAcademicM11Markup('L9.S4').includes('unavailable'));
-assert.ok(html.includes("||m.id==='M11')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("||m.id==='M11'||m.id==='M12')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes("WealthLabAcademicM11Markup?.(s.id)"));
 assert.ok(html.includes("WealthLabAcademicM11Init?.()"));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));

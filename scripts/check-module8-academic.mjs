@@ -22,7 +22,7 @@ for(const [i,id] of ids.entries()){
  assert.equal((page.match(/data-m8-lab=/g)||[]).length,4);
 }
 assert.equal(n,28);assert.equal(p,56);assert.ok(w>=7500);
-assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10'||m.id==='M11')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10'||m.id==='M11'||m.id==='M12')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('WealthLabAcademicM8Markup?.(s.id)')&&html.includes('WealthLabAcademicM8Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
 for(const id of ['L8.S1','L8.S3','L8.S4'])assert.ok(html.includes('academy-chapters/'+id+'.js?v=1.0.0'));

@@ -1,0 +1,294 @@
+{
+  "id": "L12.S1",
+  "title": "401(k), Employer Match and Vesting",
+  "subtitle": "Workplace retirement design, 2026 contribution law, ownership, employer incentives and portfolio governance",
+  "prerequisites": [
+    "L1.S2 household cash-flow and obligation tracking",
+    "L7.S3 time value of money and present value",
+    "L10.S4 investment policy statements",
+    "L11.S1 wage income and tax reporting"
+  ],
+  "objectives": [
+    "Map an employee's paycheck, plan deferral, match, fees and ownership rights",
+    "Calculate match formulas, contribution thresholds, per-paycheck amounts and true-up risk",
+    "Apply 2026 employee deferral, catch-up and annual-addition rules to a clearly described plan",
+    "Distinguish immediate employee ownership from vesting of certain employer contributions",
+    "Explain how traditional and Roth salary deferrals affect cash flow and current federal tax",
+    "Audit an actual summary plan description, annual fee notice and investment menu",
+    "Identify the liquidity and default risks of loans, hardship withdrawals and job transitions"
+  ],
+  "sections": [
+    {
+      "title": "A 401(k) is an employer-sponsored legal account, not an investment by itself",
+      "body": [
+        "A workplace retirement plan is a tax-governed container. The owner selects investments permitted by the plan, while trustees and administrators maintain account records and employer rules. A 401(k) may hold diversified index funds, target-date funds, company stock or insurance-like products; risk depends on underlying assets, not on the label 401(k). Eligibility, enrollment, employer contributions, vesting, distributions and expenses are governed by plan documents and federal law. A worker must read the summary plan description rather than assume every workplace offers identical terms.",
+        "Follow the money from paycheck to retirement account. An employee elects a salary deferral, payroll deducts it, the employer remits it and any match or profit-sharing contribution, and the custodian buys investments. Traditional salary deferrals generally reduce current W-2 Box 1 wages but do not eliminate Social Security and Medicare payroll tax. Designated Roth deferrals are made with after-tax income for federal income-tax purposes. Employee contributions are part of compensation directed to savings; employer matches are additional compensation subject to eligibility and plan terms.",
+        "A practical account statement must distinguish gross balance, vested balance, Roth versus pretax source, loan principal, investments and current cash needs. Gross account value is not equivalent to an emergency fund: distributions can face restrictions, taxes and penalties. A future home purchase cannot count the same dollar as both down-payment liquidity and safely invested retirement capital."
+      ],
+      "worked": [
+        "Gross compensation $60,000 with 6% elective deferral gives $3,600 annual employee investment.",
+        "If all 24 paychecks have equal gross pay, deferral is $150 per paycheck.",
+        "A hypothetical employer match of $1,800 is additional to the employee's $3,600.",
+        "Gross balance includes amounts that may not be vested or withdrawable. Mark restricted funds separately."
+      ],
+      "practice": [
+        [
+          "Does a 401(k) guarantee a fixed return?",
+          "No. It is a tax-advantaged employer account structure, and returns depend on available investments, fees and the plan's risks. A target-date name is not a guarantee."
+        ],
+        [
+          "Why is a gross plan balance an unsafe house down-payment number?",
+          "Some funds may be unvested, invested in volatile assets, subject to withdrawal limits or future taxation; actual liquidity must be verified."
+        ]
+      ]
+    },
+    {
+      "title": "Dissect the match formula: the free-money slogan misses constraints",
+      "body": [
+        "Employer matches use a specified fraction of qualifying compensation or employee contributions. The phrase '50% of the first 6% you contribute' means that if you defer 6% of eligible pay, the employer contributes an extra 3% of pay, not 50% of your entire salary. An employer offering '100% of the first 3%' provides a 3% of pay match when the employee contributes at least 3%. Different compensation definitions, eligible pay caps and excluded bonuses can alter the calculation.",
+        "With a hypothetical $60,000 salary and 50% match on the first 6% of eligible pay, an employee contribution of $3,600 produces a $1,800 employer match. At 3% employee deferral, employee $1,800 and employer $900; at 10%, employee $6,000 but the match still caps at $1,800. A match can be highly valuable when vested, yet its true value must consider cash-flow pressure, fees, plan risks and the possibility of early departure.",
+        "Cash available matters. If rent, utilities and emergency savings are underfunded, racing to a match may force costly credit-card borrowing. Analyze monthly surplus and expensive debt before recommending a percentage. The correct plan often balances enough match capture with protected bills, high-interest debt reduction and immediate household liquidity."
+      ],
+      "worked": [
+        "Salary $60,000; employee 6% = $3,600.",
+        "50% employer match on first 6% ⇒ 0.5×$3,600 = $1,800.",
+        "Employee 10% = $6,000; employer match remains $1,800 under the example's cap.",
+        "Total annual retirement additions from these two sources = $7,800 before earnings, fees and vesting."
+      ],
+      "practice": [
+        [
+          "Does contributing 10% to this plan generate a $3,000 employer match?",
+          "No. The hypothetical plan only matches 50% of the first 6% deferred; the maximum annual match at $60,000 eligible pay is $1,800."
+        ],
+        [
+          "Is maximizing the employer match appropriate even when doing so causes 29% credit-card interest?",
+          "Not necessarily. Model the true household funding consequences and vesting. A high borrowing cost and unpaid essentials can offset the apparent match value."
+        ]
+      ]
+    },
+    {
+      "title": "Per-paycheck match, true-ups and bonus timing",
+      "body": [
+        "Some plans compute the match separately for each pay period. A worker who contributes the annual salary-deferral maximum by September may stop deferring for the final months and lose payroll-specific matching contributions in October through December, even when their annual contribution percentage was high. Other plans have an annual true-up that restores the match to the full-year formula. The summary plan description, payroll record and employer's true-up policy establish which outcome applies.",
+        "Suppose a worker earns $60,000 in 24 equal paychecks ($2,500 each), with 50% match on deferrals up to 6% of each paycheck. To capture the full per-paycheck match, they must defer at least $150 each payroll, producing $75 employer match each period, or $1,800 for the year. If eligible compensation includes bonuses, rerun the computation. A front-loaded elective deferral can create a missed match unless the plan has a restoring true-up.",
+        "Employer contribution deadlines may differ from each payroll deposit, and a plan may impose eligibility or last-day-of-year requirements for certain employer contributions. Statement timing alone does not prove the benefit was denied; reconcile the final plan year. A professional worksheet specifies whether employer matching is per period, annual, discretionary or subject to additional conditions."
+      ],
+      "worked": [
+        "24 checks × $2,500 eligible wages = $60,000 annual compensation.",
+        "6% per-paycheck employee amount = $150; 50% match = $75.",
+        "24×$75 = $1,800 full-year employer match with continuous qualifying deferrals.",
+        "If qualifying deferrals occur for only 18 paychecks and no true-up, 18×$75=$1,350 match; $450 of potential match was missed."
+      ],
+      "practice": [
+        [
+          "Why can contributing the full annual deferral limit early reduce an employer match?",
+          "The plan may only match periods with employee deferrals. If contributions stop and no annual true-up exists, late payroll periods can earn no match."
+        ],
+        [
+          "Which document should the employee inspect before front-loading contributions?",
+          "The plan's actual match computation and annual true-up terms in the summary plan description and related employer communications."
+        ]
+      ]
+    },
+    {
+      "title": "2026 statutory limits: distinguish employee deferrals from total annual additions",
+      "body": [
+        "For 2026, the usual 401(k), 403(b), governmental 457(b) and federal Thrift Savings Plan elective deferral limit is $24,500, subject to relevant special coordination and plan rules. The normal 401(k) catch-up for an eligible participant age 50 or older is $8,000, for a combined $32,500, if the plan permits it. Under SECURE 2.0, workers turning 60 through 63 during 2026 have a higher catch-up limit of $11,250, yielding $35,750 for eligible plans. These are not IRA limits and do not imply every worker can contribute that much regardless of earnings.",
+        "The separate 2026 defined contribution annual additions limit is generally $72,000 before qualifying catch-up contributions, subject also to compensation and plan rules. It aggregates employee elective deferrals, most employer matches, nonelective contributions and forfeiture allocations. Catch-up amounts are generally outside the regular annual-additions ceiling. For 2026, certain higher-earning workers whose prior-year employer wages exceeded $150,000 must make applicable catch-up contributions as Roth contributions in plans subject to the new rule; this does not make all elective deferrals Roth.",
+        "Multiple jobs complicate the math. An employee changing employers may need to aggregate elective deferrals across unrelated 401(k)-type plans; payroll systems cannot necessarily see each other. Annual limit violations can require timely corrections. The correct question is not 'what is the maximum?' but 'what may this particular worker contribute under tax law and their current plans?'"
+      ],
+      "worked": [
+        "Age 42 and plan permitting: ordinary 2026 elective deferral ceiling $24,500.",
+        "Age 52 with eligible catch-up: $24,500+$8,000=$32,500.",
+        "Age 61 with higher catch-up: $24,500+$11,250=$35,750.",
+        "Employee $20,000 plus employer $12,000 generally contributes $32,000 toward the $72,000 non-catch-up annual-additions ceiling, subject to other sources."
+      ],
+      "practice": [
+        [
+          "Can the employer match be added to the $24,500 elective deferral to determine employee elective deferral limit?",
+          "No. The employee elective-deferral ceiling and total annual-additions ceiling are distinct. Employer additions usually count toward the latter, not the former."
+        ],
+        [
+          "Does age 60 automatically guarantee an $11,250 2026 catch-up?",
+          "No. The employee must satisfy eligibility, earned-compensation and relevant plan rules, and the plan must permit the applicable catch-up contributions."
+        ]
+      ]
+    },
+    {
+      "title": "Vesting converts a conditional employer promise into owned retirement property",
+      "body": [
+        "Vesting describes legally owned plan benefits. An employee's elective deferrals and related earnings are always fully vested. Certain employer matches and profit-sharing contributions can vest over time under a plan schedule. Two common permitted structures are a three-year cliff (zero until three years of vesting service, then 100%) or a six-year graded pattern (20% after year two, 40% year three, 60% year four, 80% year five, 100% year six). Safe-harbor designs and other plan types may require faster or immediate vesting.",
+        "Suppose the plan displays $12,000 from the employee and $8,000 from employer contributions, ignoring earnings for clarity. At 40% employer vesting, the worker owns $12,000+$3,200=$15,200, not the headline $20,000. If the worker resigns, $4,800 may be forfeited under the plan's actual rules. Vesting service is not always identical to years printed on the employee's résumé: plan definitions, breaks in service and previous employer service recognition can matter.",
+        "Job decisions should compare compensation and career benefits as well as the value of unvested money. Waiting another year solely to vest is not necessarily optimal if a new job offers more wages, better insurance or much better work conditions. The financially literate employee asks for the official vesting percentage and effective dates, then computes the opportunity cost of leaving or staying."
+      ],
+      "worked": [
+        "Employee source balance $12,000 is fully vested.",
+        "Employer source $8,000 at 40% vesting ⇒ $3,200 owned.",
+        "Total owned/vested $15,200; unvested employer balance $4,800.",
+        "Compare the potential forfeiture with new-job compensation and plan benefits before making an employment decision."
+      ],
+      "practice": [
+        [
+          "Does a company have the right to reclaim an employee's own elective deferrals when they resign?",
+          "No. Employee elective deferrals are always 100% vested; only certain employer-provided contributions may remain subject to vesting."
+        ],
+        [
+          "Can a person with three years employed assume they are always fully vested?",
+          "No. Vesting depends on plan design and credited vesting service. A six-year graded plan might vest 40% at three credited years; other plans can be faster."
+        ]
+      ]
+    },
+    {
+      "title": "Traditional versus Roth deferrals affect a current household differently",
+      "body": [
+        "Traditional 401(k) salary deferrals typically reduce current federal taxable wages, while qualified distributions are generally taxable as ordinary income later. Designated Roth 401(k) contributions use after-tax income and generally provide tax-free qualified distributions when the applicable five-year and qualifying event conditions are met. The economic comparison must hold after-tax saving cost constant; otherwise one can appear larger merely because one used more of the household's current disposable income.",
+        "For a $3,000 employee contribution at a stable 12% marginal ordinary federal rate, the basic traditional current federal income-tax effect is roughly $360. A $3,000 Roth contribution usually provides no equivalent immediate income-tax deduction. The invested amount may be the same, but the immediate net paycheck reduction can differ. Traditional money may generate later income tax and possible RMDs; Roth money may avoid those taxes when distribution conditions are met.",
+        "A work plan's choice between two tax treatments does not change the value of emergency cash. A family can choose Roth for retirement but still fail a home-closing liquidity test; high future tax uncertainty does not justify locking away rent payments. Tax brackets, employer match taxation, expected future income, contribution limits and possible change of employment need separate line items."
+      ],
+      "worked": [
+        "Qualified traditional deferral $3,000 at a stable illustrative 12% federal marginal rate ⇒ current tax reduction ~$360.",
+        "A $3,000 Roth deferral provides $0 current federal income-tax reduction under ordinary assumptions.",
+        "Traditional net paycheck effect ≈$2,640, Roth ≈$3,000, ignoring payroll/tax interactions.",
+        "Compare eventual qualified Roth distributions against future traditional taxes, not only today's paycheck."
+      ],
+      "practice": [
+        [
+          "Does a 12% federal bracket make Roth always worse than traditional?",
+          "No. A contribution's best tax treatment depends on future withdrawal rates, legal eligibility, lifetime income, liquidity, time horizon and uncertainty."
+        ],
+        [
+          "Why is a workplace Roth deferral generally not subtracted from W-2 Box 1 wages?",
+          "It is an after-tax contribution for income-tax purposes; qualified distributions can receive future tax-free treatment rather than an immediate wage exclusion."
+        ]
+      ]
+    },
+    {
+      "title": "Plan funds, fees and fiduciary responsibilities matter as much as contribution rates",
+      "body": [
+        "Once the employee makes a contribution, they still need an investment policy. A target-date fund commonly reduces stock exposure with age, but its glide path, fees, bond duration, global diversification and allocation philosophy vary. Two '2050' funds may have materially different portfolios. An index fund can offer transparent exposure at low cost, yet its underlying market risk remains. Company stock can concentrate both wage and investment risk in one employer.",
+        "The annual participant fee disclosure generally identifies investment expense ratios and plan-level administration fees. An extra 1% annual cost on $100,000 is approximately $1,000 during a year before investment changes; over decades, compounding can produce a much larger wealth difference. A fee comparison requires the same gross-market return and asset allocation, rather than contrasting a low-fee stock index fund against a high-fee capital-guaranteed product with different risk.",
+        "ERISA fiduciary duties typically require plan fiduciaries to act prudently and in participants' interests, but not all plans are identical and not every recommendation in a workplace is fiduciary advice. Check the plan's Form 5500, summary plan description, investment menu and fees where applicable. Document conflicts, investment restrictions and whether better alternatives exist."
+      ],
+      "worked": [
+        "Hypothetical $40,000 balance with 0.10% expense ratio costs ~$40 per year before balance changes.",
+        "Same balance at 1.10% costs ~$440 per year under simple static-balance approximation.",
+        "Difference ~$400 annually before compounding and asset performance.",
+        "A fee-efficient plan still needs proper asset allocation for goals, age, and loss capacity."
+      ],
+      "practice": [
+        [
+          "Is a target-date fund the same as an insured savings account?",
+          "No. It generally holds investments that can lose value and its glide path and fees vary by provider."
+        ],
+        [
+          "Why can concentrated employer stock be more risky than a simple portfolio chart suggests?",
+          "The employee's wages, job security and retirement wealth can all fall with one company; economic exposures are correlated."
+        ]
+      ]
+    },
+    {
+      "title": "Loans, hardship distributions, rollovers and job changes",
+      "body": [
+        "Some workplace plans permit participant loans up to limits commonly tied to 50% of the vested balance and a $50,000 ceiling, with exceptions and plan-specific rules. A properly administered loan generally must be repaid, often within five years unless the primary residence exception applies. An outstanding balance that defaults or becomes a deemed distribution can generate income tax and possible additional tax. Calling a 401(k) loan 'tax-free home funding' ignores repayment obligations and employment-related risk.",
+        "Hardship distributions can be permitted for immediate and heavy needs under plan rules, but they are not generally repaid to the plan, reduce future retirement wealth, and may create income tax and a 10% early-distribution additional tax unless an exception applies. Different penalty exceptions apply to IRAs versus employer plans. The first-time-homebuyer IRA exception, for example, does not automatically make an early 401(k) distribution tax-free or penalty-free.",
+        "After a job change, leaving savings in an old plan, a direct trustee-to-trustee rollover to a qualified new plan or IRA, and a potentially taxable cash-out carry different fees, creditor protection, distribution access, required minimum distributions and beneficiary consequences. Avoid casually routing funds through a personal bank account, which can create withholding and rollover-timing complications. Always read the plan and current IRS distribution guidance."
+      ],
+      "worked": [
+        "Vested account $40,000: generic potential loan 50%×$40,000 = $20,000, below $50,000 cap, if plan permits.",
+        "This is a liability requiring repayments, not an additional $20,000 of wealth.",
+        "If $8,000 of a previously untaxed hardship distribution is taxable at 22%, simple federal tax effect $1,760.",
+        "A possible 10% additional tax could add $800 absent an exception, plus state taxes and forgone growth."
+      ],
+      "practice": [
+        [
+          "Why is a workplace plan loan different from taking cash from taxable brokerage savings?",
+          "A plan loan imposes repayment obligations and can become taxable if it fails qualification or repayment rules; it also restricts invested retirement capital."
+        ],
+        [
+          "Why should a new employee not request a 'cash-out' before understanding rollover options?",
+          "A taxable distribution can permanently reduce retirement savings and trigger current tax, additional penalties and missed compound growth; direct rollover alternatives may preserve benefits."
+        ]
+      ]
+    },
+    {
+      "title": "Independent employee benefits audit: from documents to a retirement policy",
+      "body": [
+        "A university-level benefits audit is a reproducible packet rather than a single percentage suggestion. It begins with the annual compensation definition, plan eligibility and enrollment date, deferral election, match schedule, true-up policy, vesting credited service, investment menu, all-in fees, beneficiaries and early-distribution rules. Attach screenshots or summaries with identifying information removed in the educational workspace.",
+        "Prepare three strategies for a household that can potentially save $250, $375 or $500 per month but must preserve its emergency fund and upcoming housing costs. At $60,000 eligible salary and 50% of first 6% matching, 6% employee deferral means $300 a month and full $150 monthly employer match under an annual approximation. A $250 budget falls short of the full 6% employee contribution unless other expenses are adjusted; increasing the deferral without available cash would create a deficit.",
+        "Conclude with a plan to revisit allocations and employer terms every year, whenever the family changes jobs, and when it receives plan amendments. Investment education should not guarantee employer match permanence, returns, tax treatment or access to the money. A defendable recommendation states what to verify before the employer's next payroll deadline."
+      ],
+      "worked": [
+        "Income $60,000 ⇒ eligible monthly compensation $5,000.",
+        "Full 6% match capture employee contribution $300/month; employer match $150/month.",
+        "At $250/month employee contribution =5% of eligible pay; employer match 50%×5%×$5,000=$125/month.",
+        "Extra $50 per month employee contribution could capture extra $25/month match if cash constraints and plan terms permit."
+      ],
+      "practice": [
+        [
+          "Why is recommending 'contribute at least 6%' incomplete in this household?",
+          "The full match threshold may cost $300 monthly against $250 available, potentially undermining essential bills. Budget capacity and plan eligibility must be checked."
+        ],
+        [
+          "What must be included in a fiduciary-style plan review memo?",
+          "Match formula, vesting, deferral limits, fees, liquidity restrictions, investments, plan documents, practical affordability and ongoing review triggers."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS 2026 plan and IRA contribution limit announcement",
+      "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    ],
+    [
+      "IRS 2026 limits for 401(k) and profit sharing plans",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits"
+    ],
+    [
+      "IRS 2026 catch-ups and mandatory Roth catch-up threshold",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions"
+    ],
+    [
+      "IRS employee and employer vesting rights",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-vesting"
+    ],
+    [
+      "IRS employer match vesting schedules",
+      "https://www.irs.gov/retirement-plans/issue-snapshot-vesting-schedules-for-matching-contributions"
+    ],
+    [
+      "IRS general 401(k) distribution and loan rules",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/401k-resource-guide-plan-participants-general-distribution-rules"
+    ],
+    [
+      "IRS hardship distribution consequences",
+      "https://www.irs.gov/retirement-plans/401k-plan-hardship-distributions-consider-the-consequences"
+    ],
+    [
+      "US Department of Labor ERISA plan fee disclosure",
+      "https://www.dol.gov/agencies/ebsa/key-topics/retirement/401k-plans/fee-disclosure"
+    ],
+    [
+      "Investor.gov asset allocation and rebalancing",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ]
+  ],
+  "assessment": {
+    "title": "Employee benefits due diligence and match optimization",
+    "prompt": "For a fictional Connecticut worker earning $60,000, compare 4%, 5%, 6%, and 10% employee deferrals under 50% employer matching on the first 6% of eligible compensation. Calculate annual and monthly employee and employer contributions; repeat under 24 paychecks with 6 periods having no employee contribution and no true-up. Assume a separately stated $12,000 employee source and $8,000 employer source, 40% vested; calculate vested amount and forfeiture exposure. Model current federal tax effect of a $3,000 traditional versus Roth deferral at a stable illustrative 12% bracket. Write a 600–900-word memo recommending a contribution policy under a $250/month current cash budget and a $6,000 protected emergency reserve.",
+    "rubric": [
+      "Employer match formula and 24-paycheck reconciliation (25%)",
+      "Ownership, vesting and credited service (20%)",
+      "2026 statutory and plan limit distinctions (15%)",
+      "Traditional/Roth tax and household cash-flow integration (20%)",
+      "Investment governance, document traceability and ethics (20%)"
+    ],
+    "answerKey": [
+      "At employee 4/5/6/10% of $60k: deferrals $2,400/$3,000/$3,600/$6,000 and matches $1,200/$1,500/$1,800/$1,800.",
+      "At $2,500/paycheck and full 6% deferral: $150 employee and $75 employer each payroll. Eighteen matched periods with no true-up => $1,350 match, $450 below a fully matched 24-period year.",
+      "Employee vested $12,000, employer vested $3,200, total $15,200; $4,800 employer amount potentially unvested.",
+      "At stable 12% ordinary federal rate, hypothetical eligible $3,000 traditional deferral saves about $360 current federal regular income tax; equivalent Roth contribution has no upfront federal deduction.",
+      "A $250/month budget is insufficient to contribute 6% of $60k, or $300/month, without additional funds. Do not promise a full match while omitting rent and reserves."
+    ]
+  }
+}
