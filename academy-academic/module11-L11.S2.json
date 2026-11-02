@@ -1,0 +1,256 @@
+{
+  "id": "L11.S2",
+  "title": "Marginal vs Effective Tax Rate",
+  "subtitle": "Progressive schedules, incremental decisions, taxes on different income types and quantitative sensitivity",
+  "prerequisites": [
+    "L11.S1 taxable-income waterfall and source verification",
+    "L7.S3 marginal changes and present value",
+    "L10.S3 investment sales and transaction frictions"
+  ],
+  "objectives": [
+    "Derive a progressive income-tax function from tax brackets",
+    "Compute statutory, marginal, average and effective tax rates without conflating their denominators",
+    "Model a $1 income change and quantify a $1 deduction or credit",
+    "Analyze ordinary-income and preferential-capital-gain stacking",
+    "Explain phaseouts and why a practical effective marginal rate may exceed a bracket",
+    "Evaluate Roth/traditional or extra-work decisions without assuming immediate savings are the whole answer"
+  ],
+  "sections": [
+    {
+      "title": "A bracket is a price on the next slice, not on every dollar",
+      "body": [
+        "A progressive rate schedule applies different rates to successive portions of taxable income. A single filer entering the 22% federal bracket does not suddenly owe 22% on their first dollar. The marginal statutory bracket is the slope of the federal ordinary-income tax schedule over an interval, not the average share paid on all wages. This distinction underlies rational choices about overtime, charitable deductions, tax-deferred retirement contributions and investment sales.",
+        "For 2026, a single filer has ordinary-income thresholds $12,400 at 10%, from $12,400 to $50,400 at 12%, and from $50,400 to $105,700 at 22%, before the next bracket. At $70,000 ordinary taxable income, tax on the first $12,400 is $1,240, on the next $38,000 is $4,560, and on the next $19,600 is $4,312. The resulting $10,112 is about 14.45% of taxable income, even though the next ordinary dollar is in the 22% band.",
+        "A bracket table must be attached to the correct filing status and tax year. The federal standard deduction creates another transformation before brackets apply. An analyst who applies bracket percentages to gross wages instead of taxable income is answering the wrong question. Additional credit phaseouts and payroll taxes mean the total tax cost of earning a dollar may differ from the basic federal marginal rate."
+      ],
+      "worked": [
+        "2026 single taxable ordinary income $70,000.",
+        "$12,400×10%=$1,240; ($50,400−$12,400)×12%=$4,560.",
+        "($70,000−$50,400)×22%=$4,312.",
+        "Total ordinary tax $10,112; average over taxable =14.4457%; marginal statutory ordinary rate =22%."
+      ],
+      "practice": [
+        [
+          "Why does crossing the $50,400 breakpoint not reprice the first $50,400?",
+          "Progressive tax is piecewise: the new rate only applies to the portion in that higher bracket. Earlier brackets retain their lower rates."
+        ],
+        [
+          "A $70,000 taxpayer claims an effective rate of 22% because of the bracket. What is wrong?",
+          "22% is the current ordinary marginal band; the modeled tax divided by ordinary taxable income is about 14.45%, and divided by AGI or wages differs again."
+        ]
+      ]
+    },
+    {
+      "title": "Deriving a piecewise function and validating continuity",
+      "body": [
+        "Write the tax function T(x) as the sum of each bracket's width multiplied by its rate, up to taxable ordinary income x. For a single 2026 filer with x between $50,400 and $105,700, the prior brackets total $5,800 and T(x) = $5,800 + 0.22×(x−$50,400). A formula that starts with 22%×x violates the structure. Tax schedules are continuous at a bracket boundary: exactly at $50,400 both the second and third segment formulations must give $5,800.",
+        "The derivative of T with respect to taxable ordinary income, away from thresholds and special rules, is the applicable statutory marginal tax rate. However, household disposable income changes with FICA, credit restrictions, state taxes and sometimes benefit eligibility. An actual effective marginal tax rate can also be influenced by the rate at which an income-tested credit disappears. Those interactions must be modeled separately, never implied by a simple bracket table.",
+        "Use a unit test with x exactly at the threshold, one dollar below and one dollar above. The tax difference at the boundary should be the lower rate on the dollar below and the higher rate on the dollar above. This is an example of software validation that teaches the economics: if a calculator shows a thousand-dollar tax jump for a one-dollar raise at a normal federal bracket boundary, its implementation is wrong."
+      ],
+      "worked": [
+        "2026 T(50,400) = $1,240 + $4,560 = $5,800.",
+        "T(50,401) = $5,800 +0.22×$1 = $5,800.22.",
+        "T(50,399) = $1,240 +0.12×($50,399−$12,400)=$5,799.88.",
+        "The function is continuous: no sudden change of tax on earlier income."
+      ],
+      "practice": [
+        [
+          "What does the derivative T'(x) measure when the bracket is stable?",
+          "The approximate additional federal ordinary income tax from one more dollar of ordinary taxable income before phaseouts or special regimes."
+        ],
+        [
+          "Why should tax software test exactly at bracket thresholds?",
+          "Boundary tests reveal off-by-one errors, misapplied whole-income rates and discontinuities that can otherwise create materially misleading decisions."
+        ]
+      ]
+    },
+    {
+      "title": "Average burden depends on the denominator",
+      "body": [
+        "Statutory marginal rate, average rate on taxable income, and effective rate on adjusted gross income answer different questions. Suppose a single filer has $90,000 AGI and takes the $16,100 2026 standard deduction, leaving $73,900 ordinary taxable income. The basic federal ordinary tax is $5,800 +22%×$23,500=$10,970. Dividing by taxable income gives roughly 14.84%; dividing by AGI gives about 12.19%. Neither is the percentage of cash that reaches the checking account.",
+        "Many public tax comparisons use tax divided by an income measure, but the precise denominator varies: wages, total income, AGI, taxable income, or economic income including untaxed appreciation. Household FICA and employer payroll tax may be in or out of the tax total. The analyst should always label both numerator and denominator. Without that declaration, two accurate-looking tax statistics can refer to materially different burdens.",
+        "Refine the estimate by disaggregating regular federal income tax, federal self-employment tax, state taxes, and other mandatory liabilities. An employee's paycheck withholding may exceed or fall short of actual year-end tax, so paystub percentages can be particularly misleading."
+      ],
+      "worked": [
+        "AGI $90,000; 2026 single standard deduction $16,100; ordinary taxable $73,900.",
+        "Tax = $5,800 +22%×($73,900−$50,400) = $10,970.",
+        "Average on taxable = $10,970/$73,900 ≈14.84%.",
+        "Effective federal income tax/AGI = $10,970/$90,000 ≈12.19%; excludes payroll and state tax."
+      ],
+      "practice": [
+        [
+          "Can two tax rate percentages be different and both be mathematically correct?",
+          "Yes, if one divides by taxable income and another by AGI or wages; every rate must identify its numerator and denominator."
+        ],
+        [
+          "Why is income-tax withholding not an appropriate stand-in for annual liability?",
+          "Withholding is a payment mechanism that may generate a refund or amount due, not the statutory computation of annual tax."
+        ]
+      ]
+    },
+    {
+      "title": "The value of an incremental deduction or credit",
+      "body": [
+        "Financial planning is about comparing the after-tax change from a specific decision. If an eligible $2,000 traditional retirement contribution is deductible at the 22% federal ordinary marginal rate and no other restrictions intervene, the modeled current federal tax reduction is about $440. That does not make the contribution free: the household still directs $2,000 of cash into a restricted retirement investment, with future withdrawal taxes and investment outcomes to evaluate.",
+        "A $2,000 nonrefundable credit can reduce tax by up to $2,000 where the taxpayer qualifies and has sufficient liability. It is not identical to a $2,000 deduction. Some tax credits are refundable; others are not; phaseouts and income limits change the outcome. Treat credit eligibility as a legal question, not a calculator input assumed true by default.",
+        "An opportunity-cost model compares present value of tax saved today, future ordinary tax on withdrawals, tax-free Roth distributions if qualified, current liquidity, employer match, and years until the money is needed. A taxpayer purchasing a house within twelve months can have a high marginal rate but low capacity to lock away money. A tax-optimized portfolio is not necessarily a life-optimized portfolio."
+      ],
+      "worked": [
+        "Eligible $2,000 reduction in ordinary taxable income at stable 22% ⇒ ~$440 immediate federal tax reduction.",
+        "A permitted $2,000 nonrefundable credit with adequate pre-credit liability ⇒ $2,000 direct reduction.",
+        "If a credit is income-phased-out, use the eligibility formula before applying dollar-for-dollar logic.",
+        "Tax benefit is a cash-flow component, not the investment return or a refund guarantee."
+      ],
+      "practice": [
+        [
+          "What is the immediate tax difference between a deduction and a credit?",
+          "A deduction lowers the taxable base; a qualified credit offsets tax, subject to refundable or nonrefundable limitations and eligibility restrictions."
+        ],
+        [
+          "Why can a pretax retirement contribution be inappropriate for a near-term homebuyer even when it lowers tax?",
+          "It restricts current liquidity, can incur withdrawal consequences, and may conflict with cash reserves and purchase timing; tax savings alone do not resolve the choice."
+        ]
+      ]
+    },
+    {
+      "title": "Married status, income splitting and the danger of false shortcuts",
+      "body": [
+        "Filing status is not an optional mathematical setting chosen merely to minimize tax. Marriage, dependency and household facts determine lawful options. A married couple may compare married filing jointly and married filing separately when allowed, but credits, deductions, capital-loss limits and liability considerations can make the result non-obvious. Some households see a marriage benefit, others a penalty, depending on income distribution and tax provisions.",
+        "For 2026 married filing jointly, the ordinary brackets begin 10% up to $24,800, 12% up to $100,800, and 22% through $211,400; the standard deduction is $32,200. A simple hypothetical couple with $92,000 combined ordinary income and no adjustments has $59,800 taxable income. Tax is $2,480 +12%×($59,800−$24,800)=$6,680. That is approximately 7.26% of gross income, while the next ordinary taxable dollar faces a 12% federal marginal bracket.",
+        "Do not infer from these few numbers that marriage always creates a discount. Special tax regimes, joint-liability rules, deductions, student-loan calculations, dependents and state law may matter. The model is a deliberately bounded instructional case."
+      ],
+      "worked": [
+        "2026 MFJ income and AGI $92,000, no preferred-income items.",
+        "Taxable income $92,000−$32,200=$59,800.",
+        "Tax =10%×$24,800 +12%×$35,000 = $6,680.",
+        "Effective federal regular income tax over AGI ≈ 7.26%; marginal statutory ordinary rate 12%."
+      ],
+      "practice": [
+        [
+          "Why must an academic married-filing comparison identify the legal filing status?",
+          "The taxpayer's actual status and qualifying conditions determine which schedule applies; choosing the lowest percentage without establishing eligibility is not compliance."
+        ],
+        [
+          "Does the 12% bracket mean this couple pays 12% of all $92,000?",
+          "No. The first taxable slice uses 10%, the later slice 12%, and the standard deduction reduces the base before any bracket rate is applied."
+        ]
+      ]
+    },
+    {
+      "title": "Qualified gains have a separate tax schedule layered on top",
+      "body": [
+        "Preferential capital-gain and qualified-dividend rates require a second tax curve, not a single universal marginal rate. For most eligible net long-term gain, the 2026 zero-rate threshold is $49,450 of taxable income for single filers and $98,900 for joint filers. The applicable 15% bands then extend to $545,500 and $613,700 respectively. These amounts are based on taxable income, including the ordinary income below the preferential slice, and certain gains have distinct special rates.",
+        "Take a single filer with $46,000 ordinary taxable income and $7,000 of eligible long-term gain, with no special gain categories. Total taxable income is $53,000. The first $3,450 of preferential income fills the remaining room below $49,450 and is taxed at 0%; the remaining $3,550 is taxed at 15%, yielding $532.50 of incremental tax on that gain. It is incorrect to charge zero on the whole gain simply because the taxpayer's ordinary income was below $49,450.",
+        "Unearned income or certain high-income situations may trigger the net investment income tax (NIIT) at 3.8% on the smaller of net investment income and modified AGI above its applicable threshold. The ordinary short-term gain, qualified dividend, and NIIT computations must not be conflated. The lab will isolate the main stacking effect; a complete return may have other tax worksheets."
+      ],
+      "worked": [
+        "Ordinary taxable base $46,000; preferential gain $7,000; combined taxable $53,000.",
+        "2026 single 0% threshold $49,450; zero-rated slice = $49,450−$46,000 = $3,450.",
+        "15%-rated slice $7,000−$3,450=$3,550.",
+        "Simplified capital-gain tax = 0%×$3,450+15%×$3,550=$532.50."
+      ],
+      "practice": [
+        [
+          "Does the full $7,000 qualify for zero percent simply because ordinary taxable income is $46,000?",
+          "No. Stacking places the $7,000 on top of $46,000, leaving only $3,450 of zero-rate space under the $49,450 combined taxable threshold."
+        ],
+        [
+          "What is a key difference between NIIT and the regular long-term capital-gain rate?",
+          "NIIT is a separate 3.8% tax triggered by specific modified-AGI and net-investment-income rules, not a replacement for the basic 0/15/20% calculation."
+        ]
+      ]
+    },
+    {
+      "title": "Effective marginal rates can include phaseouts and clawbacks",
+      "body": [
+        "A household's true incremental tax burden is the change in all relevant taxes and benefits when a decision changes income. A statutory 22% bracket does not cap the effective marginal rate. An income-tested credit that falls by $100 when additional income rises by $1,000 adds an effective 10 percentage-point cost to that specific interval, making the modeled combined change about 32% before state tax or payroll taxes. This is a mathematical example, not a claim about any particular credit.",
+        "Phaseout rules have thresholds, filing-status qualifications, earned-income tests and sometimes discontinuous eligibility conditions. In some circumstances an extra dollar can affect a credit, deduction limit or premium calculation more than a bracket alone predicts. To evaluate extra work hours or a conversion from traditional to Roth retirement accounts, compare the tax outcome with and without the change using a complete set of applicable rules.",
+        "Tax planning should avoid perverse incentives created by focusing on marginal numbers alone. Higher gross pay typically leaves a household better off across normal federal tax brackets, even if the next dollar is taxed more heavily than earlier ones. Real situations with benefit cliffs can be exceptions requiring complete facts. Investigate the full cash-flow difference rather than refusing all extra income due to a misunderstood 'higher bracket.'"
+      ],
+      "worked": [
+        "Baseline income increase +$1,000 at 22% ordinary statutory rate ⇒+$220 regular income tax.",
+        "Hypothetical income-tested credit decreases $100 ⇒ combined net cost $320.",
+        "Illustrative effective marginal impact $320/$1,000=32%, excluding all other taxes and benefits.",
+        "Document which rule causes each change; an invented phaseout should never appear as actual tax law."
+      ],
+      "practice": [
+        [
+          "Why can a real effective marginal rate exceed the statutory tax bracket?",
+          "Credit and deduction phaseouts, state taxes, payroll taxes or benefit adjustments can change with additional income, adding marginal costs beyond the federal rate schedule."
+        ],
+        [
+          "Should a person reject overtime merely because they moved from a 12% to a 22% bracket?",
+          "No. The higher bracket generally applies only to later taxable dollars. Compare the additional net cash after all applicable taxes and benefit effects."
+        ]
+      ]
+    },
+    {
+      "title": "Sensitivity analysis and deciding what to verify",
+      "body": [
+        "An analyst should test a tax model over changes in filing status, preferred-income amount, contributions and time. A smooth graph of the tax function will change slope at statutory brackets; preferential gains can change slope at their own thresholds; credit phaseouts can add further bends. This means that a claim such as 'every dollar deferred now saves exactly 22 cents' should be presented as locally conditional, not universally true.",
+        "Tax consequences also span time. Compare tax saved today to expected future taxes, investment returns, liquidity needs and uncertainty in future legislation. The present value of a deferred tax bill depends on withdrawal date, asset growth and applicable future rates. A student must be able to construct both an optimistic and a conservative scenario and state why neither is guaranteed.",
+        "A professional-grade memorandum records the relevant IRS schedule, tax year, assumptions, tax-rate denominator, omitted items and a recommendation conditional on those facts. It distinguishes an educational mathematical approximation from advice specific to a taxpayer's complete return."
+      ],
+      "worked": [
+        "Scenario A: ordinary taxable income $70,000 ⇒ basic federal ordinary tax $10,112.",
+        "Scenario B: $72,000 ⇒ tax $10,552; incremental tax $440 on $2,000.",
+        "Scenario C: a qualified $2,000 nonrefundable credit with adequate liability ⇒ up to $2,000 tax reduction.",
+        "Carry alternative scenarios forward to liquid cash, retirement restrictions and future withdrawal rates."
+      ],
+      "practice": [
+        [
+          "What should be displayed next to a 'tax savings' figure in an app?",
+          "Tax year, filing status, bracket method, type of income, credits and phaseouts considered, and whether the figure is incremental or total tax."
+        ],
+        [
+          "Why is future retirement taxation relevant to choosing a current deduction?",
+          "Traditional deferral commonly shifts taxation to future distributions; comparing only today's savings hides the future tax and liquidity trade-offs."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS 2026 federal rate tables and preferential thresholds",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ],
+    [
+      "IRS 2026 standard deductions and worker tax law",
+      "https://www.irs.gov/newsroom/working-families-tax-cuts-individuals-and-workers"
+    ],
+    [
+      "IRS adjusted gross income definition",
+      "https://www.irs.gov/filing/adjusted-gross-income"
+    ],
+    [
+      "IRS capital gains and losses topic",
+      "https://www.irs.gov/taxtopics/tc409"
+    ],
+    [
+      "IRS net investment income tax thresholds",
+      "https://www.irs.gov/taxtopics/tc559"
+    ],
+    [
+      "IRS withholding estimator",
+      "https://www.irs.gov/individuals/tax-withholding-estimator"
+    ]
+  ],
+  "assessment": {
+    "title": "Progressive-rate audit and behavior analysis",
+    "prompt": "Derive and graph the first three brackets of the 2026 single-filer ordinary tax function. Compute liability at $50,399, $50,400, $50,401 and $70,000. Explain continuity and calculate the $70,000 marginal and average rates. Then evaluate an extra $2,000 of wages, a qualifying $2,000 deduction and a $2,000 nonrefundable credit. Independently compute a single filer's eligible capital gain when ordinary taxable income is $46,000 and long-term gains are $7,000. Write a one-page memo about how a cash-constrained first-time homebuyer should compare current tax savings with liquidity.",
+    "rubric": [
+      "Piecewise function and continuity tests: 25 points",
+      "Marginal/average/effective labels with denominators: 20 points",
+      "Deduction versus credit quantitative comparison: 20 points",
+      "Capital-gain stacking: 20 points",
+      "Interpretation of liquidity, incentives and sources: 15 points"
+    ],
+    "answerKey": [
+      "T(50,399)=$5,799.88; T(50,400)=$5,800; T(50,401)=$5,800.22.",
+      "T(70,000)=$10,112; marginal 22%; average over taxable income ≈14.4457%.",
+      "+$2,000 ordinary wages =>+$440 federal regular tax in this interval. Qualifying $2,000 deduction => ~$440 less. Eligible $2,000 credit => up to $2,000 less.",
+      "Of $7,000 long-term gain, $3,450 is in 0% space and $3,550 taxed at 15% =>$532.50 incremental regular tax.",
+      "Quality memo does not treat bracket rate as the share of all wages and considers liquidity and future tax rates."
+    ]
+  }
+}
