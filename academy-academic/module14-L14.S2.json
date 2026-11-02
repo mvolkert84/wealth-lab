@@ -1,0 +1,268 @@
+{
+  "id": "L14.S2",
+  "title": "Cap Rate, Cash-on-Cash and Leverage",
+  "subtitle": "Valuation, debt service, financial mathematics, loan-to-value, financing sensitivity and equity return",
+  "prerequisites": [
+    "L14.S1 NOI and operating cash",
+    "L7.S3 discounted cash flows",
+    "L9.S2 bonds and interest rates",
+    "L10.S1 portfolio risk",
+    "L6.S2 mortgages and financing"
+  ],
+  "objectives": [
+    "Derive capitalization rate and direct-cap property valuation",
+    "Compute cash-on-cash return using all acquisition cash, not only down payment",
+    "Build fixed-rate amortization, annual debt service, and principal-interest split",
+    "Calculate debt service coverage and loan-to-value and compare lender covenants",
+    "Explain positive/negative leverage and cash-on-cash versus equity IRR",
+    "Construct refinance and rate shock scenarios without treating loan proceeds as profit",
+    "Use discounted cash flow and sensitivity matrix to evaluate offer price"
+  ],
+  "sections": [
+    {
+      "title": "Cap rate separates property operations from an investor's financing",
+      "body": [
+        "Capitalization rate is normalized annual NOI divided by a supported property price or value. It is an unlevered income yield proxy, not the investor's total return, loan interest rate, or a guarantee of appreciation. If stabilized NOI equals $12,000 and an asset price is $200,000, direct cap is 6%. Inverting the equation yields $12,000/0.06=$200,000 indicated value using a defended market cap rate.",
+        "A lower cap rate can reflect lower perceived risk or expected growth, but may also reflect overly aggressive buyer assumptions or temporary market dislocations. A cap rate derived from an unusually low tax bill and artificially suppressed management expenses may misprice the asset. Explicitly normalize property tax after acquisition, insurance, repairs, vacancy, tenant turnover and market management fees.",
+        "A property can have a 7% cap rate yet lose money after paying a high-interest mortgage. Conversely a low cap rate can be profitable if appreciation, amortization and rent growth occur, but those outcomes are uncertain. Report cap and leveraged cash separately rather than claiming one is the full investment return."
+      ],
+      "worked": [
+        "Annual stabilized NOI $12,000 / $200,000 price =6% cap.",
+        "At identical NOI and 5% market cap, direct value $240,000.",
+        "At 7% cap, direct value ~$171,429, a $68,571 difference from 5% cap.",
+        "These valuations change based on NOI normalization and market participants, not bank quotes alone."
+      ],
+      "practice": [
+        [
+          "Is a 6% cap rate equivalent to guaranteed 6% annual investor profit?",
+          "No. It describes NOI relative to property value before debt and excludes capital costs, tax and valuation changes."
+        ],
+        [
+          "Why can a modest change in assumed cap rate materially change a property's appraised value?",
+          "Direct capitalization divides NOI by the assumed market cap; a smaller denominator increases indicated value nonlinearly."
+        ]
+      ]
+    },
+    {
+      "title": "Cash-on-cash measures distributable yield on cash actually invested",
+      "body": [
+        "Cash-on-cash return is annual before-tax owner cash flow divided by the total investor cash committed, often including down payment, loan fees, acquisition closing costs and initial capital work. The numerator must be defined consistently: some use cash after debt before reserves, others after planned capital reserves. Report both if used. Omitting closing costs makes a deal look artificially efficient.",
+        "Suppose price $200,000 with $50,000 down, $6,000 financing and closing costs, and $4,000 initial repairs, giving $60,000 total cash invested. If adjusted annual cash after debt and expected recurring replacement reserve is $3,000, cash-on-cash equals 5%. Using only the $50,000 down payment as denominator would report 6%, overstating the comprehensive investment-cash yield.",
+        "Cash-on-cash is not annualized total return because loan principal amortization changes equity and market value can rise or fall. It ignores the timing of capital injections, refinancing and exit; for multi-year comparisons, calculate equity internal rate of return or present value on dated cash flows. A negative first-year cash-on-cash does not mathematically prove long-run loss, but creates a real funding need."
+      ],
+      "worked": [
+        "Down payment $50,000+closing/financing costs $6,000+initial repairs $4,000 = $60,000 cash invested.",
+        "Annual cash after debt and recurring replacement reserve $3,000.",
+        "Cash-on-cash on true acquisition cash = $3,000/$60,000=5%.",
+        "Misleading down-payment-only calculation $3,000/$50,000=6%."
+      ],
+      "practice": [
+        [
+          "Why must closing costs and initial repairs be included in invested-cash denominator?",
+          "They are actual investor cash required to make the property operational; excluding them inflates yield."
+        ],
+        [
+          "Is a 5% cash-on-cash figure comparable to the long-term IRR of a stock investment without adjustments?",
+          "No. Cash-on-cash is a one-period distribution measure, whereas IRR incorporates cash timing, equity value, capital calls and sale proceeds."
+        ]
+      ]
+    },
+    {
+      "title": "Mortgage payment mathematics and amortization equity",
+      "body": [
+        "Property financing begins with loan principal, note rate, term and payment frequency. For a level-payment fully amortizing loan, monthly payment M = P r/(1−(1+r)^−N), where P is principal, r is monthly rate and N is number of payments. At r=0, the limit is P/N. Actual financing may include adjustable rates, balloon maturity, escrow, interest-only periods, origination costs and prepayment charges.",
+        "For an illustrative $150,000 fully amortizing 30-year note at 7% nominal annual interest, r=.07/12 and N=360, producing a monthly principal-and-interest payment of about $998. Annual debt service is roughly $11,977 excluding taxes, insurance and other costs. First month interest is $875, so only about $123 reduces principal. Subsequent principal grows as the balance declines; the property owner owes the full payment even when rent is late.",
+        "A loan's amortization can build owner equity, but the principal portion is not tax-deductible interest and is not spendable monthly cash. Compare interest cost, down payment, total payment, required debt-service reserves and loan-to-value before recommending leverage. Debt expenses should not be double-counted if tax and insurance are already in operating expenses."
+      ],
+      "worked": [
+        "P=$150,000, monthly rate .07/12, term 360 payments.",
+        "Monthly P&I ≈$997.95.",
+        "First-month interest $150,000×.07/12=$875; principal component ≈$122.95.",
+        "Debt service annual ≈$11,975, excluding escrow and unusual fees."
+      ],
+      "practice": [
+        [
+          "Why is monthly principal repayment different from an income-tax deduction for interest?",
+          "Principal reduces outstanding liability, while deductible interest, subject to rules, is the financing cost paid to lender."
+        ],
+        [
+          "What common double count inflates projected operating expenses?",
+          "Adding mortgage escrow for property tax and insurance when those same charges are already included directly in NOI operating expenses."
+        ]
+      ]
+    },
+    {
+      "title": "Debt-service coverage and loan-to-value: two independent lender tests",
+      "body": [
+        "Debt service coverage ratio (DSCR) equals stabilized property NOI divided by contractual annual loan debt service. A DSCR of 1.20 means the property produces $1.20 NOI for each $1.00 of required debt payment before capex and taxes. Lenders' actual qualifying NOI definitions, reserve requirements and DSCR covenants differ; a borrower cannot assume a generic 1.20 minimum is a universal bank rule.",
+        "Loan-to-value (LTV) is outstanding loan balance divided by property market value. A $150,000 loan against a $200,000 property equals 75% LTV. LTV assesses collateral leverage rather than income sufficiency. A property can have 50% LTV but weak DSCR if it is vacant, or high LTV but strong current DSCR where rent is robust. Both can worsen under price and rental shocks.",
+        "Suppose NOI $12,000 and annual debt service $10,000; DSCR=1.20. If NOI declines to $8,000 during vacancy, DSCR becomes 0.80, signaling operating income insufficient to cover debt before reserves. Even if lender covenants permit temporary exceptions, household cash must pay the shortfall. Stress both income and collateral independently."
+      ],
+      "worked": [
+        "NOI $12,000 / annual debt $10,000 ⇒ DSCR 1.20.",
+        "Loan $150,000 / value $200,000 ⇒ LTV 75%.",
+        "After NOI shock to $8,000, DSCR becomes 0.80.",
+        "A 20% property value drop to $160,000 with unchanged $150k principal raises LTV to 93.75%."
+      ],
+      "practice": [
+        [
+          "Does DSCR 1.20 prove a property has enough cash for a roof replacement?",
+          "No. DSCR is calculated from NOI and debt payments; capital replacement costs and owner tax can be excluded."
+        ],
+        [
+          "Can favorable LTV make up for missing monthly debt payments automatically?",
+          "No. Equity is not cash until financing or sale occurs, both constrained by market conditions and lender requirements."
+        ]
+      ]
+    },
+    {
+      "title": "Leverage amplifies gains and losses on owner equity",
+      "body": [
+        "Leverage increases the value of assets controlled relative to investor equity. If a property worth $200,000 is financed with a $150,000 loan, initial equity before costs is $50,000. A 10% property-price rise to $220,000 adds $20,000 to gross equity, about 40% of initial equity, ignoring financing costs, tax and operating cash. A 10% price fall to $180,000 cuts equity to $30,000, a 40% gross equity loss.",
+        "These equity changes are not equivalent to annualized investor IRR and are not spendable until capital can be extracted. Loan balances can decline over time, but selling costs and transaction taxes reduce realized proceeds. Negative leverage can occur when the property's unlevered after-cost return is less than debt financing cost, undermining cash flow despite positive rent.",
+        "Owners sometimes refinance after appreciation and count cash taken out as 'profit'. It is usually new debt, with future payments and risks, not earned income. A real economic analysis pairs cash-out proceeds with the resulting liability and recalculates DSCR and refinancing costs. A lender can refuse refinancing when values or rents weaken."
+      ],
+      "worked": [
+        "Property $200,000, debt $150,000 ⇒ initial gross equity $50,000.",
+        "10% price gain => $220,000−$150,000=$70,000 equity, +40% on starting equity.",
+        "10% price loss => $180,000−$150,000=$30,000 equity, −40% on starting equity.",
+        "A sale at $180,000 with 6% selling costs leaves only $19,200 before taxes and other charges, far below original $50,000."
+      ],
+      "practice": [
+        [
+          "Why does debt leverage magnify percent changes in equity?",
+          "The property price changes on total asset value while debt is fixed in the short term, so a larger share of changes falls on a smaller equity base."
+        ],
+        [
+          "Does cash-out refinancing create an investment profit equal to the borrowed cash?",
+          "No. The cash comes with a corresponding liability, interest expense and new default risk."
+        ]
+      ]
+    },
+    {
+      "title": "Borrowing rate and lender covenant sensitivity",
+      "body": [
+        "Borrowing cost can erase operating cash flow even without a rent decrease. At higher interest rates, level-payment mortgages require larger monthly payments for the same principal and term. A borrower using a 5% quote on a deal that ultimately closes at 8% can overstate annual cash flow by thousands of dollars. Underwrite the signed note terms and model rate reset where the loan is adjustable.",
+        "Illustrative $150,000 principal amortized over 30 years costs about $805 monthly at 5% versus approximately $1,101 at 8%. That ~$296 monthly difference is about $3,550 annually. If an initial $2,500 annual cash surplus existed at 5%, the higher payment can turn it negative even with identical NOI. Property taxes and insurance could rise at the same time.",
+        "Loans also contain escrow requirements, recourse provisions, maturity/balloons, prepayment penalties and due-on-sale clauses. Investor assumptions must match the actual product offered; investment-property borrowing often differs from owner-occupied financing. Do not imply that first-time homebuyer assistance intended for a primary residence automatically finances a standalone rental property."
+      ],
+      "worked": [
+        "30-year $150,000 mortgage at 5% monthly P&I approximately $805.",
+        "Same loan at 8% approximately $1,101.",
+        "Monthly increase approximately $296; yearly debt cash need increases roughly $3,550.",
+        "A $2,500 annual initial surplus under 5% may become ≈−$1,050 under 8%."
+      ],
+      "practice": [
+        [
+          "Why should an underwriting spreadsheet vary loan interest rates?",
+          "Interest affects contractual payments and DSCR; a deal only positive at one favorable quote may fail at closing or adjustment."
+        ],
+        [
+          "Can an investor use primary-residence mortgage assistance on any rental property automatically?",
+          "No. Owner occupancy and program restrictions must be verified; rental-only property financing can differ materially."
+        ]
+      ]
+    },
+    {
+      "title": "Direct capitalization versus discounted property cash flow",
+      "body": [
+        "Direct capitalization estimates asset value by dividing a stabilized single-year NOI by a market cap rate. Discounted cash flow (DCF) models every future property's operating cash, major capital expenses and a terminal sale. An equity DCF includes loan payments and net sale after mortgage payoff; an unlevered asset DCF excludes financing and applies an appropriate asset discount rate. Mixing cash definitions with an unrelated discount rate produces inconsistent values.",
+        "To value a simplified perpetuity with constant annual NOI $12,000 at an 8% capitalization rate, the direct-cap price would be $150,000. But a property with expected growing NOI, a roof replacement in year 3 and costly exit at year 5 cannot safely be modeled by one perpetuity formula. Its DCF requires dated annual income, capital calls, sale proceeds, expenses and discounting.",
+        "For a two-year illustrative equity model, invest $60,000 now, receive $3,000 at year one, and at year two receive $3,000 plus $67,000 net sale proceeds. At a hypothetical 10% required equity return, NPV = −$60,000+$3,000/1.10+$70,000/1.10²≈$598. This narrow scenario excludes taxes and return uncertainty; changing the sale price can reverse the result."
+      ],
+      "worked": [
+        "Simple direct cap value NOI $12,000/.08=$150,000.",
+        "Illustrative equity dated cash flows −$60,000 now, +$3,000 year 1, +$70,000 year 2 including sale.",
+        "NPV at 10%=−$60,000+$3,000/1.10+$70,000/1.10²≈+$579.",
+        "Value is contingent on actual final net proceeds, not a forecasted gross sale price."
+      ],
+      "practice": [
+        [
+          "Why should an unlevered NOI capitalization not use the investor's after-debt cash flow as numerator?",
+          "Doing so mixes property-level return with owner-specific financing, making market cap comparisons inconsistent."
+        ],
+        [
+          "Why can a DCF add value beyond a stabilized cap-rate estimate?",
+          "It models varying annual rents, expenses, capex, financing and sale timing instead of assuming one representative perpetual year."
+        ]
+      ]
+    },
+    {
+      "title": "A committee-ready buy/renegotiate/pass scorecard",
+      "body": [
+        "An investment committee should use separately labeled property value, all-cash acquisition requirement, initial yield, stressed annual cash, DSCR, LTV, equity at risk, capital reserve and expected exit. Include comparable recent local sales and rents with source dates but avoid assuming comparable buildings are identical. State how a roof age, tenancy problem or tax reassessment changes the underwriting and valuation.",
+        "Compare two illustrative $200,000 properties. Property A has NOI $12,000, cap 6%, and annual debt service $10,000 for DSCR 1.20. Property B has NOI $14,000, cap 7%, but annual debt $15,000 for DSCR 0.93, and negative after-debt cash before replacements. B's higher cap rate does not make it automatically safer or financeable.",
+        "Document who will manage tenant calls, the investor's time cost, financing eligibility, property tax/insurance quotes, expected time to sell and diversification. For someone still building a primary home and with a modest monthly savings surplus, the appropriate recommendation can be to delay leveraged rental investing while building capital and maintaining credit."
+      ],
+      "worked": [
+        "Property A NOI $12,000/$200,000=6% cap; DSCR $12k/$10k=1.20.",
+        "Property B NOI $14,000/$200,000=7% cap; DSCR $14k/$15k≈0.93.",
+        "B preliminary after-debt cash −$1,000 before capex and taxes.",
+        "Report both candidates' total upfront cash and emergency reserves rather than ranking on cap alone."
+      ],
+      "practice": [
+        [
+          "Can a 7% cap asset be a weaker choice than a 6% cap asset?",
+          "Yes. Funding structure, deferred maintenance, tenant risk, location and negative debt coverage may dominate the apparent higher unlevered yield."
+        ],
+        [
+          "What should justify a renegotiated purchase price?",
+          "Evidence-backed rent and cost forecasts, comparable valuation, financing limits, necessary immediate repairs and a defined minimum stress margin."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFPB loan estimate and mortgage borrowing disclosure",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB mortgage payment principal and interest explanation",
+      "https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/"
+    ],
+    [
+      "IRS Publication 527 property operations and rental expenses",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "IRS Publication 544 sale cash versus gain",
+      "https://www.irs.gov/publications/p544"
+    ],
+    [
+      "Federal Reserve economic data interest rates",
+      "https://fred.stlouisfed.org/"
+    ],
+    [
+      "FHFA house price index methodological reports",
+      "https://www.fhfa.gov/data/hpi"
+    ],
+    [
+      "Investor.gov diversification and investment risk",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits"
+    ],
+    [
+      "Connecticut property taxation overview",
+      "https://portal.ct.gov/opm/igpp/municipal-data/municipal-data"
+    ]
+  ],
+  "assessment": {
+    "title": "Financing committee: property operations versus owner-equity returns",
+    "prompt": "Prepare a fully specified underwriting memo on $200k property, $12k NOI, $150k loan, 30 years 7% interest, cash invested $60k (including 50k down, 6k costs and 4k initial repairs). Compute cap, exact amortizing P&I and annual debt, monthly interest/principal first payment, DSCR and LTV, and 10% property price loss equity and 6% sale-cost impact. Compare with $14k NOI / $15k annual debt Property B and evaluate rate sensitivity at 5% and 8%. Build two-year hypothetical DCF with −$60k, +$3k and +$70k cash flows at 10%. Write conditions for BUY, RENEGOTIATE or PASS.",
+    "rubric": [
+      "Correct capitalization and normalizing NOI (20%)",
+      "Mortgage/payment/DSCR/LTV computations (25%)",
+      "Leveraged equity and rate shock analysis (25%)",
+      "DCF/NPV consistency and cash invested (15%)",
+      "Credit, liquidity, source verification and ethical recommendation (15%)"
+    ],
+    "answerKey": [
+      "NOI $12k/price $200k=6% cap; $150k/$200k=75% LTV.",
+      "30-year $150k at 7% P&I≈$997.95/month, first interest $875 and principal≈$122.95, annual debt≈$11,975.",
+      "DSCR $12,000/$11,975≈1.002 before other covenants and capital reserves, not 1.20 if the actual amortized loan is used.",
+      "Initial economic equity $50k; price drop to $180k leaves $30k before selling costs, or $19,200 net after 6% sale cost and loan payoff.",
+      "B DSCR $14k/$15k≈0.933 and after-debt cash −$1k.",
+      "Two-year hypothetical NPV -$60k+$3k/1.10+$70k/1.10²≈$578.51, not guaranteed."
+    ]
+  }
+}
