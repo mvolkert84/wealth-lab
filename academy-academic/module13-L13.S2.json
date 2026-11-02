@@ -1,0 +1,266 @@
+{
+  "id": "L13.S2",
+  "title": "Whole Life, Universal Life & Policy Loans",
+  "subtitle": "Contract mechanics, guaranteed versus illustrated values, loan interest, lapse taxation and trust ownership",
+  "prerequisites": [
+    "L13.S1 protection need and insurance term design",
+    "L7.S3 compounding and present value",
+    "L11.S1 ordinary taxable income",
+    "L12.S2 tax wrappers and opportunity cost"
+  ],
+  "objectives": [
+    "Distinguish term, whole life, universal, indexed universal and variable insurance structures",
+    "Read guaranteed/non-guaranteed premiums, death benefit, accumulation and surrender-value illustrations",
+    "Calculate loan interest, net death proceeds, surrender gains and policy-lapse shortfalls",
+    "Explain cost basis, withdrawals, modified endowment contracts and contract taxation limitations",
+    "Distinguish policy owner, insured, payor, beneficiary and trustee",
+    "Evaluate ILIT control, estate inclusion, three-year lookback and Crummey gifts conceptually",
+    "Compare borrowing against insurance cash value with home-funding alternatives"
+  ],
+  "sections": [
+    {
+      "title": "Permanent insurance separates insurance coverage from contract value",
+      "body": [
+        "Whole life insurance typically combines long-duration death benefit protection, contractually scheduled premiums and policy cash-value guarantees as written. A participating whole life contract may credit dividends that are not guaranteed. Universal life separates account-value mechanics from ongoing cost-of-insurance charges, premium flexibility and interest crediting. Indexed universal life credits according to a contract formula linked to an index subject to caps, participation and other adjustments; it is not direct ownership of the index.",
+        "Variable life and variable universal contracts expose account value to selected investments and related market risk while their charges continue. A high projected return can make a flexible-premium illustration look comfortable, yet low returns or rising insurance charges can create a funding shortfall. The words 'permanent' or 'lifetime' do not mean premiums may safely stop at any time. Longevity of coverage depends on guarantees and continued compliance.",
+        "An insurance policy illustration contains guaranteed and non-guaranteed columns. Compare the same dates, premiums, net death benefit, surrender values, expected charges, loan status and contract year under both scenarios. The premium paid is not the same as deposit credited to accessible cash value: costs of insurance, acquisition expenses and surrender penalties can initially produce far less cash value than cumulative premiums."
+      ],
+      "worked": [
+        "Hypothetical premiums $250/month for 10 years total $30,000.",
+        "Contract may show $18,000 cash surrender value at year 10, not the entire $30,000 paid.",
+        "The $12,000 difference is not automatically a single fee; death coverage, charges and non-guaranteed credits affect value.",
+        "A favorable illustrated $25,000 account value does not override the guaranteed contractual value."
+      ],
+      "practice": [
+        [
+          "Is indexed universal life an investment account that owns S&P 500 shares directly?",
+          "No. Index crediting is based on contractual formula and limits; the policyholder generally does not hold the index assets."
+        ],
+        [
+          "Can a level premium guarantee that a flexible universal life policy stays in force indefinitely?",
+          "Not unless an applicable enforceable guarantee and all its payment conditions are satisfied; monitor charges and in-force status."
+        ]
+      ]
+    },
+    {
+      "title": "Cash value, surrender value, basis and effective returns",
+      "body": [
+        "Account value, cash surrender value and death benefit are different reporting concepts. Account value reflects the policy's crediting and charges; surrender value is the amount available on cancellation after contractual surrender deductions and loan payoff where applicable. Death benefit describes what the carrier owes under the contract's death claim conditions, often reduced by outstanding loans and interest. The beneficiary does not necessarily receive the sum of account value and the separately advertised death benefit.",
+        "An after-tax outlay comparison should include all premiums, riders and contract expenses. Simple cash-value divided by total premiums is not a compound return. The mathematically appropriate measure is internal rate of return using dated negative premium cash flows and a final hypothetical surrender or death payout, and including taxation when relevant. A policy can produce a worthwhile insured death benefit before it produces strong surrender liquidity.",
+        "Non-guaranteed dividends and illustrations can be revised. Obtain current in-force illustrations reflecting the actual policy ledger. Evaluate surrender against reducing coverage, paid-up options, permitted partial withdrawals, exchange to a suitable replacement and keeping the policy. Never treat the salesperson's future-number column as a certainty or an unrestricted bank deposit."
+      ],
+      "worked": [
+        "Total premiums paid $30,000; hypothetical cash surrender value $18,000.",
+        "Surrender-value-to-premiums ratio 60%, NOT a 60% annual return.",
+        "Hypothetical cumulative cash loss on cancellation $12,000 before tax effects.",
+        "A $250,000 death benefit at death is a distinct insured contingency, not $250,000 liquid during the owner's lifetime."
+      ],
+      "practice": [
+        [
+          "Why is 'cash value ÷ premiums' not an internal rate of return?",
+          "It ignores timing of cash payments, interim charges, annual compounding and the distinct benefit of death protection."
+        ],
+        [
+          "Why might death benefits and cash values not both be paid in full to beneficiaries?",
+          "Contract structures generally define one net death benefit, including permitted adjustments; additions are policy-specific, not automatically additive."
+        ]
+      ]
+    },
+    {
+      "title": "A policy loan is real debt against contract value",
+      "body": [
+        "A policy loan generally permits the owner to borrow under a contract while assigning the policy's cash value as security. The insurer charges interest at a defined fixed or adjustable rate. Outstanding loan principal and accrued interest reduce net benefits or surrender proceeds. Loan availability depends on eligible values and contract language. The borrower has received spendable cash but acquired a corresponding obligation, so borrowing does not generate new net worth.",
+        "Borrow $15,000 at a hypothetical 7% simple annual interest and no principal payments: one year's interest is $1,050. Under annual capitalization for five years at 7%, the debt rises to $15,000×1.07^5≈$21,038. The policy might credit interest or dividends on some retained value, but this does not make the loan rate disappear. Direct-recognition and non-direct-recognition dividend provisions can modify economic cost.",
+        "When leveraged cash is used for a house, household debt exposure becomes more complex. The mortgage lender may count outstanding obligations or scrutinize the down-payment source. A pledged policy could lapse precisely when premiums, loan interest and household spending are under stress. A clear borrower ledger includes loan balance, annual interest, premium obligations, annual available surrender value and death benefit under adverse illustrated scenarios."
+      ],
+      "worked": [
+        "Loan principal $15,000, simple first-year rate 7% => $1,050 interest.",
+        "If interest compounds annually unpaid for five years, balance = $15,000×1.07^5≈$21,038.",
+        "If death benefit face amount is $250,000, simplified net death proceeds might be ≈$228,962 before other changes.",
+        "No scenario can assume loan proceeds and full unchanged $250,000 death benefit with zero debt effect."
+      ],
+      "practice": [
+        [
+          "Does paying policy-loan interest mean the household is 'paying itself' in every policy?",
+          "No. Interest generally goes to the insurer under contract; dividend and crediting responses vary but do not erase the obligation."
+        ],
+        [
+          "How does loan capitalization change risk?",
+          "Unpaid interest increases the outstanding loan, potentially reducing net proceeds and raising the chance of policy lapse."
+        ]
+      ]
+    },
+    {
+      "title": "Lapse and surrender taxation: the hidden leveraged-policy risk",
+      "body": [
+        "Life insurance surrender can generate taxable ordinary income if proceeds exceed the owner's investment in the contract, calculated under tax rules and adjusting for prior transactions. A policy lapse with an outstanding loan may create a taxable transaction even though the owner receives little or no cash at lapse. Loan proceeds in a non-MEC policy are often not currently taxable when the policy stays in force, but that statement is conditional, not a tax exemption for every outcome.",
+        "Consider a simplified policy with $40,000 aggregate premiums/basis, $60,000 surrender value before $35,000 loan payoff and $25,000 cash net received. For tax modeling, the surrender amount economically realized can include debt satisfied from the policy, making the gain $60,000−$40,000=$20,000 notwithstanding only $25,000 of cash received. Actual tax treatment requires the policy's basis, gain and transactions from the insurer. A borrower who borrowed and spent the funds years earlier may face taxable gain without current cash for the bill.",
+        "Modified endowment contracts (MECs) have different loan and distribution taxation and may expose certain income-first withdrawals and loans to additional tax when the owner is under age 59½, absent exceptions. MEC status can arise when premium funding exceeds statutory tests, and tax law has special rules for contracts materially changed. Never describe tax-favored policy borrowing without a written MEC classification and ledger."
+      ],
+      "worked": [
+        "Simplified contract basis $40,000, gross surrender value $60,000, loan satisfied $35,000.",
+        "Actual net cash paid to owner $60,000−$35,000=$25,000.",
+        "Simplified realized policy gain $60,000−$40,000=$20,000 (typically ordinary taxable income under qualifying facts).",
+        "A 22% illustrative federal marginal rate could create ~$4,400 income tax despite only $25,000 net cash, before state effects."
+      ],
+      "practice": [
+        [
+          "Why can a policy lapse produce income tax even when there is no cash distribution at lapse?",
+          "Satisfaction or cancellation of a policy loan against contract value can enter the surrender/distribution accounting, revealing gain above tax basis."
+        ],
+        [
+          "Can all life insurance loans be treated as tax-free distributions?",
+          "No. MEC classification, lapse, surrender, transfer and policy details can materially change tax treatment."
+        ]
+      ]
+    },
+    {
+      "title": "Loan-to-value stress and premium sustainability",
+      "body": [
+        "A financially responsible in-force policy stress test projects yearly loan balances, annual premium capacity, credited values, rising insurance costs and potential lapse. It uses the insurer's guaranteed and current assumptions rather than extrapolating one high illustration curve. A contract with a $50,000 surrender value but a growing $40,000 loan has less flexibility than the gross cash-value number suggests.",
+        "Suppose loan principal is $30,000, rate 8% and no repayments. In five years the compounded balance is roughly $44,080. If net surrender value under a guaranteed low-earning scenario is $42,000, the loan can threaten policy sustainability before the illustration's original death-benefit horizon. Insurance crediting and loan charges may be different rates and recognition methods, so a simplistic net spread assumption is dangerous.",
+        "A homebuyer putting $250–$500 monthly into a new policy for the sole purpose of future borrowing faces another constraint: early-year cash values are frequently below total paid premiums. They could lack sufficient usable collateral when their home purchase arrives. Compare waiting, conventional cash savings, down-payment assistance eligibility and credit profile before locking cash into an illiquid contract."
+      ],
+      "worked": [
+        "Loan $30,000 at 8% with five annual capitalizations → $30,000×1.08^5≈$44,080.",
+        "Illustrative stressed net surrender value $42,000 implies a ~$2,080 shortfall compared with loan.",
+        "Loan-to-surrender-value at year 5 ≈105%, unsustainable without corrective funding or other policy mechanisms.",
+        "A lender's home down-payment documentation rules remain separate from the insurer's loan eligibility."
+      ],
+      "practice": [
+        [
+          "Why is five-year policy borrowing not simply principal times 8%?",
+          "When interest is added to the loan balance, interest accrues on earlier unpaid interest, so the debt compounds."
+        ],
+        [
+          "What makes using a new permanent policy as a short-term down-payment account particularly risky?",
+          "Initial surrender values can be low and contract charges, loan interest and tax exposure can consume expected borrowing capacity."
+        ]
+      ]
+    },
+    {
+      "title": "Who owns the policy? insured, owner, payor, beneficiary and trustee",
+      "body": [
+        "The insured person's death triggers a death benefit, but the owner holds most contractual rights during life: changing designated beneficiaries where allowed, surrendering, borrowing and selecting some riders. The premium payor can be someone else. A beneficiary receives payable death proceeds under the insurer's policy terms. A trustee controls a policy only if legal ownership has actually been transferred to the trust or originally issued to it and the trustee has authority under the trust document.",
+        "Changing a beneficiary to a trust does not by itself mean the trust owns the policy. Putting a policy inside a revocable trust commonly leaves the grantor with retained control and may not keep death proceeds out of the taxable estate. Irrevocable life insurance trusts (ILITs) are specialized legal structures that can, when correctly designed, transfer ownership and control but restrict personal use of policy cash value. This undercuts claims that someone can both remove a policy from their estate and freely borrow it for a down payment.",
+        "Federal estate inclusion can depend on incidents of ownership and certain transfers within three years of death. A properly structured new policy acquired by an independent irrevocable trust can differ from transferring an existing personally owned policy. Gift-tax contributions, beneficiary notices such as Crummey powers, trustee duties and trust income taxes require individual legal/tax attention."
+      ],
+      "worked": [
+        "Policy with $300,000 death benefit; individually owned by insured who retains incidents of ownership.",
+        "Death proceeds generally may be excluded from beneficiary's federal income but still potentially included in insured's estate for estate-tax accounting.",
+        "Designating the trust as beneficiary without transferring policy ownership does not automatically change ownership-based estate inclusion.",
+        "A genuine ILIT ownership strategy must account for relinquished owner control and independent trustee fiduciary duties."
+      ],
+      "practice": [
+        [
+          "If a policy lists an irrevocable trust as beneficiary, does the trust automatically own it?",
+          "No. Owner and beneficiary are separate designations. The insurer's ownership record and executed legal transfer control contractual authority."
+        ],
+        [
+          "Can the insured freely borrow from an ILIT-owned policy as if personally owned?",
+          "Not automatically. The trustee controls contract rights under fiduciary and trust terms; personal access can undermine the intended legal and tax strategy."
+        ]
+      ]
+    },
+    {
+      "title": "MEC, 1035 exchange and policy replacement decisions",
+      "body": [
+        "A Section 1035 exchange may permit certain exchanges of insurance or annuity contracts without immediate gain recognition if statutory requirements are met. It is not a blanket permission to cash out a policy and deposit the proceeds anywhere, and an outstanding loan can complicate a transaction by causing taxable boot or deemed distribution. Replacing a policy can reset acquisition expenses, alter riders and generate new surrender charges.",
+        "MEC rules are governed by tax tests rather than sales terminology; a policy can become a modified endowment contract if funding crosses the seven-pay test under relevant definitions. MEC income-first distribution and loan taxation make aggressive short-period premiums especially important to evaluate. Surrender and replacement costs must be compared against keeping or modifying existing coverage.",
+        "A suitable written decision tree asks whether the insured still needs the death benefit, whether current policy is affordable, projected values on a guaranteed basis, how debt is handled, whether the insured qualifies for replacement coverage and how each option is taxed. Obtain an insurer-supplied statement of cost basis and MEC status. Never use a replacement solely because its new illustration displays larger non-guaranteed numbers."
+      ],
+      "worked": [
+        "Old policy basis $20,000, surrender value $26,000, no other adjustments.",
+        "Simple outright taxable gain might be $6,000; a qualifying 1035 exchange may defer recognition subject to rules.",
+        "If an outstanding loan is relieved in a replacement, taxable treatment could differ; cannot infer from basis and value alone.",
+        "A new first-year surrender schedule can make replacing a policy costly even if a favorable headline premium appears."
+      ],
+      "practice": [
+        [
+          "Does a 1035 exchange make the entire transaction immune from tax whatever happens to an existing loan?",
+          "No. Eligibility, transferred value, loans and nonqualifying cash or other consideration must be analyzed."
+        ],
+        [
+          "Why should the insurer identify MEC status before discussing tax-favored borrowing?",
+          "MEC loans and distributions can be taxable under different rules and may face additional tax."
+        ]
+      ]
+    },
+    {
+      "title": "A policy illustration due-diligence committee for homebuyers",
+      "body": [
+        "Build an unbiased comparison with the same initial $250 or $500 monthly budget: pure term protection plus high-liquidity reserve, permanent insurance plus verified contract values, and employer coverage supplemented with independently owned term. Model five, ten and twenty-year horizons and compare both expected death claims and accessible living capital. Do not call one option the 'winner' before documenting the specific household risk tolerance and dependent-protection need.",
+        "Suppose a hypothetical permanent policy requires $400 monthly, leaving $100 from a $500 available savings budget for house reserves. If the home down-payment target is $15,000 within four years, only saving $100 monthly accumulates $4,800 before interest, far below target. The insurance loan feature is irrelevant if contract cash value and lending terms will not reliably fund the difference. Conversely, term coverage may preserve a high death benefit while separate cash accumulates for closing.",
+        "The memo must label guaranteed and non-guaranteed policy value scenarios, lapse stress, loan capitalization, net death payout, basis and surrender tax. It must also state the irreducible tradeoff: transferring a policy to an irrevocable trust to remove control is usually incompatible with treating its cash value as an unrestricted personal checking account. Request an independent insurance professional, estate attorney and tax review for complex arrangements."
+      ],
+      "worked": [
+        "$500/month available; hypothetical permanent premium $400/month, leaves $100/month for housing savings.",
+        "Four years (48 months) with no return, $100/month saves $4,800.",
+        "Target $15,000 leaves $10,200 unfunded before other resources.",
+        "Even if a policy advertises a projected loan, it cannot be counted as guaranteed down-payment cash until in-force terms and lender requirements verify it."
+      ],
+      "practice": [
+        [
+          "Why is a 2026 policy-loan illustration insufficient proof of future down-payment availability?",
+          "Future contract value, surrender deductions, loan eligibility, terms, insurer behavior and lender source-of-funds rules may differ from the illustration."
+        ],
+        [
+          "What is the main control tradeoff of using an ILIT to hold a policy?",
+          "The trust's proper owner/trustee controls rights according to its terms, which can limit the insured's direct access to policy cash value."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "NAIC policy illustration guarantees and nonguarantees",
+      "https://content.naic.org/insurance-topics/life-insurance-illustrations"
+    ],
+    [
+      "NAIC how to choose life insurance",
+      "https://content.naic.org/article/consumer-insight-what-type-life-insurance-right-you"
+    ],
+    [
+      "IRS Publication 525 surrender and life proceeds",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "IRS life insurance beneficiary income taxation",
+      "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/life-insurance-disability-insurance-proceeds/life-insurance-disability-insurance-proceeds"
+    ],
+    [
+      "IRS Section 1035 and insurance contract exchanges",
+      "https://www.irs.gov/publications/p575"
+    ],
+    [
+      "IRS estate tax ownership and life insurance inclusion",
+      "https://www.irs.gov/instructions/i706"
+    ],
+    [
+      "US Code 26 USC 7702A modified endowment contracts",
+      "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section7702A"
+    ],
+    [
+      "CT Department of Insurance insurance consumer resources",
+      "https://portal.ct.gov/cid/consumer-affairs/consumer-affairs"
+    ]
+  ],
+  "assessment": {
+    "title": "Permanent insurance and policy leverage review",
+    "prompt": "Compare term coverage to a 20-year permanent-policy illustration: identify guaranteed versus projected values, premium outlay, death benefits and beneficiary access. Compute $15,000 policy loan at 7% over five years, simple year-one interest and capitalized ending debt; model a surrender with $40,000 basis, $60,000 gross contract value and $35,000 unpaid loan. Stress a $30,000 loan at 8% for five years against $42,000 stressed surrender value. Distinguish ownership/beneficiary/trust roles and present a home-down-payment recommendation within a $500 monthly cap.",
+    "rubric": [
+      "Contract tax/crediting distinctions and insurer guarantees (20%)",
+      "Loan balance and lapse stress math (25%)",
+      "Basis, surrender and MEC tax reasoning (20%)",
+      "ILIT owner control and beneficiary analysis (20%)",
+      "Independent suitability and home liquidity judgment (15%)"
+    ],
+    "answerKey": [
+      "$15,000 at 7% simple annual interest owes $1,050 interest year one; five years annual capitalization yields about $21,038.",
+      "Surrender $60,000 gross, $35,000 loan payoff, $25,000 cash net, $40,000 basis => illustrative taxable gain $20,000.",
+      "$30,000×1.08^5≈$44,080 loan versus $42,000 net surrender estimate creates $2,080 risk shortfall.",
+      "ILIT ownership requires actual owner control by trustee and potentially restricts borrower access; beneficiary designation alone does not transfer policy ownership.",
+      "$400 premium of $500 budget leaves $100 monthly for home cash; in 48 months this is $4,800 before interest, no guaranteed $15k home down payment."
+    ]
+  }
+}
