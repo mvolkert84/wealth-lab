@@ -32,6 +32,7 @@ on:
       - scripts/check-module11-academic.mjs
       - scripts/check-module12-academic.mjs
       - scripts/check-module13-academic.mjs
+      - scripts/check-module14-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -124,3 +125,4 @@ jobs:
           node scripts/check-module11-academic.mjs
           node scripts/check-module12-academic.mjs
           node scripts/check-module13-academic.mjs
+          node scripts/check-module14-academic.mjs
