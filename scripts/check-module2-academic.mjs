@@ -23,7 +23,7 @@ for(let i=0;i<5;i++){
  assert.ok(markup.includes('Written and numerical chapter assessment'));
 }
 assert.equal(parts,29);assert.equal(problems,58);assert.ok(words>=7800);
-assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10'||m.id==='M11')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('window.WealthLabAcademicM2Markup?.(s.id)'));
 assert.ok(html.includes('window.WealthLabAcademicM2Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
