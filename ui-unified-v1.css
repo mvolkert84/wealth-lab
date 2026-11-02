@@ -1,0 +1,183 @@
+/* Wealth Lab UI unification · 2026-11-02
+   Single bottom navigation, reliable lesson thumbnails, responsive type and live reading control.
+   Kept last in the stylesheet chain to override historical page-specific nav variants. */
+#app.app{padding-bottom:calc(95px + env(safe-area-inset-bottom));}
+#app > nav.bottom{
+ position:fixed;inset:auto auto 0 50%;transform:translateX(-50%);
+ display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:stretch;
+ width:min(100%,540px);min-height:72px;z-index:45;
+ padding:7px 8px calc(7px + env(safe-area-inset-bottom));
+ border:1px solid #416751;border-bottom:0;
+ border-radius:18px 18px 0 0;
+ background:rgba(4,30,24,.97);
+ box-shadow:0 -9px 28px rgba(0,13,8,.4);
+ -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+}
+#app.wlnb-active > nav.bottom{width:min(100%,540px);}
+#app > nav.bottom button{
+ display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+ position:relative;min-width:0;min-height:56px;margin:0;padding:7px 2px 6px;
+ color:#c7d9ca;background:transparent;border:0;border-radius:11px;
+ line-height:1.2;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
+ transition:background .15s,color .15s;touch-action:manipulation;
+}
+#app > nav.bottom button .wl-nav-icon{
+ display:grid;place-items:center;flex:0 0 23px;width:28px;height:23px;
+ line-height:1;opacity:.88;
+}
+#app > nav.bottom button .wl-nav-icon svg{
+ display:block;flex:none;width:22px;height:22px;stroke:currentColor;stroke-width:1.8;
+}
+#app > nav.bottom button small{
+ display:block;font-family:inherit;font-weight:650;font-size:11px;
+ line-height:1.2;letter-spacing:.02em;color:inherit;
+}
+#app > nav.bottom button.active{
+ color:#f0ce85;background:rgba(190,150,78,.11);
+}
+#app > nav.bottom button.active .wl-nav-icon{opacity:1}
+#app > nav.bottom button.active::after{
+ content:"";position:absolute;bottom:2px;left:50%;transform:translateX(-50%);
+ width:25px;max-width:65%;height:2px;margin:0;border-radius:50px;
+ background:#e1b86e;box-shadow:none;
+}
+#app > nav.bottom button:focus-visible{outline:2px solid #f2d495;outline-offset:-2px;}
+@media(hover:hover){#app > nav.bottom button:not(.active):hover{color:#f1e5c8;background:rgba(185,203,167,.07)}}
+
+/* One coherent scale control on More and in lesson reader. */
+.wl-type-slider{display:grid;gap:9px;width:100%;min-width:0;}
+.wl-type-head{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.wl-type-head label{font-size:13px;font-weight:700;color:#f2ead9;}
+.wl-type-head output{font-size:14px;font-weight:800;color:#f2d08a;min-width:48px;text-align:right;font-variant-numeric:tabular-nums;}
+.wl-type-slider input[type="range"]{
+ display:block;appearance:none;-webkit-appearance:none;width:100%;height:32px;
+ margin:0;background:transparent;accent-color:#e9c57b;cursor:pointer;touch-action:pan-y;
+}
+.wl-type-slider input[type="range"]::-webkit-slider-runnable-track{height:7px;background:linear-gradient(90deg,#456a54,#d5b470);border-radius:99px;}
+.wl-type-slider input[type="range"]::-moz-range-track{height:7px;background:linear-gradient(90deg,#456a54,#d5b470);border-radius:99px;}
+.wl-type-slider input[type="range"]::-webkit-slider-thumb{
+ -webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;
+ border:3px solid #153829;background:#f3d292;box-shadow:0 0 0 1px #d7c79c,0 2px 7px #0008;
+ margin-top:-9px;
+}
+.wl-type-slider input[type="range"]::-moz-range-thumb{
+ width:20px;height:20px;border-radius:50%;border:3px solid #153829;
+ background:#f3d292;box-shadow:0 0 0 1px #d7c79c,0 2px 7px #0008;
+}
+.wl-type-slider input[type="range"]:focus-visible{outline:2px solid #e9cd8d;outline-offset:2px;}
+.wl-type-scale{display:flex;justify-content:space-between;gap:12px;color:#bdcfbf;font-size:11px;line-height:1.3;}
+.wl-reading-preview{
+ padding:14px;border:1px solid #4c7159;background:#0a3427;
+ border-radius:12px;line-height:1.65;color:#efeada;overflow-wrap:break-word;
+}
+.wm-panel .wl-font-help{font-size:12px;line-height:1.5;}
+.wm-font-reset{
+ align-self:start;border:1px solid #58775f;border-radius:9px;
+ padding:9px 13px;background:#113e2c;color:#f0dcac;font-weight:700;font-size:12px;
+}
+.wl-reader .wl-reader-type{
+ border:1px solid #496b53;border-radius:12px;background:#0b3528;
+ margin:10px 0 14px;overflow:hidden;
+}
+.wl-reader .wl-reader-type > summary{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;
+ padding:11px 13px;min-height:44px;cursor:pointer;list-style:none;
+ color:#e8e5d6;font-size:12px;font-weight:750;
+}
+.wl-reader .wl-reader-type > summary::-webkit-details-marker{display:none;}
+.wl-reader .wl-reader-type > summary strong{color:#f4cd7e;font-size:12px;white-space:nowrap;}
+.wl-reader .wl-reader-type .wl-type-slider{padding:4px 14px 14px;border-top:1px solid #345b46;}
+.wl-reader .wl-reader-type .wl-type-slider .wl-type-head{padding-top:9px;}
+.wl-reader .wl-reader-type .wl-type-head label{font-size:12px;}
+
+/* Apply selected reading size to ALL academic books, including older modules
+   that had hard-coded 13/14px exposition. Keep toolbar/quiz controls stable. */
+#app .wl-reader .wl-academic section[class*="-section"] > p,
+#app .wl-reader .wl-academic section[class*="-worked"] li,
+#app .wl-reader .wl-academic [class*="-exercises"] details > p,
+#app .wl-reader .wl-academic [class*="-assessment"] > p,
+#app .wl-reader .wl-academic [class*="-capstone"] p,
+#app .wl-reader .wl-academic .intro p,
+#app .wl-reader .wl-academic .book-paragraph,
+#app .wl-reader .wl-academic .wl-acad-explain{
+ font-size:var(--reader-size) !important;line-height:1.73 !important;
+ overflow-wrap:break-word;
+}
+#app .wl-reader .wl-academic > p:not(.wl-acad-foot):not(.wl-acad-kicker),
+#app .wl-reader .wl-academic .chapter-copy p{
+ font-size:var(--reader-size)!important;line-height:1.7!important;
+}
+#app .wl-reader .wl-academic :is(h1,h2,h3,summary,strong){
+ overflow-wrap:break-word;hyphens:auto;
+}
+
+/* Thumbnails: identical crops, stable aspect ratios, no off-screen text
+   or accidental image stretching when titles wrap on small phones. */
+#app .wl-learn .wl-lesson-row{
+ display:grid;grid-template-columns:68px minmax(0,1fr) minmax(24px,31px);
+ gap:10px;min-height:90px;height:auto;align-items:center;
+}
+#app .wl-learn .wl-row-art[class*="wl-thumb-"]{
+ display:block;flex:none;width:68px;height:68px;aspect-ratio:1/1;
+ border-radius:10px;overflow:hidden;background-repeat:no-repeat;
+}
+#app .wl-learn .wl-feature-art[class*="wl-thumb-"]{
+ display:block;flex:none;width:clamp(88px,23vw,120px);height:auto;aspect-ratio:4/3;
+ border-radius:10px;overflow:hidden;background-repeat:no-repeat;
+}
+#app .wl-learn :is(.wl-row-copy,.wl-feature-copy,.wl-topic-copy){
+ min-width:0;max-width:100%;
+}
+#app .wl-learn .wl-row-copy strong{
+ font-size:clamp(14px,3.7vw,17px);line-height:1.28;
+ white-space:normal;overflow-wrap:break-word;word-break:normal;hyphens:auto;
+}
+#app .wl-learn .wl-feature-copy strong{
+ line-height:1.23;white-space:normal;overflow-wrap:break-word;hyphens:auto;
+}
+#app .wl-learn .wl-row-copy small{
+ font-size:11px;line-height:1.36;letter-spacing:0;white-space:normal;
+ overflow-wrap:break-word;
+}
+#app .wl-learn .wl-row-copy > span:not(.wl-row-meter){
+ font-size:12px;line-height:1.42;white-space:normal;overflow-wrap:break-word;
+}
+#app .wl-learn .wl-feature-copy > span{
+ line-height:1.42;white-space:normal;overflow-wrap:break-word;
+}
+#app .wl-learn .wl-topic-copy strong{overflow-wrap:break-word;hyphens:auto;line-height:1.25;}
+#app .wl-learn .wl-topic-card{min-width:0;}
+/* Long chapter titles and the five reader tabs should never be clipped. */
+#app .wl-reader .wlr-hero,
+#app .wl-reader .wlr-hero-inner{height:auto;min-height:282px;}
+#app .wl-reader .wlr-hero h1{
+ font-size:clamp(25px,6.4vw,38px);line-height:1.12;
+ max-width:100%;overflow-wrap:break-word;hyphens:auto;text-wrap:balance;
+}
+#app .wl-reader .wlr-hero-copy,
+#app .wl-reader .wlr-masthead{min-width:0;}
+#app .wl-reader .wlr-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;}
+#app .wl-reader .wlr-tabs button{
+ min-width:0;padding:11px 2px;line-height:1.2;
+ font-size:clamp(10px,2.75vw,12px);white-space:normal;overflow-wrap:break-word;
+}
+#app .wl-reader :is(.article,.wlr-body,.book-sheet,.wl-academic){min-width:0;max-width:100%;}
+#app .wl-reader :is(.article h1,.article h2,.article h3){max-width:100%;overflow-wrap:break-word;hyphens:auto;}
+@media(max-width:390px){
+ #app > nav.bottom{padding-inline:4px;border-radius:14px 14px 0 0;}
+ #app > nav.bottom button{padding-inline:0;}
+ #app > nav.bottom button small{font-size:10.5px;letter-spacing:0;}
+ #app .wl-learn .wl-lesson-row{grid-template-columns:58px minmax(0,1fr) 24px;gap:8px;padding:8px;}
+ #app .wl-learn .wl-row-art[class*="wl-thumb-"]{width:58px;height:58px;}
+ #app .wl-learn .wl-feature-art[class*="wl-thumb-"]{width:90px;}
+ #app .wl-learn .wl-row-copy strong{font-size:14px;}
+ #app .wl-reader .wlr-tabs button{font-size:10px;}
+}
+@media(min-width:620px){
+ #app .wl-learn .wl-lesson-row{grid-template-columns:78px minmax(0,1fr) 36px;}
+ #app .wl-learn .wl-row-art[class*="wl-thumb-"]{width:78px;height:78px;}
+ #app .wl-learn .wl-feature-art[class*="wl-thumb-"]{width:120px;}
+}
+@media(prefers-reduced-motion:reduce){
+ #app > nav.bottom button{transition:none;}
+}
