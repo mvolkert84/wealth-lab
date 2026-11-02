@@ -1,0 +1,265 @@
+{
+  "id": "L11.S4",
+  "title": "Tax-Loss Harvesting and State Taxes",
+  "subtitle": "Legal loss recognition, wash-sale basis, federal–Connecticut differences and after-tax decision models",
+  "prerequisites": [
+    "L11.S1 return construction",
+    "L11.S2 marginal-rate and preferential-rate mechanics",
+    "L11.S3 cost basis, lots, holding periods and Schedule D",
+    "L10.S4 investment policy and liquidity limits"
+  ],
+  "objectives": [
+    "Apply short-term and long-term loss netting and carryforward limitations",
+    "Analyze the 61-day wash-sale window and adjusted replacement basis",
+    "Recognize IRA replacement purchases and cross-account compliance limitations",
+    "Build a conceptual federal-to-Connecticut adjusted-gross-income bridge",
+    "Compare harvesting benefits after current tax, eventual tax, transaction costs and tracking risk",
+    "Create a sourced, auditable investment-tax policy with tax-year versioning"
+  ],
+  "sections": [
+    {
+      "title": "Harvesting is a strategy to realize an actual loss, not a tax refund machine",
+      "body": [
+        "Tax-loss harvesting deliberately sells a declining taxable investment, generally to recognize a capital loss that may offset realized gains or limited ordinary income under applicable law. The economic investment loss is real before the sale; realizing it changes tax recognition, not the original market outcome. A tax benefit does not transform a bad investment result into profit. The investor must also think about market exposure after the sale and any possible repurchase restrictions.",
+        "Capital gains and losses must first be classified as short- and long-term and netted under Schedule D rules. A $5,000 short-term loss may offset gains subject to netting; if total capital losses exceed gains, the usual individual limit against other income is $3,000 per year, or $1,500 married filing separately, with eligible carryovers. If the only loss is $5,000 and no gains exist, claiming $5,000 against salary in that year would be wrong. The carryforward retains character under applicable federal rules.",
+        "Any 'savings' estimate must specify the offset rate. Offsetting $3,000 of ordinary taxable income at a stable 22% bracket could reduce regular federal tax by about $660, assuming no phaseouts. Offsetting $3,000 of long-term gains that would have been taxed at 15% has a simplified $450 tax impact. These effects depend on netting order and actual taxpayer facts. Do not apply a single 22% to every harvested loss."
+      ],
+      "worked": [
+        "Taxable investment unrealized loss −$5,000 becomes realized through sale.",
+        "With no other capital gains, a single filer generally uses up to $3,000 loss against ordinary income in that year.",
+        "The remaining eligible $2,000 may carry forward rather than vanish.",
+        "At a stable 22% ordinary marginal rate, the $3,000 deduction would model ~$660 federal income-tax reduction before other factors."
+      ],
+      "practice": [
+        [
+          "Does harvesting a $5,000 investment loss create $5,000 of tax savings?",
+          "No. The investor already suffered an economic loss. The resulting tax effect depends on gain offsets, ordinary-income deduction limits, rates and eventual future consequences."
+        ],
+        [
+          "Why might a loss carryforward not benefit the investor immediately?",
+          "The year's deductible amount against ordinary income is limited, and there may be insufficient capital gains to absorb the whole loss."
+        ]
+      ]
+    },
+    {
+      "title": "Wash sales: the rule and the cross-account time window",
+      "body": [
+        "The federal wash-sale rule generally disallows a loss from selling stock or securities if substantially identical stock or securities are acquired within 30 days before or 30 days after the loss disposition. The rule therefore considers a 61-calendar-day period centered on the sale day, not merely the next month's trades. Substantially identical is a legal facts-and-circumstances concept; two ETFs tracking similar indexes should not automatically be declared safe or unsafe without examining their actual exposures and legal identity.",
+        "Wash-sale rules can capture purchases made through another broker or an account of a spouse in relevant circumstances, and acquisition in an IRA or Roth IRA can be particularly harmful because the loss may be disallowed without a normal recovery in replacement basis. A broker's 1099-B wash-sale box may only detect wash trades within its own reporting perimeter. The taxpayer remains responsible for identifying disallowed losses even when reporting is incomplete.",
+        "Automatic dividend reinvestment is a common trap: purchasing fractional shares of the same fund inside the window can create a partial wash sale. Other pitfalls include employer equity purchases, options and preplanned recurring buys. A disciplined harvesting workflow records sale date, all relevant accounts, share quantities, replacement asset characteristics and possible repurchase schedules before the order is sent."
+      ],
+      "worked": [
+        "Sell tax lot at loss on November 10; inspect relevant purchases October 11 through December 10 inclusive as a teaching 61-day window.",
+        "An identical security bought November 20 can trigger a disallowance.",
+        "Buying replacement shares in a separately owned taxable brokerage account can still matter for the same taxpayer.",
+        "Check all accounts, including automatic reinvestment and spouse-related acquisitions where applicable."
+      ],
+      "practice": [
+        [
+          "Does waiting only 30 days after sale guarantee wash-sale compliance when the investor bought identical shares a week before sale?",
+          "No. The rule looks 30 days before as well as 30 days after the loss sale; earlier replacement purchases can cause disallowance."
+        ],
+        [
+          "Why can a broker's Form 1099-B fail to capture every wash sale?",
+          "Its reporting may not see IRA acquisitions, spouse trades or trades at another broker; taxpayer-wide review is required."
+        ]
+      ]
+    },
+    {
+      "title": "Disallowed losses and replacement basis mathematics",
+      "body": [
+        "A taxable-account wash sale often defers rather than permanently erases the economic loss. Suppose a lot with adjusted basis $10,000 is sold for $7,000, generating a $3,000 loss. If substantially identical replacement property is purchased within the rule's window for $7,500 and all of the original loss is disallowed, the replacement property's basis is generally increased by that $3,000 to $10,500. The original loss is not a current $3,000 tax deduction. Future disposition gain or loss is measured against the adjusted replacement basis, with applicable holding-period adjustments.",
+        "If the replacement property is later sold for $11,000 without another wash sale or special event, the simplified gain is $500, rather than $3,500 using original new purchase cost alone. The deferral moves tax consequences into the new lot. Partial replacement can require allocation rather than adding the entire disallowed loss to fewer shares. Work in units and tax lots, not just whole-account totals.",
+        "The IRA exception is important: when the replacement acquisition is in an IRA or Roth IRA, the disallowed loss generally cannot be restored by increasing that IRA's investment basis the way a regular taxable replacement lot is adjusted. The investor may permanently lose the current deduction. Education must strongly distinguish the standard taxable replacement case from retirement-account replacements."
+      ],
+      "worked": [
+        "Old lot basis $10,000, sales proceeds $7,000 ⇒ apparent capital loss $3,000.",
+        "Identical replacement within the window costs $7,500 in taxable account; entire loss disallowed.",
+        "Adjusted replacement basis = $7,500+$3,000=$10,500.",
+        "Later sale for $11,000 without another wash sale: $500 gain before other adjustments."
+      ],
+      "practice": [
+        [
+          "Why would reporting a $3,000 realized loss immediately be incorrect in the example?",
+          "Acquisition of substantially identical securities during the wash window disallows the current loss; the replacement basis adjustment defers it in the taxable-account case."
+        ],
+        [
+          "What is the danger of buying the replacement shares in a Roth IRA?",
+          "The loss may be disallowed without the ordinary taxable-account basis adjustment, potentially making the tax benefit permanently unavailable."
+        ]
+      ]
+    },
+    {
+      "title": "Harvesting value depends on future tax and portfolio costs",
+      "body": [
+        "Deferring tax has a time value, but a deferral is not automatically permanent tax avoidance. If a $3,000 capital loss offsets taxable long-term gain at 15% today, the immediate federal regular tax reduction can be $450. If the replacement position later realizes a corresponding extra $3,000 taxable gain and the rate is again 15%, the future tax can be $450. The benefit is the value of timing and any legitimate rate difference, reduced by transaction costs and market tracking error. If the security is never disposed of during life, estate basis rules may alter the future, but this is not guaranteed and must be evaluated carefully.",
+        "A strategy might also increase basis by an amount that changes future loss or gain, or require replacement with a non-identical fund whose returns differ. Selling an equity fund and remaining in cash solely to avoid wash sale may create opportunity cost larger than the expected tax benefit. Conversely, staying fully exposed to a near-identical fund can raise wash-sale uncertainty. The portfolio decision must satisfy risk management goals even without its tax argument.",
+        "A scenario model should compare same-security hold, sell and remain liquid, and lawful alternative exposure with a documented tracking-risk assumption. Include commissions, spreads, realized gain rates, income-tax phaseouts, carryforward usage and both federal and state components. The 'headline tax saved' is a gross modeled input, not the decision's final net present value."
+      ],
+      "worked": [
+        "Harvest loss $3,000 used against gain taxed at 15% ⇒ immediate tax effect $450.",
+        "If equivalent additional gain $3,000 is recognized in five years at 15%, future tax $450.",
+        "At a hypothetical 4% annual discount rate, five-year tax present value ≈ $450/(1.04^5) ≈ $369.87.",
+        "Timing benefit ≈ $80.13 before selling costs, tracking error and law/rate changes."
+      ],
+      "practice": [
+        [
+          "How can a fully deferred $450 tax saving be worth less than $450 in economic terms?",
+          "A corresponding future tax may still arise, so the benefit is primarily the present value of delaying payment and potentially changing rates, net of trading risk and costs."
+        ],
+        [
+          "Why do transaction costs belong in a tax-loss harvest analysis?",
+          "Spreads, fees and replacement exposure differences can reduce or exceed the present value of expected tax savings."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut taxes have a different starting point from federal taxable income",
+      "body": [
+        "Connecticut resident income-tax planning should begin with Connecticut adjusted gross income rather than simply importing federal taxable income or multiplying the federal liability by a fixed percentage. The state generally starts from federal AGI and applies Connecticut additions and subtractions; the state then uses its own personal exemption, tax computation and tax-credit/add-back structure. The federal standard deduction of $16,100 or $32,200 is not itself the Connecticut standard deduction, so using it twice misstates state liability.",
+        "Connecticut's 2026 withholding publication shows initial tax-rate schedules including a married-joint 2% band through $20,000 of the relevant calculation base, then a 4.5% band through $100,000, and higher bands thereafter. Crucially, the agency labels this an initial tax calculation; the final return can change through a personal credit, low-bracket phaseout add-back, and tax recapture. Using the initial schedule alone is an exercise in marginal mechanics, not a verified Form CT-1040 liability.",
+        "Consider a deliberately simplified MFJ state-tax calculation base of $90,000 after the applicable state-specific exemptions and adjustments. The initial state tax under that schedule is $400 plus 4.5% of the $70,000 above $20,000, or $3,550. Do not call $3,550 final state tax: apply the current official Connecticut tax calculation schedule and all relevant state credit and recapture rules before a real filing."
+      ],
+      "worked": [
+        "Assumed Connecticut MFJ Table B calculation base $90,000.",
+        "Initial tax $400+0.045×($90,000−$20,000)=$3,550.",
+        "Possible personal credits, 2% phaseout add-backs and recapture are deliberately not modeled.",
+        "2026 official state filing schedules should be checked when issued; withholding tables alone are not final annual return instructions."
+      ],
+      "practice": [
+        [
+          "Why is federal taxable income not a safe replacement for Connecticut adjusted gross income?",
+          "Connecticut generally begins with federal AGI modified for state law, then applies state-specific exemptions, credits and tax computation rules rather than simply copying federal taxable income."
+        ],
+        [
+          "What is the limitation of the $3,550 initial Table B calculation?",
+          "It excludes other required state calculations, such as personal credits, phaseout add-back, and recapture. It is not a final state tax amount."
+        ]
+      ]
+    },
+    {
+      "title": "State differences can reverse a preferred federal investment choice",
+      "body": [
+        "Federal and state laws do not always grant the same preferences. A federal long-term capital gain potentially taxed at 0% can still enter a state's income-tax system. Connecticut generally taxes capital gains through its regular individual income-tax structure, subject to state-specific adjustments and credits. Similarly, qualifying US Treasury obligation interest can have a distinct state tax treatment from bank deposits and municipal bonds, while some other-state municipal interest may receive different Connecticut treatment. Eligibility needs instrument-by-instrument verification rather than a blanket 'all bonds are tax-free' claim.",
+        "Residence also matters. A person moving between Connecticut and another state in a tax year may have part-year residency, source income and allocation questions. A taxable brokerage sale on December 29 versus January 2 could differ in tax year or resident status, but manipulation of nominal address without genuine domicile change is not lawful planning. A student should learn to identify the controlling facts and seek official state guidance.",
+        "A rigorous comparative model contains two tax bases, two sets of rate rules, any valid state modifications, and a combined after-tax cash-flow result. It should explicitly show the case where a federal 0% preferential gain incurs a positive state tax, as well as how both marginal rates and state credits can interact. Do not automatically add two marginal brackets without checking both tax bases."
+      ],
+      "worked": [
+        "Fictional eligible federal long-term gain $2,000 fits within a 0% federal capital-gain slice.",
+        "Federal regular tax on this isolated preferential gain can be $0 under stated stacking assumptions.",
+        "At an illustrative 4.5% Connecticut incremental rate with no credit/recapture effect, initial state tax effect ≈$90.",
+        "The 4.5% calculation is a limited sensitivity estimate, not a final CT-1040 result."
+      ],
+      "practice": [
+        [
+          "Why does a 0% federal long-term capital-gain result not always mean tax-free cash?",
+          "Federal preferential treatment does not force the state to exempt the gain. Connecticut's separate AGI and rate structure may impose state tax."
+        ],
+        [
+          "Why should moving across a state border be analyzed using domicile and residency evidence?",
+          "Residency, source-of-income rules and actual facts determine state jurisdiction; choosing an address on paper alone does not lawfully decide tax liability."
+        ]
+      ]
+    },
+    {
+      "title": "A documented decision policy is more useful than a tax trick",
+      "body": [
+        "Define a household tax-aware rebalancing policy before losses or taxable gains create emotional pressure. The policy should say which securities are eligible for loss review, the minimum economically meaningful unrealized loss, tax-lot selection protocols, the accounts checked for wash-sale conflicts, acceptable alternate holdings, and the deadline for checking official tax-year forms. It must also enforce investment-policy constraints: emergency cash and a home down payment are not speculative tax-harvesting reserves.",
+        "Tax-loss harvesting can be inappropriate when the sale undermines diversification, generates higher trading costs, creates wash-sale complexity or depends on future capital gains that may never exist. An investor in a very low tax bracket may derive little immediate benefit from offsetting a gain that would already be taxed at 0%, while potentially sacrificing a position that fits the long-term plan. Tax timing must be compared with investment risk, account access and future obligations.",
+        "A professional must never promise a strategy 'eliminates all taxes' without detailed lawful authority. Do not claim a trust, life insurance loan, or holding company automatically shelters personal income. Document assumptions, sources, warning triggers and referral to a CPA or qualified tax attorney where multiple states, estates, private entities, digital assets or large losses complicate the analysis."
+      ],
+      "worked": [
+        "Write the investment lot, expected deductible loss, offset category and withholding effect.",
+        "Screen 30 days before and after across brokerages, spouse and retirement accounts.",
+        "Estimate present-value tax benefit net of spreads, market mismatch and possible future taxable sale.",
+        "Record official tax-year sources for federal and state computation and review with a qualified professional where necessary."
+      ],
+      "practice": [
+        [
+          "What two components make harvesting a finance decision rather than a tax-only decision?",
+          "The after-tax economic benefit must be evaluated together with portfolio exposure, liquidity, tracking error, fees and risk constraints."
+        ],
+        [
+          "What is the core compliance lesson from trying to shelter investments in a trust?",
+          "Legal entity or title changes do not automatically eliminate federal or state income tax; applicable statutes, ownership and reporting rules must be established."
+        ]
+      ]
+    },
+    {
+      "title": "The cumulative federal and Connecticut household case",
+      "body": [
+        "A household in Vernon, Connecticut wants to protect a future home down payment while managing a diversified taxable account. The fictional brokerage contains $24,000 market value and a tax lot with $10,000 adjusted basis now worth $7,000. The family may be able to realize $3,000 capital loss, but the same ETF was purchased automatically through dividend reinvestment two weeks earlier. Before analyzing rates, the student must identify possible wash-sale treatment and whether the loss is partially or fully disallowed.",
+        "The family also has a hypothetical $12,000 dedicated future home fund and a $6,000 emergency reserve. Neither belongs in the taxable investment pool for harvesting. The family's expected taxable income, any net gains already recognized, carryforward balance, credits and state residency must be recorded before calculating a tax effect. Model three alternatives: sell in spite of the wash sale, stop reinvestment and wait for a compliant window before any trade, or maintain exposure and make no tax trade this year.",
+        "The final investment committee memo must defend a decision under an unfavorable return scenario, a $2,500 unexpected repair and changes in tax rates. It must acknowledge that the most valuable outcome may be to avoid a complicated strategy and preserve housing cash. A fully correct worksheet can conclude that no trade is appropriate."
+      ],
+      "worked": [
+        "Retirement/home obligations: $12,000 home plus $6,000 emergency cash, protected separately from brokerage.",
+        "Potential realized stock loss $10,000−$7,000=$3,000 before wash-sale analysis.",
+        "Identical automatic purchase two weeks before disposal can create a wash-sale conflict requiring share matching.",
+        "Demonstrate lawful options and explicitly calculate tax outcomes only after character, income, and disallowance are known."
+      ],
+      "practice": [
+        [
+          "Why is computing a $660 tax saving immediately from the $3,000 loss inappropriate?",
+          "A recent identical security purchase may disallow part or all of the loss, and actual offsets and applicable tax rates must first be determined."
+        ],
+        [
+          "What is the decisive portfolio constraint in this household example?",
+          "The protected home and emergency funds cannot be treated as discretionary trading capital; investment actions must preserve essential liquidity."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS Schedule D instructions: wash sales and netting",
+      "https://www.irs.gov/instructions/i1040sd"
+    ],
+    [
+      "IRS Publication 550: wash sales, holding periods and basis",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "IRS Form 8949 instructions: adjustments and wash-sale code W",
+      "https://www.irs.gov/instructions/i8949"
+    ],
+    [
+      "IRS Topic 409 capital gains and losses",
+      "https://www.irs.gov/taxtopics/tc409"
+    ],
+    [
+      "Connecticut DRS IP 2026(7) official withholding calculation schedule",
+      "https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-7.pdf"
+    ],
+    [
+      "Connecticut DRS tax information and estimated payments",
+      "https://portal.ct.gov/drs/individuals/resident-income-tax/tax-information"
+    ],
+    [
+      "Connecticut DRS official calculators and tax calculation schedules",
+      "https://portal.ct.gov/DRS/DRS-Forms/Current-Year-Forms/Calculators-and-Tables"
+    ],
+    [
+      "IRS 2026 federal tax brackets and capital-gain bands",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ]
+  ],
+  "assessment": {
+    "title": "Tax-loss, wash-sale and Connecticut committee case",
+    "prompt": "Prepare an investment-tax memorandum for a fictional Connecticut household with $12,000 dedicated home-closing cash, $6,000 emergency cash, and separately held taxable stocks. A lot with $10,000 adjusted basis trades at $7,000; an identical investment was automatically purchased 14 days earlier. Calculate the economic loss, explain whether it is immediately deductible and what additional tax-lot quantities are required. Analyze a distinct clean-sale example: old lot basis $10,000, proceeds $7,000, identical taxable replacement bought for $7,500 within the window; determine the fully disallowed loss, adjusted replacement basis and later gain if disposed of for $11,000 with no further wash sale. Calculate the initial 2026 Connecticut MFJ Table B tax at a stipulated $90,000 state calculation base, explain why it is not final tax, and evaluate timing value of deferring $450 taxes five years at 4%. Submit a one-page trading recommendation with sources.",
+    "rubric": [
+      "Loss recognition, capital-loss limits and tax character: 15 points",
+      "Wash-sale window, replacement matching and IRA risks: 25 points",
+      "Replacement basis and future disposition mathematics: 20 points",
+      "Connecticut computation and correct limitations: 20 points",
+      "Present-value analysis, protected liquidity and ethical reasoning: 20 points"
+    ],
+    "answerKey": [
+      "Potential realized economic loss $3,000. Purchase 14 days earlier may cause wash sale; quantify actual overlapping replacement shares to determine disallowance.",
+      "Under fully matching taxable replacement example, $3,000 loss is disallowed currently; replacement basis = $10,500.",
+      "Later sale for $11,000 yields $500 gain assuming no further special events.",
+      "CT initial Table B: $400+4.5%×$70,000=$3,550, before personal credit, low-rate addback, recapture and other final adjustments.",
+      "PV of $450 due in five years at 4% is about $369.87; gross timing benefit approximately $80.13 before transaction and tracking costs."
+    ]
+  }
+}
