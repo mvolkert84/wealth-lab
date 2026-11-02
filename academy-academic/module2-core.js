@@ -104,6 +104,8 @@ document.addEventListener("click",event=>{
  const button=event.target?.closest?.("[data-m2-check]");
  if(button){const root=button.closest(".wl-m2-lab");if(root)check(root);}
 });
+window.WealthLabAcademicM2Calculate=calculate;
+window.WealthLabAcademicM2ValidateInputs=valid;
 window.WealthLabAcademicM2Markup=chapterMarkup;
 window.WealthLabAcademicM2Init=function(){for(const el of document.querySelectorAll(".wl-m2-lab"))update(el);};
 })();
