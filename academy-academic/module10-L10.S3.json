@@ -1,0 +1,240 @@
+{
+  "id": "L10.S3",
+  "title": "Rebalancing and Costs",
+  "subtitle": "Portfolio drift, trade sizing, cash-flow corrections, taxes, fees and execution discipline",
+  "prerequisites": [
+    "L10.S1 strategic target allocation and buckets",
+    "L10.S2 portfolio weights and risk concentration",
+    "L6.S1 tax basis and capital gains"
+  ],
+  "objectives": [
+    "Compute current allocation drift and target dollar holdings",
+    "Calculate full rebalancing trades without confusing percentage points",
+    "Use contributions before selling when appropriate",
+    "Compare threshold and calendar triggers without promising returns",
+    "Analyze taxable-gain realization and tax-lot evidence",
+    "Estimate turnover, fund operating costs and bid-ask spreads",
+    "Document trade execution, wash sale and account restriction checks"
+  ],
+  "sections": [
+    {
+      "title": "Allocation drift turns successful securities into new concentrations",
+      "body": [
+        "Portfolio weights move when component prices earn different returns or when deposits and withdrawals are uneven. A stock/bond mix initially chosen for suitable risk can become stock-heavy after a sustained equity rally, leaving the owner exposed to larger drawdowns just when a future expense is approaching. Rebalancing returns actual holdings toward policy target percentages; it is risk-control and implementation, not a demonstrated method for reliably raising returns in every market regime.",
+        "Consider a starting $10,000 portfolio with a 60% stock and 40% bond target. Later stock market value is $8,000 and bonds are $4,000, so portfolio value is $12,000. Stock weight is 8,000/12,000=66.6667%, a 6.6667-percentage-point drift above the 60% target. The target stock value on current capital is .60×$12,000=$7,200, so a full rebalance sells $800 of stocks and uses proceeds to buy $800 in bonds, before taxes, fees and price changes.",
+        "The difference between percentage change and percentage-point drift matters. The stock share moved from 60% to 66.67%, a 6.67-point increase, or about 11.11% relative increase in stock portfolio weight. A policy with a 5-percentage-point absolute drift trigger would be activated by a 66.67% stock share; a policy based on relative 5% of target uses a different boundary. The terms must be written precisely before looking at market results.",
+        "Real accounts may include international holdings, cash and restricted securities. The sum of every asset-class target must equal 100% unless the policy intentionally models leverage or shorts. Corporate actions and unsettled trades can change weights. Use same-day mark-to-market values and consistent tax treatment so a seemingly balanced screenshot is not an arithmetic artifact."
+      ],
+      "worked": [
+        "Later stocks $8,000; bonds $4,000 ⇒ portfolio $12,000.",
+        "Stock current weight $8,000/$12,000=66.6667%.",
+        "60% stock target ×$12,000=$7,200; target bonds $4,800.",
+        "Trade $800 stock sale and $800 bond purchase to restore 60/40 before costs.",
+        "Absolute drift 6.6667 percentage points from the 60% stock target."
+      ],
+      "practice": [
+        [
+          "Why does an 800-dollar stock sale restore a 60/40 allocation in the example?",
+          "After the sale stocks equal $7,200, bonds receive $800 and equal $4,800, giving precisely 60% and 40% of the unchanged $12,000 total before frictions."
+        ],
+        [
+          "Why should a rebalancing rule specify whether its trigger uses percentage points or relative percent drift?",
+          "They produce different action thresholds, so ambiguous wording can cause inconsistent and costly trades when market weights move."
+        ]
+      ]
+    },
+    {
+      "title": "Rebalance with incoming contributions before selling appreciated positions",
+      "body": [
+        "New cash deposits can shift portfolio weights without forcing existing gains to be realized. When one asset category is overweight and another underweight, directing contributions to the underweight category may gradually restore the planned exposure while preserving flexibility. The method is not always fast enough to meet a large drift threshold, and it can leave risk elevated during the transition. A disciplined policy should specify when contribution-only correction is permitted and when selling becomes necessary.",
+        "Return to the $8,000 stocks/$4,000 bonds case targeting 60/40. If the investor adds $1,333.33 of entirely new cash to bonds, portfolio value becomes $13,333.33 and stocks become approximately 60% of total, while bond value becomes $5,333.33. The required cash can be derived by solving $8,000/(12,000+x)=.60, so x=8,000/.60−12,000≈$1,333.33. That is much more than an $800 reallocation trade, because adding only to bonds increases the portfolio denominator rather than moving existing dollars.",
+        "If the household contributes only $250 each month, it would require more than five unchanged months to accumulate $1,333.33 for this specific contribution-only correction, assuming no price change. A market move can alter the needed contribution before completion. The investor should not treat future contributions as current cash or assume wages remain uninterrupted during economic stress. When policy limits are breached, the trade-off is current concentration versus avoiding taxable sales.",
+        "Compare contribution-only rebalancing with using dividends and interest distributions, tax-advantaged account trades, or selective sales of appreciated positions. Asset-location and tax-lot choices matter, but investment constraints should remain primary. Rebalancing a retirement account may have different current tax effects than realizing a gain in a taxable brokerage account; verify the account before executing."
+      ],
+      "worked": [
+        "Stocks $8,000, bonds $4,000, target stock share 60%.",
+        "Contribution x to bonds solves $8,000/($12,000+x)=.60.",
+        "Required new bond purchase from external cash x≈$1,333.33.",
+        "At $250 per month, at least six contributions are needed if no markets move.",
+        "A sale of $800 stock reallocates faster but may have tax and transaction implications."
+      ],
+      "practice": [
+        [
+          "Why does adding $800 to bonds not completely correct the stock weight in the example?",
+          "Total capital becomes $12,800 and stocks remain $8,000 or 62.5%; contribution-only correction requires about $1,333.33 to reach 60%."
+        ],
+        [
+          "What is the main trade-off when waiting for future contributions to correct drift?",
+          "It can reduce immediate realized taxes and trading but leaves the portfolio temporarily exposed to weights beyond its preferred target."
+        ]
+      ]
+    },
+    {
+      "title": "Rebalance on a calendar, a threshold or a life event",
+      "body": [
+        "A calendar rule might review allocation each six or twelve months regardless of whether drift is small. A threshold rule triggers a review after an absolute or relative deviation from targets becomes sufficiently large. A combination rule uses scheduled reviews with exceptions for severe drift or changed obligations. The SEC notes that rebalancing can be done by selling overweight assets, directing new purchases toward underweight assets or altering ongoing deposits. It also warns that fees and taxes matter and that frequent rebalancing is generally not necessary.",
+        "Consider a target 60% stocks with allowable band ±5 percentage points. Actual weight at 64% is inside the 55%–65% band; 66.7% is outside and triggers an action review. The trigger should not automatically force a market order without first checking liquidity, taxes, trading restrictions and actual cash needs. The investor might rebalance to exact 60% or to a nearer allowable boundary under a documented method, and those choices produce different turnover.",
+        "A life event can outweigh the calendar. A planned home purchase advances from three years to six months, or a worker loses a job and needs cash. Those facts change permissible risk capacity and can justify updating strategic allocation rather than merely restoring an outdated target. Conversely, a news headline predicting recession is not itself a personal-liability change. A clear policy distinguishes external changes in objectives from attempts to predict daily price action.",
+        "An analytical comparison of annual versus drift-trigger rules should include all observed dates, executed trades, taxes, costs and whether risk constraints were met. Backtests are especially sensitive to which asset returns and price histories were used. An author who chooses thresholds after observing history risks overfitting; define candidate strategies before measuring their results."
+      ],
+      "worked": [
+        "Stock target 60% with ±5 percentage-point policy band ⇒ acceptable 55% through 65%.",
+        "Observed 64% remains inside the band; observed 66.7% breaches it.",
+        "At current portfolio $12,000, moving to 60% requires $800 sale as modeled.",
+        "Moving only to 65% would require stock holdings $7,800, an $200 sale before frictions.",
+        "Changing home timing requires review of target policy itself, not merely mechanical rebalancing."
+      ],
+      "practice": [
+        [
+          "Why is a six-month scheduled review not a commitment to buy or sell securities every six months?",
+          "Review identifies actual drift, life changes and constraints; a suitable portfolio may remain within policy ranges without any trade."
+        ],
+        [
+          "Why should investors avoid backtesting dozens of threshold rules and selecting only the historically best one?",
+          "Choosing a rule after seeing outcomes can overfit noise and overstate future performance, particularly after fees, tax and changing market conditions."
+        ]
+      ]
+    },
+    {
+      "title": "Capital-gain realization, tax lots and after-tax trade decisions",
+      "body": [
+        "Rebalancing a taxable brokerage account can realize gains or losses when a security is sold. The economic gain for a specifically identified tax lot generally depends on proceeds, properly adjusted tax basis and applicable costs. Holding period influences whether tax treatment is short or long term under federal rules; Connecticut income tax and other federal provisions may also matter. A gross trade that looks sensible before taxes can be costly if it realizes substantial appreciated shares unnecessarily.",
+        "Suppose a taxpayer sells $800 of stock from an eligible identified lot whose allocable adjusted cost basis is $500. Gross realized gain is $300 before selling costs. At a fictional flat 15% federal long-term capital-gains rate, conditional federal tax on that gain would be $45. That is an example, not an assertion that this particular person qualifies for 15% or has no other tax. Another lot with adjusted basis $750 may result in only $50 gross realized gain, assuming basis and lot identification are lawful and supported.",
+        "Loss harvesting can offset gains subject to statutory rules and carryovers, but a wash sale may disallow or defer the deduction when substantially identical securities are acquired within the relevant period. Tax treatment of transactions involving spouses and IRA arrangements can also complicate the outcome; confirm with current IRS instructions. Selling solely to create a paper loss without considering economic exposure, spread and the replacement instrument can fail either the risk or tax objective.",
+        "Implement tax-aware rebalancing by checking account type, current unrealized gain or loss by lot, holding period, dividend reinvestment activity, buy/sell settlement and trading costs. Never fabricate basis or assume all index ETFs are legally non-identical for wash-sale purposes merely because tickers differ. The operational goal is maintaining portfolio risk while avoiding preventable taxes and respecting the evidence on the actual statement."
+      ],
+      "worked": [
+        "Sale proceeds $800, allocable basis $500 ⇒ hypothetical gain $300.",
+        "Illustrative eligible long-term tax rate 15% ⇒ conditional federal tax $45.",
+        "Another supported lot with basis $750 would produce $50 gain under same $800 proceeds.",
+        "Trading fees and applicable state taxes could change net amount.",
+        "Use actual lot records, tax classification and wash-sale rules rather than defaults."
+      ],
+      "practice": [
+        [
+          "Why should a taxable rebalancing calculation include specific acquisition lots rather than simply multiplying the sale by a flat tax rate?",
+          "Only the recognized taxable gain or loss, computed using lawful adjusted basis and holding period, drives gains treatment, not all sale proceeds."
+        ],
+        [
+          "Why can immediately repurchasing a substantially identical security after harvesting a loss defeat an expected tax benefit?",
+          "Wash-sale rules can disallow or defer certain loss deductions, so the transaction timing and replacement security must be documented."
+        ]
+      ]
+    },
+    {
+      "title": "Transaction frictions: expense ratios, spreads, turnover and advisory fees",
+      "body": [
+        "Funds and advisory arrangements can contain ongoing expense ratios, management fees, trading bid-ask spreads and sometimes account or commission charges. A fund expense ratio reduces investment performance through recurring fund operations, while bid-ask spread and commissions affect execution when trading. Taxable capital-gain realization adds another cost category. Investor disclosures often present some of these costs differently, so adding identical fees from a net performance number can mistakenly double count them.",
+        "Suppose a hypothetical portfolio earns 6% annual gross before a 0.25% fund operating cost and a 0.75% advisory management fee, both approximated as a simple 1% combined annual drag. Starting $40,000 over twenty years at smooth illustrative 6% gross would become $40,000×1.06^20, while a rough 5% net return would become $40,000×1.05^20. The future-value difference is substantial, and the values are simplified models rather than actual market forecasts or a precise daily fee accounting simulation.",
+        "Rebalancing trades can involve spreads. If the portfolio sells $800 of an ETF and buys $800 of a different ETF with a 0.20% effective total round-trip execution burden under an illustrative assumption, direct trading cost is about $1.60, distinct from any taxes. Real spreads vary by security, trade size, volatility and the market session; a higher-cost illiquid instrument may impose a much greater impact than that toy number.",
+        "A risk policy should state acceptable total ongoing fees, turnover frequency, security liquidity thresholds and how actual after-tax returns are reported. Low cost improves expected net wealth conditional on comparable exposure but does not make volatile securities safe for dated obligations. A good rebalancing process restores a risk target at reasonable cost rather than treating higher trading activity as evidence of professional attention."
+      ],
+      "worked": [
+        "Portfolio $40,000, hypothetical gross rate 6%, approximate annual combined fees 1% ⇒ net assumed 5%.",
+        "Twenty-year gross value $40,000×1.06^20; simple net value $40,000×1.05^20.",
+        "First-year 1% simplified fee on $40,000 corresponds to $400 at unchanged base.",
+        "Executed trade notional $800 with hypothetical 0.20% execution cost ⇒ $1.60 cost.",
+        "Operating fees, capital-gain tax and trading spreads are distinct categories."
+      ],
+      "practice": [
+        [
+          "Why is frequent rebalancing not automatically beneficial even if it always restores target percentages?",
+          "Each trade can generate spreads, fees and taxable gains, while market movement can cause immediate new drift; the process must justify risk benefit relative to costs."
+        ],
+        [
+          "What is the difference between a recurring fund expense ratio and an ETF bid-ask spread?",
+          "Ongoing fund expenses are reflected through fund performance over time, while the bid-ask spread is a trading-price friction incurred when buying or selling."
+        ]
+      ]
+    },
+    {
+      "title": "Rebalancing under stress, with withdrawal and tax constraints",
+      "body": [
+        "Investment policy rules must operate when markets and household cash flow behave badly. Rebalancing an underweight stock position during a severe drawdown can be appropriate for a long-horizon investor with intact cash reserves, but reckless when unemployment has created immediate spending needs. A mechanical system should be subordinate to a liquidity floor and liability deadlines. The investor should not sell protected home funds or use margin borrowing simply to reach a target percentage.",
+        "Suppose a $20,000 retirement portfolio begins at 60/40: $12,000 stocks and $8,000 bonds. Stocks fall 30%, bonds rise 5%, resulting in $8,400 stocks and $8,400 bonds, or 50/50 on $16,800. Returning to 60/40 would require target stock $10,080 and bonds $6,720, so the investor buys $1,680 stocks using bond sales, before fees. That may be suitable if the long-horizon policy and outside cash reserves remain valid, but it meaningfully changes near-term exposures.",
+        "Now impose an income shock and a need to withdraw $3,000 from the same account within a month. The investment committee should first fund the legally and financially required withdrawal, quantify after-tax costs, and then recalculate the target based on remaining assets and revised risk capacity. Selling $1,680 bonds to buy stocks while separately borrowing $3,000 at expensive credit-card rates could be an economically incoherent sequence. Risk capacity has changed, so restoring a stale target is not necessarily appropriate.",
+        "A robust plan records cash needs, allowable tax lots, rebalancing thresholds, maximum transaction expenses, no-margin rule and the authority to suspend trading when obligations cannot be covered. Consider how orders execute in illiquid conditions and whether settlement dates allow payments. Analytical sophistication is judged by maintaining a workable household plan through shocks, not by automatic adherence to a formula."
+      ],
+      "worked": [
+        "Original stocks $12,000, bonds $8,000 in $20,000 retirement account.",
+        "Stock shock −30% ⇒ $8,400; bond return +5% ⇒ $8,400; total $16,800.",
+        "Target stock 60%×$16,800=$10,080; bond target $6,720.",
+        "Full rebalance buys $1,680 stocks funded by $1,680 bond sales before fees.",
+        "A near-term withdrawal requirement should be considered before trading to meet an old target."
+      ],
+      "practice": [
+        [
+          "Why might a 1,680-dollar stock purchase be correct under one household scenario and wrong under another?",
+          "The strategic mix may remain appropriate for well-funded long-horizon capital, but new income loss or near-term withdrawals can reduce the household's financial ability to take that risk."
+        ],
+        [
+          "What is the first step before rebalancing when an investor must withdraw 3,000 dollars for a required bill?",
+          "Reassess accessible cash, taxes, settlement and whether the original allocation and risk capacity still apply after the necessary withdrawal."
+        ]
+      ]
+    },
+    {
+      "title": "Operational rebalancing memorandum and decision audit",
+      "body": [
+        "The final rebalancing deliverable should include market values by asset class, weights and targets, permissible bands, the dated reason for action and trade calculations. It should identify whether a contribution-only solution can restore weights, or whether selling existing positions is necessary. Taxable accounts require a lot-level gains/losses schedule, while tax-advantaged accounts require confirmation of permitted account transactions and withdrawal restrictions. Every cost assumption belongs in the record.",
+        "Analyze three candidate plans for the $8,000 stock/$4,000 bond portfolio: no trade while weights remain 66.7/33.3, full rebalance with $800 stock sale/bond purchase, or contribution-only correction with approximately $1,333 of fresh money. Compare post-action weights, taxes, cost, need for cash and continued risk exposure. A single answer cannot be correct without specifying whether the household has free cash, a tax-sensitive account and an absolute 5-point drift policy.",
+        "Include a test against policy breaches. If a single issuer grows above the maximum 10% holding limit or total equities pass an allowed 65% ceiling, how quickly can the exposure be reduced without violating an account restriction or a home cash floor? A committee might sell only enough to return inside the band, or fully reset, but it must document the method. It should not change the policy threshold after observing which trade would have worked best.",
+        "The academically useful product is a reusable decision log, not merely a correct number. The log captures date, assets, trades, realized gains, total expenses, risk before/after and expected evidence for the next review. It provides continuity through household changes and prevents a market rally or downturn from rewriting the family's objectives."
+      ],
+      "worked": [
+        "Existing total $12,000; stocks $8,000/12,000=66.667%.",
+        "Option A no trade retains risk above a 65% maximum under a fictional policy.",
+        "Option B $800 stock sale plus $800 bond purchase fully restores 60/40.",
+        "Option C new $1,333.33 entirely to bonds approaches 60/40 without an existing sale.",
+        "After-tax costs and availability of new cash determine which feasible plan is superior."
+      ],
+      "practice": [
+        [
+          "Why should an investment committee keep a dated record of each rebalancing decision?",
+          "It shows whether the trade followed predefined policy and real household constraints, and permits later evaluation without hindsight or selective rewriting."
+        ],
+        [
+          "Why can a contribution-only plan fail to be feasible even though its algebra reaches the target weights?",
+          "The required external cash may exceed affordable savings, arrive too late or compete with near-term liabilities, so mathematical feasibility is not household feasibility."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Investor.gov Allocation, Diversification and Rebalancing",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "Investor.gov Beginners Guide to Allocation",
+      "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset"
+    ],
+    [
+      "IRS Publication 550 Investment Income and Expenses",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "IRS Publication 551 Basis of Assets",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "Investor.gov Fund Expenses",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds/mutual-fund-fees-and-expenses"
+    ],
+    [
+      "CFA 2026 Basics of Portfolio Planning",
+      "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/basics-of-portfolio-planning-and-construction"
+    ]
+  ],
+  "assessment": {
+    "title": "Tax-aware rebalancing and risk capacity board case",
+    "prompt": "Given stocks $8,000 and bonds $4,000 after an original 60/40 allocation, compute weights and a full-trade rebalance, plus the cash contribution required to restore stock target without selling. Compare 5 percentage-point drift trigger, taxable sale proceeds $800 with basis $500, illustrative 15% eligible tax, and a separate fund fee scenario. Then stress $20,000 retirement account stocks −30%, bonds +5%, calculate 60/40 rebalancing trades and assess how an immediate $3,000 expense changes suitability.",
+    "rubric": [
+      "Weights and exact trade sizing (25%)",
+      "Contributions and policy threshold design (20%)",
+      "Tax, costs and account restrictions (25%)",
+      "Stress-case revised risk capacity (20%)",
+      "Auditable decision log and sources (10%)"
+    ]
+  }
+}
