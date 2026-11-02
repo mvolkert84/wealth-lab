@@ -1,0 +1,274 @@
+{
+  "id": "L14.S4",
+  "title": "Selling, Exchanges and Property Taxes",
+  "subtitle": "Rental basis, 27.5-year building depreciation, passive losses, 1031 exchange timing, capital gains and after-tax exit decisions",
+  "prerequisites": [
+    "L11.S3 adjusted basis and capital gains",
+    "L11.S4 tax loss limitations and state taxes",
+    "L14.S1 cash versus taxable income",
+    "L14.S2 valuation and loan equity",
+    "L14.S3 repairs versus improvements"
+  ],
+  "objectives": [
+    "Compute separated land and building depreciation with documented placed-in-service dates",
+    "Distinguish federal Schedule E taxable income from rental cash flow",
+    "Classify rental repairs, capitalized improvements and basis reductions",
+    "Apply passive-loss special allowance thresholds and other eligibility caveats",
+    "Compute pre-tax sale proceeds and adjusted-basis gain independently",
+    "Explain unrecaptured Section 1250 gain versus ordinary Section 1250 recapture",
+    "Evaluate strict 1031 exchange windows, intermediary, boot, and basis carryover",
+    "Integrate municipal conveyance costs, financing, capital gains and estate planning into hold/sell decision"
+  ],
+  "sections": [
+    {
+      "title": "Cash proceeds and recognized tax gain are different ledgers",
+      "body": [
+        "A rental sale has at least three distinct questions: how much cash the owner receives after mortgage payoff and transaction costs, how much gain or loss is recognized for federal and state income tax, and what economic return results on the original and subsequent capital investments. These may differ drastically. Debt payoff reduces sale cash but is generally not a reduction in the seller's amount realized for computing capital gain.",
+        "Suppose a rental sells for $300,000, with $18,000 of selling costs and $170,000 loan payoff. Before taxes and other liens the cash proceeds are $112,000. If adjusted tax basis were $190,000, simplified gain could be $300,000−$18,000−$190,000=$92,000. The $112,000 cash and $92,000 gain are not interchangeable: one is a financing/closing result, the other is a tax-basis result.",
+        "A property's owner should gather original closing statement, land/building allocation, capital improvements, allowed or allowable depreciation, partial dispositions, refinancing records, selling expenses and prior suspended losses. Sale amount alone cannot prove taxable gain. Do not promise a 'tax-free sale' or assume all mortgage proceeds represent profit."
+      ],
+      "worked": [
+        "Sale price $300,000−selling costs $18,000−loan payoff $170,000=$112,000 cash before tax.",
+        "Tax adjusted basis stipulated $190,000.",
+        "Amount realized $282,000, gain $282,000−$190,000=$92,000.",
+        "The $170,000 debt payoff affects cash, generally not amount realized net of selling costs."
+      ],
+      "practice": [
+        [
+          "Why is sale cash not identical to taxable gain?",
+          "Cash subtracts loan payoff; taxable gain uses amount realized less adjusted tax basis, incorporating depreciation and qualifying capital additions."
+        ],
+        [
+          "Does a $170,000 outstanding mortgage automatically reduce gain on sale by $170,000?",
+          "No. Paying the secured loan reduces investor net cash but is generally not a deduction in the gain calculation."
+        ]
+      ]
+    },
+    {
+      "title": "Land is not depreciable; residential rental building generally uses 27.5 years",
+      "body": [
+        "Federal tax generally permits depreciation of the qualifying residential rental building, not the underlying land. For many US residential rentals placed into service under normal General Depreciation System rules, the building is depreciated over 27.5 years using the straight-line method and a mid-month convention. First and last tax years are prorated under the applicable tables; simply dividing by 27.5 is a full-year approximation, not necessarily the exact first-year deduction.",
+        "Suppose purchase price is $250,000 with defensible land allocation $50,000 and eligible depreciable building basis $200,000. Illustrative full-year building depreciation is $200,000/27.5≈$7,272.73. The date available for rent—not the date of first rental deposit—can determine placed-in-service date. Properly capitalized improvements may begin separate depreciation schedules under their own recovery treatment.",
+        "Property converted from personal to rental use has special basis rules involving adjusted basis and fair market value at conversion. An investor may not depreciate an arbitrary high advertised building value merely because nearby sales rose. Depreciation allowed or allowable generally reduces adjusted basis and raises recognized gain on later sale; refusing to claim a deduction does not necessarily preserve basis."
+      ],
+      "worked": [
+        "Purchase $250k; assumed land $50k, building $200k.",
+        "Land full-year depreciation $0; building full-year straight-line approximation $200k/27.5=$7,272.73.",
+        "Five full-year equivalent years reduce adjusted basis by ~$36,363.64 before improvements and other adjustments.",
+        "Actual first-year mid-month amount depends on placed-in-service month and IRS tables."
+      ],
+      "practice": [
+        [
+          "Why can a landlord not claim 27.5-year tax depreciation for land?",
+          "Land generally does not wear out on a determinable schedule for federal depreciation purposes; building basis is separately allocated."
+        ],
+        [
+          "Does skipping eligible depreciation automatically prevent a reduction in basis at sale?",
+          "No. Depreciation allowed or allowable must be considered under applicable tax rules, so not claiming it can still cause basis/tax issues."
+        ]
+      ]
+    },
+    {
+      "title": "Schedule E and passive losses: a deduction is not a cash subsidy",
+      "body": [
+        "Taxable rental profit generally starts from rental income and allowable deductions such as mortgage interest, operating expenses and depreciation, subject to recordkeeping and limitations. Mortgage principal is not an ordinary tax deduction, although it reduces cash. A positive cash result can coexist with a reported tax loss from noncash depreciation. This does not mean the government sends an automatic refund equal to the modeled loss.",
+        "Rental activities are generally passive under federal Section 469 rules unless an exception applies. The special allowance for active participation can allow up to $25,000 of qualifying rental loss against nonpassive income for eligible individual filers, but it phases out over modified AGI $100,000 to $150,000 for many single and married-joint taxpayers; special married-filing-separately limitations and other restrictions apply. A real estate professional must satisfy separate legal tests, not merely describe themselves as an investor.",
+        "Suppose qualifying active participant has rental loss $12,000 and correctly computed MAGI $120,000. Simplified special allowance ceiling = $25,000−0.5×($120,000−$100,000)=$15,000, potentially enough for the $12,000 loss subject to all other rules. At MAGI $150,000 the same special allowance ordinarily becomes zero, so an unallowed passive loss might carry forward rather than reduce wages that year."
+      ],
+      "worked": [
+        "Hypothetical MAGI $120,000 in an eligible actively participating rental situation.",
+        "Special allowance ceiling $25,000−0.5×$20,000=$15,000.",
+        "Qualifying $12,000 rental loss may fit inside that allowance if all other eligibility requirements hold.",
+        "At $150,000 MAGI, simplified general active-participation allowance $0 before other exceptions."
+      ],
+      "practice": [
+        [
+          "Does a $12,000 rental paper loss always offset $12,000 of W-2 wages?",
+          "No. Passive-activity loss rules, active participation, MAGI phaseout, at-risk limits and other exceptions determine current deductibility."
+        ],
+        [
+          "Why is real-estate-professional status not established by simply owning several rentals?",
+          "It requires specific statutory service-hour and material-participation requirements; labels and property count alone are insufficient."
+        ]
+      ]
+    },
+    {
+      "title": "Repairs, improvements and building basis recordkeeping",
+      "body": [
+        "Routine maintenance often creates a current eligible rental deduction if tax rules permit, while major betterments, restorations and adaptations generally must be capitalized and depreciated over an appropriate period. Federal tangible-property regulations contain safe harbors and facts-sensitive tests; a roof replacement, new HVAC or significant addition is not automatically the same as a deductible repair. The accounting choice influences current taxable income and future adjusted tax basis.",
+        "Suppose property originally cost $250,000 including $50,000 land and owners add a qualifying $20,000 building improvement. Before accumulated depreciation, total adjusted basis might become $270,000, while land remains $50,000 and the building/improvement basis comprises the rest. Later, accumulated depreciation reduces recognized basis. An operating spreadsheet might treat the $20,000 as a capital cash outflow in the current year, even though tax expense is spread over years.",
+        "Keep dated invoices, work orders, before/after photographs and consistent cost allocation. Estimating future maintenance reserves is economic prudence, not the same as deducting a reserve contribution on Schedule E. Avoid assuming moving money from checking to a 'roof reserve' creates a tax deduction; the tax event generally depends on actual qualifying expense and capitalization rules."
+      ],
+      "worked": [
+        "Purchase adjusted initial basis $250,000, qualifying improvement capitalized $20,000.",
+        "Before depreciation, adjusted basis $270,000 under simplifying facts.",
+        "After $36,363.64 total allowed/allowable depreciation, illustrative basis $233,636.36.",
+        "Depositing $5,000 into a replacement reserve is normally a bank transfer, not a $5,000 federal tax deduction."
+      ],
+      "practice": [
+        [
+          "Why does a capital-improvement fund transfer not automatically reduce federal taxable rental income?",
+          "Saving cash into a reserve does not itself satisfy tax rules for deducting an expense or depreciating a placed-in-service capital asset."
+        ],
+        [
+          "How can a capital improvement affect taxable gain many years later?",
+          "Capitalized eligible cost increases basis, while depreciation then reduces basis; net adjusted basis changes gain at disposition."
+        ]
+      ]
+    },
+    {
+      "title": "Depreciation and unrecaptured section 1250 gain",
+      "body": [
+        "Real property depreciation usually reduces adjusted basis. On sale at a gain, the portion of gain attributable to prior depreciation can enter unrecaptured Section 1250 gain calculations, potentially subject to a maximum federal rate of 25%, with actual taxation dependent on the owner's marginal rates and other factors. This is not a promise that every depreciation dollar is automatically taxed at exactly 25%, and it is not necessarily ordinary Section 1250 recapture under special accelerated-depreciation rules.",
+        "For a simplified rental with total economic recognized gain $92,000 and prior straight-line building depreciation $30,000, up to $30,000 of gain can be in the unrecaptured Section 1250 category under qualifying facts, leaving approximately $62,000 in another long-term capital-gain category. The actual Form 4797/Schedule D worksheets include ordering, gains, losses, rate limits and other property types; this separation is an educational allocation, not final federal tax due.",
+        "Connecticut income tax, net investment income tax when applicable, capital loss offsets, passive loss release and other provisions may further change sale outcomes. A refinance does not reset cost basis to appraised market value. Keep a yearly depreciation ledger even when cash flow is low so the later sale does not surprise heirs or current owners."
+      ],
+      "worked": [
+        "Recognized total sale gain stipulated $92,000; prior allowable building depreciation $30,000.",
+        "Simplified potential unrecaptured Section 1250 slice min($92,000,$30,000)=$30,000.",
+        "Remaining gain $62,000, before other capital-gain classification adjustments.",
+        "The 25% number is maximum federal rate on the applicable unrecaptured category, not an automatic flat tax on every rental sale."
+      ],
+      "practice": [
+        [
+          "Does depreciation on modern residential rental buildings invariably create ordinary Section 1250 recapture?",
+          "No. Straight-line residential real property more commonly implicates unrecaptured Section 1250 gain and its specific capital-gain rate ceiling; rules differ by property and adjustments."
+        ],
+        [
+          "Can a landlord estimate final taxes by multiplying all $92,000 gain by 25%?",
+          "No. Character, taxpayer ordinary marginal rate, capital gain bands, losses, NIIT, state taxes and other rules determine actual liabilities."
+        ]
+      ]
+    },
+    {
+      "title": "A 1031 exchange defers qualifying gain; it does not erase borrowing or taxes",
+      "body": [
+        "A federal Section 1031 like-kind exchange can defer gain when qualifying investment or business real property is exchanged for qualifying real property, subject to strict rules. A personal-use residence generally does not qualify as held for investment merely because its owner wants to defer income tax. The property must be eligible, arrangements must be timely and the taxpayer cannot simply sell for cash then purchase another property at leisure.",
+        "Deferred exchanges generally require identifying replacement property in writing within 45 days and receiving it by the earlier of 180 days or the applicable tax-return deadline including extensions. Qualified intermediaries and limitations on receipt or control of proceeds are crucial. Exchanges involving non-like-kind cash or other property, often called boot, can cause partial taxable gain; debt relief and replacement debt/equity differences complicate the calculation.",
+        "An investor who plans an exchange should not treat proceeds as free money to pay credit cards or a primary-home down payment without evaluating recognized gain and exchange qualification. A poorly structured exchange can fail and leave the seller owing tax despite already committing funds to replacement property. Complete a QI and attorney/tax adviser review before the first contract closes."
+      ],
+      "worked": [
+        "Rental property sold and relinquished on June 1, hypothetical identification period 45 days.",
+        "Replacement candidate must be properly identified by statutory deadline measured from transfer date.",
+        "Replacement closing must occur by earlier statutory 180-day deadline or qualifying return due date.",
+        "Boot and debt shifts can require recognized gain even when exchange otherwise qualifies."
+      ],
+      "practice": [
+        [
+          "Can someone sell a rental for cash and decide six months later to retroactively do a 1031 exchange?",
+          "No. Identification, receipt, timing and qualified exchange arrangements must comply from the relevant transfer period."
+        ],
+        [
+          "Does completing a qualifying 1031 exchange make gain permanently disappear?",
+          "Not ordinarily. Basis carryover and future recognition can defer tax until later taxable disposition; it does not create tax-free cash."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut conveyance costs and local sale assumptions",
+      "body": [
+        "Connecticut real-estate dispositions require evaluating state conveyance taxes, possible local conveyance taxes, legal recording, title, brokerage commission and lien payoffs. State and municipal rates and exemptions can vary by value band, location, transaction classification and effective date. A seller should obtain a dated closing statement rather than assume the buyer's estimated all-in cost or an online statewide percentage captures every charge.",
+        "Connecticut property taxes owed while holding the rental are operating costs; real estate conveyance taxes and realtor commissions generally occur on transfer, and income tax on gain is separate. A model that subtracts an overall six-percent selling-cost estimate must state which closing charges it includes. Avoid adding conveyance tax twice if the estimate already includes it.",
+        "For example a $300,000 rental sale with $18,000 modeled combined selling expenses and $170,000 mortgage payoff yields $112,000 before income tax. If municipal conveyance charges not included in the $18,000 estimate turn out to be $1,000, owner pre-tax cash reduces to $111,000. No tax was 'saved' by recording a trust deed or LLC label; legal structure can change reporting requirements, liability and financing."
+      ],
+      "worked": [
+        "Sale $300,000; combined modeled selling cost $18,000; mortgage payoff $170,000.",
+        "Pre-tax sale cash $112,000.",
+        "Additional unbudgeted $1,000 closing cost => $111,000.",
+        "Need separate estimate for federal/Connecticut gain tax based on adjusted basis, unrelated to $170,000 payoff."
+      ],
+      "practice": [
+        [
+          "Why must a selling-cost worksheet specify whether Connecticut conveyance tax is included?",
+          "Otherwise the model can either omit a required cost or double-count it when total sale expenses already incorporate it."
+        ],
+        [
+          "Does creating an LLC erase the state's conveyance tax or federal tax gain by default?",
+          "No. Transaction classification and relevant state/federal rules control; a legal entity is not a universal tax exemption."
+        ]
+      ]
+    },
+    {
+      "title": "Hold, sell or exchange: compare cash timing after tax",
+      "body": [
+        "A property that produces current cash can still be worth selling if repairs, concentration risk or future tax costs outweigh reasonable expected return. Conversely an asset with low current cash may have genuine value from future income and loan amortization. The decision should compare risk-adjusted present values after transaction costs, not only today's tax liability. A 1031 exchange can preserve deferred gain while acquiring another property but can also increase leverage and holding risk.",
+        "Construct three cases: keep for five years with realistic rent and capital work; sell now with modeled loan payoff, selling costs and income tax; and complete a legally valid 1031 replacement property exchange with qualifying basis and matching debt/cash requirements. The exchange case is not available unless real properties qualify and deadlines are met. Base and adverse trajectories should separately show tax recognition, cash remaining for emergencies and heir succession treatment.",
+        "Individual circumstance matters. A family trying to purchase a primary home in Connecticut should not put all accessible reserves into a thinly cash-flowing rental because paper depreciation might reduce taxes. A profitable rental investment may be postponed until household emergency funds and home-purchase cash are reliably protected. This is a capital allocation recommendation, not a judgment about landlord ambition."
+      ],
+      "worked": [
+        "Illustrative rental NOI $12,000, annual debt $11,975 and needed capital reserve $2,000.",
+        "Pre-tax owner cash after debt and reserve ≈−$1,975 despite positive $12,000 NOI.",
+        "A sale could produce $112,000 pre-tax proceeds under separate stipulated figures but require income tax.",
+        "Compare risk-adjusted hold NPV, actual after-tax sale cash and any legally eligible tax-deferred replacement; no automatic best option."
+      ],
+      "practice": [
+        [
+          "Why can a property with positive rent and NOI still be an unattractive hold?",
+          "Debt, deferred capital replacements, taxes, concentration and required investor cash can exceed economic return and alternative opportunities."
+        ],
+        [
+          "Why is tax deferral not by itself sufficient reason to exchange into a new rental?",
+          "A weak replacement can destroy more wealth through price, leverage and management risk than the tax deferral temporarily preserves."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS Publication 527 residential rental depreciation and repairs",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "IRS Publication 544 property sale, exchanges and adjusted basis",
+      "https://www.irs.gov/publications/p544"
+    ],
+    [
+      "IRS Form 8824 1031 exchange eligibility and deadlines",
+      "https://www.irs.gov/instructions/i8824"
+    ],
+    [
+      "IRS Form 8582 passive activity loss phaseout",
+      "https://www.irs.gov/instructions/i8582"
+    ],
+    [
+      "IRS Schedule E income and deductions",
+      "https://www.irs.gov/instructions/i1040se"
+    ],
+    [
+      "IRS Form 4797 gain character Section 1250",
+      "https://www.irs.gov/instructions/i4797"
+    ],
+    [
+      "Connecticut DRS real estate conveyance and property transfer",
+      "https://portal.ct.gov/drs/businesses/real-estate-conveyance-tax"
+    ],
+    [
+      "Connecticut DRS individual capital gain reporting",
+      "https://portal.ct.gov/drs/individuals/individual-income-tax-portal"
+    ],
+    [
+      "IRS Publication 523 personal home and rental conversions",
+      "https://www.irs.gov/publications/p523"
+    ]
+  ],
+  "assessment": {
+    "title": "Investment property complete tax and exit memorandum",
+    "prompt": "Compute sale proceeds for $300k sale, $18k total selling costs and $170k outstanding note; separately recognized gain at adjusted basis $190k. Build acquisition basis $250k divided $50k land, $200k building, calculate full-year 27.5-year straight-line approximation, and five years of full-year equivalent depreciation. Add a capital improvement $20k and show basis consequences. For a stipulated $92k taxable gain and $30k depreciation, classify a potential unrecaptured section 1250 slice and remaining gain without pretending to compute a final tax return. Evaluate $12k rental loss with $120k modified AGI and qualifying active participation, phaseout threshold. Compare sale vs hold vs 1031 exchange with 45/180-day and qualified intermediary requirements, and report CT conveyance and local expenses.",
+    "rubric": [
+      "Adjusted basis versus sale cash; debt payoff distinction (25%)",
+      "Depreciation, capital improvements and tax character (25%)",
+      "Passive loss phaseout and limitations (20%)",
+      "1031 exchange legal/timing qualification (20%)",
+      "Connecticut sales costs and evidence-based hold/sell ethics (10%)"
+    ],
+    "answerKey": [
+      "Sale cash before income tax $300k−$18k−$170k=$112,000.",
+      "Amount realized $282k and stipulated adjusted basis $190k imply $92k recognized gain.",
+      "$200k building basis/27.5 ≈$7,272.73 full-year equivalent; five years ≈$36,363.64; first/last-year mid-month conventions alter actual amounts.",
+      "Building improvement $20k adds basis if capitalized, with applicable depreciation reducing it over time.",
+      "Potential unrecaptured §1250 portion min($92k,$30k)=$30k under simple qualifying facts, remaining $62k another character; 25% is maximum applicable rate not automatic tax.",
+      "Qualifying active participation $25k−.5×($120k−$100k)=$15k special allowance ceiling, so illustrative $12k rental loss might fit subject to all other limits.",
+      "Exchange requires qualifying investment/business real estate, appropriate QI or equivalent rules, property identification within 45 days and receipt within 180 days or earlier return deadline."
+    ]
+  }
+}
