@@ -81,7 +81,7 @@
         "Illustrative level term premium $30/month and permanent premium $250/month.",
         "Over ten years term premiums $3,600 versus permanent premiums $30,000, a $26,400 cash outlay difference.",
         "If the family directs $220 monthly to savings with no yield, it contributes $26,400 over 120 months.",
-        "At hypothetical nominal 4% annually compounded monthly, $220 ordinary end-month contributions grow to approximately $32,338.",
+        "At hypothetical nominal 4% annually compounded monthly, $220 ordinary end-month contributions grow to approximately $32,395.",
         "The investment value and term premium future costs remain uncertain; do not call this a guaranteed better outcome."
       ],
       "practice": [
@@ -178,13 +178,13 @@
       "body": [
         "The appropriate product depends on the problem. If a family needs $250,000 of death protection for two decades and can afford $250–$500 of monthly saving, a large permanent premium could compete directly with emergency reserves and a future home purchase. Conversely, some households with long-lasting coverage needs, special beneficiaries or specific estate liquidity problems may have reasons to evaluate permanent insurance despite higher costs. It is not academically sound to universally say term is always best or permanent is a magical asset-building method.",
         "Construct an apples-to-apples comparison with the same insured, underwriting class, face amount, required coverage horizon and credible premium assumptions. Path A pays a hypothetical $30 monthly term premium and directs $220 monthly elsewhere. Path B pays a hypothetical $250 permanent policy premium. The alternatives differ in lapse risk, liquidity, guarantees, investment exposure, surrender values and beneficiary outcomes. Explicitly note whether the term coverage expires before modeled death and whether a replacement policy is available.",
-        "At 4% nominal annual saving return compounded monthly, $220 invested at each month-end for ten years produces approximately $32,338. That is before tax and investment costs, and it could be much smaller after adverse markets. A fictional permanent policy might have a year-10 surrender value of $21,000 with a death benefit still in force. Comparing $32,338 and $21,000 alone is invalid if it ignores the insurance cost after year ten, the differences in permanent guarantees or risk-adjusted value. Use both financial statements and insurance protection scenarios.",
+        "At 4% nominal annual saving return compounded monthly, $220 invested at each month-end for ten years produces approximately $32,395. That is before tax and investment costs, and it could be much smaller after adverse markets. A fictional permanent policy might have a year-10 surrender value of $21,000 with a death benefit still in force. Comparing $32,395 and $21,000 alone is invalid if it ignores the insurance cost after year ten, the differences in permanent guarantees or risk-adjusted value. Use both financial statements and insurance protection scenarios.",
         "Stress-test household affordability. If $250 premium would consume half of a $500 monthly savings capacity, ask whether a $1,200 medical bill or property repair would force policy lapse or debt. Include the opportunity cost of a late premium payment and the uncertainty of future coverage. Make the ultimate recommendation conditional on product documents, present and future insurance needs, and a sustainable full budget."
       ],
       "worked": [
         "Term premium $30/month and permanent premium $250/month, same hypothetical initial coverage face.",
         "Monthly cash difference $220; 120 months of contributions $26,400.",
-        "At 4% nominal annual monthly compounding, future savings ≈$32,338 before fees and tax.",
+        "At 4% nominal annual monthly compounding, future savings ≈$32,395 before fees and tax.",
         "Compare with fictional year-10 permanent surrender value $21,000 and continuing coverage, but do not infer product superiority from these two figures alone.",
         "If available household surplus is $400/month, a $250 permanent premium uses 62.5% of available monthly surplus."
       ],
