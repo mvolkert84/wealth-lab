@@ -24,7 +24,7 @@ for(const [i,id] of ids.entries()){
 }
 assert.equal(sections,28);assert.equal(problems,56);assert.ok(words>=7500);
 assert.ok(e.WealthLabAcademicM10Markup('L9.S4').includes('unavailable'));
-assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10'||m.id==='M11'||m.id==='M12'||m.id==='M13'||m.id==='M14')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9'||m.id==='M10'||m.id==='M11'||m.id==='M12'||m.id==='M13'||m.id==='M14'||m.id==='M15')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('WealthLabAcademicM10Markup?.(s.id)')&&html.includes('WealthLabAcademicM10Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
 assert.ok(html.includes('academy-chapters/L10.S1.js?v=1.0.0'));
