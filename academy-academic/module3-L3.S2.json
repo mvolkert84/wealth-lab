@@ -171,6 +171,32 @@
           "When the client's objectives, property titles, creditor exposures, family relationships, Medicaid facts, future liquidity, tax basis and legal restrictions are unknown. Losing control before verifying those facts is an unnecessary risk."
         ]
       ]
+    },
+    {
+      "title": "Present-value comparison: the economic cost of giving up control",
+      "body": [
+        "When a family compares individual ownership, a revocable trust and an irrevocable trust, the financial comparison must recognize both legal constraints and dated cash payments. An administrative fee paid once today differs from one paid annually for two decades. The standard present-value rule discounts each future cash flow to the same valuation date: PV=sum(C_t/(1+r)^t). Here C_t is a future payment and r is the chosen periodic opportunity-cost rate; it is not a guaranteed investment return or an estimate of trust legal benefits.",
+        "Suppose an irrevocable trust costs $4,000 to establish and $1,500 at each year-end for ten years. At a hypothetical 4% annual discount rate, the present value of ongoing fees is $1,500×[1−(1.04)^(-10)]/0.04, approximately $12,166.34. Add the $4,000 initial expense to obtain $16,166.34 of modeled present-value cash costs. This is only the fee schedule; it does not quantify litigation risk, lost control, distribution restrictions or any real tax savings.",
+        "A comparison must also consider an inheritance-tax or basis consequence as a contingent scenario, not a certain fee credit. Property excluded from a gross estate in one arrangement may fail to receive the favorable basis adjustment available to particular property acquired from a decedent. Under IRS Revenue Ruling 2023-2, a completed gift into a grantor trust whose assets were not included in the decedent's gross estate did not receive a date-of-death basis adjustment on the specified facts. A different instrument or retained power may change the outcome, so calculations require legal classification first.",
+        "Use a decision tree that begins with the actual estate size and objective, tests power retention and funding, estimates sources and uses of cash, and only then compares financial costs. If the family is far below 2026 estate-tax thresholds, a paid legal structure may still be justified for administration or particular beneficiary needs, but not by invented immediate estate-tax savings. Record which assumptions could change the ranking and have a Connecticut attorney and tax adviser review them before any irreversible transfer."
+      ],
+      "worked": [
+        "Hypothetical initial trust setup fee $4,000 and annual recurring cost $1,500 for 10 years.",
+        "Discount rate assumption 4% nominal annually, fees at each year-end.",
+        "Annual-cost present value $1,500×[1−(1.04)^(-10)]/0.04≈$12,166.34.",
+        "Total modeled cash-cost present value ≈$16,166.34, excluding taxes and any valuation of legal benefits.",
+        "Compare alternatives over identical periods and clearly mark nonquantifiable family objectives."
+      ],
+      "practice": [
+        [
+          "Why is adding 10 annual trustee fees to an upfront legal fee insufficient for a rigorous present-value decision?",
+          "They occur on different dates and have different opportunity costs. Discount dated cash flows to a common valuation date under a stated rate while retaining undiscounted cost totals for budgeting."
+        ],
+        [
+          "Would a fee present-value result by itself prove a revocable trust is better for every beneficiary?",
+          "No. Properly structured arrangements can have nonfinancial benefits such as continuity, governance, restrictions and specialized beneficiary support that cannot be reduced to a fee alone."
+        ]
+      ]
     }
   ],
   "sourceRefs": [
