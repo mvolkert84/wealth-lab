@@ -1,0 +1,208 @@
+{
+  "id": "L2.S3",
+  "title": "The Anatomy of a Mortgage",
+  "subtitle": "Amortization, APR, points, escrow and refinance mathematics",
+  "prerequisites": [
+    "L1.S3 present value",
+    "L1.S4 debt amortization",
+    "L2.S1 secured financing"
+  ],
+  "objectives": [
+    "Recreate first-year and five-year amortization balances",
+    "Distinguish note rate, APR and the contractual payment",
+    "Calculate points and lender credit break-even under multiple holding periods",
+    "Read Loan Estimate and Closing Disclosure evidence",
+    "Model escrow, adjustable-rate and refinance shocks"
+  ],
+  "sections": [
+    {
+      "title": "Cash-flow timelines and the balance recursion",
+      "body": [
+        "To evaluate a mortgage, identify the date and contractual purpose of each cash flow. At closing, the borrower receives mortgage financing on behalf of the purchase and pays the required down payment and settlement costs. In each period, the homeowner pays principal and interest under the note, plus property-related charges that may be collected through escrow. The economic cost of owning and occupying the property also includes maintenance, capital replacements, utilities and market risks that do not appear in the note.",
+        "Amortization is best understood as a recurrence, B_t=B_(t−1)(1+r)−A. Here B_0 is principal, r is the note's periodic interest rate, A is the scheduled debt installment, and B_t is the remaining balance after payment t. The monthly interest charge on opening principal B_(t−1) is r times that balance; the difference A−rB_(t−1) reduces principal. As principal falls, future interest usually falls under a fixed rate and constant payment.",
+        "The closed-form solution B_t=P(1+r)^t−A[((1+r)^t−1)/r] follows by repeatedly substituting the recurrence. This makes a practical verification test: a spreadsheet running row-by-row should match the closed form at month 12, month 60 and maturity within rounding conventions. The formula does not apply unchanged to adjustable-rate resets, balloon features, extra payments, fees financed into principal, or loans with irregular payment conventions.",
+        "Loan maturity is not the same as investment holding period. A homeowner may sell or refinance in year three or seven. To compare two mortgage offers, model the payment history during the chosen horizon, the balance that must be settled then, and the upfront fees. Computing only a payment difference can miss different equity accumulation and a large cash fee paid at origination."
+      ],
+      "worked": [
+        "P=$237,500, hypothetical fixed note rate 6.50%, n=360, monthly payment ≈$1,501.16.",
+        "First-month interest ≈$1,286.46, principal repaid ≈$214.70.",
+        "After 12 payments balance ≈$234,845.40; the buyer repaid ≈$2,654.60 of original principal.",
+        "After 60 payments balance ≈$222,326.07; first 60 P&I installments total approximately $90,069.69.",
+        "Five-year payoff would also reflect statement timing, potential accrued interest and applicable charges under actual terms."
+      ],
+      "practice": [
+        [
+          "What does mortgage amortization demonstrate about equity accumulation?",
+          "Amortization reduces debt on schedule; home equity also depends on property value, other liens and costs of selling."
+        ],
+        [
+          "State a test for a spreadsheet with inconsistent ending balances.",
+          "Compare recursive and closed-form debt balances at month 12, 60 and final maturity, and verify units for the rate and number of periods."
+        ]
+      ]
+    },
+    {
+      "title": "Interest rate and APR describe different prices",
+      "body": [
+        "The note rate is the contractual rate that usually determines the scheduled interest charge. APR is a broader regulatory price measure that incorporates specified finance charges and the timing of funds according to disclosure rules. Two loans can have equal note rates but different APRs if their qualifying upfront charges differ. Conversely, a lower note rate purchased with expensive points may produce a higher APR or be economically inferior over the borrower's actual holding period.",
+        "APR is not a substitute for a full household ownership budget because property taxes, maintenance and many insurance items are distinct from the regulated finance charge. It is also not a prediction of the maximum future rate on an adjustable-rate mortgage. Rather than compute APR by casually dividing fees by principal, professionals use the proper dated cash-flow and disclosure conventions and compare the Loan Estimate's APR on page three.",
+        "In a simplified educational effective-yield illustration, a lender advances net borrower proceeds P−F where F is finance charge included upfront and receives A each month. The periodic internal rate i satisfies P−F=sum(A/(1+i)^t) over all n payments, assuming these are the only included cash flows. The resulting annualized i is a useful economic intuition, not a legally compliant replacement for the APR rules used on official disclosures.",
+        "If a salesperson promises a low interest rate, insist on the same loan amount, rate lock, term, discount points, origination fees, closing expense and required mortgage insurance assumptions for all comparisons. When different terms create a lower monthly bill, determine whether the saving arises from genuinely lower price, added fee, higher risk, longer repayment or loan balance restructuring."
+      ],
+      "worked": [
+        "Offer A hypothetical 6.50% note rate; Offer B hypothetical 6.25% note rate; same principal $237,500 and 360 months.",
+        "P&I payments ≈$1,501.16 and ≈$1,462.33; difference ≈$38.83 per month.",
+        "If Offer B requires $2,375 in discount points, simple cash-payment payback is $2,375/$38.83≈61.2 months.",
+        "This payback ignores the lower unpaid loan balance on Offer B and discounting, so it is a quick screening metric only.",
+        "Review the lender-provided APR and line-item fees on each actual Loan Estimate rather than declaring one APR from this incomplete data."
+      ],
+      "practice": [
+        [
+          "Why can't mortgage APR simply equal interest rate plus fees divided by principal?",
+          "APR reflects timed finance charges and prescribed disclosure conventions; the naive fraction ignores payment timing, term and fee treatment."
+        ],
+        [
+          "When does an APR comparison require special care?",
+          "When terms, adjustable-rate features, initial costs, expected payoff dates or included finance charges differ."
+        ]
+      ]
+    },
+    {
+      "title": "An economically correct five-year comparison",
+      "body": [
+        "Loan offers should be compared over a defined planning horizon, not an arbitrary full contract term. A present-value analysis uses a common discount rate for all candidates and accounts for cash today, each payment, and payoff or remaining balance at the horizon. For a homeowner selling after five years, a loan with a larger unpaid balance requires a larger payoff from sale proceeds, even if its monthly payment was lower.",
+        "Define undiscounted five-year outlay C_60=upfront lender fees +sum of first 60 scheduled P&I installments+unpaid loan balance after month 60. This expression is useful when comparing offers on the same property and principal with no prepayment fee, excluding common property expenses and assuming payoff exactly at installment 60. It combines payment outlay with remaining principal. Because both offers financed the same original principal, the difference isolates five-year financing costs under the model.",
+        "Using a 6.50% loan with no extra point charge and a 6.25% loan with $2,375 points, the lower-rate offer has smaller installments and a slightly smaller unpaid balance after five years. The cumulative five-year financing outlay saving is about $605 under the assumptions. The simple $38.83-monthly savings produce only $2,329.98 over 60 months, apparently less than the points, yet the extra $650.12 of principal reduction changes the conclusion; this is why balance comparison is mandatory.",
+        "The five-year dollar arithmetic still lacks time value. For a rigorous NPV, choose a discount rate, place fees at time zero, monthly differences on dates 1–60, and the payoff-balance difference at month 60; discount each separately. Test horizons of 24, 60 and 120 months and vary the discount rate. A conclusion can reverse with different holding periods. The procedure is general; do not confuse the illustrative offers with current Connecticut rate quotes."
+      ],
+      "worked": [
+        "Offer A 6.50%: 60 payments × $1,501.16156 + balance $222,326.07 ≈ $312,395.76.",
+        "Offer B 6.25%: 60 payments × $1,462.32835 + balance $221,675.95 + points $2,375 ≈ $311,790.65.",
+        "Five-year undiscounted advantage for B ≈$605.12, under the precise horizon and fee assumptions.",
+        "A 24-month horizon must be computed separately; do not scale the five-year result linearly.",
+        "Use a discount rate consistent with the timing and risk of the alternatives if comparing present-value costs."
+      ],
+      "practice": [
+        [
+          "Why is the 60-month balance difference economically material?",
+          "A lower outstanding principal means less payoff at sale or refinance and higher equity for the same property value."
+        ],
+        [
+          "How does a possible refinance after 18 months affect prepaid points?",
+          "The benefit horizon is shortened; the upfront cost may not be earned back by reduced payments and principal."
+        ]
+      ]
+    },
+    {
+      "title": "Escrow, insurance and the full housing bill",
+      "body": [
+        "Mortgage escrow holds funds collected by a servicer to pay specified bills such as property taxes and hazard insurance. It is not extra loan principal, nor a permanent guaranteed monthly price. A servicer's annual analysis reviews actual disbursements, forecast bills, allowable cushion and any shortage or surplus. Taxes and insurance can rise independently of the fixed note-rate payment. Mortgage insurance is another category with its own cancellation and pricing rules.",
+        "A simple initial budget computes escrow collection as the annual projected property taxes plus eligible insurance charges divided by twelve, with a separately identified initial deposit or cushion according to applicable rules. A $5,400 annual tax estimate and $1,800 annual hazard premium suggest $600 per month toward those two categories. The actual monthly collection may also reflect escrow account shortages and approved cushion calculations, and the closing wire may include prepaid insurance and an initial escrow deposit.",
+        "If taxes rise by $900 and annual insurance by $300, the projected annual disbursement increases by $1,200, or $100 per month, before any shortage repayment. A $1,200 shortage amortized over twelve months would add another $100 per month during the shortage repayment period if that is the applicable servicing treatment. Thus a household might see an approximately $200 total monthly increase in that illustrative scenario while the fixed-rate P&I remains constant.",
+        "Homeownership budgeting must further include maintenance, replacement of durable components, utilities, association assessments and property-level risks such as flood exclusions. Calling an entire lender-collected payment 'mortgage interest' is an accounting mistake. Evaluate each component's timing, control, tax treatment and volatility separately so the family can locate the source of unexpected changes."
+      ],
+      "worked": [
+        "P&I ≈$1,501.16; projected tax $5,400/year = $450/month; hazard insurance $1,800/year = $150/month.",
+        "Initial simplified principal-interest-tax-insurance total ≈$2,101.16, excluding mortgage insurance and maintenance.",
+        "Tax increases $900/year, insurance $300/year ⇒ extra ongoing escrow need $100/month.",
+        "Illustrative escrow shortage $1,200 paid in 12 equal increments ⇒ temporary $100/month more, subject to servicing rules.",
+        "Revised monthly billed amount could approximate $2,301.16 during the shortage period before other items; the fixed P&I component did not change."
+      ],
+      "practice": [
+        [
+          "Does a fixed-rate mortgage guarantee the entire housing payment stays constant?",
+          "No. Principal-and-interest can stay constant while escrow, mortgage insurance, HOA, maintenance and other property costs change."
+        ],
+        [
+          "What records should be reviewed for an escrow increase?",
+          "Annual escrow analysis, disbursement statement, property tax bill, insurer renewal, initial and current escrow balances."
+        ]
+      ]
+    },
+    {
+      "title": "Loan Estimate, Closing Disclosure and transaction audit",
+      "body": [
+        "The Loan Estimate is generally a three-page standardized form for covered mortgages and supplies early loan terms, estimated payments and settlement charges. After the relevant application elements are received, federal rules generally require delivery or mailing within three business days. The Closing Disclosure is generally a five-page form supplied near closing, with receipt at least three business days before consummation. Exceptions exist for certain product types; reviewing the source's exclusions is part of professional literacy.",
+        "An audit is a line-by-line reconstruction. On page one verify note rate, payment, loan term, payment changes, mortgage insurance and estimated escrow. On the costs pages review origination charges, third-party services, taxes and filing charges, prepaid interest and insurance, initial escrow deposit, seller concessions, lender credits, and the path from closing costs to cash to close. Verify rate lock and loan-program terms rather than relying on an unrecorded conversation.",
+        "The documents' legal meanings differ. The deed establishes the property interest conveyed, the note embodies a repayment obligation, the mortgage establishes security rights, the Closing Disclosure details the transaction, and title insurance has policy-specific coverage and exceptions. Legal questions about joint vesting, trusts, liens and probate should be reviewed by qualified counsel rather than solved from a calculator.",
+        "A meaningful assessment asks the learner to locate a red flag: a disclosed monthly payment excluding substantial taxes, an unexpected adjustable-rate product, discount points that were not expected, seller credits that do not reduce the final amount as predicted, or an escrow figure inconsistent with public taxes. The corrective action is to seek an updated explanation or corrected documents before closing, not to silently override the numbers."
+      ],
+      "worked": [
+        "Hypothetical initial Loan Estimate: note rate 6.50%, 30-year fixed, down payment $13,000, $8,000 closing/prepaid costs.",
+        "Hypothetical corrected Closing Disclosure: rate 6.75%, additional $2,000 charge, different estimated taxes.",
+        "Flag rate/fee changes; determine whether the rate lock, changed circumstances and tolerance rules justify them.",
+        "Recalculate P&I on the actual loan principal; separately reconcile cash-to-close, escrow and prepaids.",
+        "Do not sign based solely on the initial estimate; obtain written resolution and legal/consumer guidance when needed."
+      ],
+      "practice": [
+        [
+          "Is a verbal 'no closing cost' promise enough to compare lenders?",
+          "No. Review the disclosed lender credits, rate, financed fees, total closing costs, cash to close and future payments."
+        ],
+        [
+          "Which page has the Loan Estimate's APR comparison?",
+          "The CFPB identifies APR in the Loan Estimate's comparisons area on page 3."
+        ]
+      ]
+    },
+    {
+      "title": "Adjustable rates, refinance and remaining term",
+      "body": [
+        "Adjustable-rate mortgages generally link future note rates to a specified index plus margin, with contractual adjustment dates, periodic caps and lifetime caps. The initial rate can be attractive while exposing the borrower to later payment shocks. A cautious student must read adjustment terms, not assume the rate will move with a single headline Federal Reserve policy change. Payment caps and negative-amortization features require additional analysis of the product documents.",
+        "To model refinancing, start with the current payoff balance B_k, not the original principal. Compute the current required payment for the remaining term and the proposed new payment and fees for the new term. A refinance from a 26-year remaining loan to a new 30-year loan can lower monthly payments simply by stretching debt longer. Compare remaining-interest cost, upfront fees, liquidity, tax considerations, repayment horizon and the risk of moving before the apparent savings accumulate.",
+        "Consider an original $240,000 loan at a hypothetical 7.00% fixed over 360 months. After 48 payments the balance is approximately $229,138.91. Refinance that balance at a hypothetical 6.00% for 30 new years, with $4,000 in refinancing costs paid in cash. The original scheduled monthly P&I was about $1,596.73; the new P&I must be calculated on the remaining $229,138.91, not the original $240,000. A borrower might regain cash-flow flexibility while lengthening the contractual payoff date by four years.",
+        "The professional answer is not simply 'refinance whenever the rate falls.' A higher new loan balance from financed fees, foreclosure or escrow constraints, a near-term move, poor credit, shorter remaining term or a lost assistance loan could outweigh headline savings. Model the refinance with at least three payoff dates and disclose every included and excluded cost."
+      ],
+      "worked": [
+        "Original loan $240,000 at 7.00% over 360 months: original P&I ≈$1,596.73.",
+        "After 48 on-time installments, modeled balance ≈$229,138.91.",
+        "Refinanced balance $229,138.91 at 6.00%, new 360-month term ⇒ new P&I approximately $1,373.72.",
+        "Monthly difference ≈$223.01; $4,000 cash closing fee gives naive payment payback ≈17.94 months.",
+        "Yet maturity moves 48 months later, and new-vs-old unpaid balances must be compared at the planned sale horizon."
+      ],
+      "practice": [
+        [
+          "Why does refinancing not necessarily reduce total remaining interest?",
+          "Restarting a longer term can reduce monthly payment while extending the number of interest-bearing periods; fees and payoff timing matter."
+        ],
+        [
+          "What is the appropriate principal for the refinance calculation?",
+          "The documented payoff/current financed amount, adjusted for any rolled-in costs and other financing terms, not the loan's original amount."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFPB · Note rate vs APR",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/"
+    ],
+    [
+      "CFPB · Points and lender credits",
+      "https://www.consumerfinance.gov/ask-cfpb/how-should-i-use-lender-credits-and-points-also-called-discount-points-en-136/"
+    ],
+    [
+      "CFPB · Compare and negotiate Loan Estimates",
+      "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/"
+    ],
+    [
+      "CFPB · Closing Disclosure guide",
+      "https://www.consumerfinance.gov/owning-a-home/closing-disclosure/"
+    ],
+    [
+      "CFPB · Escrow annual changes",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-an-escrow-or-impound-account-en-140/"
+    ]
+  ],
+  "assessment": {
+    "title": "Mortgage offer forensic review",
+    "prompt": "Calculate a 60-month total financing comparison of $237,500 loans at 6.50% with zero points and 6.25% with $2,375 points. Show balances, not only payment savings. Then prepare a simulated closing-document change log and analyze a 48-month refinance with a new 30-year term and $4,000 fees.",
+    "rubric": [
+      "Correct amortization and balance model (30%)",
+      "Points and hold-period comparison (25%)",
+      "Escrow and disclosure literacy (20%)",
+      "Refinance NPV/term tradeoff (15%)",
+      "Evidence and limitations (10%)"
+    ]
+  }
+}
