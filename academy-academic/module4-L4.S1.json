@@ -1,0 +1,262 @@
+{
+  "id": "L4.S1",
+  "title": "Stocks, Funds and Ownership",
+  "subtitle": "Capital markets, valuation, ownership claims and evidence-based security research",
+  "prerequisites": [
+    "L1.S1 balance sheet",
+    "L1.S3 present value",
+    "L4 original gold textbook"
+  ],
+  "objectives": [
+    "Map primary versus secondary markets and equity claims",
+    "Reconcile total return including distributions and frictions",
+    "Compare fund structures, NAV, spreads, turnover and fees",
+    "Derive simple stock and bond valuation models with sensitivity",
+    "Evaluate financial statements, market capitalization and enterprise value",
+    "Use credible investor disclosures to build an investment memo"
+  ],
+  "sections": [
+    {
+      "title": "Capital markets: who receives money and who owns the claim",
+      "body": [
+        "A stock represents a class of ownership claim on a corporation; a bond generally represents a contractual debt claim. Buying newly issued shares in a primary offering supplies capital to the issuing company after underwriting and other transaction costs. Buying existing listed shares through a secondary-market transaction ordinarily exchanges cash with another investor, not with the issuing firm. Secondary markets still matter to businesses because liquid trading can lower investors' demanded illiquidity premium, but the distinction prevents a common misconception that every stock trade finances a company's new factory.",
+        "Equity holders normally have residual economic exposure after debts and senior claims, along with specific voting, dividend and liquidation rights under their class of security and law. The board can reinvest earnings rather than distribute dividends; a share price can move with revised expected cash flows, discount rates, risk, dilution and investor demand. An investor does not own a direct piece of each corporate asset free of corporate creditors, and a profitable business does not promise a positive stock return at the investor's purchase price.",
+        "Trace a hypothetical issuance: a company sells 1 million new shares at $20, before $500,000 expenses. Gross proceeds are $20 million and net proceeds are $19.5 million; existing ownership percentages may be diluted depending on total shares and who subscribes. A secondary-market buyer later purchasing 100 shares at $22 sends roughly $2,200 plus costs to the selling shareholder. That investor's returns depend on future prices and dividends, not on the company's original offering cash."
+      ],
+      "worked": [
+        "1,000,000 newly issued shares × $20 = $20,000,000 gross equity proceeds.",
+        "Less hypothetical $500,000 issuance fees = $19,500,000 company net proceeds.",
+        "Secondary trade 100 shares at $22 = $2,200 paid to seller before brokerage costs.",
+        "If a company's 10 million shares are outstanding and an investor holds 100, ownership is 0.001% before class differences.",
+        "Ownership percentage may be diluted by new share issuance; shareholder claims remain subordinate to creditors."
+      ],
+      "practice": [
+        [
+          "Explain why secondary market trading can be economically useful without sending its trade proceeds to the corporation.",
+          "Secondary trading offers liquidity and price discovery; buyers exchange money with previous investors. Liquidity can indirectly support capital formation, but it is not the same as primary issuance."
+        ],
+        [
+          "Why can a profitable company's stock lose value after positive earnings are announced?",
+          "Investors trade the present value of *expected future* cash flows and risk. Good reported results may still be below expectations, priced in, or offset by higher discount rates."
+        ]
+      ]
+    },
+    {
+      "title": "Security returns: price change, cash income, reinvestment and timing",
+      "body": [
+        "Total return combines price appreciation or decline with distributions and financing or trading costs over a defined holding interval. The basic one-period stock return is (ending price−starting price+cash dividends per share)/starting price, assuming a known ex-dividend and payment treatment and excluding taxes and fees. Price return omits cash distributions; total return is the better economic measure when comparing securities that pay different dividends. Realized after-tax returns require transaction dates, costs, tax lots and applicable law.",
+        "Arithmetic average returns and geometric compounded returns answer different questions. The arithmetic mean estimates a one-period average under suitable assumptions, while compounded investor wealth follows the product of one plus each period's realized return. A portfolio that earns +20% in year one and −20% in year two ends at 1.2×0.8=0.96 of its starting value, a 4% cumulative loss even though the arithmetic mean is zero. Losses and gains are asymmetric: after a 40% drawdown, returning to the original value requires a 66.67% gain.",
+        "Timing of contributions complicates performance evaluation. Time-weighted return separates a manager's investment performance from external contributions by chaining subperiod returns. Money-weighted return, commonly approximated by an internal rate of return on dated investor cash flows, reflects timing and magnitude of contributions. A household investing $250 monthly may realize a different experience from an index's published calendar-year return. Disclose whether dividends are reinvested and whether fees, taxes and inflation are included."
+      ],
+      "worked": [
+        "Buy 50 shares for $100 each, sell at $108 and receive $3 per share in dividends.",
+        "Gross initial cost $5,000, sale proceeds $5,400, dividends $150.",
+        "Gross gain $550 and one-period nominal total return $550/$5,000 = 11%.",
+        "With $20 total buy/sell fees, net gain $530, 10.6% on a simplified $5,000 opening capital convention.",
+        "Two years +20% and −20% turn $1,000 into $960, not $1,000."
+      ],
+      "practice": [
+        [
+          "Distinguish an 11% price-and-income total return from the 8% price-only return in the stock example.",
+          "Price return is ($108−$100)/$100=8%; add $3 of dividends per $100 initial share price to obtain an 11% gross total return before fees and taxes."
+        ],
+        [
+          "How can the same fund report positive time-weighted performance while a late-contributing investor loses money?",
+          "The manager's chained performance removes contribution effects, while the investor's actual purchase prices and cash-flow timing can produce a negative money-weighted experience."
+        ]
+      ]
+    },
+    {
+      "title": "Market mechanics: bids, asks, orders, settlement and investor protection",
+      "body": [
+        "A quoted stock price is not a guaranteed transaction price. A market displays bids offered by potential buyers and asks requested by potential sellers; the spread is a trading cost paid indirectly when crossing the market. A market order seeks execution but not an exact price; a limit order sets a maximum buy or minimum sell price but may not execute. Stop orders can become market orders at a trigger, potentially filling far from the stop during volatile trading. The SEC's August 2026 updated investor bulletins are useful primary reading for these distinctions.",
+        "Liquidity includes depth at various price levels, the time required to execute, and the market impact of a trade—not merely whether a ticker trades. A thinly traded fund may show a narrow quoted spread for a small order but much worse execution for a large order. The total cost of a transaction can include spread, commissions, price impact, taxes and opportunity cost if a limit order remains unfilled. A professional investment memo describes both expected returns and the mechanics of implementing the allocation.",
+        "Customer protection requires a separate distinction. SIPC protection at a member brokerage, subject to law and eligibility, is designed for situations where a brokerage fails and customer securities or cash are missing; standard coverage limits are $500,000 including a $250,000 limit for cash held to buy securities. It does not guarantee investment value or insure market losses. FDIC deposit insurance on eligible bank deposits is a different program. A market decline is not brokerage insolvency."
+      ],
+      "worked": [
+        "Illustrative bid $49.90, ask $50.10: spread $0.20 a share.",
+        "Buy 100 at ask for $5,010 and immediately sell 100 at bid for $4,990, a $20 loss absent price change or commissions.",
+        "Cost as share of buy cost = $20/$5,010 ≈0.399%.",
+        "A $50 buy limit may not execute when the lowest available seller asks $50.10.",
+        "SIPC protections are conditioned on member brokerage failure and missing securities; normal 30% market losses remain possible."
+      ],
+      "practice": [
+        [
+          "Why can a market order be risky immediately after unexpected company news even if the displayed last trade seems attractive?",
+          "Market orders prioritize getting filled, not a promised price. Quotes can move abruptly and thin order-book depth can produce slippage relative to a stale last-traded price."
+        ],
+        [
+          "Does SIPC reimburse a fund investor if the fund falls by 40% during a recession?",
+          "No. SIPC is a limited protection for missing customer assets in eligible broker failures; it does not cover a security's ordinary market decline."
+        ]
+      ]
+    },
+    {
+      "title": "Funds and ETFs: what shareholders own, NAV and fee drag",
+      "body": [
+        "An open-end mutual fund issues and redeems shares at net asset value under its pricing procedures, while many ETFs trade intraday on exchanges at market prices that can deviate from underlying NAV. SEC-registered mutual funds and ETFs pool investor capital and hold securities on shareholders' behalf; the investor owns fund shares rather than direct title to every underlying portfolio holding. Some exchange-traded products, such as particular notes and commodity arrangements, are not equivalent to registered investment-company ETFs and require different risk analysis.",
+        "Fund expense ratios reduce the economic return experienced by investors over time. A 0.05% expense ratio and a 0.80% expense ratio differ by 0.75 percentage points annually under a simplified same-gross-return comparison. An investor cannot assume that higher fees predict higher net performance. The SEC's July 2025 bulletin explains ongoing fund charges, shareholder fees, trading costs, bid-ask spreads and ETF premiums/discounts. Portfolio turnover and tax distributions may also matter in taxable accounts.",
+        "Diversification must be measured by actual exposure, not number of ticker symbols. Two funds can share many of the same large stocks and be correlated; a sector ETF might own dozens of companies yet concentrate in one industry and common economic risk. Compare holdings, index methodology, expense ratio, spread, tracking difference, assets and closure/liquidation risks. A low-cost broad fund may suit a long-horizon core allocation, but no stock fund is an appropriate substitute for cash needed to close a house in a few months."
+      ],
+      "worked": [
+        "Hypothetical $20,000 investment, annual gross return 6% before fund operating charges.",
+        "Approximate net return: 5.95% at 0.05% fee versus 5.20% at 0.80% fee; actual fee timing differs.",
+        "At 20 years, illustrated terminal balance $20,000×1.0595^20 versus $20,000×1.052^20.",
+        "The cost gap compounds as the lower fee leaves more capital invested.",
+        "A narrow sector fund is not diversified across the entire stock market merely because it holds 50 stocks."
+      ],
+      "practice": [
+        [
+          "Why is ETF share price not guaranteed to equal its published net asset value in every trade?",
+          "ETF shares are traded with bids and asks, and the market price can carry a premium or discount to NAV. Underlying-market liquidity and fund structure affect the magnitude."
+        ],
+        [
+          "Can holding two funds be less diversified than holding one?",
+          "Yes. Two funds with heavily overlapping holdings or the same sector exposures may not reduce the portfolio's correlated risk, while one broad fund can already hold many asset classes or issuers."
+        ]
+      ]
+    },
+    {
+      "title": "Reading corporate financial statements without confusing profit and cash",
+      "body": [
+        "Company analysis begins with the income statement, balance sheet and cash-flow statement. Revenue measures recognized sales, but not collected cash; net income reflects accounting recognition and expense estimates. Operating cash flow reconciles net income to cash movements including noncash charges and working capital. Capital expenditures may be needed to sustain assets even when reported profits look attractive. Free cash flow has several definitions; a common starting measure is operating cash flow minus capital expenditures.",
+        "Debt and equity claims make enterprise and per-share valuation differ. Equity market capitalization is share price multiplied by current basic or appropriately diluted shares outstanding. Enterprise value for a straightforward company is often approximated as equity capitalization plus interest-bearing debt minus excess cash, with adjustments for preferred securities, minority interests, leases and operating cash needs. Buying a company with $1 billion market cap and $500 million debt is not the same economic exposure as buying a debt-free $1 billion enterprise.",
+        "Analysts evaluate profitability, cash conversion, leverage, reinvestment and share count trends over multiple periods. Buybacks can reduce shares outstanding but are not necessarily value-creating if done at an excessive price or financed by risky debt. Revenue growth can coexist with shrinking margins or negative free cash flow. SEC filings, including Forms 10-K and 10-Q, management discussion, risk factors and audit opinions, are more suitable source documents than an unverified social-media earnings claim."
+      ],
+      "worked": [
+        "Company net income $100m; operating cash flow $120m; capital expenditures $70m.",
+        "Simplified free cash flow = $120m−$70m=$50m, not $100m net income.",
+        "100m shares at $20 ⇒ equity capitalization $2.0bn.",
+        "Debt $400m, excess cash $150m ⇒ simplified EV ≈$2.25bn.",
+        "FCF yield relative to equity capitalization $50m/$2.0bn=2.5%, but valuation depends on cash obligations and growth."
+      ],
+      "practice": [
+        [
+          "Why can a company report positive earnings and still struggle to pay creditors?",
+          "Accrual earnings can include noncash items and revenue not yet collected, while debt service and capital expenditure require available cash. Examine cash flow, working capital and maturities."
+        ],
+        [
+          "What additional facts should be checked before labeling a company cheap because its P/E ratio is below peers?",
+          "Growth, profitability quality, debt, cyclicality, dilution, one-off earnings, risk and business differences can explain a lower multiple; a simple ratio is not a valuation conclusion."
+        ]
+      ]
+    },
+    {
+      "title": "Discounted cash flow valuation as a model, not a magic fair price",
+      "body": [
+        "Valuation starts with a conditional principle: the value of a financial claim reflects the present value of cash flows its owner expects to receive, adjusted for timing and risk. In a constant-growth dividend discount model, P0=D1/(k−g) when k is greater than g and the assumptions are economically sustainable, where D1 is next-period dividend, k the required return and g constant growth. A company without stable distributions may be better analyzed through free cash flow to equity or enterprise, with explicit capital requirements and terminal assumptions.",
+        "The model is sensitive. If next year's dividend is $2, the required return is 9% and perpetual growth 3%, simplified value is $2/(0.09−0.03)=$33.33. If k rises to 10% holding g at 3%, value becomes $28.57. The nearly 14.3% decline reflects only a one-point discount-rate shift. If k approaches g, the mathematical value explodes; this warns of unsuitable assumptions, not infinite real investment worth.",
+        "Professional analysis uses pessimistic, base and optimistic cases with a clear research trail. Forecast a finite period of revenues, operating margins, taxes, reinvestment, and free cash flows; then disclose a terminal value assumption. Link a price target to its required return, capital structure and dilution. A range of values is more responsible than a precise price to two decimals when forecast uncertainty is large. Never claim that a DCF model guarantees a future market price."
+      ],
+      "worked": [
+        "Next-year dividend D1=$2 per share, required return k=9%, perpetual growth g=3%.",
+        "Dividend discount value P0=$2/(0.09−0.03)=$33.33 per share.",
+        "If required return rises to 10%, P0=$2/(0.10−0.03)=$28.57.",
+        "Changing g to 4% at k=9% gives $40; show why growth assumptions matter.",
+        "The model is invalid if k≤g for an indefinite constant-growth perpetuity."
+      ],
+      "practice": [
+        [
+          "Why is assuming 8% perpetual dividend growth and an 8% required return mathematically invalid under the simple Gordon model?",
+          "The denominator k−g is zero, so the perpetuity does not have a finite model value. Economic sustainability and finite-horizon structure must be reassessed."
+        ],
+        [
+          "Would a model value of $33.33 guarantee that the stock trades there next year?",
+          "No. It is conditional on uncertain dividends, discount rates, growth and timing. Market price is determined by actual trades and changing expectations."
+        ]
+      ]
+    },
+    {
+      "title": "Fixed-income claims and the inverse relation between price and yield",
+      "body": [
+        "A bond's price is the discounted value of promised coupon and principal payments, adjusted for credit and contractual options. For a plain fixed-coupon bond with N annual payments, coupon C, face F and required yield y, price is P=Σ[C/(1+y)^t]+F/(1+y)^N. When required market yield rises, the same fixed future payments are discounted more heavily and price generally falls. A bond held to maturity may still expose the investor to default, reinvestment and liquidity risks; bond funds typically have fluctuating net asset values and no promise to return a given investor's purchase price.",
+        "Duration approximates sensitivity of bond price to a small yield change: ΔP/P≈−modified duration×Δy, with convexity and other corrections for larger moves. A fund displaying a modified duration of 6 years may experience roughly a 6% price decline for a parallel one-percentage-point rate increase under a local approximation. Duration is a sensitivity measure, not a guarantee of return, holding period or maximum loss. Credit spreads and option features can change the outcome.",
+        "For a zero-coupon bond, P=F/(1+y)^N. A $1,000 face bond due in three years at 4% annual yield is worth about $889.00. If the yield rises to 5%, price falls to about $863.84. This can be worked precisely without forecasts. Compare individual Treasuries, corporate bonds, bond funds, certificates of deposit and cash deposits on credit protection, price risk, maturity, after-tax return, early-sale consequences and whether funds are required soon."
+      ],
+      "worked": [
+        "Zero-coupon bond: face $1,000, maturity 3 years, yield 4% ⇒ $1,000/1.04³≈$889.00.",
+        "At yield 5%, price $1,000/1.05³≈$863.84, a market value loss of about $25.16.",
+        "Illustrative bond fund modified duration 6 and yield rise 1 percentage point ⇒ approximately 6% price decline, before convexity and other effects.",
+        "A fixed coupon does not prevent resale value from changing when yields or credit risk change.",
+        "Bond fund shares generally do not have the same fixed individual-bond maturity cash payment."
+      ],
+      "practice": [
+        [
+          "Why can an investment-grade bond fund decline when interest rates rise even if its holdings continue paying interest?",
+          "Market discount rates change the present value of fixed future coupons and principal. Longer-duration holdings are especially sensitive, even without defaults."
+        ],
+        [
+          "Why should a home buyer avoid equating a three-year bond fund's price exposure with a bank deposit guaranteed for a known withdrawal date?",
+          "The fund has fluctuating NAV and market risk; eligible insured bank deposits follow different contractual and insurance protections, subject to account terms."
+        ]
+      ]
+    },
+    {
+      "title": "Investor research: investment thesis, counterevidence and implementation",
+      "body": [
+        "An investment thesis is a falsifiable explanation of what must happen for the security to justify its current price. Start with business economics, asset and liability structure, expected cash flows, valuation range, key risks, position size and the household goal. Identify a disconfirming condition, such as falling free cash flow, unexpected refinancing at higher rates, dilution, deteriorating margins or weak governance. Price momentum or enthusiasm on social media is not sufficient evidence of a margin of safety.",
+        "Research process matters as much as formulas. The investor should trace security names and share classes to EDGAR filings or a fund prospectus, read fee tables, inspect holdings and concentration, identify liquidity and order implementation, and verify tax lots and account treatment. Record assumptions and source dates. An unreviewed fund marketed as 'diversified' might be a levered, inverse or highly concentrated product not appropriate for a long-term household portfolio.",
+        "Finish with a decision table: buy under defined valuation and liquidity conditions, watch for better evidence or price, or reject because the investment is inappropriate for the goal. A family saving for a down payment in twelve months may rationally reject an attractive-looking stock because a market drawdown could prevent closing. For money with a 20-year horizon and a sufficient emergency reserve, the acceptable risk set can differ. The same ticker can be inappropriate for one goal and reasonable for another.",
+        "Document that research is not a guaranteed forecast or personalized securities advice. Require a student investment memorandum to show the price paid, costs, expected cash flows, scenario valuation, one test of counterevidence, worst credible loss and effect on the household's obligations. That standard makes Module 4 a training in disciplined decision-making instead of collecting investment terminology."
+      ],
+      "worked": [
+        "Household has $8,000 earmarked for a home closing in twelve months and $5,000 for 20-year investing.",
+        "An illustrative 30% stock decline would erase $2,400 of the closing bucket if wrongly invested there.",
+        "Keeping the closing funds in an appropriately liquid vehicle preserves the transaction goal better under this scenario.",
+        "A $5,000 long-horizon investment can absorb different volatility if the household has adequate reserves and affordability.",
+        "Investment memo must separate expected upside, source dates, downside, account fees and when cash will be needed."
+      ],
+      "practice": [
+        [
+          "Why could declining an apparently undervalued stock be rational when a home closing is near?",
+          "The household's required cash date and inability to absorb a drawdown may dominate expected investment return; opportunity cost should be assessed against the specific goal."
+        ],
+        [
+          "Name two pieces of primary documentation a student must inspect before recommending a publicly traded stock or fund.",
+          "For stock: relevant Form 10-K/10-Q and disclosures. For a fund: its prospectus including fee table and holdings or shareholder reports; records should show dates and security identification."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Investor.gov · Stocks",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+    ],
+    [
+      "SEC Investor.gov · Mutual Fund and ETF Characteristics (2025)",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds"
+    ],
+    [
+      "SEC Investor.gov · Mutual Fund and ETF Fees (2025)",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin"
+    ],
+    [
+      "SEC Investor.gov · Understanding Order Types (updated Aug 2026)",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14"
+    ],
+    [
+      "SEC Investor.gov · Bond fund risks",
+      "https://www.investor.gov/introduction-investing/investing-basics/glossary/bond-funds-and-income-funds"
+    ],
+    [
+      "SIPC · What SIPC Protects",
+      "https://www.sipc.org/for-investors/introduction"
+    ],
+    [
+      "SEC EDGAR filings",
+      "https://www.sec.gov/edgar/search/"
+    ]
+  ],
+  "assessment": {
+    "title": "Security analysis committee memo",
+    "prompt": "Compare one hypothetical $5,000 equity purchase and one fixed-income alternative. Reconcile total return, execution costs, fund expense drag, company cash flow, dividend-discount sensitivity and yield shock on a bond. Include at least one falsifying investment-thesis condition, a short-horizon home down-payment constraint, and six primary-source references. State assumptions rather than assert investment superiority.",
+    "rubric": [
+      "Market claims and legal product differences (15%)",
+      "Total-return and transaction math (20%)",
+      "Fund and company fundamental analysis (20%)",
+      "DCF or bond pricing sensitivity (20%)",
+      "Appropriateness, counterevidence, sources and presentation (25%)"
+    ]
+  }
+}
