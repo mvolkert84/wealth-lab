@@ -16,7 +16,7 @@ assert.ok(css.includes('#app > nav.bottom')&&css.includes('#app.wlnb-active > na
 assert.ok(css.includes('min-height:56px'),'Nav targets should remain comfortably tappable');
 assert.ok(css.includes('env(safe-area-inset-bottom)'),'Phone bottom safe area missing');
 assert.ok(css.includes('grid-template-columns:repeat(5,minmax(0,1fr))'),'Five-tab navigation grid missing');
-const input='id="\${id}" type="range" min="13" max="24" step="1"';
+const input='id="${id}" type="range" min="13" max="24" step="1"';
 assert.ok(app.includes(input),'Slider must cover 13px to 24px at 1px increments');
 assert.ok(app.includes("function setReadingSize(value,save=false)"),'Live font update missing');
 assert.ok(app.includes("case 'font-reset'"),'Reset missing');
