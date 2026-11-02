@@ -49,11 +49,11 @@ function valid(type,v){if(Object.values(v).some(x=>!Number.isFinite(x)||Math.abs
  if(type==="earnings")return true;
  if(type==="combined")return v.other+v.benefits*.5<=34000 &&v.other+v.benefits*.5>=25000;
  if(type==="floor")return true;
- if(type==="sequence")return v.fall<=100&&v.initial*(1-p(v.fall))>=v.withdraw&&v.gainFirst>=0;
+ if(type==="sequence")return v.fall<=100&&v.initial*(1-p(v.fall))>=v.withdraw&&v.initial*(1+p(v.gain))>=v.withdraw;
  if(type==="withdraw")return v.start>0&&v.current>0&&v.rate<=100;
  if(type==="inflation")return v.years<=100&&v.inflation>-100&&v.nominal>-100;
  if(type==="rmd")return v.divisor>0&&v.rate<=100;
- if(type==="shock")return v.stockWeight<=100&&v.stockLoss<=100&&v.bondLoss<=100&&v.afterDraw>0;
+ if(type==="shock")return v.stockWeight<=100&&v.stockLoss<=100&&v.bondLoss<=100&&v.start*(p(v.stockWeight)*(1-p(v.stockLoss))+(1-p(v.stockWeight))*(1-p(v.bondLoss)))>v.withdraw;
  return false;}
 
 const labelValue=(x,fmt)=>fmt==="percent"?fixed(x)+"%":fmt==="number"?fixed(x):money(x);
