@@ -168,7 +168,7 @@
       "body": [
         "Direct capitalization estimates asset value by dividing a stabilized single-year NOI by a market cap rate. Discounted cash flow (DCF) models every future property's operating cash, major capital expenses and a terminal sale. An equity DCF includes loan payments and net sale after mortgage payoff; an unlevered asset DCF excludes financing and applies an appropriate asset discount rate. Mixing cash definitions with an unrelated discount rate produces inconsistent values.",
         "To value a simplified perpetuity with constant annual NOI $12,000 at an 8% capitalization rate, the direct-cap price would be $150,000. But a property with expected growing NOI, a roof replacement in year 3 and costly exit at year 5 cannot safely be modeled by one perpetuity formula. Its DCF requires dated annual income, capital calls, sale proceeds, expenses and discounting.",
-        "For a two-year illustrative equity model, invest $60,000 now, receive $3,000 at year one, and at year two receive $3,000 plus $67,000 net sale proceeds. At a hypothetical 10% required equity return, NPV = −$60,000+$3,000/1.10+$70,000/1.10²≈$598. This narrow scenario excludes taxes and return uncertainty; changing the sale price can reverse the result."
+        "For a two-year illustrative equity model, invest $60,000 now, receive $3,000 at year one, and at year two receive $3,000 plus $67,000 net sale proceeds. At a hypothetical 10% required equity return, NPV = −$60,000+$3,000/1.10+$70,000/1.10²≈$579. This narrow scenario excludes taxes and return uncertainty; changing the sale price can reverse the result."
       ],
       "worked": [
         "Simple direct cap value NOI $12,000/.08=$150,000.",
