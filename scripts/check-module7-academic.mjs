@@ -1,0 +1,71 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {Script,runInNewContext} from 'node:vm';
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const html=read('index.html'),sw=read('sw.js'),ds=read('academy-academic/module7-data.js'),cs=read('academy-academic/module7-core.js'),css=read('academy-academic/module7-academic.css');
+new Script(ds);new Script(cs);
+const e={document:{addEventListener(){},querySelectorAll(){return[];}},console};e.window=e;
+runInNewContext(ds,e);runInNewContext(cs,e);
+const d=e.WealthLabAcademicM7Data,ids=['L7.S1','L7.S2','L7.S3','L7.S4'];
+assert.equal(d.schema,'wealth-lab-m7-academic-v1');
+assert.deepEqual(Array.from(d.lessonIds),ids);
+const expectedLabs=[3,3,4,3];
+let parts=0,words=0,problems=0;
+for(let i=0;i<4;i++){
+ const l=d.lessons[i];assert.equal(l.id,ids[i]);
+ assert.ok(l.sections.length>=7&&l.objectives.length>=4&&l.prerequisites.length>=3);
+ assert.ok(l.sourceRefs.length>=5&&l.sourceRefs.every(x=>x[1].startsWith('https://')));
+ for(let j=0;j<l.sections.length;j++){
+  const sec=l.sections[j];parts++;assert.equal(sec.body.length,4);
+  assert.ok(sec.body.every(p=>p.length>=160),'Explanatory paragraph too short in '+l.id+' part '+(j+1));
+  assert.ok(sec.worked.length>=4&&sec.practice.length===2);
+  assert.ok(sec.practice.every(p=>p[0].length>25&&p[1].length>=70));
+  words+=sec.body.join(' ').trim().split(/\s+/).length;problems+=sec.practice.length;
+ }
+ const page=e.WealthLabAcademicM7Markup(l.id);
+ assert.ok(page.includes(l.id+'.A1')&&page.includes(l.id+'.A'+l.sections.length));
+ assert.equal((page.match(/data-m7-lab=/g)||[]).length,expectedLabs[i]);
+ assert.ok(page.includes('data-m7-check')&&page.includes('Independent chapter assessment'));
+ assert.ok(page.includes('Authoritative research sources'));
+}
+assert.equal(parts,28);
+assert.equal(problems,56);
+assert.ok(words>=7500);
+assert.ok(e.WealthLabAcademicM7Markup('L3.S1').includes('unavailable'));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes('window.WealthLabAcademicM7Markup?.(s.id)'));
+assert.ok(html.includes('window.WealthLabAcademicM7Init?.()'));
+assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
+for(const id of ['L7.S2','L7.S3','L7.S4'])assert.ok(html.includes('src="./academy-chapters/'+id+'.js?v=1.0.0"'));
+for(const file of ['module7-data.js','module7-core.js','module7-academic.css']){
+ assert.ok(html.includes('./academy-academic/'+file+'?v=3.0.0'));
+ assert.ok(sw.includes("'./academy-academic/"+file+"?v=3.0.0'"));
+}
+assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length);
+assert.ok(!cs.includes('localStorage'),'Labs must not rewrite original notes or progress');
+assert.ok(d.capstone.tasks.length>=12&&d.capstone.answers.length>=12);
+assert.ok(e.WealthLabAcademicM7Markup('L7.S4').includes('cumulative'));
+const c=e.WealthLabAcademicM7Calculate;
+const near=(a,b,t=.055)=>assert.ok(Number.isFinite(a)&&Math.abs(a-b)<=t,'Expected '+b+', got '+a);
+let q=c('cpi',{start:300,end:312,next:3,housing:6,food:3,transport:-2,utilities:8,other:4});near(q.first,4);near(q.finalIndex,321.36);near(q.cumulative,7.12);near(q.household,4.2);
+q=c('realReturn',{principal:10000,nominal:6,inflation:3,years:1});near(q.realRate,2.912621);near(q.nominalEnd,10600);near(q.realEnd,10600/1.03);
+q=c('homeInflation',{price:250000,debt:237500,appreciation:3,inflation:5,stress:10});near(q.startEquity,12500);near(q.upEquity,20000);near(q.realPrice,257500/1.05);near(q.stressEquity,-12500);
+q=c('bond',{face:1000,coupon:4,years:3,yieldA:4,yieldB:5});near(q.couponA,1000);near(q.couponB,972.76752);near(q.zeroA,888.99636);near(q.zeroB,863.8376);
+q=c('duration',{value:20000,duration:6,shockBps:75});near(q.change,-4.5);near(q.dollars,-900);near(q.ending,19100);
+q=c('mortgage',{loan:240000,years:30,rateA:6,rateB:7,points:1,saving:45});near(q.paymentA,1438.92126);near(q.paymentB,1596.72599);near(q.pointCost,2400);near(q.breakEven,53.333333);
+q=c('pvfv',{principal:1000,annual:6,years:5});near(q.future,1338.2255776);near(q.back,1000);
+q=c('annuity',{monthly:250,years:20,annual:6,begin:0});near(q.contributions,60000);near(q.future,115510.22379);near(q.growth,55510.22379);
+q=c('annuity',{monthly:250,years:20,annual:6,begin:1});near(q.future,116087.77491);
+q=c('amortization',{loan:240000,rate:6,years:30,paid:1});near(q.payment,1438.92126);near(q.interestFirst,1200);near(q.principalFirst,238.92126);near(q.remaining,239761.07874);
+q=c('npv',{cost:4000,saving:90,months:60,monthlyRate:.5});near(q.pvSavings,4655.30047);near(q.npv,655.30047);near(q.simplePayback,44.44444);
+q=c('npv',{cost:4000,saving:90,months:24,monthlyRate:.5});near(q.pvSavings,2030.65796);near(q.npv,-1969.34204);
+q=c('gdp',{c:700,i:180,g:210,x:90,m:120,nominal:6,prices:3,quarter:.5});near(q.gdp,1060);near(q.real,2.912621);near(q.annualized,2.01505);
+q=c('labor',{employed:950,unemployed:50,outside:200,exit:20});near(q.laborForce,1000);near(q.unemployment,5);near(q.participation,83.33333);near(q.newRate,100*30/980);
+q=c('runway',{cash:12000,expenses:3000,rise:10,deductible:2500,home:250000,debt:237500,priceShock:10});near(q.runway,4);near(q.afterInflation,12000/3300);near(q.afterClaim,9500/3300);near(q.equityShock,-12500);
+const valid=e.WealthLabAcademicM7Valid;
+assert.ok(!valid('bond',{face:1000,coupon:4,years:3,yieldA:-100,yieldB:5}));
+assert.ok(!valid('labor',{employed:950,unemployed:50,outside:200,exit:51}));
+assert.ok(!valid('mortgage',{loan:240000,years:0,rateA:6,rateB:7,points:1,saving:45}));
+console.log('PASS M7: '+parts+' deep academic economics sections, '+problems+' open-response problems, '+words+' text words.');
+console.log('PASS 13 financial models: CPI, real returns, home leverage, bonds, duration, mortgages, FV/PV, annuities, amortization, NPV, GDP, labor and runway.');
+console.log('PASS original lesson IDs and source textbooks, cumulative capstone, offline cache and notes/progress integrity.');
