@@ -1,0 +1,266 @@
+{
+  "id": "L15.S1",
+  "title": "Business Profit and Owner Cash",
+  "subtitle": "Three-statement accounting, unit economics, working capital, taxation, distribution constraints and business valuation",
+  "prerequisites": [
+    "L1.S1 assets and net worth",
+    "L2 cash flow and budgeting",
+    "L7.S3 discounted cash flows",
+    "L11.S1 individual income tax"
+  ],
+  "objectives": [
+    "Reconcile income statement profit and operational bank cash",
+    "Calculate gross margin, contribution margin and operating breakeven",
+    "Model receivables, payables and working capital cycles",
+    "Separate owner draw, wages, distributions and tax obligations",
+    "Estimate economic business equity value with owner replacement labor",
+    "Build a thirteen-week cash forecast and documented owner payout policy"
+  ],
+  "sections": [
+    {
+      "title": "The four statements of owner economics",
+      "body": [
+        "A business's sales receipt is not a paycheck, and company profit is not identical to cash that a founder can safely remove. The income statement records sales, cost of goods sold, operating expenses and profit under its accounting conventions; the balance sheet records assets, liabilities and equity; cash-flow statements explain cash from operations, investing and financing. A separate owner's household budget determines how much business cash can legitimately support personal living expenses.",
+        "A small maker business may receive orders in advance, purchase yarn, incur fulfillment costs and carry unfinished inventory. Deposits and unfulfilled orders may create obligations; a paid customer order does not always represent a free and clear owner's distribution. Inventory and equipment tie capital up until sold or disposed. A growing company can show attractive margins while running out of cash because it is expanding inventory faster than it collects orders.",
+        "Separate the owners' initial investment, legal entity capital, customer prepayments, income-tax reserves and safe distributable cash. Build a monthly reconciliation from invoices to merchant settlement and bank statement, then forecast outflows by due date. The best owner dashboard shows profitability, cash conversion, recurring fixed cost, outstanding tax, and cash needed to deliver promised work."
+      ],
+      "worked": [
+        "Sales $150,000 less cost of goods $90,000 gives $60,000 gross profit.",
+        "Operating expenses $40,000 leave $20,000 operating profit, before taxes and financing.",
+        "Gross margin $60,000/$150,000=40%; operating margin $20,000/$150,000≈13.33%.",
+        "A $20,000 profit does NOT prove $20,000 safe owner-distributable cash."
+      ],
+      "practice": [
+        [
+          "Why is business revenue not automatically personal disposable income?",
+          "Revenue must cover direct costs, labor, obligations, operating expenses, debt, taxes and working capital; only appropriately available remaining cash can support distributions."
+        ],
+        [
+          "What distinct business question does a balance sheet answer?",
+          "It identifies resources, obligations and owner equity at a point in time, complementing operating performance and timing of cash."
+        ]
+      ]
+    },
+    {
+      "title": "Unit economics: pricing before scaling",
+      "body": [
+        "Unit economics estimates the contribution from one incremental sale after directly attributable variable expenses. Unit contribution equals realized sale price minus material, payment-processing, packaging, marketplace, shipping subsidies and incremental labor. The contribution-margin percentage is contribution divided by realized sales price. Fixed overhead, initial equipment and any reasonable owner compensation still need coverage.",
+        "Take a handmade sensory product priced at $120, with $42 materials, $8 packaging and merchant fees, and $25 variable production labor. Contribution is $45 or 37.5%. If fixed monthly business costs are $900, the simplified break-even volume is $900/$45=20 units per month. Selling 20 units is not an owner salary: the $25 production labor is already a cost in this scenario and a separate owner salary or desired profit would raise the required volume.",
+        "Discounts, free shipping and returns can change contribution more than expected. A seller offering 15% off the $120 item without lowering $75 of variable costs earns $27 contribution rather than $45, a 40% reduction. A growth plan should test contribution after discounts and fulfillment, not count gross order value as margin."
+      ],
+      "worked": [
+        "Price $120−materials $42−other variable $8−production labor $25=$45 unit contribution.",
+        "Contribution margin=45/120=37.5%; fixed expense $900 requires 20 units to break even.",
+        "15% price discount produces $102 revenue and $27 contribution.",
+        "At $27 per unit and $900 fixed cost, break-even volume rounds up to 34 units."
+      ],
+      "practice": [
+        [
+          "Does a product with 40% gross margin necessarily earn 40% net profit?",
+          "No; fixed overhead, sales commissions, financing, taxes, refunds and owner compensation can further reduce the final profit."
+        ],
+        [
+          "Why do discounts change break-even quantities disproportionately?",
+          "Fixed and some variable costs remain while realized sales revenue falls, often causing a much larger percentage drop in contribution than the discount percentage."
+        ]
+      ]
+    },
+    {
+      "title": "Accrual profits versus operating cash flow",
+      "body": [
+        "Accrual recognition can put revenue on the income statement before the customer pays; inventory purchases and supplier credit can change cash at different dates from cost recognition. For management analysis, the approximate operating-cash bridge begins with accrual profit, adds noncash expenses such as depreciation, subtracts an increase in receivables or inventory, and adds an increase in eligible operating payables. Exact cash-flow reporting also adjusts other working-capital accounts.",
+        "A business shows $20,000 reported profit, $4,000 depreciation, a $9,000 rise in receivables, $6,000 more inventory, and $3,000 higher supplier payables. Simplified operating cash flow equals 20,000+4,000−9,000−6,000+3,000=$12,000. Even that $12,000 is before buying new equipment or paying loan principal and owner distributions. Report separately taxes paid and any other adjustments omitted from the educational bridge.",
+        "A seller can grow its order book and still experience a cash crunch if it lets customers pay in 60 days while suppliers demand cash in seven. Compare the cash conversion cycle and whether inventory can be sold without severe markdowns. If cash needs routinely exceed operating inflow, higher revenue may increase financing stress."
+      ],
+      "worked": [
+        "Accrual profit $20,000; depreciation add-back $4,000.",
+        "Receivables increase $9,000 and inventory increase $6,000 use cash.",
+        "Supplier payable increase $3,000 provides temporary financing.",
+        "Simplified operations cash $20,000+$4,000−$9,000−$6,000+$3,000=$12,000."
+      ],
+      "practice": [
+        [
+          "Why can a higher accounting profit coincide with a lower bank balance?",
+          "Receivables, unsold inventory, debt principal, equipment purchases and timing of payments can consume cash while profit is booked."
+        ],
+        [
+          "Is supplier payable growth a guaranteed permanent source of owner cash?",
+          "No. It postpones supplier payment and can create later cash demands or reputational and credit problems."
+        ]
+      ]
+    },
+    {
+      "title": "Working-capital operating cycle",
+      "body": [
+        "The cash conversion cycle expresses how long operating capital remains committed before returning as collected sales. A common approximation adds days inventory outstanding and days sales outstanding, then subtracts days payable outstanding. Higher positive days often mean more cash must be financed, although industry and revenue recognition matter. Negative cycles can exist when customers pay before suppliers become due.",
+        "Suppose days inventory outstanding 45, days sales outstanding 30 and days payable outstanding 20. Cash conversion cycle is 45+30−20=55 days. An owner with $3,000 of monthly cash operating purchases may need substantial working capital over that interval; multiplying one average daily cost by 55 is an approximation, not an exact ledger of all cash movements. Account for deposits, payroll and prepayments separately.",
+        "A made-to-order seller may receive payment in advance, changing the operating cash cycle, but advance cash often belongs economically to work not yet delivered. Keeping customer order reserves and supplier-payment dates distinct protects fulfillment and refunds. Long lead times and cancellation risk should enter a forecast; slow production is not free financing."
+      ],
+      "worked": [
+        "DIO 45 days + DSO 30 days − DPO 20 days =55 cash conversion days.",
+        "Reducing collection lag to 15 days yields 45+15−20=40 days.",
+        "Increasing inventory holding to 70 days yields 70+30−20=80 days.",
+        "These time estimates must be reconciled with actual customer receipts and supplier due dates."
+      ],
+      "practice": [
+        [
+          "What does a 55-day positive cash conversion cycle imply?",
+          "Money can remain tied up in stock and customer receivables well before supplier financing fully offsets those costs."
+        ],
+        [
+          "Why can customer deposits not always fund unrelated owner purchases safely?",
+          "The business still owes the ordered goods or refunds, so spending deposits elsewhere can make fulfillment impossible."
+        ]
+      ]
+    },
+    {
+      "title": "Owner compensation, draws and personal taxes",
+      "body": [
+        "How an owner receives money depends on tax status. A sole proprietor's draw generally does not become a wage expense simply because it is transferred to a personal account; net business profit is reported under applicable tax rules, whether or not drawn. An officer-shareholder working for an S corporation generally must receive reasonable compensation for services before non-wage distributions. A multi-member partnership has its own tax allocation, guaranteed-payment and distribution considerations.",
+        "If a sole proprietor earns $20,000 Schedule C net profit and transfers $8,000 to a personal bank account, the $8,000 is not ordinarily an additional income-tax deduction. The tax analysis generally starts from the $20,000 business profit, subject to legitimate deductions, self-employment income rules and other return items. Cash reserved for taxes cannot also be counted as an emergency fund or safe owner pay.",
+        "Tax distributions and safe owner distributions must be separately authorized and tracked. Under 2026 IRS guidance, self-employment tax calculations typically begin with 92.35% of qualifying net earnings and incorporate Social Security wage limits and Medicare tax provisions. A real tax estimate needs wages from other jobs, filing status and credits, not a single arbitrary percentage."
+      ],
+      "worked": [
+        "Schedule C net profit $20,000; owner draws $8,000.",
+        "Owner draw generally does not itself reduce the original $20,000 net profit.",
+        "Illustrative 92.35% self-employment earnings base: $20,000×0.9235=$18,470.",
+        "Actual SE tax depends on other wages, exclusions, caps, Additional Medicare Tax and taxpayer facts."
+      ],
+      "practice": [
+        [
+          "Why can taking no cash distributions still leave a pass-through owner owing tax?",
+          "Pass-through business income can be allocated to the owner for tax purposes independent of the timing of owner cash withdrawals."
+        ],
+        [
+          "Why is 'pay myself an owner draw to avoid income tax' a flawed slogan?",
+          "A draw ordinarily changes where cash sits, not the business profit allocation or applicable tax liability."
+        ]
+      ]
+    },
+    {
+      "title": "Taxes, reserves and the after-tax owner cash runway",
+      "body": [
+        "A disciplined owner uses a rolling thirteen-week cash forecast to compare opening cash, confirmed collections, expected receipts and dated obligations. Separate vendor and payroll amounts, taxes, debt service, customer obligations and capital expenditures. The minimum weekly ending balance gives better information about survival than a year-end profit estimate. Tax underpayment can create penalties even when a business remains profitable.",
+        "Assume $15,000 cash at start, expected 13-week net operating cash use of $7,000, quarterly taxes $2,000 and a necessary machine repair $3,000. Closing cash would be $3,000 if those amounts are all realized; with a target $5,000 protected business minimum the business needs another $2,000. A founder cannot distribute $4,000 from opening cash without increasing the shortfall or changing assumptions.",
+        "Real ownership requires an explicit policy for how much cash can leave the company, who approves payments, and when to replenish business reserves. Separate household housing and emergency funds from uncertain enterprise liquidity. The decision to delay a new product launch may be rational when preorders cannot finance production without exposing customers to nonperformance."
+      ],
+      "worked": [
+        "Opening business cash $15,000−operations use $7,000−tax $2,000−machine repair $3,000=$3,000.",
+        "Protected minimum cash $5,000, funding gap $2,000.",
+        "Proposed owner withdrawal $4,000 would lower modeled ending cash to −$1,000.",
+        "Tax funds and customer-delivery funds remain restricted for planning purposes."
+      ],
+      "practice": [
+        [
+          "How does a rolling thirteen-week forecast improve on monthly accounting profit?",
+          "It identifies dates when bills exceed available bank cash, including periods that may have profitable accrual statements."
+        ],
+        [
+          "Why is owner cash withdrawal a governance decision, not just an accounting entry?",
+          "Pulling funds can jeopardize supplier, payroll, tax, fulfillment or creditor obligations even when positive profit has been reported."
+        ]
+      ]
+    },
+    {
+      "title": "Business valuation and the founder's labor replacement cost",
+      "body": [
+        "A buyer values transferable future economic benefit, not just top-line sales. Small-business valuations may start from normalized owner earnings, seller's discretionary earnings or EBITDA, then adjust for owner replacement labor, customer concentration, deferred maintenance, financing and risk. No universal sales multiple is a substitute for financial diligence. A company requiring the founder to work sixty hours a week may have little passive economic profit to an outside buyer.",
+        "A business reports $50,000 before paying an owner's market-equivalent labor of $40,000. Normalized earnings available to a passive buyer could be only $10,000 before other adjustments. Applying a hypothetical 3× multiple to $50,000 would suggest $150,000, while 3× normalized $10,000 suggests $30,000. Neither is an actual valuation quote; required working capital, debt and transaction structure may change equity price.",
+        "Separate enterprise value, debt and excess cash. In a simple case, enterprise value $100,000 less debt $25,000 plus excess unrestricted cash $5,000 gives $80,000 indicative equity value. Business value does not equal money available to heirs or founders immediately; sale expenses, buyer financing, taxes and earn-outs can reduce near-term proceeds."
+      ],
+      "worked": [
+        "Owner benefit before replacement wages $50,000−market labor $40,000=$10,000 normalized earnings.",
+        "Illustrative three-times multiple yields $30,000 operating valuation, not a market quote.",
+        "Enterprise value $100,000−business debt $25,000+excess cash $5,000=$80,000 equity value.",
+        "Customer concentration, owner dependency and future capital needs can change fair price."
+      ],
+      "practice": [
+        [
+          "Why should a buyer price the cost of replacing the founder's labor?",
+          "Without it, the buyer can mistake earnings generated by uncompensated personal work for sustainable passive business profit."
+        ],
+        [
+          "How is enterprise value different from owner's equity proceeds?",
+          "Enterprise value typically values operations; obligations, excess cash, transaction costs and tax affect the equity consideration and amount collected."
+        ]
+      ]
+    },
+    {
+      "title": "Build a three-statement business operating review",
+      "body": [
+        "A professional business operating review reconciles income statement profitability to cash, balance sheet working capital and a written financing plan. It compares actual orders, revenue, gross margin, payroll, fulfillment, customer returns and profit against forecast, and identifies what changed rather than merely showing green or red numbers. Variances should have named owners and corrective actions.",
+        "Model annual $150,000 sales, $90,000 direct costs and $40,000 overhead, then stress a 10% revenue decline with direct costs that fall proportionally while overhead stays fixed. Revenue becomes $135,000, variable costs $81,000, fixed costs $40,000, and operating profit $14,000, down 30% from $20,000. This demonstrates operating leverage in a small enterprise. Fixed expenses are not guaranteed to remain fixed indefinitely.",
+        "The committee should demand customer and product profitability, inventory aging, vendor concentration, owner dependency and legal/tax reporting evidence. A lender needs cash debt coverage, and a homebuying founder needs documented taxable income and stable cash reserves. The memo should state what must improve before the company grows into an employer or hires more staff."
+      ],
+      "worked": [
+        "Base $150,000 revenue−$90,000 variable costs−$40,000 fixed costs=$20,000 profit.",
+        "Sales down 10% => $135,000, variable costs down proportionally to $81,000.",
+        "Stressed operating profit $135,000−$81,000−$40,000=$14,000.",
+        "Profit decline $6,000/$20,000=30% despite sales declining only 10%."
+      ],
+      "practice": [
+        [
+          "Why can a ten-percent sales decline reduce profit by thirty percent?",
+          "Fixed overhead remains while sales and contribution decline; operating leverage amplifies the effect on residual profit."
+        ],
+        [
+          "What would make a business review academically rigorous?",
+          "Reconciled statements, defined metrics, documented assumptions, variance analysis, adverse scenarios and traceable management actions."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SBA manage your business and three-statement financial oversight",
+      "https://www.sba.gov/counseling/manage-your-business/"
+    ],
+    [
+      "IRS Publication 334 tax guide for small businesses",
+      "https://www.irs.gov/publications/p334"
+    ],
+    [
+      "IRS Schedule C and self-employment tax",
+      "https://www.irs.gov/instructions/i1040sc"
+    ],
+    [
+      "IRS 2026 withholding and estimated taxes",
+      "https://www.irs.gov/publications/p505"
+    ],
+    [
+      "IRS paying yourself for owner compensation",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/paying-yourself"
+    ],
+    [
+      "IRS S corporation reasonable compensation rules",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues"
+    ],
+    [
+      "SBA business financial management",
+      "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+    ],
+    [
+      "IRS Schedule SE and self-employment income",
+      "https://www.irs.gov/faqs/small-business-self-employed-other-business/schedule-c-schedule-se/schedule-c-schedule-se-1"
+    ]
+  ],
+  "assessment": {
+    "title": "Operating-company three-statement and owner-pay committee",
+    "prompt": "For fictional handmade-business $150,000 annual revenue, $90,000 variable costs, $40,000 overhead, calculate gross and operating margins, then −10% sales stress proportional direct costs. For product $120 with $42 materials, $8 fees/packaging and $25 production labor, compute unit contribution, percentage margin, $900 monthly fixed-cost break even and 15% discount sensitivity. Reconcile $20k profit, $4k depreciation, AR +$9k, inventory +$6k, AP +$3k. Build thirteen-week liquidity from $15k cash, $7k operating use, $2k taxes, $3k repair, $5k protected minimum. Explain legal/tax owner pay, 2026 Schedule SE and valuation after $40k replacement wage from $50k before owner's labor.",
+    "rubric": [
+      "Three statements and timing of cash (25%)",
+      "Unit economics and operating sensitivity (20%)",
+      "Cash-reserve and tax distribution governance (20%)",
+      "Normalized valuation and owner's labor (20%)",
+      "Documented projections and professional judgment (15%)"
+    ],
+    "answerKey": [
+      "Gross profit $60k, gross margin 40%, operating profit $20k, margin 13.33%.",
+      "10% sales decline with proportional COGS yields $135k revenue−$81k direct−$40k overhead=$14k profit.",
+      "Unit contribution $45, margin 37.5%, break even 20 units. With 15% sale-price discount contribution $27, break even ceil(900/27)=34.",
+      "Cash bridge $20k+$4k−$9k−$6k+$3k=$12k operating cash before omitted details.",
+      "Cash 13-week end $15k−$7k−$2k−$3k=$3k, below $5k floor by $2k.",
+      "Normalized business earnings $50k−$40k replacement owner labor=$10k, not $50k passive earnings."
+    ]
+  }
+}
