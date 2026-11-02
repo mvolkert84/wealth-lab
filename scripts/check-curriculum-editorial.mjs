@@ -75,10 +75,12 @@ for(let n=2;n<=16;n++){
  const labRe=new RegExp('data-m'+n+'-lab="([^"]+)"');
  const m=labRe.exec(markup);assert.ok(m,'No rendered lab for '+firstId);
  const labId=m[1];
+ const nextLab=markup.indexOf('class="lab wl-m'+n+'-lab"',m.index+m[0].length);
+ const labHTML=markup.slice(m.index,nextLab<0?undefined:nextLab);
  const inRe=new RegExp('data-m'+n+'-input="([^"]+)" value="([^"]+)"','g');
  const outRe=new RegExp('data-m'+n+'-output="([^"]+)"','g');
- const inputs=[...markup.matchAll(inRe)].map(x=>({dataset:{['m'+n+'Input']:x[1]},value:x[2],textContent:''}));
- const outputs=[...markup.matchAll(outRe)].map(x=>({dataset:{['m'+n+'Output']:x[1]},textContent:''}));
+ const inputs=[...labHTML.matchAll(inRe)].map(x=>({dataset:{['m'+n+'Input']:x[1]},value:x[2],textContent:''}));
+ const outputs=[...labHTML.matchAll(outRe)].map(x=>({dataset:{['m'+n+'Output']:x[1]},textContent:''}));
  assert.ok(inputs.length>0&&outputs.length>0,'Missing numeric input/output '+n);
  const warning={textContent:''};
  currentRoot={
