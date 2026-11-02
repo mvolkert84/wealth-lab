@@ -1,0 +1,275 @@
+{
+  "id": "L16.S4",
+  "title": "Comprehensive Financial Plan Capstone",
+  "subtitle": "Five-year Connecticut household strategy, debt elimination, mortgage affordability, stress testing, protection and generational wealth",
+  "prerequisites": [
+    "M1–M5 income, cash flow, budgeting and debt",
+    "M6–M7 mortgage and financial mathematics",
+    "M8–M12 investments, retirement and taxes",
+    "M13–M15 protection, estate, rental and business strategy",
+    "L16.S1–S3 fiduciary, planning process and official verification"
+  ],
+  "objectives": [
+    "Construct an integrated financial statement and reconcile all goal funding to available cash",
+    "Model fixed-rate mortgage payments and stress home carrying costs",
+    "Compare high-interest debt reduction against investing with liquidity guardrails",
+    "Measure emergency reserves and job-loss cash burn",
+    "Estimate life/disability insurance needs without substituting permanent policy values for cash",
+    "Build a realistic five-year timeline with no double-counting of home savings",
+    "Distinguish estate/beneficiary ownership from generational housing cash support",
+    "Deliver a properly cited five-year professional financial planning memorandum"
+  ],
+  "sections": [
+    {
+      "title": "The master case: a household with competing financial goals",
+      "body": [
+        "The fictional Connecticut household consists of two adults and one intended child beneficiary. Annual take-home income is $65,000, annual core spending $48,000, unrestricted cash savings $10,000 and credit card debt $7,000 with a hypothetical 22% APR. The household hopes to buy a $250,000 home while protecting emergency liquidity, investing for retirement and eventually passing property or financial assets to the child. Existing coverage, retirement balances, loan eligibility and current mortgage offers are explicitly unknown until verified.",
+        "The initial annual cash margin is $65,000−$48,000=$17,000, or about $1,416.67 monthly. But this amount must cover debt repayment, savings, potential insurance premiums, taxes not already reflected, transition costs and any changed housing expenses. The model must not count the same cash for a reserve, mortgage down payment, policy premium and retirement contribution. Each goal needs a separate ledger and timing.",
+        "This is a five-year planning problem, not an invitation to generate a single 'best investment' answer. A competent solution presents the present position, the required target cash, alternative repayment pathways, resilience under adversity, dependencies on external lending and legal rules, and a prioritized implementation sequence."
+      ],
+      "worked": [
+        "Net annual income $65,000; core spending $48,000 => margin $17,000/year.",
+        "Monthly income $5,416.67, monthly core spend $4,000, preliminary surplus $1,416.67.",
+        "Liquid unrestricted cash $10,000; revolving card $7,000 at stated 22% APR.",
+        "Near-term home and reserve allocation cannot assume existing $10k funds are both spent and retained."
+      ],
+      "practice": [
+        [
+          "What is the first error in treating $17,000 of annual cash margin as guaranteed investment money?",
+          "Debt, reserves, insurance, cash-to-close and changing ownership expenses may all require some of the surplus; future income and spending can change."
+        ],
+        [
+          "Why must the current household facts be labeled fictional and unverified?",
+          "Real borrowing and legal recommendations require actual statements, lender terms, ownership records and current client authorization."
+        ]
+      ]
+    },
+    {
+      "title": "Balance sheet, liquidity and economic solvency",
+      "body": [
+        "A planning balance sheet separates cash, retirement assets, vehicle/home and other marketable property, debts and contractual protections. The master case gives $10,000 liquid unrestricted assets and $7,000 of known revolving liabilities, yielding $3,000 simplified known net worth before unreported property and debt. The planner must not assert that the household's full net worth equals this partial figure. Unknown vehicles, retirement accounts and business interests should be marked missing rather than assumed zero.",
+        "At $48,000 yearly core spending, essential monthly spending is $4,000 under the case assumptions. Ten thousand dollars covers 2.5 months without another income source. A three-month reserve target is $12,000, creating a $2,000 gap; six months requires $24,000, creating a $14,000 gap. If card repayment immediately consumes all cash, the household loses a buffer and could return to expensive borrowing at the first emergency.",
+        "Cash allocation must consider credit risk and reserve quality. Available credit-card limits are not cash reserves, life policy projected surrender value is not guaranteed liquidity, and home equity without existing ownership is irrelevant. Use separate short-term money accounts and document why any debt payoff is staged instead of immediate."
+      ],
+      "worked": [
+        "Known liquid cash $10,000−known credit-card liability $7,000=$3,000 PARTIAL known balance-sheet net amount.",
+        "Essential spending $48,000/12=$4,000/month.",
+        "3-month reserve target $12,000, cash shortfall $2,000.",
+        "6-month reserve target $24,000, cash shortfall $14,000."
+      ],
+      "practice": [
+        [
+          "Does the $3,000 partial net amount prove the family's complete net worth?",
+          "No. The case lacks verified retirement, vehicle, other liabilities and assets, which must be collected before a full statement is possible."
+        ],
+        [
+          "Why might immediately using every dollar of savings to pay the card be risky?",
+          "It leaves the household unable to fund unpredictable essentials and can trigger more high-rate debt despite saving some interest."
+        ]
+      ]
+    },
+    {
+      "title": "Credit card payoff: amortization, interest and cash-priority rules",
+      "body": [
+        "High-rate revolving debt deserves rigorous attention. A simplified monthly amortization uses opening balance B, monthly rate r=APR/12, payment M and formula B_n=B(1+r)^n−M[(1+r)^n−1]/r while balance remains positive. This approximation differs from real credit-card average daily balances, billing cycles, fees, variable rates and payment timing. Use actual bank statements and the exact account agreement in practice.",
+        "With $7,000 at 22% nominal APR and a fixed $500 monthly end payment, the modeled card is paid in approximately sixteen monthly payments, with the final payment smaller than $500. A $350 monthly payment produces a longer schedule and more total interest. Paying $7,000 outright from the $10,000 cash reserve could save future interest but leave only $3,000—or 0.75 months of $4,000 essential expenses—before rebuilding savings.",
+        "A suitable plan can protect a minimum emergency amount while applying a predictable share of monthly surplus to debt. Determine if debt balances grow, whether other higher-rate obligations exist, whether refinancing really reduces all-in cost, and whether late fees are already owed. State the choice, the household's liquidity floor and a trigger to accelerate payments when reserves are met."
+      ],
+      "worked": [
+        "Opening revolving balance $7,000, nominal 22% yearly rate approximated as .22/12 monthly.",
+        "With modeled $500 monthly payments, payoff requires about 17 payment dates depending on final-payment convention; compute iteratively.",
+        "Immediate full $7,000 card payoff leaves $3,000 cash from $10,000, only .75 months of expenses.",
+        "Payoff analysis must include remaining cash and real terms, not only modeled interest savings."
+      ],
+      "practice": [
+        [
+          "Does paying a 22% card instantly with all available cash always maximize safety?",
+          "It reduces interest but can destroy needed liquidity; compare emergencies and the risk of needing additional borrowing."
+        ],
+        [
+          "Why should a card payoff lab compute final partial payment instead of assuming equal full payments forever?",
+          "Debt reaches zero during a final billing period, so continuing to charge fixed full payments would overstate cost or imply negative balance."
+        ]
+      ]
+    },
+    {
+      "title": "Home affordability needs both closing cash and monthly resilience",
+      "body": [
+        "A home purchase has initial down payment, closing costs and cash reserve obligations, followed by mortgage principal and interest, municipal tax, insurance, possible mortgage insurance, utilities, maintenance and repairs. A lender's preapproval is not a household resilience certificate. With a hypothetical $250,000 home, 5% down is $12,500 and the financed principal before loan expenses is $237,500. Assumed closing costs $7,500 and a $6,000 post-close emergency reserve imply a $26,000 initial total cash target.",
+        "At a hypothetical fixed 6.5% nominal rate on $237,500 for 30 years, the principal-and-interest payment follows the amortizing formula; exact taxes, homeowner insurance, PMI and other housing costs must be added separately. The present household already spends $48,000 annually on core items, which may include rent and thus cannot be combined blindly with the projected full home cost. Remove replaced rent before adding a new mortgage and owner expenses.",
+        "Price, down-payment assistance and lender terms must be verified; Connecticut and federal programs can have income, occupancy, property or repayment restrictions. Never treat prospective grants as committed resources or policy loans as guaranteed qualifying down payment. If the house requires a $9,000 roof in year one, the post-closing $6,000 reserve may be inadequate."
+      ],
+      "worked": [
+        "5%×$250,000 = $12,500 down, loan principal $237,500.",
+        "Plus $7,500 assumed closing and $6,000 post-purchase reserve = $26,000 target.",
+        "Hypothetical monthly P&I for $237,500 at 6.5% over 360 months ≈$1,501.",
+        "Property tax, insurance, PMI, maintenance and old rent replacement require additional independent calculations."
+      ],
+      "practice": [
+        [
+          "Why must a housing affordability model remove existing rent before adding the new full home cost?",
+          "Otherwise it double-counts an expense that will cease after closing, overstating costs and distorting the monthly margin."
+        ],
+        [
+          "Does $1,501 mortgage principal and interest equal the full cost of owning a $250,000 house?",
+          "No. Property tax, insurance, mortgage insurance, repairs, utilities, possible HOA and transaction effects can materially increase outflow."
+        ]
+      ]
+    },
+    {
+      "title": "Three scenarios: base plan, job disruption and property surprise",
+      "body": [
+        "Prepare base, employment disruption and housing surprise cases. The base case assumes income and baseline spending remain as provided and assigns monthly surplus to protected reserves, debt elimination and a future down payment. A job-loss case removes one or both paychecks for a defined duration while essential bills continue. The property surprise adds a major repair or insurance premium jump after closing. Do not assume emergencies are independent of adverse markets or household health.",
+        "Suppose the household has $10,000 unrestricted cash and all $4,000 core monthly spending continues during two months with no income. The cash burn is $8,000, leaving $2,000 before additional irregular costs. If the household paid the card in full before job loss and held only $3,000, two months of essential spending creates a $5,000 shortfall absent other resources. This illustrates why debt and emergency allocations cannot be optimized independently.",
+        "A $9,000 roof bill shortly after closing can also exceed the stipulated $6,000 post-closing reserve by $3,000, before other bills. Review homeowner insurance exclusions and deductibles; ordinary wear and roof end-of-life may not be insured losses. A resilient plan records where the additional $3,000 would actually come from or delays the purchase until reserves improve."
+      ],
+      "worked": [
+        "Two-month essential spending at $4,000/month=$8,000.",
+        "With $10,000 liquid cash and no income, remaining balance $2,000 before other costs.",
+        "If card was paid off using $7,000, remaining $3,000 cash means $5,000 short after two zero-income months.",
+        "Roof $9,000 vs $6,000 post-closing reserve gives a $3,000 gap."
+      ],
+      "practice": [
+        [
+          "Why is a no-income scenario useful even if the household currently feels secure?",
+          "A finite cash burn shows whether the plan can survive a realistic interruption without relying on volatile assets or expensive credit."
+        ],
+        [
+          "Why should a planner stress home repairs separately from an insurance claim?",
+          "Deductibles, exclusions and ordinary wear often leave owner cash responsibilities regardless of insured coverage."
+        ]
+      ]
+    },
+    {
+      "title": "Insurance, retirement, taxes and inheritance must fit together",
+      "body": [
+        "The household's protection plan should size death benefit against dependents, debts, future support and genuine resources, then consider disability income and employment coverage. An agent's proposal of high-premium permanent life insurance is not automatically suitable while cash reserves and high-rate debt are underfunded. Compare affordable term coverage, employer benefits and permanent policy characteristics using written prices and guarantees. Insurance cash value is not an unlimited untaxed pool.",
+        "Retirement saving may have an employer match and tax advantages, but the exact plan must be identified. Funding all retirement accounts while missing card minimums or home cash can be imprudent; skipping a significant employer match may also sacrifice valuable compensation. Evaluate accessible emergency cash, sustainable monthly contributions, time horizon and tax eligibility. Do not model tax deductions as full cash rebates.",
+        "For the intended child heir, map actual title, mortgage, primary and contingent beneficiaries, IRA income tax consequences, and who can administer the home if either adult dies or becomes disabled. A revocable trust must be correctly funded where used; an irrevocable policy trust can limit owner access. A future heir needs enough cash for property tax, maintenance and utility bills, not simply an ownership document."
+      ],
+      "worked": [
+        "Hypothetical $7,000 card at 22% could cost $1,540 simple annual interest at unchanged balance.",
+        "Permanent premium offer $300/month consumes $3,600/year of cash margin.",
+        "The household's annual margin is $17,000; multiple commitments must sum to ≤available sustainable cash.",
+        "An heir inheriting $250,000 house with large debt receives home equity, not an unencumbered $250,000 cash gift."
+      ],
+      "practice": [
+        [
+          "Why should retirement, insurance and debt be reviewed as a coordinated cash plan?",
+          "They compete for identical monthly cash and carry differing tax, risk and liquidity consequences; optimizing one in isolation may hurt others."
+        ],
+        [
+          "Does adding a child's name as a future trust beneficiary solve property maintenance funding?",
+          "No. Deed ownership, creditor claims, taxes, mortgage payments and continuing property cash must be managed separately."
+        ]
+      ]
+    },
+    {
+      "title": "Five-year funding roadmap with verifiable milestones",
+      "body": [
+        "A five-year roadmap starts with essential bills and a protected minimum emergency floor, then systematic card payoff and steady down-payment accumulation. The order depends on verified monthly cash, current obligations and risk profile. Do not promise a home acquisition in a specified month unless target cash, mortgage qualification and ongoing affordability are satisfied. Down-payment assistance applications and tax planning may be useful but remain conditional until written approval.",
+        "At a hypothetical $500 monthly directed to the card, the debt is modeled paid in roughly sixteen to seventeen months depending on exact terms. The freed $500 can then be directed to home cash or emergency funds. Starting from $10,000 liquid, a $26,000 housing cash goal is a $16,000 initial gap if all existing cash were devoted to that goal, but that would leave no independent emergency reserve beyond the stipulated post-closing $6,000. Keep the cash definitions consistent before selecting a target.",
+        "Use implementation milestones such as verified card balance below $1,000, emergency cash ≥three months essentials, cash-to-close and post-close reserve independently funded, loan estimate verified, policy coverage confirmed, beneficiary forms updated and annual portfolio review completed. Assign client, lender, accountant, insurer or attorney to each task with evidence and a planned review trigger."
+      ],
+      "worked": [
+        "A five-year calendar spans 60 monthly periods.",
+        "$500 monthly directed toward the card from current $1,416.67 preliminary margin uses about 35.3% of that margin.",
+        "Known housing cash target $26,000, current unrestricted cash $10,000 creates at least $16,000 difference before clarifying separate emergency cash.",
+        "Savings milestone records must distinguish amounts already allocated to closing versus emergency buffers."
+      ],
+      "practice": [
+        [
+          "Why must an emergency reserve remain separate from cash-to-close?",
+          "Closing consumes down-payment and transaction money, while emergencies still require accessible cash immediately afterward and before closing."
+        ],
+        [
+          "Why is a target purchase date conditional?",
+          "Actual credit score, income, mortgage terms, taxes, property condition, program eligibility and down payment must be confirmed."
+        ]
+      ]
+    },
+    {
+      "title": "Final defense: two recommendations and a peer-review audit",
+      "body": [
+        "Create an integrated planning memorandum with a client-facing version and a technical appendix. The technical version contains equations, dated inputs, alternative cases, risk bounds and legal/tax source citations. The client-facing version communicates three most important actions, reasons, tradeoffs and possible failure modes in plain language. A strong plan does not drown the client in all sixteen modules; it selects what is material to the household.",
+        "An independent peer reviewer should reproduce the credit-card payoff, amortizing mortgage payment, emergency-months calculation, income gap, portfolio stress, fees, and potential estate financing needs. Any discrepancy must be resolved with an updated calculation and transparent revision note. A spreadsheet labeled 'approved' without lender, insurer or legal confirmation remains an educational scenario, not a completed transaction.",
+        "Present two defensible options—for example buy later with stronger reserves, or pursue a cheaper home after debt payoff—and state which conditions could reverse the recommendation. The capstone should teach the boundary between actionable financial education and regulated client-specific professional work: exams and self-study do not make the student a licensed adviser or estate attorney."
+      ],
+      "worked": [
+        "Known net annual income $65,000, baseline core outflow $48,000 => $17,000 margin.",
+        "Mortgage illustration $237,500 over 360 at 6.5% requires verified monthly principal-and-interest calculation.",
+        "Debt $7,000 at 22%, emergency spending $4,000/month and cash $10,000 create competing priorities.",
+        "No claim of guaranteed assistance, guaranteed market returns or completed trust/insurance transfers without documentation."
+      ],
+      "practice": [
+        [
+          "What makes a final capstone defensible rather than a collection of calculators?",
+          "It reconciles all goals to one cash budget, tests correlated downside, cites verified documents, compares feasible alternatives and assigns accountability."
+        ],
+        [
+          "What must be true before a student calls the hypothetical plan implemented?",
+          "External actions require actual client approvals, documented account/contract changes and confirmations from the responsible lender, insurer or legal professional."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFP Board seven-step process standards",
+      "https://www.cfp.net/ethics/compliance-resources/2020/01/financial-planning-and-application-of-the-practice-standards-for-the-financial-planning-process"
+    ],
+    [
+      "SEC investment adviser best-interest account recommendation guidance",
+      "https://www.sec.gov/about/divisions-offices/division-trading-markets/broker-dealers/staff-bulletin-standards-conduct-broker-dealers-investment-advisers-account-recommendations-retail"
+    ],
+    [
+      "CFPB Mortgage Loan Estimate official guide",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB credit card interest education",
+      "https://www.consumerfinance.gov/consumer-tools/credit-cards/answers/key-terms/"
+    ],
+    [
+      "IRS 2026 retirement tax and withdrawal guidance",
+      "https://www.irs.gov/retirement-plans"
+    ],
+    [
+      "NAIC insurance contract illustration principles",
+      "https://content.naic.org/insurance-topics/life-insurance-illustrations"
+    ],
+    [
+      "Connecticut Probate Courts trust and estate administration",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "Connecticut Department of Banking verify professional licensing",
+      "https://portal.ct.gov/dob/about-dob/index-pages/verify-a-license"
+    ],
+    [
+      "Investor.gov risk and diversification",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products"
+    ]
+  ],
+  "assessment": {
+    "title": "Complete five-year household financial-plan portfolio defense",
+    "prompt": "As lead analyst, produce a 1,500–2,500 word integrated five-year recommendation for fictional Connecticut family with net pay $65k, core expenses $48k, cash $10k, card $7k at 22%, a child beneficiary, possible $250k home and unknown insurance and retirement details. Build a 60-month cash schedule, compute cash and reserve ratios, card payoff with $500 monthly, 5% down and $7,500 costs/$6,000 post-close reserve, 30-year P&I on $237,500 at assumed 6.5%, two-month job disruption and $9k repair. Compare now-vs-later home purchase, insurance term vs policy borrowing, employer match, investment account risk, and will vs properly funded trust with beneficiaries. Provide verified vs unknown source table, professional referral roles, and monitoring triggers. Do not assert degree or license from this course.",
+    "rubric": [
+      "Complete balance sheet and one consistent cash budget (25%)",
+      "Debt, mortgage and income-shock numerical accuracy (25%)",
+      "Insurance, retirement, tax and estate integration (20%)",
+      "Feasible alternatives and professional conduct (20%)",
+      "Implementation and evidence/monitoring plan (10%)"
+    ],
+    "answerKey": [
+      "Annual surplus $17,000 and monthly initial margin $1,416.67, before goal earmarks.",
+      "$10k accessible cash/$4k monthly essential costs=2.5 months; 3-month goal $12k, 6-month $24k.",
+      "Known cash less card $7k = $3k PARTIAL known net amount, not complete household net worth.",
+      "5%×$250k=$12.5k down, +$7.5k costs+$6k post-close reserves=$26k, compared with only $10k available cash.",
+      "Amortizing $237.5k at 6.5% nominal APR over 360 months yields ~$1,501 monthly principal and interest; taxes, insurance, PMI, maintenance excluded.",
+      "Two-month loss of all income costs $8k essentials; $10k cash leaves $2k, while cash after immediate $7k card payoff would be $5k short.",
+      "$9k roof minus $6k assumed post-closing reserve leaves $3k funding gap.",
+      "All cash and legal actions remain conditional on lender, insurer, state-specific estate lawyer, retirement plan and other verified records."
+    ]
+  }
+}
