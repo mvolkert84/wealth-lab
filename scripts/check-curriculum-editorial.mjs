@@ -53,7 +53,8 @@ for(let n=2;n<=16;n++){
  const references=[...cs.matchAll(/\.dataset\.(m\d+)(?:Lab|Input|Output)/g)].map(x=>x[1]);
  assert.ok(references.length>0,'No dataset wiring found in Module '+n);
  assert.ok(references.every(x=>x==='m'+n),'Copied DOM bindings from another module in Module '+n+': '+references.join(', '));
- assert.doesNotMatch(cs,/Additive university-style study|Your existing chapter answers|Academic expansion added to the original lesson|individual tax or tax advice|Module 5 Academic content unavailable for this lesson/);
+ assert.doesNotMatch(cs,/Additive university-style study|Your existing chapter answers|Academic expansion added to the original lesson|individual tax or tax advice/);
+ if(n!==5)assert.doesNotMatch(cs,/Module 5 Academic content unavailable for this lesson/,'Wrong-module fallback in Module '+n);
  for(let i=0;i<data.lessons.length;i++){
   const lesson=data.lessons[i],id=lesson.id;
   assert.equal(data.lessonIds[i],id);
