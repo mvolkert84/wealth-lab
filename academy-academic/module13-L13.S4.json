@@ -1,0 +1,299 @@
+{
+  "id": "L13.S4",
+  "title": "Estate Tax, Basis & Trust Types",
+  "subtitle": "Federal and Connecticut transfer taxation, stepped basis, gifts, irrevocable trusts, estate liquidity and generational stewardship",
+  "prerequisites": [
+    "L11.S3 capital gain and basis",
+    "L12.S2 inherited retirement-account tax rules",
+    "L13.S2 policy ownership and insurance proceeds",
+    "L13.S3 funded trusts and property succession"
+  ],
+  "objectives": [
+    "Distinguish estate tax, gift tax, income tax, inheritance and probate costs",
+    "Use accurate federal and Connecticut 2026 $15m basic estate exclusion thresholds with scope limits",
+    "Compute gift annual exclusions and understand Form 709 and lifetime exclusion concepts",
+    "Distinguish gift carryover basis from qualifying date-of-death basis adjustments",
+    "Compare revocable grantor trust and irrevocable non-grantor trusts on ownership and control",
+    "Explain why estate exclusion, basis benefits and beneficiary income tax may conflict",
+    "Build a defensible family estate strategy for housing, adult children and retirement accounts"
+  ],
+  "sections": [
+    {
+      "title": "Estate tax, income tax, gift tax and probate fees are four different calculations",
+      "body": [
+        "A decedent's estate can owe tax on qualifying large asset transfers at death; the decedent, estate, trust or beneficiaries can owe different income tax on earnings, sales or distributions; lifetime donors can encounter gift-tax reporting or tax; and court administration may produce filing and probate fees. These are independent systems. The phrase 'tax-free inheritance' can hide the difference between receiving an inherited principal amount without income inclusion and later recognizing gain when selling an inherited asset.",
+        "The gross estate for transfer-tax purposes can include home, savings, retirement accounts, business interests and certain life insurance proceeds under ownership and inclusion rules. Estate liabilities and deductions affect taxable transfer value. Probate assets do not equal federal gross estate; a policy paid directly to a named beneficiary can still be included in the insured's estate under incidents-of-ownership rules.",
+        "For an illustrative $500,000 household, a 2026 federal or Connecticut estate tax is generally unlikely under basic assumptions, yet income tax on inherited pretax IRA withdrawals, property tax, probate costs, liens and administration can still matter. Planning should prioritize maintaining housing, identifying beneficiaries, reducing family disputes and documenting succession authority."
+      ],
+      "worked": [
+        "Home $300,000 + IRA $150,000 + brokerage $40,000 + bank $10,000 = $500,000 asset value.",
+        "Net equity and estate deductions vary independently; $500,000 assets are well below 2026 $15m basic transfer-tax exclusions.",
+        "Federal income tax may still apply to inherited pretax IRA withdrawals.",
+        "Court filing and legal fees cannot be set to zero merely because estate tax is not due."
+      ],
+      "practice": [
+        [
+          "If a decedent leaves a $100,000 pretax IRA, does the federal estate-tax exclusion necessarily make heirs' withdrawals income-tax-free?",
+          "No. IRA inherited distributions can create ordinary taxable income even where no estate tax is due."
+        ],
+        [
+          "Can an asset outside probate still be included in the federal gross estate?",
+          "Yes. Certain nonprobate assets, including life insurance under particular ownership circumstances, can enter federal estate inclusion."
+        ]
+      ]
+    },
+    {
+      "title": "The actual 2026 exclusion: $15 million federal and Connecticut",
+      "body": [
+        "The IRS Form 706 instructions specify a $15,000,000 basic exclusion for decedents dying during 2026. The federal transfer tax uses a unified framework for certain lifetime taxable gifts and estate transfers; merely having a taxable estate above the threshold does not imply multiplying the full estate by 40%. The basic exclusion, deductions, credits, previous gifts, portability election and transfer-tax base must be reconstructed.",
+        "Connecticut's Department of Revenue Services independently states a $15,000,000 estate-tax exemption for 2026 and related gift-tax exemption framework. Qualified Connecticut taxable estates above the threshold generally face a 12% Connecticut estate-tax rate on the specified taxable excess under current guidance, with additional rules. A Connecticut estate below the exemption generally still needs CT-706 NT with Probate Court in relevant cases, not a federal return automatically.",
+        "A married couple should not automatically double exclusions in a spreadsheet. Portability of a deceased spouse's unused federal exclusion generally requires a timely and valid federal Form 706 election, with exceptions and extensions in certain circumstances; Connecticut planning can differ and has QTIP election rules. A report should label whose exclusion is used, past taxable gifts, estate inclusion, residence, valuation and filing."
+      ],
+      "worked": [
+        "2026 federal basic exclusion for an individual: $15,000,000.",
+        "2026 Connecticut estate-tax exemption for a qualifying resident: $15,000,000.",
+        "Simple Connecticut taxable estate $15,400,000 and no special credits/previous gifts could suggest 12%×$400,000=$48,000 under simplified state formula.",
+        "The calculation is illustrative only; federal transfer-tax reconciliation and CT rules need tax return instructions."
+      ],
+      "practice": [
+        [
+          "Does the federal basic exclusion automatically shield each spouse's full $15 million without filing or estate planning?",
+          "No. Applicable inclusion, lifetime gifts, portability election and spouse-specific facts determine usable exclusion."
+        ],
+        [
+          "If the estate has no Connecticut estate tax, can one assume no Connecticut Probate Court tax form is needed?",
+          "No. CT-706 NT requirements may still apply to estates at or below threshold."
+        ]
+      ]
+    },
+    {
+      "title": "Annual gifting is a reporting threshold, not a magic wealth multiplier",
+      "body": [
+        "For 2026, the federal gift-tax annual exclusion is $19,000 per donee from one donor for qualifying present-interest gifts, or potentially $38,000 from two spouses making qualifying gifts under applicable rules. The exclusion generally determines how much can be transferred to a donee annually without being treated as a taxable gift for gift-tax reporting purposes; it is not an annual income-tax deduction to the donor.",
+        "Amounts exceeding the exclusion can require Form 709 reporting and ordinarily use lifetime gift-and-estate exclusion before actual federal gift tax is payable; the existence of a filing requirement does not automatically mean the giver must write a tax check. Trust contributions are not necessarily present-interest gifts entitled to the annual exclusion without proper beneficiary rights. Connecticut has its own gift return and aggregate taxable gift framework.",
+        "Example: one parent gives $29,000 cash outright to one child in 2026 and no special exclusions apply. The first $19,000 can fall under the annual exclusion, leaving $10,000 as a reportable taxable gift that could use remaining lifetime exclusion without immediate gift tax. The parent has not reduced income tax by $29,000. Gifts to minors, educational payments and medical payments can involve special direct-payment exceptions or legal structures."
+      ],
+      "worked": [
+        "Qualifying present-interest cash gift $29,000; 2026 federal annual exclusion $19,000.",
+        "Illustrative amount above annual exclusion $10,000, generally reportable on Form 709 under qualifying facts.",
+        "Assuming sufficient unused lifetime exclusion and no unusual facts, actual gift tax owed may be $0.",
+        "Donor does not deduct the $29,000 ordinary personal gift from federal taxable income."
+      ],
+      "practice": [
+        [
+          "Does a 2026 gift of $29,000 to an adult child necessarily generate $10,000 cash tax owed?",
+          "No. The excess over the annual exclusion can be a taxable/reportable gift using lifetime exemption, with no immediate gift tax if sufficient exclusion remains."
+        ],
+        [
+          "Is a contribution to any trust automatically eligible for the $19,000 present-interest annual exclusion?",
+          "No. The trust beneficiary's present-interest rights and other legal requirements must be verified."
+        ]
+      ]
+    },
+    {
+      "title": "Inherited basis and lifetime gift basis are economically distinct",
+      "body": [
+        "For many capital assets included in a decedent's estate, Internal Revenue Code §1014 generally adjusts income-tax basis to fair market value at death or an authorized alternative valuation basis, subject to exceptions. A lifetime gift generally gives the recipient carryover basis for gain, with special dual-basis and other adjustments possible. One must not use the familiar phrase 'step-up' as a guarantee for every asset, especially retirement accounts or certain irrevocable trust arrangements.",
+        "Assume a house or taxable stock portfolio had $150,000 adjusted tax basis and is worth $300,000 at death. If a qualifying inherited asset receives basis of $300,000, and the heir later sells it for $310,000 before selling expenses, illustrative capital gain is $10,000. If the same asset was gifted during life with $150,000 carryover basis for gain, a $310,000 later sale can produce $160,000 gain before adjustments. The actual tax rate and exclusions depend on asset type and individual facts.",
+        "Income in respect of a decedent such as many traditional retirement withdrawals does not generally receive the same appreciated-capital-asset basis reset. Property held in a completed-gift irrevocable grantor trust excluded from the grantor's gross estate generally does not receive §1014 adjustment solely because the grantor was treated as owner for income tax; IRS Revenue Ruling 2023-02 addresses this specific trap."
+      ],
+      "worked": [
+        "Original adjusted basis $150,000; value at death $300,000; later sale $310,000.",
+        "Qualifying inherited §1014 basis $300,000 ⇒ gain $10,000 before selling costs.",
+        "Hypothetical lifetime gift carryover basis $150,000 ⇒ later gain $160,000 before adjustments.",
+        "Difference in recognized gain $150,000; tax savings depend on rates and eligibility, not the gain difference alone."
+      ],
+      "practice": [
+        [
+          "Does every asset in an irrevocable grantor trust receive a step-up merely because the grantor dies?",
+          "No. IRS Revenue Ruling 2023-02 addresses non-included irrevocable grantor-trust assets that generally do not qualify for §1014 basis adjustment."
+        ],
+        [
+          "Can an inherited traditional IRA receive the same automatic market-value basis reset as inherited appreciated stock?",
+          "Generally no. Pretax retirement distributions commonly remain income in respect of a decedent and have different income-tax treatment."
+        ]
+      ]
+    },
+    {
+      "title": "Revocable trust: management and probate flexibility, not automatic estate tax relief",
+      "body": [
+        "A revocable living trust generally allows the grantor to amend or revoke the arrangement while alive and competent, subject to its terms. The trust can help coordinate management and successor control of properly funded property, but assets remain economically attributable to the grantor for many tax and creditor purposes. Trust property may remain included in the taxable gross estate; creation alone does not convert a $500,000 family's wealth into a tax-free shelter.",
+        "A funded revocable trust can direct post-death distributions for an adult child, future education or housing maintenance, but it still requires an informed successor trustee, recordkeeping and clear distribution powers. Without coordinated deeds, beneficiary designations and retirement account treatment, a well-drafted document might be largely unfunded. Trustee fees, attorney drafting costs and administration time must be weighed against probate and control benefits.",
+        "The home remains subject to property tax, mortgage and insurance obligations. Some mortgage transfers into certain living trusts have federal due-on-sale protection conditioned on borrower-beneficiary and occupancy facts; this does not immunize the deed from assistance program requirements, creditors or tax treatment. A proper recommendation coordinates local legal title, estate liquidity and intended living arrangements."
+      ],
+      "worked": [
+        "Revocable trust holds stipulated $300,000 house and $200,000 mortgage.",
+        "Economic equity remains $100,000 before sale costs; establishing trust does not create additional $100,000.",
+        "If grantor can revoke and retains control, family should not claim automatic removal from taxable gross estate.",
+        "Practical benefit may be smoother successor administration if deed/title and trustee documents are valid."
+      ],
+      "practice": [
+        [
+          "Does signing a revocable trust ordinarily remove all its assets from the grantor's taxable estate?",
+          "No. Retained control and applicable inclusion rules typically keep such property within the grantor's estate."
+        ],
+        [
+          "What is the main operational weakness of a trust document that has not been funded?",
+          "Property and accounts not validly transferred may remain outside direct trustee authority and still require other administration."
+        ]
+      ]
+    },
+    {
+      "title": "Irrevocable trusts trade personal control for defined beneficiary benefits",
+      "body": [
+        "Irrevocable trust structures differ widely. An intentionally structured life insurance trust may own insurance and limit insured's incidents of ownership; a special needs trust may protect benefit eligibility; a spendthrift trust can control distribution timing; and certain charitable or marital trusts can accomplish distinct objectives. No trust form universally removes taxes or defeats creditors. Each structure must identify settlor, property, trustee, beneficiaries, distribution standard and legal purpose.",
+        "Transferring appreciated assets to some irrevocable trusts can reduce the grantor's future estate inclusion but may also sacrifice future inherited-basis adjustment, while exposing the trust's income to compressed tax brackets or specialized grantor rules. Paying tax currently as grantor may be intentional in one structure and irrelevant in another. The trust may file Form 1041 and provide Schedules K-1 depending on its income-tax character and distributions.",
+        "An irrevocable trust is not a private bank to borrow from without consequence. Trustee loans to beneficiaries, distributions to family, security interests and self-dealing can violate fiduciary duties or alter intended tax treatment. A household seeking a down payment should not contribute its only savings to a structure that requires relinquishing control without specialist advice."
+      ],
+      "worked": [
+        "Settlor transfers $100,000 appreciating property into an irrevocable trust.",
+        "Economic family value remains $100,000 before transaction costs; it has not magically doubled.",
+        "Grantor may lose unilateral access; beneficiary receives rights defined by document, not an automatic checking account.",
+        "Estate exclusion and loss of basis adjustment can work in opposing directions, requiring after-tax scenario comparison."
+      ],
+      "practice": [
+        [
+          "Is an irrevocable trust inherently a tax-free account with unrestricted homeowner withdrawals?",
+          "No. Trustee powers, beneficiary rights, grantor status, income taxes and fiduciary duties determine access and outcomes."
+        ],
+        [
+          "Why might transferring appreciated property out of an estate reduce one tax but increase another?",
+          "Estate transfer-tax benefits may be offset by carryover basis and larger future capital gains when property is later sold."
+        ]
+      ]
+    },
+    {
+      "title": "Insurance, estate inclusion and the three-year transfer problem",
+      "body": [
+        "Life insurance death proceeds generally are not included in a beneficiary's federal gross income when paid because of an insured person's death under qualifying facts. That income-tax exclusion is not the same question as whether policy proceeds are includible in the insured's gross estate for transfer-tax purposes. If the insured held incidents of ownership, policy death proceeds may be included even when paid directly to another named beneficiary.",
+        "An irrevocable life insurance trust can own a policy and govern benefit use, but successful estate-tax exclusion depends on details including ownership structure, insured control and transfer rules. A policy transferred out of the insured's ownership within three years before death may be pulled back into the estate under IRC §2035 in relevant circumstances. A newly issued policy initially acquired by an appropriately designed trust can produce different legal treatment than reassigning an existing policy.",
+        "Even in a correct ILIT structure, trust assets cannot necessarily be used at the insured's whim for a home purchase; trustees owe duties to beneficiaries. Paying premiums can be treated as gifts to the trust with their own annual exclusion and notice design. For a family far below a $15m estate-tax threshold, the complexity and lost control may outweigh speculative transfer-tax benefits."
+      ],
+      "worked": [
+        "Policy death benefit $500,000, insured personally owns contractual incidents of ownership.",
+        "Beneficiary can generally exclude qualifying death proceeds from income; estate inclusion may still be $500,000 under ownership rule.",
+        "Owner transfers policy to ILIT and dies 18 months later: potential IRC §2035 three-year inclusion issue.",
+        "Moving policy name into a trust does not erase cost, insurer charges, existing loans or ownership lookback risks."
+      ],
+      "practice": [
+        [
+          "Do tax-free beneficiary death proceeds prove that death benefit was excluded from estate valuation?",
+          "No. Income-tax exclusion for recipient and estate inclusion of policy proceeds are separate rules."
+        ],
+        [
+          "Can a person assume transferring an existing policy to an ILIT removes it from estate immediately regardless of death timing?",
+          "No. The three-year inclusion rule may apply to certain transfers."
+        ]
+      ]
+    },
+    {
+      "title": "Funding for an heir: education, home maintenance and long-run governance",
+      "body": [
+        "A practical generational plan should answer what an heir actually needs, when funds are required and who will administer them. A house passed without a budget for taxes, utilities, insurance or repairs may leave heirs asset-rich but unable to retain the property. A trustee can be directed to fund education, reasonable housing expenses or long-term care under valid terms, but the distribution standard must be clear and administrable.",
+        "Suppose a property carries $4,800 annual property tax and insurance, $3,000 maintenance reserve and $1,800 utilities. Retaining the property costs $9,600 each year before mortgage payments and special assessments. If liquid estate assets are only $8,000, the house may require immediate outside income. An estate liquidity policy might direct use of existing liquid funds or qualifying insurance proceeds, subject to ownership and beneficiary structure, rather than rely on rushed asset sales.",
+        "A family wealth plan also includes successor trustees, independent fiduciary oversight, beneficiary contact information, updated asset inventories, dispute resolution and document storage. A trust can help govern funds but never replaces education about spending, property ownership and tax filing. Test the plan with a temporary disability and a survivor facing two years of reduced income, not only with an assumed death at old age."
+      ],
+      "worked": [
+        "Property annual costs $4,800 tax/insurance + $3,000 repairs + $1,800 utilities = $9,600.",
+        "Two-year reserve = $19,200 before mortgage and extraordinary costs.",
+        "Existing liquid estate reserve $8,000 leaves a $11,200 two-year shortfall.",
+        "A funded trust with no liquid assets cannot manufacture the required $11,200 cash."
+      ],
+      "practice": [
+        [
+          "Why is inheritance of a valuable home not enough to guarantee heirs can keep it?",
+          "Mortgage, taxes, insurance, maintenance and repairs require continuing cash flow regardless of asset value."
+        ],
+        [
+          "What is a practical benefit of a clear successor trustee and asset inventory?",
+          "They allow lawful, timely payment of bills and administration without searching for ownership records during a crisis."
+        ]
+      ]
+    },
+    {
+      "title": "An integrated Connecticut estate strategy without magical tax promises",
+      "body": [
+        "The final planning sequence identifies goals, owners and dependents, then quantifies the estate's economic value, contract rights, titles and current cash needs. It separately models federal estate tax, Connecticut estate tax, income tax basis, retirement-income tax and administrative fees. In 2026, most modest estates will not owe a transfer tax, but beneficiary errors, unrecorded deed transfers, taxable retirement withdrawals or policy lapse can still inflict substantial losses.",
+        "Choose between a will with appropriate beneficiary designations, a funded revocable trust, and specialized irrevocable structures only after comparing actual needs and legal consequences. An ILIT may be useful when a significant estate-tax exposure exists, but its cost and restrictions are not a shortcut to borrowing policy cash value freely. For an intended child heir, preserve housing stability and long-term stewardship while respecting rights of spouse and other beneficiaries.",
+        "A rigorous report names unanswered facts, including legal marital status, owner/title, outstanding liens, future residency, plan beneficiaries, policy MEC status, basis records and desired inheritance timing. State the accountant and estate attorney's assignments. The financial analyst should not claim to execute a legal trust, erase debt, guarantee probate avoidance or make a tax liability disappear."
+      ],
+      "worked": [
+        "Hypothetical Connecticut home $300k, loan $200k, taxable stock $40k, pretax IRA $60k, liquid cash $10k.",
+        "Gross listed assets $410k before insurance death proceeds, with loan $200k => $210k net worth, subject to other liabilities.",
+        "2026 federal and CT basic estate exemptions each $15m under ordinary simplified assumptions; estate tax likely $0.",
+        "Estate still needs documented beneficiaries, debt/maintenance funding, basis record and Connecticut tax/probate filing review."
+      ],
+      "practice": [
+        [
+          "What should dominate planning for a modest estate far below $15 million?",
+          "Continuity, beneficiaries, legal title, emergency liquidity, healthcare, inherited retirement taxes, property upkeep and affordable administration."
+        ],
+        [
+          "Is it sufficient to conclude 'put everything into an irrevocable trust' based on a broad tax-savings claim?",
+          "No. Trust type, loss of control, gifting, basis, income tax, administrative expense, beneficiary needs and legal requirements must be separately analyzed."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS July 2026 Form 706 estate tax instructions $15m exclusion",
+      "https://www.irs.gov/instructions/i706"
+    ],
+    [
+      "Connecticut DRS 2026 estate and gift tax guidance",
+      "https://portal.ct.gov/drs/individuals/individual-income-tax-portal/estate-and-gift-taxes/tax-information"
+    ],
+    [
+      "IRS 2026 annual gift exclusion of $19k",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes"
+    ],
+    [
+      "IRS basis treatment under Revenue Ruling 2023-02",
+      "https://www.irs.gov/pub/irs-drop/rr-23-02.pdf"
+    ],
+    [
+      "IRS Publication 559 for heirs, executors and administrators",
+      "https://www.irs.gov/publications/p559"
+    ],
+    [
+      "IRS Form 709 gift tax instructions",
+      "https://www.irs.gov/instructions/i709"
+    ],
+    [
+      "IRS insurance beneficiary gross income",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "CT Probate Courts trust and estate administration",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "US Code 26 USC 1014 basis of property acquired from a decedent",
+      "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1014"
+    ],
+    [
+      "IRS reporting of trust and estate income Form 1041",
+      "https://www.irs.gov/instructions/i1041"
+    ]
+  ],
+  "assessment": {
+    "title": "Federal/Connecticut estate-tax, income basis and lifetime gift comparative memorandum",
+    "prompt": "Calculate 2026 federal and Connecticut basic exclusions and assess tax filing for a fictional $500,000 estate. Compare a $150,000-basis capital asset worth $300,000 at death and sold by heir for $310,000 under (A) qualifying inherited §1014 basis and (B) $150k carryover-basis lifetime gift. Analyze one person's $29k present-interest cash gift to an adult child versus 2026 $19k annual exclusion. Model the ownership/estate inclusion of a personally owned $500k life policy, a policy transferred 18 months before death to ILIT, and a newly issued trust-owned policy. Analyze a $300k CT house with $200k mortgage and $9,600 annual nonmortgage costs over two years against $8k cash. Produce a three-option estate plan with fiduciary, reporting, tax and control tradeoffs.",
+    "rubric": [
+      "Federal and CT 2026 thresholds and tax versus reporting distinction (20%)",
+      "Gift and basis calculations including trust basis hazards (25%)",
+      "Revocable/irrevocable trust and life estate inclusion analysis (25%)",
+      "Liquidity, mortgage and beneficiary support plan (20%)",
+      "Primary sources, uncertainty and legal review limits (10%)"
+    ],
+    "answerKey": [
+      "2026 federal basic exclusion $15m and Connecticut estate-tax exemption $15m; a $500k ordinary taxable estate has $0 transfer tax under simplifying assumptions, yet CT-706 NT may be required.",
+      "Qualifying acquired-from-decedent basis $300k yields $10k sale gain; $150k carryover gift basis can yield $160k gain, before adjustments.",
+      "$29k qualifying present-interest gift less $19k annual exclusion leaves $10k generally reportable taxable gift, usually no immediate tax if lifetime exclusion sufficient.",
+      "Personally owned insured's policy can be in estate despite beneficiary death proceeds income exclusion. Transferred existing policy may face IRC §2035 three-year rule.",
+      "Two-year property carry $9,600×2=$19,200, less $8k liquid reserve = $11,200 shortfall.",
+      "ILIT may cause loss of personal owner control; do not assume insured can borrow trust policy as free personal collateral."
+    ]
+  }
+}
