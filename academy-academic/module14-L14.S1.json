@@ -1,0 +1,266 @@
+{
+  "id": "L14.S1",
+  "title": "Rentals: Revenue vs Cash Flow",
+  "subtitle": "Investment-property operating statements, rent roll quality, accounting, vacancy, debt service and investor cash",
+  "prerequisites": [
+    "L1.S2 household liquidity and budgeting",
+    "L6.S1 financial statements and tax basis",
+    "L7.S3 time value of money",
+    "L13.S3 mortgage and property ownership"
+  ],
+  "objectives": [
+    "Distinguish scheduled rent, effective gross income, NOI, net cash flow and taxable income",
+    "Construct annual rent rolls and reconcile collections with lease terms and deposits",
+    "Forecast vacancy, delinquency, concessions and seasonal lease-up costs",
+    "Classify operating costs, maintenance, reserves, capital improvements and debt service",
+    "Calculate operating breakeven and explain why positive NOI is not profit to spend",
+    "Compare gross-rent multipliers with fully adjusted property cash flows",
+    "Prepare defensible owner operating budgets, maintenance ledgers and lender exhibits"
+  ],
+  "sections": [
+    {
+      "title": "A rental is an operating business before it is an investment thesis",
+      "body": [
+        "A landlord sells occupancy rights under enforceable lease terms. Revenue is created by valid rent charges and actually collected cash, while an investment owner must also operate, repair, insure, advertise, collect, inspect, account and comply with state law. Property value appreciation is not cash that pays today's mortgage. Unlike a savings account, the property can demand additional capital without notice and its market value may fall at the same time.",
+        "Start with a property operating statement for the selected time period. Gross potential rent means the contracted or market rent assuming full scheduled occupancy, before vacancy and concessions. Effective gross income subtracts realistic vacancy, nonpayment and concessions and adds documented recurring ancillary income, such as eligible parking charges. Net operating income (NOI) subtracts ordinary property operating expenses but excludes loan principal and interest, income taxes and generally capital improvements.",
+        "Capital expenditures, financing and owner-level income tax follow below the NOI line in an investor cash waterfall. Treating mortgage principal as an operating expense contaminates cap-rate comparisons, while forgetting loan principal when estimating distributable cash exaggerates how much the owner can spend. State each metric's definition before comparing properties."
+      ],
+      "worked": [
+        "Monthly contractual rent $1,800 × 12 = $21,600 scheduled annual rent.",
+        "Forecast vacancy/credit loss $1,300 => effective gross income $20,300, assuming no other income.",
+        "Operating expenses $7,500 => NOI $12,800.",
+        "Annual debt service $14,000 => cash flow −$1,200 before capex, taxes and reserve changes."
+      ],
+      "practice": [
+        [
+          "Why does positive NOI not guarantee positive owner cash flow?",
+          "Debt service, major replacements, taxes, lease-up and reserves remain payable below NOI; an investor can have positive operating income but negative available cash."
+        ],
+        [
+          "Why should an investor avoid counting property appreciation as rent cash?",
+          "Appreciation is uncertain and normally cannot pay today's invoices without a separate sale or additional borrowing."
+        ]
+      ]
+    },
+    {
+      "title": "The rent roll: billed income is not a bank deposit",
+      "body": [
+        "A rent roll lists each unit, lease rate, concession, occupancy dates, deposit and delinquency. One property may advertise $2,000 per month but give a free first month, producing a lower first-year effective rent than twelve times the headline. Lease terms also determine responsibility for water, heat, common-area utilities, trash and certain maintenance. Investor diligence must inspect actual leases and payment ledgers, not just a seller's marketing rent figure.",
+        "Suppose two apartments each lease at $1,400 a month, yielding $33,600 annual scheduled rent. If one apartment is vacant two months, modeled vacancy cost is $2,800 and effective collected rent cannot exceed $30,800 absent other income. Add $700 likely uncollected rent and the operating collection forecast becomes $30,100. This loss is not a fee line item in the same way as insurance; it is income not received.",
+        "Separate refundable tenant security deposits from owner revenue. Connecticut deposits remain tenant property, with landlord security rights and statutory escrow obligations. A $2,800 refundable deposit does not create $2,800 additional spendable income. The owner must retain the cash and account for interest and eventual refunds."
+      ],
+      "worked": [
+        "Two $1,400/month units give $2,800×12=$33,600 annual scheduled rent.",
+        "Two months vacancy on one unit costs $2,800.",
+        "Expected delinquency $700 => effective rental receipts $30,100.",
+        "A separate $2,800 tenant security deposit is not additional rent revenue or owner equity."
+      ],
+      "practice": [
+        [
+          "Why is a refundable security deposit excluded from rental gross revenue in the normal case?",
+          "The owner generally owes it back subject to authorized deductions, making it a tenant liability held in custody rather than earned rent."
+        ],
+        [
+          "What documents must verify billed versus actually received rental income?",
+          "Executed leases, rent ledger, bank deposits, concessions, arrears and occupancy records."
+        ]
+      ]
+    },
+    {
+      "title": "Vacancy is a probability distribution, not only a five-percent line",
+      "body": [
+        "Analysts often assume a stabilized vacancy percentage without distinguishing physical vacancy from economic vacancy. Physical vacancy measures unavailable or unrented space; economic vacancy also reflects concessions and nonpayment. A three-month unit turnover may combine vacancy rent loss, repainting, screening, utilities and leasing commissions. Those effects occur together when the property is most cash constrained.",
+        "Take a single-family rental at $1,800 monthly rent. One empty month removes $1,800 of rent, or 8.33% of a $21,600 scheduled annual total, even before marketing and turnover costs. A model that simply reserves five percent for vacancy would include only $1,080; it would understate one full vacancy month by $720. More severe vacancies can coincide with layoffs, weak housing markets or major repairs.",
+        "Use a multi-year probability framework: base occupancy, one-month vacancy and three-month vacancy; distinguish actual turnover observations from forecasts. When comparing two neighborhoods, examine local rent evidence and competing supply, not only a projected cap rate. Never extrapolate occupancy from one unusually successful year."
+      ],
+      "worked": [
+        "Gross potential rental income $21,600.",
+        "Five-percent conventional vacancy assumption $1,080.",
+        "One full vacant month lost rent $1,800, equal to 8.33% of scheduled rent.",
+        "Three vacant months cost $5,400 before turnover and marketing expense."
+      ],
+      "practice": [
+        [
+          "Why can a five-percent annual vacancy reserve fail in a one-unit rental?",
+          "A single vacant month costs 8.33% of annual gross scheduled rent, and turnover costs can compound the shortfall."
+        ],
+        [
+          "How does economic vacancy differ from physical vacancy?",
+          "Economic vacancy includes lost collections, concessions and credit loss even when a unit is physically occupied."
+        ]
+      ]
+    },
+    {
+      "title": "Operating expenses: reconcile actual costs to the right line",
+      "body": [
+        "Recurring property operating expenses commonly include insurance, municipal property taxes, repairs and maintenance, owner-paid utilities, management, advertising, landscaping, snow removal and certain administrative costs. A lender or appraiser should distinguish property-related expenses from owner income tax and principal payments. Selling expenses, additions and reroofing projects are generally not routine NOI operating expenses, though economic budgeting should set cash aside for future replacements.",
+        "Consider effective gross revenue $30,100, annual real-estate tax $5,400, property insurance $1,500, normal repairs $2,400, management $2,400 and owner utilities $1,200. Operating costs total $12,900 and NOI is $17,200. Mortgage debt service is then deducted in the owner's financing layer. A reserve contribution for roof replacement may be modeled separately even if an accountant treats the actual roof as a capitalized improvement.",
+        "Do not confuse property income tax deductions with NOI. Federal Schedule E may deduct mortgage interest and depreciation under its own rules even when principal is a real cash outflow; an annual tax loss is possible despite positive investor cash flow and vice versa. A proper dashboard shows operating, financing, capital and taxable-income views side by side."
+      ],
+      "worked": [
+        "Effective gross income $30,100.",
+        "Taxes $5,400 + insurance $1,500 + repairs $2,400 + management $2,400 + utilities $1,200 = $12,900.",
+        "NOI $30,100−$12,900=$17,200.",
+        "With $15,000 annual debt service, preliminary financing cash flow $2,200 before replacements and owner tax."
+      ],
+      "practice": [
+        [
+          "Why is principal repayment excluded from standard NOI?",
+          "NOI is calculated before financing so property operations can be compared independently of an investor's debt structure."
+        ],
+        [
+          "How can property be cash flow positive but show a federal taxable loss?",
+          "Tax depreciation and mortgage interest may exceed taxable rent after deductions, while some real cash outflows like principal are not deductions."
+        ]
+      ]
+    },
+    {
+      "title": "A complete cash waterfall distinguishes accounting and liquidity",
+      "body": [
+        "Investment cash flow proceeds in defined stages: gross scheduled income; less vacancy and credit loss; plus applicable ancillary revenues; less operating expenses to NOI; less required mortgage payments to cash after debt; less replacements, upfront leasing and owner cash obligations to distributable cash. Refinancing proceeds or a one-time property sale are not operating rent earnings. Rent money collected before bills are due is not distributable profit.",
+        "Example: NOI $17,200, annual debt service $15,000, planned annual replacement reserve $2,000, and a one-time $4,000 renovation. Cash after debt is $2,200, after planned reserve only $200 and after renovation −$3,800. The owner needs an additional source of liquidity. Loan principal amortization may build equity but it cannot automatically finance that same renovation.",
+        "Use separate bank accounts, a monthly bank reconciliation and an approved reserve-release policy. A property can be solvent on paper yet temporarily unable to pay a deductible. If the household is building its primary-home down payment, rental cash needs must not be silently funded from protected housing savings."
+      ],
+      "worked": [
+        "NOI $17,200 less debt service $15,000 => cash after debt $2,200.",
+        "Less reserve allocation $2,000 => distributable operating cash $200, if no other obligations.",
+        "Less a $4,000 current renovation => year's net free cash −$3,800.",
+        "Account for any lender escrow and differences between reserve allocations and actual cash payments."
+      ],
+      "practice": [
+        [
+          "Why does a reserve allocation reduce owner's distributable cash even if it is not an immediate contractor invoice?",
+          "Reserves earmark money against expected future replacements, preventing overdistribution of cash needed to operate the asset."
+        ],
+        [
+          "Can mortgage principal pay a renovation because it increases equity?",
+          "Not without a separate cash source or new approved borrowing; amortization is an economic equity increase rather than liquid money."
+        ]
+      ]
+    },
+    {
+      "title": "Cash breakeven, rent sensitivity and fixed-cost operating leverage",
+      "body": [
+        "A property with high fixed costs is sensitive to relatively small changes in realized rent. If annual owner-required payments and expenses total $22,000 while projected rent collections are $24,000, a $2,000 cushion can disappear with one vacant month or a higher insurance renewal. Cash breakeven is the effective rent required to fund all defined cash obligations, not merely annual interest or a cap-rate target.",
+        "Suppose annual operating expenses $7,500, debt payments $14,000 and necessary capital reserve $1,500, with no ancillary revenue. Cash breakeven effective collections are $23,000. If vacancy is expected to absorb 6% of scheduled rent, required annual contracted gross rent is $23,000/(1−.06)≈$24,468, or $2,039 per month. This formula assumes the operating expense inputs do not increase as rents rise, which may be unrealistic for management costs.",
+        "An investor should compute break-even occupancy and the rent cushion separately. Low initial occupancy can be a temporary issue for a new property; repeated negative cash flow suggests the financing, purchase price or rent estimate is incompatible with the household's objectives. Foreclosure risk is not eliminated by long-term expected appreciation."
+      ],
+      "worked": [
+        "Operating expense $7,500 + annual debt $14,000 + replacement reserve $1,500 = $23,000 cash need.",
+        "With 6% annual vacancy and no other income, required gross scheduled rent $23,000/.94≈$24,468.",
+        "Required monthly scheduled rent ≈$2,039.",
+        "At rent only $1,800/month, annual scheduled $21,600 cannot meet this breakeven under stated assumptions."
+      ],
+      "practice": [
+        [
+          "Why is a cash-break-even rent different from NOI breakeven?",
+          "Cash breakeven also includes contractual debt payments and reserves that NOI ordinarily excludes."
+        ],
+        [
+          "What assumption makes dividing required cash by (1−vacancy rate) potentially optimistic?",
+          "Operating expenses are held fixed, although management, utilities, advertising or maintenance might increase."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut rental administration and the tenant-money ledger",
+      "body": [
+        "Connecticut statutory law limits many residential security deposits to two months' rent for a tenant under 62, or one month's rent for a tenant age 62 or older. The deposit remains tenant property and must be treated under the legally required Connecticut escrow framework. For 2026, the Connecticut Department of Banking published a 0.49% rental security deposit interest rate. A landlord cannot use the deposit as if it were available equity for a down payment or operating profit.",
+        "On a hypothetical $1,800 monthly lease, a $3,600 deposit can fall within the general two-month cap for a younger tenant but exceed the one-month cap for a tenant 62 or older. A full-year illustrative simple interest calculation on $3,600 at 0.49% produces $17.64, subject to actual accrual dates and statutory rules. Interest owed to a tenant is not an investor bonus; tenant deposits are separate custodial liabilities.",
+        "Connecticut property tax depends on municipality, assessed value and mill rates, while insurance, registration, safety and habitability rules may change. A Vernon-area investor must check current town assessor records, lease requirements, local rental rules and property conditions; no state-average property-tax quote is reliable for one specific building. Treat all applicable state and municipal obligations as a dated diligence checklist."
+      ],
+      "worked": [
+        "Monthly rent $1,800; illustrative deposit for younger tenant $3,600 = two months' rent.",
+        "2026 CT security deposit interest 0.49%, simple annual hypothetical on $3,600 = $17.64.",
+        "For tenant 62 or older, generic one-month limit => $1,800 rather than $3,600.",
+        "Deposit principal $3,600 remains a tenant liability; omit it from NOI and owner equity."
+      ],
+      "practice": [
+        [
+          "Why is the deposit escrow account not free cash that improves investor return?",
+          "The deposit remains tenant property subject to statutory custody, interest and refund obligations."
+        ],
+        [
+          "Does an investor have enough information to forecast property tax by knowing only that a rental is in Connecticut?",
+          "No. Property-specific assessment, municipality, mill rates and possible tax changes are needed."
+        ]
+      ]
+    },
+    {
+      "title": "Independent underwriting: four years and four bank ledgers",
+      "body": [
+        "A bank-quality rental model starts with trailing operating statements, current lease and rent roll, bank deposit records, maintenance invoices, tax bills, insurance declarations and lender statements. Reconcile a seller's claimed NOI to actual trailing cash and identify deferred repairs. An appraisal does not substitute for independent underwriting of expense assumptions and required capital reserves.",
+        "Forecast year-one, a stabilized year, a turnover year and a stress year in both nominal and inflation-adjusted dollars. Include rent increases only where market evidence and law support them. Use real numbers for property tax and premium renewals where known; otherwise show ranges. List the source of every input, who verified it, and how a 20% cost overrun affects household liquidity.",
+        "End with a buy/renegotiate/pass recommendation based on total cash capital required, positive cash stress margin, legal rent and safety compliance, and portfolio concentration. Someone able to save only $250–$500 per month should not treat a property with $6,000 expected annual cash deficit as an independent income machine."
+      ],
+      "worked": [
+        "Seller claims NOI $17,200; lender debt payment $15,000 => $2,200 pre-reserve cash.",
+        "Replacement reserve $2,000 lowers spendable operating cash to $200.",
+        "An additional unforeseen $4,000 heating repair creates −$3,800 net annual cash need.",
+        "A $250 monthly household savings capacity equals $3,000 yearly, insufficient for that shortfall without other funding."
+      ],
+      "practice": [
+        [
+          "Why are current leases and bank deposits both necessary to verify a rental's revenue?",
+          "Leases establish agreed charges; deposits verify collections and reveal concessions, arrears and payment timing."
+        ],
+        [
+          "What makes an underwriting memo reproducible?",
+          "Cited source documents, explicit assumptions, exact formulas, separate cash/tax layers and sensitivity to realistic expenses and vacancy."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS Publication 527 residential rental income, repairs and depreciation",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "IRS Schedule E reporting guidance",
+      "https://www.irs.gov/instructions/i1040se"
+    ],
+    [
+      "Connecticut General Statutes Chapter 831 security deposits",
+      "https://www.cga.ct.gov/2026/sup/chap_831.htm"
+    ],
+    [
+      "CT Department of Banking 2026 deposit interest rates",
+      "https://portal.ct.gov/dob/rental-security-deposits/rental-security-deposits/deposit-index-and-interest-rates"
+    ],
+    [
+      "CT DOB escrow rights, landlord tenant deposits",
+      "https://portal.ct.gov/dob/rental-security-deposits/rental-security-deposits/rental-security-deposits"
+    ],
+    [
+      "CFPB mortgage loan estimate and costs",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "IRS rental real estate passive activity instructions",
+      "https://www.irs.gov/instructions/i8582"
+    ],
+    [
+      "Connecticut Judicial Branch landlord tenant self help",
+      "https://www.jud.ct.gov/lawlib/law/landlord.htm"
+    ]
+  ],
+  "assessment": {
+    "title": "Rental property operating-company statement",
+    "prompt": "Prepare a lender-style rental cash waterfall for a two-unit asset with rent $1,400/month/unit, two months vacancy at one unit, $700 expected uncollectible rent, property tax $5,400, insurance $1,500, repairs $2,400, management $2,400, utilities $1,200, annual debt service $15,000, planned reserve $2,000, and one-time capital repair $4,000. Reconcile with separate one-unit $1,800/month illustration using $1,300 vacancy, $7,500 expenses and $14,000 debt. Explain tenant deposits under Connecticut's 2026 legal rules, rate 0.49%, and demonstrate 6% vacancy cash-break-even math with $23,000 annual cash need.",
+    "rubric": [
+      "Rent roll, actual collections and deposit separation (25%)",
+      "NOI, debt, capex and cash waterfall reconciliation (30%)",
+      "Vacancy sensitivity and break-even rent (20%)",
+      "Connecticut legal/ethical tenant accounting (15%)",
+      "Underwriting evidence and household liquidity judgment (10%)"
+    ],
+    "answerKey": [
+      "Two-unit scheduled rent $33,600; loss $2,800 vacancy+$700 credit = effective $30,100.",
+      "Expenses $12,900 => NOI $17,200; debt $15,000 => $2,200; reserve $2,000 => $200; current capital work $4,000 => −$3,800 cash.",
+      "One-unit example NOI $12,800; after $14,000 debt = −$1,200 before major expenses.",
+      "Breakeven gross contracted annual rent $23,000/.94≈$24,468, monthly≈$2,039.",
+      "2026 CT refundable deposit remains tenant asset with escrow; $3,600×0.0049=$17.64 hypothetical full-year interest; general two-month cap under age 62 and one-month cap at 62+."
+    ]
+  }
+}
