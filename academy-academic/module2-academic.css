@@ -1,0 +1,30 @@
+
+/* Module 2 Academic Expansion: preserved shared reader, fully scoped dark theme. */
+.wl-reader .wlr-tabs.wl-m2-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.wl-reader .wlr-tabs.wl-m2-tabs button{font-size:10px;padding-inline:1px}
+.wl-m2-academic{overflow-wrap:anywhere}
+.wl-m2-academic .wl-m2-section{padding:18px 0 24px;margin:15px 0;border-top:1px solid #52785f}
+.wl-m2-academic .wl-m2-section > p{font-size:14px;line-height:1.83;color:#f1ede2;margin:0 0 15px}
+.wl-m2-academic .wl-m2-section .part-label{color:#e7bd76;letter-spacing:.12em;font-size:10px}
+.wl-m2-academic .wl-m2-worked{margin:16px 0;padding:14px;background:#173c2f;border:1px solid #517a5f;border-radius:12px}
+.wl-m2-academic .wl-m2-worked h3{margin:0 0 9px;font-size:16px;color:#f7d89d}
+.wl-m2-academic .wl-m2-worked ol{padding-left:21px}
+.wl-m2-academic .wl-m2-worked li{margin:0 0 10px;font-size:13px;line-height:1.6}
+.wl-m2-academic .wl-m2-exercises{margin:14px 0}
+.wl-m2-academic .wl-m2-exercises h3{font-size:15px}
+.wl-m2-academic .wl-m2-exercises details,.wl-m2-academic .wl-m2-toc,.wl-m2-academic .wl-m2-selfcheck,.wl-m2-academic .wl-m2-capstone{border:1px solid #51745c;border-radius:10px;padding:12px;margin:11px 0;background:#0e3025}
+.wl-m2-academic summary{cursor:pointer;color:#f3daa3;font-size:13px;font-weight:700;line-height:1.5}
+.wl-m2-academic details>p,.wl-m2-academic details li{font-size:13px;line-height:1.7;margin-top:9px}
+.wl-m2-academic .wl-m2-assessment,.wl-m2-academic .wl-m2-sources{border-top:1px solid #53745e;padding:19px 0;margin:23px 0}
+.wl-m2-academic .wl-m2-assessment li,.wl-m2-academic .wl-m2-sources li{margin-bottom:9px}
+.wl-m2-academic .wl-m2-selfcheck label{display:block;margin:11px 0;font-size:12px;color:#f4e8d2}
+.wl-m2-academic .wl-m2-selfcheck input{width:100%;display:block;margin:5px 0;padding:10px;border:1px solid #64836f;border-radius:8px;background:#0c281e;color:#fff}
+.wl-m2-academic .wl-m2-selfcheck button{padding:11px 14px;font-size:12px;margin-top:9px}
+.wl-m2-academic .wl-m2-selfcheck [data-m2-feedback]{color:#f3d7a1;font-size:12px;margin:12px 0}
+.wl-m2-academic .wl-m2-warning{font-size:11px;color:#cfd4c4;margin:13px 0 0}
+.wl-m2-academic .wl-m2-capstone{border-color:#b6a165}
+.wl-m2-academic .wl-m2-toc a{font-size:12px;color:#bcebc5}
+.wl-m2-academic .wl-m2-sources a{color:#bbebc8;font-size:13px}
+.wl-m2-academic .lab .controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wl-m2-academic .lab .results{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:390px){.wl-reader .wlr-tabs.wl-m2-tabs button{font-size:9px}.wl-m2-academic .lab .controls{grid-template-columns:1fr}}
