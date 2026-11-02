@@ -21,6 +21,7 @@ on:
       - 'academy-academic/**'
       - scripts/check-module1-academic.mjs
       - scripts/check-module2-academic.mjs
+      - scripts/check-module3-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -53,6 +54,7 @@ on:
       - 'academy-academic/**'
       - scripts/check-module1-academic.mjs
       - scripts/check-module2-academic.mjs
+      - scripts/check-module3-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -92,3 +94,4 @@ jobs:
           node scripts/check-gold-tax.mjs
           node scripts/check-module1-academic.mjs
           node scripts/check-module2-academic.mjs
+          node scripts/check-module3-academic.mjs
