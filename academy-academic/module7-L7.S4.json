@@ -1,0 +1,252 @@
+{
+  "id": "L7.S4",
+  "title": "Economic Indicators and Cycles",
+  "subtitle": "GDP, labor statistics, inflation data, recession dating, leading indicators and scenario research",
+  "prerequisites": [
+    "L7.S1 inflation indexes and real units",
+    "L7.S2 rates and the yield curve",
+    "L7.S3 growth and discounting"
+  ],
+  "objectives": [
+    "Compute GDP contributions and nominal-versus-real growth",
+    "Differentiate employment, unemployment, participation and wage measures",
+    "Interpret CPI versus PCE inflation with methodological caution",
+    "Distinguish NBER business-cycle dating from media rules of thumb",
+    "Evaluate leading, coincident and lagging economic indicators",
+    "Avoid look-ahead bias by using vintages and documented revisions",
+    "Connect economic conditions to investment, wage and mortgage risks"
+  ],
+  "sections": [
+    {
+      "title": "Economic indicators are measurements with definitions and release dates",
+      "body": [
+        "Economic statistics measure aspects of a large and changing system. A GDP estimate, an employment report, a price index and consumer sentiment survey answer different questions; none is a complete scorecard for the household's welfare. Every series has a reference period, definition, sampling or data-compilation method, publication time, units, revision policy and seasonal adjustment. A numerically precise chart can still mislead when those specifications are hidden.",
+        "The Bureau of Economic Analysis estimates GDP using multiple data sources and publishes advance, second and third estimates for a quarter as more information arrives. CPI and labor statistics use Bureau of Labor Statistics methods; the Federal Reserve Economic Data (FRED) platform republishes many series with identifiers and source metadata. In historical research, identify what data was actually available at the decision date rather than using a future-revised number to claim a forecast would have worked.",
+        "An indicator can be quoted as a level, monthly change, quarterly change at annual rate, or year-over-year change. A quarterly real GDP increase of 0.5% is not the same statement as a 0.5% annualized rate; compounded at four quarters, a 0.5% quarterly change becomes about 2.015% annualized. Headline GDP and inflation release narratives often mix those units. Students should annotate them on every graph.",
+        "A research memo must state an observation date, release date, series definition and revision vintage. For example, if a job report is published after an investor made a mortgage decision, it cannot be used as evidence that the investor knew the future job count. Clean separation between observations, forecasts and interpretations is a baseline standard for academic financial analysis."
+      ],
+      "worked": [
+        "Hypothetical quarterly real GDP factor 1.005 (0.5% growth).",
+        "Annualized rate (1.005)^4−1≈2.015%, not 0.5%.",
+        "A quarterly level reading and annualized growth rate represent different units.",
+        "Advance GDP estimate may be revised as more source data arrives.",
+        "Report what vintage was available at a decision date."
+      ],
+      "practice": [
+        [
+          "Why can a backtested forecast look artificially accurate if it uses today's revised historical GDP series?",
+          "Later information was not known to decision-makers at the earlier time. Using revised future data introduces look-ahead bias and invalidates a true real-time test."
+        ],
+        [
+          "What distinction should a chart make between quarterly GDP growth and annualized quarterly GDP growth?",
+          "A one-quarter rate measures growth across the quarter; annualization compounds that quarterly pace as if repeated for four quarters, a hypothetical rate not a realized full year."
+        ]
+      ]
+    },
+    {
+      "title": "GDP accounting, output, nominal growth and real volume",
+      "body": [
+        "Gross domestic product measures the market value of final goods and services produced within a geographic economy during a defined period. The familiar expenditure identity is Y=C+I+G+(X−M), where C denotes personal consumption, I gross private domestic investment, G government consumption and investment, X exports and M imports. Intermediate goods are excluded to reduce double counting. GDP does not add up the market value of existing homes merely because titles change, though qualifying brokerage and construction-related new services are part of current economic output.",
+        "Nominal GDP uses current period prices and quantities; real GDP estimates production while adjusting for price changes, using chain-type measures in US national accounts. One cannot simply divide every modern BEA chained-dollar component by a common price index and expect exact additivity of displayed component levels. For simple illustration, if nominal output increases 6% while the overall GDP price level rises 3%, an approximate multiplicative real-growth estimate is 1.06/1.03−1≈2.91%. It is a teaching identity using one price factor, not an exact reconstruction of BEA's chain methods.",
+        "Consider a fictional economy with $700 billion consumer spending, $180 billion private investment, $210 billion government purchases, $90 billion exports and $120 billion imports. GDP by expenditure is $700+$180+$210+$90−$120=$1,060 billion. Imports are subtracted because some spending components contain foreign-produced goods; this is a national-accounting adjustment, not proof imports 'hurt' GDP dollar for dollar as a causal statement. A decline in imports can coincide with weak household demand.",
+        "Real output growth can occur while real wages are stagnant or local employment declines. GDP is a production aggregate, not a measure of distribution, ecological health, household wealth or economic security. Financial planning should combine output with labor and price data and never infer that the typical household's budget improved just because quarterly GDP was positive."
+      ],
+      "worked": [
+        "C=$700b, I=$180b, G=$210b, X=$90b, imports M=$120b.",
+        "Expenditure GDP =700+180+210+(90−120)=$1,060b.",
+        "Nominal output growth 6%, illustrative price-level growth 3% ⇒ real 1.06/1.03−1≈2.9126%.",
+        "This ratio is a conceptual example; BEA real GDP uses chain-type accounting.",
+        "GDP does not measure median household disposable income or net worth."
+      ],
+      "practice": [
+        [
+          "Why does the expenditure identity subtract imports from domestic consumption and investment totals?",
+          "Domestic spending aggregates include some imported items; subtracting imports removes foreign output so GDP measures domestic production."
+        ],
+        [
+          "What limitations prevent GDP alone from describing a household's financial well-being?",
+          "GDP lacks detail about distribution, tax burdens, living costs, job security, household debt, leisure and individual access to the resulting output."
+        ]
+      ]
+    },
+    {
+      "title": "Labor markets: unemployment rate, labor force and hidden slack",
+      "body": [
+        "The headline U-3 unemployment rate measures unemployed people actively seeking and available for work, subject to the survey definitions, divided by the civilian labor force. The labor force is employed plus officially unemployed people; someone not seeking work can be outside the labor force rather than counted as unemployed. The employment-to-population ratio and labor-force participation measure other dimensions of labor markets. Broader U-6 underutilization includes additional labor-market categories such as certain marginally attached workers and part-time employees working part time for economic reasons.",
+        "Assume a fictional labor market with 950 people employed, 50 actively unemployed and seeking work, and 200 outside the labor force. Labor force is 1,000; unemployment is 50/1,000=5%; participation is 1,000/1,200≈83.33%; employment-to-population is 950/1,200≈79.17%. If 20 unemployed people stop looking and move outside the labor force while employment stays 950, U-3 can fall to 30/980≈3.06% even though no new jobs were created. That is why falling unemployment does not always signify an improving labor market.",
+        "Payroll establishment surveys and household surveys estimate different dimensions. Payroll employment counts jobs, while household employment counts people under its definitions; one person can hold more than one payroll job. Revisions, seasonal factors, immigration, demographics and participation affect interpretations. Wage growth can be nominal while purchasing power declines when inflation is higher; combine real wage data with hours and benefit costs rather than quote just a headline hourly increase.",
+        "Household risk analysis should incorporate the possibility of wage interruption. An area with rising layoffs may warrant a larger cash runway before a home purchase, even if long-run average GDP is growing. Macro labor data can help identify scenarios, but a broad unemployment rate is not a guaranteed probability that a specific worker will lose a job."
+      ],
+      "worked": [
+        "Employed 950; unemployed seeking 50; outside labor force 200.",
+        "Labor force 1,000; unemployment 50/1,000=5%.",
+        "Working-age population in model 1,200; participation 1,000/1,200≈83.33%.",
+        "After 20 unemployed stop seeking, U-3 becomes 30/980≈3.06% without job creation.",
+        "Unemployment and labor-force participation must be read together."
+      ],
+      "practice": [
+        [
+          "Why can headline unemployment decline when no additional people find work?",
+          "Some job seekers may stop searching and leave the counted labor force, lowering both numerator and denominator; employment can remain unchanged."
+        ],
+        [
+          "Why shouldn't payroll jobs and household employed-person counts be used as interchangeable series?",
+          "One measures payroll positions and the other surveyed people's employment status; multiple-job holding and methodology make their counts differ."
+        ]
+      ]
+    },
+    {
+      "title": "CPI, PCE and prices: differing baskets and monetary-policy interpretation",
+      "body": [
+        "Price indexes vary by population, coverage, weights and methods. BLS CPI measures price changes for specified consumer baskets and populations. The Bureau of Economic Analysis personal consumption expenditures (PCE) price index covers a different consumption scope and uses chain-type index approaches. The Federal Reserve emphasizes PCE inflation as a central reference for its long-run price-stability objective. Their rates may diverge in a particular period without one necessarily being wrong.",
+        "Core inflation measures generally remove food and energy price categories to help distinguish persistent broad price trends from some volatile items; those omitted expenses still matter greatly to households. Headline inflation affects the overall basket, while core can be analytically helpful for policy. When gasoline prices fall and rents rise, different indexes and groups may experience different inflation. A policy forecast should not dismiss the family's food or electricity bills simply because a core measure excludes them.",
+        "Suppose a price index rises from 300 to 306 in a year; year-over-year inflation is 2%. If the previous year had surged 10%, slowing to 2% is disinflation. The overall price level remains above its earlier value. Inflation easing does not imply home sale prices will decline, or that a future mortgage rate is mechanically lower. Expectations, credit spreads, economic growth and collateral risk also matter.",
+        "A student economic dashboard should display CPI-U headline, a relevant core series, PCE inflation and an explicitly modeled household inflation measure. Each requires clear unit and observation-date labels. The purpose is not to argue that one index represents everyone's experience, but to understand which question each statistic answers and which real cash flow decisions it informs."
+      ],
+      "worked": [
+        "Illustrative price index 300 to 306 ⇒ 2% annual inflation.",
+        "Prior year 10%, next year 2% ⇒ disinflation while prices continue rising.",
+        "An individual household spending disproportionately on housing may experience different inflation from CPI-U or PCE.",
+        "Core inflation excludes volatile categories analytically; it does not exclude them from the family's budget.",
+        "Separate policy interpretation of price statistics from direct household spending needs."
+      ],
+      "practice": [
+        [
+          "Why can PCE inflation and CPI inflation differ in the same month?",
+          "Their coverage, basket weights, data sources and index calculation methods differ; both are constructed measures with different purposes."
+        ],
+        [
+          "Why is a lower core inflation reading not proof the household's living costs are declining?",
+          "Core rates can remain positive and exclude food and energy price changes that still affect actual family expenses."
+        ]
+      ]
+    },
+    {
+      "title": "Business cycles, NBER recession dating and recession myths",
+      "body": [
+        "The US National Bureau of Economic Research Business Cycle Dating Committee identifies peaks and troughs based on broad economic activity. Its conventional recession interpretation concerns a significant decline spread across the economy lasting more than a few months, evaluated with multiple indicators. Two consecutive negative quarterly real GDP readings are a commonly repeated heuristic, not the official US recession designation. The committee can identify a recession even when the simple two-quarter rule fails, and dating can happen after the fact.",
+        "Business-cycle phases are expansions between trough and peak, and contractions from peak to trough. The return to a prior peak is not necessarily a return to the prior long-run growth trend, household wage quality or local housing market condition. A short downturn can cause substantial lasting financial damage to particular families; different industries and regions respond differently.",
+        "Leading indicators are intended to move before broader economic conditions under certain historical relationships; coincident indicators describe current activity; lagging indicators respond after conditions change. The yield curve and some surveys are forward-looking, but their predictive power changes with policies, financial structures and market expectations. An indicator that preceded past recessions is not a deterministic clock. Analysts should use conditional odds, source dates and counterevidence rather than binary declarations.",
+        "Build a recession stress test for financial planning: job-loss duration, a 25% equity market drawdown, house-sale price decline, higher credit spreads and delays in selling illiquid assets. Not all shocks must occur simultaneously, but correlations can strengthen in stress. A household with an emergency reserve and affordable mortgage can be more resilient than one whose investment forecast relies on uninterrupted income and forced asset sales."
+      ],
+      "worked": [
+        "Assume two quarterly real GDP changes of −0.3% and −0.2%.",
+        "Compounded six-month factor .997×.998≈.995006 ⇒ total ≈−0.4994%.",
+        "Two quarters of decline are a recession rule of thumb, not an official NBER declaration.",
+        "In risk scenario, $20,000 equities falling 25% become $15,000 before fees and taxes.",
+        "A model must distinguish recession dating from market and household stress."
+      ],
+      "practice": [
+        [
+          "Who officially dates US business-cycle peaks and troughs for the standard NBER chronology?",
+          "The National Bureau of Economic Research's Business Cycle Dating Committee, which evaluates broad activity measures rather than applying a fixed two-negative-quarters rule."
+        ],
+        [
+          "Why is a yield-curve inversion not sufficient evidence to assert a recession will begin exactly next quarter?",
+          "The spread reflects changing rates, premiums and expectations; predictive relationships are imperfect and recession timing is uncertain."
+        ]
+      ]
+    },
+    {
+      "title": "Leading and lagging signals, revisions, and research without look-ahead bias",
+      "body": [
+        "Economic forecasting requires choosing what to measure and what was known at the time. Leading candidates include selected new orders, housing starts or permits, credit spreads, surveys and yield curve shapes. Lagging or coincident candidates include payroll employment, industrial production and other activity data, though classifications vary. In a given episode, real estate supply restrictions can make housing starts diverge from prices, while an inflation shock can cause equity and bonds to fall together. No set of indicators guarantees a market timing profit.",
+        "Data vintages are the original values available on historical release dates. Government series frequently undergo annual revisions, seasonal re-estimation or methodological changes; financial researchers can consult the Federal Reserve's ALFRED vintage database alongside FRED. If a forecasting regression uses final revised GDP values and calls them the information available before the recession, it commits look-ahead bias. A defensible study freezes the dataset at each forecast origin and evaluates out-of-sample results with explicit revisions and confidence intervals.",
+        "Different growth rates need proper calculation. A level going from 100 to 103 one month and then 103 to 104 the next grows 3% in the first month and approximately 0.9709% in the next, not 1%. Annualized rates compound rather than simply multiply for exact values. A 0.5% quarterly rate corresponds to (1.005)^4−1≈2.015% annualized, not an observed year of 2.015% growth.",
+        "A formal memo can separate evidence into data, interpretation and proposed action: the data statement is 'credit spreads widened by 100 basis points' in a hypothetical scenario; interpretation is that investors may demand more credit compensation; action is to stress borrowing costs and cash reserves. Only the first is a measured observation if grounded in sourced data. Keep scenario assumptions visibly labeled."
+      ],
+      "worked": [
+        "Hypothetical index 100→103: first month growth 3%.",
+        "103→104: second month growth 104/103−1≈0.9709%.",
+        "Quarterly growth 0.5% repeated four times ⇒ (1.005)^4−1≈2.015%.",
+        "If an original GDP estimate is later revised, a backtest must not substitute the later value at earlier decisions.",
+        "Maintain forecast date, release date, series ID and vintage."
+      ],
+      "practice": [
+        [
+          "What is data-vintage leakage and why does it bias economic forecasts?",
+          "It occurs when a historical backtest incorporates revised or newly published data unavailable at the earlier decision date, making the forecast appear more knowledgeable than it was."
+        ],
+        [
+          "Why is annualizing one quarter's growth not the same as measuring a full year of GDP growth?",
+          "Annualization assumes that quarterly rate repeats four times; actual subsequent quarters can have different growth or contraction."
+        ]
+      ]
+    },
+    {
+      "title": "Economics to household decisions: jobs, markets, home prices and income shocks",
+      "body": [
+        "Macro policy can influence household balance sheets without dictating any one person's outcome. When inflation rises, cash may lose real buying power, interest rates may adjust and living costs can increase faster than wages. When growth slows, wages or hours may fall, loan standards can tighten, asset values can drop and employers can suspend hiring. A family preparing to buy a home must test access to credit, total payment, property taxes, insurance, and continued ability to work under multiple economic states.",
+        "Suppose a household's essential monthly expenses are $3,000 and it keeps $12,000 accessible emergency savings. Its initial simple cash runway is four months in the no-income, no-benefit scenario. If monthly essentials climb 10% to $3,300, the same $12,000 covers about 3.64 months. If an extra $2,500 deductible or repair is due at the same time, available reserve falls to $9,500, which funds only 2.88 months. This illustrates correlation between economic stress and household unexpected spending.",
+        "House price sensitivity is local and leveraged. A nominal house value of $250,000 with $237,500 mortgage has $12,500 gross equity before selling costs. A 10% house-price decline eliminates that equity and yields a negative $12,500 nominal amount before sale costs, assuming unchanged loan balance. Broad GDP growth cannot guarantee positive property equity in a particular street or neighborhood. Research actual local comparable sales, lender constraints and insurer terms before a purchase.",
+        "Conclude the economics module with a risk-aware action framework: protect essential cash obligations; keep a separate dated home fund; select investments appropriate to horizon and capacity; monitor real salary, housing costs and loan terms; and revise assumptions when credible data changes. An indicator dashboard supports choices but does not replace individual budgeting. Its ethical purpose is to improve decisions rather than generate confident predictions of uncontrollable markets."
+      ],
+      "worked": [
+        "Essential costs $3,000/month and cash $12,000 ⇒ runway 4.00 months.",
+        "10% expense increase ⇒ $3,300/month and runway 12,000/3,300≈3.64 months.",
+        "After $2,500 unexpected deductible ⇒ reserve $9,500 and runway 9,500/3,300≈2.88 months.",
+        "$250,000 home with $237,500 debt loses $25,000 market value at −10%, leaving negative $12,500 gross equity.",
+        "All values are illustrative, without actual job, tax or mortgage forecasts."
+      ],
+      "practice": [
+        [
+          "Why is a four-month reserve not guaranteed to cover four months after inflation and a property repair?",
+          "The reserve is nominal while expenses can rise or a large deductible can consume cash immediately, reducing months of runway."
+        ],
+        [
+          "Why is it inappropriate to infer a Connecticut home's price will increase because national GDP grew this quarter?",
+          "Home values depend on local supply, demand, interest rates, taxes, condition and financing; national GDP is neither a precise local price predictor nor an equity guarantee."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "BEA real and nominal GDP, revisions and measurement",
+      "https://www.bea.gov/resources/learning-center/what-to-know-gdp"
+    ],
+    [
+      "BEA recession definition and NBER distinction",
+      "https://www.bea.gov/help/glossary/recession"
+    ],
+    [
+      "NBER Business Cycle Dating Committee",
+      "https://www.nber.org/research/business-cycle-dating"
+    ],
+    [
+      "BLS Employment Situation",
+      "https://www.bls.gov/news.release/empsit.toc.htm"
+    ],
+    [
+      "BLS Labor Force Statistics glossary",
+      "https://www.bls.gov/bls/glossary.htm"
+    ],
+    [
+      "BLS CPI methodology",
+      "https://www.bls.gov/cpi/"
+    ],
+    [
+      "BEA PCE inflation",
+      "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    ],
+    [
+      "Federal Reserve ALFRED data vintages",
+      "https://fred.stlouisfed.org/"
+    ],
+    [
+      "Federal Reserve monetary-policy transmission",
+      "https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm"
+    ]
+  ],
+  "assessment": {
+    "title": "Real-time US economic data and Connecticut household committee",
+    "prompt": "Produce a four-indicator economic briefing with annotated source/release dates, construct nominal versus real GDP growth, compute unemployment and participation using a consistent fictional labor force, separate CPI from PCE and disinflation from deflation, evaluate a hypothetical yield-curve inversion without declaring a certain recession, and run an emergency cash/housing-equity stress under a job-loss, inflation and house-price shock. Explain data revisions and no-look-ahead forecasting.",
+    "rubric": [
+      "GDP and inflation math with correctly labeled periods (20%)",
+      "Labor market statistics and interpretation (20%)",
+      "NBER dating and indicator causal caution (20%)",
+      "Data vintage methodology and counterevidence (20%)",
+      "Household stress, source trace and justified decisions (20%)"
+    ]
+  }
+}

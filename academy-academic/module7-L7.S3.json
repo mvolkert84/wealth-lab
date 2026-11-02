@@ -1,0 +1,235 @@
+{
+  "id": "L7.S3",
+  "title": "The Time Value of Money",
+  "subtitle": "Discount factors, annuities, amortization, net present value, internal rates and sensitivity",
+  "prerequisites": [
+    "L1.S3 compound interest foundations",
+    "L7.S1 nominal versus real units",
+    "L7.S2 discount rates and borrowing"
+  ],
+  "objectives": [
+    "Derive compound and present-value growth factors",
+    "Convert periodic rates accurately and distinguish APY from APR",
+    "Price level annuity, growing annuity and perpetuity cash flows",
+    "Derive amortizing loan payments and remaining balances",
+    "Interpret project NPV, IRR and multiple-IRR pitfalls",
+    "Evaluate rent versus own and life-insurance funding with timing-aware cash flows"
+  ],
+  "sections": [
+    {
+      "title": "Why financial decisions must bring money to a common date",
+      "body": [
+        "A dollar received today and a dollar promised in ten years are not interchangeable. Cash available now may pay a bill, remain liquid or fund an investment; promised future cash can be risky, delayed and worth less in purchasing power. The time value of money expresses these differences using cash-flow dates and a discount rate. Future value answers what an amount becomes under an assumed accumulation rate; present value answers what a specified later payment is worth in today's units under an assumed opportunity cost and risk. Neither formula supplies a guaranteed return.",
+        "The compound equation is FV=PV(1+r)^n for a constant effective periodic rate r and n periods. Rearranging, PV=FV/(1+r)^n. If $1,000 grows at a hypothetical effective 6% a year for five years, its future value is about $1,338.23. If a payer owes $1,338.23 in five years and the correct model discount rate is 6%, present value is about $1,000. The formula is reversible because dates and per-period rate were treated consistently.",
+        "Compounding captures an exponential process: each period's interest or return can itself earn a return. The number of compounding periods matters, as does the rate's periodic unit. A project claiming 6% 'per month' cannot be entered as annual 6% without conversion. Negative returns are also possible, particularly for investments. A sequence of realized returns should be multiplied as growth factors rather than replaced by a smooth forecast.",
+        "Start each model with a time line showing t=0, cash paid or received at each date, whether payments occur at beginning or end of periods, and the uncertainty of each payment. State whether the number is a nominal cash amount or inflation-adjusted real amount. Many costly errors result from correct algebra applied to wrong dates or currencies."
+      ],
+      "worked": [
+        "PV $1,000, effective annual r=6%, n=5 ⇒ FV=$1,000×1.06^5≈$1,338.23.",
+        "Discount that payment five periods at 6% ⇒ $1,338.23/1.06^5≈$1,000.",
+        "At negative 10% then positive 10%, growth factor .90×1.10=.99 ⇒ 1% loss.",
+        "A cash flow dated today does not receive a year's discount merely because a spreadsheet has annual columns.",
+        "All rates and periods must use the same time unit."
+      ],
+      "practice": [
+        [
+          "Why does the discount rate represent more than a mathematical preference?",
+          "It reflects opportunity cost, time and risk assumptions relevant to the cash flow and can incorporate inflation consistently; different choices change value."
+        ],
+        [
+          "Why is '6% annual rate' inadequate without specifying nominal versus effective compounding conventions?",
+          "Monthly and annual compounding produce different effective growth factors at the same nominal quoted rate; timing and conversion must be defined."
+        ]
+      ]
+    },
+    {
+      "title": "Annual percentage yields, effective rates and compounding frequency",
+      "body": [
+        "Advertised nominal annual rates and effective annual yields are not automatically the same. If a nominal annual rate j compounds m times per year, effective annual rate is (1+j/m)^m−1. A nominal 6% annual rate compounded monthly yields (1+.06/12)^12−1≈6.1678%. If interest compounds annually at 6%, the effective annual yield is exactly 6%. For comparisons, bring products to the same effective annual convention and then account for taxes, fees, withdrawal limits and credit risk.",
+        "Bank deposit annual percentage yield (APY) is a yield disclosure that incorporates compounding assumptions for deposits. Consumer credit APR is a different regulated disclosure measure that can reflect certain finance charges and credit rules; a mortgage APR should not be treated as an APY on a savings account or as the note rate used in monthly P&I. APR, APY and investment expected return answer different questions and should not be placed into one comparison table without descriptions of what is included.",
+        "For a constant effective annual rate i, the equivalent monthly rate is r=(1+i)^(1/12)−1. If i=6%, r≈0.4868% per month, not exactly 0.5%. Conversely, if a contract states nominal 6% with monthly compounding, the applicable periodic rate may be 0.5%. These distinctions accumulate over decades, particularly in amortization and retirement projections.",
+        "Always test boundary conditions: zero rate, short period, long horizon and an expense that changes over time. A model returning undefined values at zero rate is a programming bug, not a financial conclusion. Avoid displaying too many decimal places, because future rates and taxes are more uncertain than the computer's arithmetic precision."
+      ],
+      "worked": [
+        "Nominal 6% annual rate, monthly compounding: effective rate (1+.06/12)^12−1≈6.1678%.",
+        "Effective 6% annual rate converted to monthly: (1.06)^(1/12)−1≈0.4868%.",
+        "An account with nominal 6% compounded annually earns effective 6%, not 6.1678%.",
+        "Rate comparison should include accessibility, account protection, tax and fees, not APY alone.",
+        "The zero-rate case uses simple equal-period sums, not division by zero."
+      ],
+      "practice": [
+        [
+          "What is the difference between nominal 6% with monthly compounding and 6% effective annual return?",
+          "The monthly-compounded nominal rate generates effective annual growth of about 6.1678%, while a 6% effective annual return generates approximately 0.4868% per month."
+        ],
+        [
+          "Why does APR on a mortgage not directly equal the note rate that determines the contractual P&I payment?",
+          "APR is a regulated credit-cost calculation incorporating specified finance charges and timing, while note rate describes interest applied to the contract's outstanding principal."
+        ]
+      ]
+    },
+    {
+      "title": "Level annuities, beginning-of-period payments and future goals",
+      "body": [
+        "An ordinary annuity makes equal payments at each period's end. At periodic constant r and n payments, FV=C[(1+r)^n−1]/r, with FV=Cn when r=0. For a target balance FV at the end of n periods, rearrange to find contribution C=FV r/[(1+r)^n−1]. This assumes consistent payments, no missed contributions and a deterministic constant return. For investments, a smooth annual return is illustrative rather than a forecast.",
+        "An annuity due pays each amount at the beginning of the period. Relative to an ordinary annuity with otherwise identical terms, future value is multiplied by (1+r), because each contribution compounds for one additional period. This matters for deposits made on each payday versus month-end and for first-of-month rent payments. Beginners often compute 12 deposits and accidentally count 13 periods, exaggerating wealth.",
+        "With $250 end-of-month deposits for 240 months and a 6% nominal annual rate compounded monthly, future value is $250[(1+.06/12)^240−1]/(.06/12)≈$115,510.22, of which $60,000 represents contributions. That is before fees, taxes and inflation. If the same amounts were deposited at each month start, multiply by 1.005, producing about $116,087.77. The difference comes solely from timing, not an investment strategy or higher assumed rate.",
+        "To fund a ten-year home purchase, do not automatically assume a 6% risk asset return if the purchase cannot tolerate a late loss. Instead test a low or zero return and compute the required monthly saving. A household with a $12,000 cash target and 24 month-end deposits needs $500/month before interest. Tax-advantaged retirement money cannot always be treated as unrestricted home cash."
+      ],
+      "worked": [
+        "C=$250/month, r=.06/12=.005, n=240 ⇒ ordinary FV≈$115,510.22.",
+        "Total deposits $250×240=$60,000; hypothetical growth ≈$55,510.22.",
+        "Annuity-due FV=$115,510.22×1.005≈$116,087.77.",
+        "To accumulate $12,000 in 24 deposits with r=0: $12,000/24=$500/month.",
+        "No smooth-return annuity equation captures real-world investment losses or tax effects."
+      ],
+      "practice": [
+        [
+          "Why is a $250 monthly deposit at the beginning of the month worth more in the annuity model than at month-end?",
+          "Each deposit has one extra compounding period; the assumed per-period effective return factor multiplies ordinary-annuity future value."
+        ],
+        [
+          "How do you compute the required monthly contribution to accumulate $15,000 in 30 months if return is zero?",
+          "Divide target by payments: $15,000/30=$500 per month, before costs and any changes to the target."
+        ]
+      ]
+    },
+    {
+      "title": "Present value of obligations, growing payments and perpetuities",
+      "body": [
+        "Present value of a level ordinary annuity is PV=C[1−(1+r)^(-n)]/r, with PV=Cn when r=0. This converts a series of dated payments into a common present amount. If a family requires $20,000 annual income replacement at each year end for ten years and discount rate is hypothetically 4%, PV≈$162,217.92. That value may help frame life-insurance needs, but the correct discount rate, survivor taxes, mortality timing and available benefits must be considered before recommending actual coverage.",
+        "Growing annuities model payments rising at g per period. For first payment C1 at t=1, a level-growth ordinary annuity value is PV=C1[1−((1+g)/(1+r))^n]/(r−g), for r different from g, subject to economic model consistency. If r=g, the limit is PV=n C1/(1+r). A constant-growth perpetuity is C1/(r−g) only when r>g and an indefinitely growing payout is sustainable. An absurd valuation when r≈g signals sensitivity to assumptions, not an actual infinite asset value.",
+        "Suppose a hypothetical permanent spending obligation begins at $10,000 one year from now and grows 2% each year, discounted at 5%. The simplistic perpetuity value is $10,000/(.05−.02)=$333,333.33. If required return increases to 6% while g stays 2%, value falls to $250,000. A small rate change can substantially alter the calculated value of long-lasting claims; real human spending obligations are finite and uncertain.",
+        "Inflation and discount rates must share nominal or real units. If expenses rise in nominal dollars, use a nominal discount model. Applying a nominal growth rate to real-dollar spending and discounting at a real rate mixes units and exaggerates costs. Asset protection and legacy planning require clarity about whether dollar amounts represent today's purchasing power."
+      ],
+      "worked": [
+        "Level cash flow $20,000, years 10, r=4% ⇒ PV=$20,000[1−1.04^(−10)]/.04≈$162,217.92.",
+        "Perpetual first-year cash $10,000, r=5%, g=2% ⇒ PV≈$333,333.33.",
+        "At r=6%, g=2%, same cash ⇒ PV=$250,000.",
+        "When r=g, finite growing-annuity PV has a stable limiting formula, not a singular financial event.",
+        "Nominal growth and nominal discount belong together; real and real belong together."
+      ],
+      "practice": [
+        [
+          "Why is a constant-growth perpetuity formula invalid when the growth rate equals or exceeds the discount rate?",
+          "The infinite sum fails to converge, so the formula does not produce a finite economically meaningful valuation without revising assumptions or horizon."
+        ],
+        [
+          "Why should inflation-adjusted benefit needs and nominal investment discount rates not be mixed without conversion?",
+          "They are different purchasing-power units; mismatching rates to cash-flow types distorts the present value of long-term obligations."
+        ]
+      ]
+    },
+    {
+      "title": "Mortgage amortization: payment split, remaining debt and extra principal",
+      "body": [
+        "An amortizing loan requires a constant payment that covers periodic interest and reduces principal under the assumed terms. For original balance L, periodic rate r and n payments, M=Lr/[1−(1+r)^(-n)], or M=L/n at zero rate. At each month t, interest I_t=r B_(t−1), principal reduction P_t=M−I_t and new balance B_t=B_(t−1)−P_t. Initially most of a long mortgage's payment can represent interest, because the outstanding principal is high.",
+        "At an illustrative 30-year fixed 6% nominal mortgage rate on $240,000, monthly P&I is about $1,438.92. First month's interest is $240,000×.005=$1,200 and principal reduction about $238.92. Payment number 2 accrues interest on the smaller balance, so the principal share rises slightly. An amortization table is not proof the entire housing bill equals $1,438.92: property taxes, insurance, PMI, maintenance and utilities remain separate.",
+        "The remaining balance after k fixed payments can be computed as B_k=L(1+r)^k−M[(1+r)^k−1]/r, assuming the scheduled payment, rate and terms remain unchanged. Extra principal payments reduce the outstanding balance, potentially the total interest cost and time to payoff if the lender applies them to principal. The exact benefit varies with timing, loan servicer processing, prepayment rules, escrow and whether the loan is recast or refinanced.",
+        "A household saving for a down payment should compare extra mortgage principal with reserves and other debt. Paying an additional $2,000 toward the loan might save future interest but remove cash needed for a roof repair. The correct financial decision weighs contractual debt cost, after-tax investment alternatives, liquidity and household risk capacity."
+      ],
+      "worked": [
+        "Loan $240,000, APR-like note input 6% nominal annual, 360 months ⇒ M≈$1,438.92 P&I.",
+        "First month interest $240,000×.005=$1,200.",
+        "First month principal paid ≈$238.92; next balance≈$239,761.08.",
+        "Remaining balance formula makes prepayment timing explicit.",
+        "This P&I model excludes all property and insurance costs."
+      ],
+      "practice": [
+        [
+          "What determines first-month interest in a standard fixed-rate amortizing mortgage?",
+          "The stated periodic interest rate multiplied by the beginning outstanding principal, not the original term times the rate or the full payment amount."
+        ],
+        [
+          "Can a mortgage be affordable based on P&I while the actual monthly housing costs remain unaffordable?",
+          "Yes. Taxes, insurance, mortgage insurance, repairs, fees and other expenses must be included in a cash-flow and reserve analysis."
+        ]
+      ]
+    },
+    {
+      "title": "NPV decision rules and why IRR can mislead",
+      "body": [
+        "Net present value (NPV) places all incremental cash flows at the same valuation date: NPV=Σ CF_t/(1+r)^t, including the initial investment at t=0. A positive NPV under a defensible required return suggests an investment's model value exceeds its economic outlay. The discount rate should reflect opportunity cost and the risk of the modeled flows, and the cash flows must be incremental and after appropriate taxes when evaluating household wealth. A positive spreadsheet number is a conditional conclusion, not a guarantee that the project pays obligations when due.",
+        "Internal rate of return (IRR) is a discount rate for which NPV equals zero. For a simple conventional cash flow with one initial outflow and positive later receipts, an IRR may be intuitive. With cash-flow sign changes, multiple IRRs or no real economically useful IRR may exist. IRR comparisons can rank differently from NPV when projects differ in size or timing; reinvestment assumptions and risk vary. Professional investment evaluation generally prioritizes NPV at the appropriate cost of capital under a coherent capital allocation.",
+        "Consider an illustrative investment costing $1,000 now that pays $600 at the end of each of two years. At a 10% effective annual discount rate, NPV=−$1,000+$600/1.1+$600/1.1²≈$41.32. A different opportunity paying $2,000 in one year for a $1,500 investment would have NPV≈$318.18 at 10%, if its stated outcome were credible. Comparing those model NPVs requires evaluating certainty, liquidity, risk and capital constraints rather than mechanically choosing the percentage IRR.",
+        "Risk scenarios need real cash-flow dates: a house purchase may involve immediate closing costs, ongoing maintenance, selling expenses and uncertain future prices; insurance contracts have premiums, cash surrender values and potential loan balances; retirement contributions have tax consequences. Treating one future asset value as pure profit while omitting cash costs is a valuation error. Document what information would invalidate the project."
+      ],
+      "worked": [
+        "Project outlay $1,000 at t=0; receipts $600 at t=1 and $600 at t=2.",
+        "Discount rate 10% ⇒ NPV=−1000+600/1.1+600/1.1²≈$41.32.",
+        "An alternative outlay $1,500 and return $2,000 next year ⇒ NPV≈$318.18 at 10%.",
+        "Both projects may appear attractive but cash-flow risk and liquidity can invalidate a decision.",
+        "IRR is not a substitute for checking project size and sign changes."
+      ],
+      "practice": [
+        [
+          "Why can a project with higher percentage IRR still have lower economic value creation?",
+          "Project scale, cash-flow dates and risk can differ; NPV at a relevant required return measures dollar value and can rank opportunities differently."
+        ],
+        [
+          "Why is an investment with model-positive NPV unsuitable for money due next week?",
+          "A distant uncertain payment does not provide immediate liquid cash. The household may fail required obligations despite conditional model value."
+        ]
+      ]
+    },
+    {
+      "title": "Loan refinancing and insurance-contract valuation as dated alternatives",
+      "body": [
+        "Refinancing is an upfront-cost-versus-future-payment decision. A lower interest rate may reduce P&I and total future interest, but new origination fees, points, appraisal, title fees and any change in remaining term can outweigh the benefit. A practical first screen is simple payback: incremental closing cash divided by monthly saving, where monthly saving is positive and comparable. A more rigorous model discounts the expected incremental payments over the actual horizon and includes the remaining balance at sale, prepayment and tax differences.",
+        "Suppose refinance costs $4,000 now and saves a fixed hypothetical $90 per month for 60 months until a likely sale. Simple undiscounted payback is 44.44 months, and total undiscounted savings are $5,400. At a monthly discount rate of 0.5%, the PV of 60 month-end savings is $90[1−1.005^(−60)]/.005≈$4,655. A simple NPV of savings less upfront cost is about $655, before remaining mortgage balance differences, lender terms, taxes and opportunity cost. If the sale arrives at month 24, the project may have negative NPV.",
+        "A permanent life insurance purchase can also be modeled as a series of conditional cash flows: premiums paid, guaranteed and non-guaranteed surrender values, debt accrued on policy loans, death-benefit contingencies and possible tax consequences. But a simplified financial annuity cannot price mortality protection without assumptions about survival and actual product rights. Comparing $250 premium with $30 term coverage must include different death-benefit risks, contract duration, investment returns and cash availability.",
+        "Finish each comparison with at least one sensitivity on discount rate, timing and tax or fee changes. A professionally documented recommendation identifies what would need to be verified in an actual Loan Estimate or insurer in-force illustration and separates mathematical illustration from individualized advice. This prevents the misleading conclusion that compounding itself creates wealth independent of capital, risk and legally enforceable obligations."
+      ],
+      "worked": [
+        "Hypothetical refinance cost $4,000, monthly saving $90 for 60 months.",
+        "Simple payback $4,000/$90≈44.44 months.",
+        "Monthly discount rate .5% ⇒ PV savings≈$90[1−1.005^(−60)]/.005.",
+        "PV of savings approximately $4,655.29, so NPV after cost approximately $655.29.",
+        "A 24-month horizon changes the economics and must include remaining balance effects."
+      ],
+      "practice": [
+        [
+          "Why isn't a refinance's total expected 60-month payment saving its exact economic benefit?",
+          "Savings occur over time and may disappear if the loan ends early; upfront costs, discounting, remaining loan balances and taxes change true NPV."
+        ],
+        [
+          "Why can't the annuity equation alone establish whether a cash-value life policy is a good investment?",
+          "Life policies combine contingent death protection, insurer crediting, contract charges, surrender values, loan terms and tax rights; a simple smooth-return cash model omits material terms."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFPB Mortgage Loan Estimate and Closing Disclosure",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB Understanding APR and mortgage cost disclosures",
+      "https://www.consumerfinance.gov/rules-policy/regulations/1026/"
+    ],
+    [
+      "Investor.gov compound-interest education",
+      "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
+    ],
+    [
+      "TreasuryDirect prices and discounting",
+      "https://www.treasurydirect.gov/marketable-securities/understanding-pricing/"
+    ],
+    [
+      "CFA Institute quantitative methods learning resources",
+      "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam"
+    ]
+  ],
+  "assessment": {
+    "title": "Financial mathematics cumulative problem set",
+    "prompt": "Derive PV/FV and monthly rate conversions. Compute future values of an ordinary annuity and annuity due, a ten-year present value of survivor expenses, a finite growing annuity, and a 30-year $240,000 mortgage amortization under 6% and 7% notes. Compute NPV for one two-payment investment and a refinance with upfront fee, including a 24- versus 60-month hold and sensitivities. Defend the chosen discount rate, real versus nominal units and household liquidity minimums.",
+    "rubric": [
+      "Compounding and rate conventions (20%)",
+      "Annuity and PV derivations (25%)",
+      "Loan amortization accuracy and alternative timing (25%)",
+      "NPV and IRR interpretation, errors and risk (20%)",
+      "Documentation, citations and limitations (10%)"
+    ]
+  }
+}

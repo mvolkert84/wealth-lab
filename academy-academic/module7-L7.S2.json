@@ -1,0 +1,244 @@
+{
+  "id": "L7.S2",
+  "title": "Rates, Central Banks & Bonds",
+  "subtitle": "Monetary policy transmission, yield curves, Treasury pricing, duration and mortgage-rate risk",
+  "prerequisites": [
+    "L7.S1 inflation and real returns",
+    "L4.S1 debt versus ownership claims",
+    "L4.S2 interest-rate risk"
+  ],
+  "objectives": [
+    "Identify FOMC objectives and actual operational instruments",
+    "Explain overnight policy transmission without confusing mortgage pricing",
+    "Decompose nominal yields into term, inflation and credit components",
+    "Price discounted fixed and zero-coupon cash flows",
+    "Calculate duration sensitivity and convexity caveats",
+    "Compare mortgage rates, APR, points and refinance breakeven",
+    "Distinguish fixed, floating, indexed and default-sensitive securities"
+  ],
+  "sections": [
+    {
+      "title": "Federal Reserve mandate, the FOMC and the money-market implementation layer",
+      "body": [
+        "The Federal Reserve's monetary policy mandate emphasizes maximum employment and price stability. The Federal Open Market Committee sets a target range for the federal funds rate, an overnight interbank funding rate, rather than setting every consumer credit contract. The Federal Reserve implements that stance in modern markets with administered rates, including interest on reserve balances and the overnight reverse repurchase facility, alongside other operations. Those instruments influence short-term funding conditions, but private credit pricing depends on many layers beyond the target range.",
+        "Transmission is a chain of responses: a policy decision can influence current and expected short rates, Treasury yields, bank deposit and loan offers, exchange rates, asset valuations and spending plans. Each step has lags and uncertainty. A rate cut may coincide with a rise in long mortgage rates when expected inflation or long-run Treasury yields rise. A lender may tighten credit standards even as market rates decline. Policy actions and market outcomes should not be forced into a mechanical one-to-one formula.",
+        "Explain restrictive versus accommodative policy relative to the economy rather than by calling any positive nominal policy rate 'tight'. A policy rate of 4% when expected inflation is 5% can have a different ex ante real stance from the same 4% rate with 2% expected inflation. Financial conditions also reflect credit spreads, asset prices, dollar strength and funding liquidity. Economists make imperfect policy judgments because potential output, neutral rates and inflation expectations are uncertain.",
+        "A student should chart the policy target and an actual overnight rate separately, annotate FOMC dates, and describe a plausible transmission path to a mortgage or employer investment. This is causal reasoning, not a claim that a particular rate announcement predicts stock returns. Use Federal Reserve policy explanations rather than unverified rate-hike narratives."
+      ],
+      "worked": [
+        "Assumed policy-rate midpoint 4.0% and expected inflation 2.5% ⇒ approximate ex ante real rate 1.5%.",
+        "At expected inflation 4.5% with unchanged nominal policy midpoint, approximate ex ante real rate −0.5%.",
+        "The two economic stances differ although the nominal policy level is the same.",
+        "A 0.25 percentage-point FOMC adjustment is not a guaranteed 0.25-point mortgage quote change.",
+        "Separate overnight policy target, Treasury yields, bank spreads and loan contract rates."
+      ],
+      "practice": [
+        [
+          "Why might 30-year mortgage rates rise shortly after the Federal Reserve reduces its overnight target?",
+          "Longer Treasury yields, inflation expectations, mortgage spreads and expected policy paths can rise; long mortgage quotes are not mechanically the overnight target."
+        ],
+        [
+          "What policy instruments help anchor the overnight federal funds rate near the FOMC's target range?",
+          "Administered rates such as interest on reserve balances and the overnight reverse-repurchase facility, along with the Federal Reserve's operating framework and market operations."
+        ]
+      ]
+    },
+    {
+      "title": "Term structure: what a yield curve actually compares",
+      "body": [
+        "A yield curve displays yields for comparable debt securities across maturities at a particular date. Treasury nominal securities reduce private default risk but their yields still vary with duration, inflation expectations, liquidity, term premiums and the anticipated path of overnight rates. An upward-sloping curve often means longer yields exceed short ones, but an inversion is not a statutory recession designation or a guaranteed forecast of the next twelve months.",
+        "Decompose a long yield conceptually into expected future short rates plus compensation for uncertainty, maturity, supply-demand, liquidity and market factors. That decomposition is not directly observable from a single spread; economists use models and surveys to estimate the components. A 10-year yield of 4.5% versus a 2-year yield of 4.0% gives a 0.5-percentage-point spread. Two years later that spread may change because the expected policy path or term premium changes, even without an FOMC decision.",
+        "Corporate bonds add credit spreads, which compensate for default risk, loss given default, liquidity and other risks. An investor comparing a 5.5% corporate yield with a 4.0% hypothetical comparable Treasury might describe a 1.5-point nominal credit spread, but that extra promised yield is not guaranteed extra realized return. Defaults, calls, price volatility and transaction costs matter. A high yield can be the market's price for a high chance of financial loss.",
+        "Curve analysis should compare like maturities, coupon structures, embedded options and tax treatment. A taxable corporate bond, municipal bond and Treasury are not economically equivalent simply because all display a yield. In household planning, fixed mortgage rate spreads also reflect prepayment and servicing features, so a Treasury curve alone cannot produce the lender's APR."
+      ],
+      "worked": [
+        "Hypothetical 10-year Treasury yield 4.5%, two-year yield 4.0%.",
+        "10y−2y slope =0.5 percentage point or 50 basis points.",
+        "Hypothetical comparable corporate yield 5.5% minus Treasury 4.0% ⇒ spread 150 basis points.",
+        "A yield spread is a quoted difference, not a promise of realized incremental return.",
+        "An inverted slope can signal expectations but does not itself establish a recession."
+      ],
+      "practice": [
+        [
+          "Why is the Treasury 10y−2y spread not an official switch declaring recession?",
+          "It is a market-price indicator affected by expectations and premiums, while NBER downturn dating weighs broad economic activity and is determined separately."
+        ],
+        [
+          "What risks can explain why a corporate bond yield exceeds a comparable Treasury yield?",
+          "Compensation for issuer default and recovery risk, liquidity constraints, embedded options and other security characteristics, not a free bonus."
+        ]
+      ]
+    },
+    {
+      "title": "Bond cash flows, coupon versus yield and discounted value",
+      "body": [
+        "Bond value is the sum of discounted coupons and principal. Under an annual fixed-coupon toy model, P=Σ from t=1 to N of C/(1+y)^t+F/(1+y)^N. Coupon rate equals annual contractual coupon divided by face value; current yield divides coupon by current market price; yield to maturity is the discount rate that equates the observed price with contractual promised cash flows under particular timing and reinvestment-related assumptions. They are not the same quantity.",
+        "Take a $1,000 face three-year bond with a 4% annual coupon ($40 per year) and a 5% required annual yield. Present value of three $40 coupons plus $1,000 at maturity is about $972.77. The market value is below par because the contract coupon rate is less than the market yield. If the required yield falls to 3%, price rises above par. A bond at premium or discount does not change the contractual coupon dollar amount.",
+        "A zero-coupon security instead pays a single maturity amount; price P=F/(1+y)^N. For $1,000 face due in three years, annual yield of 4% gives approximately $889.00, and 5% gives about $863.84. That $25.16 price decline occurs without any principal default. Bonds sold before maturity expose owners to market price. An investor holding to maturity still has issuer, inflation, liquidity and reinvestment constraints; the terms of the bond and actual cash receipts determine outcomes.",
+        "Use effective yield consistent with payment interval. Many real US Treasury notes pay semiannual coupons, so an annual-coupon teaching formula should not be applied blindly to a live price quote. Accrued interest, clean versus dirty prices, redemption rights and bid-ask spreads matter. This module's mathematical model is educational and cannot price every market-traded debt product."
+      ],
+      "worked": [
+        "Annual coupon bond: F=$1,000, C=$40, N=3, y=5%.",
+        "Value $40/1.05+$40/1.05²+$1,040/1.05³≈$972.77.",
+        "Zero coupon, F=$1,000, N=3, yield 4% ⇒ $888.996.",
+        "At 5% yield ⇒ $863.838, down $25.159 or about 2.83%.",
+        "Coupon rate 4%, yield 5%, and price below par are consistent."
+      ],
+      "practice": [
+        [
+          "Why can a bond with a 4% coupon yield 5% when bought on a secondary market?",
+          "If purchased below face value, coupon payments plus eventual par repayment generate return beyond the 4%-of-face coupon alone, subject to realized outcomes."
+        ],
+        [
+          "What must be aligned before applying a discounting formula to a semiannual coupon security?",
+          "Convert periodic coupon cash flows, payment count and per-period discount rate consistently; account for settlement and accrued interest if pricing real securities."
+        ]
+      ]
+    },
+    {
+      "title": "Duration, convexity, credit spread and interest-rate stress",
+      "body": [
+        "Duration measures timing-weighted cash-flow sensitivity to yield changes; modified duration approximates percentage price change for a small yield movement: ΔP/P≈−D_mod Δy, where Δy is a decimal yield change. This is a local linear approximation, not a maximum loss or exact forecast. A duration-six bond exposure subjected to a one-percentage-point parallel yield increase may lose approximately 6% before convexity, credit, fund flows and other effects. Interest payments and yield changes can partly offset price movement in total return over time.",
+        "Convexity improves a local price approximation for a traditional fixed bond under many non-option circumstances: ΔP/P≈−D_mod Δy+½ Convexity(Δy)². Embedded calls, prepayments and mortgage-backed security options can change effective duration and produce negative convexity. A homeowner considering refinancing is economically holding a valuable option to repay early; the lender and mortgage investors price that possibility. A simplistic 'interest rates fall so bond price goes up' rule becomes unreliable around options and credit events.",
+        "Distinguish rate duration and spread duration. A corporate credit spread can widen even when Treasury rates fall, causing the corporate price to decline. When recession fears increase, high-yield bond funds may fall because expected defaults and liquidity premiums dominate the safe-rate move. Portfolio construction must stress both components independently and together.",
+        "Evaluate a near-term down-payment fund by maximum dated cash need, not bond fund advertised yield. A long-duration fund can lose price immediately before closing. Matching short maturities, withdrawal options and acceptable credit risk can be more important than reaching for the highest forecast coupon return. Investors should read the actual fund prospectus and duration information instead of treating a fund as the same as one bond held to maturity."
+      ],
+      "worked": [
+        "Portfolio market value $20,000, modified duration 6 years.",
+        "Parallel rate increase 0.75 percentage points ⇒ Δy=.0075.",
+        "Linear price change≈−6×.0075=−4.5%, approximate loss $900.",
+        "A simultaneous credit-spread shock can add further price decline beyond Treasury-rate effect.",
+        "Convexity and nonparallel yield-curve changes mean actual price need not equal the linear model."
+      ],
+      "practice": [
+        [
+          "How does modified duration differ from a bond's time remaining until maturity?",
+          "Duration weights the timing and present value of cash flows and approximates interest-rate sensitivity; coupon payments make it distinct from simple years-to-maturity."
+        ],
+        [
+          "Why could a corporate bond fund lose value while risk-free Treasury yields fall?",
+          "Credit spreads, default expectations, liquidity or embedded option effects can worsen enough to outweigh lower government yields."
+        ]
+      ]
+    },
+    {
+      "title": "Mortgage offers: contract rate, APR, points and all-in borrowing costs",
+      "body": [
+        "Consumers often treat an advertised mortgage interest rate as the full cost of a loan. The note rate determines scheduled contractual interest and amortizing principal-and-interest under the stated payment rules. Annual percentage rate (APR) under Regulation Z reflects certain finance charges in a standardized borrowing-cost calculation, so it can differ from the note rate. CFPB disclosure forms show APR, total interest percentage, closing costs, adjustable terms and projected cash to close. Neither headline percentage substitutes for actual contract and fee review.",
+        "Points paid at closing may buy a lower note rate. On a $240,000 loan, a one-point charge equals 1% or $2,400. If a lower-rate quote would reduce monthly principal and interest by $45, a simplistic undiscounted break-even is $2,400/$45≈53.3 months. The true decision also considers discounting, deduction eligibility, loan payoff or refinance timing, closing cash scarcity and whether the rate reduction lasts for the life of the loan. A borrower refinancing in two years may never recoup the extra points.",
+        "Loan amortization payment M=Lr/[1−(1+r)^(-n)], where r is periodic note rate and n payment count. For a 30-year fixed mortgage at a hypothetical 6% annual note rate, $240,000 principal produces $1,438.92 monthly P&I. At 7%, P&I is about $1,596.73, an increase around $157.81 each month, before taxes, insurance and mortgage insurance. Market quotes change and mortgage APR may include specific fees not used in this simplified P&I calculation.",
+        "Choosing a loan is a contingent household decision: ask how long the buyer expects to keep it, the accessible cash after closing, whether a rate buydown is guaranteed, prepayment provisions, private mortgage insurance and possible assistance-loan transfer restrictions. Fixed-rate mortgage monthly P&I stability is not property-tax or insurance stability. A complete comparison includes both upfront cash and monthly carrying cost."
+      ],
+      "worked": [
+        "$240,000 loan, one discount point = $2,400 prepaid cost.",
+        "Assumed monthly P&I saving $45 ⇒ naive break-even 53.33 months, before interest and time value.",
+        "At 6% annual note, 360 months: M=240000×.005/[1−1.005^(-360)]≈$1,438.92.",
+        "At 7% annual note: M≈$1,596.73; hypothetical payment difference ≈$157.81.",
+        "Annual percentage rate and note rate are not interchangeable legal disclosures."
+      ],
+      "practice": [
+        [
+          "Why is a 53-month mortgage points break-even not enough to choose the offer?",
+          "It ignores the chance of early sale or refinance, opportunity cost of cash, loan term, taxes, fees, and differences in mortgage contract features."
+        ],
+        [
+          "What distinguishes the note interest rate from APR on a Loan Estimate?",
+          "Note rate determines contractual loan interest; APR applies standardized treatment to certain finance charges and expresses a borrowing-cost rate under consumer disclosure law."
+        ]
+      ]
+    },
+    {
+      "title": "Fixed, floating and inflation-indexed instruments in asset–liability matching",
+      "body": [
+        "Financial institutions and households choose between fixed and variable-rate obligations. Fixed-rate debt gives predictable contracted debt payments but can carry prepayment and early-payoff considerations. Floating-rate debt resets using a defined index plus margin, possibly with caps, floors and changes in index methodology. The borrower must read the reset interval and maximum possible payments. A variable loan can become expensive when market rates rise even if the initial monthly payment looks comfortable.",
+        "A household paying fixed P&I on a mortgage and holding cash deposits with variable interest rates has different exposure from one financing the house with an adjustable-rate mortgage and holding fixed-coupon bonds. The first may experience declining deposit yields as policy eases but stable mortgage P&I. The second could face rising debt service while its bond portfolio falls in value if rates rise. Interest-rate risk cannot be assessed by looking at assets alone: liabilities and income sensitivity must be included.",
+        "Duration matching is a concept used to reduce mismatch between assets needed and liabilities due at known times. For an expense due within twelve months, cash held in appropriate insured deposits or short-maturity high-quality securities may be more aligned than long-duration bonds. A pension paying obligations over decades has a different duration target. Matching is approximate in practice because cash-flow timing, reinvestment rates, taxes and market access vary.",
+        "For an inheritance plan, a life insurance death benefit can be conditional liquidity while an outstanding mortgage is a current obligation. The existence of a large policy face amount does not remove mortgage or policy-loan debt until cash is actually available and properly allocated. Apply the same present-value and sensitivity discipline to every type of household promise."
+      ],
+      "worked": [
+        "Hypothetical floating-rate $100,000 debt resets from 5% to 7% annual interest.",
+        "Simple interest-only monthly cost increases from $416.67 to $583.33, +$166.67, before principal amortization.",
+        "A fixed P&I mortgage with unchanged contractual rate does not reset because short-term policy rate changes.",
+        "A bond fund of duration six can lose about 6% market price under a 1-point rate shock, approximately.",
+        "Align funding maturity to goal due date instead of assuming a quoted yield is risk-free."
+      ],
+      "practice": [
+        [
+          "Why can adjustable borrowing and long-duration bond investments create a double loss when rates rise?",
+          "Debt servicing can increase while bond market prices fall; both sides of the household balance sheet may be hurt by the same shock."
+        ],
+        [
+          "Why is an individual bond held to stated maturity not equivalent to shares in a bond fund for a timed cash goal?",
+          "The individual bond has a defined maturity cash flow subject to default and terms, whereas fund shares have variable market NAV, portfolio turnover, fees and investor redemption prices."
+        ]
+      ]
+    },
+    {
+      "title": "Policy shocks, scenarios and economically honest interest-rate forecasts",
+      "body": [
+        "A professional financial forecast must identify which price changes come from safe rates, which from credit or inflation risk premiums and which from product-specific terms. Federal Reserve decisions are observable; the future path and how markets respond are not. Scenarios can be conditional: short rates up 100 basis points with mortgage spreads unchanged, or long rates up 100 basis points despite a steady FOMC target, or a recession that lowers Treasuries while credit spreads widen.",
+        "Build a three-case home loan estimate with 5%, 6% and 7% hypothetical fixed note rates for the same $240,000 30-year amortization. Record principal and interest, taxes, insurance, all closing costs, points and needed reserves. On the investment side, stress a duration-six fund with −100, 0 and +100 basis-point yields, then explain that first-order duration approximations do not include coupons, convexity and credit conditions. The goal is not to pick the exact rate next spring but avoid a plan failing under plausible shocks.",
+        "Use a dated research log with FOMC releases, relevant Treasury auction data, source-specific bond pricing, and actual lender Loan Estimates when available. If no lender quote exists, label the value a hypothetical scenario instead of presenting it as current Connecticut mortgage availability. Forecasts become more defensible when they include a range, uncertainty and a decision rule.",
+        "Connect the macro story to household action: a high-rate period may reduce borrowing capacity and raise monthly payments but may also raise available short-term cash yields; a rate decline may support some asset prices but reduce deposit returns, and the direction of housing supply is uncertain. This helps the learner evaluate tradeoffs rather than attempt to time markets from headlines."
+      ],
+      "worked": [
+        "Fictional $240,000 loan, 30 years, test note rates 5%, 6% and 7%.",
+        "Compute monthly contractual P&I independently, then add taxes/insurance and upfront closing expenses.",
+        "For duration six, a +1 percentage-point yield shock approximates −6% price; a −1 point shock approximates +6% before convexity.",
+        "Compare fixed borrowing costs and deposit interest rates as two distinct household exposures.",
+        "No rate example represents a verified live offer or forecast."
+      ],
+      "practice": [
+        [
+          "What makes a scenario analysis academically more responsible than an exact 'mortgage rate next year' prediction?",
+          "Explicit assumed shocks and ranges make uncertain relationships visible and test whether a plan survives plausible outcomes; no exact future rate is guaranteed."
+        ],
+        [
+          "Which primary sources should a borrower inspect before interpreting an APR as a real finance offer?",
+          "Actual lender Loan Estimates and loan terms, CFPB disclosure explanations, and relevant source-dated market data. Hypothetical calculator defaults are not quotes."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Federal Reserve monetary policy and mandate",
+      "https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm"
+    ],
+    [
+      "FOMC statements and meeting schedule",
+      "https://www.federalreserve.gov/monetarypolicy/fomc.htm"
+    ],
+    [
+      "TreasuryDirect price and rate mechanics",
+      "https://www.treasurydirect.gov/marketable-securities/understanding-pricing/"
+    ],
+    [
+      "Treasury marketable securities and auction information",
+      "https://www.treasurydirect.gov/marketable-securities/"
+    ],
+    [
+      "CFPB Regulation Z, APR and mortgage disclosures",
+      "https://www.consumerfinance.gov/rules-policy/regulations/1026/"
+    ],
+    [
+      "CFPB Home loan toolkit",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "New York Fed reference rate / SOFR",
+      "https://www.newyorkfed.org/markets/reference-rates/sofr"
+    ]
+  ],
+  "assessment": {
+    "title": "Rate-transmission, bond valuation and mortgage stress committee",
+    "prompt": "Present a transmission diagram linking one FOMC decision to overnight rates, longer Treasury yields, lender pricing, mortgage costs and real-world uncertainty. Price one annual-coupon and one zero-coupon bond under two yields; stress a duration-six fixed-income portfolio with yield and spread shocks; compare a $240,000 mortgage at 5%, 6% and 7% including a one-point buydown and the 53.3-month simple payback. Explain why no market quote or recession forecast can be inferred automatically.",
+    "rubric": [
+      "Accurate policy and term structure causal reasoning (20%)",
+      "Bond cash-flow prices and yield sensitivity (25%)",
+      "Mortgage APR, amortization and upfront cost comparisons (25%)",
+      "Household liability and liquidity stress (15%)",
+      "Source trace, assumptions and limitations (15%)"
+    ]
+  }
+}
