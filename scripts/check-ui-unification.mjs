@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {Script} from 'node:vm';
+import {Script,runInNewContext} from 'node:vm';
 const read=f=>readFileSync(new URL('../'+f,import.meta.url),'utf8');
 const app=read('index.html'),css=read('ui-unified-v1.css'),sw=read('sw.js'),thumbs=read('learn-thumbnails.css');
 assert.ok(app.includes('<link rel="stylesheet" href="./ui-unified-v1.css?v=1.0.0">'));
@@ -35,6 +35,43 @@ for(const n of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]){
 const appScripts=[...app.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)];
 assert.ok(appScripts.length,'No inline app scripts');
 for(const [,script] of appScripts)if(script.trim())new Script(script,{filename:'index:inline.js'});
+
+// Execute the actual slider and navigation methods without a browser network.
+const typeStart=app.indexOf('function setReadingSize(value,save=false)');
+const typeEnd=app.indexOf('function toast(',typeStart);
+assert.ok(typeStart>0&&typeEnd>typeStart);
+const slider={value:'16',setAttribute(name,value){this[name]=value}};
+const valueTag={textContent:''},sample={style:{}},styles={};
+let saved=0;
+const uiCtx={
+ state:{font:16},persist(){saved++;},
+ document:{
+  documentElement:{style:{setProperty(name,value){styles[name]=value}}},
+  querySelectorAll(query){return query==='[data-reading-size]'?[slider]:query==='[data-reading-size-output]'?[valueTag]:query==='[data-reading-preview]'?[sample]:[]}
+ }
+};
+runInNewContext(app.slice(typeStart,typeEnd),uiCtx);
+uiCtx.setReadingSize(19,true);
+assert.equal(uiCtx.state.font,19);assert.equal(slider.value,19);assert.equal(valueTag.textContent,'19px');
+assert.equal(styles['--reader-size'],'19px');assert.equal(sample.style.fontSize,'19px');assert.equal(saved,1);
+uiCtx.setReadingSize(50,true);assert.equal(uiCtx.state.font,24);
+uiCtx.setReadingSize(0,true);assert.equal(uiCtx.state.font,16,'Empty input should normalize to accessible default');
+uiCtx.setReadingSize(13,true);assert.equal(uiCtx.state.font,13);
+assert.ok(uiCtx.readingSizeControl(false).includes('type="range" min="13" max="24"'));
+assert.ok(uiCtx.readingSizeControl(true).includes('wl-type-compact'));
+const navStart=app.indexOf('const navItems='),navEnd=app.indexOf('function progressBar(',navStart);
+assert.ok(navStart>0&&navEnd>navStart);
+const navCtx={state:{view:'home'},homeGlyph(name){return '<svg data-icon="'+name+'"></svg>'}};
+runInNewContext(app.slice(navStart,navEnd),navCtx);
+for(const [view,active] of [['home','home'],['learn','learn'],['tools','tools'],['notebook','notebook'],['more','more'],['reader','learn'],['states','tools']]){
+ navCtx.state.view=view;
+ const markup=navCtx.bottomNav();
+ assert.equal((markup.match(/<button /g)||[]).length,5,'Every page should have exactly five nav buttons');
+ assert.equal((markup.match(/<svg data-icon=/g)||[]).length,5,'Every nav button needs consistent SVG artwork');
+ assert.equal((markup.match(/aria-current="page"/g)||[]).length,1,'Exactly one nav item must be current');
+ assert.ok(markup.includes('data-go="'+active+'" class="active" aria-current="page"'),'Active tab incorrect for '+view);
+}
+
 assert.ok(existsSync(new URL('../assets/lesson-thumbnails.webp',import.meta.url)),'Local lesson thumbnail sprite missing');
 const mappingStart=app.indexOf('const WL_THUMB_FOR_LESSON=');
 const mappingEnd=app.indexOf('\nconst WL_THUMB_FOR_TOPIC=',mappingStart);
