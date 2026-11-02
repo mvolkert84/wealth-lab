@@ -1,0 +1,267 @@
+{
+  "id": "L15.S3",
+  "title": "Debt Strategies and Arbitrage Claims",
+  "subtitle": "Loan mathematics, margin calls, policy leverage, after-tax interest, counterparty risk and wealth-pitch audits",
+  "prerequisites": [
+    "L7.S3 present value and loan amortization",
+    "L9.S3 leverage and market risk",
+    "L13.S2 policy loan and surrender taxation",
+    "L15.S2 guarantees and liability"
+  ],
+  "objectives": [
+    "Calculate after-tax and risk-adjusted borrowing spreads",
+    "Distinguish new cash from new equity when extracting collateral",
+    "Explain margin maintenance requirements and forced-sale risk",
+    "Compute fully amortizing versus interest-only loan obligations",
+    "Stress policy loans, insurance premiums and competing cash needs",
+    "Classify business, investment and home borrowing tax rules separately",
+    "Build auditable contract-based assessments of complex wealth claims"
+  ],
+  "sections": [
+    {
+      "title": "Arbitrage requires matched risks, not merely a positive headline spread",
+      "body": [
+        "A genuine arbitrage has tightly matched economic claims and limited residual exposure; most household 'borrow low and earn high' plans are leveraged investment strategies, not riskless arbitrage. Compare the effective borrowing rate, origination charges, collateral restrictions, return volatility, taxes, liquidity, duration and counterparty quality. A quoted return is often only an expected average, whereas the loan contract requires actual dated cash payments.",
+        "Borrow $50,000 at 8% annual simple interest and invest expecting 5% return. The expected interest is $4,000 while the investment earns illustrative $2,500, producing −$1,500 before fees and income tax. Even if expected investment return were 10%, the optimistic positive spread would be only $1,000 before taxes and possible losses. A negative return year does not excuse interest payments.",
+        "Model a strategy with comparable time periods and both assets and debt. A strategy can show positive average investment return over ten years while failing in year two because collateral drops or interest resets. Specify whether a loan is recourse, has a payment balloon, compounds unpaid interest or can be called; those contract terms determine the household's ruin risk."
+      ],
+      "worked": [
+        "Loan $50,000 at 8% simple annual interest => $4,000 debt cost.",
+        "Illustrative investment 5%×$50,000=$2,500 gross return.",
+        "Pre-tax one-year spread $2,500−$4,000=−$1,500.",
+        "At hypothetical 10% gross return, before-tax gain after interest $1,000, still exposed to risk."
+      ],
+      "practice": [
+        [
+          "Why is positive expected return minus loan interest not risk-free arbitrage?",
+          "Investment results are uncertain and tax, fees, duration mismatch and collateral calls can create losses despite a favorable expected spread."
+        ],
+        [
+          "Does an investment loss stop contractual interest from accruing?",
+          "No. Debt obligations and payment schedules remain enforceable regardless of investment performance."
+        ]
+      ]
+    },
+    {
+      "title": "Cash-out borrowing and double-counting equity",
+      "body": [
+        "A homeowner or business owner sometimes describes borrowed cash as 'unlocking' existing asset value. Borrowing can make illiquid equity spendable temporarily, but creates an offsetting liability and future interest. Net worth does not increase when a $30,000 loan is funded into the checking account and a $30,000 debt simultaneously appears. Owner risk may rise through collateral pledges, loan covenants and inability to refinance.",
+        "Suppose a home worth $300,000 has a $200,000 mortgage and owner borrows another $30,000 secured by equity. Before transaction costs, debt rises to $230,000 while the $30,000 loan deposit increases cash. Original home equity $100,000 falls to $70,000 and cash grows $30,000, leaving unchanged net worth. After closing fees, net worth can be lower.",
+        "If cash is then used as a business down payment, the owner has traded liquid, collateral-backed household debt exposure for a risky and potentially illiquid investment. The business might succeed, but a collapse threatens both the investment and the home. A mortgage and finance curriculum should never portray new borrowing as earnings."
+      ],
+      "worked": [
+        "Home $300,000−original mortgage $200,000=$100,000 gross equity.",
+        "Additional secured loan $30,000 raises combined debt $230,000 and reduces home equity to $70,000.",
+        "Bank cash increases $30,000; total economic net worth initially unchanged before fees.",
+        "If lender fees are $1,000 paid out of cash, net worth drops $1,000."
+      ],
+      "practice": [
+        [
+          "Does cash-out equity financing create $30,000 of new net worth?",
+          "No. It increases cash by $30,000 and debt by $30,000, so initial net worth is unchanged before transaction costs."
+        ],
+        [
+          "Why can a home-secured business investment threaten household stability?",
+          "If the business fails, the loan still must be repaid and the residence can secure the creditor's claim."
+        ]
+      ]
+    },
+    {
+      "title": "Margin loans and forced liquidation mechanics",
+      "body": [
+        "A securities margin account allows the broker to lend money secured by securities. The Securities and Exchange Commission warns that price declines can create margin calls, the broker can raise maintenance requirements, and holdings may be sold without advance notice to protect the loan. Investors can lose more than their initial equity and may lose control of sale timing. Market returns therefore cannot be modeled as a smooth guaranteed yield.",
+        "Suppose an investor buys $16,000 of stock using $8,000 cash and an $8,000 margin loan. At a $12,000 market value, account equity is $4,000. With broker maintenance requirement 40%, required equity is $4,800, implying a simplified $800 deposit shortfall before broker-specific liquidations. A 25% floor would yield a different result. Actual equity restoration through sales has its own algebra and broker policies.",
+        "Portfolio concentration can make shocks simultaneous. If a margin borrower owns volatile shares while also depending on a job in the same company, wages and collateral can decline together. A suitable educational presentation should explicitly reject margin borrowing against assets reserved for rent, home closing or other essential obligations."
+      ],
+      "worked": [
+        "Initial securities $16,000−margin loan $8,000=$8,000 investor equity.",
+        "After securities fall to $12,000, equity=$4,000.",
+        "At 40% broker maintenance, required equity $4,800; illustrative deposit shortage $800.",
+        "Broker may sell assets or change requirements under agreement; modeled deposit alone doesn't guarantee cure."
+      ],
+      "practice": [
+        [
+          "Why can a margin investor be forced to sell securities before any recovery?",
+          "Brokers enforce collateral maintenance requirements and may liquidate holdings on short notice as values decline."
+        ],
+        [
+          "Does 25% regulatory maintenance necessarily equal every brokerage firm's demand?",
+          "No. Brokers commonly impose higher house requirements and can change them under account agreements."
+        ]
+      ]
+    },
+    {
+      "title": "Policy-loan slogans and the cost of insurance funding",
+      "body": [
+        "Permanent life insurance may permit collateralized loans against qualifying cash value, but policy loans accrue interest, can reduce death benefits and can create substantial tax on lapse or surrender under relevant rules. The premium outflow is separate from loan interest, and a trust that truly owns a policy can limit the insured person's personal borrowing rights. These legal and contract dimensions matter more than promises of 'paying interest to yourself'.",
+        "Consider a new permanent policy requiring $400/month and a household able to save $500/month toward a home. Only $100/month remains as directly available down-payment savings, or $4,800 over four years without interest. An agent's future hypothetical loan illustration cannot guarantee the household can borrow $15,000 when closing time arrives. Early surrender charges and acquisition costs may reduce available value.",
+        "If a mature policy allows a $15,000 loan at 7%, first-year simple interest is $1,050. If loan interest capitalizes for five years, balance grows to about $21,038. Policy crediting may partially offset economic cost, but only the actual contractual loan and dividend/interest provisions determine the net outcome. Link the case to the detailed Module 13 policy-stress calculations."
+      ],
+      "worked": [
+        "Monthly available saving $500−hypothetical permanent premium $400=$100.",
+        "Four years 48×$100=$4,800 home cash without separate return.",
+        "Policy loan $15,000 at 7% first-year interest $1,050.",
+        "Five-year capitalized debt $15,000×1.07^5≈$21,038 before repayments."
+      ],
+      "practice": [
+        [
+          "Does policy cash-value crediting make loan interest legally disappear?",
+          "No. The loan has contractual interest and insurer crediting may behave differently under recognition rules; verify actual policy guarantees."
+        ],
+        [
+          "Why can policy financing be unsuited to a near-term home purchase?",
+          "Early premiums and surrender deductions can tie up cash while neither the future policy cash value nor loan approval and lender down-payment rules are assured."
+        ]
+      ]
+    },
+    {
+      "title": "Loan amortization, balloon and maturity mismatch",
+      "body": [
+        "A loan payment is not just annual rate times balance if principal amortizes. For monthly level payments, the conventional formula uses principal, monthly nominal rate and number of payments. Short-term commercial financing may be interest-only with a balloon; such arrangements can show low current monthly debt service while requiring substantial refinancing at maturity. This transforms a low-cost marketing claim into a timing risk.",
+        "Borrow $50,000 for five years at hypothetical 8% nominal interest, fully amortized monthly. Monthly payment is about $1,014 compared with $333 interest-only monthly at the start. The lower interest-only payment leaves the entire $50,000 principal due at maturity if the structure specifies a bullet repayment. A business without accessible funds or a refinance might default even after paying every month's interest.",
+        "A prudent borrower computes total scheduled payments, cash debt coverage, personal recourse and the worst month of the loan. Refinancing is not a committed source unless a lender has enforceably approved it; future collateral value, rates and income can differ. Compare the financed project's verified cash returns with every contractual obligation."
+      ],
+      "worked": [
+        "Loan $50,000, nominal annual 8%, monthly r=.08/12, N=60.",
+        "Fully amortizing payment $50,000×r/[1−(1+r)^−60]≈$1,014/month.",
+        "Interest-only initial month $50,000×.08/12≈$333.33 plus full principal due later.",
+        "Low monthly interest-only cash payment does not remove the $50,000 maturity liability."
+      ],
+      "practice": [
+        [
+          "Why can an interest-only business loan be dangerous at maturity?",
+          "The principal may remain outstanding and require cash payment, asset sale or uncertain refinancing."
+        ],
+        [
+          "What makes the monthly payment formula more informative than comparing stated APR alone?",
+          "It shows actual periodic cash due, amortization and potential insolvency even when a nominal spread appears positive."
+        ]
+      ]
+    },
+    {
+      "title": "After-tax leverage: deductions are conditional",
+      "body": [
+        "Borrowing-related interest is not automatically fully deductible. Tax classification, use of borrowed proceeds, passive-activity restrictions, business interest limitations, investment-interest restrictions, and applicable itemization rules matter. A tax deduction reduces taxable income when permitted; it does not refund 100% of the interest cost. Comparing a loan's pretax rate to an investment's advertised pretax yield is therefore incomplete.",
+        "In a deliberately simplified scenario a company pays $4,000 eligible deductible interest and has a 22% marginal ordinary income tax rate. If full deduction genuinely applies and taxable income exists, isolated tax savings might be $880, leaving $3,120 net interest cost. But the same $4,000 cash interest still must be paid to the lender. If deductibility is limited or tax rates change, benefit may be lower or delayed.",
+        "Use after-tax investment income of the same character and within actual limits. Capital gains, dividends, business revenue, rental income and policy crediting can face different regimes. Never presume interest on a home equity loan borrowed to buy stock is deductible as qualified home mortgage interest; tax law typically imposes use-of-proceeds restrictions."
+      ],
+      "worked": [
+        "Eligible interest paid $4,000 × illustrative 22% federal marginal rate=$880 isolated income-tax reduction.",
+        "Cash spent on loan interest still $4,000.",
+        "Simplified after-tax economic interest cost $4,000−$880=$3,120.",
+        "At 0% deductibility, economic interest cost remains $4,000 plus fees."
+      ],
+      "practice": [
+        [
+          "Does a valid tax deduction make business loan interest free?",
+          "No. At a 22% income-tax rate, an eligible $4,000 deduction might save only $880 in tax, leaving a real cash interest cost."
+        ],
+        [
+          "Can borrowed home-equity funds for any purpose automatically generate deductible mortgage interest?",
+          "No. Home mortgage interest rules limit qualifying use; investment or business interest has separate classifications and limits."
+        ]
+      ]
+    },
+    {
+      "title": "Counterparty, concentration and liquidity correlations",
+      "body": [
+        "Borrowed funds often finance an illiquid asset that cannot be sold quickly. A promised return may depend on tenants paying, counterparties performing, products shipping, a small company remaining solvent or an insurer honoring contractual terms. These risks may coincide with a household job loss or local economic decline. Traditional variance calculations that assume independent hazards may badly understate a correlated downturn.",
+        "A household has $6,000 protected reserves and takes a $20,000 recourse loan to fund an illiquid business. At an expected 10% annual gain the business could show $2,000 gross upside. If it instead loses 40%, the investment loses $8,000 while the borrower still owes $20,000 plus interest. If the business also loses customers after a job loss, the household may have no safe funds to service the loan.",
+        "Risk controls are limits, not guarantees: avoid pledged emergency accounts, diversify revenue, limit personal guarantees, preserve unlevered reserves, and size loans from pessimistic cash-flow cases. Insurance can protect defined losses but is not an all-purpose antidote to poor expected returns. A severe scenario should show cash at each due date."
+      ],
+      "worked": [
+        "Borrowed amount $20,000, expected 10% gross return=$2,000 hypothetical gain.",
+        "Investment suffers −40% scenario: value $12,000, loss $8,000.",
+        "Outstanding principal still $20,000, negative $8,000 net collateral gap before interest.",
+        "If protected household cash is $6,000 it cannot cover the $8,000 gap and still remain protected."
+      ],
+      "practice": [
+        [
+          "Why is expected positive investment gain not sufficient to justify personally guaranteed borrowing?",
+          "Downside cash calls and failure risks may exceed household liquidity; debt payment remains required even when a risky project loses value."
+        ],
+        [
+          "How can investment and employment risks be positively correlated?",
+          "Local economic or industry deterioration can harm a person's wages and the collateral/business investment simultaneously."
+        ]
+      ]
+    },
+    {
+      "title": "An independent audit of 'infinite banking' and wealth-hack proposals",
+      "body": [
+        "A disciplined audit begins with the marketing claim translated into legally measurable cash flows. Ask what asset is owned, what is borrowed, who owns the policy or collateral, what minimum payment is contractual, whether projected growth is guaranteed, which fees are embedded, what happens at default or lapse, and what taxes are contingent. Then compare equal-budget alternatives that achieve the same insurance and investment objectives.",
+        "Build a reproducible schedule for five years containing premium outlay, cash surrender value, insurer loan availability, annual interest, lender repayments, beneficiary rights and household emergency reserves. For any claimed investment gain include realistic bad-year results, liquidation costs and taxes. If the promoter cannot supply an in-force illustration or written agreement, label the strategy unverifiable; do not substitute polished diagrams for evidence.",
+        "The financial professional's task is not to dismiss every complex structure. Some tools serve wealthy households with specific risk-transfer or estate objectives. But a person seeking a Connecticut first home with $250–$500 monthly available saving should prioritize demonstrated cash, financing affordability and protected reserves over high-premium, illiquid structures sold as guaranteed shortcuts."
+      ],
+      "worked": [
+        "Claimed annual project return 12%×$50,000=$6,000 before taxes and fees.",
+        "Borrowing at 9% costs $4,500 simple annual interest, narrow $1,500 optimistic pretax spread.",
+        "Year-one loss of 20% instead changes project return to −$10,000, plus $4,500 interest cash need.",
+        "A non-guaranteed projected return cannot repay a guaranteed lender obligation under adverse conditions."
+      ],
+      "practice": [
+        [
+          "What documents make a wealth strategy auditable?",
+          "Complete contract terms, costs, verified ownership, dated cash flows, investment risks, tax basis, borrower obligations and guaranteed versus non-guaranteed scenarios."
+        ],
+        [
+          "Can a complex insurance or trust arrangement reliably replace a low-cost emergency savings account?",
+          "Not automatically. Liquidity, surrender terms, trust ownership powers and borrowing contingencies may make money inaccessible when most needed."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC margin account borrowing and forced sale risks",
+      "https://www.sec.gov/about/reports-publications/investorpubsmarginhtm"
+    ],
+    [
+      "SEC leveraged investing bulletin",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/leveraged-investing-strategies-know-risks-using-these-advanced-investment-tools"
+    ],
+    [
+      "IRS Publication 535 business expenses and borrowing interest",
+      "https://www.irs.gov/publications/p535"
+    ],
+    [
+      "IRS Publication 550 investment interest deduction limitations",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "IRS home mortgage interest rules",
+      "https://www.irs.gov/publications/p936"
+    ],
+    [
+      "NAIC life insurance illustrations and loans",
+      "https://content.naic.org/insurance-topics/life-insurance-illustrations"
+    ],
+    [
+      "IRS policy surrender taxation",
+      "https://www.irs.gov/publications/p525"
+    ],
+    [
+      "CFPB home equity loan information",
+      "https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/"
+    ]
+  ],
+  "assessment": {
+    "title": "Independent leverage and 'wealth hack' forensic audit",
+    "prompt": "Quantify $50,000 borrowed at 8% to earn 5%, then compare 10% hoped return versus −20% stress. Model $300k home with $200k mortgage and additional $30k cash-out debt. Model $16k securities with $8k margin loan falling to $12k value under 40% house maintenance. Compare $50k 8% fully amortizing 60-month loan with interest-only and $50k balloon. Compute five-year capitalized policy loan $15k at 7%, $400/month premiums leaving $100 from $500 home-saving capacity, and eligible-interest $4k at 22% marginal federal rate under an explicit deductibility assumption. Write professional due diligence memo.",
+    "rubric": [
+      "Matched expected return and finance cost (20%)",
+      "Margin and collateral downside stress (20%)",
+      "Borrowing and amortization cash schedule (20%)",
+      "Insurance and policy-loan liquidity/tax constraints (20%)",
+      "Independent verification and household-reserve ethics (20%)"
+    ],
+    "answerKey": [
+      "Simple $50k×5%=$2,500 investment gain and $50k×8%=$4,000 loan interest => −$1,500 before taxes.",
+      "$300k home/$200k initial debt: $100k equity; additional $30k debt gives $70k home equity plus $30k cash, net worth unchanged before fees.",
+      "$16k securities/$8k loan fall to $12k value => equity $4k; 40%×$12k=$4,800 minimum, $800 modeled deposit shortfall, with broker sale risks.",
+      "$15k×1.07^5≈$21,038 policy loan balance; 48×($500−$400)=$4,800 separately liquid home saving.",
+      "If fully deductible at 22%, $4k interest tax benefit $880 and net economic cost $3,120, but lender still receives $4k cash.",
+      "An interest-only $50k loan at 8% nominal has monthly interest ~$333.33 plus principal balloon under such loan terms."
+    ]
+  }
+}
