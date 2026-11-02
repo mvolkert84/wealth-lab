@@ -1,0 +1,209 @@
+{
+  "id": "L2.S5",
+  "title": "State Assistance, Refinancing & Trusts",
+  "subtitle": "Connecticut CHFA, conditional second liens, mortgage exits and inheritance",
+  "prerequisites": [
+    "L2.S1 lien and collateral mechanics",
+    "L2.S2 reserve and assistance economics",
+    "L2.S3 refinance modeling",
+    "L2.S4 property tax"
+  ],
+  "objectives": [
+    "Distinguish CHFA first financing, DAP and Time To Own contract features",
+    "Build a conditional loan-forgiveness and early-sale payoff schedule",
+    "Compare refinance cash flow with total economic cost including subordinate liens",
+    "Identify due-on-sale versus separate assistance-program transfer restrictions",
+    "Integrate title, trust, beneficiary coordination and inheritance risks into home purchase planning"
+  ],
+  "sections": [
+    {
+      "title": "What Connecticut housing assistance actually finances",
+      "body": [
+        "Homebuyer assistance is not a single pot of unrestricted money. Connecticut Housing Finance Authority (CHFA) programs involve a qualifying first mortgage from a participating lender and, in some cases, a subordinate loan for down payment or allowable settlement costs. The borrower must qualify under the particular first-mortgage rules and assistance product requirements. A program can be announced yet have limited funds, changing reservation conditions and borrower-specific underwriting requirements.",
+        "CHFA's Time To Own public page, reviewed November 1, 2026, describes temporary subordinate financing of up to $25,000 at zero interest with no required monthly payment, scheduled forgiveness of 10% of original principal on each closing anniversary for ten years, provided all requirements are satisfied. Its page reports an additional $5 million authorized September 8 and $12,269,286 available for reservations as of October 26, 2026. Those are dated public snapshots, not confirmation that any specific purchase can reserve funding now.",
+        "The CHFA Downpayment Assistance Program (DAP) is a different product described as an interest-bearing second mortgage with its own stated limits, rate and underwriting. Program maximums, purchase-price limits, income tests, borrower contribution rules, education requirements, geographic categories and subordination restrictions can change. A borrowing plan needs a source-dated comparison and a lender-produced combined financing disclosure rather than generic internet advice.",
+        "Professionals explicitly distinguish a program benefit from a guaranteed benefit. A hypothetical $20,000 Time To Own loan may lower buyer cash required at closing, but the original subordinate claim is still debt and can affect sale or refinancing. Financial literacy requires understanding both the favorable structure and the conditions under which the arrangement becomes less favorable. A gift and a contingent-forgiveness lien should never be counted as the same economic transaction."
+      ],
+      "worked": [
+        "Illustrative Connecticut purchase $250,000, first mortgage $237,500, required down payment $12,500 plus $7,500 modeled closing costs.",
+        "Without assistance, stated upfront transaction cash $20,000.",
+        "If a fully eligible $20,000 subordinate assistance loan is actually available and allowed for these costs, cash at closing could be substantially reduced, subject to program/lender rules and other charges.",
+        "At closing, balance sheet still records a $20,000 second-lien liability until portions are formally forgiven.",
+        "Loan closing cannot be planned as funded until eligibility, amount, timing and reservation are documented."
+      ],
+      "practice": [
+        [
+          "Why is current published program funding not a personal approval?",
+          "Funds can be reserved by others, rules and availability change, and applicant, property and first-loan eligibility require independent underwriting."
+        ],
+        [
+          "Explain why an assistance lien may increase combined loan-to-value.",
+          "First and second mortgage claims are both obligations secured by property; combined collateral exposure includes subordinate debt."
+        ]
+      ]
+    },
+    {
+      "title": "Model the ten-year forgiveness schedule and triggering events",
+      "body": [
+        "Forgiveness schedules should be modeled as dated transactions, not as a story that the government gives the borrower immediate wealth. For a hypothetical $20,000 original Time To Own loan with 10% of original principal forgiven on each qualifying closing anniversary, each anniversary removes $2,000 of the liability. Before the first anniversary, the full $20,000 remains. Immediately after the third qualifying anniversary, $14,000 remains; after the fifth, $10,000 remains; after the tenth, zero remains, assuming the contract permits and all conditions are met.",
+        "CHFA's borrower-facing Time To Own notice states that the loan can become due on sale or transfer, loss of principal-residence status, refinance of the first mortgage, or at the end of ten years. Because program bulletins can update forms, the learner must review the actually executed note, mortgage, notice and current lender instructions before predicting payoff or tax results. A sale after four years may require the unpaid balance at that date, while a sale after full earned forgiveness may not.",
+        "Suppose the home appreciates from $250,000 to a hypothetical $280,000 and the first loan has been paid down to $225,000. If the household sells just after its third forgiveness anniversary, and the second lien remaining is $14,000, equity before selling costs would be $280,000−$225,000−$14,000=$41,000. A 6% illustrative selling cost would reduce that result by $16,800, leaving $24,200 in modeled gross sale proceeds after liens and costs. The amount of taxable gain or taxes due is a separate question, not necessarily equal to sale proceeds.",
+        "A plan involving inheritances or trusts must also account for the second lien's transfer conditions. A transfer that is exempt from a first mortgage's due-on-sale clause may nevertheless be restricted by the subordinate assistance contract. This is a legal-document verification task, not a claim that every trust transfer is prohibited. It is especially important when a borrower expects to buy immediately and transfer title to a trust shortly thereafter."
+      ],
+      "worked": [
+        "Original fictional $20,000 zero-rate assistance note; assume 10% of ORIGINAL principal forgiven per qualifying anniversary.",
+        "At year 0 remaining $20,000; after 3 anniversaries remaining $14,000; after 5 remaining $10,000.",
+        "At year 3 modeled sale: property $280,000, first mortgage payoff $225,000, subordinate payoff $14,000.",
+        "Proceeds before sale costs $41,000; hypothetical selling expenses 6%×$280,000=$16,800.",
+        "Modeled sale proceeds after liens and expenses $24,200; do not equate with taxable gain."
+      ],
+      "practice": [
+        [
+          "What happens if the buyer tries to refinance a first mortgage in year three?",
+          "Review the subordinate loan's recorded documents and current program requirements; a nonforgiven balance may become payable or prevent subordination."
+        ],
+        [
+          "What is the difference between annual forgiveness and declining interest?",
+          "Forgiveness reduces legally owed principal if conditions are met; a 0%-rate loan accrues no ordinary interest under that assumption but may still have outstanding principal."
+        ]
+      ]
+    },
+    {
+      "title": "Refinance decisions need a complete lien and cash-flow model",
+      "body": [
+        "Refinancing typically involves replacing the current first mortgage with a new loan. Some borrowers seek a lower interest rate, others seek a lower required payment, a different term, cash-out proceeds, or removal of mortgage-insurance costs. The goal must be stated because a smaller payment can result from a longer term rather than a cheaper loan. A refinance proposal should record old balance, remaining months, new rate, new term, paid or financed fees, and any second lien that must be discharged.",
+        "Suppose a household owes $210,000 on a first mortgage and $14,000 on an unforgiven assistance lien. A proposed refinance lender may require resolution of the subordinate lien. If $14,000 must be paid at refinancing, the new borrowing or cash requirement can be materially higher than the first-mortgage balance alone. The first loan's due-on-sale protections and the second loan's refinance terms address different legal questions; neither automatically cancels the other.",
+        "For a simplified interest-rate scenario, compare a $210,000 balance at an existing 6.75% note rate with twenty-six years remaining to a new $210,000 loan at 6.00% over thirty years with $5,000 fees. The payment calculations must reflect those terms and the old 312-month amortization. A naive calculation of monthly difference and fee payback is useful only as a first screen, because the new loan will end four years later if payments are not accelerated.",
+        "A rigorous analysis discounts the differences in future payments over the anticipated holding period, includes fee timing and payoff balances at exit, and tests rates, sale dates and the effect of additional liens. Confirm whether a mortgage is assumable, whether a subordinate loan may be paid off without penalty, and whether lender pricing changes with cash-out or combined debt. If the borrower must use emergency reserves to close the refinance, liquidity risk may outweigh projected monthly savings."
+      ],
+      "worked": [
+        "Illustrative current first mortgage balance $210,000 and 26 years remaining at 6.75% versus a new 30-year 6.00% loan.",
+        "Current scheduled P&I calculated over remaining 312 months; new scheduled P&I over 360 months.",
+        "Add $5,000 new transaction fees paid in cash, plus any actual payoff required for the $14,000 subordinate lien.",
+        "For a fixed future sale date, compare all monthly installments plus each unpaid first/second-lien balance and upfront amounts.",
+        "Recalculate with a five-year rather than full-term horizon to avoid declaring a false saving from extending maturity."
+      ],
+      "practice": [
+        [
+          "Why can a refinanced loan have a lower payment yet higher total interest?",
+          "The rate can fall while repayment is stretched over more months; accumulated interest and fees must be modeled."
+        ],
+        [
+          "Does the fact that Time To Own has zero required monthly payment imply it cannot affect a refinance?",
+          "No. The subordinate lien's payoff/subordination and transfer rules may affect lender underwriting and available proceeds."
+        ]
+      ]
+    },
+    {
+      "title": "Moving a mortgaged home into a trust: the legal layers",
+      "body": [
+        "A trust is a legal arrangement regarding ownership and management of property, not a mechanism for instantly deleting a secured debt. The homeowner may use a revocable living trust to organize management, successor trusteeship and eventual property disposition, depending on state law and actual documents. The property's deed and recording determine how title is transferred; the signed note still defines personal repayment and the mortgage secures repayment unless a legally valid release occurs.",
+        "Federal law under 12 U.S.C. §1701j-3(d)(8) limits a lender's exercise of a due-on-sale clause for certain transfers into inter vivos trusts where the borrower remains a beneficiary and the transaction does not transfer occupancy rights. That protection is conditional and does not exempt every trust or every transaction. It does not mean a lender loses its lien. Other rules for notice, insurance, property taxes, subordinate programs and title companies may still matter.",
+        "Consider a family that owns a $250,000 property subject to a $237,500 mortgage and then executes a permitted qualifying trust transfer. Before and after, the economic home equity is approximately $12,500 under unchanged valuation and debt assumptions. Nothing about moving legal title automatically creates another $250,000 asset, eliminates mortgage interest, or transfers the value out of creditor reach. A trust may change administration and succession mechanics while leaving the household's economic exposure largely unchanged.",
+        "A learner should request the mortgage note and security instrument, property deed, trust terms, current title insurance instructions, beneficiary designations, and any assistance-lien conditions. Legal counsel should confirm title and deed requirements and whether the contemplated transfer triggers repayment, tax reporting or eligibility problems. The correct professional boundary is legal coordination, not presenting one-size-fits-all property-protection claims."
+      ],
+      "worked": [
+        "Property $250,000; first mortgage $237,500; unchanged value and loan balance.",
+        "Before lawful trust deed transfer, modeled equity $12,500.",
+        "After lawful trust deed transfer with no debt discharge or sale, modeled economic equity still $12,500.",
+        "The mortgage and any separate assistance lien remain legally relevant; ownership labels do not repay debt.",
+        "The student's memo must distinguish federal first-loan protections from additional contract obligations."
+      ],
+      "practice": [
+        [
+          "Does the word 'irrevocable' in a trust automatically erase a mortgage lien?",
+          "No. Prior secured interests remain unless released or otherwise resolved under law and loan documents; the trust label is not a payoff."
+        ],
+        [
+          "What is the statutory condition relevant to certain inter vivos trust transfers?",
+          "Borrower remains a beneficiary and transfer does not relate to a transfer of occupancy rights, among the statutory conditions; actual contracts and facts require legal review."
+        ]
+      ]
+    },
+    {
+      "title": "Inheritance, beneficiary coordination and the future homeowner",
+      "body": [
+        "Owning real estate and directing what happens after death involve title, marital property rights, liens, probate or trust administration, insurance benefits and beneficiaries. A will, beneficiary designation and trust may govern different assets; one does not automatically supersede every other. Any successor receiving a home takes it subject to claims and ongoing costs unless those liabilities are lawfully discharged. Inheritance is valuable only if the beneficiary can support carrying costs or manage an appropriate sale.",
+        "A survivor may face property taxes, hazard insurance, mortgage payments, repairs and estate administration while the titled borrower is unavailable. A trust can help determine successor authority in particular structures, but the property may still be subject to secured debt. Life insurance paid to a beneficiary could potentially fund mortgage costs, but coverage limits, policy exclusions, ownership and beneficiary designations must be examined rather than assumed.",
+        "Prepare two cases: in one, heirs retain the residence and need enough reliable income to pay all housing costs; in the other, they sell at a lower property value and pay outstanding first and subordinate liens plus selling costs. These scenarios should incorporate local tax and home condition changes and should not rely on speculative appreciation. Financial planners coordinate with estate attorneys and tax advisers because capital-gains basis, estate exemptions and title rules may be fact-specific and change over time.",
+        "Program restrictions make this more delicate when assistance financing remains outstanding. A borrower hoping to deed the home into a trust for a daughter should determine whether this is an allowed transfer under every relevant document and whether the family could support expenses on one income. The student should produce a responsibilities map: title holder, borrower on note, mortgagee/lienholder, trustee, insurer, beneficiary, occupant, and tax-paying party."
+      ],
+      "worked": [
+        "Hypothetical $250,000 home, $225,000 remaining first mortgage, $10,000 assistance lien, 6% selling costs.",
+        "Selling costs = $15,000; sale proceeds after loan payoffs and modeled expense = $0.",
+        "If home loses 10% to $225,000, selling cost at 6% is $13,500 and proceeds = −$23,500, before other estate costs.",
+        "If the family instead retains the home, model monthly mortgage + escrow + repair reserve + utilities + any subordinate installment.",
+        "A beneficiary receiving legal title cannot treat nominal gross home value as immediate usable inheritance."
+      ],
+      "practice": [
+        [
+          "Why is nominal home value not the same as a child's inheritance?",
+          "Outstanding liens, selling costs, estate expenses, ownership and tax rules, and the beneficiary's ability to carry costs determine the net outcome."
+        ],
+        [
+          "What parties should review an assistance-financed trust transfer?",
+          "A qualified Connecticut attorney, the first-mortgage servicer/lender, CHFA/assistance servicer as applicable, title insurer and appropriate tax professional."
+        ]
+      ]
+    },
+    {
+      "title": "Final applied scenario: a Connecticut family purchase with competing constraints",
+      "body": [
+        "The final case integrates mortgage mathematics, funding, tax, contractual assistance and family estate goals. Consider a household evaluating a $250,000 property with an assumed 6.50% first mortgage of $237,500, $7,500 in modeled closing/prepaid costs, a $20,000 possible assistance loan and only $11,000 of current liquid funds. The mortgage alone has approximately $1,501.16 monthly P&I. Add verified property-tax estimate, homeowners insurance, potential mortgage insurance, transportation, income variability and emergency repairs before asserting affordability.",
+        "The household may be eligible for a CHFA program, but 'possibly eligible' is not cash. The underwriting must verify the current offer, timing, borrower and property eligibility, and contract conditions. If the second lien is used to fund required closing money, its current legal balance, forgiven amounts and triggers must appear on later sale or refinance comparisons. Distinguish source-of-funds timing from gross cost.",
+        "Assume a hypothetical property tax bill of $5,831 annually and homeowners insurance of $1,800 annually. The simplified PITI estimate is $1,501.16+$485.92+$150=$2,137.08 per month, before mortgage insurance, maintenance, utilities and any subordinate payment. If net household take-home is $4,400 and essential nonhousing costs total $2,100, only about $162.92 remains after this limited PITI and nonhousing cost schedule. A $3,000 unexpected repair would exhaust more than eighteen months of the modeled margin.",
+        "The student must recommend between buying, delaying, negotiating, reducing purchase price or selecting another property. A thoughtful memo must identify legal and financial uncertainties rather than present an aggressive loan-to-value strategy as universally wise. Use actual CHFA and municipal information before any real application; treat the above figures as an instructional exercise."
+      ],
+      "worked": [
+        "Purchase $250,000; first financing $237,500 at 6.50% 30 years ⇒ monthly P&I ≈$1,501.16.",
+        "Hypothetical tax $5,831/year=$485.92/month; hazard $1,800/year=$150/month.",
+        "Limited PITI ≈$2,137.08, before possible mortgage insurance, maintenance and utilities.",
+        "Net income $4,400−nonhousing essentials $2,100−limited PITI $2,137.08 ⇒ provisional monthly cash margin $162.92.",
+        "$3,000 repair divided by $162.92 margin ≈18.4 months to replenish in this narrow budget, and the true margin may be lower."
+      ],
+      "practice": [
+        [
+          "Write a 400-word recommendation using both a financial model and an official source.",
+          "Explain contractual assistance, remaining mortgage and liens, property-tax source date, household budget and at least one adverse scenario; identify unknowns."
+        ],
+        [
+          "What must be checked before transferring title into a trust?",
+          "Legal deed/title, first and second lien terms, federal transfer protections, insurance coverage, assistance restrictions and state counsel advice."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CHFA · Time To Own (2026 public summary)",
+      "https://www.chfa.org/homebuyers-homeowners/homebuyers/time-to-own-down-payment-assistance-program-loan/"
+    ],
+    [
+      "CHFA · Time To Own borrower notice (confirm current contract)",
+      "https://www.chfa.org/assets/1/6/028_Time_to_Own_%28TTO%29-_Applicant_Notice__TTODiscl_Rev._6-7-20221.pdf"
+    ],
+    [
+      "CHFA · DAP second mortgage",
+      "https://www.chfa.org/homebuyers-homeowners/homebuyers/downpayment-assistance-program-dap-loan/"
+    ],
+    [
+      "U.S. Code §1701j-3 · certain trust transfers",
+      "https://www.govinfo.gov/content/pkg/USCODE-2024-title12/html/USCODE-2024-title12-chap13-sec1701j-3.htm"
+    ],
+    [
+      "CFPB · Refinance comparison and mortgage shopping",
+      "https://www.consumerfinance.gov/consumer-tools/mortgages/shopping-for-a-mortgage/"
+    ]
+  ],
+  "assessment": {
+    "title": "CHFA–mortgage–trust decision memorandum",
+    "prompt": "For a $250,000 hypothetical Connecticut home, produce the complete sources-and-uses schedule, 30-year first-mortgage payment, estimated PITI and liquidity stress test. Then build a conditional 10-year $20,000 assistance-loan forgiveness schedule and an early-sale payoff scenario. Compare refinancing in year three with and without a second-lien payoff, and write a trust-transfer risk checklist for a potential inheritance plan.",
+    "rubric": [
+      "First mortgage and monthly cash model (20%)",
+      "Aid eligibility versus conditional loan obligations (20%)",
+      "Year-by-year forgiveness and sale calculations (20%)",
+      "Refinance comparison and separate lien triggers (20%)",
+      "Legally cautious inheritance/trust and citations (20%)"
+    ]
+  }
+}

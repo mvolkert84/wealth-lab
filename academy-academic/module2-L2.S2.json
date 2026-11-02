@@ -1,0 +1,208 @@
+{
+  "id": "L2.S2",
+  "title": "Down Payment vs. Reserves",
+  "subtitle": "Liquidity, closing-cost funding, opportunity cost and resilience",
+  "prerequisites": [
+    "L1.S1 liquidity and net worth",
+    "L1.S2 cash forecasts",
+    "L2.S1 loan and title distinctions"
+  ],
+  "objectives": [
+    "Reconcile cash-to-close accounting without double-counting deposits and credits",
+    "Estimate mortgage insurance and LTV tradeoffs without claiming universal pricing",
+    "Construct an unrestricted post-closing emergency reserve plan",
+    "Compare assistance loans with personal savings and model early-exit exposure",
+    "Stress-test the purchase against an appraisal gap and repair bills"
+  ],
+  "sections": [
+    {
+      "title": "An upfront payment is not the complete purchase budget",
+      "body": [
+        "A homebuyer's down payment is the portion of the price not supplied by purchase financing; it is not the same as total cash needed to complete a purchase. Closing costs comprise distinct lender charges, settlement services, government and title charges, prepaid items, and initial escrow deposits. A useful budget distinguishes nonrecoverable costs, amounts paid in advance for future services, and funds that remain assets such as refundable escrow balances. The simplified examples below treat all stated fees as consumed, but a rigorous balance sheet records recoverable prepaids and escrows separately when applicable.",
+        "Cash-to-close is not computed simply by adding a down payment to a broker's quoted percentage. Earnest money paid before closing reduces the amount still due at settlement, but it does not reduce the total funds the buyer has committed. Seller concessions and lender credits offset eligible charges according to product rules; they are not unrestricted cash paid back to the borrower. A down-payment-assistance second lien changes the financing structure rather than creating free money unless its contract explicitly forgives debt on satisfied conditions.",
+        "Suppose the property costs $260,000, the buyer supplies 5% down ($13,000), and the projected transaction charges plus prepaids total a hypothetical $8,000. If earnest money of $3,000 has already been paid, settlement cash is $13,000+$8,000−$3,000=$18,000 before any credits or other adjustments. But the buyer's total committed cash is still $21,000, not $18,000. The correct planning question is how much unrestricted cash remains after the entire transaction, including cash the buyer already deposited.",
+        "Professional preparation starts with a uses-and-sources schedule: purchase price, closing and prepaid uses on one side; first mortgage, subordinate financing, verified buyer funds, permitted credits and gifts on the other. The resulting residual must reconcile to the Closing Disclosure. For underwriting, the source of cash matters: moving a large recent deposit into checking does not necessarily make it verified qualifying funds. Students should learn to reconcile all cash movements and then confirm documentary requirements with the lender."
+      ],
+      "worked": [
+        "Property price $260,000; 5% down $13,000; first mortgage $247,000.",
+        "Additional hypothetical closing charges and prepaids $8,000; earnest money already paid $3,000.",
+        "Buyer total funding commitment = $13,000+$8,000=$21,000.",
+        "Still owed at settlement after earnest money = $18,000, before seller/lender credits.",
+        "Opening liquid funds $29,000 before earnest deposit: remaining post-close liquidity $29,000−$21,000=$8,000."
+      ],
+      "practice": [
+        [
+          "Why is subtracting earnest money from lifetime purchase cost an error?",
+          "It reduces the final wire amount because that money has already been paid. It does not make the property or fees cheaper."
+        ],
+        [
+          "If the $8,000 fee schedule includes $2,000 of recoverable escrow/prepaid assets, how does that affect net worth?",
+          "The cash requirement is unchanged; on a simplified opening-to-closing balance sheet only $6,000 of fees are expensed immediately, while the $2,000 remains as a separate asset subject to its terms."
+        ]
+      ]
+    },
+    {
+      "title": "How down payment percentage changes the funding problem",
+      "body": [
+        "A larger down payment reduces the starting loan balance and usually reduces leverage. It may change note pricing or mortgage-insurance conditions, but each loan program has its own rules. It also locks up cash that could pay for necessary repairs or protect a household after job loss. The optimization is not simply 'maximize the down payment' or 'minimize the down payment'; it is a constrained decision balancing required cash, note rate, risk, scheduled payments and liquid safety margin.",
+        "On a $250,000 home, 5% down is $12,500 and a $237,500 loan; 20% down is $50,000 and a $200,000 loan. At the same hypothetical 6.50% 30-year note rate, monthly principal and interest differ because the loan amount differs. But a true price comparison must also model possible mortgage insurance on the smaller down payment, closing costs, different rate quotes, and the opportunity cost of placing an extra $37,500 into a relatively illiquid asset.",
+        "The loan-to-value ratio is calculated from the lender's eligible valuation and lien balances, not from a seller's optimism. If an appraisal supports less than the agreed price and the lender uses the lower valuation, the buyer may need more equity cash or must renegotiate. An extra down payment may solve the financing constraint while destroying necessary reserves. One must calculate both the lender's LTV and post-close cash under alternative appraisals.",
+        "Even when a product allows a low down payment, it may have mortgage insurance paid monthly, upfront, or through pricing. Mortgage insurance generally protects against loss to the lender or guarantor. The relevant professional document is a loan-specific cost breakdown, not an assumed universal $100 premium. Borrowers need to ask under which conditions private mortgage insurance can be canceled and how government-backed insurance differs."
+      ],
+      "worked": [
+        "$250,000 purchase: 5% down = $12,500, financed $237,500; 20% down = $50,000, financed $200,000.",
+        "At hypothetical 6.50% fixed for 360 months: P&I ≈$1,501.16 versus $1,264.14.",
+        "Payment difference ≈$237.02 per month, excluding insurance, taxes and changes in loan pricing.",
+        "Larger down payment consumes $37,500 more at closing, reducing cash available for a reserve.",
+        "With an appraisal of $240,000 and $237,500 loan, LTV against the appraisal would be approximately 98.96%; pricing and eligibility must be rechecked."
+      ],
+      "practice": [
+        [
+          "Does 20% down guarantee the lowest overall five-year cost?",
+          "No. It may avoid some forms of mortgage insurance and reduce borrowing, but opportunity costs, rates, fees and sale or refinance timing also matter."
+        ],
+        [
+          "What is the economic cost of a down payment when the buyer already owns the cash?",
+          "It is a transfer into illiquid home equity; the opportunity cost is the foregone flexibility and potential return of the cash, not an immediate $-for-$ loss of wealth."
+        ]
+      ]
+    },
+    {
+      "title": "Emergency reserves are a separate source-and-use constraint",
+      "body": [
+        "Liquidity is more than a bank account balance on one day. The relevant amount is unrestricted cash that can be accessed in time to meet necessities, after reserving near-term bills and transaction commitments. Money set aside for rent or mortgage, income taxes, replacement transportation, and known medical spending cannot also be called an emergency fund. A family with a large balance but several imminent obligations may have a much smaller usable reserve than the headline number suggests.",
+        "An emergency-fund target can be expressed as E=m×C where m is months of protection and C is essential monthly expenditure. A $3,200 essentials budget calls for $9,600 at three months, assuming roughly stable expenditure. Yet a homeowner may also need a distinct replacement reserve for roof, HVAC, appliance and structural repairs. Reserves can be built in stages but cannot be fabricated in a spreadsheet to make closing feasible.",
+        "Consider $29,000 of available cash, $21,000 total home-purchase cash, and a desired $9,600 emergency reserve. Post-closing cash would be $8,000, so the reserve target would be missed by $1,600 before moving or immediate repair costs. If an inspection flags a plausible $3,000 near-term repair, the economic safety gap becomes more acute. The correct advice may be negotiating repairs, selecting lower housing cost, saving additional funds, or adjusting the homebuying schedule.",
+        "Do not promise a particular number of months as universally sufficient. A household with two stable earners, strong disability coverage and low fixed expenses faces a different interruption risk from a single seasonal worker supporting dependents. Stress testing uses relevant shocks: wage interruption, insurance deductible, heating-fuel spike, property-tax increase, vehicle repair, or a simultaneous shock. Record which costs can actually be deferred and which cannot."
+      ],
+      "worked": [
+        "Available bank cash $29,000; total purchase cash commitment $21,000.",
+        "Unrestricted cash after closing $8,000, assuming no other earmarks.",
+        "Monthly essential spending $3,200; target three-month reserve $9,600.",
+        "Reserve shortfall $1,600, before moving and repair expenses.",
+        "If a $3,000 immediate repair occurs, remaining cash $5,000, or 1.56 months of the modeled essentials."
+      ],
+      "practice": [
+        [
+          "Why is unused credit limit not counted in the emergency reserve?",
+          "It is conditional borrowing capacity; using it creates debt and future repayment obligations rather than adding net economic assets."
+        ],
+        [
+          "If essentials rise to $3,600, what is a three-month reserve target?",
+          "3×$3,600=$10,800; the same $8,000 post-close cash now covers only 2.22 months."
+        ]
+      ]
+    },
+    {
+      "title": "Opportunity cost and mortgage insurance: compare the entire system",
+      "body": [
+        "The cost of the marginal down payment must be compared with the complete change in financing. Paying $10,000 more down typically reduces principal and its contractual interest, but it also reduces liquidity. Depending on lender pricing, the marginal dollars may cross an insurance threshold, improve rate quotes, or fail to change either. In economics, opportunity cost is the value of the best forgone alternative, not necessarily a guaranteed investment return.",
+        "A student should construct at least two realistic cash-flow paths. In Path A the household pays the minimum eligible down payment, retains cash, and pays a higher installment and any applicable mortgage insurance. In Path B the household increases the down payment, reducing interest expense but potentially leaving too little after closing. For each path calculate expected post-close reserves, monthly housing expenditure, financial exposure after 24 and 60 months, and plausible forced-sale consequences.",
+        "Suppose one path preserves $15,000 cash but requires $1,550 monthly P&I plus hypothetical $130 mortgage insurance; another preserves $5,000 cash but requires $1,420 P&I and no mortgage insurance. Their first-year payment difference is $260 per month, or $3,120 over a simple 12-payment total. Yet the second path holds $10,000 less cash against a $7,000 repair or earnings interruption. Neither number alone determines the appropriate path.",
+        "A disciplined sensitivity grid varies interest rates, insurance estimates, maintenance, holding period and investment opportunity cost. Do not claim that a projected investment return is guaranteed; also do not assume home equity is easily borrowable during unemployment or adverse appraisal conditions. The objective is a purchase plan that remains possible under credible departures from the base case."
+      ],
+      "worked": [
+        "Path A housing debt/insurance ≈$1,550+$130=$1,680 monthly; retained cash $15,000.",
+        "Path B housing debt/insurance ≈$1,420+$0=$1,420 monthly; retained cash $5,000.",
+        "Path B modeled monthly saving $260, annual $3,120; liquidity sacrifice $10,000.",
+        "Simple payoff of $10,000 from $260/month takes about 38.46 months, ignoring loan-balance and time-value differences.",
+        "Path B cannot directly pay a $7,000 emergency from its retained cash; the other $2,000 requires a separate funding solution."
+      ],
+      "practice": [
+        [
+          "Why is a simple payment payback not a complete present-value comparison?",
+          "It omits interest timing, principal balances, differing fees, asset returns, opportunity costs and the probability the mortgage ends early."
+        ],
+        [
+          "How would a lender quote change the model?",
+          "Replace hypothetical PMI and rates with actual Loan Estimates, retain identical loan amount and horizon conventions, and recompute the comparison."
+        ]
+      ]
+    },
+    {
+      "title": "Down payment assistance: gifts, loans, and conditional forgiveness",
+      "body": [
+        "Assistance programs use different legal instruments. A grant may not require repayment if conditions are satisfied; a deferred loan is still a liability that may become payable at a triggering event; a forgivable loan may discharge principal over a vesting schedule; a repayable second mortgage can require installments alongside the first loan. These distinctions matter for the household balance sheet and later refinancing or sale.",
+        "Connecticut CHFA's publicly posted Time To Own information, reviewed November 1, 2026, describes a temporary 0% interest subordinate loan without monthly payments, up to $25,000, with 10% of original principal forgiven annually over ten years if contractual conditions are met. It requires a qualifying CHFA first mortgage and other eligibility requirements, including residency. Published remaining funds as of October 26, 2026 are a dated snapshot, not a reservation or guarantee of availability. Never treat conditional forgiveness as already-earned household wealth.",
+        "CHFA's separate DAP program is described as an interest-bearing second mortgage whose terms and amount differ from Time To Own. A borrower must compare first-mortgage pricing, assistance debt, total liens, monthly payments, underwriting and the consequences of moving, selling or refinancing. The same home can have very different balance-sheet and cash-flow consequences under a private gift, forgivable loan and repayable subordinate mortgage.",
+        "An ethical planner never infers eligibility from a state-residence checkbox alone. Verify current funding, program reservation rules, income limits, targeted areas, required homebuyer education, borrower contribution, allowable costs, occupancy, forgiveness triggers and interest/repayment consequences with a participating lender and the controlling program documents. If a brochure and later bulletin conflict, the current controlling guideline requires clarification before using it in a purchase decision."
+      ],
+      "worked": [
+        "Hypothetical Time To Own-style subordinate loan principal $20,000; assume linear forgiveness of 10% of ORIGINAL loan each annual anniversary, subject to contract.",
+        "Immediately after closing the entire $20,000 is a liability, not cash profit.",
+        "After 3 qualifying annual forgiveness events, modeled forgiven principal $6,000; unforgiven $14,000.",
+        "If the home is sold before full forgiveness, determine the current legal payoff and whether a triggering event requires repayment; don't assume the entire $20,000 vanished.",
+        "Illustrative program maximum does not determine how much this buyer qualifies to receive or whether funds remain available."
+      ],
+      "practice": [
+        [
+          "Why is a zero-monthly-payment second lien not economically equivalent to a gift?",
+          "The subordinate obligation can remain repayable, affect refinancing/sale and create collateral constraints until forgiveness or lawful discharge."
+        ],
+        [
+          "What is the balance of a $20,000 loan after exactly five qualifying annual 10%-of-original forgiveness events?",
+          "$20,000−5×$2,000=$10,000, assuming the program's specific conditions are satisfied."
+        ]
+      ]
+    },
+    {
+      "title": "Funding decision memorandum and independent assessment",
+      "body": [
+        "A closing plan should be judged both by sources-and-uses reconciliation and by resilience after settlement. The worksheet starts with a dated deposit and credit history, then itemizes earnest money, down payment, lender and third-party fees, prepaids, escrows, moving costs, reserves and conditional assistance. It then tests whether the buyer can both bring the amount due and keep essential cash available without assuming unspecified new lending.",
+        "Suppose a household holds $29,000 and evaluates a $260,000 property with $13,000 down, $8,000 in all modeled settlement charges, $3,000 already paid as earnest deposit, and $3,000 immediate repair risk. The exact wire at closing could be $18,000, but the transaction uses $21,000 overall and the repair could leave only $5,000. The student should not mistake the smaller wire figure for a larger cash reserve.",
+        "A professional-grade alternative uses an explicit decision tree: buy now with written concessions; request documented and available assistance; choose another house; or wait while building liquidity. Each path should include a constraint test and a numerical downside. Qualitative preferences such as stability, school district and access to work matter, but the memo should state their value in words instead of fabricating cash savings.",
+        "Finish by identifying gaps in evidence. A lender must confirm qualifying assets and assistance. A home inspector evaluates condition within the scope of inspection, while specialized contractors may be needed. An insurance professional quotes replacement and liability coverage. A settlement lawyer explains title and closing mechanics. The learner's job is to integrate the evidence and identify the limits of the proposed purchase."
+      ],
+      "worked": [
+        "Commitment schedule: down payment $13,000 + settlement costs $8,000 = total $21,000.",
+        "After $3,000 previously paid earnest deposit, final wire $18,000; no expense disappears.",
+        "Post-close cash $29,000−$21,000=$8,000.",
+        "After modeled near-term $3,000 repair, unrestricted remaining cash $5,000.",
+        "If essential monthly costs are $3,200, stressed runway $5,000/$3,200≈1.56 months, before any additional shock."
+      ],
+      "practice": [
+        [
+          "Produce a two-option comparison that preserves at least $10,000 of cash.",
+          "Explain which purchase, credit, concession or saving adjustment could make the constraint feasible; specify which assumption is conditional."
+        ],
+        [
+          "Why does a home inspection not guarantee affordable ownership?",
+          "Inspections have limits, hidden defects can exist, and even known future maintenance or insurance costs may exceed the household's available cash."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFPB · Loan Estimate",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB · Loan comparison",
+      "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/"
+    ],
+    [
+      "CHFA · Time To Own 2026",
+      "https://www.chfa.org/homebuyers-homeowners/homebuyers/time-to-own-down-payment-assistance-program-loan/"
+    ],
+    [
+      "CHFA · Down Payment Assistance Program",
+      "https://www.chfa.org/homebuyers-homeowners/homebuyers/downpayment-assistance-program-dap-loan/"
+    ],
+    [
+      "CFPB · Loan-to-value and mortgage insurance",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-to-value-ratio-and-how-does-it-relate-to-my-costs-en-121/"
+    ]
+  ],
+  "assessment": {
+    "title": "Cash-to-close versus liquidity case",
+    "prompt": "Reconcile a $260,000 purchase with $29,000 starting liquid cash, 5% down, $8,000 settlement charges, a $3,000 already-paid deposit, and a $3,000 immediate repair. Produce a sources-and-uses schedule and test three-month reserves for $3,200 essential monthly spending. Compare one alternative and discuss funding documentation and possible CHFA assistance without assuming approval.",
+    "rubric": [
+      "Cash-to-close and earnest-money reconciliation (25%)",
+      "Unrestricted reserve calculation and shock (25%)",
+      "LTV and opportunity cost (20%)",
+      "Assistance loan legal classification and documented conditions (15%)",
+      "Clear evidence and decision memo (15%)"
+    ]
+  }
+}
