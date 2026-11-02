@@ -1,0 +1,235 @@
+{
+  "id": "L8.S1",
+  "title": "What a Stock Actually Owns",
+  "subtitle": "Security rights, dilution, financing, corporate governance and evidence from issuer filings",
+  "prerequisites": [
+    "L1.S1 assets and liabilities",
+    "L4.S1 ownership versus debt claims",
+    "L7.S3 present value and risk discounting"
+  ],
+  "objectives": [
+    "Trace a common equity claim through corporate legal and financial structure",
+    "Calculate equity capitalization, enterprise value and share ownership",
+    "Model primary issuance, dilution, options and buybacks",
+    "Distinguish voting/control rights, fiduciary responsibilities and economic exposure",
+    "Read annual-report business, capital-stock and risk sections",
+    "Assess why leverage and concentration increase shareholder downside"
+  ],
+  "sections": [
+    {
+      "title": "A share is a residual claim, not a piece of an asset you can withdraw",
+      "body": [
+        "Common stock represents a financial and legal interest in the corporation. A shareholder's exact rights depend on governing documents, state law and the class of shares. The corporation owns its cash, factories, contracts and intellectual property; a person buying one share generally cannot walk into the company and withdraw a proportional quantity of its machinery or bank deposits. Common shareholders bear residual economic exposure after creditors and higher-priority security claims and may hold specified voting rights. A board's capital-allocation decision can substantially affect a small shareholder's wealth without creating a direct right to demand a dividend.",
+        "The difference between primary issuance and secondary trading is fundamental. In a primary sale of newly issued common shares, the issuer can receive net funds after underwriting and other issuance costs; the new share count can dilute existing holders. In an ordinary secondary trade, the buyer pays another investor rather than the company's treasury. Secondary markets provide liquidity and price discovery, but buying stock on an exchange does not normally provide fresh working capital directly to the business.",
+        "Suppose a fictional issuer has 10 million common shares outstanding at $40. Its quoted equity market capitalization is $400 million, but that amount is not its actual cash balance or its liquidation payout. A person buying 25 shares holds 25/10,000,000=0.00025% of the outstanding common class before other rights. If the company's debts overwhelm its realizable assets, common shareholders may recover nothing despite a prior $400 million quoted equity market value.",
+        "Due diligence starts with the Form 10-K business description, share-class and capitalization footnotes, legal proceedings, risk factors, governance disclosures and relevant corporate actions. Treat insider voting control and common economic percentage separately. A widely advertised app ticker is not proof that its security is ordinary voting stock or that the issuer has no preferred or convertible claims. Assess the actual claim, not a recognizable brand name."
+      ],
+      "worked": [
+        "10 million common shares × $40 per share = $400 million equity market capitalization.",
+        "25 shares / 10,000,000 shares = 0.0000025 of shares = 0.00025% ownership of that class.",
+        "Another investor purchases 25 shares at $40: $1,000 before transaction fees goes to selling investors in an ordinary exchange trade.",
+        "A later new-share issuance can change the denominator and voting percentage.",
+        "Share price and market cap do not reveal cash available to distribute or residual liquidation proceeds."
+      ],
+      "practice": [
+        [
+          "Why does buying $1,000 of an existing listed corporation's shares not automatically fund a new corporate factory?",
+          "In the usual secondary-market transaction, cash goes to the selling shareholder. New issuance is a different capital-raising process that sends net proceeds to the issuer."
+        ],
+        [
+          "Why is a $400 million equity capitalization not equivalent to $400 million in the company's checking account?",
+          "Market capitalization reflects price times outstanding common shares. Cash, debts, property and other balance-sheet components must be independently identified in the filings."
+        ]
+      ]
+    },
+    {
+      "title": "Share count, dilution and fully diluted economic interests",
+      "body": [
+        "Ownership percentage equals shares held divided by the applicable total count, but different counts answer different questions. Shares authorized, issued, treasury-held, outstanding, basic weighted-average and diluted weighted-average shares are not interchangeable. A company's balance sheet date outstanding shares may differ from the income statement's period-average shares. Diluted EPS generally reflects relevant potentially dilutive securities under financial reporting requirements; it does not mean every option, warrant or restricted stock unit has already been exercised.",
+        "Suppose a company initially has 10 million shares outstanding and issues 2 million new shares at $20, ignoring fees. It receives $40 million cash. A holder owning 100,000 shares initially held 1%; after issuance the same 100,000/12,000,000=0.8333%. The holder's ownership fraction fell, but economic shareholder value might still improve if the new funding generates a return above its cost. Dilution percentage alone is not proof that management destroyed wealth.",
+        "Stock-based compensation grants may increase future shares and impose economic cost even when the company does not pay the employee cash at the award date. Buybacks can offset dilution, reduce shares outstanding or change equity financing, but can also use cash needed for business investment. Analysts should inspect the statement of stockholders' equity, cash flow financing section, footnotes, option exercise terms and share repurchase disclosures for a complete share-count bridge.",
+        "A serious valuation model projects shares as well as firm value. If a forecast business has $600 million of equity value after a financing and 12 million shares, price-equivalent valuation is $50 per share. Dividing by the stale 10 million starting share count yields a misleading $60. A company can grow profit and still deliver little per-share benefit if the share base grows quickly."
+      ],
+      "worked": [
+        "Initial 10,000,000 shares; 100,000 shareholder shares ⇒ 1.00% of outstanding class.",
+        "2,000,000 new shares issued at $20 ⇒ issuer receives $40,000,000 gross proceeds.",
+        "New outstanding 12,000,000; holder unchanged 100,000/12,000,000≈0.8333%.",
+        "Equity value $600 million / 12 million shares = $50 per share, not $60 based on stale shares.",
+        "A decline in percentage ownership can coexist with increased total corporate value, depending on financing use."
+      ],
+      "practice": [
+        [
+          "Why should EPS forecasting consider stock options and restricted-share awards?",
+          "Potential dilution and compensation costs can affect future share counts and cash/economic claims; using unchanged shares may inflate per-share value."
+        ],
+        [
+          "Does 16.7% relative dilution in this example prove the financing was destructive?",
+          "No. Capital raised may finance positive-value operations. Analysts must compare proceeds, project returns, the resulting capital structure and future value per share."
+        ]
+      ]
+    },
+    {
+      "title": "Equity capitalization, enterprise value and priority of creditors",
+      "body": [
+        "Market capitalization reflects the market value of common equity. Enterprise value is a capital-structure-neutral approximation of operating business value, frequently computed as market capitalization plus interest-bearing debt, preferred claims and noncontrolling interests minus excess cash, subject to leases and other adjustments. It should not be confused with the price for one class of publicly traded stock. Companies with identical $400 million common market caps may have sharply different debt burdens and assets available to equity.",
+        "In a simplified company with $400 million equity market cap, $150 million interest-bearing debt and $50 million excess cash, enterprise value is $500 million. If another company has no debt and $50 million cash, its comparable simplified EV is $350 million. Their common stock prices cannot be judged comparable from market capitalization alone. Debt can amplify earnings during strong operations and make common equity fragile during recessions or refinancing stress.",
+        "Creditor priority is not the same as guaranteed full repayment in distress; liens, secured status, statutory claims and bankruptcy rules determine recoveries. For a hypothetical liquidation realizing $200 million from assets when secured and unsecured claims total $230 million with higher priority, common stock may have zero residual value. Book shareholders' equity on historical-cost accounting is not necessarily the liquidation realizable value of the company's property.",
+        "Enterprise-value ratios must match the correct operating flow. EV/EBITDA compares enterprise value with an operating earnings proxy before interest, taxes, depreciation and amortization, but EBITDA ignores capital expenditure and working-capital cash needs and is not free cash flow. Equity price/earnings uses equity market capitalization and earnings available to common shareholders. Mixed numerator and denominator definitions produce seductive but meaningless comparisons."
+      ],
+      "worked": [
+        "Equity cap $400m + debt $150m − excess cash $50m ⇒ simplified EV $500m.",
+        "Alternative with same equity cap, no debt and $50m excess cash ⇒ EV $350m.",
+        "At EV $500m and illustrative EBITDA $50m, EV/EBITDA=10×.",
+        "EV/EBITDA does not equal equity P/E or prove the company can distribute $50m in cash.",
+        "Liquidation asset proceeds $200m against higher-priority $230m claims can leave common residual $0."
+      ],
+      "practice": [
+        [
+          "Why can two companies with identical equity market caps have substantially different enterprise values?",
+          "Debt, cash, preferred equity, minority claims and other financing adjustments differ; common share value is only one component of the operating enterprise's funding."
+        ],
+        [
+          "Why is dividing market capitalization by EBITDA an unreliable substitute for EV/EBITDA?",
+          "The numerator values equity alone while EBITDA is an enterprise-level operating measure available before financing costs, making the ratio internally inconsistent."
+        ]
+      ]
+    },
+    {
+      "title": "Voting rights, board oversight and governance incentives",
+      "body": [
+        "Corporate governance defines who can make decisions over operations, capital, acquisitions, dividends and executive compensation. Most common stock structures confer some voting rights, but dual-class arrangements can give founders disproportionate control relative to economic ownership. A shareholder owning a small noncontrolling position usually cannot independently replace management, liquidate assets or compel a dividend. Proxy statements and issuer governance filings can describe board elections, compensation packages and related-party transactions.",
+        "Different share classes can have the same market-price risk but different control rights. A two-class firm may issue Class A shares with one vote each and Class B with ten votes each, producing a voting structure far different from share ownership. If founders hold 2 million ten-vote shares while public investors hold 8 million one-vote shares, founders control 20/28≈71.43% of votes despite 20% of shares. Check whether conversion rights, shareholder agreements or legal constraints modify those simplified figures.",
+        "Governance analysis is not a popularity contest about executive personalities. Identify whether compensation rewards revenue or profitable free cash flow, whether related-party deals transfer value away from ordinary investors, and whether dilution or capital allocation benefits controlling holders differently. Shareholders are exposed to agency costs when those managing resources make decisions not aligned with long-term value creation.",
+        "Research materials include the annual meeting proxy statement, Form 10-K governance references, charter, financial footnotes and timely Form 8-K disclosures for material events. A decision memo must identify actual controlling votes and disclosure sources rather than infer control solely from founder titles or the number of social-media followers."
+      ],
+      "worked": [
+        "Public Class A: 8m shares ×1 vote = 8m votes.",
+        "Founders Class B: 2m shares ×10 votes = 20m votes.",
+        "Total votes 28m; founder voting control 20/28≈71.43% despite 2/10=20% economic shares.",
+        "Different control and cash-flow rights may affect minority-investor protections.",
+        "A common share count is insufficient to infer voting authority in a dual-class issuer."
+      ],
+      "practice": [
+        [
+          "How can a founder control board elections while owning less than a majority of the economic shares?",
+          "Dual-class voting rights can assign more votes per share to the founder's class, making voting control differ from financial ownership."
+        ],
+        [
+          "Where should investors examine governance conflicts and executive pay arrangements?",
+          "Proxy filings, company charters, related-party and compensation disclosures, board information and relevant SEC documents are primary sources."
+        ]
+      ]
+    },
+    {
+      "title": "Business model economics, competitive advantages and cash conversion",
+      "body": [
+        "Stock ownership should be analyzed through the economics of the underlying business. A company creates sales from products or services, incurs costs, reinvests in assets and requires financing. Recurring customer demand is not identical to attractive unit economics: acquiring and servicing one customer might cost more than the lifetime gross profit that customer provides. Competitive advantages such as switching costs, networks or specialized logistics require evidence in margins, retention and capital productivity.",
+        "Model revenue as price times units, then separate volume, pricing, cost per unit and recurring operating expenses. A fictional company selling 100,000 units at $50 generates $5 million revenue. If direct cost is $30/unit, gross profit is $2 million or 40% gross margin. If fixed operating expenses are $1.5 million, operating profit is only $500,000 or 10% operating margin. A 10% decline in sales volume with unchanged cost structure reduces operating profit to $300,000, a 40% drop, illustrating operating leverage.",
+        "Reported revenue growth can be financed by aggressive credit terms that leave receivables uncollected. Gross margin can look attractive while warranty liability, returns, stock compensation or customer concentration threaten cash. A company dependent on one client for 40% of revenue is exposed to a risk that an industry index cannot eliminate. Read segment notes and concentration disclosures to understand the issuer's actual exposures.",
+        "A research memo should articulate the connection between product advantage, cash returns and equity valuation. Avoid equating a popular product with shareholder returns, particularly if an attractive business trades at a price implying unrealistic growth. The investor must quantify unit economics and then ask which expectations are already reflected in the market price."
+      ],
+      "worked": [
+        "Units sold 100,000 × price $50 = $5m revenue.",
+        "Direct unit cost $30 ×100,000=$3m, gross profit $2m, gross margin 40%.",
+        "Fixed operating costs $1.5m ⇒ operating profit $0.5m and margin 10%.",
+        "Units decline 10% to 90,000 ⇒ gross profit $1.8m; fixed operating cost $1.5m ⇒ EBIT $0.3m.",
+        "Operating income drops 40% despite revenue dropping 10%, revealing operating leverage."
+      ],
+      "practice": [
+        [
+          "Why may a company's 20% revenue increase fail to create comparable shareholder value?",
+          "Selling costs, additional capital and dilution, weak collections, margins and price paid may offset growing revenue; revenue is not distributable cash."
+        ],
+        [
+          "What does operating leverage mean in the unit-economics example?",
+          "Fixed costs cause operating profit to react more strongly to volume shifts than revenue does, so a moderate sales decline can sharply reduce profit."
+        ]
+      ]
+    },
+    {
+      "title": "Industry concentration, competition and nondiversifiable risk",
+      "body": [
+        "Company-specific risk includes product obsolescence, management failure, customer dependence, accounting problems and bankruptcy. Industry risk includes regulation, commodity input shocks, technological shifts and shared demand cycles. Broad market risk includes recessions and changes in discount rates affecting many issuers simultaneously. Owning stock in several firms within one sector may diversify individual mishaps while preserving heavy exposure to the same demand driver.",
+        "A portfolio with 50% of its value in one issuer can lose 25% from the portfolio if that issuer declines 50% and other assets do not move. No plausible stock-valuation thesis should ignore this concentration arithmetic. A business owner whose job depends on a specific industry may also concentrate personal income and investments in the same cycle. A Connecticut household that needs a house down payment within a year should not use a single-stock price target as if it were cash.",
+        "Competitive analysis should identify the addressable market, customer acquisition cost, competitors, barriers to entry, supplier power, pricing history and cash reinvestment needs. A patent can expire; network effects can reverse; high current margins can attract new rivals. Forecast errors are particularly costly when stock prices assume years of exceptional growth or near-perfect profit margins.",
+        "An investment risk register names the factor, evidence, probability range if defensible, exposure, mitigating action and invalidation condition. It must also clarify the downside under insolvency: limited liability means an ordinary fully paid common shareholder generally risks the investment amount, but leverage through margin borrowing or derivatives can create additional obligations. Do not convert this general principle into legal advice about a specific investment account."
+      ],
+      "worked": [
+        "Portfolio $20,000; 50% in one issuer = $10,000 concentrated exposure.",
+        "Single issuer declines 50% ⇒ issuer value $5,000, portfolio $15,000 if other holdings unchanged.",
+        "Portfolio loss 25% from that one stock position.",
+        "An emergency down-payment bucket should not be funded by a hoped-for concentrated-stock rebound.",
+        "Diversification reduces many issuer-specific risks but cannot guarantee against marketwide losses."
+      ],
+      "practice": [
+        [
+          "Does owning ten technology stocks guarantee broad diversification against technology sector risk?",
+          "No. Shared industry valuation, regulation, business cycles and investor demand can correlate losses across issuers despite multiple tickers."
+        ],
+        [
+          "How should an investment policy respond to a large single-stock exposure when the owner also works for the issuer?",
+          "Assess combined job-income and portfolio concentration, set position/risk limits and protect near-term cash needs; the employer exposure may compound a single economic shock."
+        ]
+      ]
+    },
+    {
+      "title": "The primary-source company ownership memorandum",
+      "body": [
+        "An academically defensible company memo begins with exact security identification: issuer, trading symbol, legal security class, exchange, filing date, recent capitalization and share count. Retrieve the Form 10-K or, for relevant events, Form 10-Q and Form 8-K from EDGAR. Explain how the company earns money and which businesses or geographic regions drive revenue. Use the notes to securities outstanding to reconcile potentially dilutive claims and the proxy statement to identify control.",
+        "Present the capital structure on one consistent date: common equity market capitalization, debt, relevant preferred claims, cash, adjusted enterprise value, lease obligations and debt maturities. A small market capitalization may coexist with substantial debt. Inspect restricted cash and determine whether subtracting all stated cash from EV overstates funds distributable to buyers or shareholders. Avoid inventing exact stock-price or filing facts unless the documents provide them.",
+        "Write three investment theses: an upside case, a skeptical base case and a downside case. Each needs revenue, margins, reinvestment and dilution assumptions. Define what would prove the thesis wrong, for instance recurring negative free cash flow, widening customer churn or refinancing beyond cash-generation capacity. A thoughtful memo can conclude 'no investment' when financial statements are unclear or the household's goal is too near.",
+        "Close with source citations, dates, uncertainty and account suitability. Record the price you would hypothetically pay, valuation ranges, identified counterevidence, concentration and how an unexpected earnings miss affects the portfolio. The goal is to demonstrate analysis skill, not recommend a brand or predict price movement from a single news headline."
+      ],
+      "worked": [
+        "Document a fictional company's 10m outstanding shares and $40 illustrative price, creating $400m equity market cap.",
+        "Add $150m interest-bearing debt and subtract $50m truly excess cash ⇒ simplified EV $500m.",
+        "List whether the same firm has 2m potential new shares and how that changes forecast per-share value.",
+        "Include historical sales and free cash flow from issuer filings rather than price charts alone.",
+        "Require at least one clearly falsifiable counter-thesis and an explicit no-buy condition."
+      ],
+      "practice": [
+        [
+          "What makes a corporate analysis memorandum auditable by a second investor?",
+          "It names the exact issuer, security class and filing versions, reconciles every financial measure to reported periods and documents assumptions and counterevidence."
+        ],
+        [
+          "Why can an analytically attractive equity be unsuitable for a person purchasing a home in six months?",
+          "The household may lack capacity to withstand an interim stock drawdown before closing, even if the company could be attractive for long-term risk capital."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC investor guide to 10-K",
+      "https://www.investor.gov/introduction-investing/getting-started/researching-investments/how-read-10-k"
+    ],
+    [
+      "SEC EDGAR company filing search",
+      "https://www.sec.gov/edgar/search/"
+    ],
+    [
+      "SEC Beginner's Guide to Financial Statements",
+      "https://www.sec.gov/investor/pubs/begfinstmtguide.htm"
+    ],
+    [
+      "SEC Annual Reports and Proxy Statements",
+      "https://www.investor.gov/introduction-investing/investing-basics/glossary/annual-report"
+    ],
+    [
+      "FINRA Investor Insights",
+      "https://www.finra.org/investors/investing/investment-products/stocks"
+    ]
+  ],
+  "assessment": {
+    "title": "Corporate ownership and dilution forensic memo",
+    "prompt": "Investigate a hypothetical 10-million-share corporation priced at $40 that issues two million new shares at $20, carries $150 million of debt and $50 million excess cash, and has dual-class votes. Compute original and new capitalization, 100,000-share ownership percentages, enterprise value, and value per diluted share under $600 million equity assumption. Analyze operating leverage for unit sales and create a source-dated Form 10-K research plan including governance, issuer risks and a downside portfolio allocation.",
+    "rubric": [
+      "Security identification and legal claims (20%)",
+      "Market capitalization, EV and dilution math (25%)",
+      "Governance/control rights and capital structure (20%)",
+      "Business model, operating leverage and concentration (20%)",
+      "Primary-source research and investment memo quality (15%)"
+    ]
+  }
+}

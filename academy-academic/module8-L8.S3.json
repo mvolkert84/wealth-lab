@@ -1,0 +1,235 @@
+{
+  "id": "L8.S3",
+  "title": "Valuing a Stock",
+  "subtitle": "Comparable multiples, discounted cash flows, WACC, terminal value and downside scenarios",
+  "prerequisites": [
+    "L7.S3 present value, NPV and rate units",
+    "L8.S1 market cap and enterprise value",
+    "L8.S2 operating cash and capital requirements"
+  ],
+  "objectives": [
+    "Distinguish quoted price, market cap, enterprise value and intrinsic-value range",
+    "Reconcile EPS, P/E and normalized earnings with stock count",
+    "Construct revenue-margin-reinvestment cash-flow forecasts",
+    "Discount FCFF at appropriate WACC and bridge enterprise value to equity",
+    "Analyze terminal values and discount-rate sensitivity",
+    "Use price scenarios and risk capacity instead of falsely precise price targets"
+  ],
+  "sections": [
+    {
+      "title": "Price is a transaction; valuation is a conditional model",
+      "body": [
+        "A quoted stock price is the amount at which a specific share can trade subject to spreads and order conditions; it is not an objective label of fair value. Intrinsic valuation estimates discounted future owner-relevant cash flows under explicit business and financing assumptions. Relative valuation compares pricing ratios with issuers that have sufficiently comparable business models, accounting, growth, risk and balance sheets. Both are vulnerable to bad assumptions. A stock can be inexpensive relative to its own history yet overvalued relative to future earnings capacity.",
+        "Separate price per share from total equity value. A $5 stock with two billion shares outstanding has a $10 billion market capitalization, whereas a $500 stock with one million shares has a $500 million cap. Share prices can change through splits without changing proportional ownership. The investor should ask what future cash flow and discount rate the current *market capitalization* implies, not whether one share costs less than a restaurant meal.",
+        "Margin of safety means comparing purchase price with a reasoned valuation under downside assumptions, not subtracting an arbitrary percentage from a hopeful target. If estimated equity value is $600 million and 12 million fully relevant shares are expected, implied modeled share value is $50. Paying $40 implies a 20% discount to that $50 model value, but the discount disappears if the business value falls or expected dilution grows. The price gap does not guarantee a profitable outcome.",
+        "Construct a hypothesis table: current quotation, forecast fundamental value range, major drivers, disconfirming evidence, transaction costs, tax considerations and how a drawdown affects household liquidity. A discounted cash-flow model should produce a decision framework, not a precise prophecy. Disclosing why a forecast might be wrong is part of sound equity research."
+      ],
+      "worked": [
+        "Company A 2bn shares at $5 = $10bn capitalization; B 1m shares at $500 = $500m.",
+        "Modeled equity $600m divided by 12m shares ⇒ hypothetical $50 share value.",
+        "Price $40 versus modeled $50 ⇒ discount to modeled value (50−40)/50 =20%.",
+        "If modeled value falls to $35, a $40 purchase is no longer below modeled value.",
+        "Share splits do not multiply total economic value or compensate for business risk."
+      ],
+      "practice": [
+        [
+          "Why is a $5 stock not inherently cheaper than a $500 stock?",
+          "The economic cost of the whole business depends on share count, debt, cash and future fundamentals; nominal price per share is not total valuation."
+        ],
+        [
+          "What makes a valuation range more defensible than a single 'fair price' forecast?",
+          "Revenue, margins, reinvestment, discount rates and dilution are uncertain, and scenario ranges reveal how strongly value depends on those assumptions."
+        ]
+      ]
+    },
+    {
+      "title": "P/E, earnings yield, EV/EBITDA and denominator quality",
+      "body": [
+        "Price-to-earnings is share price divided by earnings per share, or market capitalization divided by net income attributable to the relevant common equity, if the numerator and denominator align. Earnings yield is the reciprocal of a positive P/E, not a guaranteed distribution rate or bond coupon. With share price $60 and annual EPS $3, P/E equals 20× and earnings yield 5%. If EPS is temporarily inflated by one-time gains, the reported multiple understates the true recurring operating valuation.",
+        "Enterprise multiples such as EV/EBITDA compare enterprise value with a pre-interest earnings proxy, useful in some industry comparisons. EBITDA excludes depreciation and amortization, which may represent real long-term capital consumption, and usually does not capture capital expenditures or working-capital requirements. Banks, insurers, REITs, utilities and early-growth companies often require different measurement choices. A company with negative EPS can have an algebraically negative P/E but that is not a meaningful comparable cheapness metric.",
+        "Normalize earnings by separating recurring operating performance from transitory gains, unusually low tax expense, acquisition accounting, restructuring expenses and cyclically extreme margins. Analysts should not simply subtract expenses they dislike; a recurring employee compensation bill is a real economic cost even if paid in shares. Compare net income, free cash flow, invested capital, leverage and share-count history when deciding whether an earnings multiple is appropriate.",
+        "Use at least three peers chosen because products, margins, capital intensity, debt structures and growth stages are actually comparable. A company priced at 10× earnings may deserve the lower multiple if profits are deteriorating, credit risk is elevated or its intellectual property is expiring. Relative multiples can anchor a disciplined cross-check but cannot substitute for cash-flow modeling."
+      ],
+      "worked": [
+        "Stock price $60 / EPS $3 ⇒ P/E 20×.",
+        "Earnings yield $3/$60=5%, not a guaranteed cash return.",
+        "If normalized recurring EPS is $2.40 rather than reported $3, normalized P/E=$60/$2.40=25×.",
+        "Simplified EV $500m / EBITDA $50m =10×.",
+        "A ratio with a mismatched capital claim and earnings measure is not economically valid."
+      ],
+      "practice": [
+        [
+          "Does a 5% earnings yield from a 20× P/E promise the stockholder a 5% cash distribution?",
+          "No. Earnings are accounting results, not necessarily distributable cash, and future profits and dividends can differ from those reported."
+        ],
+        [
+          "Why should a firm with frequent 'one-time' restructuring charges be evaluated beyond adjusted EPS?",
+          "Recurring exclusions can mask ongoing costs and dilute the reliability of normalized margins; cash and reported GAAP figures should be reconciled."
+        ]
+      ]
+    },
+    {
+      "title": "Build cash flows from operations, margins and reinvestment",
+      "body": [
+        "Discounted cash flow begins with operating assumptions, not an unexplained future stock price. Forecast sales from addressable market, volume, price, retention and realistic competition, then estimate operating profit, cash tax rate, reinvestment and working-capital changes. Under a common enterprise-valuation convention, free cash flow to the firm (FCFF) is EBIT×(1−tax rate)+depreciation/amortization−capital expenditures−increase in net operating working capital, subject to classification and lease/other adjustments.",
+        "Suppose annual revenue is $100 million, operating EBIT margin 20%, cash tax assumption 25%, depreciation $4 million, capital expenditure $9 million and increase in operating working capital $3 million. EBIT is $20 million, tax-adjusted operating income $15 million and FCFF=$15m+$4m−$9m−$3m=$7 million. A company reporting $20 million EBIT does not create $20 million of annual owner-available cash. Positive growth can require working capital and equipment before the cash arrives.",
+        "Historical financial statements provide evidence for revenue growth and reinvestment ratios, but not certainty about the next decade. Analyst forecasts should reconcile capital expenditures with growth and maintenance needs, depreciation with the asset base and margins with competitors. Forecasts showing revenue double while investments and working capital remain fixed need explicit justification. Taxes require modeled economic treatment rather than blindly applying the household's ordinary income-tax bracket.",
+        "Scenario construction combines volume, pricing, labor cost, working capital and capital needs. A downside model may hold revenue flat, reduce operating margin to 15% and increase inventory investment, while an upside model assumes sustainable productivity improvements. Evaluate company behavior under stress and distinguish operations from financing. The valuation equation cannot rescue a model built on economically impossible cash-flow assumptions."
+      ],
+      "worked": [
+        "Revenue $100m with EBIT margin 20% ⇒ EBIT $20m.",
+        "Tax 25% on operating profit ⇒ NOPAT $15m.",
+        "Add D&A $4m, subtract capex $9m and working-capital investment $3m.",
+        "FCFF=$15m+$4m−$9m−$3m=$7m.",
+        "Revenue growth requiring increased inventory can reduce free cash flow even during profit expansion."
+      ],
+      "practice": [
+        [
+          "Why is EBIT not the cash amount available for all investors?",
+          "Cash taxes, capital spending and changes in operating working capital must be modeled; reported EBIT is accrual profit before these cash allocations."
+        ],
+        [
+          "What would make a forecast of high sales growth without any additional reinvestment suspect?",
+          "More production, inventory, receivables or productive capacity often requires capital; a no-investment assumption needs specific evidence of unusual scalable economics."
+        ]
+      ]
+    },
+    {
+      "title": "Discount rates: the debt/equity capital structure and WACC",
+      "body": [
+        "Enterprise free cash flows are commonly discounted using a weighted average cost of capital (WACC) consistent with the financing and tax assumptions. Simplified WACC=(E/V)×cost of equity+(D/V)×pretax cost of debt×(1−marginal corporate tax rate), where V=E+D for the simple two-claim case. Actual financing can include preferred shares, operating leases, debt market values and changing leverage. The estimated cost of equity reflects risk and opportunity cost, not the dividend yield or an average bank deposit APY.",
+        "Consider $600 million market equity financing and $400 million market debt financing. With cost of equity 10%, pretax debt cost 6% and a 25% illustrative cash tax shield rate, simplified WACC is .60×.10+.40×.06×.75=.078, or 7.8%. Discounting enterprise FCFF at the equity cost of 10% would be inconsistent with this simplified structure. Conversely, discounting a dividend or FCFE stream at 7.8% could inappropriately blend debt costs into cash flows already available only after debt financing.",
+        "Cost of capital estimates are uncertain. A capital asset pricing model may represent required equity return as a risk-free yield plus beta times an assumed equity risk premium, but beta changes across periods and does not capture every important downside. A highly levered firm may need a more complex approach when debt costs and tax shields shift with financial distress. A 1-percentage-point change in WACC can substantially alter terminal values, particularly for businesses expected to generate cash far in the future.",
+        "The essential discipline is matching the cash-flow claimant to its discount rate and keeping nominal versus real treatment consistent. Nominal dollars projected with price growth need a nominal cost of capital. An analyst should provide a source-dated rate range and sensitivity table rather than a single precise WACC invented to justify today's share price."
+      ],
+      "worked": [
+        "Equity share 60% at cost 10% ⇒ contribution to WACC 6%.",
+        "Debt share 40% at pretax cost 6%, tax rate 25% ⇒ contribution 1.8%.",
+        "Simplified WACC 6%+1.8%=7.8%.",
+        "A 1-point WACC change can substantially change long-duration cash-flow valuation.",
+        "FCFF uses enterprise-consistent discount rate; FCFE and dividends use equity-consistent required return."
+      ],
+      "practice": [
+        [
+          "Why is a company's common dividend yield not automatically the appropriate discount rate for enterprise FCFF?",
+          "Dividend yield is one observed distribution divided by price, while FCFF belongs to multiple capital providers and WACC reflects the assumed costs and weights of their claims."
+        ],
+        [
+          "What important limitation surrounds a WACC calculated from historical accounting debt and equity?",
+          "Market value weights and current financing costs may differ from historical book values; the economic capital structure and projected risk require evidence."
+        ]
+      ]
+    },
+    {
+      "title": "Terminal value, perpetual growth and severe model sensitivity",
+      "body": [
+        "Forecasting every future business year explicitly is impractical, so many DCFs use a finite forecast horizon plus a terminal value. Under a continuing-value model with first post-forecast FCFF FCF_(N+1), perpetual growth g and discount rate WACC greater than g, TV_N=FCF_(N+1)/(WACC−g). Terminal value at the horizon must then be discounted back N periods to today along with finite-period cash flows. The perpetuity assumes sustainable long-term growth and reinvestment, not an arbitrary number chosen to make a preferred price target.",
+        "For example, FCFF expected just after year five is $10 million, WACC 8% and terminal growth 3%. The terminal value at year five is $10m/(.08−.03)=$200 million. At 9% WACC with unchanged growth, value is $166.67 million; at 8% WACC with 4% growth, value jumps to $250 million. These are *horizon-date* values and cannot be directly combined with today's share price without discounting them and all interim cash flows.",
+        "Large terminal-value shares of enterprise value reveal dependence on distant assumptions. The firm may have little current FCF but a DCF can still produce an enormous value if future margin and growth assumptions are optimistic. When growth approaches the discount rate, denominator sensitivity becomes extreme; if g≥WACC, the constant-growth perpetuity is invalid. A disciplined model checks market size, inflation, economic reinvestment and whether margins can persist indefinitely.",
+        "Use a sensitivity matrix across WACC and terminal growth, plus explicit annual free-cash-flow paths in a bear, base and bull case. State which scenarios are economically plausible, not merely mathematically possible. Many attractive investment stories are less robust after considering dilution, debt claims, future capital expenditures and the chance that terminal assumptions fail."
+      ],
+      "worked": [
+        "Next post-forecast FCFF $10m, WACC 8%, growth 3%.",
+        "Year-five terminal value $10m/(.08−.03)=$200m.",
+        "WACC 9%, same growth ⇒ terminal value $166.67m.",
+        "WACC 8%, growth 4% ⇒ terminal value $250m.",
+        "Each terminal value requires a further 5-year discount factor to compare with today's enterprise value."
+      ],
+      "practice": [
+        [
+          "Why is a terminal value at the end of year five not already a present-day enterprise value?",
+          "It prices continuing cash flow at the forecast-horizon date; that future value must be discounted to today and added to the PV of interim cash flows."
+        ],
+        [
+          "What warning does a terminal-growth assumption very close to WACC create?",
+          "The value is extremely sensitive and the perpetuity may become economically implausible or mathematically invalid as g approaches the discount rate."
+        ]
+      ]
+    },
+    {
+      "title": "From enterprise value to equity price with cash, debt and dilution",
+      "body": [
+        "An enterprise DCF first values cash flow available across financing claims. Bridge enterprise value to common equity using debt and other claims and appropriate cash adjustments; the simplified relation is equity value=enterprise value−debt+excess cash. Then divide by a justified current or forecast diluted share count. A DCF that omits expected future employee share awards or new financing can systematically overstate per-share value even when its enterprise value is otherwise plausible.",
+        "Suppose an enterprise valuation produces $500 million, with $150 million net interest-bearing debt and 10 million expected economically relevant diluted shares. Simplified equity valuation is $350 million, or $35 per share. At an illustrative $40 market price, the market trades about 14.29% above that model estimate. If the model mistakenly divides by 8 million shares, it reports $43.75, flipping the buy-or-avoid conclusion. Share count and debt treatment are material valuation inputs, not footnotes.",
+        "An individual company has costs and uncertain cash flows; a household also has an investment budget and time horizon. A $35 modeled estimate does not protect an investor paying $30 from a collapse in earnings or a new securities issuance. Compare the current quote with a range of defensible values and calculate downside exposure after costs and taxes. One stock should not displace an emergency reserve or money committed to a known mortgage closing date.",
+        "Provide a final valuation memo with a reconciled historical cash flow table, 3–5 years of forecast drivers, tax assumptions, terminal mechanism, WACC, debt/cash/share bridge and a price sensitivity. Identify a decision condition that would invalidate the thesis. The professional outcome may be 'insufficient evidence' when underlying disclosure quality is weak, not a manufactured positive recommendation."
+      ],
+      "worked": [
+        "DCF enterprise value $500m − net debt $150m = equity value $350m.",
+        "Correct diluted shares 10m ⇒ modeled share value $35.",
+        "Mistaken share count 8m ⇒ incorrect $43.75 share value.",
+        "Quoted market price $40 is about 14.29% above the $35 valuation in this illustration.",
+        "The value range must also reflect operating and tax uncertainty, not only share count."
+      ],
+      "practice": [
+        [
+          "Why can an otherwise correct enterprise DCF still overvalue each common share?",
+          "Failure to subtract senior financial claims or use an appropriate diluted share count overstates residual per-share equity value."
+        ],
+        [
+          "Why can a well-researched model valuation below the market price be a rational no-buy decision?",
+          "The model's expected compensation for business and market risk may be insufficient at the quote, particularly if downside scenarios are material to the investor's goals."
+        ]
+      ]
+    },
+    {
+      "title": "Investment committee recommendation with scenarios and counterevidence",
+      "body": [
+        "Finish a disciplined company valuation by writing three internally coherent forecasts, each including revenue, EBIT margin, cash taxes, capital expenditure, working capital, terminal rate and relevant share count. Price is an output, not an input used to manipulate assumptions. Show at least one independent comparable-company cross-check and reconcile different accounting definitions when businesses use different fiscal years or non-GAAP measures.",
+        "Stress tests should connect to specific risks. A manufacturer with rising inventory could face lower demand, price discounting, lower margins and reduced CFO simultaneously. A software company might scale with modest tangible capex yet incur large stock-based compensation and continuing employee dilution. A highly indebted distributor may face rising interest expense during a recession. A generic 10% discount on all cash flows cannot substitute for understanding the actual operating mechanism.",
+        "Position sizing is separate from business valuation. A potentially undervalued issuer can still be inappropriate for a family whose money is needed in six months; a 30% drawdown on $5,000 would create a $1,500 cash shortfall. A long-term portfolio should have explicit diversification, taxes, trading costs and liquidity requirements. Backtesting a stock thesis after the fact is subject to hindsight and selective evidence; use dated filings and record what facts were available at the original decision time.",
+        "The deliverable must name the company or state that it is fictional, specify source dates and definitions, show calculations and explain a disconfirming fact. Students should learn when to reject an investment despite the excitement of a rising chart. That skill is the difference between financial literacy and confident speculation."
+      ],
+      "worked": [
+        "Hypothetical modeled value $35 per share and market quote $40 ⇒ quote exceeds model value.",
+        "Potential 30% decline on $5,000 concentrated position loses $1,500.",
+        "If financing increases debt claims $100m, equity bridge changes even if enterprise forecast is unchanged.",
+        "A price target with no explicit forecast free-cash-flow path is not auditable.",
+        "Investment committee must state evidence, dissenting case and a no-investment option."
+      ],
+      "practice": [
+        [
+          "What does it mean for an equity research thesis to be falsifiable?",
+          "The analyst specifies measurable observations such as sustained falling cash margins, a debt maturity failure or material dilution that would refute the assumptions behind valuation."
+        ],
+        [
+          "Why is company valuation not the same decision as portfolio allocation?",
+          "A security might have attractive expected value yet expose a household to unacceptable concentration, short-horizon loss or liquidity risk relative to required obligations."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC EDGAR and issuer financial statements",
+      "https://www.sec.gov/edgar/search/"
+    ],
+    [
+      "Investor.gov How to Read a 10-K",
+      "https://www.investor.gov/introduction-investing/getting-started/researching-investments/how-read-10-k"
+    ],
+    [
+      "SEC Beginners' Guide to Financial Statements",
+      "https://www.sec.gov/investor/pubs/begfinstmtguide.htm"
+    ],
+    [
+      "Investor.gov Stocks",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+    ],
+    [
+      "CFA Institute Financial Statement Analysis curricula",
+      "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam"
+    ]
+  ],
+  "assessment": {
+    "title": "Enterprise value, discounted cash flow and equity valuation",
+    "prompt": "Using fictional $100m annual revenue at 20% EBIT margin, 25% tax, $4m depreciation, $9m capex and $3m working capital increase, derive FCFF. Compute 60/40 WACC with 10% cost of equity and 6% pretax debt. Model $10m horizon-date terminal FCFF under 8% required rate and 3% and 4% perpetual growth. Bridge $500m enterprise value to $350m common equity with $150m net debt and compare per-share value under 8m versus 10m diluted shares. Cross-check against normalized P/E and report three material failure conditions.",
+    "rubric": [
+      "Correct valuation claim/metric matching (20%)",
+      "FCFF and capital spending forecast (20%)",
+      "WACC and discount rate consistency (20%)",
+      "Terminal and diluted equity sensitivity (25%)",
+      "Counterevidence, source quality and risk judgment (15%)"
+    ]
+  }
+}
