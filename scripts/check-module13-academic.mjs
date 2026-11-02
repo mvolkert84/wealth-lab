@@ -33,7 +33,7 @@ assert.equal(sections,33);assert.equal(questions,66);assert.ok(words>=6000);
 assert.equal(d.capstone.tasks.length,20);assert.ok(d.capstone.answers.length>=14&&d.capstone.sources.length>=7);
 assert.ok(e.WealthLabAcademicM13Markup('L13.S4').includes('Module 13 cumulative'));
 assert.ok(e.WealthLabAcademicM13Markup('L1.S1').includes('unavailable'));
-assert.ok(html.includes("||m.id==='M13'||m.id==='M14')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("||m.id==='M13'||m.id==='M14'||m.id==='M15')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('WealthLabAcademicM13Markup?.(s.id)'));
 assert.ok(html.includes('WealthLabAcademicM13Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));

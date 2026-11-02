@@ -1,0 +1,267 @@
+{
+  "id": "L15.S4",
+  "title": "Comparing Wealth-Building Vehicles",
+  "subtitle": "Goal-matched capital allocation, liquidity, scenario analysis, tax timing, effort and intergenerational outcomes",
+  "prerequisites": [
+    "L10.S1 portfolio risk and diversification",
+    "L12 retirement and tax-advantaged accounts",
+    "L13 estate design and beneficiaries",
+    "L14 rental property valuation",
+    "L15.S1 small-business valuation"
+  ],
+  "objectives": [
+    "Compare savings, securities, property, businesses and insurance on a common economic basis",
+    "Model labor, taxes, fees, volatility, and capital requirements",
+    "Apply cash-liability matching to a Connecticut home goal",
+    "Stress uncertain returns and correlated economic risks",
+    "Build a weighted but constrained investment decision matrix",
+    "Explain when tax advantages are real but economically insufficient",
+    "Write an integrated household investment policy with legal estate and cash protections"
+  ],
+  "sections": [
+    {
+      "title": "A wealth vehicle is defined by purpose before advertised return",
+      "body": [
+        "Savings accounts, Treasury securities, diversified stocks, rental property, private business ownership, retirement accounts and permanent insurance serve distinct functions. Savings and short-term government obligations can be suitable for nearer-term cash needs, while shares and property seek uncertain returns over longer horizons; insurance primarily transfers contract-defined risk and only some policies have cash value. A tax-advantaged account changes taxation, not the market exposure of what is held inside it.",
+        "To compare vehicles, record liquidity on the exact spending date, principal loss risk, price volatility, management workload, fees, tax treatment, creditor exposures and the human capability required to operate them. A family intending to buy a home within two years should not rank long-horizon investments only by their average historical return. An asset that must be sold after a drawdown can damage the goal even if it could have recovered in ten years.",
+        "An analyst should create a policy hierarchy: protect bill cash, emergency reserve and near-term housing funds; cover catastrophic insurance needs; address high-cost liabilities; then allocate genuinely investable surplus by horizon and risk capacity. Do not equate a low quoted yield with a low total household benefit if liquidity prevents future expensive debt."
+      ],
+      "worked": [
+        "Illustrative available household reserve $10,000 in savings versus $10,000 invested in stocks.",
+        "At stock price −30%, market value can fall to $7,000 before selling fees and taxes.",
+        "A $10,000 near-term closing obligation would then face a $3,000 gap.",
+        "A savings vehicle's actual insurance and yield terms must still be verified."
+      ],
+      "practice": [
+        [
+          "Why can a low-volatility cash allocation be financially rational before a home purchase?",
+          "The household values reliable access on a deadline more than hypothetical equity upside that might reverse before closing."
+        ],
+        [
+          "Does placing high-risk stocks in an IRA make the stocks low risk?",
+          "No. An IRA changes account tax/legal characteristics; the underlying securities can still decline."
+        ]
+      ]
+    },
+    {
+      "title": "The true comparison is after-tax, after-fee and after-labor",
+      "body": [
+        "Every alternative uses resources beyond its nominal principal. Investing in a rental often requires inspections, vacancy reserves, repair management and deal costs; a private business consumes owner time, accounting and inventory cash; permanent insurance requires premiums and contract charges; a taxable stock fund can impose expense ratios and capital-gain tax; savings can lose purchasing power from inflation. A serious comparison values management hours at an explicit opportunity cost.",
+        "Suppose a side enterprise earns $8,000 annual pre-owner-labor income but requires 400 annual hours. Valuing owner time at $20/hour uses $8,000 of economic labor, leaving approximately $0 normalized economic surplus before other risks. A passive investment yielding $2,000 after tax with little labor may be economically preferable even though its gross revenue is much smaller. Time valuation can be higher or lower by person and purpose.",
+        "Do not count every dollar of business revenue as investment return while counting investment ETF gain only after taxes. Create an apples-to-apples after-tax terminal wealth model with identical starting cash, identical additional monthly contributions, recorded fees and time demands, and consistent probability scenarios. Nonfinancial satisfaction from owning a creative business can be valid but should be labeled separately from financial profit."
+      ],
+      "worked": [
+        "Business owner pre-labor annual surplus $8,000; 400 hours at $20/hour=$8,000 labor cost.",
+        "Normalized economic surplus $0 before risk adjustments.",
+        "Alternative $2,000 after-tax return with only 10 hours monitoring implies a different economic proposition.",
+        "The owner can still choose entrepreneurship for personal goals, but should not claim a $8,000 passive investment yield."
+      ],
+      "practice": [
+        [
+          "Why must the value of owner labor enter a wealth vehicle comparison?",
+          "Without labor costing, entrepreneurial earnings from paid work are misrepresented as passive return on capital."
+        ],
+        [
+          "How should nonfinancial satisfaction affect the decision?",
+          "It can be recognized explicitly as personal utility, while leaving economic costs and risks transparent."
+        ]
+      ]
+    },
+    {
+      "title": "Time horizon and the cash-flow matching principle",
+      "body": [
+        "Match asset maturity and liquidity to an expected spending liability. A down payment needed next year is a fixed near-term cash obligation; retirement twenty-five years away can tolerate a different range of volatility if the household has diversified reserves and risk capacity. This is asset-liability management, not an instruction that stocks are always unsuitable for every short-term investment. The opportunity cost of missing a required home closing can dwarf a modest expected extra return.",
+        "Model $250 monthly end-of-period contributions for 24 months at a deterministic hypothetical 4% nominal annual return compounded monthly. Future value is approximately $6,238, compared with $6,000 contributed. The roughly $238 illustrative return does not justify risking the $6,000 principal to earn a possibility of greater profit while housing costs are due. Returns and deposit yields change; use current insured-account terms for real plans.",
+        "A family may wish to fund both emergency savings and longer-term investment using separate buckets, rather than commingling all funds. Allocating 70% of monthly contributions to home cash and 30% to retirement is an example, not universal advice. Model the goals' dates, government program eligibility and job stability before setting a percentage."
+      ],
+      "worked": [
+        "$250/month for 24 months = $6,000 deposits.",
+        "Hypothetical 4% APR nominal compounding monthly: future value $250×[(1+.04/12)^24−1]/(.04/12)≈$6,236.",
+        "Expected investment return is not guaranteed and the gain is small relative to a potential $6,000 principal loss.",
+        "Different goal horizons require separate accounting and reserve targets."
+      ],
+      "practice": [
+        [
+          "Why does the same investor use different asset allocations for one-year home funds and thirty-year retirement money?",
+          "The date and seriousness of spending liabilities determine the capacity to tolerate temporary market losses."
+        ],
+        [
+          "How should a monthly household savings budget be divided across goals?",
+          "Use obligation dates, protected reserves and stated priorities; an illustrative percentage does not replace a cash-flow plan."
+        ]
+      ]
+    },
+    {
+      "title": "Risk-adjusted scenario matrix instead of a single ranking",
+      "body": [
+        "Investment choices have multiple plausible future states. Rather than assigning a precise universal ranking, calculate base, bad and severe cases for each vehicle and compare the consequences for essential obligations. An expected value can be useful but does not measure tail exposure, liquidity calls, or correlation with employment. A conservative decision may maximize the probability of meeting a minimum goal rather than maximizing average terminal wealth.",
+        "Suppose a $10,000 equity investment has purely hypothetical one-year outcomes: +20% with probability 60%, −10% with 30%, and −40% with 10%. Probability-weighted expected return is .6×20%+.3×(−10%)+.1×(−40%)=5%. The severe scenario loses $4,000, which might be unacceptable if $10,000 is the family's entire emergency reserve. A 5% expected return is not an assurance of $500 cash.",
+        "Correlations matter: a local rental can lose tenants at the same time the owner's job is cut, and a small business can weaken when household buyers reduce spending. Include stress liquidity to service loans during those events. A useful risk matrix displays worst-year cash required, probability assumptions, creditor rights and expected recovery time with limitations clearly visible."
+      ],
+      "worked": [
+        "Returns +20% 60%, −10% 30%, −40% 10%.",
+        "Expected return 0.6×20−0.3×10−0.1×40 =5%.",
+        "Starting $10,000 → illustrative expected one-year value $10,500.",
+        "Severe scenario return −40% → only $6,000, losing $4,000 despite positive mean."
+      ],
+      "practice": [
+        [
+          "Does a 5% expected one-year return guarantee the asset will be worth $10,500?",
+          "No. A probabilistic expected value averages uncertain outcomes, one of which may be a substantial loss."
+        ],
+        [
+          "Why does a correlated job loss worsen an investment setback?",
+          "Lost wages reduce the ability to add cash or service debt precisely when investment value and revenue may decline."
+        ]
+      ]
+    },
+    {
+      "title": "Tax efficiency: account placement differs from product design",
+      "body": [
+        "A tax-advantaged account can improve after-tax compounding but may limit contribution, distribution and eligibility. A pass-through business may offer the Section 199A QBI deduction when legally eligible; an insurance death benefit may be income-tax-excluded under qualifying circumstances; municipal bond interest can be exempt from some taxes; real estate can generate depreciation deductions. None of these characteristics alone proves the investment has positive economic return.",
+        "For a hypothetical fully eligible $5,000 QBI deduction against taxable income and stable 22% marginal federal rate, the basic regular income-tax reduction is $1,100 before all other limits. It is not $5,000 of owner cash created by a tax code clause. Likewise, real estate depreciation is a noncash deduction but may reduce tax basis and affect future gain. Always compare actual after-tax net cash, not the deduction amount.",
+        "Tax diversification can be valuable: retirement accounts, liquid taxable savings and property equity create flexibility but face different tax and liquidity constraints. The right solution depends on income, withholding, filing status, CT rules, estate beneficiary objectives and investment horizons. Use primary IRS and state sources and explain uncertainty in future law."
+      ],
+      "worked": [
+        "Hypothetical eligible tax deduction $5,000 × 22% marginal rate=$1,100 isolated tax sensitivity.",
+        "A $5,000 deduction is NOT a $5,000 rebate.",
+        "A $1,000 insurance premium is not automatically a $1,000 investment deposit.",
+        "Tax savings must be weighed against fees, lockups and risks of the asset or contract."
+      ],
+      "practice": [
+        [
+          "Why should tax advantage never be used as the sole criterion for an investment?",
+          "A tax deduction reduces certain taxes but cannot necessarily offset a poor underlying return, fees, loss risk or illiquidity."
+        ],
+        [
+          "What is the difference between an income-tax deduction and a tax credit?",
+          "A deduction reduces taxable income subject to applicable rates; a credit generally reduces calculated tax subject to eligibility and other limits."
+        ]
+      ]
+    },
+    {
+      "title": "Diversification by economic exposure, not product names",
+      "body": [
+        "Owning stocks, rental property, a small business and an employer retirement plan can appear diverse, yet their values might depend on the same local economy or consumer demand. A private company may also rely on one founder, a landlord on one tenant and a concentrated stock on one sector. Diversification requires assessing correlated underlying cash-flow drivers, not merely counting separate account types.",
+        "Imagine a household whose employment, business customers and rental tenant all derive income from one regional employer. A single plant closure can cause job loss, fewer sales and rent delinquency together. A diversified global equity fund may add different exposures but still faces broad stock market risk. Emergency funds should be sized for correlated rather than independent failures.",
+        "In assessing private business value, count only realizable equity after debt, taxes, owner labor and transaction friction. A single private enterprise can be difficult to sell during a recession. Combining it with high home leverage creates concentration in both human capital and wealth. Run a downside scenario where owner wages and business income disappear simultaneously."
+      ],
+      "worked": [
+        "Hypothetical household: salary $60,000, business income $12,000, rent net cash $3,000 annually.",
+        "Total normal annual income resources $75,000 before taxes and classification.",
+        "Correlated stress removes wages and business profit, leaving nominal rental cash $3,000 before tenant shocks.",
+        "A savings buffer has more immediate survival relevance than a portfolio pie chart in such a case."
+      ],
+      "practice": [
+        [
+          "Why is owning four investment labels not necessarily true diversification?",
+          "Different holdings can share the same economic driver and lose value simultaneously during one shock."
+        ],
+        [
+          "Why does a business owner need a different reserve than an employee with only diversified retirement assets?",
+          "Business revenue, receivables, debt covenants and owner wages can fail together and require immediate liquidity."
+        ]
+      ]
+    },
+    {
+      "title": "Decision scoring with noncompensable minimum constraints",
+      "body": [
+        "A weighted scorecard can compare assets on return potential, liquidity, tax, management time, creditor exposure and inflation resilience, but score aggregation can conceal unacceptable risks. A strategy failing an essential constraint—such as needing $10,000 home cash next month while locking it for five years—should not win simply because it scores high on return. First use pass/fail safety and legal eligibility gates, then apply weighted preferences to feasible options.",
+        "For illustration, assign 40% weight to liquidity, 25% to principal preservation, 15% to long-run growth, 10% to taxes and 10% to maintenance burden. A savings option scoring 9/10, 9/10, 3/10, 5/10, 9/10 yields 7.7/10; a speculative private investment scoring 2,2,9,6,2 gives 3.45/10. The chosen weights are subjective and appropriate only for an urgent liquidity goal. Long-term retirement goals merit different weights.",
+        "Make evaluation auditable: disclose scoring logic, empirical evidence, unknown inputs and what could reverse the decision. A legal trust and a policy loan should not be assigned a score before the documents reveal beneficiary rights, premiums, surrender values and borrowing conditions. Unknown facts remain unknown, not optimistic defaults."
+      ],
+      "worked": [
+        "Illustrative weights: liquidity 40%, principal preservation 25%, growth 15%, tax 10%, labor 10%.",
+        "Savings scores 9,9,3,5,9 => .4×9+.25×9+.15×3+.1×5+.1×9=7.70.",
+        "Speculative scores 2,2,9,6,2 => .4×2+.25×2+.15×9+.1×6+.1×2=3.45.",
+        "Both results depend entirely on subjective weights and must satisfy mandatory cash and legality constraints first."
+      ],
+      "practice": [
+        [
+          "Why is the highest weighted score not always a feasible strategy?",
+          "Some objectives are mandatory—legally valid ownership, paying rent, meeting closing dates—and cannot be traded away for high returns."
+        ],
+        [
+          "How should the scorecard treat missing policy-loan or financing documentation?",
+          "Mark it unverified and prevent an unsupported favorable score or purchase recommendation."
+        ]
+      ]
+    },
+    {
+      "title": "The integrated generational wealth and homeownership policy",
+      "body": [
+        "A sophisticated family plan ties income, debts, insured protection, retirement benefits, business and home equity to a documented life-cycle policy. For a household targeting Connecticut homeownership, preserve a separately identified down-payment and closing-cost fund, maintain an emergency reserve, and evaluate retirement contribution benefits. Only excess funds beyond near-term needs should finance illiquid business or real estate ventures, unless a carefully modeled alternate financing plan is warranted.",
+        "A future inheritance plan requires proper deeds, beneficiaries, estate documents and cash to maintain property after death. Trusts, life insurance and business interests can be valuable when their functions are explicit, but they do not remove mortgages or guarantee tax-free access. A child inheriting a property with little maintenance money faces a very different outcome from one inheriting a funded plan for repairs, taxes and insurance.",
+        "Write an investment policy memorandum with milestones: secure minimum liquidity, document business profitability, eliminate high-interest liabilities, take available employer matches when affordable, fund long-horizon portfolios, and periodically update successor and beneficiary records. A degree-level student must defend why one tool is appropriate for one goal and harmful for another under the same household facts."
+      ],
+      "worked": [
+        "Household saves $375/month => $4,500 annual new capital before yield.",
+        "Illustrative allocate $250/month protected housing cash, $125/month longer-horizon saving.",
+        "After 24 months nominal contributions are $6,000 housing and $3,000 longer-term, ignoring return.",
+        "If home savings required exceed $6,000 in that horizon, model a realistic increased contribution, longer timeline or permitted assistance rather than borrowing unsupported value."
+      ],
+      "practice": [
+        [
+          "What is the purpose of separating home cash from retirement investment in a family wealth plan?",
+          "It prevents short-term obligations being funded from volatile or restricted assets while retaining long-run compounding potential."
+        ],
+        [
+          "Why is a trust not a complete generational-wealth plan by itself?",
+          "Beneficiary administration, taxes, mortgage debt, liquidity and the heir's ability to sustain property or business operations remain critical."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Investor.gov investment risk and diversification",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products"
+    ],
+    [
+      "SEC leveraged investing risk alert",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/leveraged-investing-strategies-know-risks-using-these-advanced-investment-tools"
+    ],
+    [
+      "IRS 2026 QBI thresholds",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ],
+    [
+      "SBA business finance fundamentals",
+      "https://www.sba.gov/counseling/manage-your-business/"
+    ],
+    [
+      "IRS personal and retirement savings framework",
+      "https://www.irs.gov/retirement-plans"
+    ],
+    [
+      "CFPB saving for a home purchase",
+      "https://www.consumerfinance.gov/owning-a-home/"
+    ],
+    [
+      "IRS Publication 527 rental investment tax",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "IRS life insurance benefits rules",
+      "https://www.irs.gov/publications/p525"
+    ]
+  ],
+  "assessment": {
+    "title": "Investment policy and wealth vehicle committee",
+    "prompt": "Build a controlled five-vehicle analysis for $10k household cash and $375 monthly sustainable saving: protected savings, low-fee diversified equity fund, Connecticut rental investment, side business and permanent life policy. Normalize after taxes, owner labor and fees. Model $250/month housing plus $125/month retirement for two years. Calculate probability-weighted outcomes (+20% 60%, −10% 30%, −40% 10%) for hypothetical stocks. Value 400 hours of business labor at $20/hour against $8k pre-labor business benefit. Create scorecard with liquidity/principal preservation/growth/tax/effort 40/25/15/10/10 and reject infeasible lockups. Evaluate downside when local wages/business rental revenues weaken simultaneously and articulate controls for intended heir.",
+    "rubric": [
+      "Equal-budget, equal-horizon comparison (25%)",
+      "Scenario and correlation mathematics (20%)",
+      "Risk/liquidity hard constraints (20%)",
+      "Time, fees, tax and owner labor accounting (20%)",
+      "Home and family succession implementation (15%)"
+    ],
+    "answerKey": [
+      "24 months×$250=$6,000 nominal housing contributions and 24×$125=$3,000 nominal long-term contribution.",
+      "Probabilistic return .6×20%+.3×(−10%)+.1×(−40%)=5%; $10k expected value $10,500 but severe value $6,000.",
+      "Business $8k pre-owner-labor surplus−400×$20=$0 normalized economic surplus before other costs.",
+      "Savings score with stated weights 7.70/10; speculative example 3.45/10 under liquidity-weighted preferences.",
+      "A lack of cash to meet fixed housing obligations invalidates otherwise high-scoring illiquid investments."
+    ]
+  }
+}
