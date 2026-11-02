@@ -56,7 +56,7 @@ function sectionMarkup(id,s,i){
  return '<section class="wl-m8-section" id="'+esc(id)+'.A'+(i+1)+'"><div class="part-label">Academic section · '+esc(id)+'.A'+(i+1)+'</div><h2>'+esc(s.title)+'</h2>'+s.body.map(p=>'<p>'+esc(p)+'</p>').join('')+'<div class="wl-m8-worked"><h3>Independent worked model</h3><ol>'+s.worked.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div><div class="wl-m8-exercises"><h3>Practice and explanation</h3>'+s.practice.map((p,i)=>'<details><summary>Problem '+(i+1)+' · '+esc(p[0])+'</summary><p>'+esc(p[1])+'</p></details>').join('')+'</div></section>';
 }
 function chapterMarkup(id){
- const l=byId[id];if(!l)return '<div class="article">Module 5 Academic content unavailable for this lesson.</div>';
+ const l=byId[id];if(!l)return '<div class="article">Module 8 Academic content unavailable for this lesson.</div>';
  const heads='<details class="wl-m8-toc"><summary>Study outcomes, prerequisites and chapter map</summary><h3>Prerequisites</h3><ul>'+l.prerequisites.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><h3>Outcomes</h3><ol>'+l.objectives.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>'+l.sections.map((x,i)=>'<p><a href="#'+esc(id)+'.A'+(i+1)+'">'+esc(id)+'.A'+(i+1)+' · '+esc(x.title)+'</a></p>').join('')+'</details>';
  const models=LABS.filter(x=>x.lesson===id).map(labMarkup).join('');
  const assessment='<section class="wl-m8-assessment"><h2>Independent chapter assessment</h2><h3>'+esc(l.assessment.title)+'</h3><p>'+esc(l.assessment.prompt)+'</p><h3>Grading rubric</h3><ul>'+l.assessment.rubric.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><p>Written assignments require independent evaluation; these self-check labs grade numerical steps only.</p></section>';
