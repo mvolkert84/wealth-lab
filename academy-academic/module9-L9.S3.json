@@ -1,0 +1,239 @@
+{
+  "id": "L9.S3",
+  "title": "ETFs, Mutual Funds and Indexes",
+  "subtitle": "Fund ownership, net asset value, diversification, total expenses, tracking and account implementation",
+  "prerequisites": [
+    "L4.S1 security ownership and fund basics",
+    "L8.S1 corporate equities and dilution",
+    "L7.S3 compounding and cash-flow return"
+  ],
+  "objectives": [
+    "Compare index, active, mutual and exchange-traded fund mechanisms",
+    "Distinguish NAV, secondary ETF quote and premium/discount",
+    "Calculate recurring fee drag and tracking difference",
+    "Assess look-through concentration, leverage and underlying exposure",
+    "Distinguish fund securities from insured bank deposits",
+    "Design a transparent low-cost risk-aware fund allocation"
+  ],
+  "sections": [
+    {
+      "title": "The fund as a legal investment pool and the index as a measurement rule",
+      "body": [
+        "Mutual funds and exchange-traded funds pool investor assets under specific legal investment-company structures and share classes. Investors own shares of the fund, not necessarily a personal legal title to each underlying issuer's stocks or bonds. The fund's prospectus identifies its investment objective, eligible holdings, risks, expenses, redemption mechanism and managers. An index is a rules-based benchmark definition, not a security or a guaranteed investment outcome. An index fund seeks to follow an index through a specified strategy, but may deviate because of costs and implementation.",
+        "Indexes differ radically in market scope and weight methodology. Market-cap-weighted, equal-weight, factor, sector and thematic indexes place different concentration on particular issuers and industries. A fund tracking a broad-sounding index may still be dominated by a few large companies or one country. A '500 company' label cannot establish equal diversification; examine holdings by issuer, sector, geography and factor risk. Some funds hold derivatives, futures or synthetic exposures rather than identical direct securities.",
+        "An active mutual fund attempts to select securities or exposures to outperform a benchmark or meet another mandate; some ETFs are actively managed and some mutual funds follow indexes. The wrapper does not prove whether a strategy is passive. A fund of funds may layer fees, and some smart beta offerings charge higher prices for systematic factors with uncertain excess performance. The actual prospectus and holdings are more informative than marketing terms.",
+        "Begin research with the fund's objective, current statutory prospectus, summary prospectus, annual/semiannual shareholder reports and holdings. Read the benchmark construction methodology and how the fund rebalances. A high historical return can reflect a favorable sector regime, extra risk or luck rather than durable skill. Avoid ranking products on past three-year growth alone when the household's horizon and risk capacity differ."
+      ],
+      "worked": [
+        "Fund portfolio has $10 million assets and $50,000 liabilities, with one million issued shares.",
+        "Simplified net asset value per share=($10m−$50k)/1m=$9.95.",
+        "A benchmark index level of 4,000 is not a price at which you can buy all constituents automatically.",
+        "A sector fund with 60% holdings concentrated in one industry remains concentrated despite many share positions.",
+        "Prospectus costs and exposures determine product suitability, not the wrapper alone."
+      ],
+      "practice": [
+        [
+          "Does buying a fund tracking a named index guarantee receiving the index's exact published returns?",
+          "No. Expenses, transaction costs, sampling, cash holdings, tracking methodology and taxes can make fund performance differ from the benchmark."
+        ],
+        [
+          "Why might a fund containing hundreds of securities still have significant concentration risk?",
+          "Market-cap weighting, overlapping issuers, correlated industries or country/factor exposures can dominate aggregate outcomes despite many holdings."
+        ]
+      ]
+    },
+    {
+      "title": "Net asset value, ETFs' market prices and creation/redemption mechanism",
+      "body": [
+        "Fund net asset value (NAV) is generally assets minus liabilities divided by outstanding shares under the fund's valuation rules. Traditional mutual funds generally process qualifying purchases and redemptions at the next calculated end-of-day NAV, while ETFs trade throughout the market session at changing exchange prices. ETF market price can deviate from NAV, particularly when underlying markets are closed, holdings are less liquid or bid-ask spreads widen.",
+        "ETF authorized participants can create or redeem large blocks of shares through the fund's specified process, often exchanging baskets of securities and/or cash. Arbitrage incentives can help keep ETF market pricing close to underlying holdings, but do not guarantee a zero premium or continuous liquidity during market stress. A share buyer normally transacts on an exchange with another investor rather than directly with the ETF sponsor. The sponsor's fund holdings and secondary-market trading are related but distinct legal flows.",
+        "Suppose a fund's reported NAV is $100 per share and quoted ETF purchase ask is $100.50 while sale bid is $99.90. Buying at $100.50 represents a 0.5% premium to NAV before brokerage costs, and immediately selling at $99.90 realizes a $0.60 spread loss, approximately 0.597% relative to the purchase, even if NAV has not moved. An investor making a small purchase can be affected by spreads more than a few basis points of annual fund expense difference.",
+        "Use limit orders and market-session context appropriately. Spreads may widen at the open, close or during underlying market closures; executing through a market order can yield poor realized price. The value of ETF liquidity is the ability to trade at a market-clearing price, not a promise that the spread or premium will be trivial. Compare actual expected trade size, brokerage rules and fund secondary-market depth."
+      ],
+      "worked": [
+        "Illustrative fund NAV $100, ETF ask $100.50 ⇒ ask premium 0.5%.",
+        "Bid $99.90, ask $100.50 ⇒ quoted spread $0.60 per share.",
+        "Immediate round-trip loss $0.60/$100.50≈0.597%, ignoring brokerage and NAV changes.",
+        "An ETF with low expense ratio can still cost more for short-horizon trading if spreads are wide.",
+        "Fund creation/redemption arbitrage is not perfect, especially in stressed markets."
+      ],
+      "practice": [
+        [
+          "Why can an ETF buyer pay more than the last reported NAV?",
+          "The ETF trades at supply/demand-determined secondary-market prices, with spreads, market timing and underlying asset valuation effects; arbitrage only tends to constrain differences."
+        ],
+        [
+          "Why is a 0.10% expense ratio not the investor's entire ETF cost?",
+          "Trading spreads, premium/discount, transaction costs, possible commissions and tax consequences can also affect realized returns."
+        ]
+      ]
+    },
+    {
+      "title": "Expense ratios, compounding and the difference between gross and net",
+      "body": [
+        "A fund expense ratio represents certain ongoing annual fund operating expenses as a proportion of assets and is generally reflected in NAV rather than billed as a separate annual invoice to every shareholder. Transaction costs, advisory charges, commissions and some portfolio implementation costs may not appear in the advertised expense ratio. An expensive share class can underperform an otherwise identical low-cost one solely because more capital is consumed by recurring operating fees.",
+        "On $20,000, a 0.10% annual fund expense ratio corresponds to approximately $20 of first-year assets and 1% corresponds to approximately $200, with a $180 initial difference. For a deterministic simplified illustration, assume both funds earn 6% before expenses and net annual return factors approximate 1.059 for the 0.10% option and 1.05 for the 1% option. Over 20 years, $20,000 becomes roughly $62,900 versus $53,066; the gap is thousands of dollars from expenses and compounding, under these assumptions.",
+        "Be clear about fee timing and mathematical conventions. Simply subtracting annual expense ratio from annual gross return is an educational approximation, not a replica of fund daily net asset value accounting. Actual yields vary year to year, flows differ and fund expense ratios can change. Financial statements and standardized fund performance report net-of-fee historical performance under applicable disclosure rules; avoid subtracting a fee twice when starting from already net figures.",
+        "Compare costs at the portfolio level as well as share class. If an advice platform charges 0.50% annually on top of a 0.40% fund operating cost, total illustrative recurring percentage drag can approach 0.90% before other charges, subject to fee methods. A low-cost broad fund may be a practical default for long-horizon diversified exposure, but cost alone does not make an unsuitable asset allocation safe."
+      ],
+      "worked": [
+        "Initial $20,000; first-year expense at 0.10% ≈$20 versus at 1.00% ≈$200.",
+        "Initial expense gap ≈$180/year before future changing account values.",
+        "Assume gross 6% annual and simple expense drag ⇒ net rates 5.9% and 5.0%.",
+        "After 20 years compare $20,000×1.059^20 with $20,000×1.05^20.",
+        "Actual after-fee fund NAV will not evolve in guaranteed smooth rates."
+      ],
+      "practice": [
+        [
+          "Why do higher annual fund expenses matter more over decades than the first-year fee gap suggests?",
+          "Fees reduce the capital that remains invested and can compound in subsequent periods, widening the difference in ending balances under otherwise identical assumptions."
+        ],
+        [
+          "Why is it incorrect to subtract a fund's expense ratio again from a historical published net return?",
+          "Standardized fund historical performance may already reflect stated operating expenses, so subtracting again double counts those charges."
+        ]
+      ]
+    },
+    {
+      "title": "Tracking error, tracking difference and active-management selection",
+      "body": [
+        "Tracking difference is the difference between fund and index realized returns over a given horizon, influenced by fees, holdings, cash drag, dividend treatment, securities lending and portfolio rebalancing. Tracking error describes the variability of those differences across observations. The two measures are not interchangeable. An index fund may consistently trail an index by 0.10% per year due to expenses with low tracking error, or vary widely around it while averaging similar performance.",
+        "Suppose an index earns 8% in a fictional year and a fund earns 7.7% on a comparable calculation basis. Tracking difference is −0.3 percentage points. If the gap varies from +0.5 points one quarter to −0.7 points another, tracking error requires a properly specified standard deviation of return differences; the simple annual gap alone does not define it. A fund holding foreign securities may experience differences due to local market closes and currency effects.",
+        "Active funds should be evaluated net of all relevant fees against an appropriate risk-adjusted benchmark and over a sufficiently informative period, not by cherry-picking a short winning interval. Survivorship bias can make historical surviving-fund leaderboards look overly successful because closed funds disappeared from the comparison. Style drift, excessive turnover and a changing benchmark also undermine conclusions. Past performance does not guarantee future results, and a strong backtest does not prove repeatable stock-picking skill.",
+        "The research assignment is to select two plausible funds with the same desired asset exposure, compare underlying holdings, fees, tracking metrics, portfolio turnover, spreads, taxes and fund structure. A valid choice may favor lower fee and simpler exposure while acknowledging implementation tradeoffs. The analyst should describe the exact investor account and expected trading frequency before concluding one ticker is superior."
+      ],
+      "worked": [
+        "Hypothetical benchmark year return 8.0% and fund year return 7.7%.",
+        "Tracking difference fund minus index =−0.3 percentage points.",
+        "Tracking error requires a time series of periodic deviations, not just one annual difference.",
+        "Historical index methodology and dividends must match fund's reported total-return method.",
+        "A winning active fund's one-year result alone is not evidence of persistent skill."
+      ],
+      "practice": [
+        [
+          "What distinguishes tracking difference from tracking error?",
+          "Tracking difference is realized performance gap over a stated horizon, while tracking error measures variability of periodic gaps under a specified statistical method."
+        ],
+        [
+          "Why does survivorship bias matter in mutual-fund performance rankings?",
+          "Defunct or merged unsuccessful funds may be absent from a surviving sample, causing apparent performance history to overstate results investors could have attained."
+        ]
+      ]
+    },
+    {
+      "title": "Diversification, overlapping funds and factor concentration",
+      "body": [
+        "Owning two funds does not necessarily double diversification. A total US equity index fund and a large-cap growth fund can share many top holdings and therefore concentrate the same technology-company and valuation exposure. A multi-asset portfolio should look through fund labels to the underlying stocks, bonds, industries, geography, credit duration, currency and factor behavior. The true risk unit is the economic exposure, not the number of ticker symbols in an account.",
+        "Illustrate a household with $10,000 fund A and $10,000 fund B where 40% of A and 60% of B overlap in the same group of issuers. If those same overlapping positions constitute the relevant common group, exposure to that group totals $4,000+$6,000=$10,000 or half of the combined portfolio. The total investment may contain hundreds of securities but have concentrated factor risk. Precise issuer-level overlap needs actual holdings data rather than additive category percentages when groups differ.",
+        "Asset allocation should follow liabilities and income risk. Broad equity exposure can diversify individual company failures but remains vulnerable to marketwide losses. Bond index funds carry interest-rate and credit duration risk. International funds add currency and foreign regulation. A household whose wages and home equity both depend on the same regional economy may want to avoid further concentrated exposure to that region in investments.",
+        "Measure holdings overlap, largest top-ten position weights, region allocation and leverage rather than relying on fund marketing. Rebalance based on explicit risk targets and cash needs. Diversity of wrapper names, such as one ETF and one mutual fund holding similar companies, is not meaningful protection against a correlated selloff."
+      ],
+      "worked": [
+        "Fund A investment $10,000, overlapping issuer group exposure 40% ⇒ $4,000.",
+        "Fund B investment $10,000, same issuer group exposure 60% ⇒ $6,000.",
+        "Combined overlapping group exposure $10,000/$20,000=50%.",
+        "Fund count two does not establish independent underlying economic risks.",
+        "An emergency cash reserve should remain distinct from both equity funds."
+      ],
+      "practice": [
+        [
+          "Why might adding a large-cap growth ETF to a broad US equity ETF fail to diversify the largest company exposure?",
+          "The two funds may share the same top issuers; adding the second can increase concentration in overlapping securities rather than spread economic risk."
+        ],
+        [
+          "What should an investor inspect to evaluate whether two funds really diversify each other?",
+          "Full or representative holdings, issuer weights, asset classes, sector/country mix, duration, leverage and factor correlations, not fund names alone."
+        ]
+      ]
+    },
+    {
+      "title": "Leveraged, inverse, sector and derivative-based ETFs",
+      "body": [
+        "Some ETFs are designed for daily leveraged or inverse returns and use derivatives and financing to target multiples of an index's daily move. This daily objective is not a guarantee that holding the fund for months produces the same multiple of the index's multi-month cumulative return. Compounding and path dependence can make performance diverge sharply when prices fluctuate. Fees, borrowing costs, swaps, roll effects and potential counterparty exposures can compound the risks.",
+        "Use a two-day example with an index beginning at 100, rising 10% to 110 then declining 9.0909% back to 100. A daily 2× fund, simplifying away fees and tracking deviations, rises 20% on day one, then falls about 18.1818% on day two, leaving 1.20×0.8181818≈0.981818 of starting fund value, a loss of about 1.8182% even though the index returned zero. The fund did not necessarily malfunction; the sequence and reset mechanism created path effects.",
+        "Sector ETFs can be narrow while unlevered, and commodity or futures ETFs may have returns affected by futures curves and roll costs rather than just spot prices. An ETF holding a single stock, high-yield credit or illiquid small securities can be far riskier than a broad diversified index fund. An investor should read daily reset objectives, collateral, counterparties and loss exposure. The wrapper 'ETF' is a trading format, not an assurance of safety.",
+        "A household seeking home closing money in the next twelve months should not use inverse funds as a simple guaranteed hedge against equity loss without understanding basis, daily reset and timing risks. A sophisticated hedge can fail if the market path differs from an assumed one. Portfolio education should prioritize risk identification before product selection."
+      ],
+      "worked": [
+        "Index goes 100→110 (+10%) then 110→100 (−9.0909%).",
+        "A simple daily 2× leveraged product goes 1.00→1.20 (+20%).",
+        "Day two target −18.1818%, ending factor 1.20×(1−.181818)≈.981818.",
+        "Index cumulative ≈0%; leveraged product cumulative≈−1.8182% before fees.",
+        "Daily target leverage is not equivalent to a fixed multiple of cumulative multi-day return."
+      ],
+      "practice": [
+        [
+          "Why can a daily 2× ETF lose value over a volatile two-day period while its underlying index returns to its original price?",
+          "Daily reset and compounding multiply separate leveraged daily growth factors; volatility and changing percentage denominators can create path-dependent losses."
+        ],
+        [
+          "Does a passive ETF label guarantee diversified or low-risk investment?",
+          "No. An ETF can passively track a highly concentrated, leveraged, inverse or otherwise risky index, with additional transaction and market risks."
+        ]
+      ]
+    },
+    {
+      "title": "Fund implementation, taxes and a disciplined asset-allocation plan",
+      "body": [
+        "Fund strategy should begin with the purpose, time horizon and risk budget. Money needed for a near-term housing purchase should not be mixed with long-term retirement investments simply because an app shows them in one account dashboard. Long-horizon assets can support an appropriately diversified allocation consistent with the individual's ability to endure drawdowns, fees and taxes. Investment account type can change tax consequences without changing underlying market volatility.",
+        "In taxable brokerage accounts, mutual fund capital-gain distributions and dividend reporting can produce current tax even if the investor has not sold shares. Some ETF structures may be comparatively tax-efficient in some circumstances, but 'ETF' is not synonymous with tax-free. Tax results depend on underlying securities, fund operations, account, investor jurisdiction and actual distributions. Retirement wrappers may defer or exempt specified taxation under their rules but can restrict access before retirement.",
+        "Suppose $20,000 long-term capital is split 60% broad equity and 40% high-quality bond index funds. If equity loses 25% and bonds decline 5% simultaneously, model value becomes $12,000×.75+$8,000×.95=$16,600, a $3,400 or 17% portfolio decline. Allocation balances risks; it does not guarantee that bonds offset equities during every shock. A separate $12,000 closing reserve should not be included in these risky amounts.",
+        "Create an investment policy listing goal, savings amount, candidate funds, actual benchmarks and holdings, fees, bid-ask spreads, taxes, target allocation, rebalancing threshold and a maximum forced-sale risk. The student must defend a low-cost fund choice with evidence from official prospectuses and independent risk data instead of naming a currently popular ticker."
+      ],
+      "worked": [
+        "Long-term $20,000 portfolio: $12,000 equity fund and $8,000 bond fund.",
+        "Equities decline 25% ⇒ $9,000; bonds decline 5% ⇒ $7,600.",
+        "Combined stressed value $16,600; decline $3,400 or 17%.",
+        "A separate $12,000 near-term home fund should be held outside the risky portfolio under the scenario.",
+        "Historical fund returns and tax efficiencies are not certain future investor outcomes."
+      ],
+      "practice": [
+        [
+          "What is the main mistake in treating a broad equity ETF as a guaranteed down-payment account?",
+          "Even broad equity funds can decline sharply at the time cash is needed; diversification does not remove market risk or guarantee required liquidity."
+        ],
+        [
+          "Why can an ETF in taxable brokerage generate tax without its owner selling shares?",
+          "The fund may distribute taxable dividends or capital gains under its rules, and the investor's tax treatment depends on distributions and jurisdiction."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Investor.gov Mutual Funds and ETFs",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds"
+    ],
+    [
+      "SEC Investor.gov ETF Basics",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/exchange-traded-funds-etfs"
+    ],
+    [
+      "SEC Fund Fees and Expenses",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds/mutual-fund-fees-and-expenses"
+    ],
+    [
+      "SEC Warning Leveraged and Inverse ETFs",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/updated-investor-bulletin"
+    ],
+    [
+      "FINRA Fund Fees",
+      "https://www.finra.org/investors/investing/investment-products/mutual-funds"
+    ],
+    [
+      "IRS Publication 550",
+      "https://www.irs.gov/publications/p550"
+    ]
+  ],
+  "assessment": {
+    "title": "Fund holdings, fees, ETF market mechanics and household portfolio stress",
+    "prompt": "Compute a simple NAV from $10 million assets, $50,000 liabilities and one million shares; compare ETF NAV $100 to ask $100.50 and bid $99.90; evaluate expense ratios 0.10% versus 1.00% on $20,000 over twenty years using hypothetical 6% gross annual return; compute a $20,000 60/40 portfolio loss under −25% equity and −5% bonds. Explain tracking difference versus tracking error, potential fund overlap and path dependence in a two-day daily 2× ETF. Design a risk-aware long-term allocation with separate home-closing cash.",
+    "rubric": [
+      "Fund ownership, NAV and share creation mechanism (20%)",
+      "Expense ratio, return and trading-cost calculations (25%)",
+      "Tracking and look-through diversification (20%)",
+      "Leveraged instruments and liquidity stress (20%)",
+      "Primary disclosures and portfolio-policy clarity (15%)"
+    ]
+  }
+}
