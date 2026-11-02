@@ -1,0 +1,249 @@
+{
+  "id": "L9.S4",
+  "title": "REITs, Annuities and Alternatives",
+  "subtitle": "Real-estate security structure, retirement insurance contracts, illiquidity, private investment fees and payout quality",
+  "prerequisites": [
+    "L2.S2 home equity and real estate costs",
+    "L5.S1 insurance cash values and contractual guarantees",
+    "L8.S2 cash from operations and leverage",
+    "L9.S3 fund fees, share structure and NAV"
+  ],
+  "objectives": [
+    "Classify equity REITs, mortgage REITs and nontraded REIT liquidity",
+    "Separate distributions from income, cash return and return of investor capital",
+    "Interpret REIT FFO/AFFO cash-flow metrics with caution",
+    "Assess annuitization, guarantees, riders, fees and surrender charges",
+    "Model income payout and inflation erosion across a long retirement",
+    "Evaluate private-placement disclosure, lockups, leverage and fee waterfalls",
+    "Apply household due-date liquidity and trust-beneficiary constraints"
+  ],
+  "sections": [
+    {
+      "title": "Public REITs: company shares are real-estate exposure, not deed ownership",
+      "body": [
+        "A real estate investment trust (REIT) is a company or qualifying vehicle that meets specified federal rules related to real estate holdings, income and shareholder distributions. Equity REITs commonly own income-producing properties and earn rent, while mortgage REITs finance or invest in real-estate debt and may be highly sensitive to leverage and funding spreads. Buying REIT stock generally gives ownership of corporate shares rather than direct title to the underlying building or authority to sell a specific apartment.",
+        "Publicly traded REITs offer an exchange-traded market price but remain exposed to equity market volatility, interest rates, tenant vacancies, maintenance, refinancing and management execution. A shopping-center REIT with weak tenant demand can lose property income even while general home values rise. REIT funds offer diversified property-company exposure but can overlap heavily in property sectors or mortgage debt factors; sector labels do not guarantee a stable investment.",
+        "Suppose an owner invests $50,000 in a publicly traded REIT and receives $2,000 cash distributions in a year. Cash distribution ratio is $2,000/$50,000=4%, but if the shares' market value falls to $43,000, total before-tax holding-period return is ($43,000−$50,000+$2,000)/$50,000=−10%. A high distribution is not a guaranteed total gain and may not represent recurring property operating profit.",
+        "Analyze lease maturities, same-property net operating income, occupancy, debt costs, asset dispositions, tax status and management rights. A property REIT's performance is not a direct substitute for a household's first-home purchase decision: public REIT ownership does not generally provide a place for the household to live or remove mortgage payment obligations."
+      ],
+      "worked": [
+        "Initial REIT shares $50,000, cash distributions $2,000 ⇒ 4% cash distribution rate.",
+        "If market value ends $43,000, price change −$7,000.",
+        "Total return ($43,000+$2,000−$50,000)/$50,000=−10% before tax/costs.",
+        "A 4% cash distribution can coexist with a negative total investment return.",
+        "Shareholder typically lacks direct legal title to individual REIT buildings."
+      ],
+      "practice": [
+        [
+          "Why is owning REIT shares not legally equivalent to owning a fractional deed to a named apartment building?",
+          "The investor owns a security of the REIT entity with corporate rights, not direct title or control over a specified property."
+        ],
+        [
+          "Why can a REIT's 4% cash distribution coexist with a negative investment year?",
+          "The shares can decline more in market value than the cash distributed; distributions alone do not measure total shareholder return."
+        ]
+      ]
+    },
+    {
+      "title": "REIT property economics, funds from operations and leverage",
+      "body": [
+        "Traditional net income for a real estate company reflects real estate depreciation, which can be large even when property sale values do not decline in the same pattern. Funds from operations (FFO) is a widely used REIT performance measure under industry conventions that typically adjusts GAAP net income for real-estate depreciation/amortization and certain property sale gains or losses, with details depending on the defined standard. Adjusted FFO (AFFO) has less uniform definition and may address recurring capital expenditure, leasing commissions and straight-line rent effects. Neither metric is universally the same as free cash available to ordinary shareholders.",
+        "Take a fictional REIT with GAAP net income $20 million, property depreciation $15 million and excluded qualifying property sale gain $5 million. Under a simplified FFO adjustment, modeled FFO=$20m+$15m−$5m=$30 million. If recurring maintenance and leasing capital demands are $10 million, a simplified available-cash proxy falls to $20 million before other adjustments and debt payments. A $25 million distribution might be below FFO but above this adjusted cash measure; investors need a complete distribution coverage bridge.",
+        "Property capitalization rate is net operating income divided by purchase value under defined conditions. An asset producing $6 million property NOI valued at $100 million implies 6% cap rate, not a guaranteed equity yield. If the property finances $60 million debt at a variable rate, rising interest costs can compress equity cash even while property NOI remains stable. Leverage can magnify both property appreciation and losses and can force equity issuance or asset sales when refinancing is difficult.",
+        "Review property appraisals, debt maturity ladder, loan covenant ratios, tenant and geographic concentration, fee agreements and recurring capex requirements. If an advisor compares a REIT's advertised cash distribution yield to a bank APY, identify the huge difference in market price, tenant, credit, distribution and liquidity risks before interpreting the percentages."
+      ],
+      "worked": [
+        "Fictional GAAP net income $20m + property depreciation $15m − property sale gain $5m ⇒ simplified FFO $30m.",
+        "Recurring capital/leasing uses $10m ⇒ illustrative AFFO-like cash proxy $20m.",
+        "Dividend distributions $25m exceed this $20m proxy by $5m despite being below FFO $30m.",
+        "Property NOI $6m divided by property market value $100m ⇒ 6% cap rate.",
+        "Cap rate is property-level operating yield before financing, not cash yield to levered REIT shares."
+      ],
+      "practice": [
+        [
+          "Why can a REIT distribution covered by FFO still be difficult to sustain?",
+          "FFO may omit recurring property capital expenditure, leasing costs and some financing needs; after those uses, available cash can be smaller."
+        ],
+        [
+          "Why does a property's 6% cap rate not guarantee a 6% shareholder return?",
+          "Debt interest, vacancies, capital expenditure, management fees, taxes, sale price and financing leverage affect actual cash and equity value."
+        ]
+      ]
+    },
+    {
+      "title": "Non-traded REITs: redemptions, valuation opacity and principal-funded distributions",
+      "body": [
+        "Some REIT securities are SEC-registered yet not listed on a public exchange. Their investors may depend on limited issuer redemption programs or an eventual listing, sale or liquidation for liquidity. Redemption programs may impose caps, waiting periods, pricing adjustments or suspension rights. A stated daily or quarterly NAV from sponsor methodology does not necessarily equal a price at which the investor can sell their full position in stress. The SEC's investor bulletins warn particularly about nontraded REIT liquidity, fees and distributions from offering proceeds or borrowing.",
+        "A fictional investor pays $50,000 into a non-traded REIT and receives $2,000 annual cash distributions. If $1,200 of the distribution comes from earned property cash and $800 from return of investor capital, the headline 4% cash distribution is only 2.4% from modeled earned cash relative to original principal. Return-of-capital classification can reduce tax basis under applicable rules; it is not newly created investment profit. Actual payout sources and tax reporting require issuer disclosures.",
+        "Suppose a redemption agreement only permits 2% of fund shares to be redeemed in a period and requests exceed that amount. A holder asking for $20,000 may receive substantially less or nothing according to program terms. The household cannot treat a redemption request like a bank withdrawal. Sales commissions, organizational expenses, leverage and conflicts involving external managers can further reduce value and align incentives imperfectly.",
+        "An investor contemplating a home down payment within two years should not lock the required funds in an asset whose exit depends on a future manager election or uncertain property sale. For any nontraded security, collect the offering circular, fee schedule, risk disclosures, redemption policy, audited statements and related-party transaction descriptions before investing. 'Real estate backed' is not a substitute for a legal claim and liquidity schedule."
+      ],
+      "worked": [
+        "Initial purchase $50,000, annual cash payout $2,000 ⇒ headline 4% cash distribution ratio.",
+        "Hypothetical earned operating cash part $1,200 ⇒ 2.4% of principal; return-of-capital part $800 ⇒ 1.6% of principal.",
+        "If tax treatment confirms return of capital, adjusted tax basis may decline by $800 under applicable law.",
+        "A redemption cap or suspension can prevent recovery of the requested cash at the stated sponsor NAV.",
+        "No dollar amount from a redemption request should be booked as liquid cash until the contract and execution support it."
+      ],
+      "practice": [
+        [
+          "What does a 4% distribution from a non-traded REIT fail to establish?",
+          "It does not prove four percent earnings or total investment return; some cash may come from borrowings or returned investor capital while market liquidity is constrained."
+        ],
+        [
+          "Why is a sponsor-reported NAV not a guarantee an investor can withdraw all value on demand?",
+          "Non-traded redemption plans can be limited, delayed, repriced or suspended, and the sponsor's valuation may not be an executable market quote."
+        ]
+      ]
+    },
+    {
+      "title": "Annuities: insurance contracts, income rights and the accumulation/payout split",
+      "body": [
+        "An annuity is an insurance contract that can support accumulation, retirement income or both. A fixed deferred annuity credits interest under contract guarantees and insurer conditions. A variable annuity exposes some account values to investment subaccounts, usually alongside insurer charges and optional benefit terms. An indexed annuity credits interest by a stated index-linked formula with participation, caps, spreads or floors; it is not equivalent to directly owning an index mutual fund. Insurer financial strength and exact policy language determine promises.",
+        "During accumulation, contract owners may contribute money and accumulate value. Annuitization converts an eligible value into a stream of income based on selected payout option and life or term contingencies. Choosing life-only versus life-with-period-certain or joint-life survivor options can change monthly benefit and what heirs may receive after death. Annuitization may eliminate the owner's ability to withdraw an ordinary account balance or change the payment design. A projected payout illustration is not interchangeable with a guaranteed surrender value.",
+        "Consider a $100,000 annuity payout illustration promising a hypothetical $600/month for life under a specified annuitant and contract. Annual cash payout is $7,200 or 7.2% of purchase premium, but that is not a 7.2% investment yield. The stream can include return of the original premium, and the economic value depends on lifespan, insurer performance, applicable survivor guarantee, inflation and what amount remains payable upon death. Comparing the payout ratio with a Treasury yield is mathematically and contractually invalid.",
+        "Annuities can have a legitimate role for longevity-risk transfer when an individual wishes to reduce the risk of outliving income, but a product's value must be compared with its surrender restrictions, tax benefits, counterparty risk, fees and the household's existing pension or Social Security income. An annuity bought with retirement-account money may not add distinct tax deferral because the underlying account already has such treatment."
+      ],
+      "worked": [
+        "Annuity premium $100,000 with fictional fixed payout $600/month ⇒ $7,200 annual receipts.",
+        "Annual cash payment divided by premium $7,200/$100,000=7.2% payout rate.",
+        "That 7.2% is not a yield: principal recovery may be included in each payment.",
+        "Life-only and survivor payout options produce different income and beneficiary outcomes.",
+        "The financial decision requires insurer guarantee, inflation and liquidity assessment."
+      ],
+      "practice": [
+        [
+          "Why should a retirement annuity paying 7.2% of initial premium annually not be advertised as a guaranteed 7.2% investment return?",
+          "The payment stream often includes return of the original premium and depends on survival, contract options and insurer performance, unlike a coupon yield on principal."
+        ],
+        [
+          "What is a potential tradeoff when converting a deferred annuity into irreversible lifetime payments?",
+          "Longevity income protection can improve while control of the account balance and access for emergency withdrawals or heirs may diminish under selected terms."
+        ]
+      ]
+    },
+    {
+      "title": "Fees, surrender periods, riders and annuity withdrawal taxes",
+      "body": [
+        "Variable and some fixed or indexed annuities can have surrender charges, contract administration fees, mortality-and-expense charges, underlying fund expenses and optional rider fees. Some contract charges depend on premium or amount withdrawn; others accrue as a percentage of assets. Advertised credited performance or income guarantees may apply only to a separate notional benefit base used to calculate a payout, not freely withdrawable cash value. A rider showing an increasing 'income base' can be mistaken for actual investment account growth.",
+        "Take a fictional variable annuity account worth $20,000 with annual mortality-and-expense charge 1.25%, administration fee 0.15% and underlying investment fund fee 0.80%. Simplified total stated annual percentage charges are 2.20%, or about $440 on an unchanged $20,000 base, before additional rider and transaction fees. This does not predict exact daily fee deduction but reveals the economic drag. A low-cost diversified fund with no annuity benefits is not contractually identical; compare on equal terms.",
+        "Suppose $10,000 annuity cash value is being surrendered during a year with a 7% applicable surrender charge on the full withdrawal. Simplified proceeds before tax are $9,300. If a free-withdrawal allowance applies, the chargeable amount may be smaller under actual policy terms. Withdrawals can have ordinary income tax implications, and some early distributions can cause additional tax under federal rules. Tax treatment depends on qualified versus nonqualified status, basis and payout method.",
+        "The pre-purchase audit includes free-look period, surrender schedule, market value adjustment, caps and indexing formula, rider conditions, guaranteed versus nonguaranteed values, insurer financial strength, agent compensation and actual beneficiary provisions. A product with large surrender charges is especially unsuitable for a home fund that may be needed earlier than expected. Tax deferral alone rarely justifies ignoring legal liquidity limitations."
+      ],
+      "worked": [
+        "Hypothetical annual fees 1.25% M&E + 0.15% administration + 0.80% underlying fund =2.20%.",
+        "On unchanged $20,000 account base, approximated annual cost $440, excluding other fees.",
+        "Full surrender $10,000 with illustrative 7% charge ⇒ pre-tax cash $9,300.",
+        "A rider's stated benefit base is not necessarily withdrawable account value.",
+        "Federal income tax and additional-tax eligibility require contract-specific classification and age information."
+      ],
+      "practice": [
+        [
+          "Why can the growth of an annuity 'income benefit base' fail to represent immediately accessible investment wealth?",
+          "The benefit base may be a notional value used to calculate specified income guarantees, separate from cash value and subject to rider conditions."
+        ],
+        [
+          "What information is missing from a salesperson's promise of tax-deferred annuity growth at 6%?",
+          "Guaranteed versus illustrated crediting, all contract and underlying fees, surrender rules, taxes, insurer credit, rider terms and whether the quoted base is actually withdrawable."
+        ]
+      ]
+    },
+    {
+      "title": "Private funds, alternative investments and lockup financing risk",
+      "body": [
+        "Alternative investments include private equity, private credit, venture capital, hedge funds, real assets and many other structures. The label does not identify one stable asset class, and their returns may reflect leverage, fees, illiquidity, valuation practices and economic cycle risk. Some private placements are limited to qualified or accredited investors or other specific exemptions and may have resale restrictions. The SEC warns that private placements can provide less public reporting, limited liquidity and the possibility of total loss.",
+        "Private funds can require capital commitments rather than immediate full payment. A limited partner who commits $50,000 but initially funds only $15,000 may remain legally obligated to contribute another $35,000 when the manager issues capital calls under the partnership agreement. This unfunded commitment is a real future liquidity need even if the account dashboard initially shows only invested capital. Failure to fund can trigger penalties or forfeiture under contract terms.",
+        "Fee waterfalls can be complicated. A simplified fund charging 2% annually on a hypothetical $100,000 fee base and 20% of $10,000 investment profit, with no hurdle, catch-up or other adjustments, could incur $2,000 management fee plus $2,000 performance allocation before other costs. Real agreements may compute fee on commitments, invested capital or NAV and use preferred returns, loss carryforwards and high-water marks. Quoted gross IRR may differ dramatically from net investor cash-on-cash return after fees and delayed distributions.",
+        "A household with $250–$500 monthly discretionary savings and a future home purchase must not assume private assets can be sold to meet a surprise tax or mortgage bill. Read audited financials, valuation policies, conflicts, side letters, limited-partner rights, capital call schedules and transfer restrictions. The appropriate answer may be to decline an investment for lack of liquidity or verifiable disclosure rather than chase a headline 15% target return."
+      ],
+      "worked": [
+        "Private fund total commitment $50,000, initial capital call $15,000 ⇒ unfunded obligation $35,000.",
+        "Simple annual management fee 2% on $100,000 stated fee base ⇒ $2,000.",
+        "Simplified performance fee 20% of eligible $10,000 profit ⇒ $2,000 before actual waterfall adjustments.",
+        "Gross performance and net investor return differ with fees, timing and capital calls.",
+        "A commitment is not the same as cash already invested or unrestricted liquidity."
+      ],
+      "practice": [
+        [
+          "Why is a private fund's unfunded capital commitment important to a household's cash budget?",
+          "The agreement may legally require additional contributions at manager-selected dates, potentially conflicting with mortgage, tax or emergency obligations."
+        ],
+        [
+          "Why must '2 and 20' marketing be verified in the actual limited-partnership agreement?",
+          "Management fee bases, eligible profit, hurdle and high-water marks, fee timing and additional expenses differ and determine actual net investor returns."
+        ]
+      ]
+    },
+    {
+      "title": "Alternatives versus home equity, inheritance and portfolio risk policy",
+      "body": [
+        "Long-horizon alternatives may diversify some traditional public-market exposures, but illiquidity is not automatically a premium the investor will earn. Reported private-asset NAV can be smoothed by periodic appraisal and stale valuations, which may make measured historical volatility look artificially low despite underlying economic risk. High fees, leverage, correlated property markets, manager conflicts and restricted exits can erode or delay returns. A public REIT can be marketable but volatile; a non-traded REIT can be difficult to exit; an annuity may have defined payout guarantees with irreversible elections.",
+        "Consider a household holding $18,000 total accessible cash and needing $6,000 emergency reserve plus $12,000 future home closing. A promoter offers a $5,000 nontraded REIT or a $5,000 annuity with surrender limitations. Funding it from the $18,000 leaves only $13,000 accessible, a $5,000 hole against the two stated cash needs. A 4% distribution on the investment produces $200 hypothetical annual receipts, not the $5,000 liquidity required for a closing. A beneficiary trust cannot create extra liquid assets simply by changing legal titles.",
+        "An integrated decision compares five dimensions: legal claim, underlying cash source, current executable exit price, time to exit and stress loss. Cash deposits, Treasury bills, index funds, REIT shares, annuities and private funds can each support specific goals, but not one universal safety or performance ranking. Long-term investments should be evaluated after sufficient liquidity is secured and after existing mortgage, insurance and retirement account responsibilities are understood.",
+        "Close Module 9 with a comprehensive investment committee memorandum. Identify which product actually solves a stated problem, verify its primary disclosure documents, quantify fee drag and principal stress, and document conditions for choosing none of the products. A plan that preserves home closing and emergency reserves may be more successful than one presenting the highest advertised gross return."
+      ],
+      "worked": [
+        "Accessible assets $18,000 minus required emergency $6,000 minus home closing $12,000 ⇒ $0 spare cash.",
+        "Locking $5,000 into illiquid asset reduces accessible cash to $13,000, shortfall $5,000.",
+        "4% distribution on $5,000 = $200/year, not recovery of $5,000 closing principal.",
+        "Beneficiary ownership changes do not eliminate illiquid product redemption restrictions.",
+        "Suitable investment decisions begin with cash liabilities and documented product rights."
+      ],
+      "practice": [
+        [
+          "Why can an illiquid alternative investment worsen a family inheritance plan even if it produces cash distributions?",
+          "Restricted exits, uncertain valuations, fees and ongoing obligations can leave heirs or a trustee unable to fund mortgage, tax or living expenses when due."
+        ],
+        [
+          "Why can 'no investment in this product' be the correct conclusion of a professional portfolio assessment?",
+          "When contractual costs, unverifiable valuation, complex payouts or cash-locking terms exceed a household's risk and liquidity capacity, abstaining preserves financial resilience."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Investor.gov Public REITs",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-65"
+    ],
+    [
+      "SEC Investor.gov Nontraded REITs",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-89"
+    ],
+    [
+      "SEC Investor.gov Annuities",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/annuities"
+    ],
+    [
+      "SEC Investor.gov Variable Annuity Fees",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/annuities/variable-annuities"
+    ],
+    [
+      "NAIC Fixed Deferred Annuity Buyer Guide",
+      "https://content.naic.org/sites/default/files/publication-anb-lp-consumer-annuities.pdf"
+    ],
+    [
+      "SEC Investor.gov Private Placement Risks",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/private-placements-under-regulation-d-updated-investor-bulletin"
+    ],
+    [
+      "SEC Private Funds Overview",
+      "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/starting-private-fund"
+    ],
+    [
+      "IRS Publication 550",
+      "https://www.irs.gov/publications/p550"
+    ]
+  ],
+  "assessment": {
+    "title": "Public and nontraded REIT, annuity and private-fund suitability audit",
+    "prompt": "Compute holding-period total return on a $50,000 REIT earning a $2,000 distribution while ending equity value falls to $43,000; derive illustrative FFO ($20m GAAP profit+$15m real estate depreciation−$5m gain) and assess $25m distributions after $10m recurring capital need. Analyze nontraded REIT payout split $1,200 earnings/$800 investor capital. Compare $100,000 annuity $600/month income payout, 2.2% combined annual fees and 7% surrender charge; explain payout versus investment yield. Audit a $50,000 private commitment with $35,000 unfunded obligation. Recommend an appropriate use, or no use, for an investor needing $18,000 near-term home and emergency cash.",
+    "rubric": [
+      "REIT claim, FFO and liquidity analysis (25%)",
+      "Economic distribution and total return distinctions (20%)",
+      "Annuity payout, fees and surrender-contract rights (25%)",
+      "Private placement obligations, fees and disclosure (20%)",
+      "Household suitability and evidence (10%)"
+    ]
+  }
+}
