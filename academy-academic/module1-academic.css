@@ -1,0 +1,30 @@
+
+/* Academic edition: scoped to avoid changing approved global UI. */
+.wl-reader .wlr-tabs.wl-m1-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.wl-reader .wlr-tabs.wl-m1-tabs button{font-size:10px;padding-inline:1px}
+.wl-reader .wl-academic{overflow-wrap:anywhere}
+.wl-academic .wl-acad-kicker,.wl-academic .eyebrow,.wl-academic .part-label{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#e3bf78;font-weight:800}
+.wl-academic .wl-acad-explain,.wl-academic .wl-acad-foot,.wl-academic .sub{font-size:12px;color:#c9d7c9;line-height:1.6}
+.wl-academic .academic section{margin:21px 0 27px;padding-top:17px;border-top:1px solid #52785f}
+.wl-reader .wl-academic h1{font:600 27px/1.2 Georgia,serif;margin:10px 0 14px;color:#ffefdc}
+.wl-reader .wl-academic h2{font:600 23px/1.25 Georgia,serif;margin:21px 0 12px;color:#ffedc7}
+.wl-reader .wl-academic h3{font:700 16px/1.32 system-ui;margin:18px 0 8px;color:#ead4a6}
+.wl-academic p,.wl-academic li{font-size:14px;line-height:1.77;color:#f0ecdf}
+.wl-academic a{color:#b8e7c1;text-decoration:underline;text-underline-offset:3px}
+.wl-academic .tablewrap{overflow-x:auto;margin:15px 0;border:1px solid #467158;border-radius:9px}
+.wl-academic table{width:100%;border-collapse:collapse;font-size:12px;min-width:340px}
+.wl-academic th,.wl-academic td{text-align:left;padding:8px;border-bottom:1px solid #3c624d;color:#e7eee0;white-space:normal}
+.wl-academic th{background:#1a4434;font-weight:800}
+.wl-academic .lab{border:1px solid #627756;background:#163a2c;border-radius:12px;padding:14px;margin:17px 0}
+.wl-academic .lab .controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.wl-academic .lab label{font-size:11px;color:#e7e2cd;display:block}
+.wl-academic .lab input{width:100%;display:block;margin-top:6px;padding:9px;border-radius:7px;border:1px solid #68826c;background:#0d2b22;color:#fff}
+.wl-academic .lab .results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:13px}
+.wl-academic .metric{padding:9px;background:#0d2c22;border:1px solid #486a54;border-radius:8px}
+.wl-academic .metric span{display:block;color:#c6cfbd;font-size:10px}
+.wl-academic .metric b{display:block;color:#f7e3ac;font-size:15px;margin-top:5px;word-break:break-word}
+.wl-academic .source-list{padding-left:19px}
+.wl-academic .wl-acad-capstone{border:1px solid #8e8755;border-radius:12px;background:#103128;padding:12px;margin-top:24px}
+.wl-academic .wl-acad-capstone summary{cursor:pointer;color:#f8e4b2;font-weight:750}
+.wl-academic .wl-acad-capstone section{margin:18px 0}
+@media(max-width:390px){.wl-reader .wlr-tabs.wl-m1-tabs button{font-size:9px}.wl-academic .lab .controls{grid-template-columns:1fr}}
