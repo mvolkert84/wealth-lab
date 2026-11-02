@@ -1,0 +1,41 @@
+
+/* Module 4 Academic Expansion: preserved shared reader, fully scoped dark theme. */
+.wl-reader .wlr-tabs.wl-m4-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.wl-reader .wlr-tabs.wl-m4-tabs button{font-size:10px;padding-inline:1px}
+.wl-m4-academic{overflow-wrap:anywhere}
+.wl-m4-academic .wl-m4-section{padding:18px 0 24px;margin:15px 0;border-top:1px solid #52785f}
+.wl-m4-academic .wl-m4-section > p{font-size:14px;line-height:1.83;color:#f1ede2;margin:0 0 15px}
+.wl-m4-academic .wl-m4-section .part-label{color:#e7bd76;letter-spacing:.12em;font-size:10px}
+.wl-m4-academic .wl-m4-worked{margin:16px 0;padding:14px;background:#173c2f;border:1px solid #517a5f;border-radius:12px}
+.wl-m4-academic .wl-m4-worked h3{margin:0 0 9px;font-size:16px;color:#f7d89d}
+.wl-m4-academic .wl-m4-worked ol{padding-left:21px}
+.wl-m4-academic .wl-m4-worked li{margin:0 0 10px;font-size:13px;line-height:1.6}
+.wl-m4-academic .wl-m4-exercises{margin:14px 0}
+.wl-m4-academic .wl-m4-exercises h3{font-size:15px}
+.wl-m4-academic .wl-m4-exercises details,.wl-m4-academic .wl-m4-toc,.wl-m4-academic .wl-m4-selfcheck,.wl-m4-academic .wl-m4-capstone{border:1px solid #51745c;border-radius:10px;padding:12px;margin:11px 0;background:#0e3025}
+.wl-m4-academic summary{cursor:pointer;color:#f3daa3;font-size:13px;font-weight:700;line-height:1.5}
+.wl-m4-academic details>p,.wl-m4-academic details li{font-size:13px;line-height:1.7;margin-top:9px}
+.wl-m4-academic .wl-m4-assessment,.wl-m4-academic .wl-m4-sources{border-top:1px solid #53745e;padding:19px 0;margin:23px 0}
+.wl-m4-academic .wl-m4-assessment li,.wl-m4-academic .wl-m4-sources li{margin-bottom:9px}
+.wl-m4-academic .wl-m4-selfcheck label{display:block;margin:11px 0;font-size:12px;color:#f4e8d2}
+.wl-m4-academic .wl-m4-selfcheck input{width:100%;display:block;margin:5px 0;padding:10px;border:1px solid #64836f;border-radius:8px;background:#0c281e;color:#fff}
+.wl-m4-academic .wl-m4-selfcheck button{padding:11px 14px;font-size:12px;margin-top:9px}
+.wl-m4-academic .wl-m4-selfcheck [data-m2-feedback]{color:#f3d7a1;font-size:12px;margin:12px 0}
+.wl-m4-academic .wl-m4-warning{font-size:11px;color:#cfd4c4;margin:13px 0 0}
+.wl-m4-academic .wl-m4-capstone{border-color:#b6a165}
+.wl-m4-academic .wl-m4-toc a{font-size:12px;color:#bcebc5}
+.wl-m4-academic .wl-m4-sources a{color:#bbebc8;font-size:13px}
+.wl-m4-academic .lab .controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wl-m4-academic .lab .results{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:390px){.wl-reader .wlr-tabs.wl-m4-tabs button{font-size:9px}.wl-m4-academic .lab .controls{grid-template-columns:1fr}}
+
+.wl-m4-academic .wl-m4-models{margin:28px 0;padding-top:15px;border-top:1px solid #53745e}
+.wl-m4-academic .wl-m4-models>p{font-size:12px;color:#cdd9cf}
+.wl-m4-academic .wl-m4-lab{margin:18px 0;padding:15px}
+.wl-m4-academic .wl-m4-lab .controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wl-m4-academic .wl-m4-lab .results{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wl-m4-academic .wl-m4-lab label{font-size:11px}
+.wl-m4-academic .wl-m4-selfcheck p{font-size:12px;color:#d8e6d8}
+.wl-m4-academic .wl-m4-exercises details>p{line-height:1.75}
+.wl-m4-academic .wl-m4-capstone li{margin:8px 0}
+@media(max-width:390px){.wl-m4-academic .wl-m4-lab .controls{grid-template-columns:1fr}}

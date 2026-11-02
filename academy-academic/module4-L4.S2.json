@@ -1,0 +1,254 @@
+{
+  "id": "L4.S2",
+  "title": "Risk, Time and Liquidity",
+  "subtitle": "Quantitative portfolio risk, diversification, cash-flow horizons and robust decision-making",
+  "prerequisites": [
+    "L1.S2 cash-flow timing",
+    "L1.S3 compounding and inflation",
+    "L4.S1 security returns and claims"
+  ],
+  "objectives": [
+    "Calculate expected return and weighted portfolio exposure",
+    "Derive two-asset variance and interpret correlation",
+    "Measure standard deviation, drawdown, volatility drag and loss recovery",
+    "Stress-test goal-based savings under negative market returns",
+    "Implement a rebalance rule that respects costs, taxes and cash constraints",
+    "Create an investment policy with credible downside and liquidity buffers"
+  ],
+  "sections": [
+    {
+      "title": "Risk is multiple dimensions, not one volatility number",
+      "body": [
+        "An investor faces market risk, credit risk, inflation risk, liquidity risk, concentration risk, counterparty risk, leverage risk, regulatory risk and the risk of failing to fund a goal on time. These may be correlated during crises. Volatility measured from historical returns describes one aspect of uncertainty, not every risk. A deposit may have low nominal price volatility but still lose purchasing power; a long-duration government bond may have low default probability but significant interim price risk; a broad stock fund can be diversified across firms while exposed to economy-wide losses.",
+        "Risk tolerance is willingness to experience uncertainty, whereas risk capacity reflects whether a household can financially survive a loss without breaching necessary obligations. Time horizon states when the money is needed, not how long the buyer likes a particular fund. A $20,000 home-closing reserve due in one year has a different loss capacity from $20,000 of retirement money expected to remain invested for decades. Failure to distinguish these questions can make high expected returns irrelevant.",
+        "Document four risk categories for every allocation: the chance of a loss, the potential size of a loss, the ability to recover before a spending deadline, and the possibility of illiquid exit. A risk register can list the source of exposure and controls such as diversification, appropriately liquid reserves and debt limits. Hedging can itself cost money and fail to remove all risk. Never state that a stock's past performance or a fund's legal registration ensures its future return."
+      ],
+      "worked": [
+        "Household liquid account $16,000, of which $10,000 is due for closing in twelve months.",
+        "A 25% decline on $10,000 invested in equities could leave $7,500, a $2,500 closing shortfall.",
+        "The same $2,500 drawdown may be tolerable in a distant retirement goal if reserves and expenses are protected.",
+        "A 3% inflation year reduces the purchasing power of an unchanged $10,000 nominal balance to about $9,708.74 in prior-year dollars.",
+        "Categorize nominal loss risk, real-value loss risk, timing risk and liquidity risk separately."
+      ],
+      "practice": [
+        [
+          "Why is a cash account not 'risk free' merely because its dollar balance does not fluctuate?",
+          "Inflation may erode its real purchasing power, institutions and product terms matter, and opportunities can be forgone. Low market-price volatility is not zero economic risk."
+        ],
+        [
+          "What makes two households with identical risk tolerance different in appropriate equity allocation?",
+          "Their income stability, obligations, time horizon, existing debt, insurance, accessible reserves and ability to delay withdrawals can differ materially."
+        ]
+      ]
+    },
+    {
+      "title": "Weighted returns and why arithmetic averages cannot predict wealth",
+      "body": [
+        "For an unlevered portfolio with beginning weights w_i and single-period security returns R_i, portfolio holding-period return is R_p=Σw_iR_i, provided weights sum to one and cash flows, fees and rebalancing timing are handled consistently. The formula is exact for a period whose weights are established at the beginning and whose constituents' returns are measured on the same basis. Expected portfolio return is E[R_p]=Σw_iE[R_i], but each constituent expectation is an uncertain modeling input.",
+        "Assume a portfolio begins with 60% stocks and 40% bonds. If stocks earn +12% over a year and bonds −3%, the no-external-cash-flow period return is 0.60×12%+0.40×(−3%)=6%. The portfolio worth $10,000 becomes $10,600 before costs and taxes. Its ending equity share rises because stocks outperformed, so future weights drift. A rebalancing policy must specify whether the investor trades at period end or lets this new exposure persist.",
+        "Arithmetic and geometric means matter particularly when money compounds. A two-year sequence of +30% then −20% gives arithmetic mean +5%, but cumulative value factor 1.3×0.8=1.04, equivalent to about +1.98% compound annual growth. The order of those two annual returns does not change ending wealth without cash flows, but adding or withdrawing funds at different times makes return sequence economically decisive."
+      ],
+      "worked": [
+        "Starting portfolio $10,000, 60% equity and 40% bond ⇒ $6,000 equity, $4,000 bonds.",
+        "Stocks +12% ⇒ $6,720; bonds −3% ⇒ $3,880; total $10,600.",
+        "One-year return $600/$10,000=6%, ending equity weight $6,720/$10,600≈63.40%.",
+        "+30% then −20% compounded factor 1.04, not arithmetic mean +5% per year.",
+        "Two-year geometric mean (1.04)^(1/2)−1≈1.98% annually before costs."
+      ],
+      "practice": [
+        [
+          "Calculate the one-year return of a 70/30 portfolio if equities lose 15% and bonds gain 4%.",
+          "0.70×(−15%)+0.30×4%=−9.3%. A $10,000 initial account becomes $9,070 before fees and cash flows."
+        ],
+        [
+          "Why must weights be defined at the beginning of the measurement period to calculate realized weighted return?",
+          "Asset weights change as prices move; combining ending weights with full-period security returns can double-count drift and give the wrong portfolio result."
+        ]
+      ]
+    },
+    {
+      "title": "Variance, covariance and why correlation drives diversification",
+      "body": [
+        "Two assets may each be volatile while their combined portfolio is less volatile if they do not move in lockstep. Portfolio variance for two assets is σp²=w₁²σ₁²+w₂²σ₂²+2w₁w₂σ₁σ₂ρ, where ρ is their return correlation and σ denotes standard deviation measured over the same interval. The covariance contribution is the cross term. The weights, volatilities and correlation must be aligned to identical return frequencies and assumptions. Historical estimates are uncertain and may change substantially during a crisis.",
+        "Consider a 60% stock asset with 20% assumed annual volatility, a 40% bond asset with 6%, and correlation 0.20. Portfolio variance equals (0.6×0.20)²+(0.4×0.06)²+2×0.6×0.4×0.20×0.06×0.20=0.016128. Portfolio standard deviation is about 12.70%. At correlation 1, standard deviation would be exactly 0.6×20%+0.4×6%=14.4% for positive weights; lower correlation reduces modeled portfolio volatility.",
+        "Correlation is not causation, nor does low historical correlation guarantee a hedge in distress. Equity and bond markets sometimes fall simultaneously; inflation and changing rates can drive common losses. Risk management also requires evaluating tail losses and illiquidity. A portfolio's average standard deviation cannot promise the size of its next drawdown. Use assumptions as scenario controls and ask whether a correlation spike invalidates the investment policy."
+      ],
+      "worked": [
+        "Stock weight 0.60 and volatility 0.20; bond weight 0.40 and volatility 0.06.",
+        "Correlation ρ=0.20 ⇒ variance (0.12)²+(0.024)²+2×0.6×0.4×0.20×0.06×0.20=0.016128.",
+        "Annual volatility ≈sqrt(0.016128)=12.70%.",
+        "Correlation ρ=1 gives 14.40% modeled volatility; ρ=−1 would give |0.12−0.024|=9.60%.",
+        "No one of these assumed statistics is a guaranteed portfolio-loss boundary."
+      ],
+      "practice": [
+        [
+          "What does the covariance term represent in the two-asset portfolio variance formula?",
+          "It measures how the assets' return movements interact, with size determined by weights, volatilities and correlation. That interaction can raise or lower overall variance."
+        ],
+        [
+          "Why is a low historical correlation between assets not evidence that one will reliably protect against an extreme equity crash?",
+          "Market relationships can change with regimes and common shocks; estimates contain sampling error and can rise in crises. Stress testing should consider correlation breakdown."
+        ]
+      ]
+    },
+    {
+      "title": "Drawdowns, sequence risk and the asymmetric road back",
+      "body": [
+        "Volatility is an average dispersion; drawdown tracks actual wealth decline from a previous high. Maximum drawdown is the largest peak-to-trough percentage loss in the chosen sample period, which depends on the return path. After a 30% fall an account needs 1/0.70−1≈42.86% gain to recover its original nominal level. After a 50% fall it needs 100%. This arithmetic is why aggressive strategies can demand unrealistic subsequent performance after a large loss.",
+        "Sequence risk matters most when withdrawals or contributions are occurring. Consider a retiree with $100,000 who withdraws $10,000 at the start of each year. If the portfolio loses 20% in year one and gains 25% in year two, the account evolves from $100,000 to $90,000 after first withdrawal, then $72,000 after loss; second withdrawal lowers it to $62,000 and a 25% gain takes it to $77,500. Reverse the return order and the result is different even though the two-year compounded market return is the same. Cash-flow timing changes the amount exposed to each return.",
+        "Home buyers face a similar short-horizon sequence risk: the market can decline immediately before earnest money or closing is due. Investors should hold funding required at known dates in appropriately reliable and liquid forms rather than calculate only a long-run average forecast. Maintaining sufficient reserves and avoiding forced sales can improve the odds of reaching an investment horizon, but does not eliminate the possibility of major losses."
+      ],
+      "worked": [
+        "Starting $100,000, withdraw $10,000 at each year's beginning.",
+        "Loss-first path: ($100,000−$10,000)×0.80=$72,000; then ($72,000−$10,000)×1.25=$77,500.",
+        "Gain-first path: ($100,000−$10,000)×1.25=$112,500; then ($112,500−$10,000)×0.80=$82,000.",
+        "Both market-return sequences compound to 1.00 in isolation; investor balances differ by $4,500.",
+        "Recovery after −40% requires 1/0.6−1=66.67% gain, not merely 40%."
+      ],
+      "practice": [
+        [
+          "Explain why a retiree with fixed withdrawals can experience very different ending wealth under the same returns in a different order.",
+          "Withdrawals remove shares or capital at different valuations, changing how much is invested for the later return. Poor early returns are particularly damaging when cash must be withdrawn."
+        ],
+        [
+          "What does a 35% drawdown require to restore nominal account value without contributions?",
+          "A recovery gain of 1/0.65−1≈53.85%, before fees and inflation. The prior percentage loss and required recovery are not equal."
+        ]
+      ]
+    },
+    {
+      "title": "Goal-based buckets, liquidity and the mortgage down-payment constraint",
+      "body": [
+        "Household investing must coordinate with liabilities, not just asset returns. A disciplined plan can define cash needed for bills and emergency reserves, a separate home purchase fund with a dated target, and a long-term retirement pool. The buckets are accounting and behavioral controls, not different laws of economics. Every dollar assigned to a short-term purchase cannot simultaneously be invested for the distant horizon without increasing the risk of an underfunded closing.",
+        "Suppose the household has $18,000 cash, owes $2,000 in near-term bills, wants $10,000 minimum emergency reserves, and expects to need $12,000 for a property closing within one year. Available cash after near bills and the desired reserve is $6,000, which leaves a $6,000 purchase gap. An apparently attractive $5,000 speculative trade cannot fix that funding gap reliably: a 30% decline would leave $3,500 and worsen the plan. A sources-and-uses schedule shows that the goal requires more saving, a lower purchase obligation, more time or documented alternative funding.",
+        "Emergency cash and a short-term home fund should be assessed for access, credit exposure, insurance eligibility where applicable, maturity and inflation—not simply which account shows the highest current yield. The return on a risky asset is not a substitute for a guaranteed dated obligation. A household able to invest $250 monthly could direct initial contributions toward the cash gap until the purchase plan is secure, then revisit long-term allocations."
+      ],
+      "worked": [
+        "Cash $18,000 minus near bills $2,000 minus target emergency reserve $10,000 = $6,000 toward home closing.",
+        "Closing target $12,000 yields $6,000 funding deficit before fees or unexpected expenses.",
+        "At $250 saved per month without interest, gap takes 24 deposits to close; at $500 per month, 12 deposits.",
+        "Putting $5,000 into an asset losing 30% yields $3,500, reducing possible closing cash by $1,500.",
+        "Annual return assumptions cannot be treated as guaranteed means to meet a specific closing deadline."
+      ],
+      "practice": [
+        [
+          "How would you explain to a new investor why stock-market expected returns should not finance a fixed home closing date in eight months?",
+          "Expected returns reflect uncertain outcomes; a near-term market decline can make the required cash unavailable precisely when due. Liquidity and reliability dominate long-term upside for that obligation."
+        ],
+        [
+          "What is the monthly contribution needed to close a $6,000 gap in 15 months ignoring interest?",
+          "$6,000/15=$400 per month. Verify that amount can be saved after essential expenses rather than assuming it is affordable."
+        ]
+      ]
+    },
+    {
+      "title": "Rebalancing, concentration and investment policy rules",
+      "body": [
+        "A 60/40 portfolio rarely remains 60/40 after markets move. Rebalancing can return exposures toward the investor's selected long-run risk budget, but trading can create costs and taxable gains. Policies may rebalance on calendar dates, at weight drift thresholds, or by directing new contributions to underweight assets. No frequency is universally best. A robust plan states target weights, permitted ranges, eligible investment products, cash minimums, and exceptions for tax or liquidity.",
+        "Take the prior $10,600 portfolio with $6,720 in equities and $3,880 bonds. At 60/40 target, desired equity is $6,360 and bonds $4,240. Exact rebalancing sells $360 of equity and buys $360 of bonds, ignoring fees and taxes. An alternative is to direct $900 in new deposits entirely to bonds, giving equities $6,720 and bonds $4,780, for total $11,500 and equity weight about 58.43%; new-money-only rebalancing can avoid realizing taxable gains but may miss an exact target.",
+        "Concentration includes more than holding a large single stock. Employment income linked to the same industry as a company stock position increases household-wide exposure. Housing ownership in the same regional market can also correlate with job security and local economic shocks. Analyze the family's 'economic balance sheet' including wages, debt and real estate when setting risk limits. A written investment policy converts an emotional reaction to a market decline into a review against predetermined, evidence-based constraints."
+      ],
+      "worked": [
+        "After hypothetical returns: equity $6,720, bonds $3,880, total $10,600.",
+        "Exact 60% equity target $6,360, requiring $360 sale of equity before tax or transaction effects.",
+        "Bond target $4,240, requiring $360 purchase.",
+        "Alternative $900 new money directed to bonds yields $6,720 equity/$4,780 bonds, total $11,500.",
+        "Equity share after contributions ≈58.43%, showing that rebalancing choice affects future exposure."
+      ],
+      "practice": [
+        [
+          "Why could rebalancing through new contributions be attractive in a taxable brokerage account?",
+          "It can reduce the need to sell appreciated investments and realize gains, though it may not restore target weights exactly or quickly enough for the investor's risk constraints."
+        ],
+        [
+          "Give an example of household concentration that a fund holdings report alone would miss.",
+          "An employee whose wages depend on the technology sector and who holds concentrated employer stock may face simultaneous job loss and portfolio decline during a sector downturn."
+        ]
+      ]
+    },
+    {
+      "title": "Measuring downside scenarios, inflation and fee-adjusted goals",
+      "body": [
+        "Monte Carlo methods are computational experiments that simulate many possible return sequences under declared probability assumptions. A simulated distribution is not a factual prediction; model choice, return estimation, fat tails, correlation assumptions, inflation, fees and taxes matter. When probability parameters are uncertain, deterministic stress testing can be clearer: calculate the exact effect of a 30% market decline, income interruption, high inflation or an early withdrawal. Never label a single simulated probability of success as guaranteed.",
+        "Inflation translates nominal final wealth into purchasing power. If an account reaches $100,000 after ten years and the price index rose 3% every year, real purchasing power in today's dollars would be $100,000/1.03^10≈$74,409. Investment fees compound as a drag. The illustrative difference between 6% gross annual returns with 0.10% fees and 1.00% fees can materially affect decades of compounding. Real returns cannot be approximated perfectly by simply subtracting inflation and expenses over long horizons; use the ratio of growth factors.",
+        "Make downside thresholds explicit. A $30,000 portfolio meant to fund a home improvement in three years might face a 25% loss, leaving $22,500. Even if its expected future return is positive, the family may need $30,000 on schedule. A long-horizon portfolio with no imminent withdrawal can potentially withstand larger fluctuations, but only if income, debt and behavior allow the investor to stay invested. Include a cash buffer and a written response to downside conditions instead of relying on a forecast's central line."
+      ],
+      "worked": [
+        "Nominal value $100,000 after ten years; assumed inflation 3% annually.",
+        "Real value $100,000/(1.03)^10≈$74,409 in today's purchasing power.",
+        "Portfolio $30,000 with 25% adverse return ⇒ $22,500 and $7,500 funding gap.",
+        "To recover from $22,500 to $30,000 requires 33.33% gain, ignoring further inflation and cost.",
+        "If annual fee difference is 0.90 percentage points, study compounding impact rather than only first-year dollars."
+      ],
+      "practice": [
+        [
+          "Why is a Monte Carlo 80% success estimate not proof that a plan will work four times out of five in reality?",
+          "It is conditional on chosen probability distributions, return estimates, spending assumptions and model specification; actual future regimes can depart sharply from the simulated world."
+        ],
+        [
+          "What is the exact real-return factor for 6% nominal growth and 3% inflation over one year?",
+          "1.06/1.03≈1.029126, or about 2.91% real return before taxes and other costs, not exactly 3%."
+        ]
+      ]
+    },
+    {
+      "title": "Write a defensible risk and allocation memorandum",
+      "body": [
+        "A portfolio decision memo should begin with goals expressed as amounts and dates. The investment policy must list liquidity minimums, contribution affordability, target asset exposures, rebalancing triggers, acceptable instruments, tax status, and risk capacity. It should also identify uncertainties in expected returns rather than infer the future from a decade-long average. The advisor's first obligation is not maximizing modeled final wealth but ensuring the household can fulfill essential obligations under credible shocks.",
+        "Construct a base scenario with monthly $250 contributions for twenty years, a conservative return case, a 30% loss case early in accumulation, and a late loss case just before withdrawal. Include realistic fees and an inflation-adjusted objective. A student should calculate contributions separately from investment gains, quantify downside and distinguish nominal terminal value from real purchasing power. This creates a coherent bridge between Module 1's wealth equation and future advanced investment and retirement models.",
+        "Finish by explaining what facts would change the recommendation. Examples include unstable employment, inability to maintain emergency cash, high-interest debt, nearer home purchases, retirement plan matching contributions, or a credible need to support a dependent. A plan that depends on using credit card borrowing to avoid selling investments in a crash may be materially riskier than its asset allocation suggests.",
+        "An academically complete response must show independent calculations and critique the model. It should state sampling uncertainty, correlation sensitivity, the limits of conventional standard deviation, sources of tail risk and the practical costs of trading. The final rubric rewards well-justified decisions under uncertainty, not confidence in a specific future market outcome."
+      ],
+      "worked": [
+        "Household contribution $250/month ×240 months = $60,000 principal contributions over 20 years.",
+        "At illustrative monthly compounded 6% nominal return, annuity future value ≈$115,510 before fees and inflation.",
+        "A 30% drawdown on a balance of $40,000 yields $28,000; required recovery to $40,000 is 42.86%.",
+        "A separate emergency reserve should not be included as an equity-return-earning asset in the model.",
+        "Report at least three risk scenarios and explicit rebalancing rules."
+      ],
+      "practice": [
+        [
+          "Why is protecting the ability to remain invested part of a sound long-run equity strategy?",
+          "Forced selling after a market decline to pay bills can realize losses and destroy the intended investment horizon; sufficient cash and sustainable obligations support long-run risk capacity."
+        ],
+        [
+          "What key limitation should accompany a portfolio-risk estimate based on only three years of return data?",
+          "Small samples may give unstable volatility, correlation and return estimates and miss unusual market events, so the projections need broader evidence and severe stress scenarios."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Investor.gov · Asset Allocation and Diversification",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "SEC Investor.gov · Beginner's Guide to Diversification",
+      "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset"
+    ],
+    [
+      "SEC Investor.gov · How Fees Affect Your Portfolio, 2025",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated"
+    ],
+    [
+      "FINRA · Fund Analyzer",
+      "https://tools.finra.org/fund_analyzer/"
+    ],
+    [
+      "SEC Investor.gov · Investor Tips for 2026",
+      "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/investorgov-tips-2026-investor-bulletin"
+    ]
+  ],
+  "assessment": {
+    "title": "Quantitative investment policy and risk evaluation",
+    "prompt": "Create a 60/40 portfolio risk model with stock volatility 20%, bond volatility 6% and correlations −0.5, 0.2 and 1.0. Calculate weighted return under a 12%/−3% scenario, ending weights, exact rebalancing trade and 10-year inflation stress. Compare a $250/month accumulation path under two return sequences with withdrawals. Write an investment policy for a household planning a Connecticut home purchase in 18 months, with an explicit cash-floor constraint and alternative allocations.",
+    "rubric": [
+      "Portfolio expected and realized returns (20%)",
+      "Variance, covariance and correlation sensitivity (25%)",
+      "Drawdown and sequence-of-returns analysis (20%)",
+      "Liquidity/goals/rebalancing economics (20%)",
+      "Risk limitations, citations and professional judgment (15%)"
+    ]
+  }
+}

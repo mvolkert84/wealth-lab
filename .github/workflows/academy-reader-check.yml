@@ -22,6 +22,7 @@ on:
       - scripts/check-module1-academic.mjs
       - scripts/check-module2-academic.mjs
       - scripts/check-module3-academic.mjs
+      - scripts/check-module4-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -55,6 +56,7 @@ on:
       - scripts/check-module1-academic.mjs
       - scripts/check-module2-academic.mjs
       - scripts/check-module3-academic.mjs
+      - scripts/check-module4-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -95,3 +97,4 @@ jobs:
           node scripts/check-module1-academic.mjs
           node scripts/check-module2-academic.mjs
           node scripts/check-module3-academic.mjs
+          node scripts/check-module4-academic.mjs
