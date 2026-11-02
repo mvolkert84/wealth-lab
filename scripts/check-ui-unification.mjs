@@ -37,7 +37,7 @@ assert.ok(appScripts.length,'No inline app scripts');
 for(const [,script] of appScripts)if(script.trim())new Script(script,{filename:'index:inline.js'});
 assert.ok(existsSync(new URL('../assets/lesson-thumbnails.webp',import.meta.url)),'Local lesson thumbnail sprite missing');
 const mappingStart=app.indexOf('const WL_THUMB_FOR_LESSON=');
-const mappingEnd=app.indexOf('; const WL_THUMB_FOR_TOPIC=',mappingStart);
+const mappingEnd=app.indexOf('\nconst WL_THUMB_FOR_TOPIC=',mappingStart);
 assert.ok(mappingStart>0&&mappingEnd>mappingStart,'Lesson thumbnail mapping missing');
 const mapText=app.slice(mappingStart,mappingEnd);
 const pairs=[...mapText.matchAll(/"(L\d+\.S\d+)":"([a-z-]+)"/g)].map(m=>({id:m[1],kind:m[2]}));
