@@ -34,7 +34,7 @@ assert.equal(parts,24);
 assert.equal(problems,48);
 assert.ok(words>=6000);
 assert.ok(e.WealthLabAcademicM4Markup('L2.S1').includes('unavailable'));
-assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8')?['Learn','Examples','Try It','Academic','Notes']"));
+assert.ok(html.includes("(m.id==='M1'||m.id==='M2'||m.id==='M3'||m.id==='M4'||m.id==='M5'||m.id==='M6'||m.id==='M7'||m.id==='M8'||m.id==='M9')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('window.WealthLabAcademicM4Markup?.(s.id)'));
 assert.ok(html.includes('window.WealthLabAcademicM4Init?.()'));
 assert.ok(html.includes("const STORE='wealthlab-state-v1'"));
