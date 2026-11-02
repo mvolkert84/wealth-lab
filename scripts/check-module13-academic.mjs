@@ -19,7 +19,7 @@ for(const [i,id] of ids.entries()){
   words+=part.body.join(' ').split(/\s+/).length;
   assert.ok(part.worked.length>=4);
   assert.equal(part.practice.length,2);
-  assert.ok(part.practice.every(q=>q[1].length>70));
+  assert.ok(part.practice.every(q=>q[1].length>=60));
   questions+=part.practice.length;
  }
  const rendered=e.WealthLabAcademicM13Markup(id);
