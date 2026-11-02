@@ -1,0 +1,240 @@
+{
+  "id": "L10.S4",
+  "title": "Building an Investment Policy",
+  "subtitle": "Institutional-grade personal IPS, constraints, governance, performance and decision rules",
+  "prerequisites": [
+    "L10.S1 household funding buckets and risk capacity",
+    "L10.S2 covariance, stress and concentration",
+    "L10.S3 rebalancing and taxable costs"
+  ],
+  "objectives": [
+    "Draft a complete investment policy statement with measurable goals",
+    "Specify return and risk objectives separately",
+    "Document liquidity, horizon, legal, tax and unique constraints",
+    "Define strategic allocation with allowed ranges and account roles",
+    "Create review, governance, exception and rebalancing protocols",
+    "Evaluate after-tax, risk-adjusted performance against appropriate benchmarks",
+    "Integrate home purchase, retirement and beneficiary succession"
+  ],
+  "sections": [
+    {
+      "title": "What a real investment policy statement does for decision quality",
+      "body": [
+        "An Investment Policy Statement (IPS) documents investment purpose, financial circumstances, objectives, constraints, implementation and governance before the next market shock. CFA Institute guidance identifies client circumstances and constraints as foundations for suitability, including liquidity, horizon, tax, legal requirements and unique conditions. In personal finance, the IPS also provides a coordination document for partners, a trustee or financial professional who may need to understand what assets are meant to accomplish.",
+        "An IPS is not an inflexible promise to hold every investment forever. It gives the investor clear procedures to change policy when circumstances change and distinguishes such revisions from panic trading. A document that states only 'buy stocks and keep them long-term' is insufficient because it lacks near-term cash obligations, financial loss capacity, authorized actions, fees and criteria for success. A policy can rationally choose cash for a short dated goal and a diversified mix for retirement.",
+        "Write a precise financial purpose: protect a $6,000 emergency reserve continuously; preserve $12,000 home-closing resources due within twelve months; and contribute a realistically sustainable amount to long-term wealth without leaving essential bills unpaid. If the family cannot currently fund all three objectives, the policy should state the shortfall and a priority order rather than use one investment dollar to satisfy several targets simultaneously.",
+        "Governance includes document owner, revision approval, review dates and record storage. The IPS should name any household beneficiary and the conditions under which a trustee or surviving partner can access assets. Such details are not substitutes for executed legal trusts, beneficiary designations or estate counsel, but they help prevent investment arrangements from conflicting with actual family commitments."
+      ],
+      "worked": [
+        "IPS goal: emergency reserve $6,000 immediately accessible.",
+        "Separate home goal $12,000 due in twelve months.",
+        "If household accessible cash is $18,000, entire amount is assigned to the two protected goals.",
+        "New long-term contributions must be measured against positive actual monthly household surplus.",
+        "Policy owner and authorized revisions should be named with dated signatures."
+      ],
+      "practice": [
+        [
+          "Why is a one-line statement to 'invest aggressively for retirement' not an adequate IPS?",
+          "It omits cash needs, legal limitations, risk capacity, target exposure, cost and tax controls, rebalancing and review rules necessary to judge decisions."
+        ],
+        [
+          "How does an IPS improve household decisions during market volatility?",
+          "It documents agreed goals and decision triggers beforehand, making responses to changing prices less dependent on fear, excitement or persuasive promotion."
+        ]
+      ]
+    },
+    {
+      "title": "Objectives: distinguish required return, acceptable loss and shortfall probability",
+      "body": [
+        "An IPS should define return objectives using real dates and amounts, including taxes, fees, inflation and contributions. A projected return assumption is not a contractual rate. Calculate the required contribution for a goal and test whether achievable income and savings can support it before choosing the risk category. A household target may include maintaining purchasing power, funding a retirement spending stream and leaving a bequest with clear beneficiary access.",
+        "Risk objectives should describe financial loss capacity and behavioral tolerance, not rely solely on an abstract standard deviation. Identify worst acceptable drawdown for each bucket, shortfall probability or loss threshold under specified scenarios, minimum cash reserve and a rule for cutting discretionary investment when income falls. A risk limit such as 'no more than 10% single issuer exposure' is operationally actionable; 'avoid risk' is not.",
+        "Consider a goal to fund $20,000 in 24 months from $12,000 now. With no investment growth, funding requires an additional $8,000 over 24 payments, or about $333.33 monthly. If the household can save only $250, the model projects a $2,000 shortfall. A portfolio that advertises 15% expected return does not eliminate this risk; high expected returns generally introduce uncertainty that may be inappropriate for the closing date.",
+        "Classify goals as mandatory, important but adjustable, and discretionary. Mortgage payment and essential medical spending are not speculative return objectives. A vacation or optional purchase has more flexibility. The IPS should prioritize funded ratios, income coverage and dates over the psychologically appealing headline account balance."
+      ],
+      "worked": [
+        "Current goal savings $12,000; dated target $20,000 in 24 months.",
+        "Zero-growth required saving ($20,000−$12,000)/24≈$333.33 monthly.",
+        "If only $250 is affordable, contributions total $6,000 and expected principal $18,000 before earnings.",
+        "The base-case cash gap is $2,000 under these assumptions.",
+        "Risk tolerance language should be supplemented by concrete shortfall and drawdown limits."
+      ],
+      "practice": [
+        [
+          "Why must a return objective specify whether it is a required result or an assumption used in a forecast?",
+          "The market does not guarantee an expected result, and a mathematically required but unrealistic return signals an underfunded objective rather than a reliable strategy."
+        ],
+        [
+          "Why should an IPS distinguish mandatory spending from discretionary goals?",
+          "Necessary bills and contractual commitments have less timing flexibility and therefore lower capacity for risky or illiquid investment than deferrable consumption."
+        ]
+      ]
+    },
+    {
+      "title": "Constraints: liquidity, horizon, tax, legal and unique circumstances",
+      "body": [
+        "The five common major investment constraints are liquidity requirements, time horizon, taxes, legal and regulatory circumstances, and unique individual needs. These categories interact: an illiquid private fund may be acceptable in a pension trust with decades of investment horizon but unsuitable for a family's home-closing money. A tax-advantaged account may improve long-run after-tax returns while restricting access for short-horizon cash. A donor or trustee may have explicit legal limitations different from the original investor's preferences.",
+        "Liquidity constraints should quantify an accessible dollar floor and identify settlement or transfer deadlines. The time horizon can contain several goals, not one age-based label. Tax constraints include account registration, current income and capital-gain treatment, basis records and state taxation. Legal constraints can include creditor liens, pension account rules, trust investment duties, employer stock restrictions and beneficiary rights. Unique circumstances include disability needs, a dependent child, ethical restrictions or a household member's ability to understand and manage financial records.",
+        "Use a fictional Connecticut household preparing to purchase a $250,000 home with a potential $237,500 mortgage. A planned inheritance for a daughter creates future cash and ownership questions. The IPS must not promise the house is freely transferable merely because it will be held in a trust; mortgage covenants, recorded assistance liens and legal title require separate review. The household's accessible assets should not be counted as investment collateral and closing liquidity at the same time.",
+        "Document each constraint with proof: bank statements, signed debt contracts, insurance declarations, court or trustee instruments where relevant, employer blackout windows and tax account terms. Financial experts should be consulted for decisions requiring legal or tax judgments. The IPS captures assumptions and responsibilities; it does not by itself grant authority that the legal contracts lack."
+      ],
+      "worked": [
+        "Liquidity floor $6,000 emergency plus $12,000 home closing=$18,000.",
+        "Nominal $250,000 house less $237,500 illustrative mortgage ⇒ $12,500 gross equity before costs.",
+        "Bank assets used for closing cannot be double counted as unrestricted retirement risk capital.",
+        "Tax-deferred retirement account access may differ from bank cash access.",
+        "Executed liens and trust documents control legal transfer and beneficiary rights."
+      ],
+      "practice": [
+        [
+          "Why may an investment in a tax-deferred retirement account be unsuitable for a required home-closing cash reserve?",
+          "Withdrawal eligibility, tax and penalty rules, timing and market exposures may prevent safe or inexpensive access when the closing payment is due."
+        ],
+        [
+          "Why must an IPS list trust and mortgage restrictions separately from personal goals?",
+          "Investment intent does not override lender contracts or trustees' legal duties, and beneficiaries' rights may not match the investor's unrestricted wishes."
+        ]
+      ]
+    },
+    {
+      "title": "Strategic asset mix, limits and explicit rebalancing governance",
+      "body": [
+        "The asset allocation section should specify which holdings belong to each goal and the permitted range of stocks, bonds, cash and alternatives, with maximum issuer and sector exposures. Its target should be realistic for available assets, fees and account access. The same target percentage can be implemented using different securities with different credit, duration, tax and fund costs; the IPS should identify allowable categories and prohibitions without requiring one specific ticker.",
+        "An illustrative long-term retirement pool of $40,000 might target 60% broad equities, 30% high-quality fixed income and 10% liquidity, yielding $24,000, $12,000 and $4,000. A policy band could permit equities 55%–65%, subject to a separate maximum 10% individual issuer limit and prohibition on margin borrowing. Those constraints are examples, not a universal recommendation. A long-run investor with ample pension benefits and different spending might rationally choose other weights.",
+        "The rebalancing rule should state check frequency, trigger, trade sequencing and costs. For example: review every six months, correct a target deviation exceeding 5 percentage points or a liquidity floor breach, use new contributions and distributions first, and verify taxes and account restrictions before sales. Specify whether correction returns exactly to strategic targets or only within allowed bands. A trigger to review is not permission to place an order that would violate a cash withdrawal deadline.",
+        "Exception governance matters. If a job loss reduces savings capacity, the policy may temporarily pause long-term contributions and replenish emergency cash. A trustee or financial advisor should know who may revise targets, where revisions are stored, and whether a change requires agreement from both household decision-makers. Every exception should cite a changed financial fact, not just a market forecast."
+      ],
+      "worked": [
+        "Long-run investment pool $40,000, target stocks 60%=$24,000.",
+        "Bonds 30%=$12,000; cash 10%=$4,000.",
+        "Equity allowed policy band example 55%–65%; issuer maximum 10%.",
+        "At 66.7% equities, a 5-point absolute drift limit from 60% is breached.",
+        "Rebalancing execution must respect taxes and the separate near-term liquidity floor."
+      ],
+      "practice": [
+        [
+          "What is the difference between a target allocation and a permitted band?",
+          "The target expresses the desired strategic weight; the band specifies a defined range before a review or corrective action is triggered."
+        ],
+        [
+          "Why should a rebalancing policy specify use of new contributions before taxable sales when feasible?",
+          "It can reduce unnecessary realized gain and trading costs while still correcting drift, though sometimes slower than immediately reallocating current holdings."
+        ]
+      ]
+    },
+    {
+      "title": "Benchmarks, risk-adjusted performance and honest review",
+      "body": [
+        "An IPS performance section should compare results with a benchmark reflecting the actual strategic allocation and cash-flow dates, not merely a popular equity index. A retirement portfolio at 60/30/10 cannot fairly be described as failed because it underperformed a 100% stock index during a stock bull market without considering its lower downside risk and different liquidity aims. Conversely, a concentrated fund's strong short-term return does not prove its risk and fee budget was appropriate.",
+        "Performance must distinguish time-weighted return, which generally neutralizes the effect of external contributions and withdrawals for manager evaluation, from money-weighted internal rate of return, which reflects the household's actual dated investment cash flows. A person depositing heavily just before a market drawdown can have poor money-weighted experience even when the fund's long-period reported time-weighted return is positive. A portfolio review should show net-of-fee outcomes and tax results when relevant.",
+        "Assume a fictional account begins at $10,000, rises to $11,000, then receives a $9,000 contribution and finishes at $18,000. Before the contribution the account earned 10%; after the contribution its value fell from $20,000 to $18,000, a −10% period return. Linked time-weighted growth factor is 1.10×.90=.99, hence time-weighted return −1%. The investor's actual dollar loss and money-weighted return depend on exact contribution date and time horizon, so an evaluator must not confuse the two.",
+        "Annual review should compare goal funded ratios, drift, asset exposure, fees, taxable realizations, emergency cash and downside scenarios. When the portfolio grows but home savings fall behind because housing costs rose, headline account performance can hide deterioration in the relevant goal. A good IPS review supports revising contributions and objectives instead of declaring success from a positive market chart."
+      ],
+      "worked": [
+        "Account begins $10,000 and grows to $11,000 ⇒ first subperiod +10%.",
+        "New external contribution $9,000 raises account to $20,000.",
+        "End account $18,000 ⇒ second subperiod −10%.",
+        "Time-weighted linked return 1.10×.90−1=−1%.",
+        "Money-weighted result depends on exact cash-flow timing and can differ from linked return."
+      ],
+      "practice": [
+        [
+          "Why is the S&P 500 alone not always the correct benchmark for a portfolio holding bonds and cash?",
+          "The policy's benchmark should reflect its asset mix and risk purpose, so comparing unlike exposures can exaggerate apparent failure or success."
+        ],
+        [
+          "Why can a household's money-weighted return differ from a fund's time-weighted performance report?",
+          "The household contributes and withdraws cash at specific dates, which changes how many dollars participate in each period's price change."
+        ]
+      ]
+    },
+    {
+      "title": "Behavioral guardrails, conflicts and emergency procedures",
+      "body": [
+        "Markets create predictable pressure on human behavior: loss aversion, overconfidence after gains, recency bias, herding and reluctance to sell a declining concentrated position. An investment policy does not eliminate emotion, but it can replace decisions made during panic with precommitted procedures. A household should specify how long to evaluate a major change, what evidence must be assembled and which urgent events justify immediate action. No policy can promise that investors will always follow it.",
+        "Risk questionnaires are useful starting evidence but can be biased toward products offered by their sponsor, as Investor.gov notes. Advice compensation, commissions, proprietary products and recurring account fees may create conflicts. An IPS should document who advises the household, which services are paid, the full fee stack, how product recommendations are assessed, and who retains final authority over execution. Independent verification matters especially for annuities, private investments and complex trust-linked financial products.",
+        "Define an emergency protocol: if essential reserve falls below $6,000, suspend discretionary investments and calculate replenishment; if a home closing date moves forward, verify settlement and accessible balance; if an employer income disruption occurs, reassess contributions and portfolio loss capacity; if one holding breaches issuer cap, review tax-aware trimming. This is not a promise that the app can automatically execute trades. These are decisions for the investor and qualified professionals.",
+        "Revisions should have a change-control section: revision date, changed assumptions, new policy, responsible signatories and next review date. An investment professional may recommend a change, but signed contracts, trust instruments and brokerage authorizations remain controlling. The objective is operational clarity without claiming a personal note can override legal or financial restrictions."
+      ],
+      "worked": [
+        "Emergency cash floor $6,000; accessible cash falls to $4,500 after a repair.",
+        "Reserve deficit $1,500 triggers pause-and-replenish review under this fictional policy.",
+        "At $250 savings per month, six full contributions replenish $1,500 if no other flows.",
+        "A self-imposed maximum 10% issuer allocation requires checking actual combined fund and direct holdings.",
+        "IPS revisions require documented change in circumstances, not a guaranteed market timing signal."
+      ],
+      "practice": [
+        [
+          "Why is it useful to write an emergency investment suspension rule before job loss or market panic?",
+          "The household can respond to a measurable liquidity fact rather than trying to decide risk appetite while pressured by fear and immediate bills."
+        ],
+        [
+          "How can an investment-product seller's compensation affect an IPS review?",
+          "Commissions and proprietary-product incentives can introduce conflicts; fees, alternatives and independent sources must be disclosed and considered."
+        ]
+      ]
+    },
+    {
+      "title": "The investment committee's completed IPS and monitoring dashboard",
+      "body": [
+        "A final IPS should read like an implementation document. Start with household purpose, asset inventory and liabilities. State mandatory minimum cash, each goal's funding and time horizon, risk capacity and willingness, expected contributions and tax account restrictions. Provide target allocation, allowed ranges, prohibited leverage and private-product limits, brokerage custody standards and evidence for security selection. Include benchmarks, performance method, rebalancing and review cadence, emergency triggers, recordkeeping and approval signatures.",
+        "One integrated fictional example protects $6,000 emergency and $12,000 closing cash from the $18,000 accessible household pool, while using a separate $40,000 long-run pool for 60/30/10 strategic exposure. The household should never display the same dollars as an emergency fund and a freely investable retirement asset. New $250 monthly investment contributions are conditional on bills and reserve remaining funded; no hypothetical future paycheck is counted as cash in hand.",
+        "Quantify the long-run downside. With $24,000 equities at −35%, $12,000 bonds at −8% and $4,000 cash unchanged, ending account is $15,600+$11,040+$4,000=$30,640, a $9,360 or 23.4% drawdown. State whether the household can accept that without selling to pay current obligations. If not, revise targets, contribution plan, or risk capacity. A formal IPS makes clear how losses are measured and what would trigger a reconsideration.",
+        "Conclude with an academic committee vote: approve subject to constraints, reject until cash is funded, or request documents. A robust statement anticipates a sudden repair, a job interruption, a large market decline and a beneficiary transition. It should be easy enough for a partner or trustee to follow, yet rigorous enough for another analyst to reproduce all amounts and evaluate conflicts and legal uncertainties."
+      ],
+      "worked": [
+        "Separate immediate cash reserve $6,000 and home fund $12,000 = $18,000 protected liquidity.",
+        "Long-run $40,000 pool at 60/30/10 = stock $24,000, bonds $12,000, cash $4,000.",
+        "Shock stocks −35% ⇒ $15,600; bonds −8% ⇒ $11,040; cash $4,000.",
+        "Stressed long-run balance $30,640; loss $9,360 =23.4%.",
+        "New $250/month contribution remains conditional on actual household surplus."
+      ],
+      "practice": [
+        [
+          "What makes the final IPS usable by a partner or trustee who did not help design it?",
+          "It records concrete amounts, ownership and access rights, account roles, permitted risk, funding triggers and responsible decision-makers with a dated revision process."
+        ],
+        [
+          "What is the strongest test that an IPS is fit for the household rather than only cosmetically complete?",
+          "Stress the plan against simultaneous market loss and essential cash demands and confirm it can still meet obligations without relying on undocumented assets or guaranteed recovery."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFA 2026 Basics Portfolio Planning and Construction",
+      "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/basics-of-portfolio-planning-and-construction"
+    ],
+    [
+      "CFA Institute Suitability Standard III(C)",
+      "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-iii-c"
+    ],
+    [
+      "Investor.gov Asset Allocation and Rebalancing",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "Investor.gov Investor Risk Tolerance",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-risk"
+    ],
+    [
+      "CFPB Buying a House",
+      "https://www.consumerfinance.gov/owning-a-home/"
+    ],
+    [
+      "IRS Publication 550 Taxable Investment Income",
+      "https://www.irs.gov/publications/p550"
+    ]
+  ],
+  "assessment": {
+    "title": "Fully documented personal IPS and governance capstone",
+    "prompt": "Draft a signed-approval-format IPS for a fictional Connecticut family with $18,000 restricted near-term cash ($6,000 emergency, $12,000 closing), $40,000 separately investable long-term funds and conditional $250 monthly savings. Compute a 60/30/10 mix, bands 55–65% equities, maximum 10% issuer concentration, six-month review and threshold policy. Test stocks −35%, bonds −8% and no cash change. Evaluate $20,000 goal after 24 deposits from $12,000 start, classify risk willingness versus capacity, and state time-weighted versus money-weighted return distinction on $10k→$11k +$9k deposit→$18k scenario.",
+    "rubric": [
+      "IPS objective and liability specificity (20%)",
+      "Capacity, liquidity and tax/legal constraints (25%)",
+      "Allocation, drift, scenario arithmetic (25%)",
+      "Governance, performance evaluation and exception rules (20%)",
+      "Documented primary evidence and professional limitations (10%)"
+    ]
+  }
+}
