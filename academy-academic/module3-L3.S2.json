@@ -1,0 +1,247 @@
+{
+  "id": "L3.S2",
+  "title": "Revocable vs. Irrevocable",
+  "subtitle": "Control, income taxation, estate inclusion, risk and the true tradeoffs",
+  "prerequisites": [
+    "L3.S1 trust funding and parties",
+    "L1.S1 net worth",
+    "L1.S3 discounted cash flows",
+    "L2.S5 liens and inheritance"
+  ],
+  "objectives": [
+    "Distinguish legal revocability from grantor income-tax status and estate inclusion",
+    "Model donor-basis versus inherited-basis consequences under simplified conditions",
+    "Apply current 2026 federal and Connecticut estate/gift tax figures without creating false tax benefits",
+    "Evaluate creditor, Medicaid, loan and trust-control risks without promising protection",
+    "Choose between revocable and carefully structured irrevocable arrangements through a documented decision matrix"
+  ],
+  "sections": [
+    {
+      "title": "Revocability describes retained powers—not wealth or tax classification",
+      "body": [
+        "A revocable living trust is generally created during the settlor's life and permits the settlor to amend or revoke it while the relevant powers remain exercisable. It often provides a management framework during incapacity and a successor-distribution arrangement after death. An irrevocable trust cannot simply be unilaterally undone according to the grantor's wishes once irrevocability applies, although governing instruments, decanting statutes, courts, consents or other lawful mechanisms may allow modifications in some settings. A trustee's powers, a settlor's retained rights and a beneficiary's enforceable interests still depend on the actual documents and state law.",
+        "Distinguish at least four questions: Can the settlor revoke the instrument? Who reports the income on a federal income-tax return? Is the contributed property included in the settlor's gross estate for estate-tax purposes? Can a present or future creditor reach the trust interest? Those questions belong to different legal regimes. A revocable trust is usually treated as a grantor trust for federal income tax, but an irrevocable trust can also be treated as a grantor trust under specific retained-power rules. 'Irrevocable' alone does not mean separate income taxation, asset protection, estate exclusion or superior tax efficiency.",
+        "Consider a person who puts a home worth $250,000 with a $210,000 mortgage into a revocable trust. If the transfer is effective and all other economic facts are unchanged, the home still contributes $40,000 gross equity to the person's economic balance sheet. The settlor's ability to control the trust makes the transfer unsuitable as an automatic claim of creditor isolation or estate-tax removal. A properly planned irrevocable arrangement may change control and inclusion but can expose the family to permanent loss of flexibility and complex tax treatment; value cannot be inferred from the label.",
+        "Students should construct a control matrix for each arrangement: amendment power, power to withdraw property, trustee appointment and removal, distribution discretion, beneficial enjoyment, creditor exposure, federal income taxpayer, estate inclusion and successor administration. The matrix should contain 'verify documents' for unresolved entries. Estate lawyers and tax professionals analyze those powers together because a single retained right can change an intended result."
+      ],
+      "worked": [
+        "Illustrative house $250,000, mortgage $210,000, unrestricted cash $25,000.",
+        "Pretransfer economic net worth from these items $250,000+$25,000−$210,000=$65,000.",
+        "After effective transfer into revocable living trust, economic net worth remains $65,000 before fees.",
+        "If drafting, recording and setup expenses are $2,500 and paid in cash, modeled net worth becomes $62,500.",
+        "Do not count 'home in trust' and 'home outside trust' as simultaneous assets."
+      ],
+      "practice": [
+        [
+          "Why are 'irrevocable' and 'not in the grantor's taxable estate' not synonyms?",
+          "Tax inclusion depends on retained powers, interests, timing, gift completion and federal statutes; state-law irrevocability alone is insufficient. Document both sets of conditions."
+        ],
+        [
+          "A salesperson claims a revocable trust automatically shields the settlor's home from current creditors. What documents and legal questions must be reviewed?",
+          "Review deed, loan and lien instruments, settlor's amendment and revocation powers, Connecticut creditor law, homestead and exemption issues, and the actual obligations; seek Connecticut counsel rather than assume protection."
+        ]
+      ]
+    },
+    {
+      "title": "Grantor versus nongrantor income taxation and trust reporting",
+      "body": [
+        "Income tax classification does not simply follow the title at a bank. Under the Internal Revenue Code grantor-trust rules, certain powers or economic interests cause trust income, deductions and credits to be attributed to a grantor or another deemed owner. Many ordinary revocable living trusts are grantor trusts, meaning income is generally reported by the individual under applicable reporting methods. An irrevocable trust might remain a grantor trust; a distinct nongrantor trust may pay federal income tax and distribute amounts that carry tax attributes to beneficiaries.",
+        "Form 1041, U.S. Income Tax Return for Estates and Trusts, includes special reporting rules for grantor trusts and separate taxable estates and trusts. Whether a distribution reduces trust taxable income, creates beneficiary K-1 reporting or represents nontaxable principal depends on the law and transaction details. Students should not infer taxable income simply by dividing cash received by the beneficiaries. A trust can distribute appreciated property without selling it, and income tax consequences can depend on recognition rules and basis.",
+        "Build a three-column worksheet: economic receipts, fiduciary accounting income/principal classification, and federal income-tax reporting. For a hypothetical trust receiving $8,000 bank interest and $4,000 dividends while selling an appreciated stock for a $10,000 gain, the economic inflow, gain and taxation questions are different. If the trust distributes $15,000, it does not follow that the distribution was all taxable income or that a $15,000 deduction is automatically permitted.",
+        "Trust tax brackets and tax-return details are date-sensitive. A nongrantor trust can reach higher federal tax rates at substantially lower income levels than individuals; do not present an undated bracket table as timeless. Use the applicable year's IRS instructions, trust document and attorney/accountant review before projecting income shifting, capital-gains tax or beneficiary K-1 allocation. The educational advantage of separate classification is an accurate map of who reports what, not a guarantee of tax savings."
+      ],
+      "worked": [
+        "Fictional receipts: interest $8,000, dividends $4,000 and proceeds on an appreciated security sale $30,000.",
+        "If the sold asset's adjusted basis is $20,000, economic realized gain is $10,000; $30,000 cash proceeds are not $30,000 gain.",
+        "Assume trustee distributes $15,000; ending trust cash changes by cash proceeds and distributions, but taxable amount is not deducible from that fact alone.",
+        "Do not treat a $15,000 beneficiary payment as universally $15,000 beneficiary taxable income.",
+        "Build a Form 1041 classification research note identifying grantor ownership, separately taxed trust, distributable net income and supporting source citations."
+      ],
+      "practice": [
+        [
+          "Explain why a trust owning an investment does not guarantee that trust is a separate federal income taxpayer.",
+          "Grantor trust status can attribute income and deduction reporting to the settlor or other deemed owner despite trust legal title; statutory powers and IRS reporting rules control."
+        ],
+        [
+          "A trust sells stock for $30,000 that has $20,000 adjusted basis. Calculate realized gain before other adjustments.",
+          "Realized gain is $10,000, not $30,000. Recognition, character, holding period and taxation must be established separately."
+        ]
+      ]
+    },
+    {
+      "title": "Gift, inheritance and carryover basis—the hidden price of lifetime transfers",
+      "body": [
+        "Tax basis generally records the amount of investment in property for determining taxable gain or loss on disposition, subject to adjustments. For an ordinary sale, realized gain equals amount realized minus adjusted basis. A recipient of a lifetime gift generally begins from the donor's adjusted basis for gain purposes, subject to important special rules for losses and gift tax adjustments. A beneficiary inheriting qualifying property from a decedent generally may receive a basis based on fair market value at death or other permissible valuation, with statutory exceptions.",
+        "This difference can dominate an apparent tax strategy. Suppose a parent bought a nondepreciated investment asset for $100,000, now valued at $300,000. If it is given during life and the recipient later sells for $310,000, ordinary gain-side carryover basis can produce $210,000 gain before selling expenses or other adjustments. If the recipient instead inherits qualifying property with a date-of-death basis of $300,000 and immediately sells for $310,000, the simplified gain is $10,000. Neither is a tax bill calculation; rates, exclusions, character, transfer documents and exception rules matter.",
+        "Trusts complicate the story. Property transferred to an irrevocable trust by gift does not automatically receive a date-of-death basis adjustment merely because the grantor later dies. The IRS has addressed situations where assets are not included in a decedent's gross estate and therefore generally do not receive the same step-up simply on the grantor's death. Conversely, trust-held property included in a decedent's gross estate can require separate basis analysis. The correct decision is to model estate inclusion, gift completion, tax basis and beneficiary control together.",
+        "Suppose the asset remains invested and grows 5% nominally for ten years. The future economic value is $300,000×1.05^10≈$488,668, independent of whether it sits in an individual account or trust if gross returns and fees are identical. Trust administration costs of $1,500 annually, even before investment fees, can reduce what heirs receive. A professional comparison cannot claim that trust registration raises the expected gross investment return; it can alter ownership, administration, timing and tax outcomes."
+      ],
+      "worked": [
+        "Parent's adjusted basis $100,000; current fair value $300,000; assumed future sale $310,000.",
+        "Lifetime outright gift, simplified gain-side carryover basis: $310,000−$100,000=$210,000 gain.",
+        "Qualifying inherited asset with illustrative new basis $300,000: $310,000−$300,000=$10,000 gain.",
+        "Potential difference in *gain*, not guaranteed tax savings: $200,000 before exclusions, expenses, tax rates and basis exceptions.",
+        "Investment value illustration after ten years at steady hypothetical 5%: $300,000×1.05^10≈$488,668; real returns and taxes are uncertain."
+      ],
+      "practice": [
+        [
+          "Why can placing appreciating property in an irrevocable trust have a potential income-tax tradeoff?",
+          "If a completed lifetime transfer leaves the property outside the grantor's gross estate, the gift's basis rules may apply and a death-time basis adjustment cannot be assumed. Analysis requires the exact trust and inclusion rules."
+        ],
+        [
+          "If an inherited asset has qualifying date-of-death basis $280,000 and sells for $275,000, what is the simplified realized difference?",
+          "A $5,000 realized loss before expenses; whether it is deductible, its character and applicable restrictions depend on use of the property, taxpayer and tax law."
+        ]
+      ]
+    },
+    {
+      "title": "Federal and Connecticut estate/gift tax is not ordinary income tax",
+      "body": [
+        "Estate tax is concerned with specified transfers and the value of the taxable estate; income tax concerns income and gains. A transfer may avoid probate without avoiding estate tax, and a taxable gift for reporting purposes does not automatically imply current gift tax owed. Federal gift and estate provisions can interact through lifetime exclusions and gift accounting. Connecticut has separate estate and gift tax laws and required state filing procedures.",
+        "For 2026, the IRS Form 706 instructions specify a federal basic estate-tax exclusion of $15,000,000 for decedents dying in that year. Connecticut DRS states a $15,000,000 exemption for its 2026 estate and gift tax regime, with specific lifetime gift aggregation and filing rules. Connecticut estates under the stated threshold may still have a probate filing requirement, generally Form CT-706 NT subject to exceptions. These are dated 2026 facts; future thresholds and laws must be reverified, and the computation of a taxable estate is not merely counting gross checking plus gross house price.",
+        "The federal annual gift-tax exclusion is $19,000 per recipient in 2026 according to the IRS. An annual exclusion is not a universal tax-free-trust-funding allowance: certain gifts of future interests may fail to qualify, split-gift elections have documentation and other consequences, and taxable gifts above the annual exclusion may require Form 709 without producing immediate tax liability where a sufficient exemption remains. The gift's basis and estate-inclusion effects can matter more than the annual reporting amount.",
+        "An advisor's calculation starts with the actual tax year, domicile, gross estate categories, allowable debts and deductions, prior reportable gifts, beneficiary relationship and any special elections. Do not tell ordinary families that trusts are needed chiefly to eliminate federal estate tax when their modeled estates are far below relevant thresholds. More compelling ordinary objectives can be incapacity planning, probate handling, supervision for a minor, and continuity of property management. Ethical instruction identifies the difference between tax avoidance allowed under law and false promises of guaranteed tax erasure."
+      ],
+      "worked": [
+        "Year 2026 federal basic exclusion $15,000,000; Connecticut 2026 estate exemption $15,000,000—two separate regimes.",
+        "Fictional household gross assets $800,000; recognized debts $240,000; simplified net economic estate $560,000 before legal adjustments.",
+        "This simplified value is far below the two 2026 stated thresholds; it does not mean state filings or other legal tasks vanish.",
+        "2026 $19,000 federal annual gift exclusion for gifts meeting the relevant requirements.",
+        "A $30,000 present-interest gift to one recipient by one donor exceeds $19,000 by $11,000 for annual-exclusion purposes; filing and exemption accounting require source-year verification, not an automatic $11,000 tax payment."
+      ],
+      "practice": [
+        [
+          "Distinguish the $19,000 2026 federal gift exclusion from the $15 million 2026 federal estate basic exclusion.",
+          "The annual amount generally excludes qualifying gifts to each recipient from gift-tax accounting, while the basic exclusion is a much larger lifetime/estate transfer-tax measure. Eligibility, reporting and election rules differ."
+        ],
+        [
+          "Does being below Connecticut's 2026 estate exemption prove Form CT-706 NT is unnecessary?",
+          "No. Connecticut DRS generally directs estates at or below the threshold to file CT-706 NT with the appropriate Probate Court, subject to applicable exceptions and special elections."
+        ]
+      ]
+    },
+    {
+      "title": "Creditors, Medicaid, financing and irrevocability risk",
+      "body": [
+        "Asset protection is a legally constrained claim, not a feature automatically created by using a trust account. Revocable trust assets typically remain accessible under the settlor's retained control for relevant creditor rules. Some properly structured irrevocable trusts can change creditor exposure, but state exemptions, fraudulent-transfer law, retained powers, trust-beneficiary interests, trustee independence and timing limit the outcome. Moving property while a known creditor pursues collection may create legal exposure rather than safety.",
+        "Long-term care and Medicaid eligibility is a separate high-stakes field with transfer-of-assets rules, look-back periods, exemptions and special treatment of some trusts. An irrevocable trust does not automatically protect a house from Medicaid recovery or allow immediate qualification. Planning often requires examination of a 60-month look-back in Medicaid long-term-care rules, with detailed exceptions and state application. A learner should never infer that the words 'irrevocable' and 'five years' produce a universally valid strategy or a guaranteed result.",
+        "Secured loans survive many ownership changes because the lien follows the collateral according to law. A first mortgage on a house does not disappear by transferring title; the note and lien terms still matter. For certain qualifying inter vivos trust transfers, 12 U.S.C. §1701j-3(d)(8) restricts exercise of a due-on-sale clause, but the statute is conditional and does not automatically waive subordinate assistance program covenants. Life insurance policies transferred to trusts involve a different ownership, beneficiary and potential estate-inclusion analysis.",
+        "Evaluate a family's proposal to permanently transfer a $260,000 home while retaining the right to live in it. Ask whether the family can still sell, borrow, move, pay maintenance or use proceeds; whether the household has enough independent liquidity; what the trustee may distribute; what happens if a beneficiary dies; and whether Medicaid, taxes and liens behave as promised. The cost of lost flexibility is real even if no fee is listed on the legal bill."
+      ],
+      "worked": [
+        "House $260,000; first mortgage $220,000; accessible savings $8,000; economic equity $40,000.",
+        "Hypothetical 6% sale cost $15,600 reduces modeled proceeds after mortgage to $24,400.",
+        "A deed into an irrevocable structure does not create new $24,400 cash; legal entitlement to proceeds requires instrument and lien review.",
+        "If carrying costs are $2,350 per month and monthly income supporting the property is $2,000, the modeled gap is $350/month.",
+        "An effective plan must cover $4,200 annually in that simple deficit before an emergency, regardless of any purported estate-tax benefit."
+      ],
+      "practice": [
+        [
+          "What financial problems can arise when a home is placed into an irrevocable arrangement while the settlor lacks liquid reserves?",
+          "The settlor may lose access or control, need trustee consent for property actions, face ongoing housing costs, lack borrowing flexibility and retain secured obligations; legal protections may be incomplete."
+        ],
+        [
+          "Why should Medicaid long-term-care eligibility be examined separately from estate tax?",
+          "Different programs define available assets, transfers, look-back periods, recovery and exemptions differently. Tax estate exclusions do not by themselves determine Medicaid treatment."
+        ]
+      ]
+    },
+    {
+      "title": "Decision framework: flexibility, efficiency and verifiable objectives",
+      "body": [
+        "A comparison should start with the family, not the document's label. Is the primary objective uninterrupted financial management if an adult becomes incapacitated, a plan for minors, creditor protection under a specific statute, Medicaid planning, tax efficiency for a genuinely taxable estate, or charitable giving? A revocable trust can serve common coordination goals while retaining flexibility. An irrevocable vehicle may be appropriate for narrower problems that justify giving up powers and accepting complexity. Both require qualified drafting and proper funding.",
+        "Construct a weighted decision matrix without pretending all attributes have a universal numerical value. Compare continuing individual ownership with updated beneficiary designations, a revocable funded trust, and a carefully drafted irrevocable trust. Score each for legal control, cost, administration, fiduciary burden, asset liquidity, expected basis treatment, estate inclusion, and difficulty of reversal. Mark conditional outcomes rather than supply a fake universal ranking. Document who is able and willing to serve as successor trustee.",
+        "Quantify the cost of professional administration. For illustrative assets of $300,000, a trustee fee of 0.8% of annual beginning assets is $2,400 a year; tax preparation $800 and custody/filing expenses $400 produce a $3,600 annual outlay or 1.2% of starting assets. Compounded across ten years this cost competes with other family goals. However, the value of continuity for a vulnerable beneficiary can exceed a simple fee comparison. Whether fees actually apply depends on trustee and contract.",
+        "Conclude with a written recommendation that states explicit assumptions and counterarguments. If an irrevocable plan is recommended, describe the legally enforceable benefits being sought and the concrete rights relinquished. If a revocable structure is recommended, explain the lack of automatic creditor protection and likely inclusion in the taxable estate. If neither is needed immediately, provide a lower-cost baseline and triggers for reevaluation. Good estate advice is fact-sensitive and requires professional review before deeds or trusts are executed."
+      ],
+      "worked": [
+        "Illustrative trust assets $300,000; annual trustee fee 0.8%×$300,000=$2,400.",
+        "Tax preparation $800 and records/custody expense $400 ⇒ total costs $3,600/year.",
+        "Cost as share of beginning corpus = $3,600/$300,000=1.2%.",
+        "Without changes to balances or other fees, a ten-year simple sum is $36,000; a realistic financial model must adjust for growth, inflation and fee basis.",
+        "Produce a decision table with three options and at least five explicit tradeoffs, leaving unsupported legal outcomes as 'verify'."
+      ],
+      "practice": [
+        [
+          "Provide a case where a revocable trust is valuable without offering tax savings.",
+          "A household wants a successor to manage properly funded bank and property assets during incapacity and an organized distribution after death. That practical continuity can be valuable although the assets remain economically the settlor's."
+        ],
+        [
+          "When is an irrevocable trust recommendation premature?",
+          "When the client's objectives, property titles, creditor exposures, family relationships, Medicaid facts, future liquidity, tax basis and legal restrictions are unknown. Losing control before verifying those facts is an unnecessary risk."
+        ]
+      ]
+    },
+    {
+      "title": "Present-value comparison: the economic cost of giving up control",
+      "body": [
+        "When a family compares individual ownership, a revocable trust and an irrevocable trust, the financial comparison must recognize both legal constraints and dated cash payments. An administrative fee paid once today differs from one paid annually for two decades. The standard present-value rule discounts each future cash flow to the same valuation date: PV=sum(C_t/(1+r)^t). Here C_t is a future payment and r is the chosen periodic opportunity-cost rate; it is not a guaranteed investment return or an estimate of trust legal benefits.",
+        "Suppose an irrevocable trust costs $4,000 to establish and $1,500 at each year-end for ten years. At a hypothetical 4% annual discount rate, the present value of ongoing fees is $1,500×[1−(1.04)^(-10)]/0.04, approximately $12,166.34. Add the $4,000 initial expense to obtain $16,166.34 of modeled present-value cash costs. This is only the fee schedule; it does not quantify litigation risk, lost control, distribution restrictions or any real tax savings.",
+        "A comparison must also consider an inheritance-tax or basis consequence as a contingent scenario, not a certain fee credit. Property excluded from a gross estate in one arrangement may fail to receive the favorable basis adjustment available to particular property acquired from a decedent. Under IRS Revenue Ruling 2023-2, a completed gift into a grantor trust whose assets were not included in the decedent's gross estate did not receive a date-of-death basis adjustment on the specified facts. A different instrument or retained power may change the outcome, so calculations require legal classification first.",
+        "Use a decision tree that begins with the actual estate size and objective, tests power retention and funding, estimates sources and uses of cash, and only then compares financial costs. If the family is far below 2026 estate-tax thresholds, a paid legal structure may still be justified for administration or particular beneficiary needs, but not by invented immediate estate-tax savings. Record which assumptions could change the ranking and have a Connecticut attorney and tax adviser review them before any irreversible transfer."
+      ],
+      "worked": [
+        "Hypothetical initial trust setup fee $4,000 and annual recurring cost $1,500 for 10 years.",
+        "Discount rate assumption 4% nominal annually, fees at each year-end.",
+        "Annual-cost present value $1,500×[1−(1.04)^(-10)]/0.04≈$12,166.34.",
+        "Total modeled cash-cost present value ≈$16,166.34, excluding taxes and any valuation of legal benefits.",
+        "Compare alternatives over identical periods and clearly mark nonquantifiable family objectives."
+      ],
+      "practice": [
+        [
+          "Why is adding 10 annual trustee fees to an upfront legal fee insufficient for a rigorous present-value decision?",
+          "They occur on different dates and have different opportunity costs. Discount dated cash flows to a common valuation date under a stated rate while retaining undiscounted cost totals for budgeting."
+        ],
+        [
+          "Would a fee present-value result by itself prove a revocable trust is better for every beneficiary?",
+          "No. Properly structured arrangements can have nonfinancial benefits such as continuity, governance, restrictions and specialized beneficiary support that cannot be reduced to a fee alone."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS · Form 1041 instructions and grantor trust classification",
+      "https://www.irs.gov/instructions/i1041"
+    ],
+    [
+      "IRS · Publication 551 gift versus inherited basis",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "IRS · 2026 estate-tax exclusion (Form 706 instructions)",
+      "https://www.irs.gov/instructions/i706"
+    ],
+    [
+      "IRS · 2026 gift-tax annual exclusion",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes"
+    ],
+    [
+      "Connecticut DRS · 2026 estate and gift tax rules",
+      "https://portal.ct.gov/drs/individuals/individual-income-tax-portal/estate-and-gift-taxes/tax-information"
+    ],
+    [
+      "Federal trust transfer / due-on-sale statute",
+      "https://www.govinfo.gov/content/pkg/USCODE-2024-title12/html/USCODE-2024-title12-chap13-sec1701j-3.htm"
+    ],
+    [
+      "IRS · Revenue Ruling 2023-2, no basis step-up for certain nonincluded trust property",
+      "https://www.irs.gov/irb/2023-16_IRB"
+    ],
+    [
+      "Medicaid.gov · trust treatment and five-year LTSS transfer review",
+      "https://www.medicaid.gov/medicaid/eligibility-policy"
+    ]
+  ],
+  "assessment": {
+    "title": "Revocable and irrevocable trust decision analysis",
+    "prompt": "Given a $300,000 appreciated asset with $100,000 adjusted basis and a Connecticut family under the 2026 estate-tax threshold, build a taxable-gain comparison of a qualifying lifetime gift and a qualifying inherited transfer. Analyze three trust options, identify tax classifications and liquidity costs, calculate a ten-year expense scenario, and defend a documented recommendation. Source all tax-year statements.",
+    "rubric": [
+      "Tax classification and estate inclusion distinction (25%)",
+      "Carryover versus inheritance basis math (20%)",
+      "Creditor and financing caveats (20%)",
+      "Liquidity and fee model (20%)",
+      "Source-based professional recommendation (15%)"
+    ]
+  }
+}

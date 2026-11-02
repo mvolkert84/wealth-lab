@@ -1,0 +1,208 @@
+{
+  "id": "L3.S1",
+  "title": "A Trust Is Not a Money Machine",
+  "subtitle": "Trust property, legal interests, funding, administration and financial accounting",
+  "prerequisites": [
+    "L1.S1 balance sheet and liquidity",
+    "L1.S4 debt and collateral",
+    "L2.S5 liens and title transfer"
+  ],
+  "objectives": [
+    "Distinguish settlor, trustee, beneficiary and legal versus beneficial interests",
+    "Trace ownership of each asset across deed, account registration and beneficiary designations",
+    "Reconcile trust assets, liabilities, distributions, expenses and ending value",
+    "Quantify why transferring a mortgaged property creates no new equity or spendable cash",
+    "Analyze probate property, nonprobate transfers, administration and professional duties"
+  ],
+  "sections": [
+    {
+      "title": "The trust is a legal relationship, not a financial asset generator",
+      "body": [
+        "A trust is an arrangement in which a trustee holds and administers identified property under enforceable duties for beneficiaries or specified purposes. The settlor or grantor establishes the arrangement and contributes property; the trustee exercises powers within the instrument and governing law; the beneficiary holds rights defined by that instrument. One individual may occupy more than one role. A revocable living trust may name the settlor as initial trustee and current beneficiary, while a successor trustee steps in after specified events. The trust itself does not pay for property, create equity, or supply income independently of what its assets earn.",
+        "Think of three maps: title, control, and economic benefit. Title asks which legal person or trustee owns an asset. Control asks who can manage, amend, revoke, or distribute it. Benefit asks who is entitled to income or principal and under what circumstances. These can overlap or diverge. A lawyer uses the instrument and local law to interpret rights; an analyst separately values assets and expected carrying costs. Confusing control with creditor protection or legal title with cash liquidity leads to unreliable estate recommendations.",
+        "A Connecticut resident holding a $250,000 house and a $237,500 first mortgage has $12,500 of gross home equity before sale costs. Assuming a legally effective deed into a revocable trust and unchanged fair value and debt, the same residence remains worth $250,000 and the same lender is owed $237,500. Equity remains $12,500. Moving title into a trust does not create a second $250,000 asset, lower the loan payoff, or eliminate the lender's secured claim. Estate administration may change, but the household's economic wealth does not magically rise.",
+        "Trusts can address valuable non-return objectives: continuity during incapacity, successor management, distribution rules for a child, and avoidance of some court-supervised transfers for assets properly funded into a living trust. Each benefit has limits and costs. Connecticut Probate Courts emphasize that estates must settle financial obligations before the balance is distributed, and that trust implementation can require legal assistance. Professional analysis begins with the objective—incapacity, minor child, privacy or coordination—rather than a sales promise about superior returns."
+      ],
+      "worked": [
+        "House FMV $250,000, secured first mortgage $237,500, cash $8,000.",
+        "Economic equity $250,000−$237,500=$12,500; economic net worth in this simplified example $20,500.",
+        "After a legally valid title transfer to a revocable grantor trust: same house $250,000; same lien $237,500; cash $8,000.",
+        "Economic net worth still $20,500, before legal and recording charges; net worth does not increase because of the transfer.",
+        "If legal and recording charges consume $1,200 of cash, simplified post-transaction net worth falls to $19,300."
+      ],
+      "practice": [
+        [
+          "Explain why a trust holding a residence should not report both the home's full value and its equity as separate assets.",
+          "The home is reported at an evidence-based value and outstanding liens are liabilities. Equity is a derived residual, not another asset. Recording it as both an asset and residual double counts the same ownership interest."
+        ],
+        [
+          "What would you tell a family promised that a trust will immediately double its wealth?",
+          "Ask for a dated asset-and-liability ledger, title evidence, secured debt obligations and any fees. Unless there is an external economic transfer, changing the name on title cannot create additional household net assets."
+        ]
+      ]
+    },
+    {
+      "title": "Funding is an operational act that must match the legal plan",
+      "body": [
+        "Signing a trust instrument and funding it are different tasks. A written trust with no properly transferred property may not manage the home, securities or bank account that a family assumes it controls. Funding can require a deed, financial-institution retitling, transfer forms, and sometimes updating designated beneficiaries. The right procedure differs for retirement accounts, life insurance, bank assets, securities and real property; a retirement account is not ordinarily retitled into a revocable living trust during the owner's life. An attorney and custodian must address rules for each asset.",
+        "Build an asset map with columns for current registered owner, intended legal owner, governing transfer method, named beneficiary, outstanding lien, tax treatment, confirmation document and review date. The critical question is not whether the trust appears on a cover page but whether a particular asset will actually follow its instructions. A beneficiary designation on life insurance or an IRA can transfer property outside a will; naming the trust as beneficiary can be appropriate in selected circumstances but may change distribution or tax options. Do not assume the will overrides a valid contractual beneficiary designation.",
+        "For example, a household has $8,000 savings individually titled, $70,000 in an employer retirement plan, a $250,000 house and a $237,500 mortgage, and $100,000 term life coverage payable only if the insured dies while covered under the policy. The $100,000 death benefit is not a current $100,000 liquid investment account. The retirement plan can have its own beneficiary instructions. The home may require a deed and lender, insurer and title review. A single unfilled form can change which party receives an asset at death.",
+        "The fiduciary should preserve documentary evidence: executed and effective trust provisions, deeds and recording receipts, current account statements, confirmation of beneficiary elections, policy contracts, note and mortgage, and a funded-asset inventory. Document an unresolved item instead of treating an intended transfer as already complete. If the home is assisted by a CHFA subordinate lien, its own transfer or payoff conditions need separate review, even where federal rules restrict enforcement of certain first-mortgage due-on-sale clauses."
+      ],
+      "worked": [
+        "House $250,000 and mortgage $237,500; savings $8,000; retirement account $70,000; term death benefit $100,000 conditional on death and policy coverage.",
+        "Current simplified balance-sheet assets $328,000 and liabilities $237,500 = $90,500 net worth (excluding the contingent death benefit).",
+        "A deed into a trust can alter house legal title but does not add $250,000 to assets again.",
+        "Retirement beneficiary form and life policy designation must be inventoried separately; their transfer mechanics are not identical to deeds.",
+        "Funding checklist: evidence of deed recording, lender/assistance review, beneficiary forms, account titling and successor trustee contact."
+      ],
+      "practice": [
+        [
+          "How would you audit a trust that names the home in a written schedule but has no recorded deed or other proof of transfer?",
+          "Mark the transfer unverified and request deed/title records and attorney review. A list of desired assets is not conclusive evidence that the trustee holds title or the transfer meets contractual requirements."
+        ],
+        [
+          "Should a life insurance policy's face amount be included as checking cash before death?",
+          "No. A term policy's death benefit is contingent on coverage and a covered death; it does not provide the same current cash value or access as a deposit account. Permanent-policy values require separate contract analysis."
+        ]
+      ]
+    },
+    {
+      "title": "Probate, nonprobate transfers and creditor priorities",
+      "body": [
+        "Probate refers to legal procedures for validating wills, appointing personal representatives and overseeing disposition of property that must pass through an estate. Connecticut Probate Courts supervise estates, trusts and related matters, and the procedure depends on the assets and circumstances. Some property may pass through properly funded trusts, joint ownership rules or designated beneficiaries outside the probate estate; that does not imply it is invisible for every tax, creditor or legal purpose. A revocable trust may still require administration, records and creditor analysis.",
+        "The executor or administrator gathers and values estate property, identifies claims, files the required accounts and tax documents, and distributes only what remains available after lawful obligations. A nominated executor in a will is not automatically the same as a successor trustee; these are distinct legal offices with potentially different responsibilities and property pools. When a person dies without a valid will, intestacy rules—not the family's preferred informal arrangement—direct distribution of probate assets.",
+        "A useful financial example starts with estate-controlled cash of $20,000, an unencumbered vehicle worth $12,000, recognized debts of $9,000 and administration costs of $3,000. If the vehicle sells for its estimated value and no other taxes or expenses apply, residual distributable property is $20,000+$12,000−$9,000−$3,000=$20,000. That is not the same as the estate's $32,000 gross asset value. If an unexpected allowed claim adds $5,000, the residual falls to $15,000. Distribution is conditional on actual claims, sale proceeds and controlling probate procedure.",
+        "Professionals distinguish debts secured by a particular asset from the priority of general estate claims. A home with a first mortgage requires payments, payoff through sale, or a lawful assumption/continuation arrangement; the estate or heir cannot simply ignore the lien. Asset and liability classification can vary when title is joint, community property concepts are irrelevant or limited, or an owner had contractual obligations. Connecticut counsel should confirm creditor-notice, estate-administration and required tax filings rather than relying on a generic online probate shortcut."
+      ],
+      "worked": [
+        "Illustrative probate assets cash $20,000 + vehicle $12,000 = $32,000 gross estate property.",
+        "Recognized liabilities $9,000 and modeled administration expenses $3,000.",
+        "Residual before any other taxes or claims = $32,000−$9,000−$3,000=$20,000.",
+        "If valid additional claims of $5,000 emerge, modeled residual becomes $15,000.",
+        "A separate life policy naming an individual beneficiary must be classified by its governing contract rather than simply inserted as probate cash."
+      ],
+      "practice": [
+        [
+          "Explain the difference between property outside the probate estate and property excluded from all relevant taxes or claims.",
+          "A transfer method can avoid probate administration of that asset without necessarily removing it from the taxable estate, creditor remedies or other governing legal rules. Analyze each regime separately."
+        ],
+        [
+          "If an estate's gross assets are $85,000, debts $21,000 and expenses $9,500, calculate the simplified residual.",
+          "$85,000−$21,000−$9,500=$54,500, assuming all amounts are verified and no other taxes, claims or distributions apply."
+        ]
+      ]
+    },
+    {
+      "title": "Trust accounting: reconcile the opening and closing asset pool",
+      "body": [
+        "A trustee must know what property is actually held, what it earned, what it spent and what it owes. A practical economic trust cash roll-forward is ending cash = opening cash + receipts − cash operating expenses − beneficiary distributions − debt service − asset purchases + asset sales proceeds. That is a cash schedule; it is not identical to taxable income or to economic net worth. The trustee also tracks asset cost basis, fair value and legal restrictions, subject to the trust and applicable fiduciary accounting rules.",
+        "Start with opening trust cash $30,000 and investments marked at $70,000, without liabilities. Over a year investments distribute $2,000 of cash income and increase in market value by $4,000; trustee and legal expenses are $1,200; beneficiaries receive $5,000. Assume no taxes or additional contributions. Ending cash is $30,000+$2,000−$1,200−$5,000=$25,800. Ending investments are $74,000. Economic trust assets are $99,800, versus $100,000 opening assets, a $200 decline: $2,000 income + $4,000 unrealized gain − $1,200 expense − $5,000 distribution = −$200.",
+        "The $5,000 beneficiary distribution is an outflow from the trust asset pool, but it is not the same as a fee consumed outside the family when beneficiaries are part of the consolidated household. Whether a payment represents distributable net income, corpus, taxable distribution, or an amount reportable on Schedule K-1 is a separate legal-tax question. Students must not use simple cash accounting to infer Form 1041 taxable income, since income tax law and fiduciary accounting allocation rules can diverge.",
+        "Trustees may face competing liquidity and growth objectives. An asset-heavy trust that holds real estate might appear wealthy while failing to pay taxes, insurance, property maintenance and professional fees. Financial analysis should model dated cash demands and realistic sale costs. Request the trust terms, bank and custody records, tax filings and fiduciary accounts before making claims about distributable amounts or trustee performance."
+      ],
+      "worked": [
+        "Opening: $30,000 cash + $70,000 investments = $100,000; no liabilities.",
+        "Annual receipts $2,000 investment income; expenses $1,200; distributions $5,000; unrealized gains $4,000.",
+        "Ending cash = $30,000+$2,000−$1,200−$5,000=$25,800.",
+        "Ending investments $70,000+$4,000=$74,000; ending economic net assets $99,800.",
+        "Reconciliation: $100,000+$2,000+$4,000−$1,200−$5,000=$99,800."
+      ],
+      "practice": [
+        [
+          "What can cause a trustee's cash balance to fall while economic net worth rises?",
+          "For example, cash is used to buy investments or pay down a liability, while investments appreciate. Reconcile cash, each asset and liabilities rather than interpret cash alone as performance."
+        ],
+        [
+          "If the example's investments instead lose $8,000, what is the ending economic trust asset balance?",
+          "Ending cash remains $25,800; investments $62,000; total $87,800, before any additional costs, taxes or changes in receipts."
+        ]
+      ]
+    },
+    {
+      "title": "Fiduciary conduct, conflicts and transparent costs",
+      "body": [
+        "A trustee is not merely a relative who can spend trust funds at will. The controlling instrument and state fiduciary law define duties to beneficiaries, including administration in good faith and appropriate care, prudence, loyalty, recordkeeping and often impartiality among beneficiaries with different interests. Trustees may need to balance current distributions against long-run preservation and invest according to the applicable standard. The trustee's personal interests may conflict with the beneficiary's, particularly when the trustee lives in trust-owned property.",
+        "A professional due-diligence review asks whether fees are reasonable and authorized, investments have an appropriate risk and liquidity profile, beneficiaries receive required information, and transactions with trustees or related parties are properly handled. A trust selling a house to the trustee's family at a discount is not validated simply because all participants are related. Valuation and approvals matter. Written reasoning and dated records protect both beneficiaries and trustees.",
+        "Consider an asset pool of $200,000. An annual trustee fee of 1.0% of beginning assets is $2,000 under that simplified fee convention. Investment management fees at 0.45% are another $900 on the same basis, and legal/accounting costs of $1,500 bring annual costs to $4,400, or 2.2% of beginning assets before inflation and market movement. These fees can materially alter the amount available for long-term beneficiaries. Real fee schedules may be fixed, tiered, negotiated or charged on other bases.",
+        "Do not treat the highest nominal expected return as the only goal. A trustee managing funds for a child who may need educational support in three years may reasonably favor greater liquidity than a speculative leveraged portfolio. The trust's distribution standard, risk capacity, beneficiary needs, policy constraints and practical administrative burden all matter. The learner must present both a quantitative cost analysis and a duty-of-care narrative."
+      ],
+      "worked": [
+        "Asset pool $200,000; assumed trustee fee 1.0% of start = $2,000.",
+        "Investment management fee 0.45% of start = $900; outside legal/accounting cost $1,500.",
+        "Total stated annual costs $4,400, or 2.2% of beginning value.",
+        "At a hypothetical 4% gross income-and-appreciation return ($8,000), simplified pre-distribution net growth after those costs = $3,600.",
+        "The simplified result excludes investment taxes, variable balances, risk and potentially additional transaction costs."
+      ],
+      "practice": [
+        [
+          "Why might a trustee reject a higher expected-return investment for a beneficiary's near-term tuition fund?",
+          "Because loss risk, time horizon, liquidity obligations, legal restrictions and duties to beneficiaries can outweigh higher uncertain expected returns, especially when tuition payment timing is fixed."
+        ],
+        [
+          "How should a trustee explain related-party fees?",
+          "Describe the contract, conflicts, authorizing authority, competitive alternatives, actual services, calculation base and the benefit to beneficiaries; seek independent legal review when necessary."
+        ]
+      ]
+    },
+    {
+      "title": "A secured home inside a trust: integrated decision model",
+      "body": [
+        "Return to a mortgaged Connecticut house. A household owns property valued at $260,000, owes $220,000 on the first loan and $12,000 on a subordinate assistance lien, and holds $8,000 accessible savings. Gross home equity is $28,000, and a simplified total economic net worth including bank cash is $36,000. A 6% hypothetical sale expense on the property value is $15,600, reducing modeled sale proceeds after liens to $12,400; the family cannot assume the full $28,000 is immediately spendable.",
+        "If the home is transferred into a qualifying living trust, legal title might change but the mortgage and assistance lien remain. Certain inter vivos trust transfers fall within federal due-on-sale protections under 12 U.S.C. §1701j-3(d)(8), subject to specific conditions; a separate assistance program's recorded transfer or refinance triggers require review. Insurance, recordation, estate administration and tax treatment may also require coordination. It is inappropriate to advertise trust funding as absolute protection from every creditor.",
+        "Model the housing carrying cost after the transfer: monthly first-lien payment $1,650 (hypothetical), tax and insurance $650, maintenance reserve $250 and utilities $300. The combined amount is $2,850 monthly. If occupant take-home pay is $3,000, only $150 remains for other necessities, a clearly infeasible household scenario. Trustee authority does not create additional income. A house can be legally transferred into a sound trust yet become economically unsustainable.",
+        "Write an advisory memo with three choices: retain ownership while arranging a revocable trust and funding checklist; sell to protect remaining liquid assets; or delay the transfer pending advice on the subordinate loan. For each choice identify its economic cost, legal unknowns, and effect on a child beneficiary. Treat the trust as a control-and-succession mechanism and the financing as a separate household survival problem."
+      ],
+      "worked": [
+        "House fair value $260,000; first mortgage $220,000; subordinate lien $12,000; cash $8,000.",
+        "Home equity $28,000; household economic net worth from these balances $36,000.",
+        "Sale costs 6%×$260,000=$15,600; modeled proceeds after both liens and sale costs $12,400.",
+        "Monthly P&I $1,650 + taxes/insurance $650 + maintenance $250 + utilities $300 = $2,850.",
+        "If take-home is $3,000, only $150 remains for all other spending; inheritance planning cannot ignore affordability."
+      ],
+      "practice": [
+        [
+          "If the house's value falls by 10% with loans unchanged, recompute gross equity and sale proceeds at 6% costs.",
+          "Value $234,000; gross equity $234,000−$232,000=$2,000. Selling costs $14,040; modeled net sale proceeds −$12,040, before other claims or expenses."
+        ],
+        [
+          "Distinguish federal due-on-sale protection from a guarantee that a CHFA-assisted property may be transferred without cost.",
+          "Federal restrictions address specified lender actions under covered first-loan transfers; a subordinate assistance contract can have separate repayment, approval, occupancy or forgiveness conditions requiring its own document review."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Connecticut Probate Courts · Trusts & Estates",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "Connecticut Probate Courts · estate administration guidance",
+      "https://www.ctprobate.gov/trusts-estates/trusts-estates-user-guides"
+    ],
+    [
+      "IRS · Instructions for Form 1041, grantor and other trusts",
+      "https://www.irs.gov/instructions/i1041"
+    ],
+    [
+      "IRS · Publication 551, basis of assets",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "US Code §1701j-3 · covered trust-transfer due-on-sale rules",
+      "https://www.govinfo.gov/content/pkg/USCODE-2024-title12/html/USCODE-2024-title12-chap13-sec1701j-3.htm"
+    ]
+  ],
+  "assessment": {
+    "title": "Trust accounting and property-rights memorandum",
+    "prompt": "Reconstruct a trustee balance sheet and 12-month cash roll-forward, reconcile investment gains and $5,000 beneficiary distributions, then advise a family on funding a $260,000 Connecticut residence into a trust with $232,000 of secured liens. Document title, financial and assistance-loan risks; deliver a written conclusion with citations.",
+    "rubric": [
+      "Correct legal-party and funding map (20%)",
+      "Balance sheet and trustee roll-forward (25%)",
+      "Proceeds and household liquidity stresses (25%)",
+      "Fiduciary and creditor distinctions (15%)",
+      "Primary sources and reasoned advice (15%)"
+    ]
+  }
+}

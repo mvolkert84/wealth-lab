@@ -1,0 +1,229 @@
+{
+  "id": "L3.S3",
+  "title": "Planning for a Daughter",
+  "subtitle": "Minor beneficiaries, guardianship, liquidity, education, housing and family continuity",
+  "prerequisites": [
+    "L3.S1 trust funding and fiduciary accounting",
+    "L3.S2 grantor classification and tax basis",
+    "L2.S5 debt, title and assistance conditions",
+    "L1.S3 growth and inflation"
+  ],
+  "objectives": [
+    "Construct child-beneficiary asset, debt, title and policy schedules",
+    "Distinguish guardians of the person and estate from trustees",
+    "Estimate home sale proceeds and ability to maintain inherited property",
+    "Forecast an inflation-adjusted education goal and analyze investment risk",
+    "Defend a documented multigenerational continuity plan"
+  ],
+  "sections": [
+    {
+      "title": "A beneficiary needs a functioning plan, not a gross asset total",
+      "body": [
+        "A family inheritance plan identifies the beneficiary's actual needs: safe housing, near-term care, education funding, financial decision-making, and an orderly transition if a parent dies or becomes incapacitated. Net worth is only a starting point. A $300,000 residence with a $290,000 mortgage is a different inheritance from $300,000 of unrestricted deposits. A plan must ask when cash will be available, who is authorized to use it, and whether maintaining the property is economically sustainable.",
+        "Start with an asset map of title, current owner, registered account, first and contingent beneficiary, loan balance, transfer pathway, tax-basis evidence, contact person and document location. A will, retirement-account beneficiary designation, life insurance contract, deed and trust instrument can govern different property. Saying that a daughter will inherit a family's home is insufficient if the deed, loan, other heirs or a subordinate assistance lien are not reconciled with that wish.",
+        "Suppose a parent owns a house worth $260,000 with a $220,000 mortgage, $25,000 cash, $50,000 retirement investments and $100,000 of in-force term life coverage naming a beneficiary. Present economic assets total $335,000; subtract $220,000 debt for $115,000 net worth. The term death benefit is conditional and is not today's checking balance. After death, the insurer may pay a valid claim according to policy and beneficiary rules, but that does not guarantee the payment will enter the probate estate or the child's own bank account.",
+        "Professionals prepare two schedules: today's estate and household balance sheet, and a contingent death or incapacity settlement map. The second identifies insurance proceeds, retirement beneficiary rights, mortgage carrying costs, funeral and administration expenses, taxes and time needed to access funds. Their timing matters. A financial plan that assumes every benefit pays immediately and every bill waits creates a misleading picture of the surviving family's resilience."
+      ],
+      "worked": [
+        "Current house $260,000, cash $25,000, retirement $50,000 ⇒ $335,000 assets.",
+        "Mortgage liability $220,000 ⇒ current net worth $115,000.",
+        "Potential $100,000 term insurance benefit is analyzed separately from current assets.",
+        "At 6% sale costs, the property's $40,000 gross equity would shrink to $24,400 modeled sale proceeds, before further costs or taxes."
+      ],
+      "practice": [
+        [
+          "Why should a parent's balance sheet exclude the full term-policy death benefit as present bank cash?",
+          "The policy is a contingent contract, subject to covered death and current policy terms, not an unconditional liquid financial asset available to meet today's expenses."
+        ],
+        [
+          "Describe the information needed before saying an heir will receive the full home value.",
+          "Review legal title and other owners, lien and mortgage payoff statements, estate claims, potential selling expenses, beneficiaries, the trust or will, and the beneficiary's ability to maintain or sell the property."
+        ]
+      ]
+    },
+    {
+      "title": "Child guardianship and financial trusteeship are distinct responsibilities",
+      "body": [
+        "A guardian of a minor's person is concerned with care and personal decisions; a guardian of a minor's estate manages assets owned by the minor; a trustee controls and distributes property governed by a trust. These are separate legal offices with different powers and court involvement. Naming a possible guardian in estate documents does not necessarily override the role of Connecticut Probate Courts. An appropriate family plan may name different trusted adults for care and financial administration.",
+        "Connecticut Probate Courts' guidance describes circumstances where a guardian of the minor's estate must be appointed if the minor holds significant assets outside exempted property-management arrangements. Property under a valid trust or the Uniform Transfers to Minors Act can involve different management rules. Do not rely on an old dollar threshold without checking the court's current guidance, the child's age and legal ownership. If a child has disabilities or special benefit eligibility, additional specialized legal planning may be required; do not assume the facts from a general example.",
+        "The trustee must consider the child's best interests within the trust's distribution standard and governing fiduciary law. A carefully drafted instrument might permit reasonable education, health, maintenance and support spending while holding other amounts for later milestones. The trustee may need to preserve capital, keep records and distribute fairly if there are several beneficiaries. Broad discretion can help with changing circumstances but can also create conflicts or inconsistency if unqualified people are selected.",
+        "Build a succession chart listing caregiver, trustee, alternate trustee, personal representative, financial agent during incapacity, medical decision-maker, emergency contacts and the professional attorney or accountant. Verify who can obtain bank information, make insurance claims and maintain a residence in the weeks after death. Include backups because a named individual can refuse, move or become unable to serve. Revisit the plan after major family changes, not only when tax law changes."
+      ],
+      "worked": [
+        "Illustrative child trust funds $65,000 and anticipated education cost in six years $30,000 nominal.",
+        "If $20,000 is earmarked for early care and trustee costs, at most $45,000 remains for other uses before investment changes.",
+        "At $600 annual administration expense, six-year undiscounted cost would be $3,600 before inflation or changing balances.",
+        "The child may not be entitled to an immediate $65,000 payment; distributions depend on lawful trust or court administration."
+      ],
+      "practice": [
+        [
+          "Explain why the best caregiver is not necessarily the best trustee for a child's investments.",
+          "Personal care and fiduciary financial administration call for different competencies, availability and controls. Separating roles or appointing backups can address conflicts of interest and interruptions."
+        ],
+        [
+          "Why is an informal letter saying 'my sister will handle everything' insufficient?",
+          "It may not supply enforceable guardian, trustee, agent or beneficiary authority. Applicable documents, court appointment and contractual transfer methods are necessary."
+        ]
+      ]
+    },
+    {
+      "title": "Inherited housing: gross equity, net sale proceeds and survivor affordability",
+      "body": [
+        "The largest estate asset is often a house, yet it can produce immediate cash demands before anybody receives a distribution. The mortgage, property taxes, insurance, utilities and maintenance continue according to contract and law. Calculate two alternative paths: sell at a supportable market price after expenses and payoff, or keep the property with a documented monthly budget. Estate title or a living trust does not turn the property into immediate cash.",
+        "Assume a Connecticut house worth $260,000, a first mortgage of $220,000 and a second assistance lien with $12,000 unpaid. Gross equity is $28,000. At a hypothetical 6% selling cost, $15,600 goes to sale expenses, leaving $12,400 of modeled sale proceeds after the two liens. At a 10% lower sale price of $234,000, modeled costs are $14,040 and the result is negative $12,040. An heir may need cash or a legal negotiated resolution rather than receive money.",
+        "Keeping the property requires careful cash-flow analysis. Suppose a family member's monthly first-mortgage payment and escrow are $1,900, utilities are $250, a repair reserve is $220 and transportation to work is $300. The combined commitments are $2,670 before food and healthcare. With net income of $2,500, the household is already short $170 before essentials. A plan to preserve the residence cannot be justified by attachment alone when it leaves the intended beneficiary unable to meet ordinary needs.",
+        "Sales cash proceeds are not necessarily taxable gain. Under IRS Publication 551, qualifying inherited property's basis is generally determined by date-of-death fair market value or an allowed alternative valuation, subject to exceptions. Gain compares amount realized with adjusted basis; debt repayment reduces sale cash but does not substitute for the tax basis calculation. Document the appraisal, closing statement and expenses, and separately determine home-sale exclusion and ownership rules if relevant."
+      ],
+      "worked": [
+        "$260,000 home − $220,000 mortgage − $12,000 second lien = $28,000 gross equity.",
+        "6%×$260,000 = $15,600 selling costs; net proceeds $12,400.",
+        "10% decline to $234,000, costs $14,040 ⇒ modeled proceeds −$12,040.",
+        "Living in the home: $1,900+$250+$220+$300=$2,670 costs versus $2,500 income; deficit $170 before other living needs."
+      ],
+      "practice": [
+        [
+          "Why could the sale of an inherited home require additional cash even when the original homeowner had positive equity?",
+          "Lower market value, selling expenses, liens, taxes and repair charges may outweigh gross equity. Model actual sale proceeds on the expected date and do not assume all debts have disappeared."
+        ],
+        [
+          "Why does mortgage balance not serve as tax basis when heirs sell the property?",
+          "Sale proceeds and taxable gain are separate measures; gain generally uses amount realized less adjusted tax basis, while mortgage payoff determines cash remaining after the transaction."
+        ]
+      ]
+    },
+    {
+      "title": "Insurance proceeds, retirement beneficiaries and near-term reserve sequencing",
+      "body": [
+        "Life insurance can create liquidity after a covered death, helping a family replace income or pay housing debt. A policy's existence does not prove that the intended beneficiary is named, coverage is active or proceeds are immediately available. Naming a minor directly can complicate custody or management of money. Naming a trust can coordinate administration but requires carefully drafted provisions, updated beneficiary forms and review of policy ownership and tax effects.",
+        "Retirement accounts have plan-specific and federal beneficiary rules. A 401(k), IRA or pension's current beneficiary records must be checked separately from wills and deeds; spouses, minor children and trust beneficiaries can face different timing and tax rules. A generic direction to 'give everything to the trust' may cause unintended results. Estate counsel and retirement-plan custodians need to coordinate the actual contract, marital status, trustee powers and distributions.",
+        "Illustrate a family with $12,000 accessible cash, $2,800 monthly essential costs and a possible $100,000 insurance payment after a claim. Before the claim, the family has about 4.29 months of expenses at that steady rate. If the claim pays, assign funds explicitly: perhaps $60,000 to a mortgage strategy, $25,000 to a child support fund and $15,000 to new reserves. That assignment uses $100,000 exactly once; it is not three separate $100,000 resources.",
+        "Mortgage principal prepayment does not necessarily lower the required monthly installment without a servicer-approved recast or refinancing transaction. A child's financial plan must check whether mortgage payoff is more valuable than keeping funds liquid for education, care and emergency spending. Compare a partial loan payoff to maintaining a secure reserve, recognizing that actual loan rates, insurance costs and the beneficiary's age determine what is sensible."
+      ],
+      "worked": [
+        "Accessible savings $12,000 divided by essential spending $2,800/month ≈4.29 months of runway.",
+        "Possible death benefit $100,000 is excluded from pre-claim current cash.",
+        "Illustrative benefit allocation: $60,000 loan strategy + $25,000 support + $15,000 reserve = $100,000.",
+        "Evaluate recast eligibility and different debt terms rather than promise a lower required payment from any lump-sum principal reduction."
+      ],
+      "practice": [
+        [
+          "Why may an insurance payout need a trust or other lawful management structure when the named beneficiary is a minor?",
+          "An underage beneficiary may not be able to receive or administer assets directly; legal custodianship or trust administration and correct policy designations may be necessary."
+        ],
+        [
+          "Explain why reducing a mortgage's principal balance may not automatically lower the scheduled monthly payment.",
+          "A standard fixed-rate amortization contract usually retains its scheduled payment absent recast or refinancing; early repayment can shorten the term or reduce interest without reducing the next installment."
+        ]
+      ]
+    },
+    {
+      "title": "Education planning: cost inflation, future value and funding gaps",
+      "body": [
+        "Inheritance for a child is a future spending plan as much as a property transfer. Convert today's education, care or housing goals into the dollar amount expected at the target date using an explicitly assumed inflation rate. A $30,000 current cost projected to rise 3% annually for eight years is approximately $38,003, calculated as $30,000×1.03^8. This is a financial-modeling scenario, not a forecast of tuition inflation or scholarships.",
+        "Investments should be modeled with both growth and downside. If $15,000 is held for eight years at a perfectly smooth hypothetical 5% nominal annual return, the amount would become about $22,162 before fees and taxes. The difference between this and the projected $38,003 target is a gap of around $15,841. Actual market returns may be negative near the education date. Short-horizon funds require attention to liquidity and loss risk rather than optimistic compounding alone.",
+        "Add trust operating costs to the model. If $500 is paid at each year end and assets otherwise earn hypothetical 5%, the future value of the fees is $500×[(1.05^8−1)/0.05], approximately $4,775. This is not a prediction of actual trustee fees; it demonstrates how administrative costs compete with future beneficiary funds. Actual fee conventions, inflation, taxation and cash-flow dates should be documented.",
+        "A financial planner prepares base, optimistic and adverse cases, using the same tuition target date and contribution schedule. A gap can be addressed by higher contributions, a changed education path, aid or cost adjustments, not by claiming an investment will guarantee a selected return. A trust may organize distributions but cannot eliminate risk, inflation or the need for saving."
+      ],
+      "worked": [
+        "Education cost future value: $30,000×(1.03)^8 ≈$38,003.",
+        "Invested $15,000 at hypothetical constant 5% for eight years ≈$22,162 before costs.",
+        "Modeled funding gap ≈$15,841; funding ratio ≈58.3%.",
+        "Annual $500 end-of-year fee at 5% has 8-year accumulated effect of approximately $4,775."
+      ],
+      "practice": [
+        [
+          "How would an adverse market return near the child's college start change the planning decision?",
+          "A negative short-run outcome may make tuition funds unavailable when needed. Hold appropriate liquidity and rerun the funding model with loss and fee scenarios rather than promising the 5% path."
+        ],
+        [
+          "Why should a future tuition goal and investments be compared on the same future date?",
+          "Mixing today's tuition cost with future investment value ignores cost inflation and leads to an invalid funding coverage ratio. Both numerator and denominator need aligned dates."
+        ]
+      ]
+    },
+    {
+      "title": "An integrated family continuity plan with defensible alternatives",
+      "body": [
+        "The final exercise is a professional-style case rather than a decision based on one financial ratio. Document property title, first and subordinate mortgages, bank accounts, retirement beneficiaries, insurance beneficiaries, the will or trust, fiduciary appointments and the intended child's needs. Estimate monthly carrying costs and identify whether the child or caregiver could keep the residence if household income changes. Research the primary Connecticut probate and IRS rules relevant to the chosen structure.",
+        "Build two independent outcomes. Under a hold scenario, project mortgage, property taxes, insurance, utilities, maintenance and household essentials for at least 24 months, noting how death benefits and existing reserves fund each date. Under a sell scenario, show proceeds at today's value and at a 10% drop, less all liens and a stated sale-cost assumption. If the net result is negative, state the practical need for legal advice and a funding solution rather than simply record an impossible cash distribution.",
+        "Match each available adult to a role: guardian of the person where relevant, financial trustee, alternate fiduciary, executor, incapacity agent and emergency contact. Discuss whether the trustee should have discretionary powers and what records must be maintained for the child. In Connecticut, the Probate Court can appoint guardians and oversees specified estate and trust matters. A personal nomination is useful planning evidence, but the court and actual documents determine enforceable authority.",
+        "A successful recommendation acknowledges uncertainty. It does not assume a trust provides universal asset protection or tax avoidance, that life insurance is guaranteed to pay, or that mortgage debt vanishes on death. Explain what an attorney, lender, insurance carrier, tax adviser and accountant must verify. Set review events: birth or age change, marriage, separation, move, property purchase, refinancing, trustee unavailability, major health change or new tax law."
+      ],
+      "worked": [
+        "House $260,000, debt $220,000 and savings $25,000; compute present household equity and current liquidity separately.",
+        "Stress with a hypothetical second lien $12,000, a 10% home price decline and 6% sale costs.",
+        "Add an $8,000 immediate roof expense; accessible $25,000 cash falls to $17,000 if paid from that account.",
+        "Submit a documented 24-month cash forecast and source-cited recommendation for hold, sell or revise the succession plan."
+      ],
+      "practice": [
+        [
+          "Give one situation where a different person should be named trustee rather than child's day-to-day guardian.",
+          "A caregiver may provide excellent daily support but have limited investment skills or conflicting financial incentives; independent trustee oversight and backups can protect the child's interests."
+        ],
+        [
+          "List evidence needed to make a legal and financial inheritance recommendation reproducible.",
+          "Current deed, liens and payoff statements, cash and investments, retirement and insurance beneficiary confirmations, executed trust or will, family expense forecast, valuations and applicable Connecticut/IRS guidance."
+        ]
+      ]
+    },
+    {
+      "title": "Blended families, stepchildren and vulnerable beneficiaries: explicit legal coordination",
+      "body": [
+        "An inheritance plan can become especially fragile when a child is not legally related to every adult in a household, when an intended heir is a stepchild, or when an adult remarried after creating beneficiary designations. Do not assume that a spouse's child automatically inherits under intestacy or from a stepparent's policy. A beneficiary's rights depend on legal parentage, valid adoption if any, actual title, signed estate documents, state intestacy rules, plan-specific spouse protections and recorded beneficiaries. The words 'our daughter' do not establish legal beneficiary status for every asset.",
+        "Draft a relationship-neutral asset map. For each proposed beneficiary record the actual legal relationship to the owner, intended share, alternative recipient if the beneficiary predeceases the owner, timing of trust distributions and what happens after a surviving spouse's death. A surviving spouse may need a secure home while a child from an earlier relationship needs eventual inheritance. Some legally drafted trusts can manage these competing interests, but tax status, powers, trustee conflicts and property-title decisions determine outcomes.",
+        "If a beneficiary has a disability, receives means-tested public benefits or may require long-term supported decision-making, a conventional outright distribution can have unintended consequences. Specialized third-party or first-party special-needs trusts and pooled arrangements exist under distinct legal rules; eligibility and payback provisions differ. This chapter is a hypothetical sensitivity analysis, not an assumption about any real child. Such a situation calls for a Connecticut attorney experienced in public benefits and fiduciary drafting and review of current program rules.",
+        "A practical exercise compares two instructions for a $60,000 liquid inheritance: direct transfer at death and distribution through a properly drafted trust for a minor with an independent trustee. Both begin with the same $60,000 gross assets, but differ in legal management, expense and timing. If a trust has $1,000 annual costs and no investment growth, it would hold $55,000 after five years if no other distributions occur. Such a calculation is not an endorsement; fees can be worth paying when they provide verifiable beneficiary protection and proper administration."
+      ],
+      "worked": [
+        "Illustrative liquid inheritance $60,000, with two alternative legal transfer routes.",
+        "Outright recipient scenario: gross $60,000 subject to applicable legal capacity, ownership and creditor issues.",
+        "Trust scenario with $1,000 paid annually for five years and no growth or distributions: $60,000−5×$1,000=$55,000.",
+        "If a trust distributes another $4,000 to the beneficiary for permitted needs, modeled cash becomes $51,000 absent other changes.",
+        "Prepare a written beneficiary map distinguishing direct heir, contingent beneficiary, trustee, current spouse and a child whose legal relationship must be verified."
+      ],
+      "practice": [
+        [
+          "What is the risk of assuming that calling someone a stepdaughter makes that person the default legal heir under all family property arrangements?",
+          "Legal relationships, intestacy provisions, beneficiary designations, title and adoption status can differ. A clear estate instrument and contract beneficiary coordination are needed instead of informal relationship labels."
+        ],
+        [
+          "Why can an outright inheritance be unsuitable for certain beneficiaries even when the amount is legally available?",
+          "A minor may lack financial capacity to manage it, and some beneficiaries can face eligibility or exploitation risks. Proper specialist drafting and beneficiary-specific rules, rather than blanket restrictions, determine appropriate alternatives."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Connecticut Probate Courts · trusts and estates",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "Connecticut Probate Courts · Guardians of Minors guide",
+      "https://www.ctprobate.gov/childrens-matters/childrens-matters-user-guides"
+    ],
+    [
+      "IRS · publication 551, inheritance and gift basis",
+      "https://www.irs.gov/publications/p551"
+    ],
+    [
+      "IRS · Publication 559, surviving family and executor responsibilities",
+      "https://www.irs.gov/publications/p559"
+    ],
+    [
+      "CFPB · consumer financial planning basics",
+      "https://www.consumerfinance.gov/consumer-tools/financial-well-being/"
+    ]
+  ],
+  "assessment": {
+    "title": "Daughter inheritance, housing and education decision memorandum",
+    "prompt": "Model a fictional Connecticut daughter's inherited mortgaged home, liquid assets, retirement beneficiary treatment and a conditional term insurance payout. Provide a title/beneficiary matrix, a 10%-downside home sale calculation, an affordable housing alternative and an eight-year inflation-adjusted education plan. Explain proposed trustee and guardian roles and legal caveats.",
+    "rubric": [
+      "Ownership and contingent benefits distinguished (20%)",
+      "Sale, debt and household cash math (25%)",
+      "Minor/child support and fiduciary role coordination (20%)",
+      "Education future value and investment uncertainty (20%)",
+      "Professional source-cited recommendations (15%)"
+    ]
+  }
+}
