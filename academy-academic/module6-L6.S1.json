@@ -251,6 +251,32 @@
           "Large fees, debt interest, liquidity loss, future taxes or legal restrictions can outweigh the deduction. Compare full after-tax cash flows and credible downside risks."
         ]
       ]
+    },
+    {
+      "title": "2026 special worker deductions: qualified overtime, tips and eligibility",
+      "body": [
+        "Some recently enacted federal provisions affect taxable income differently from ordinary salary exclusions. For tax years 2025 through 2028, qualifying tips and qualifying overtime compensation may support specific federal deductions if statutory occupation, reporting, identification and income rules are met. The popular phrase 'no tax on overtime' does not mean every overtime paycheck is excluded from reportable W-2 wages, Social Security or Medicare tax. For qualified overtime, the deductible amount is generally the additional premium over the regular rate, such as the extra half in time-and-a-half pay, not the entire overtime check.",
+        "Under IRS 2026 guidance, the overtime deduction maximum is generally $12,500 per eligible taxpayer or $25,000 for eligible married joint filers, subject to phaseout above specified modified adjusted income levels, correct reporting, a valid Social Security number and a joint-return requirement for married claimants. Qualified tips have separate eligible occupations, voluntary tip requirements, income thresholds and a general $25,000 cap. The car-loan-interest and seniors' deduction rules are additional distinct provisions with their own eligibility—not blanket permission to deduct an employer's entire payroll or any car loan.",
+        "Suppose a worker's ordinary hourly rate is $25 and they work 80 qualifying statutory overtime hours at time-and-a-half, receiving $37.50 per overtime hour. Total overtime compensation is $3,000, but the extra premium portion is $12.50×80=$1,000. If all legal and reporting conditions are met, the relevant new federal deduction might be $1,000 rather than the full $3,000. At a simplified 12% marginal regular income-tax rate, such a qualifying $1,000 deduction might reduce regular federal income tax by approximately $120, not eliminate payroll taxes or every form of withholding.",
+        "A payroll audit uses wage statements, hours, overtime rate, applicable federal overtime requirement, reported qualified amounts and the taxpayer's modified adjusted gross income. A tipped worker must check the IRS list and mandatory reporting rules rather than claim every bonus as a tip. A tax professional should evaluate whether these provisions apply under the actual 2026 return instructions; students must identify deductions as eligibility-conditional and distinguish withholding changes from final tax savings."
+      ],
+      "worked": [
+        "Regular hourly wage $25, 80 time-and-a-half qualifying overtime hours.",
+        "Overtime paid 80×$37.50=$3,000; qualifying premium half 80×$12.50=$1,000 in simplified qualifying circumstances.",
+        "Illustrative 12% marginal rate gives $120 possible income-tax reduction on $1,000 of valid deduction.",
+        "$3,000 overtime wages are not automatically removed from FICA withholding; payroll treatment follows separate law.",
+        "2026 maximum overtime deduction $12,500 individual/$25,000 joint before eligibility and modified income limitations."
+      ],
+      "practice": [
+        [
+          "Why might an hourly worker receiving $3,000 of overtime pay only have $1,000 of eligible qualified-overtime deduction in this example?",
+          "Under specified overtime rules the eligible amount is the premium above the regular rate, not the entire overtime pay. The worker must also meet 2026 eligibility, reporting and income conditions."
+        ],
+        [
+          "What is the flaw in telling an employee that a federal qualified-overtime deduction makes overtime checks completely tax free?",
+          "Federal income-tax deduction eligibility does not automatically remove wages from federal reporting, Social Security or Medicare tax, state income tax or other payroll obligations."
+        ]
+      ]
     }
   ],
   "sourceRefs": [
