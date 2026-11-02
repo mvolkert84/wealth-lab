@@ -1,0 +1,182 @@
+{
+  "id": "L2.S4",
+  "title": "Property Taxes by Location",
+  "subtitle": "Connecticut assessments, mill rates, escrow and housing affordability",
+  "prerequisites": [
+    "L2.S1 cash-flow components",
+    "L2.S3 mortgage escrow",
+    "L1.S2 monthly/annual conversions"
+  ],
+  "objectives": [
+    "Calculate Connecticut tax bills from taxable assessment and applicable municipal rates",
+    "Distinguish appraisal value, assessment and purchase price",
+    "Model revaluation versus mill-rate changes without claiming one-for-one movement",
+    "Evaluate district charges, appeals, exemptions and billing schedules",
+    "Integrate taxes into escrow, mortgage underwriting and rent-versus-buy decisions"
+  ],
+  "sections": [
+    {
+      "title": "Property-tax architecture: value, assessment, rate and levy",
+      "body": [
+        "Property tax is a recurring charge on real property imposed principally by local taxing authorities. It can help fund schools, emergency services, infrastructure and other municipal purposes. In Connecticut, local assessors establish taxable assessments and municipalities determine mill rates within the applicable legal process. A mill means one dollar of tax for every $1,000 of assessed taxable value. Statewide headlines about 'Connecticut taxes' cannot replace a property-specific calculation.",
+        "Connecticut General Statutes section 12-62a describes a general assessment ratio of 70% of present true and actual value, subject to legal provisions and exceptions. The home's listing price, contract price, bank appraisal and municipal assessed value may be materially different. The actual tax bill is computed from the certified assessment, applicable mill rates, charges, exemptions and special-district rules; multiplying the newly negotiated purchase price by a generic rate is only a scenario.",
+        "Under the simple textbook model, taxable assessed value V_a=market value×0.70 and annual base property tax T=V_a×mill rate/1,000. For a hypothetical market value of $245,000 and a hypothetical 34.00-mill rate, assessment is $171,500 and tax $5,831 annually, or about $485.92 per month. This is an illustration—not the current Vernon, Rockville, or another municipality's rate.",
+        "Professional work documents the valuation date, assessment date, current fiscal-year rate, location and any district levies. A property straddling districts or subject to special assessments may owe more. Exemptions and phase-ins can change the final tax. Before purchasing, obtain the actual parcel assessment and bill from the municipality, and verify that a revaluation or new budget has not changed the estimates after the seller's last bill."
+      ],
+      "worked": [
+        "Hypothetical market value $245,000; general assessment assumption 70% ⇒ assessed value $171,500.",
+        "Hypothetical rate 34 mills means $34 for each $1,000 assessed.",
+        "Annual base tax $171,500×34/1,000 = $5,831.",
+        "Monthly reserve equivalent $5,831/12 ≈$485.92.",
+        "This is not a current bill for any named town; use local assessor and collector data for an actual property."
+      ],
+      "practice": [
+        [
+          "What is 1 mill in tax terms?",
+          "One dollar of tax per $1,000 of taxable assessment, not 1% of market value."
+        ],
+        [
+          "What happens if the assessed value is $180,000 and total applicable rate is 30 mills?",
+          "Annual simplified tax = $180,000×30/1,000=$5,400, before any adjustments."
+        ]
+      ]
+    },
+    {
+      "title": "Revaluation is not equivalent to a proportional tax increase",
+      "body": [
+        "A town periodically revalues taxable property to reflect legal assessment requirements and market changes. If every parcel's assessed value increases at the same rate, a municipality could reduce its mill rate and raise the same total levy; individual bills would not necessarily rise in the proportion of the appraisal increase. If one property appreciates faster than the tax base as a whole, it could bear a larger share even when the municipal levy stays constant.",
+        "Separate the numerator and denominator. Let municipality-wide taxable grand list be G and the property-tax revenue requirement be L. A simplified mill rate that raises precisely that levy is m=1,000×L/G. Increasing G while L remains constant reduces the needed m. A parcel's share of the levy can be approximated by its own assessment divided by G. In real systems, district rates, nonproperty revenues, delinquency, exemptions and budget decisions complicate the simple equation.",
+        "Consider a town with $1 billion taxable assessed value and a required $30 million levy: m=30 mills. If the grand list rises to $1.20 billion while the desired levy remains $30 million, a simple adjusted rate would be 25 mills. A parcel rising from $200,000 assessment to $240,000 assessment pays $6,000 both before and after. But if its value rises to $260,000 while the overall base rises 20%, its new bill would be $6,500 at 25 mills.",
+        "An analyst should not forecast a tax bill from a home's Zillow estimate or from the percent change in a particular assessment alone. Use the latest local grand-list assessment, adopted mill rate, exemption eligibility and notice for the new fiscal year. Where revaluation is scheduled, present plausible ranges and identify the actual budget and assessment decisions still unknown."
+      ],
+      "worked": [
+        "Opening municipal assessed tax base G=$1,000,000,000; target levy L=$30,000,000 ⇒ rate m=30 mills.",
+        "Revalued G=$1,200,000,000 with levy unchanged ⇒ m=25 mills.",
+        "Parcel A: $200,000 prior assessment×30/1,000=$6,000.",
+        "Parcel A grows 20% to $240,000×25/1,000=$6,000; no increase under this model.",
+        "Parcel B grows to $260,000×25/1,000=$6,500, so relative valuation changes matter."
+      ],
+      "practice": [
+        [
+          "Does a 20% reassessment imply a 20% higher tax bill?",
+          "No. The final bill also depends on new mill rates, levy requirements and the property's relative valuation."
+        ],
+        [
+          "If a levy rises to $33 million with a $1.2 billion grand list, calculate the simplified rate.",
+          "1000×33,000,000/1,200,000,000=27.5 mills."
+        ]
+      ]
+    },
+    {
+      "title": "What the bill does and does not tell a buyer",
+      "body": [
+        "Property taxes often appear in escrow estimates on a lender's Loan Estimate. Yet the seller's last bill may reflect a previous assessment, special exemption, assessment schedule, or taxing district. A buyer should verify the property's address, map/block/lot or parcel identity, taxable assessment, tax bill period, special assessments and whether any exemptions terminate after transfer. Municipal websites and assessor or tax collector records are primary sources.",
+        "An annual bill and its due-date installments are different from the lender's monthly escrow contributions. A household may face semiannual local tax due dates while depositing one-twelfth of estimated annual tax into its mortgage escrow each month. Closing proration between buyer and seller settles responsibility for a portion of a period and must not be interpreted as a permanent lower tax rate.",
+        "An appeal challenges assessment according to defined municipal and state procedures; it is not a guarantee of reduction merely because a homeowner dislikes the bill. Students must identify the proper authority, deadlines, admissible comparable-property evidence and whether a successful appeal affects past or future assessments. Legal exemptions and relief programs require eligibility, documentation and often annual or periodic verification.",
+        "Property tax is an operating cost of housing. It matters for lender qualifying payments, household cash-flow capacity, rent-versus-buy comparisons, and resale expectations. An expensive home in a lower-mill-rate jurisdiction is not automatically cheaper to own than a less expensive home elsewhere. Compare actual assessment, rate, tax, insurance, utilities, HOA, commuting and maintenance rather than rank towns on a single headline mill rate."
+      ],
+      "worked": [
+        "House A: hypothetical assessed $175,000 at 35 mills ⇒ annual base tax $6,125.",
+        "House B: hypothetical assessed $220,000 at 28 mills ⇒ annual base tax $6,160.",
+        "Despite House B's lower rate, its property tax is $35 higher each year because the assessment is greater.",
+        "If House A has special-district 2 mills, add $350/year on the same assumed assessment, yielding $6,475 combined.",
+        "Verify if the special district applies to the parcel before treating either total as an actual bill."
+      ],
+      "practice": [
+        [
+          "Which property has lower tax: $175,000 assessment at 35 mills versus $220,000 at 28 mills?",
+          "Before district charges, $6,125 versus $6,160; first is lower by $35."
+        ],
+        [
+          "Why should the buyer ask about an existing exemption?",
+          "The seller's preferential assessment or exemption may not carry over to a new owner's eligibility."
+        ]
+      ]
+    },
+    {
+      "title": "Tax escrow forecasting and multi-year stress",
+      "body": [
+        "Escrow forecasting starts with the amount and timing of anticipated property-related disbursements, not simply the month's cash balance. In many covered mortgage escrow accounts, the servicer can collect one-twelfth of anticipated annual expenses each month and maintain an allowable cushion under Regulation X. Annual analysis identifies shortages and surpluses based on a trial running balance. The servicer's calculation should be reconciled against actual tax and insurance bills.",
+        "Assume annual tax $5,831 and annual homeowners insurance $1,800. The simplified monthly funding baseline is ($5,831+$1,800)/12=$635.92. If the tax rises 12% and insurance 20%, next year's tax is $6,530.72 and insurance $2,160; ongoing annual disbursements grow to $8,690.72, corresponding to $724.23 a month. This is already an $88.31 increase before an old escrow shortage is recovered.",
+        "Now add the possibility of a $600 escrow shortage after annual analysis. If handled through twelve equal extra installments, the temporary payment increment could be $50 a month, giving a modeled escrow line of $774.23 during recovery. Servicing regulations and the actual analysis determine the legally permissible treatment. A fixed-rate note payment remains the same, but the household's transfer to the servicer can still grow.",
+        "Professional projection uses low/base/high tax scenarios and annual renewal dates. If a household has only $100 of monthly excess cash, a $138.31 modeled increase in escrow demand would turn the cash flow negative, even with no new borrowing. A home affordability memo should therefore include revaluation sensitivity, hazard premium changes, escrow shortage risk and margin to absorb them."
+      ],
+      "worked": [
+        "Tax $5,831 + insurance $1,800 ⇒ annual $7,631; monthly $635.92.",
+        "Tax increases 12% to $6,530.72; insurance increases 20% to $2,160.",
+        "New annual disbursements $8,690.72; monthly baseline $724.23; increase $88.31.",
+        "If a modeled $600 prior shortage is collected over 12 months, add $50 temporarily.",
+        "Estimated escrow collection during shortage recovery $774.23, excluding other escrowed items."
+      ],
+      "practice": [
+        [
+          "If monthly cash margin before escrow change was $100, what is it after a $138.31 increase?",
+          "Approximately −$38.31 per month, requiring a feasible adjustment."
+        ],
+        [
+          "Is the escrow cushion an annual tax paid to the government?",
+          "No. It is an account balance held for specified projected disbursements under applicable servicing rules."
+        ]
+      ]
+    },
+    {
+      "title": "Source investigation and the property-tax underwriting memo",
+      "body": [
+        "A defensible tax forecast starts with official source retrieval. Identify the property parcel at the municipality assessor's site, copy its certified assessed value, locate the current fiscal-year adopted real-property mill rate on the municipality or CT Office of Policy and Management website, and inspect any special districts. State explicitly whether the figure is current, prior-year, proposed or hypothetical. A buyer cannot verify taxes from a stale advertisement alone.",
+        "Link property tax to the proposed mortgage: principal and interest under the note, one-twelfth of taxes, one-twelfth of homeowners insurance, any mortgage insurance, and an allowance for maintenance. Then divide the resulting housing obligation by qualifying gross income for a provisional lender-oriented picture, but separately compare it with net household cash and reserve goals. The model must also show a future tax scenario.",
+        "Advanced analysis asks why two otherwise similar homes could have different assessed values and bills. Differences may arise from land and improvements, revaluation dates, district boundaries, exemptions, appeals or data errors. Do not use identity or demographics as a substitute for parcel evidence. The ethical role of a financial analyst is to disclose uncertainty and document the correct public data.",
+        "For the final assignment compare two hypothetical towns from the same market area with actual published rates once the learner obtains them. If the rates cannot be verified, leave a clearly labelled data slot rather than invent numbers. Produce a reproducible formula sheet, full housing cost forecast, source date, and risk explanation."
+      ],
+      "worked": [
+        "Candidate price $245,000; placeholder market value $245,000; modeled assessed value 70% = $171,500.",
+        "At fictional 34 mills, tax $5,831 annually and $485.92 monthly.",
+        "If the actual parcel assessment is $180,000 and actual combined adopted rate is 31 mills, estimated tax is instead $5,580.",
+        "New monthly tax reserve $465, or $20.92 less than the original hypothetical scenario.",
+        "The verified parcel and adopted rate supersede the generic assumptions."
+      ],
+      "practice": [
+        [
+          "Name the minimum source fields for a defensible Connecticut tax calculation.",
+          "Parcel location/ID, taxable assessed value, applicable adopted real-estate mill rate(s), fiscal period, special levies/exemptions and source date."
+        ],
+        [
+          "Explain why a property tax forecast can change after contract signing.",
+          "Updated assessment, rate adoption, special charges or changed exemption status can change future liability."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Connecticut General Statutes §12-62a · assessment ratio",
+      "https://www.cga.ct.gov/2025/pub/chap_203.htm"
+    ],
+    [
+      "Connecticut OPM · official mill rate tables",
+      "https://portal.ct.gov/opm/igpp/publications/mill-rates"
+    ],
+    [
+      "CT DRS · 2025 Tax Incidence Study, property taxes",
+      "https://portal.ct.gov/-/media/drs/drs-reports/ct-tax-incidence-study-2025-drs.pdf"
+    ],
+    [
+      "CFPB · Mortgage escrow rules and increases",
+      "https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/mortserv/mortgage-servicing-faqs/"
+    ],
+    [
+      "CFPB · Loan Estimate tax and insurance charges",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ]
+  ],
+  "assessment": {
+    "title": "Municipal property-tax investigation",
+    "prompt": "Build two comparative taxable-property schedules using a source-dated municipality assessor record and adopted mill rate for each scenario. Separate actual source figures from the fictitious 34-mill demonstration; perform base, 12%-tax shock and escrow-shortage scenarios. Write a memo explaining the difference between a revaluation, a new mill rate and a tax bill.",
+    "rubric": [
+      "Actual source provenance and date (25%)",
+      "Assessment/rate calculation (25%)",
+      "Tax and escrow multi-year sensitivity (25%)",
+      "Municipal levy reasoning (15%)",
+      "Disclosure of uncertainty and exceptions (10%)"
+    ]
+  }
+}
