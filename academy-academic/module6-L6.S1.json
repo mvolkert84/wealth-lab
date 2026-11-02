@@ -1,0 +1,331 @@
+{
+  "id": "L6.S1",
+  "title": "Taxes: The Rules of the Game",
+  "subtitle": "Federal and Connecticut income tax, marginal brackets, deductions, investments and home ownership",
+  "prerequisites": [
+    "L1.S1 assets, liabilities and cash flows",
+    "L2.S3 mortgages and property taxes",
+    "L4.S3 taxable and retirement investing",
+    "L3.S2 trust basis and tax status"
+  ],
+  "objectives": [
+    "Reconcile gross pay, adjusted gross income, taxable income and taxes owed",
+    "Compute 2026 federal ordinary income tax by progressive bracket",
+    "Separate deductions from refundable and nonrefundable credits",
+    "Explain employee payroll withholding and Connecticut return obligations",
+    "Quantify itemization and current 2026 SALT limits without promising deductions",
+    "Reconcile investment basis, home sale cash and taxable gain",
+    "Build a source-supported tax planning memo"
+  ],
+  "sections": [
+    {
+      "title": "From gross earnings to tax liability: the return is a reconciliation",
+      "body": [
+        "Income tax follows a sequence, not a single percentage on a paycheck. First identify reportable gross income by type, including wages, interest, dividends, business profit and recognized gains. Adjustments allowed under law can produce adjusted gross income (AGI). The standard deduction or properly substantiated itemized deductions, plus qualifying other deductions, determine federal taxable income. Ordinary federal income tax is computed through marginal brackets, with different methods applying to eligible preferential-rate investment income. Then calculate credits, other taxes, withholding and estimated payments to determine an amount due or refund.",
+        "A worker's net paycheck is not taxable income. The paycheck reflects federal and state income-tax withholding, employee Social Security and Medicare contributions, health premiums, retirement deferrals, court orders and other payroll entries. Some payroll deductions lower federal taxable wages; others are after-tax. Federal withholding is a payment toward a later return, not an extra independent tax. A large refund can mean earlier overpayment rather than a free wealth-building benefit. Evaluate the return and payroll cash flow separately.",
+        "In a fictional example, a single worker has $60,000 Form W-2 wages after eligible pretax adjustments and $500 taxable savings interest. Assuming no other adjustments, federal AGI is $60,500. If eligible for the ordinary 2026 single standard deduction of $16,100, simple federal taxable ordinary income is $44,400. That amount enters a progressive tax schedule; the worker does not pay a single '12% of gross wages' merely because the top taxable dollar occupies the 12% bracket. The complete return also checks investment preferences, credits, self-employment and other taxes.",
+        "The first practical worksheet is a tax document inventory. Record every W-2, 1099, account contribution, mortgage Form 1098, property-tax bill, charity receipt and prior-year carryforward. Determine filing status and tax year before choosing thresholds. Collect evidence rather than inferring tax effects from bank transfers. A trust retitling or policy loan may be economically important without automatically appearing as ordinary wages, a deduction or a basis-changing event."
+      ],
+      "worked": [
+        "W-2 federal wages $60,000 plus taxable interest $500 = $60,500 gross taxable items in this simplified case.",
+        "Assume AGI $60,500 with no above-the-line adjustments.",
+        "2026 standard deduction for eligible single filer $16,100 ⇒ taxable ordinary income $44,400.",
+        "Using single brackets, tax first $12,400 at 10%, remainder $32,000 at 12% ⇒ $1,240+$3,840=$5,080 before credits.",
+        "Payments withheld and applicable credits are subtracted from final assessed tax; they are not extra deductions from taxable income."
+      ],
+      "practice": [
+        [
+          "Why can a taxpayer receive a refund despite having a positive federal income-tax liability?",
+          "Withholding or estimated payments can exceed final tax after credits. The refund returns excess payments; it does not mean taxable income was automatically zero."
+        ],
+        [
+          "What is the error in multiplying an entire $60,500 income amount by a worker's highest marginal bracket?",
+          "Progressive tax applies different rates to successive *taxable-income* ranges after deductions, not the highest rate to the entire gross wage figure."
+        ]
+      ]
+    },
+    {
+      "title": "2026 progressive federal brackets: marginal versus effective rates",
+      "body": [
+        "The federal tax rate schedule imposes rising marginal rates on designated portions of taxable income. The 2026 single-filer ordinary income brackets begin at 10% through $12,400, 12% for $12,400 to $50,400, and 22% above $50,400 up to $105,700; higher brackets follow the same progressive construction. For married filing jointly the first two boundaries are $24,800 and $100,800. These are 2026 tax-year figures published in IRS Revenue Procedure 2025-32, not a schedule for a different year or filing status.",
+        "Tax on a specified taxable income is a cumulative sum. At $70,000 single ordinary taxable income, the federal 2026 simple schedule yields 10% of $12,400 ($1,240), 12% of the next $38,000 ($4,560) and 22% of the final $19,600 ($4,312), totaling $10,112. The marginal rate is 22%, but the effective rate relative to taxable income is $10,112/$70,000≈14.45%. Effective rate measured against gross income or AGI would differ. Additional tax systems and credits can change the all-in picture.",
+        "Marginal rate matters when valuing a qualifying incremental deduction. A hypothetical $1,000 extra deduction for a taxpayer wholly in the 22% segment could reduce regular federal income tax by about $220, not $1,000. If the deduction crosses into a 12% segment, tax reduction must be computed across both segments. Credits generally subtract an allowed amount from tax rather than income, but eligibility, nonrefundability, phaseouts and other special tax calculations matter. Avoid teaching an across-the-board 22% saving as automatic.",
+        "Compare two sets of independently verified figures: statutory rates and the person's actual taxable-income composition. Qualified dividends and some long-term capital gains may use preferential rates and stack with ordinary income; this simple regular-bracket calculator must not be used as a final return engine for those cases. Connecticut adds its own regime. Professional planning is an incremental what-if analysis based on the correct jurisdiction and the *last* eligible dollars affected."
+      ],
+      "worked": [
+        "2026 single ordinary taxable income $70,000.",
+        "10% on first $12,400 = $1,240; 12% on $38,000 = $4,560; 22% on $19,600 = $4,312.",
+        "Total regular federal tax $10,112; marginal 22%; effective rate over taxable income ≈14.45%.",
+        "If a valid $1,000 deduction is wholly in the 22% band, simplified tax drops by $220.",
+        "If a $20,000 deduction crosses multiple brackets, recompute tax before and after rather than multiply $20,000 by 22%."
+      ],
+      "practice": [
+        [
+          "Why is an effective tax rate below the highest marginal income-tax rate?",
+          "Earlier portions of taxable income face lower brackets and deductions may remove some income entirely; the effective rate averages taxes across the relevant base."
+        ],
+        [
+          "How should an analyst estimate savings from a deduction that crosses a tax-bracket boundary?",
+          "Calculate the full progressive tax before and after the eligible deduction. An assumption of one constant marginal rate over the whole amount is invalid across boundaries."
+        ]
+      ]
+    },
+    {
+      "title": "2026 standard deduction versus itemization and the SALT ceiling",
+      "body": [
+        "Federal taxpayers generally choose the standard deduction or itemized deductions under applicable law, not both on the same income-tax return. For 2026 the ordinary standard amounts are $16,100 single, $32,200 married filing jointly and $24,150 head of household. Older or blind filers and other specialized cases may have different allowances. Itemization may include eligible state and local taxes, deductible home acquisition mortgage interest, qualifying charitable contributions and other expenses subject to thresholds and limitations. Paying an expense does not make it itemizable automatically.",
+        "Under 2026 federal law the overall state and local tax (SALT) deduction ceiling is generally $40,400, or $20,200 for married filing separately, with a high-income phase-down beginning at specified modified adjusted gross income levels and a floor as prescribed by statute. SALT includes specified state or local income or sales taxes and qualifying property taxes; it is not a second standard deduction. An IRS correction to 2026 Form 1040-ES confirms these figures. Homeowners association dues, ordinary homeowner insurance premiums and federal Social Security payroll taxes are generally not deductible under SALT.",
+        "Imagine a single owner with $6,000 eligible Connecticut/local taxes, $8,000 qualified mortgage interest and $3,000 substantiated charitable contributions, no other deductions. The simplified itemized total is $17,000. Compared with the 2026 standard deduction of $16,100, choosing itemization adds only $900 of deduction, not $17,000 of extra tax-free money. At a hypothetical 12% incremental ordinary marginal rate, the direct regular federal tax difference is about $108 if the $900 stays in that bracket and no other provisions intervene.",
+        "The correct audit checks whether mortgage interest arises from qualified home acquisition indebtedness, the loan dates, secured residence, principal limits, records and itemization choice. Property taxes may be paid into escrow without having actually been paid to the municipality in the tax year. A home purchase's closing costs can have varying tax basis or deductible treatment; do not assume every settlement expense can be immediately deducted. Compare real after-tax housing cost, not a sales pitch that mortgage interest 'pays for itself.'"
+      ],
+      "worked": [
+        "2026 eligible single standard deduction $16,100; fictional eligible itemized components $6,000+$8,000+$3,000=$17,000.",
+        "Extra deduction relative to standard = $900.",
+        "At a hypothetical flat 12% applicable marginal rate on the affected last $900, regular federal tax reduction ≈$108.",
+        "Mortgage interest and property taxes remain real expenses; a possible $108 reduction does not reimburse $17,000 of spending.",
+        "2026 SALT maximum $40,400 in general, but the scenario's actual eligible SALT taxes are only $6,000 and itemization controls benefit."
+      ],
+      "practice": [
+        [
+          "Does a $40,400 SALT ceiling mean a taxpayer paying $6,000 of qualifying state and local taxes gets a $40,400 deduction?",
+          "No. The ceiling limits the amount of eligible taxes that may be deducted; the taxpayer must have actually qualifying paid taxes, satisfy income rules and itemize for federal benefit."
+        ],
+        [
+          "Why might $8,000 of eligible mortgage interest produce no incremental federal deduction?",
+          "If total itemized deductions are below the eligible standard deduction, the taxpayer may choose the standard amount and gain no extra federal benefit solely from that interest."
+        ]
+      ]
+    },
+    {
+      "title": "Tax credits, withholding and FICA: separate mechanics",
+      "body": [
+        "A deduction reduces a tax base; a credit offsets tax liability according to its rules. A nonrefundable credit generally cannot by itself reduce regular liability below zero, while a refundable credit can create a payment even if otherwise eligible income tax is zero. Credits may have income phaseouts, dependent tests, filing status restrictions and documentation requirements. Tax credit marketing often states the maximum amount without explaining whether the household qualifies. Model the underlying tax before deciding how much a credit changes the final obligation.",
+        "Payroll taxes operate separately from regular federal income tax. In 2026 the employee Social Security rate is 6.2% on covered wages up to the $184,500 contribution and benefit base; employee Medicare tax is normally 1.45% with no comparable wage base cap. Additional Medicare Tax applies under higher-earnings thresholds and other criteria. The employer also generally contributes matching Social Security and Medicare payroll amounts. Deferring salary into a pretax employer retirement arrangement can lower certain income-tax wages without necessarily eliminating FICA on those wages.",
+        "Consider $60,000 covered W-2 salary below the 2026 Social Security wage base. Illustrative employee Social Security withholding is 0.062×$60,000=$3,720 and Medicare withholding is 0.0145×$60,000=$870, totaling $4,590. Federal and Connecticut income-tax withholding are separate amounts. If an otherwise eligible $500 *nonrefundable* credit is applied to a $400 precredit regular federal tax, it may reduce that tax to zero but not necessarily create a $100 refund. A refundable credit would have different rules.",
+        "Withholding changes cash timing. A worker expecting a refund may choose an appropriate Form W-4 adjustment, but too little withholding can cause an amount due or estimated-tax penalties. Discuss liquidity, cash-flow needs and compliance rather than propose that everyone withhold zero. Review pay stubs, W-2 boxes, federal Forms 1040 and 8959 where applicable, and actual credit instructions rather than relying on an all-in 'tax rate' stated in a workplace conversation."
+      ],
+      "worked": [
+        "Covered wages $60,000; employee Social Security 6.2% = $3,720.",
+        "Employee Medicare 1.45% = $870, combined baseline FICA $4,590 before any other special payroll rules.",
+        "Federal income-tax liability may be different from $4,590; calculate through filing status, income and credits.",
+        "Simple $500 nonrefundable credit against $400 tax reduces eligible current tax to $0, not necessarily −$100.",
+        "A $2,000 federal refund could reflect $2,000 overpayment rather than an extra $2,000 earned from an investment."
+      ],
+      "practice": [
+        [
+          "What is the distinction between regular income-tax withholding and employee Social Security contributions?",
+          "Income-tax withholding is a payment toward assessed income tax, whereas Social Security is a separate payroll tax under FICA, with its own earnings base and purpose."
+        ],
+        [
+          "Why might a nonrefundable $1,000 credit provide less than $1,000 of current benefit?",
+          "If the eligible tax liability it can offset is below $1,000, the credit generally cannot create additional refundable benefit; specific carryforward or other rules may apply."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut residency, tax adjustments and estimated payments",
+      "body": [
+        "Living in Connecticut creates a separate state income-tax analysis in addition to the federal return. Federal adjusted gross income is a major starting concept, but Connecticut law has its own adjustments, tax brackets, credits, and tax recapture or phaseout mechanisms. A federal deduction does not automatically lower Connecticut taxable income in the same way. Municipal property taxes are also a distinct local financial obligation and can affect federal itemization, but they are not simply a credit against the state income tax.",
+        "Connecticut's Department of Revenue Services provides 2026 estimated-payment guidance. Under its published conditions, estimated tax may be necessary when projected Connecticut tax after withholding and specified credits is $1,000 or more and the expected payments fall below the required annual-payment threshold. The general calculation compares 90% of current-year state liability with 100% of the prior year's liability when a full-year return and other conditions apply. Special residency, nonresident or earlier nonfiler rules may change the outcome.",
+        "Suppose projected Connecticut tax is $2,600, expected state withholding $1,500, and prior-year full-year liability is $2,300. The projected unpaid tax is $1,100. The simplified required annual payment is the lesser of 90%×$2,600=$2,340 or 100%×$2,300=$2,300. With $1,500 withholding, the payment gap against that simplified requirement is $800, subject to actual timing, credits and exceptions. A taxpayer should not infer Connecticut liability by multiplying wages by 5% without computing the correct state return.",
+        "A rigorous learner must identify domicile and residence, work performed in another state, state-sourced income, credits for taxes paid to other jurisdictions, withholding codes and prior-year return. In an inheritance plan, moving between Connecticut and Maine could alter state taxes and estate procedures, so jurisdiction cannot be assumed from the property address alone. Source the latest DRS booklet for the tax year under analysis and distinguish federal tax effects from Connecticut tax effects."
+      ],
+      "worked": [
+        "Illustrative 2026 Connecticut tax $2,600, projected CT withholding $1,500.",
+        "Projected state balance before estimated payments $1,100.",
+        "90% current-year safe-harbor amount $2,340; 100% prior-year amount $2,300 ⇒ lower is $2,300.",
+        "Modeled additional required annual payment toward safe harbor $2,300−$1,500=$800, subject to timing and eligibility.",
+        "This is not a calculation of final tax reduction or a guarantee of penalty immunity."
+      ],
+      "practice": [
+        [
+          "Why should a taxpayer not apply federal standard deduction amounts directly to Connecticut taxable income?",
+          "State income tax uses its own statutory starting points, exemptions, adjustments, rates, recapture, credits and filing instructions; federal and state liabilities must be computed separately."
+        ],
+        [
+          "When can state estimated tax become a cash-flow issue for a worker with side income?",
+          "Extra income may have little or no withholding. If projected state tax and required-payment thresholds are met, periodic estimated payments may be needed to avoid an underpayment."
+        ]
+      ]
+    },
+    {
+      "title": "Investments: capital-gain basis, distributions and recognized income",
+      "body": [
+        "Taxable investment performance has a different ledger from a portfolio's mark-to-market return. Unrealized increases are not automatically taxable capital gains merely because an account balance rises. A sale generally realizes gain or loss measured against adjusted tax basis and amount realized, with holding period, wash-sale and special rules. Ordinary interest and many dividends can be taxable without selling the underlying fund. Reinvesting a taxable dividend generally does not turn it into untaxed growth, and reinvested amounts may establish new tax basis in the purchased shares.",
+        "A taxpayer who purchased stock for $10,000 and later sells it for $13,000 with $100 of qualifying selling costs might have $2,900 simplified realized gain. If a different investment lost $1,400 on a valid sale, capital-gain netting can reduce the net taxable capital gain, subject to holding period classifications and special rules. Most net capital losses may offset a limited amount of ordinary income annually with carryover under applicable federal rules. Loss harvesting is not 'free money' because the investor really experienced the economic loss.",
+        "Qualified dividends and eligible long-term capital gains can face federal preferential rate schedules based on total taxable income and filing status, sometimes at 0%, 15% or 20% before other taxes. Short-term gains ordinarily enter normal rates. A 0% bracket is not a blanket promise that a particular investor can realize any amount without tax; preferential income stacks with ordinary income. Connecticut may tax gains under its own state calculation. For 2026, use the dated IRS capital-gain thresholds rather than the 2025 figures often found in older articles.",
+        "Students must build a tax-lot table with acquisition dates, quantity, purchase price, reinvestment basis, sales proceeds, expenses and possible wash-sale replacement. Compare returns after fees and taxes using the correct tax year and account type. Roth and traditional retirement accounts change the taxation and access rules, but do not change the underlying investment's market uncertainty. A cash need for a near-term home purchase should not be supported by speculative capital-gain assumptions."
+      ],
+      "worked": [
+        "Taxable stock adjusted basis $10,000; sales gross proceeds $13,000, selling expenses $100.",
+        "Amount realized $12,900; realized gain $2,900 before special adjustments.",
+        "Assume independent eligible realized capital loss $1,400; simplified net capital gain $1,500 before character and limitation analysis.",
+        "An unsold security that declines $1,400 generally does not itself create a recognized capital loss.",
+        "A $200 dividend reinvested in a taxable account can remain taxable dividend income and add basis to purchased shares."
+      ],
+      "practice": [
+        [
+          "Why does an unrealized $3,000 increase in brokerage value not establish a $3,000 tax bill?",
+          "Realization, tax characterization and other rules determine recognition. A price increase without disposition is generally not the same as reportable capital-gain income."
+        ],
+        [
+          "Why is a $1,400 investment loss not equivalent to a $1,400 income-tax refund?",
+          "The loss may affect the tax base subject to capital-gain netting, deduction limits, holding period, wash-sale rules and applicable rates; it is not generally a dollar-for-dollar tax credit."
+        ]
+      ]
+    },
+    {
+      "title": "Real estate: sale cash, adjusted basis and the principal-residence exclusion",
+      "body": [
+        "Real estate taxation requires at least three separate statements: economic equity, cash paid out on sale, and tax gain. Gross equity equals estimated market price less loans, while closing proceeds also deduct selling expenses and lien payoffs. Federal realized gain generally compares amount realized with adjusted tax basis. Mortgage principal payoff reduces net sale cash, but it is not normally deductible from selling price a second time for gain purposes. Basis can change through capital improvements, casualty adjustments, depreciation and acquisition details; repairs are not automatically basis-increasing improvements.",
+        "For the principal-residence gain exclusion, Section 121 generally requires qualifying ownership and use of the home for at least two years in the five years before sale, plus other conditions, with a potential exclusion of up to $250,000 or $500,000 for many eligible married joint filers. Specific rules, look-back periods, partial exclusions, business use and depreciation can alter the result. This is an exclusion of eligible *gain*, not a $250,000 reimbursement for selling a home, nor an exclusion of the entire sales price.",
+        "A fictional Connecticut owner sells for $300,000, pays $18,000 eligible sale expenses, owes $230,000 mortgage payoff, and has adjusted basis $235,000. Cash received before other closing items is $300,000−$18,000−$230,000=$52,000. Simplified realized tax gain is ($300,000−$18,000)−$235,000=$47,000. If the owner meets every applicable exclusion requirement, much or all of that $47,000 may be excluded federally. The owner has $52,000 cash despite only $47,000 calculated gain; these measures should never be equated.",
+        "Home mortgage interest and state property taxes affect a completely different possible annual itemization calculation. The homeowner may owe mortgage principal and escrow despite a favorable tax result. State transfer fees, recapture provisions or other legal costs can also matter. A trust-owned home can create new questions about who owns it for tax purposes and which party satisfies Section 121 residence tests. Always use property deed, lender statements, tax basis records and source-dated IRS Publication 523 instead of assumptions based on title language."
+      ],
+      "worked": [
+        "Home sale price $300,000; qualified selling expenses $18,000, outstanding mortgage $230,000.",
+        "Net modeled cash = $52,000.",
+        "Home adjusted tax basis $235,000; amount realized $282,000; modeled realized gain $47,000.",
+        "Potential Section 121 exclusion applies only if conditions met; no automatic exemption for everyone.",
+        "Deducting mortgage payoff from the $47,000 gain would be erroneous double counting of borrowing."
+      ],
+      "practice": [
+        [
+          "Why can an owner receive $52,000 at closing yet report a $47,000 realized gain before a home-sale exclusion?",
+          "Cash flow accounts for the mortgage debt payoff, while gain uses selling proceeds net of allowed sale costs and the property's adjusted tax basis. These are separate calculations."
+        ],
+        [
+          "What does the Section 121 two-of-five-year test measure?",
+          "It generally tests qualifying ownership and principal-residence use for the statutory time in the five years preceding sale, along with look-back and other exclusions or exceptions."
+        ]
+      ]
+    },
+    {
+      "title": "The tax value of retirement accounts and the price of withdrawing early",
+      "body": [
+        "Retirement tax advantages are valuable because the timing and character of taxation can change the final spendable amount. A qualified pretax workplace contribution can reduce current income-tax wages, while later eligible distributions generally create ordinary income; Roth contributions generally use after-tax dollars and qualifying distributions can be tax free. Eligibility for deductions and contribution amounts depends on compensation, age, plan and year-specific limits. Assets inside retirement accounts still fluctuate with markets and have access restrictions. Tax location is not a substitute for sensible investment selection.",
+        "Consider a fictional household with $1,000 pretax compensation available for retirement saving, present marginal federal income tax 20%, expected future rate 10% and a hypothetical doubling of investments. Pretax traditional deposits $1,000 and grows to $2,000; an eligible traditional distribution taxed at 10% yields $1,800. Roth deposits $800 from the same gross compensation and qualified distribution yields $1,600. If the future tax rate were 30%, the traditional amount becomes $1,400 instead. Avoid comparing equal nominal contributions without comparing equal current financial sacrifice.",
+        "Early distribution can create a particularly harmful tax event for a homebuyer. Certain IRA distributions for qualified first-home expenses may qualify for a limited exception from the 10% early-distribution additional tax; it is not an automatic exception from ordinary income tax. Roth contribution ordering, conversion holding periods and income eligibility need separate analysis. Even a permitted tax-free Roth contribution withdrawal removes dollars from future growth and cannot necessarily be replaced above annual contribution limits. A family with insufficient closing cash may need more savings rather than a clever withdrawal.",
+        "Before filing, separate current-year ordinary tax, payroll tax, state tax and eligible tax-advantaged contributions. Consider any employer retirement match, debt and emergency reserves. IRS instructions for Forms 8606, 5329, 1099-R and the relevant IRA publications determine treatment. The academic task is to compute consequences across time and compare flexibility, not to assume permanent life insurance or trusts automatically outperform ordinary taxable saving."
+      ],
+      "worked": [
+        "Same gross compensation $1,000, current 20% tax, investment factor 2.",
+        "Pretax traditional grows to $2,000; after hypothetical future 10% tax = $1,800.",
+        "Qualified Roth invests $800 and grows to $1,600 tax free under assumptions.",
+        "At 30% future traditional income tax, traditional amount becomes $1,400.",
+        "A 10% additional-tax exception on qualifying IRA withdrawal does not erase otherwise applicable ordinary income taxation."
+      ],
+      "practice": [
+        [
+          "Why does an equal $1,000 traditional IRA versus Roth IRA contribution comparison not always hold the household's current cost equal?",
+          "A fully deductible pretax contribution can save current income tax, whereas Roth is usually after-tax. To compare economically, hold pre-tax compensation or after-tax sacrifice constant."
+        ],
+        [
+          "Why can an early IRA withdrawal to buy a home be costly even when a statutory penalty exception applies?",
+          "The distribution might still be included in ordinary income and removes retirement capital and future potential compounding, while timing and eligibility restrictions remain."
+        ]
+      ]
+    },
+    {
+      "title": "Compliance, documentation and professional-quality tax forecasts",
+      "body": [
+        "Tax planning is a lawful decision about actual economic transactions supported by records. A credible advisor starts with a dated balance sheet, tax-year filing status, income by character, expected deductions and credits, capital asset basis, retirement plan choices, and the legal rights created by ownership and beneficiary agreements. A projection is not a return; statutes, forms and instructions dictate the actual return calculation. Every scenario should have a visible assumption and source so another reviewer can reproduce it.",
+        "Maintain separate federal and Connecticut tax workpapers. For a worker considering moving, starting a business or acquiring a home, determine residency, available credits, withholding and installments. With multiple incomes, a single withholding percentage is not always enough. For unusual transactions such as property in a trust, a life policy with loans, a highly appreciated inherited asset or interfamily sale, request a qualified tax professional's review before execution. Moving a dollar between bank accounts generally does not create a taxable deduction.",
+        "Test a base scenario and downside scenarios. For a household holding $5,000 emergency cash and $1,200 monthly margin, a theoretical annual federal tax saving of $200 is less significant than a $4,000 roof deductible or an unexpected loan payoff. Comparing a tax-efficient but expensive insurance contract to low-cost term coverage and retirement investing requires after-tax cash flow, liquidity and guaranteed terms, not only a tax advantage in isolation. The decisive outcome is available wealth after unavoidable obligations.",
+        "Finish with an independently auditable return reconciliation: gross income, adjustments, AGI, chosen deduction, taxable income by type, regular tax, special taxes, credits, assessed liability, payments and balance. Create an evidence index (forms, receipts, statements, dates), identify any unknowns and state what a professional must verify. Good tax education teaches the reader how to reject unsupported tax claims as much as how to calculate an eligible deduction."
+      ],
+      "worked": [
+        "Gross federal ordinary income $70,000, assumed valid adjustment $3,000 and standard deduction $16,100.",
+        "Illustrative taxable ordinary income $50,900 before other adjustments.",
+        "2026 single regular tax on $50,900 = $1,240+$4,560+$110=$5,910 before credits.",
+        "Hypothetical valid nonrefundable credit $400 ⇒ tax $5,510 before other taxes.",
+        "If federal withholding totals $5,900, simplified refund $390, subject to other return lines."
+      ],
+      "practice": [
+        [
+          "What records distinguish a legitimate tax-reduction strategy from a marketing claim?",
+          "Dated forms, pay records, receipts, contracts, title and beneficiary documentation, tax basis ledgers and written legal authority allow independent calculation and verification."
+        ],
+        [
+          "Why can a small annual tax benefit fail to justify a complex financial transaction?",
+          "Large fees, debt interest, liquidity loss, future taxes or legal restrictions can outweigh the deduction. Compare full after-tax cash flows and credible downside risks."
+        ]
+      ]
+    },
+    {
+      "title": "2026 special worker deductions: qualified overtime, tips and eligibility",
+      "body": [
+        "Some recently enacted federal provisions affect taxable income differently from ordinary salary exclusions. For tax years 2025 through 2028, qualifying tips and qualifying overtime compensation may support specific federal deductions if statutory occupation, reporting, identification and income rules are met. The popular phrase 'no tax on overtime' does not mean every overtime paycheck is excluded from reportable W-2 wages, Social Security or Medicare tax. For qualified overtime, the deductible amount is generally the additional premium over the regular rate, such as the extra half in time-and-a-half pay, not the entire overtime check.",
+        "Under IRS 2026 guidance, the overtime deduction maximum is generally $12,500 per eligible taxpayer or $25,000 for eligible married joint filers, subject to phaseout above specified modified adjusted income levels, correct reporting, a valid Social Security number and a joint-return requirement for married claimants. Qualified tips have separate eligible occupations, voluntary tip requirements, income thresholds and a general $25,000 cap. The car-loan-interest and seniors' deduction rules are additional distinct provisions with their own eligibility—not blanket permission to deduct an employer's entire payroll or any car loan.",
+        "Suppose a worker's ordinary hourly rate is $25 and they work 80 qualifying statutory overtime hours at time-and-a-half, receiving $37.50 per overtime hour. Total overtime compensation is $3,000, but the extra premium portion is $12.50×80=$1,000. If all legal and reporting conditions are met, the relevant new federal deduction might be $1,000 rather than the full $3,000. At a simplified 12% marginal regular income-tax rate, such a qualifying $1,000 deduction might reduce regular federal income tax by approximately $120, not eliminate payroll taxes or every form of withholding.",
+        "A payroll audit uses wage statements, hours, overtime rate, applicable federal overtime requirement, reported qualified amounts and the taxpayer's modified adjusted gross income. A tipped worker must check the IRS list and mandatory reporting rules rather than claim every bonus as a tip. A tax professional should evaluate whether these provisions apply under the actual 2026 return instructions; students must identify deductions as eligibility-conditional and distinguish withholding changes from final tax savings."
+      ],
+      "worked": [
+        "Regular hourly wage $25, 80 time-and-a-half qualifying overtime hours.",
+        "Overtime paid 80×$37.50=$3,000; qualifying premium half 80×$12.50=$1,000 in simplified qualifying circumstances.",
+        "Illustrative 12% marginal rate gives $120 possible income-tax reduction on $1,000 of valid deduction.",
+        "$3,000 overtime wages are not automatically removed from FICA withholding; payroll treatment follows separate law.",
+        "2026 maximum overtime deduction $12,500 individual/$25,000 joint before eligibility and modified income limitations."
+      ],
+      "practice": [
+        [
+          "Why might an hourly worker receiving $3,000 of overtime pay only have $1,000 of eligible qualified-overtime deduction in this example?",
+          "Under specified overtime rules the eligible amount is the premium above the regular rate, not the entire overtime pay. The worker must also meet 2026 eligibility, reporting and income conditions."
+        ],
+        [
+          "What is the flaw in telling an employee that a federal qualified-overtime deduction makes overtime checks completely tax free?",
+          "Federal income-tax deduction eligibility does not automatically remove wages from federal reporting, Social Security or Medicare tax, state income tax or other payroll obligations."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS · 2026 inflation-adjusted tax rate tables and standard deduction",
+      "https://www.irs.gov/irb/2025-45_IRB"
+    ],
+    [
+      "IRS · 2026 SALT correction",
+      "https://www.irs.gov/forms-pubs/correction-to-state-and-local-income-tax-deduction-amount-in-the-2026-form-1040-es"
+    ],
+    [
+      "IRS · 2026 Publication 505 withholding and estimates",
+      "https://www.irs.gov/publications/p505"
+    ],
+    [
+      "IRS · 2026 FICA wage base and rates",
+      "https://www.irs.gov/publications/p15"
+    ],
+    [
+      "Connecticut DRS · 2026 resident tax and estimated payments",
+      "https://portal.ct.gov/drs/individuals/resident-income-tax/tax-information"
+    ],
+    [
+      "IRS · Taxable property sale and main home gain exclusion",
+      "https://www.irs.gov/publications/p523"
+    ],
+    [
+      "IRS · Mortgage-interest deduction",
+      "https://www.irs.gov/publications/p936"
+    ],
+    [
+      "IRS · Investment income and capital gain tax-lot rules",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "IRS · Working Families deductions tips/overtime (2026)",
+      "https://www.irs.gov/newsroom/working-families-tax-cuts-individuals-and-workers"
+    ]
+  ],
+  "assessment": {
+    "title": "2026 federal and Connecticut taxpayer audit",
+    "prompt": "Build a simplified 2026 single filer federal income tax for $70,000 ordinary taxable income and test an incremental qualifying deduction against the progressive brackets. Compare standard versus $17,000 hypothetical eligible itemizations, interpret the 2026 SALT ceiling, compute payroll FICA on $60,000 and separate credits from withholdings. Produce two separate worksheets for home sale taxable gain versus cash proceeds, then document Connecticut estimated payment needs under stated assumptions. Sources and exceptions are mandatory.",
+    "rubric": [
+      "Accurate 2026 tax year federal calculations (25%)",
+      "Deductions/credits/itemization and SALT qualification (20%)",
+      "Payroll, CT and withholding treatment (20%)",
+      "Home and investment gains versus cash (20%)",
+      "Source quality, exceptions and independent research (15%)"
+    ]
+  }
+}
