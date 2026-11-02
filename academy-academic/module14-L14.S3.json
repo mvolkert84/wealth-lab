@@ -1,0 +1,267 @@
+{
+  "id": "L14.S3",
+  "title": "Repairs, Reserves and Stress Testing",
+  "subtitle": "Building systems, inspection due diligence, liquidity buffers, stress cases and risk-adjusted investment decisions",
+  "prerequisites": [
+    "L14.S1 owner cash-flow waterfall",
+    "L14.S2 DSCR and leverage",
+    "L5.S2 insurance and deductibles",
+    "L10.S3 risk scenarios"
+  ],
+  "objectives": [
+    "Distinguish routine repairs, legally capitalized improvements and owner cash budgets",
+    "Construct an age-specific capital replacement schedule for roofs, HVAC and major systems",
+    "Compute vacancy reserves, deductible cushions and minimum operating cash",
+    "Stress property tax, insurance, loss-of-rent, financing and multi-year building-system events",
+    "Explain correlations among vacancy, values, refinancing and maintenance costs",
+    "Integrate tenant legal duties and security deposit escrow into liquidity planning",
+    "Write a property-specific operational contingency policy rather than a universal 1% rule"
+  ],
+  "sections": [
+    {
+      "title": "Routine maintenance, capital improvements and tax accounting differ",
+      "body": [
+        "A rental has routine recurring repairs and larger long-lived replacements. A plumbing repair or repainting between tenants may be a current operating expense, while a new roof, HVAC replacement or substantial system upgrade can be a capital improvement for federal tax purposes under facts and applicable de minimis or maintenance safe harbors. The cash leaves the bank when paid regardless of when it is deducted or depreciated.",
+        "Property operators should track the economic forecast, booked operating cost and federal basis separately. A $9,000 roof replacement can turn a year with $3,000 cash flow after routine costs into a negative $6,000 cash-flow year even if the roof must be capitalized rather than fully deducted that year. This difference between cash flow and income tax is a core educational objective, not an accounting nuisance.",
+        "An inspection is not a guarantee that major systems will last their estimated useful lives. Building age, weather, material, prior repairs, permit history and hidden defects create a distribution of future costs. Collect contractor quotes and disclosure records, inspect water intrusion and electrical/fire safety, and flag uncertainty rather than multiplying purchase price by a single simplistic maintenance percentage."
+      ],
+      "worked": [
+        "Base annual owner cash after normal operations and debt $3,000.",
+        "Roof replacement cash $9,000 in same period.",
+        "Owner free cash after roof −$6,000.",
+        "Tax accounting may require capitalizing $9,000 rather than a same-year full operating deduction."
+      ],
+      "practice": [
+        [
+          "Does capitalization mean an owner does not need cash for the roof this year?",
+          "No. The contractor requires payment now; tax basis and depreciation determine when tax deductions occur, not when cash leaves."
+        ],
+        [
+          "Why should a repair budget be informed by physical inspection instead of only a purchase-price percentage?",
+          "System ages, defects, climate and maintenance history can create large property-specific replacement costs that averages hide."
+        ]
+      ]
+    },
+    {
+      "title": "Build an age-specific replacement calendar",
+      "body": [
+        "Classify each building system by observed condition, replacement probability, estimated cost and horizon. A roof with five years of plausible remaining life and $15,000 replacement cost implies a simple annual funding target of $3,000 before inflation and investment return; that is a planning amount, not a physical depreciation schedule. Separately list furnace, hot-water system, drainage, siding, appliances, driveway, and required code upgrades.",
+        "Suppose roof $15,000 in five years, HVAC $8,000 in eight, and water heater $2,000 in five. Straight-line cash funding approximates $3,000+$1,000+$400=$4,400 annually. The amounts can overlap, so actual liquidity must withstand multiple simultaneous events. An owner starting with zero cash and following this target will not yet have $15,000 in the first years if the roof fails unexpectedly.",
+        "A reserve policy should specify minimum immediate liquid balance as well as monthly sinking-fund deposits. It should avoid counting refundable deposits, borrowed credit card limits or hypothetical refinance proceeds as reserve assets. If required funding overwhelms projected rent surplus, the property may be overpriced or the owner may be undercapitalized."
+      ],
+      "worked": [
+        "Roof $15,000/5 years=$3,000 annual target.",
+        "HVAC $8,000/8 years=$1,000 annual target.",
+        "Heater $2,000/5 years=$400 annual target.",
+        "Combined straight-line annual replacement reserve $4,400 before inflation or uncertainty."
+      ],
+      "practice": [
+        [
+          "Can a $4,400 annual reserve accrual guarantee all the systems can be replaced on schedule?",
+          "No. Timing uncertainty, inflation and overlapping failures require initial liquidity and scenario stress beyond arithmetic averages."
+        ],
+        [
+          "Why should a reserve model have both replacement funding and an immediately accessible cash floor?",
+          "Savings plans accumulate over time, but an expensive component can fail before the sinking fund reaches target."
+        ]
+      ]
+    },
+    {
+      "title": "Vacancy plus turnover: correlated shocks",
+      "body": [
+        "Vacancy is not an isolated subtraction from annual rent. An empty unit can simultaneously require advertising, paint, cleaning, security work, utility carrying costs and screening. Vacancy can also be correlated with declining local wages or new rental supply, which may force rent concessions and reduce the property's resale value at exactly the wrong time.",
+        "Take a rental scheduled for $1,800/month. A two-month vacancy creates $3,600 lost rent. Add $1,200 in turnover repairs, $400 marketing and $300 owner utilities: total cash impact $5,500 compared with normal occupancy. If base free cash was $3,000 a year, the property produces negative $2,500 before any additional building failures. A model that simply applies a five-percent vacancy expense will conceal much of this loss.",
+        "Use event-driven reserve math: annual fixed obligations, months of no rent, turnover contract costs and replacement horizon. A single-family rental's cash-flow variability can exceed that of a diversified 20-unit building because one vacant dwelling means 100% of scheduled occupancy is lost temporarily. This is financial concentration risk, not simply an inconvenience."
+      ],
+      "worked": [
+        "Rent $1,800×two vacant months=$3,600 lost rent.",
+        "Turnover repair $1,200 + marketing $400 + utility $300=$1,900.",
+        "Total gross cash impact $5,500.",
+        "Base annual free cash $3,000 declines to −$2,500."
+      ],
+      "practice": [
+        [
+          "Why can a vacancy create an expense shock on top of lost rental income?",
+          "Turnover frequently requires cleaning, repairs, advertising, security, utilities and concessions while cash receipts stop."
+        ],
+        [
+          "Why is a one-unit property's vacancy scenario particularly concentrated?",
+          "A single tenant departure can temporarily remove all rent revenue while most fixed property expenses continue."
+        ]
+      ]
+    },
+    {
+      "title": "Inflation and property tax reset stress",
+      "body": [
+        "A rental is exposed to price increases in insurance, contractors, supplies, municipal tax and energy. Lease increases may lag these costs or be limited by tenant ability to pay and legal requirements. Property taxes should be modeled using the specific municipality's assessment, mill rate, reassessment cycle and special districts, not an unverified statewide average.",
+        "Suppose property tax is $5,400 and rises 20%, adding $1,080 annual expense. If insurance of $1,500 rises 30%, it adds $450. These two increases subtract $1,530 from NOI, independent of whether rent increases. A $2,000 annual pre-reserve surplus falls to $470 before other changes. If the owner also faces $2,000 of added maintenance, the year's cash turns negative.",
+        "Research from Connecticut tax bills and actual insurer quotes should be archived with dates. An analyst can estimate future increases for decision-making but must not present them as official rates. Premiums can change after a claim or availability restriction; a new owner should obtain insurability confirmation before becoming contractually committed to closing."
+      ],
+      "worked": [
+        "Starting property tax $5,400×20%=$1,080 additional cost.",
+        "Insurance $1,500×30%=$450 additional cost.",
+        "NOI declines $1,530 if rent unchanged.",
+        "$2,000 original cash surplus becomes $470 before any other stress."
+      ],
+      "practice": [
+        [
+          "Why is an investor's assumed rent growth not automatically a hedge against property tax increases?",
+          "Rents depend on tenant demand, leases and regulations, while taxes can change independently and faster than rent can rise."
+        ],
+        [
+          "What source should replace a generic Connecticut mill-rate estimate?",
+          "The actual property assessment and current municipality's tax record and levy, verified for possible reassessment after sale."
+        ]
+      ]
+    },
+    {
+      "title": "Emergency reserve engineering from obligations",
+      "body": [
+        "Reserve sizing should reflect the longest plausible cash gap, building-system condition, lender obligations, insurance deductible and household's own emergency needs. A basic liquidity floor might cover three to six months of fixed property operating costs and required debt service, plus a separate allowance for credible emergency repairs. There is no universally correct months-of-expenses rule across tenant concentration and building types.",
+        "Suppose a one-unit rental costs $1,200/month in mortgage, insurance, tax and unavoidable operating bills regardless of occupancy, and the owner wants a five-month fixed-cost reserve. Base liquidity floor is $6,000. If an insured loss could require a $2,500 deductible, a separate $2,500 cushion brings the illustrative reserve target to $8,500. This is before considering an uninsurable $7,000 urgent repair or loss of rent.",
+        "The investor must not claim that tenant security deposit principal is available to fund this emergency; Connecticut imposes custodial and interest responsibilities, and the deposit belongs to the tenant. A household whose available investing cash is only $3,000 should report $5,500 of unmet reserve capacity against the simplified $8,500 target rather than hiding it."
+      ],
+      "worked": [
+        "Monthly unavoidable costs $1,200; five-month funding $6,000.",
+        "Insurance deductible buffer $2,500 => suggested reserve floor $8,500.",
+        "Accessible investor reserve $3,000 leaves $5,500 unfunded.",
+        "Additional uninsured $7,000 repair might require an even larger contingency."
+      ],
+      "practice": [
+        [
+          "Why does holding an insurance policy not fully eliminate the cash need from fire or water losses?",
+          "Deductibles, coverage limitations, claim delays, exclusions and displacement costs can remain owner responsibilities."
+        ],
+        [
+          "Should escrowed tenant security deposits be credited against owner capital-reserve target?",
+          "No. They are custodial tenant assets, not free equity or an operating reserve."
+        ]
+      ]
+    },
+    {
+      "title": "DSCR and cash-flow stress are different warning systems",
+      "body": [
+        "Debt service coverage ratio is NOI divided by required annual debt payments. It is a property-level debt sufficiency diagnostic, not a final investor cash-flow measure. Stressing NOI for vacancies and operating costs can reduce DSCR below an underwritten covenant even when the investor has cash available. Capital expenditure checks can also empty bank accounts while reported DSCR remains above a lender minimum.",
+        "Suppose base NOI is $18,000 and annual debt service $14,000, giving DSCR about 1.29. A $5,500 economic vacancy/turnover shock and $1,530 tax/insurance increase reduce economic NOI to $10,970 if all those items meet the stated NOI definition; stressed DSCR ≈0.78. An $8,000 additional roof expense can further reduce owner liquidity but may be treated as capital rather than NOI operating expense.",
+        "Borrowing capacity is not always stable during a downturn: lender appraisal values, required DSCR, personal debt-to-income, credit scores and interest rates can change. Cash-out refinancing or a HELOC should not be the only planned emergency response. Model at least a two-year recovery where returns do not snap back after one bad year."
+      ],
+      "worked": [
+        "Base $18,000 NOI/$14,000 annual debt =1.286 DSCR.",
+        "Vacancy/turnover economic effect $5,500 plus tax/insurance $1,530 => $10,970 stressed NOI.",
+        "Stressed DSCR $10,970/$14,000≈0.784.",
+        "An additional capital roof $8,000 affects free cash even if outside reported NOI."
+      ],
+      "practice": [
+        [
+          "Can a property with acceptable DSCR still have a cash crisis from a roof replacement?",
+          "Yes. Lender DSCR normally excludes major capital replacements; investor cash reserves must cover them."
+        ],
+        [
+          "Why should a recovery scenario not assume refinancing will always solve distress?",
+          "A weak operating history or falling collateral value can undermine loan approval or increase loan cost when cash is scarce."
+        ]
+      ]
+    },
+    {
+      "title": "Legal, casualty and tenant harm exposures",
+      "body": [
+        "A rental investor carries duties to maintain habitable, safe housing and follow nondiscrimination, deposits, eviction and notice procedures. Noncompliance creates financial, legal and human harm. Compliance is a distinct risk category from ordinary financial variance. Before purchase, inspect fire and carbon-monoxide requirements, electrical/structural conditions, lead paint where relevant, local permits and the property's actual insurance coverage.",
+        "Casualty insurance transfers certain covered property losses but can exclude flooding, sewer backup, certain vacancy-related losses and other perils. Property owners should model lost rent during displacement, insurer claim delays and whether flood coverage is required or prudent. An umbrella policy, entity structure and adequate liability insurance can play different roles, but no LLC automatically shields personal wrongdoing or eliminates all personal loan guarantees.",
+        "Tenant security deposits and escrow compliance are not investor opportunities. The 2026 Connecticut rental deposit interest rate is 0.49%, with statutory maximum deposits dependent on tenant age. Money that is legally held for tenants should be reconciled separately, and statutory interest and return timelines must be handled in the actual books."
+      ],
+      "worked": [
+        "Hypothetical deposit $2,000 and 2026 CT nominal annual required rate 0.49%.",
+        "Simple full-year illustrative interest $2,000×.0049=$9.80.",
+        "Property cash reserve available from refundable tenant deposit: $0.",
+        "An emergency claim of $7,000 with $2,500 deductible leaves potential owner deductible $2,500, subject to actual coverage."
+      ],
+      "practice": [
+        [
+          "Why is creating an LLC insufficient by itself as a complete rental liability policy?",
+          "Insurance, legal compliance, personal guarantees and personally wrongful conduct still require independent protection and obligations."
+        ],
+        [
+          "Does holding a tenant deposit reduce the landlord's independent need for reserves?",
+          "No. Deposits generally remain tenant property, and statutory interest and return duties restrict their use."
+        ]
+      ]
+    },
+    {
+      "title": "Stress-test investment committee and operational action plan",
+      "body": [
+        "Create base, mild stress, severe stress and disaster scenarios for the same asset. At minimum vary vacancy months, collected rent, property tax, insurance, maintenance, mortgage rate if adjustable, emergency capex, resale value and available household support cash. Use coherent event timing so the model does not simultaneously assume a tenant leaves and every vacant month is re-rented instantly. Record each input's evidence and uncertainty.",
+        "Suppose a property begins with annual cash surplus $3,000. One turnover event costs $5,500 and a property tax/insurance spike adds $1,530, leaving −$4,030. A $9,000 roof failure in the same year creates total cash requirement −$13,030 before tax, potentially more than four years of the original expected surplus. The decision to invest must reflect this tail exposure, not just the initial surplus percentage.",
+        "An operational plan specifies a minimum reserve, authorized repairs, contractor contacts, insurance claim procedure, tenant communications, rent collection follow-up, lender notifications and when to stop owner distributions. A recommendation to delay purchase is analytically valid if required cash reserves exceed affordable capital after closing. The goal is to own a durable business, not merely to display a positive yield cell."
+      ],
+      "worked": [
+        "Base annual free cash +$3,000.",
+        "Two-month vacancy/turnover −$5,500; tax/insurance spike −$1,530 => −$4,030.",
+        "Roof replacement −$9,000 => full-year cash −$13,030.",
+        "With household savings capacity $250/month, $3,000 annual savings would not cover this stress year."
+      ],
+      "practice": [
+        [
+          "Why can a modest positive projected cash flow be misleading for a capital-constrained buyer?",
+          "One correlated vacancy and repair event can demand years of forecast surplus at once, forcing high-cost borrowing or default."
+        ],
+        [
+          "What belongs in a genuine contingency plan?",
+          "Cash threshold, stress triggers, repair authorization, insurance and tenant obligations, lender communication and a plan to preserve essential household money."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "IRS Publication 527 repair-versus-capital-improvement tax distinctions",
+      "https://www.irs.gov/publications/p527"
+    ],
+    [
+      "IRS capitalization and tangible property regulations",
+      "https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations"
+    ],
+    [
+      "Connecticut Judicial Branch landlord tenant rules",
+      "https://www.jud.ct.gov/lawlib/law/landlord.htm"
+    ],
+    [
+      "Connecticut statutory deposit and escrow rules",
+      "https://www.cga.ct.gov/2026/sup/chap_831.htm"
+    ],
+    [
+      "Connecticut 2026 deposit interest rate",
+      "https://portal.ct.gov/dob/rental-security-deposits/rental-security-deposits/deposit-index-and-interest-rates"
+    ],
+    [
+      "NFIP flood insurance general information",
+      "https://www.floodsmart.gov/"
+    ],
+    [
+      "FEMA flood risk maps and property lookup",
+      "https://msc.fema.gov/portal/home"
+    ],
+    [
+      "Investor.gov market and concentration risk",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits"
+    ]
+  ],
+  "assessment": {
+    "title": "Rental downside committee: liquidity, repairs and correlated losses",
+    "prompt": "Construct a five-year reserve ledger for a property needing roof $15k in five years, HVAC $8k in eight, heater $2k in five; a $1,800 single-family monthly rent, two months vacant, $1,900 turnover, $5,400 annual municipal tax rising 20%, $1,500 insurance rising 30%, and $14,000 yearly debt service. Start from base NOI $18k and annual owner free cash $3k, then stress DSCR, roof $9k and all combined cash shocks. Calculate five months of $1,200 fixed costs plus $2,500 deductible as reserve floor versus $3k available. Explain CT deposits, public safety, casualty and financing risks. Write an emergency response policy and decision recommendation.",
+    "rubric": [
+      "Building-system replacement calendar and capex cash accounting (25%)",
+      "Vacancy/turnover and local property-cost stress (20%)",
+      "DSCR and cash stress with distinct accounting definitions (25%)",
+      "Reserve floor and tenant legal duties (15%)",
+      "Actionable operational triggers and sources (15%)"
+    ],
+    "answerKey": [
+      "Replacement reserve targets $15k/5+$8k/8+$2k/5=$4,400 annually, before inflation and overlapping failure risk.",
+      "Two months rent loss $3,600+$1,900 turnover=$5,500.",
+      "Property tax 20% on $5,400 adds $1,080, insurance 30% on $1,500 adds $450, combined $1,530.",
+      "Base NOI $18k/debt $14k => DSCR1.286; stressed NOI $18k−$5,500−$1,530=$10,970; DSCR≈0.784 if costs classified under the chosen NOI definition.",
+      "Reserve floor five×$1,200+$2,500=$8,500, less accessible $3k=$5,500 short.",
+      "Base free cash $3k−$5,500−$1,530−$9k roof = −$13,030 worst-year cash under illustrative assumptions."
+    ]
+  }
+}
