@@ -165,6 +165,32 @@
           "Current deed, liens and payoff statements, cash and investments, retirement and insurance beneficiary confirmations, executed trust or will, family expense forecast, valuations and applicable Connecticut/IRS guidance."
         ]
       ]
+    },
+    {
+      "title": "Blended families, stepchildren and vulnerable beneficiaries: explicit legal coordination",
+      "body": [
+        "An inheritance plan can become especially fragile when a child is not legally related to every adult in a household, when an intended heir is a stepchild, or when an adult remarried after creating beneficiary designations. Do not assume that a spouse's child automatically inherits under intestacy or from a stepparent's policy. A beneficiary's rights depend on legal parentage, valid adoption if any, actual title, signed estate documents, state intestacy rules, plan-specific spouse protections and recorded beneficiaries. The words 'our daughter' do not establish legal beneficiary status for every asset.",
+        "Draft a relationship-neutral asset map. For each proposed beneficiary record the actual legal relationship to the owner, intended share, alternative recipient if the beneficiary predeceases the owner, timing of trust distributions and what happens after a surviving spouse's death. A surviving spouse may need a secure home while a child from an earlier relationship needs eventual inheritance. Some legally drafted trusts can manage these competing interests, but tax status, powers, trustee conflicts and property-title decisions determine outcomes.",
+        "If a beneficiary has a disability, receives means-tested public benefits or may require long-term supported decision-making, a conventional outright distribution can have unintended consequences. Specialized third-party or first-party special-needs trusts and pooled arrangements exist under distinct legal rules; eligibility and payback provisions differ. This chapter is a hypothetical sensitivity analysis, not an assumption about any real child. Such a situation calls for a Connecticut attorney experienced in public benefits and fiduciary drafting and review of current program rules.",
+        "A practical exercise compares two instructions for a $60,000 liquid inheritance: direct transfer at death and distribution through a properly drafted trust for a minor with an independent trustee. Both begin with the same $60,000 gross assets, but differ in legal management, expense and timing. If a trust has $1,000 annual costs and no investment growth, it would hold $55,000 after five years if no other distributions occur. Such a calculation is not an endorsement; fees can be worth paying when they provide verifiable beneficiary protection and proper administration."
+      ],
+      "worked": [
+        "Illustrative liquid inheritance $60,000, with two alternative legal transfer routes.",
+        "Outright recipient scenario: gross $60,000 subject to applicable legal capacity, ownership and creditor issues.",
+        "Trust scenario with $1,000 paid annually for five years and no growth or distributions: $60,000−5×$1,000=$55,000.",
+        "If a trust distributes another $4,000 to the beneficiary for permitted needs, modeled cash becomes $51,000 absent other changes.",
+        "Prepare a written beneficiary map distinguishing direct heir, contingent beneficiary, trustee, current spouse and a child whose legal relationship must be verified."
+      ],
+      "practice": [
+        [
+          "What is the risk of assuming that calling someone a stepdaughter makes that person the default legal heir under all family property arrangements?",
+          "Legal relationships, intestacy provisions, beneficiary designations, title and adoption status can differ. A clear estate instrument and contract beneficiary coordination are needed instead of informal relationship labels."
+        ],
+        [
+          "Why can an outright inheritance be unsuitable for certain beneficiaries even when the amount is legally available?",
+          "A minor may lack financial capacity to manage it, and some beneficiaries can face eligibility or exploitation risks. Proper specialist drafting and beneficiary-specific rules, rather than blanket restrictions, determine appropriate alternatives."
+        ]
+      ]
     }
   ],
   "sourceRefs": [
