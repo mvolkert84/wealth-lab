@@ -1,0 +1,266 @@
+{
+  "id": "L16.S3",
+  "title": "Regulation and Adviser Due Diligence",
+  "subtitle": "SEC and Connecticut oversight, Form ADV/CRS, broker verification, examinations, credentials and regulatory limits",
+  "prerequisites": [
+    "L16.S1 fiduciary standards and conflicts",
+    "L16.S2 client engagement and documented recommendations",
+    "L11.S1 tax claims and verification",
+    "L15.S3 financial marketing and leverage risks"
+  ],
+  "objectives": [
+    "Differentiate adviser firm registration, broker-dealer registration, individual registration, Series 65 exam and CFP designation",
+    "Verify professionals and firms using Investor.gov IAPD, FINRA BrokerCheck and Connecticut Department of Banking",
+    "Read Form ADV Part 1, 2 and Form CRS for actual services, fees, conflicts and discipline",
+    "Explain the scope of SEC Reg BI and investment-adviser fiduciary duties",
+    "Identify red flags in insurance, investment, trust and tax marketing",
+    "Compare an account's disclosure and client documentation before funding it",
+    "Understand why academic study alone does not authorize regulated professional activity"
+  ],
+  "sections": [
+    {
+      "title": "Know who regulates a professional and in what capacity",
+      "body": [
+        "The SEC regulates federally registered investment advisers under the Investment Advisers Act, while states supervise many smaller advisers and registered investment adviser representatives depending on jurisdiction and statutory exemptions. Broker-dealers and their registered representatives operate within a separate securities framework, including FINRA oversight for member firms and SEC Regulation Best Interest for covered retail recommendations. An individual might appear in multiple systems because of dual registration.",
+        "The Connecticut Department of Banking publishes state registration verification resources for investment advisers, adviser agents, broker-dealers and securities agents. An actual registration record should be checked for the legal entity and representative rather than assuming a familiar business name belongs to the particular person offering advice. An adviser licensed in another state is not automatically authorized for every service in Connecticut.",
+        "Professional planning credentials, degree programs, association memberships and qualifying examinations each have their own function. They can evidence knowledge but do not substitute for legally required firm or representative registration. Build a source-controlled status table with the regulator, professional, firm, registration or certificate number, date checked and restrictions."
+      ],
+      "worked": [
+        "Example firm A appears on IAPD as SEC-registered adviser, with separately registered representative data.",
+        "Example B is a FINRA-registered broker; BrokerCheck is appropriate for its professional background.",
+        "Example C describes itself as a financial coach without stated securities registration; determine activities before inferring whether registration is required.",
+        "Formal exam credentials alone are not verified current registration or authorization."
+      ],
+      "practice": [
+        [
+          "Why should a client's due diligence verify both the firm and the individual?",
+          "A firm's registration does not by itself establish an individual representative's current status, employer, discipline or authorized capacities."
+        ],
+        [
+          "Can a state-regulated investment adviser be assumed to have no fiduciary duty merely because it is not SEC registered?",
+          "No. Investment adviser obligations can apply under relevant state statutes and law; determine the correct framework and services rather than inferring from federal status alone."
+        ]
+      ]
+    },
+    {
+      "title": "Investment Adviser Public Disclosure is an evidentiary starting point",
+      "body": [
+        "Investor.gov links to the Investment Adviser Public Disclosure (IAPD) system, which provides information on SEC and state-registered adviser firms and many adviser representatives. The firm Form ADV materials disclose business characteristics, services, fees, conflicts, affiliations, disciplinary events and other material information. The existence of a registration should not be misrepresented as government endorsement of the strategy or a guarantee that the firm is solvent.",
+        "Form ADV Part 1 contains registration and business information; Part 2A is a narrative firm brochure and Part 2B can provide brochure supplement details about supervised persons. Certain retail professionals and firms also deliver Form CRS relationship summaries with concise comparisons and discussion prompts. A client should examine current records, dates, amendments and supplementary evidence as appropriate.",
+        "For a hypothetical adviser charging an AUM fee, request the ADV stated rate, billing schedule, custody arrangement, investment management authority, conflicts and whether account transaction and underlying fund costs are separate. Read the actual narrative details rather than relying only on a one-page marketing pitch. Save a dated citation to official documents without copying private client credentials."
+      ],
+      "worked": [
+        "Initial managed assets $200,000, ADV states 1% AUM advisory fee.",
+        "Opening annual approximate adviser fee $2,000 if held constant, before account costs.",
+        "Form ADV narrative may separately disclose fund expenses, commissions and conflicts.",
+        "Public registration is evidence of disclosed status, not a guarantee against future market loss."
+      ],
+      "practice": [
+        [
+          "Why is IAPD more useful than merely reading a firm website?",
+          "It provides official filings, status and discipline-related information to compare with promotional representations."
+        ],
+        [
+          "Does Form ADV eliminate the need to ask about actual all-in household costs?",
+          "No. Fees can include underlying fund expenses and other charges, and current signed documents should corroborate what applies to the specific account."
+        ]
+      ]
+    },
+    {
+      "title": "BrokerCheck and complaint histories require nuanced reading",
+      "body": [
+        "FINRA BrokerCheck allows consumers to review broker-dealer firms and registered brokers, including employment history, licenses, qualifying exams and public disciplinary or customer-dispute disclosures. A disclosure event warrants careful reading of dates, allegations, disposition and relevance; it is neither automatic proof of misconduct nor proof that the issue is immaterial. Absence of a recorded complaint also does not prove a product recommendation is safe.",
+        "A detailed due-diligence note records the exact professional name, CRD identifier, current association, registered capacities, state licenses and public disclosures. Search both the person and the relevant legal firm. Where a record is confusing, seek confirmation from the regulator or firm compliance department. This is a verification task, not a social media review contest.",
+        "A professional's compensation can still create a conflict when disclosure history is clean. Account recommendations should be analyzed by costs, features, reasonable alternatives and client goals. Never equate a clean BrokerCheck screenshot with a guarantee that the investment will earn the advertised yield."
+      ],
+      "worked": [
+        "Adviser claims current state securities authorization, verified status must match relevant date and capacity.",
+        "BrokerCheck history shows a customer dispute labeled pending; allegation does not automatically equal final disciplinary finding.",
+        "The analyst records source, date, result and unresolved significance before a recommendation.",
+        "Verification conclusion can be 'needs further review', not only approve/reject."
+      ],
+      "practice": [
+        [
+          "Does one complaint automatically prove an investment professional violated securities law?",
+          "No. Review the nature and outcome of each public disclosure and distinguish allegations from findings or settlements."
+        ],
+        [
+          "Does a clean professional background guarantee the securities product is suitable?",
+          "No. Suitability and best-interest analysis still depend on product risk, costs, client profile and available alternatives."
+        ]
+      ]
+    },
+    {
+      "title": "Series 65 and Series 66 are examinations, not investment licenses",
+      "body": [
+        "NASAA explains that passing the Series 65 examination is normally an examination prerequisite for investment adviser representative registration, but passage by itself is not a license. An individual must satisfy applicable state registration processes and other requirements through the relevant firm. Some jurisdictions accept designated alternatives under current rules, subject to state confirmation. The examination is not evidence the candidate may immediately solicit or charge for regulated advisory services.",
+        "Series 66 is a combined exam that generally works alongside a valid Series 7 for the applicable representative qualification. Examinations and credentials may expire or have waivers depending on registration history and state-specific requirements. It is inaccurate to claim that earning an educational finance degree, completing a simulation, or reading a tax manual confers these permissions.",
+        "A CFP® certification is a professional credential subject to separate CFP Board requirements and continued ethical standards, not a replacement for necessary regulator registration when providing regulated securities advice. The student should be able to explain these distinctions to a hypothetical client without either discrediting legitimate professional education or overstating a certificate's legal scope."
+      ],
+      "worked": [
+        "Hypothetical student passes Series 65 but has not joined a registered adviser and has not completed state registration.",
+        "Educational exam result exists; professional registration status may remain 'not registered'.",
+        "A public marketing claim 'licensed fiduciary because Series 65 passed' is unsupported.",
+        "Check current Connecticut requirements and NASAA FAQ before making a profession-specific recommendation."
+      ],
+      "practice": [
+        [
+          "Does passing Series 65 automatically allow a person to operate an investment-advisory business in Connecticut?",
+          "No. Licensing and registration involve applicable state or federal requirements beyond passing the exam."
+        ],
+        [
+          "Is CFP certification the same as Securities and Exchange Commission registration?",
+          "No. CFP Board administers a private professional certification; securities adviser and broker registrations are separate regulatory matters."
+        ]
+      ]
+    },
+    {
+      "title": "Reg BI and fiduciary disclosures in an actual account recommendation",
+      "body": [
+        "Regulation Best Interest imposes a best-interest standard when broker-dealers make covered securities recommendations to retail customers, together with disclosure, care, conflict and compliance obligations. The SEC investment adviser fiduciary interpretation focuses on duties of care and loyalty that apply to advisory engagements. A dually registered professional must make clear which capacity applies to a particular recommendation and cannot rely on ambiguous titles to blur role boundaries.",
+        "Consider a broker recommending a $100,000 fee-based advisory account over an available transaction brokerage account. If client trading is minimal, a recurring fee could cost more without enough additional service to justify it; if ongoing planning and monitoring are genuinely required, advisory fees may be reasonable. Proper analysis needs the client's trading, goals, access, cost comparison and services. Neither choice is automatically correct.",
+        "Form CRS provides a concise relationship overview, but other disclosures and individualized account agreements may contain essential details. A plan that recommends a rollover, annuity or high-commission policy should check applicable product regulation, penalties, guarantees and alternative approaches. Do not treat the same standards as automatically covering non-securities insurance and all estate services."
+      ],
+      "worked": [
+        "Opening balance $100,000, hypothetical 1% annual advisory fee=$1,000.",
+        "Alternate transaction account could incur $100 annual trading costs under stipulated low-activity scenario.",
+        "Starting annual dollar difference $900 before differing service value, fund charges or custody fees.",
+        "The appropriate recommendation needs scope and reasonable alternative analysis."
+      ],
+      "practice": [
+        [
+          "Does Reg BI always apply to every conversation about a will or insurance policy?",
+          "No. It addresses covered broker-dealer securities recommendations; insurance and estate services can fall under different applicable laws and professional standards."
+        ],
+        [
+          "Why should dual-registration capacity be disclosed when an account is recommended?",
+          "The services, costs, standards, conflicts and legal obligations can depend on whether the professional is acting as an adviser or broker."
+        ]
+      ]
+    },
+    {
+      "title": "Detect materially misleading investment and insurance claims",
+      "body": [
+        "Red flags include promises of guaranteed high returns without a credible guarantor, tax-free borrowing without loan interest or lapse discussion, 'no downside' asset protection from an LLC or trust, private investments sold without verifiable underlying assets, and pressure to act before documents can be reviewed. Strong due diligence follows source records, the contract, actual economic cash flows, fair comparison and client capacity for losses.",
+        "An investment advertised at 12% annual return and financed by a personally guaranteed 10% loan is not a guaranteed 2% arbitrage. Fees, income taxation, asset price risk, maturity mismatches and creditor enforcement can make the expected spread negative. A permanent policy funded with $400 monthly premiums can also deplete near-term savings before it builds meaningful accessible surrender value. These claims require contract illustrations and adverse cash-flow modeling.",
+        "Lawful tax deductions and estate designs do exist. The analyst must avoid rejecting them categorically while insisting on proper client facts and qualified tax/estate professional verification. Ethics means withholding endorsement when material numbers or authorization cannot be established, rather than claiming the strategy must be fraudulent or must be safe."
+      ],
+      "worked": [
+        "Loan $50,000×10% annual simple cost=$5,000.",
+        "Promoted expected 12% project return=$6,000, just $1,000 gross spread before taxes and fees.",
+        "Stress project −20% produces −$10,000 investment loss plus $5,000 financing expense.",
+        "The lender's claim persists regardless of the projected return."
+      ],
+      "practice": [
+        [
+          "Why is a guaranteed loan obligation combined with nonguaranteed investment return not riskless?",
+          "The investor may receive no return or suffer losses while fixed loan payments and collateral requirements continue."
+        ],
+        [
+          "What should an analyst do when an adviser refuses to provide a current contract or audited figures?",
+          "Mark the claim unverified and avoid recommending a commitment until appropriate evidence is obtained."
+        ]
+      ]
+    },
+    {
+      "title": "Connecticut registration, complaints and escalation channels",
+      "body": [
+        "Connecticut's Department of Banking offers a license verification portal covering investment advisers, investment adviser agents, brokers and other regulated financial service categories. Its Securities and Business Investments Division oversees relevant state activities and maintains consumer protection resources. If a person asserts a license or an advisory firm exists in Connecticut, verify official current status and the exact named entity before sending money.",
+        "A consumer can also use Investor.gov and FINRA BrokerCheck to check federal and securities industry filings. When a concern exists, identify the proper regulator and gather complete factual records: advisor name, signed agreement, promotional representation, dates, account statements and communications. Report concerns through the regulator's official channels rather than sharing sensitive files publicly.",
+        "Professional boundaries remain: an accountant may compute taxes but not necessarily draft trust deeds or give securities advice without required authorization; an estate lawyer may draft trusts but need separate authority to manage investments. A collaborative planning team should define roles, confidentiality permissions, and responsibility for maintaining records."
+      ],
+      "worked": [
+        "An investment representative claims licensure in Connecticut but provides only an unrelated brokerage company's marketing webpage.",
+        "Verification status remains unknown until official Connecticut or federal/FINRA records match the person and firm.",
+        "A client should preserve date and documentation of the representation.",
+        "No client funds should be sent based solely on an unverified professional title."
+      ],
+      "practice": [
+        [
+          "What is an appropriate Connecticut-specific first step when confirming an investment adviser's status?",
+          "Use the Connecticut Department of Banking verification resources and IAPD, matching exact firm/person details and date."
+        ],
+        [
+          "Can an insurance agent, broker, CPA and estate attorney be assumed to hold identical legal authority?",
+          "No. Each profession and regulated activity has different licensing, competence and professional practice boundaries."
+        ]
+      ]
+    },
+    {
+      "title": "A formal professional verification and disclosure audit",
+      "body": [
+        "Design an audit with registration, credentials, firm identity, current status, compensation, Form ADV Part 2, Form CRS when applicable, BrokerCheck disclosure history, written account fees, proposed holdings, rollover consequences, conflicts, termination charges and signed scope of engagement. Every fact should have evidence and a date. Do not invent IDs or assume disciplinary details for a person who has not been identified.",
+        "Score whether a professional has made sufficient evidence available, but do not force a simple score to override serious problems. An inappropriate recommendation or an unresolvable material conflict may make the engagement unsuitable even when all paperwork is filed. State what remedies would address unknown facts and which professional or regulator should be consulted.",
+        "Conclude with a client-facing summary using plain language: the service you will receive, cost, legal role, how recommendations are selected, potential incentives and what might happen during a downturn. The responsible professional should be able to explain the economics without jargon or unsupported guarantees."
+      ],
+      "worked": [
+        "Opening portfolio $200,000, 1% adviser plus .5% funds => $3,000 modeled annual opening cost.",
+        "Client can obtain Form ADV and applicable Form CRS to ask about scope and conflicts.",
+        "Adviser background checked using actual IAPD and, as applicable, BrokerCheck records.",
+        "Review remains conditional until all material asset/cost and professional status evidence is current."
+      ],
+      "practice": [
+        [
+          "Why is a checklist marked 'all documents received' insufficient by itself to certify advice is appropriate?",
+          "Documents may disclose serious conflicts or unsuitable costs; professional judgment still must analyze the client-specific consequences."
+        ],
+        [
+          "How should the audit present incomplete registrations or unavailable disclosures?",
+          "Use a clearly documented unresolved status and specify official sources or questions needed to verify the missing facts."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "Connecticut Department of Banking verify a license portal",
+      "https://portal.ct.gov/dob/about-dob/index-pages/verify-a-license"
+    ],
+    [
+      "CT adviser registration details and IAPD linking",
+      "https://portal.ct.gov/dob/securities-licensing/licensing-general/see-if-an-investment-adviser-is-registered"
+    ],
+    [
+      "SEC Investor.gov IAPD adviser records",
+      "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/using-iapd"
+    ],
+    [
+      "Investor.gov FINRA BrokerCheck verification",
+      "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/using-brokercheck"
+    ],
+    [
+      "NASAA examination and licensing FAQ",
+      "https://www.nasaa.org/exams/exam-faqs/"
+    ],
+    [
+      "SEC Regulation Best Interest compliance guide",
+      "https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/regulation-best-interest"
+    ],
+    [
+      "SEC Form CRS filing and delivery FAQ",
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs"
+    ],
+    [
+      "CFP Board financial planning Code of Ethics",
+      "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+    ]
+  ],
+  "assessment": {
+    "title": "Investment professional verification and regulatory disclosure examination",
+    "prompt": "Conduct a fictional due-diligence review for an adviser who proposes moving $100k to a recurring 1% advisory account from a $100 annual-transaction-fee brokerage relationship. Explain the conditions that trigger broker-dealer Reg BI versus investment adviser fiduciary standards, CFP Board duties, and professional license verification using IAPD, BrokerCheck and Connecticut DOB. Identify Form ADV Parts 1/2 and Form CRS, disciplinary data caveats, conflict, monitoring and rollover boundaries. Analyze a 12%-project-financed-by-10%-loan pitch on $50k with −20% stress. Distinguish Series 65 passing from registration. Write an auditable client-facing verification memorandum.",
+    "rubric": [
+      "Accurate regulatory framework and scope (25%)",
+      "Registration and official document verification (25%)",
+      "Fee and loan opportunity-cost analysis (20%)",
+      "Claims, complaints and conflicts nuance (20%)",
+      "Reporting and privacy ethics (10%)"
+    ],
+    "answerKey": [
+      "1% of $100k=$1,000 annual advisory opening fee versus stipulated $100 brokerage trades, a $900 cost difference before service value.",
+      "Reg BI covers specified broker-dealer retail securities recommendations with four obligations, while investment-adviser fiduciary care/loyalty applies to adviser engagements; CFP Board standards apply to CFP professional financial advice.",
+      "IAPD, BrokerCheck and CT DOB should be used for official dated professional status and disclosure records. Passing Series 65 does not itself create registration.",
+      "At $50k, 12% hypothetical return $6k, 10% loan simple interest $5k => only $1k optimistic spread. A −20% investment year loses $10k plus $5k interest.",
+      "The audit should distinguish complaint allegations from disciplinary findings and registration from endorsement or performance guarantee."
+    ]
+  }
+}
