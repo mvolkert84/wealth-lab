@@ -1,0 +1,239 @@
+{
+  "id": "L7.S1",
+  "title": "Inflation and Real Wealth",
+  "subtitle": "Price indexes, purchasing power, real returns, wages, housing and inflation-sensitive assets",
+  "prerequisites": [
+    "L1.S1 net worth and liquidity",
+    "L1.S3 compound growth",
+    "L4.S2 risk and portfolio horizons"
+  ],
+  "objectives": [
+    "Distinguish price level, inflation, disinflation and deflation",
+    "Construct and interpret a CPI index and household-specific basket",
+    "Compute exact real return and purchasing-power transformations",
+    "Evaluate real wages, cash drag and home-purchase affordability",
+    "Assess inflation expectations, TIPS mechanics and basis risk",
+    "Build uncertainty and inflation stress cases for a family savings plan"
+  ],
+  "sections": [
+    {
+      "title": "Inflation measures a changing price level, not the price of every item",
+      "body": [
+        "An index tracks the weighted prices of a defined set of goods and services relative to an index base. The US Bureau of Labor Statistics publishes the Consumer Price Index for All Urban Consumers (CPI-U) and other indexes, each with its own coverage, weights, methodology and publication schedule. One monthly price increase is not an annual inflation rate. A rising index means the average prices in the basket have risen under the method; a family's actual expenses can diverge because its purchases and geography differ.",
+        "Inflation is a positive rate of change in a price index. Disinflation means the positive rate slows—for example, prices grow 5% one year and 3% the next, so the price level keeps rising. Deflation means the broad price index declines. Economists must also distinguish a one-time relative-price change from ongoing general inflation. Rent, groceries and insurance may behave very differently across households; an index is an economic measurement, not an individual budget statement.",
+        "Compute an exact one-period inflation rate as CPI_end/CPI_start−1. If a hypothetical index moves from 300 to 312, the change is 312/300−1=4%. If it rises another 3% in the following year, the index becomes 321.36, and two-year cumulative inflation is 321.36/300−1=7.12%, not 7% exactly. Frequency and compounding matter in both inflation and investment returns.",
+        "The CPI is estimated using sampled prices and statistical methods; its basket and quality adjustments can affect long-run comparison. Critiques of an index should ask what population, consumption weights, substitution assumptions and inflation concept it measures, not simply label every difference a falsification. For a household saving for a Connecticut home, a separate construction-cost, mortgage-rate and local property-tax model may be more useful than predicting house prices using the national CPI."
+      ],
+      "worked": [
+        "Hypothetical CPI 300.00 to 312.00 ⇒ inflation (312/300−1)×100 =4%.",
+        "Second year grows by 3% ⇒ CPI 312×1.03=321.36.",
+        "Two-year cumulative inflation 321.36/300−1=7.12%.",
+        "Disinflation from 4% to 3% still increases prices; deflation would require a negative index change.",
+        "Local rent, house prices and insurance may move differently from CPI."
+      ],
+      "practice": [
+        [
+          "If inflation declines from 6% to 2%, what has happened to the overall price level?",
+          "It generally continues rising, just more slowly. This is disinflation, not necessarily deflation or restoration of the original purchasing power."
+        ],
+        [
+          "Why is a national CPI index not an exact forecast for an individual Connecticut household's expenses?",
+          "Consumption weights, location, product selection and exposure to housing, energy, medical and insurance costs differ from the index's representative population."
+        ]
+      ]
+    },
+    {
+      "title": "Personal inflation and the construction of a weighted cost index",
+      "body": [
+        "A household can estimate the inflation it experienced by comparing comparable purchases over time and weighting the categories by their consumption amounts. A simple current-basket estimate uses price changes multiplied by starting expenditure weights. However, if the household switches brands, moves, changes consumption amounts or faces rent increases unrelated to CPI, the estimate reflects both inflation and choices. This is why researchers distinguish fixed-weight Laspeyres-type measures, substitution and chained measures.",
+        "Suppose annual spending in a fictional household begins with 45% housing, 20% food, 15% transportation, 10% utilities and 10% other. Assume category prices move 6%, 3%, −2%, 8% and 4%, respectively. A simple fixed-weight rate is .45×6%+.20×3%+.15×(−2%)+.10×8%+.10×4%=4.2%. The household's expense basket grew faster than a hypothetical 3% national CPI, even though gasoline-related transport prices fell.",
+        "Changing weights matters. Paying off a car loan, adding a dependent or buying a home changes exposure to prices; a fixed basket becomes less representative with time. An owner who takes a fixed-rate mortgage freezes the contractual principal-and-interest payment but not property taxes, maintenance or insurance. A renter may face direct rent resets. Comparing nominal balances without tracking the family's costs can create a false sense of rising wealth.",
+        "For budgeting, write a category-level inflation stress with best-case, base-case and adverse-case assumptions. Prioritize unavoidable items and keep projected wages or investment returns independent of spending-growth assumptions. The correct decision might be to increase emergency reserves or delay a purchase rather than chase a speculative investment expected to beat the average inflation statistic."
+      ],
+      "worked": [
+        "Starting category weights: housing 45%, food 20%, transport 15%, utilities 10%, other 10%.",
+        "Category price changes 6%, 3%, −2%, 8%, 4%.",
+        "Weighted inflation .45×.06+.20×.03+.15×(−.02)+.10×.08+.10×.04=.042=4.2%.",
+        "If starting total monthly expenses $3,000 and quantities unchanged, comparable basket cost rises to $3,126.",
+        "This is an illustrative fixed-basket index, not a prediction of actual spending."
+      ],
+      "practice": [
+        [
+          "Why can changing groceries from a premium store to discount brands obscure a naive measured personal inflation rate?",
+          "Observed spending changes reflect substitution, quantities and quality as well as like-for-like price changes; an accurate personal inflation estimate separates those effects."
+        ],
+        [
+          "How can a fixed-rate mortgage still expose a homeowner to inflation?",
+          "Taxes, insurance, utilities, repairs and maintenance are separate from contractually fixed principal and interest; their costs can increase."
+        ]
+      ]
+    },
+    {
+      "title": "Exact nominal-versus-real return and the Fisher transformation",
+      "body": [
+        "Nominal investment return is the percentage change in stated dollars, before purchasing-power adjustment. Real return is the return measured in units of the price-index basket. The exact relation is 1+r_real=(1+r_nominal)/(1+π), where π is the index inflation rate over the same period. The common approximation r_nominal−π neglects a cross term; it is useful for small rates but incorrect in high-inflation or long-horizon calculations.",
+        "Suppose an account earns 6% in nominal dollars during a year when inflation is 3%. Exact real return is 1.06/1.03−1≈2.9126%, rather than exactly 3%. If a savings account earns 2% while inflation is 5%, real return is 1.02/1.05−1≈−2.8571%. A balance can grow in dollars while losing spending power. This is not evidence that the bank stole cash; it identifies the opportunity and purchasing-power cost of holding a particular asset.",
+        "Model gross and net results separately. Fees reduce nominal growth, and taxes on interest may reduce spendable return. If gross nominal return is 6%, a hypothetical 1% fee drag and effective current tax cost are not necessarily precisely additive; determine actual net factor before converting to real wealth. Investment taxes depend on account type, income character and realized events. A risky stock does not guarantee a positive real return just because its historical nominal average exceeded inflation.",
+        "Money needed at a specific date has two constraints: amount and liquidity. A three-month closing reserve should not be invested in equities merely because long-run expected real returns are higher. Wealth Lab should let a learner stress a household's purchasing power without converting an expected return into a guaranteed finance source."
+      ],
+      "worked": [
+        "Nominal 6% and inflation 3% ⇒ exact real 1.06/1.03−1=2.9126%.",
+        "Nominal 2% and inflation 5% ⇒ exact real 1.02/1.05−1=−2.8571%.",
+        "On $10,000, nominal 2% end amount $10,200; in initial purchasing-power units $10,200/1.05≈$9,714.29.",
+        "Real wealth declines about $285.71 even while the dollar balance grows by $200.",
+        "The simple nominal-minus-inflation approximation should be labeled approximate."
+      ],
+      "practice": [
+        [
+          "Why does a 6% investment gain during 3% inflation produce a real return slightly below 3%?",
+          "The exact conversion divides growth factors, 1.06/1.03−1≈2.9126%, rather than subtracting percentage rates."
+        ],
+        [
+          "What additional variables do you need before treating an investment's gross nominal result as spendable real wealth?",
+          "Fees, applicable taxes and timing of cash flows, the correct inflation index and liquidity constraints can materially change the spendable result."
+        ]
+      ]
+    },
+    {
+      "title": "Real wages, brackets and the gap between salary raises and living costs",
+      "body": [
+        "Household income is adequate only relative to taxes, debts and expenses. A nominal raise can coincide with declining real pay. If a worker receives a 3% wage increase but their household consumption basket costs 5% more, the exact change in real wages is 1.03/1.05−1≈−1.9048%. The new paycheck is larger, but it buys less of the prior basket. Wage changes also affect benefit eligibility, tax withholding and retirement contribution capacity, which should be assessed separately.",
+        "Inflation interacts with taxation. Certain US federal thresholds are indexed for inflation, but not all limits and rules adjust identically, and states use separate laws. Nominal capital gains may contain substantial inflation components even if the investor's real appreciation is small. A household should therefore distinguish nominal pretax wealth, after-tax wealth and purchasing power of after-tax assets. A $250 monthly savings goal may require periodic increases in deposits to maintain the same real contribution over 20 years.",
+        "Model a simple pay increase: initial annual income $50,000, nominal raise 3%, actual CPI inflation 5%. New salary is $51,500, and its price-level-adjusted purchasing power is $51,500/1.05≈$49,047.62 in last year's dollars. The real equivalent is about $952.38 below the prior $50,000. It is incorrect to infer that the person is financially better off simply from the nominal $1,500 raise.",
+        "Real-income analysis should include any shift in hours, employment stability, insurance premiums, rent and commuting cost. The average CPI and wage growth are aggregate indicators, while a household's real financial condition is an individual cash-flow calculation. A durable investing plan establishes an affordable base contribution rather than requiring wage growth to automatically exceed future inflation."
+      ],
+      "worked": [
+        "Initial annual gross wage $50,000; 3% nominal raise ⇒ new wage $51,500.",
+        "Inflation 5% ⇒ real current salary in prior-year units $51,500/1.05≈$49,047.62.",
+        "Real wage change 1.03/1.05−1≈−1.9048%.",
+        "Nominal wage increased $1,500 but purchasing-power equivalent declined about $952.38.",
+        "Taxes and spending composition require separate analyses."
+      ],
+      "practice": [
+        [
+          "Why can a pay rise appear positive on a W-2 while the worker's real living standard falls?",
+          "Prices for the worker's purchase basket can increase more quickly than nominal pay, and after-tax/expense outcomes may differ from gross salary."
+        ],
+        [
+          "Should an investor automatically increase risk in order to keep up with inflation?",
+          "No. Risk capacity, time horizon, debt and essential cash needs govern feasible investments; higher expected growth never guarantees inflation protection."
+        ]
+      ]
+    },
+    {
+      "title": "Inflation-sensitive bonds, TIPS, market risk and break-even inflation",
+      "body": [
+        "Treasury Inflation-Protected Securities (TIPS) differ from nominal Treasuries because principal is adjusted under specified CPI-based rules, with coupons calculated from adjusted principal. TreasuryDirect explains that TIPS mature in five, ten or thirty years under currently offered term categories and pay at least original par principal at maturity, subject to US Treasury terms. Their secondary-market prices can fall before maturity, and purchasing before a market yield increase can generate an interim loss even though the principal adjustment mechanism operates.",
+        "A common nominal-versus-real yield comparison is the approximate break-even inflation rate: nominal Treasury yield minus comparable-maturity real TIPS yield. For a simplified illustrative 10-year nominal yield of 4.5% and real yield of 2%, approximate break-even inflation is 2.5%. A more precise compounded factor comparison is 1.045/1.02−1≈2.451%. In real markets, liquidity differences, risk premiums, indexation lag and market structure mean this spread is not a clean, guaranteed forecast of average future CPI inflation.",
+        "Interest-rate risk still matters. A real-yield increase depresses the present value of fixed real future cash flows, so a TIPS fund may lose market value when real yields rise. A single TIPS held through maturity and a TIPS fund that continually buys securities provide different cash-flow guarantees. Tax treatment of inflation adjustments can also matter in taxable accounts even when the adjustment is not distributed immediately in cash.",
+        "For a home down payment due soon, matching cash maturity and account access normally matters more than buying long-duration inflation exposure. The lesson should compare ordinary Treasury bills, bank deposits and eligible insured accounts, individual TIPS and TIPS mutual funds by maturity, liquidity, after-tax outcomes and interim price risks. It should never state 'TIPS cannot lose money' without specifying holding and maturity conditions."
+      ],
+      "worked": [
+        "Illustrative 10-year nominal yield 4.5%, TIPS real yield 2.0%.",
+        "Approximate break-even inflation 4.5%−2.0%=2.5 percentage points.",
+        "Exact factor conversion 1.045/1.02−1≈2.451%.",
+        "If an inflation-indexed principal is $1,000 and its index ratio rises to 1.08, adjusted principal becomes $1,080 in this hypothetical.",
+        "A TIPS fund may still lose market price when real yields rise."
+      ],
+      "practice": [
+        [
+          "Does the principal floor at TIPS maturity mean an investor who sells a TIPS fund early cannot lose money?",
+          "No. Secondary-market prices and fund NAV can fluctuate with real interest rates, liquidity and fees; the maturity floor applies to the individual security under its terms."
+        ],
+        [
+          "Why isn't nominal-minus-TIPS yield spread a perfect inflation forecast?",
+          "Term, liquidity and inflation risk premiums plus CPI index conventions and market frictions affect yields; break-even is market-implied pricing, not a guaranteed future CPI result."
+        ]
+      ]
+    },
+    {
+      "title": "Inflation, real housing wealth and mortgage leverage",
+      "body": [
+        "A home is a real asset but it is not a guaranteed inflation hedge. Sale price depends on local supply, demand, credit rates, condition, taxes and transaction costs. A fixed nominal mortgage may become easier to service if income increases while its payment stays fixed, but wage growth is not automatic and real mortgage affordability also depends on insurance, property taxes, repair costs and refinancing opportunities. Inflation can simultaneously increase home-replacement expenses and interest rates on new borrowing.",
+        "Consider a $250,000 house financed with a $237,500 mortgage and $12,500 initial owner equity, ignoring closing costs. If the home's nominal price rises 3% to $257,500 in one year and loan principal is unchanged for an isolated illustration, nominal home equity becomes $20,000. If inflation over the year was 5%, the home's real price in prior-year dollars is $257,500/1.05≈$245,238, a real decline in the asset's value despite nominal appreciation. Mortgage repayment and property expenses must be modeled separately.",
+        "Leverage increases sensitivity of equity to house value. A 10% price decline on a $250,000 home produces a $25,000 decline in property value; with unchanged $237,500 mortgage, equity falls from $12,500 to negative $12,500 before costs. This 200% loss relative to starting equity reflects financial leverage, not evidence that real estate always behaves like an investment fund. A purchase with $12,500 down may require more liquid cash for closing, repair reserves and potential sale.",
+        "When evaluating inheritance, children may receive a property subject to mortgage and taxes, not necessarily $250,000 of unrestricted cash. The economic plan should compare estimated selling price, mortgage payoff, sale expenses, relevant tax basis and the family's ability to carry monthly expenses. Inflation, loan terms and estate structure each have their own ledger."
+      ],
+      "worked": [
+        "Hypothetical $250,000 home, outstanding $237,500 mortgage ⇒ $12,500 equity initially.",
+        "Nominal home growth 3% ⇒ $257,500 asset and $20,000 equity if mortgage unchanged.",
+        "5% inflation ⇒ real home asset value $257,500/1.05≈$245,238.",
+        "A 10% home price fall to $225,000 ⇒ negative $12,500 equity before closing costs.",
+        "Transaction expenses and debt paydowns must be added to real-world projections."
+      ],
+      "practice": [
+        [
+          "Why is real estate not automatically a safe inflation hedge for a highly leveraged household?",
+          "Local prices may decline while the nominal mortgage and property bills remain; leverage magnifies equity losses and selling costs can further reduce proceeds."
+        ],
+        [
+          "Why should an heir not describe a $250,000 mortgaged house as a $250,000 cash inheritance?",
+          "Debt, sale costs, carrying expenses and legal rights may substantially reduce recoverable proceeds, and home value is uncertain until a transaction occurs."
+        ]
+      ]
+    },
+    {
+      "title": "Long-run goals: nominal targets versus purchasing-power targets",
+      "body": [
+        "Saving for a distant objective requires separating the future nominal bill from its present purchasing-power equivalent. If an education expense costs $30,000 today and rises 3% annually, its modeled nominal expense in ten years is $30,000×1.03^10≈$40,317.48. If financial investments grow 6% nominally each year, their future dollars must be compared with the correctly inflated expense, not the original $30,000 benchmark. A forecast must also include fees, tax treatment and uncertain return sequences.",
+        "Constant-contribution annuity models can mislead when wage and expense inflation differ. Investing $250 at each month-end for twenty years at a smooth hypothetical 6% nominal annual return compounded monthly gives about $115,510.22, from $60,000 contributions; the remaining balance is modeled growth before taxes, fees and inflation. With 3% inflation, its present purchasing-power equivalent is only about $63,896, and actual stock and bond performance will not follow a smooth monthly path.",
+        "An inflation-indexed contribution plan raises deposits as the target's expected nominal cost changes. Yet cash-flow affordability is a constraint: a person cannot save larger amounts if monthly bills use all available income. Robust planning uses a low-return, middle-return and loss scenario, then asks what decisions still work when the adverse scenario occurs. The highest net-worth forecast is not necessarily the safest funding strategy for a dated expense.",
+        "The concluding policy is an inflation-adjusted household scorecard: nominal assets; liabilities and loan structure; annual projected expenses by category; real value of liquid reserves; goals by due date; after-tax and after-fee investments; and a review rule when household inflation or salary growth deviates materially from expectations. This provides a bridge to monetary policy, compounding, bond duration and economic indicator lessons."
+      ],
+      "worked": [
+        "Today's $30,000 future expense at 3% for ten years ⇒ $40,317.49.",
+        "Twenty years of $250 month-end savings at 6% nominal / 12 ⇒ approximately $115,510.22.",
+        "Total contributions $250×240=$60,000; hypothetical growth $55,510.22.",
+        "At 3% annual inflation, terminal purchasing-power equivalent ≈$115,510.22/1.03^20.",
+        "This calculation assumes a smooth deterministic return that is not a market prediction."
+      ],
+      "practice": [
+        [
+          "Why must the nominal savings forecast for a ten-year education goal be compared with the projected nominal education cost?",
+          "Comparing different date and price-level units understates the needed target; bring assets and expenses to the same future date or to common present-value units."
+        ],
+        [
+          "What is a prudent response if future household expenses rise faster than the assumed general CPI?",
+          "Revise the household-specific budget and funding projections, consider increasing savings only when affordable, and protect dated obligations instead of forcing higher investment risk."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "BLS Consumer Price Index",
+      "https://www.bls.gov/cpi/"
+    ],
+    [
+      "BLS CPI Frequently Asked Questions",
+      "https://www.bls.gov/cpi/questions-and-answers.htm"
+    ],
+    [
+      "TreasuryDirect TIPS and inflation principal adjustments",
+      "https://www.treasurydirect.gov/marketable-securities/tips/"
+    ],
+    [
+      "TreasuryDirect Treasury security price/yield",
+      "https://www.treasurydirect.gov/marketable-securities/understanding-pricing/"
+    ],
+    [
+      "Federal Reserve Economic Data / series documentation",
+      "https://fred.stlouisfed.org/"
+    ],
+    [
+      "Investor.gov inflation and risk basics",
+      "https://www.investor.gov/introduction-investing"
+    ]
+  ],
+  "assessment": {
+    "title": "Inflation-indexed home-and-investment policy",
+    "prompt": "Construct a household CPI basket and compare it with published CPI, compute exact real wages and investment returns, evaluate individual TIPS versus funds, and stress a leveraged $250,000 home with a $237,500 loan under 3% nominal growth, 5% price inflation and 10% market decline. Fund a $30,000 goal due in ten years. Document tax, liquidity, income and price-index assumptions.",
+    "rubric": [
+      "Price-index construction and inflation interpretation (20%)",
+      "Exact real/nominal computations and cash-flow timing (25%)",
+      "Inflation instrument and yield-spread analysis (20%)",
+      "Housing leverage and goal stress tests (20%)",
+      "Primary sources, caveats and evidence-based decision (15%)"
+    ]
+  }
+}
