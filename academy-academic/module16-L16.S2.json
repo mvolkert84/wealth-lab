@@ -1,0 +1,268 @@
+{
+  "id": "L16.S2",
+  "title": "The Financial Planning Process",
+  "subtitle": "Structured discovery, risk analysis, alternatives, implementation responsibility, and monitoring over the client lifecycle",
+  "prerequisites": [
+    "L2 income, bills and spending plans",
+    "L6 borrowing, mortgage affordability and liquidity",
+    "L10 investment diversification",
+    "L13 family protection and estate continuity",
+    "L16.S1 professional conduct and conflicts"
+  ],
+  "objectives": [
+    "Apply CFP Board's seven-step financial planning process without implying professional certification",
+    "Create a full data-discovery and client authorization inventory",
+    "Distinguish goals, values, risk tolerance, risk capacity and immediate obligations",
+    "Construct household balance sheet, cash flow, reserve, debt, home and retirement analyses",
+    "Compare status quo with alternative integrated plans",
+    "Assign accountable implementation, referral and monitoring tasks",
+    "Document data quality and revised planning assumptions"
+  ],
+  "sections": [
+    {
+      "title": "The seven-step planning cycle is a decision architecture",
+      "body": [
+        "CFP Board's financial planning process includes understanding personal and financial circumstances, identifying and selecting goals, analyzing existing and potential alternative courses of action, developing recommendations, presenting recommendations, implementing agreed recommendations, and monitoring progress and updating. In educational practice these seven steps prevent product selection from outrunning actual client understanding. They also make each later decision revisitable as income, law and family needs change.",
+        "The planner's engagement should identify services and exclusions in writing as appropriate under the applicable professional standard. A calculation performed to explain mortgage affordability does not automatically mean the professional will prepare a tax return, draft a trust or monitor investments every month. A client's agreement to gather data and implement choices is essential, but an adviser must not push responsibilities onto the client that the professional has explicitly assumed.",
+        "During training, every module can be connected to a stage of this cycle: first gather source statements, quantify the current position, evaluate tradeoffs, present alternatives, sequence actions, and establish measurable review triggers. The process is not a seal of accreditation for Wealth Lab or a license to advise others."
+      ],
+      "worked": [
+        "Seven planning stages: understand, goals, analyze, develop, present, implement, monitor/update.",
+        "A plan's date, scope, verified facts and responsible parties must be recorded.",
+        "Product selection before discovery skips required reasoning, regardless of product quality.",
+        "A signed plan with no implementation owner is not the same as completed financial progress."
+      ],
+      "practice": [
+        [
+          "Why is a comprehensive financial plan iterative rather than a one-time investment recommendation?",
+          "Life, laws, market values, employment and client goals change; effective planning includes implementation checks and ongoing updates within agreed responsibilities."
+        ],
+        [
+          "Does finishing an educational seven-step assignment make a person a CFP professional?",
+          "No. CFP certification and applicable registration require independent education, examination, ethics, experience and licensing criteria."
+        ]
+      ]
+    },
+    {
+      "title": "Discovery is a source-controlled inventory of the household",
+      "body": [
+        "Collect cash and bank balances, retirement account statements, wages and other income, expense ledgers, credit balances, mortgage estimates, current insurance declarations, beneficiary forms, trust/deed records, family caregiving needs, tax returns and obligations. Each item needs date, source, ownership, status and limitations. Mark unknown or client-estimated values explicitly. A household can present $10,000 of savings while part belongs to a tenant deposit, unpaid business sales tax or pending customer refunds, making that amount ineligible for personal housing decisions.",
+        "Qualitative discovery is equally important: who depends on the earners, which spouse wishes to remain in a particular home, whether a child requires long-term support, how comfortably the clients experience volatility, and what tradeoffs they reject. Ask what success would look like in one, five and twenty years and how much flexibility remains. Informed consent to share personal or business details should be limited to the scope needed.",
+        "Use a source matrix distinguishing official statements from unsupported speculation. Actual posted wages and account balances override stale planning estimates, but future income remains uncertain. Avoid collecting credentials, Social Security numbers, minors' complete details or other secrets solely for a classroom case; the planning process can function using anonymized figures."
+      ],
+      "worked": [
+        "Client estimates bank cash $12,000; reconciled statements show $10,000 accessible.",
+        "Of that $10,000, $3,000 is earmarked for overdue obligations, leaving $7,000 discretionary cash.",
+        "Retirement account $30,000 is not equivalent to $30,000 unrestricted checking cash.",
+        "The inventory should show account owner, restrictions, data date and confidence for all three."
+      ],
+      "practice": [
+        [
+          "Why distinguish a verified account statement from a client-recalled number?",
+          "Unknown or outdated figures can change solvency, liquidity and eligibility, so decisions need provenance and accuracy bounds."
+        ],
+        [
+          "Why can a large retirement account not always cover immediate closing expenses without consequences?",
+          "Withdrawal rules, income tax, penalties, market changes and account restrictions may reduce accessible value or make it an unsuitable funding source."
+        ]
+      ]
+    },
+    {
+      "title": "Goal selection converts wishes into constraints and dates",
+      "body": [
+        "Goals compete for the same limited dollars. A household may want to buy a home, fund retirement, protect a child, avoid late rent and improve credit. Each requires a target, horizon, minimum priority, consequence of failure and known funding sources. Distinguish mandatory goals—paying rent and maintaining insurance—from flexible preferences such as maximizing long-run nominal growth. Goals without a date or estimate cannot be objectively evaluated.",
+        "Suppose a household takes home $48,000 annually, spends $42,000 on baseline needs, and has a $6,000 annual cash margin. That is $500 monthly or 12.5% of net income; it is not automatically investable. If the household must build a $6,000 emergency fund within 24 months, depositing $250 monthly uses half the margin. Any remaining $250 must be reconciled with debt, mortgage cash, retirement and insurance obligations.",
+        "Write goal records with acceptance criteria: 'have $10,000 in accessible reserves by June 2028', 'reduce credit card balance below $1,000 by December', or 'prepare verified down-payment/closing funds before lender preapproval'. Distinguish aspirations from commitments and prioritize based on cash and legal reality."
+      ],
+      "worked": [
+        "Annual net income $48,000, essentials $42,000 => annual margin $6,000.",
+        "Margin ratio $6k/$48k=12.5% of net income.",
+        "Set aside $250 monthly for 24 months => $6,000 reserve contributions before yield.",
+        "Only $250 monthly remains for other goals from the stipulated $500 margin."
+      ],
+      "practice": [
+        [
+          "Why is a 12.5% surplus not automatically a recommendation to invest it in stocks?",
+          "The surplus may first have to fund near-term emergencies, debt obligations, mortgage cash or insurance before market exposure is appropriate."
+        ],
+        [
+          "How does a measurable goal differ from 'build generational wealth'?",
+          "It defines amount, deadline, beneficiary, responsible account and completion criteria rather than only an aspiration."
+        ]
+      ]
+    },
+    {
+      "title": "Analyze alternative courses of action on common assumptions",
+      "body": [
+        "Compare the status quo against at least two coherent alternatives, holding fixed comparable income, tax assumptions, household needs and time horizon. For a high-interest credit card, compare paying minimums, accelerating repayment, and balancing repayment with a small emergency reserve. For a home, compare purchasing now, delaying for a cash cushion, and choosing a lower price. For insurance, compare appropriate term coverage with permanent products using total premiums and guaranteed features.",
+        "An initial account balance of $7,000 at a hypothetical 22% annual interest rate can accrue roughly $1,540 in one year under a simple unchanged-balance illustration; actual revolving interest uses daily calculations and payments. A $350 monthly payment is a different debt trajectory from a $50 monthly payment. The analyst must show the card's actual APR, minimums and payment calendar rather than invent a payoff date from average expenses.",
+        "Opportunity cost requires equal cash budgets. A $300 premium that leaves only $50 of a $350 monthly surplus for emergency funds materially changes the home plan, even if the policy claims tax benefits. Do not assume a complex product creates capital; document every new liability and ongoing charge."
+      ],
+      "worked": [
+        "Card balance $7,000 × illustrative unchanged-balance APR 22% = $1,540 one-year simple interest.",
+        "Alternative A pays $350 monthly; alternative B pays $150; precise amortization requires monthly compounding and scheduled payments.",
+        "A $300 monthly premium uses 85.7% of a $350 monthly surplus.",
+        "Comparing only potential policy cash value to a brokerage portfolio without premium difference is invalid."
+      ],
+      "practice": [
+        [
+          "Why must planning alternatives use equal economic budgets?",
+          "A high-premium product must be compared against what the client could accomplish using the same available cash elsewhere."
+        ],
+        [
+          "What makes a payoff estimate unreliable even if the current APR is known?",
+          "Missing payment timing, compounding conventions, fees, minimum payment rules and future changes can materially change payoff."
+        ]
+      ]
+    },
+    {
+      "title": "Develop a balance sheet and cash-flow decision system",
+      "body": [
+        "The balance sheet records accessible cash, investable assets, home or business values, debt and restricted financial rights as of a stated date. Cash flow records inflows and outflows over a period. Solvency and liquidity can diverge sharply: the client can have positive retirement assets or home equity but not enough cash to pay a contractor. A comprehensive plan uses both, plus an income-tax and risk-protection layer.",
+        "Suppose liquid cash $10,000, retirement $30,000, vehicle $9,000 and liabilities $7,000 credit card plus $4,000 vehicle debt. Net worth is $38,000 under these simplified assumptions. Yet with $3,500 essential monthly outflows, the unrestricted $10,000 provides fewer than three months' expenses, and still less if credit payments or upcoming home purchases require cash.",
+        "Define a safe reserve based on verified essential expenses and genuine liquid access, not total net worth. Asset owners and beneficiaries matter: a joint bank account, an individually held IRA and a policy owned by an irrevocable trust cannot simply be treated as one fungible pool. Model financial independence using real inflation assumptions and after-tax withdrawals."
+      ],
+      "worked": [
+        "Assets $10k cash+$30k retirement+$9k vehicle=$49,000.",
+        "Liabilities $7k card+$4k car loan=$11,000.",
+        "Net worth $49k−$11k=$38,000.",
+        "Essential monthly spending $3,500 means $10k liquidity covers ≈2.86 months before restrictions."
+      ],
+      "practice": [
+        [
+          "Can a $38,000 positive net worth guarantee an emergency expense is affordable?",
+          "No. Asset liquidity, timing, taxes, market risk and ownership restrictions determine what cash is available."
+        ],
+        [
+          "Why must an IRA owned by one spouse be distinguished from a joint checking account?",
+          "Different ownership and tax rules determine current access, beneficiary rights and transfer outcomes."
+        ]
+      ]
+    },
+    {
+      "title": "Recommendations require tax, insurance, mortgage and estate coordination",
+      "body": [
+        "A unified recommendation must show how a housing purchase changes spending, insurable income needs, taxable deductions, disability exposure, retirement contributions and later beneficiary decisions. A mortgage preapproval is not evidence a client can safely maintain the home after repairs or a job loss. Likewise, buying life insurance is not a substitute for cash reserves or a legally valid beneficiary plan.",
+        "Suppose a $250,000 house has a hypothetical 5% down payment of $12,500, closing costs $7,500 and necessary initial reserves $6,000. The upfront funding target is $26,000 before program-specific items. A buyer with $10,000 truly accessible cash falls $16,000 short; unknown assistance programs cannot be entered as certain funding. Mortgage insurance, property tax and maintenance require separate ongoing projections.",
+        "If the goal includes passing property to a child, request the actual recorded deed, existing mortgage, beneficiary forms and likely probate/tax obligations. A trust instrument alone may not transfer a home; an IRA and insurance policy have separate transfer mechanisms. Coordinate a state-licensed lawyer and tax preparer for issues outside the planner's competence."
+      ],
+      "worked": [
+        "Home price $250,000 ×5% down=$12,500.",
+        "Closing expense $7,500 plus post-purchase reserve $6,000.",
+        "Total target $26,000; accessible $10,000 cash implies $16,000 short.",
+        "Mortgage funding needs to be recomputed if lender fees or assistance eligibility differ."
+      ],
+      "practice": [
+        [
+          "Why can a preapproved mortgage still be an unsuitable financial plan?",
+          "Approval may not reflect future repairs, cash reserves, property costs, family goals or an adverse income shock."
+        ],
+        [
+          "Why should a financial planner avoid claiming a trust automatically transfers all the family's accounts?",
+          "Actual title, beneficiary paperwork, account-specific tax and transfer rules govern what the trust can control."
+        ]
+      ]
+    },
+    {
+      "title": "Implementation ownership, milestones and independent verification",
+      "body": [
+        "A recommendation is not yet an executed outcome. Assign each action to the client, adviser, attorney, tax professional, insurer or mortgage lender, with deadline, required documents, evidence of completion, and dependencies. Saving for a down payment depends on a verified cash plan; changing account beneficiaries requires provider-confirmed updates; funding a trust-held home may need a properly recorded deed. The order matters.",
+        "Plan near-term essential actions first: stop further high-rate debt growth, secure overdue bills and emergency liquidity, obtain actual employer match and loan terms, verify protection gaps, and then compare investable assets. A planner should not tell a client to surrender an old insurance contract until replacement underwriting and claims protection are confirmed. Avoid putting a family at risk for the convenience of closing an implementation ticket.",
+        "A professional action register includes status proposed/authorized/submitted/confirmed, verification method and next review date. Wealth Lab academic exercises should not silently write to the user's progress or bank data when the user changes demonstration inputs; the only durable record of a real-world action is documentary evidence from the external responsible party."
+      ],
+      "worked": [
+        "Goal 'obtain term quote' remains proposed when client requests options.",
+        "After client authorization and insurer issue/confirmation, actual coverage may be marked active.",
+        "An estate deed is not funded merely because a draft trust was downloaded.",
+        "If home cash goal is $16k short and monthly accumulation $400, simple timeline ≥40 months ignoring interest or aid."
+      ],
+      "practice": [
+        [
+          "Why shouldn't a planner mark a life insurance application as completed coverage?",
+          "Underwriting and contractual issuance may not yet be effective, leaving a dangerous protection gap."
+        ],
+        [
+          "Why is an action log stronger than an impressive final slide presentation?",
+          "It identifies dependencies, responsible parties, documentary proof and deadlines that convert analysis into implementation."
+        ]
+      ]
+    },
+    {
+      "title": "Monitoring through triggers rather than routine product churn",
+      "body": [
+        "An annual review is useful but major life events may demand earlier updates. Triggers include job loss, marriage, divorce, child needs, mortgage refinance, insurance changes, retirement-plan options, beneficiary death, illness or a large shift in tax law. Market losses alone do not mandate trading; revisions should link to objective changes in cash need, risk capacity or an agreed asset allocation.",
+        "Model plan performance against goal metrics: months of expenses funded, card principal paid, down-payment cash on hand, protection coverage confirmed, retirement contributions, actual property payment quotes, and heir administration documents. For a 6-month reserve target with $3,500 monthly essentials, the target is $21,000; $10,000 cash represents 2.86 months and a $11,000 gap before other obligations.",
+        "A monitoring memo states what evidence is needed, who supplies it, and what decisions will be reconsidered. Sensitivity ranges and uncertainty should not be hidden by precise-looking charts. If the professional did not agree to monitoring, the plan should explicitly identify what the client must revisit or assign to another qualified party."
+      ],
+      "worked": [
+        "Six-month essential reserve target at $3,500/month is $21,000.",
+        "Accessible cash $10,000; remaining reserve gap $11,000.",
+        "At $500/month dedicated savings, simple gap timeline 22 months, ignoring earned interest.",
+        "If household experiences job loss, affordability and prioritization must be reassessed earlier than annual review."
+      ],
+      "practice": [
+        [
+          "Why may an immediate plan review be needed after job loss rather than at a scheduled annual date?",
+          "Risk capacity, monthly surplus, insurance eligibility and near-term cash needs can change abruptly."
+        ],
+        [
+          "Does market volatility by itself prove the plan should trade its portfolio constantly?",
+          "No. Decisions should reflect objectives, cash need, risk tolerance and agreed monitoring policy, with taxes and turnover costs considered."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFP Board seven-step practice standards clarification",
+      "https://www.cfp.net/ethics/compliance-resources/2020/01/financial-planning-and-application-of-the-practice-standards-for-the-financial-planning-process"
+    ],
+    [
+      "CFP Board Code and Standards client information",
+      "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+    ],
+    [
+      "SEC standards of conduct for account recommendations",
+      "https://www.sec.gov/about/divisions-offices/division-trading-markets/broker-dealers/staff-bulletin-standards-conduct-broker-dealers-investment-advisers-account-recommendations-retail"
+    ],
+    [
+      "CFPB mortgage loan estimate and cash-to-close",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ],
+    [
+      "CFPB budget and debt payment education",
+      "https://www.consumerfinance.gov/consumer-tools/credit-cards/answers/key-terms/"
+    ],
+    [
+      "IRS retirement account withdrawal and rollover guidance",
+      "https://www.irs.gov/publications/p590b"
+    ],
+    [
+      "Connecticut Probate Court estate and trust resources",
+      "https://www.ctprobate.gov/trusts-estates"
+    ],
+    [
+      "Investor.gov investment risk and planning",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products"
+    ]
+  ],
+  "assessment": {
+    "title": "Seven-step client financial planning process dossier",
+    "prompt": "Conduct fictional client discovery with annual net income $48k, essential outflow $42k and $10k accessible cash; prioritize a six-month reserve against $3,500 monthly essentials, $7k card at 22% APR and a $250k potential house with 5% down, $7,500 closing costs and $6k post-purchase reserves. Evaluate original status quo, faster debt reduction, delayed home purchase, appropriate term coverage vs permanent borrowing. Build a balance sheet with $30k retirement, $9k vehicle and $4k vehicle loan. Document seven CFP Board steps without claiming professional certification, and give implementation roles, verification methods and monitoring triggers.",
+    "rubric": [
+      "Verified qualitative/quantitative discovery (20%)",
+      "Correct cash, debt and mortgage arithmetic (25%)",
+      "Alternatives, risk and client preference reconciliation (25%)",
+      "Implementation responsibility and professional referrals (15%)",
+      "Monitoring triggers and source quality (15%)"
+    ],
+    "answerKey": [
+      "Annual cash margin $6k/$48k=12.5%, or $500 monthly before prioritization.",
+      "Assets $49k less liabilities $11k gives $38k net worth, but $10k cash covers only 2.86 months of $3.5k essentials.",
+      "Six-month reserve target $21k, current $10k means $11k additional liquidity needed.",
+      "Home cash 5%×$250k=$12.5k down+$7.5k costs+$6k post-close reserve=$26k, $16k above available $10k.",
+      "The seven steps are understand, goals, analyze, develop, present, implement, monitor/update with scope and responsibility documented.",
+      "A 22% high-interest credit card must be considered against safe reserve building and investing; do not automatically risk home cash in insurance or equities."
+    ]
+  }
+}

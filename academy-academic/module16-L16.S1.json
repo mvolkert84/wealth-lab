@@ -1,0 +1,267 @@
+{
+  "id": "L16.S1",
+  "title": "Fiduciary Duty and Conflicts",
+  "subtitle": "Professional standards, informed consent, product incentives, fee drag, client privacy and recommendation records",
+  "prerequisites": [
+    "L11.S2 marginal tax and return comparisons",
+    "L12.S2 retirement account options",
+    "L13.S1 protection needs",
+    "L15.S4 opportunity costs and asset selection"
+  ],
+  "objectives": [
+    "Distinguish the SEC investment-adviser fiduciary standard, broker-dealer Regulation Best Interest and CFP Board fiduciary duty",
+    "Explain care, loyalty, conflicts, scope, monitoring and documentation within each applicable standard",
+    "Evaluate Form ADV Part 2, Form CRS and product disclosures as different materials",
+    "Calculate annual layered investment fees and compounded opportunity cost",
+    "Detect sales conflicts, proprietary-product incentives, rollover conflicts and misleading performance presentations",
+    "Construct a professional client-first recommendation memo with reasonable alternatives",
+    "Recognize confidentiality, client informed consent and appropriate professional referral boundaries"
+  ],
+  "sections": [
+    {
+      "title": "Fiduciary duty is a legal and professional relationship, not a job title",
+      "body": [
+        "The US investment adviser fiduciary standard, interpreted by the Securities and Exchange Commission under the Investment Advisers Act, entails a duty of care and a duty of loyalty in the scope of the advisory relationship. Advisers generally must provide advice in clients' best interests and make full and fair disclosure of material conflicts such that clients can give informed consent; when a conflict cannot be adequately addressed, a professional may need to eliminate it. The duty is not satisfied simply by calling oneself a fiduciary on a website.",
+        "Broker-dealers giving covered recommendations to retail customers face Regulation Best Interest, which has disclosure, care, conflicts-of-interest and compliance obligations. A dual-registered professional may act in different capacities on different occasions, and the client deserves to know which standard applies to the particular recommendation. CFP® professionals separately owe CFP Board's fiduciary duty whenever providing financial advice to a client, subject to the body's professional standards.",
+        "Ethical analysis begins by identifying the adviser, firm, engagement scope, compensation, legal capacity, product recommendations and documents actually provided. Avoid treating the phrase 'financial adviser' as proof of registration, certification or unconditional future monitoring. Wealth Lab is financial education and does not certify or license students to provide regulated advice."
+      ],
+      "worked": [
+        "SEC investment adviser: statutory fiduciary duty of care and loyalty as applicable.",
+        "Retail broker-dealer securities recommendation: SEC Regulation Best Interest and its four components.",
+        "CFP® professional financial advice: CFP Board fiduciary duty and professional practice standards.",
+        "The same individual can have distinct roles; confirm the capacity and agreement at each recommendation."
+      ],
+      "practice": [
+        [
+          "Does advertising the word 'fiduciary' establish a professional's registration or exact contractual responsibilities?",
+          "No. Confirm registration, professional credentials, engagement documents, actual capacity and conflicts in official records."
+        ],
+        [
+          "Are Reg BI and the investment-adviser fiduciary standard identical in every detail?",
+          "No. They are different regulatory frameworks with distinct application triggers and obligations, even though both address acting in clients' best interests."
+        ]
+      ]
+    },
+    {
+      "title": "Client-first standards demand a reproducible recommendation process",
+      "body": [
+        "A reasonable recommendation requires understanding a client's actual goals, assets, income, obligations, risk tolerance, risk capacity, liquidity horizon, tax position, financial knowledge and available alternatives. Risk tolerance describes willingness to experience uncertainty; risk capacity describes the household's actual financial ability to withstand loss. A client may love aggressive stocks and still lack the capacity to risk a first-home closing reserve. The professional must distinguish preference from feasibility.",
+        "Under the SEC interpretation and related account recommendations guidance, investment advisers have care obligations that may include understanding a client's investment profile, cost, account services and reasonably available alternatives as appropriate to the engagement. Broker-dealers have specific Reg BI requirements for recommendations in their scope. An investment professional should compare an ongoing advisory account with an available brokerage solution when the costs and desired services materially differ.",
+        "Document the facts used and the limits of the work, rather than filling missing information with favorable estimates. If the client's life insurance, trust deed or taxable retirement basis cannot be verified, mark those findings unresolved and defer a product-specific conclusion. Fiduciary-quality conduct can mean recommending no sale, no rollover or no new investment."
+      ],
+      "worked": [
+        "Client holds $10,000 required for closing in 10 months and $5,000 accessible savings.",
+        "A proposal to place all $10,000 in high-volatility equity must confront the 10-month fixed cash need.",
+        "A 25% market decline would reduce that earmarked investment to $7,500, creating a $2,500 closing shortfall.",
+        "The risk tolerance answer 'comfortable with stocks' does not resolve the inability to fund the closing."
+      ],
+      "practice": [
+        [
+          "Why does a high willingness to invest aggressively not prove high risk capacity?",
+          "The client may lack other cash for fixed debts, housing or medical obligations and cannot financially withstand a loss."
+        ],
+        [
+          "Can the best recommendation be to avoid buying a product?",
+          "Yes. If liquidity, suitability or costs fail a reasonable alternative analysis, a prudent conclusion may be to retain suitable existing accounts or cash."
+        ]
+      ]
+    },
+    {
+      "title": "Conflicts: identify, disclose, mitigate, or decline",
+      "body": [
+        "Financial incentives can bias advice. Product commissions, trail fees, revenue sharing, managed-account asset fees, proprietary funds, referral relationships and bonus targets can affect which strategy is presented. Fee-only descriptions do not automatically eliminate asset-based incentives, such as discouraging a client from using investments to pay down an expensive mortgage. Material conflicts must be understood in the actual account and service context, not as an abstract warning.",
+        "For SEC investment advisers, sufficiently specific material-conflict disclosure and informed consent are critical; a boilerplate statement that a conflict 'may' exist can be inadequate when it actually exists. Broker-dealer Reg BI also includes firm-level conflict-mitigation and certain conflict-elimination requirements, not just disclosure. CFP Board duties likewise require managing material conflicts and acting in the client's interest. The applicable legal requirements depend on the role and facts.",
+        "An evaluation file should disclose the adviser is compensated $2,000 annually, what happens when assets leave the account, whether the recommendation earns extra commission, why lower-cost alternatives were rejected and what protections remain. An adviser who cannot explain these facts should not be allowed to substitute testimonials or attractive projected returns for evidence."
+      ],
+      "worked": [
+        "Illustrative adviser receives 1% annually on $200,000 = $2,000 first-year advisory fee.",
+        "Recommended fund expense 0.50% adds $1,000 on same opening balance.",
+        "Combined opening-year explicit percentages 1.50% or $3,000 before other fees and performance.",
+        "An adviser paid on managed assets may have an incentive about keeping money invested versus debt payoff."
+      ],
+      "practice": [
+        [
+          "Does simply listing a commission in paperwork always cure an unsuitable recommendation?",
+          "No. Disclosure alone does not erase care, best-interest or conflict-mitigation obligations under the applicable standard."
+        ],
+        [
+          "Why can an AUM fee create a conflict even when no product commission is paid?",
+          "The professional may be financially rewarded for retaining managed assets instead of recommending suitable cash use, debt payment or a lower-cost account."
+        ]
+      ]
+    },
+    {
+      "title": "Fees compound through time and affect the after-fee portfolio",
+      "body": [
+        "Fee comparisons must use the same investment assumptions, starting balance, services and period. An advisory charge of 1% and fund expense ratio of 0.5% initially sum to 1.5% of a portfolio if assessed on comparable balances; real billing conventions and market values differ. A percentage fee reduces the capital remaining to compound every year, so the cost is not merely the sum of first-year invoices.",
+        "Suppose $200,000 earns hypothetical 6% gross annually for twenty years with no deposits or withdrawals. A zero-fee illustrative ending value is $200,000×1.06^20. Modeling a simplified 1.5-percentage-point net reduction gives $200,000×1.045^20. Their difference represents the compounding opportunity cost of this stylized assumption, not an adviser-specific prediction. Precise fee timing requires calculating gross growth and charges separately.",
+        "Compare the fee against real services: tax-aware planning, retirement analysis, estate coordination and behavioral support may provide value for some clients, but cannot be assumed valuable without knowing the household's needs. Seek the all-in cost including transaction spreads, account charges, underlying funds and advisory layers. State whether fees are fixed, hourly, subscription, AUM-based or commission-based."
+      ],
+      "worked": [
+        "Initial portfolio $200,000, hypothetical gross 6% annual return for 20 years.",
+        "Illustrative no-fee value $200,000×1.06^20≈$641,427.",
+        "Illustrative simplified 4.5% net rate value $200,000×1.045^20≈$482,327.",
+        "Illustrative 20-year terminal gap ≈$159,100, highly assumption-sensitive and not a market forecast."
+      ],
+      "practice": [
+        [
+          "Why is a 1.5% annual layered fee not simply a $3,000 one-time lifetime cost?",
+          "Ongoing fees reduce assets each period and the investment growth those assets could have earned; future balances and actual billing affect the cost."
+        ],
+        [
+          "Does selecting the cheapest adviser automatically guarantee the best advice?",
+          "No. A reasonable comparison weighs scope, quality, client objectives, risk, access, alternatives and total fees rather than price alone."
+        ]
+      ]
+    },
+    {
+      "title": "A rollover is a decision about protections, service and costs",
+      "body": [
+        "Moving workplace retirement assets to an IRA can change investment expenses, account services, distribution flexibility, creditor protections, access to certain investments and required minimum distribution treatment. A rollover may generate new compensation for an adviser; that creates an incentive that must be examined. A prudent analysis includes keeping the current plan, transfer to another employer plan when eligible, rollover to IRA, and any permitted distribution with tax consequences.",
+        "Suppose a workplace plan offers a diversified low-fee option at 0.15% of assets, while the proposed IRA advisory arrangement costs 1.00% plus funds at 0.30%. On $100,000 the stylized annual starting cost is $150 in plan versus $1,300 in IRA, a $1,150 first-year difference before transaction fees. The IRA may offer additional planning features, but the adviser must identify and justify the value to this client rather than asserting portability is automatically superior.",
+        "Check actual plan documents, expense disclosures, special employer-stock rules, distribution eligibility, rollover mechanics, tax withholding and potential pro-rata conversion implications. The plan's fiduciary and the personal adviser may operate under different regimes. Never promise a tax-free rollover without verifying direct transfer procedures and the account's tax character."
+      ],
+      "worked": [
+        "Workplace-plan fees 0.15%×$100,000=$150/year opening cost.",
+        "Proposed IRA adviser 1.0% plus fund 0.3% =1.3%×$100,000=$1,300.",
+        "Opening annual cost difference $1,150.",
+        "Account choice requires service, creditor protection, investment choices and tax analysis, not fee alone."
+      ],
+      "practice": [
+        [
+          "Why does an adviser have a possible incentive to recommend an IRA rollover?",
+          "Receiving management authority over rollover assets may increase compensation, making objective alternatives and conflict disclosure essential."
+        ],
+        [
+          "Can a plan-to-IRA rollover always be evaluated solely on portfolio expense ratios?",
+          "No. Distribution rights, taxes, creditor protections, employer stock, services, investment choices and individual goals also matter."
+        ]
+      ]
+    },
+    {
+      "title": "Confidentiality and the limits of documentation",
+      "body": [
+        "Financial planning requires sensitive information: household income, debts, insurance beneficiaries, estate documents, marital status, disabilities and minors' needs. An adviser should collect only information necessary for the defined scope, protect access, document authorization and avoid revealing records to unrelated parties. CFP Board's duties include confidentiality and client privacy; registered firms have additional applicable privacy, cybersecurity and records obligations.",
+        "An educational planning app storing user notes locally should communicate whether notes are synced or retained, and must never claim to have verified actual financial records without reading them. A human professional's recordkeeping, consent and secure storage duties may differ from the practices of a self-study app. Data-minimizing practice avoids collecting Social Security numbers and account credentials merely for a classroom hypothetical.",
+        "A recommendation memo should trace the dated source, assumption, client confirmation, professional calculation and proposed action. Instead of storing client secrets in unsecured text, refer to encrypted or appropriately protected records and document who has access. Family members or a future heir should only be included in private discussions with applicable authorization."
+      ],
+      "worked": [
+        "A hypothetical client presents $10,000 cash, $5,000 debts and a private minor-beneficiary record.",
+        "Analysis can retain broad numbers without storing complete bank account numbers or minors' identifiers.",
+        "Verification status 'confirmed from statement' differs from 'client-estimated'.",
+        "If ownership or beneficiary facts are unverified, defer estate conclusions rather than disclose or invent private records."
+      ],
+      "practice": [
+        [
+          "Why should an adviser avoid asking for bank login credentials in a planning intake form?",
+          "Credentials are unnecessary for many planning calculations and create preventable access, privacy and cybersecurity risks."
+        ],
+        [
+          "Why must a planning memo distinguish verified records from client estimates?",
+          "Recommendations based on unverified asset values or beneficiaries can fail when actual contracts, loans or records differ."
+        ]
+      ]
+    },
+    {
+      "title": "Ethical case: unsuitable permanent insurance sales pitch",
+      "body": [
+        "Imagine a household with a $7,000 high-rate credit-card balance, a depleted emergency fund and only $350 monthly reliable surplus. A seller recommends a new permanent life policy requiring $300 monthly solely to borrow for a first-home down payment. The seller earns a substantial commission and compares only a favorable non-guaranteed cash-value illustration. This raises questions about liquidity suitability, product expense, contract values and compensation conflicts.",
+        "An appropriate analysis begins with affordable death-benefit needs, emergency expenses, the card's 22% APR, eligibility for low-cost term protection and how long the intended home purchase is away. If allocating $300 to premium leaves $50 monthly for reserves, a new policy may materially postpone the homeowner's goal. A tax-advantaged policy loan still creates debt, loan interest and possible lapse risk; placing the contract in an irrevocable trust may further restrict personal access.",
+        "The professional memo must show the complete comparison, the agent's conflicts and an alternative with documented downside. It should not suggest a trust, LLC or insurance wrapper automatically eliminates tax, increases net worth or guarantees a mortgage down payment. A client-centered recommendation can explain that some permanent policies serve valid long-term protection or estate purposes while finding this particular transaction unsupported."
+      ],
+      "worked": [
+        "Monthly reliable surplus $350, proposed permanent premium $300.",
+        "Separate housing/emergency saving left $50 monthly, only $600/year before returns.",
+        "Card $7,000 at hypothetical 22% APR incurs $1,540 annual simple-cost illustration if balance unchanged.",
+        "Commission incentive and lack of guaranteed loan evidence are material review issues."
+      ],
+      "practice": [
+        [
+          "Does a salesperson's non-guaranteed illustration establish future policy-loan availability for a home purchase?",
+          "No. Contract guarantees, charges, owner rights, underwriting and lender rules must be verified separately."
+        ],
+        [
+          "What makes a conflict review more than accusing a salesperson of bad intent?",
+          "It identifies economic incentives, actual disclosures, specific client risks and reasonably available alternatives with documented financial consequences."
+        ]
+      ]
+    },
+    {
+      "title": "Build and defend a client-first recommendation record",
+      "body": [
+        "Finish with a formal written analysis defining the engagement, professional capacity, client objectives, verified data, assumptions, options, fee comparisons, downside cases, conflicts, recommendation, referral needs and monitoring responsibility. Distinguish essential hard constraints from flexible preferences. The client should be able to explain what will happen in adverse conditions, what the professional will do, and what the client retains responsibility for implementing.",
+        "An analyst can score two hypothetical strategies on cost, liquidity and risk, but a recommendation must not be forced by a single weighted total if a mandatory constraint fails. A household that requires its $10,000 closing money next month should not accept an illiquid product only because the product scores well on estimated long-term returns. Define who will verify regulatory licenses, product guarantees, mortgage funding and tax consequences before execution.",
+        "Quality assurance involves an independent reviewer re-running all important calculations and checking citations. A correction is documented rather than concealed. Wealth Lab's numerical labs are intended to train that habit; the course remains independent educational material and does not create a regulated advisory relationship or professional credential."
+      ],
+      "worked": [
+        "Strategy A 1.5% annual layered fee on $200,000 → $3,000 opening cost.",
+        "Strategy B 0.15% plan expense on $200,000 → $300 opening cost.",
+        "Opening cost difference $2,700, before services, eligibility and future balance differences.",
+        "Recommend based on client's facts and service value, not merely a cost minimization metric."
+      ],
+      "practice": [
+        [
+          "What belongs in an auditable recommendation record?",
+          "Client goals, facts and verification, alternatives, full costs, conflicts, uncertainty, adverse cases, responsible implementation and follow-up."
+        ],
+        [
+          "What should a student conclude when a critical insurance, trust or account document is unavailable?",
+          "Identify the unknown and seek appropriate verification rather than presenting an unsupported specific recommendation as certain."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC 2019 investment adviser fiduciary standard interpretation",
+      "https://www.govinfo.gov/content/pkg/FR-2019-07-12/html/2019-12208.htm"
+    ],
+    [
+      "SEC Regulation Best Interest official compliance guide",
+      "https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/regulation-best-interest"
+    ],
+    [
+      "SEC Form ADV conflicts related to adviser compensation",
+      "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-regarding-disclosure-certain-financial-conflicts-related-investment"
+    ],
+    [
+      "CFP Board Code of Ethics and Standards of Conduct",
+      "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+    ],
+    [
+      "SEC standards of conduct account recommendation bulletin",
+      "https://www.sec.gov/about/divisions-offices/division-trading-markets/broker-dealers/staff-bulletin-standards-conduct-broker-dealers-investment-advisers-account-recommendations-retail"
+    ],
+    [
+      "SEC Investor.gov investment professional IAPD disclosure",
+      "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/using-iapd"
+    ],
+    [
+      "IRS retirement plan rollover overview",
+      "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary"
+    ],
+    [
+      "SEC Form CRS official FAQ",
+      "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs"
+    ]
+  ],
+  "assessment": {
+    "title": "Fiduciary best-interest and conflict-management file",
+    "prompt": "For a client with $200k portfolio, compute a 1% adviser plus 0.5% fund layered initial cost and simplified 20-year compounding difference relative to no fees at 6% gross. Compare $100k low-cost employer plan 0.15% versus proposed IRA 1.3%; identify service, tax and creditor-protection tradeoffs. Write SEC adviser/Reg BI/CFP professional scope and conflict distinctions without conflating them. Analyze a $7k 22% card with $350 surplus and a $300 permanent-policy premium pitch. Audit Form ADV, Form CRS, official registration and client data handling. Produce a client-best-interest memo with alternatives and referrals.",
+    "rubric": [
+      "Correct regulatory frameworks and role delineation (25%)",
+      "Transparent complete fee and rollover analysis (20%)",
+      "Client protection, liquidity and conflicts (25%)",
+      "Privacy and verified supporting documentation (15%)",
+      "Professional best-interest alternatives and memo clarity (15%)"
+    ],
+    "answerKey": [
+      "Opening fees 200k×(1%+.5%)=$3k; simplified gross 6%/net 4.5% 20-year compounding shows material difference.",
+      "On $100k, plan 0.15%=$150 versus IRA 1.3%=$1,300; first-year difference $1,150 before other costs.",
+      "Securities advisers, broker-dealers and CFP credential holders operate under distinguishable overlapping but nonidentical standards.",
+      "$350 surplus−$300 monthly premium leaves $50, or $600 annual cash for emergency and home needs.",
+      "Reg BI requires care, disclosure, conflict and compliance obligations; the adviser's fiduciary duties include care and loyalty; CFP professional fiduciary applies to financial advice under CFP Board standards.",
+      "Registration, conflicts and discipline should be verified using official IAPD, BrokerCheck and Connecticut records."
+    ]
+  }
+}
