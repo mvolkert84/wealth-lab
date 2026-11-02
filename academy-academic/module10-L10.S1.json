@@ -1,0 +1,239 @@
+{
+  "id": "L10.S1",
+  "title": "Asset Allocation and Goal Buckets",
+  "subtitle": "Strategic allocation, liabilities, funding ratios and portfolio loss capacity",
+  "prerequisites": [
+    "L1.S1 liquid assets and liabilities",
+    "L7.S3 present and future values",
+    "L9.S2 cash protection and dated securities"
+  ],
+  "objectives": [
+    "Construct an asset/liability-aware policy instead of a one-size allocation",
+    "Differentiate financial risk capacity from behavioral willingness",
+    "Calculate portfolio asset weights, funding ratios and downside amounts",
+    "Separate emergency, purchase and long-horizon wealth funding",
+    "Explain strategic versus tactical asset allocation and glide paths",
+    "Stress real cash flows and sequence risk before using expected returns"
+  ],
+  "sections": [
+    {
+      "title": "Allocation begins with the family's liabilities and dates, not its favorite fund",
+      "body": [
+        "A portfolio is not merely a list of securities. It is a financing arrangement for spending, emergencies, retirement and inheritance. Before selecting an asset mix, identify essential monthly outflows, contractual debt payments, near-term purchase commitments and future beneficiaries. The same person can rationally hold accessible insured deposits for a home closing and diversified equities for a retirement goal twenty-five years away. Those are not contradictory risk preferences; they are different liabilities supported by different pools of capital.",
+        "Asset allocation divides an investable pool among economic categories such as equity, fixed income, cash and possibly other exposures. Strategic allocation is the long-run mix chosen to meet objectives under constraints; tactical allocation temporarily changes exposure based on forecasts and introduces additional timing risk. The asset label is not enough: a long-duration bond fund may fall sharply before cash is needed, while a concentrated equity fund may increase employer-sector risk. The household must look through wrappers and account labels.",
+        "Suppose $40,000 of genuinely long-term investable assets are allocated 70% stocks, 20% bonds and 10% liquid holdings. Dollar targets are $28,000, $8,000 and $4,000. This arithmetic is straightforward but says nothing about suitability. If the family also owes a separate $12,000 mortgage closing payment in six months, including that money in the $40,000 equity portfolio creates a funding mismatch. The calculation must be repeated after protected near-term resources are removed.",
+        "An academic allocation memorandum connects each security to the cash flow it serves, states an expected time of withdrawal, defines how much temporary loss the household could tolerate, and documents the instrument's liquidity and taxes. The SEC emphasizes that allocation depends on time horizon and risk tolerance; the CFA curriculum also requires risk capacity, liquidity, constraints and a documented policy. Neither source endorses a universal portfolio percentage for every household."
+      ],
+      "worked": [
+        "Long-term capital $40,000 ×70%=$28,000 stocks.",
+        "Bond target 20%×$40,000=$8,000; cash target 10%=$4,000.",
+        "Separate $12,000 closing obligation must have its own dated funding.",
+        "A portfolio screenshot showing $52,000 cannot claim $52,000 unrestricted risk capacity when $12,000 is contractually needed.",
+        "Under a 30% stock shock and zero change elsewhere, 70% stock exposure produces 21% portfolio loss before costs."
+      ],
+      "practice": [
+        [
+          "Why is a 70/20/10 allocation not a complete recommendation?",
+          "A percentage mix omits goal dates, available reserve, liabilities, household risk capacity, specific holdings, tax treatment and the loss that would threaten essential spending."
+        ],
+        [
+          "Why can the same household properly maintain a conservative home fund and an equity-heavy retirement account?",
+          "The two objectives have different due dates and loss-absorption capacity; matching risk to liabilities is more meaningful than selecting one risk appetite for every dollar."
+        ]
+      ]
+    },
+    {
+      "title": "Risk capacity, risk tolerance and required return are separate constraints",
+      "body": [
+        "Risk capacity is the financial ability to endure a loss without derailing essential goals. Risk willingness or tolerance is the emotional and behavioral readiness to remain invested through volatility. A person might be comfortable seeing a 40% market loss yet have no financial capacity for it because a mortgage closing is imminent. Another may have a secure pension and ample assets but panic during a 10% drawdown. A suitable plan generally cannot assume away the more restrictive constraint, and a questionnaire score is no substitute for actual cash-flow evaluation.",
+        "Required return is the return needed to fund a future objective under stated contributions and inflation, not an offer the market is obliged to provide. If the family needs $20,000 in twenty-four months from zero and can save only $500 at each month-end, it contributes $12,000. A model implying extraordinary return to reach the target is evidence the savings plan is underfunded or the deadline must change, not a reason to leverage speculative securities. Objectives may require changes in spending, timing or income rather than more portfolio risk.",
+        "A loss budget makes capacity concrete. A $30,000 long-term portfolio with maximum tolerable paper loss $6,000 has a stated 20% portfolio drawdown budget, but real correlations may make outcomes worse. If 60% of this portfolio is in equities and equities decline 35% while the rest stays flat, total loss is $6,300, already above the nominal threshold. The investor should reduce exposure or revise the constraint before committing funds, not after the crash.",
+        "Assess job stability, income concentration, debt service, disability coverage, minimum cash reserve, available credit obligations and household dependents. A mortgage buyer whose income and home equity both depend on one regional business cycle has less effective diversification than the brokerage asset chart suggests. Use probability estimates with caution; the real value of risk planning is knowing what action to take when assumptions fail."
+      ],
+      "worked": [
+        "Long-term portfolio $30,000 with stated loss budget $6,000 ⇒ 20% tolerable decline.",
+        "60% of $30,000=$18,000 equities; equity shock −35% ⇒ −$6,300.",
+        "Other holdings unchanged ⇒ portfolio decline 21%, above stated budget.",
+        "Goal $20,000 due after twenty-four $500 contributions ⇒ only $12,000 deposits before returns.",
+        "No forecast return is a guaranteed remedy for an arithmetic funding gap."
+      ],
+      "practice": [
+        [
+          "Why is emotional willingness to tolerate stock volatility insufficient to justify a risky home fund?",
+          "Willingness does not create the cash needed for a dated liability; financial capacity depends on obligations, cash buffers and ability to recover from losses."
+        ],
+        [
+          "What should a planner do if the investment return required to reach a near-term home target appears unrealistic?",
+          "Reassess target, contribution amount, time horizon or household resources, rather than disguise an unfunded goal with an unsupported high-return assumption."
+        ]
+      ]
+    },
+    {
+      "title": "Three-bucket architecture: emergency, dated spending and long-horizon wealth",
+      "body": [
+        "Buckets are a useful way to assign ownership and permitted risks to money before investing it. An emergency bucket supports surprise essential bills and usually needs immediate accessibility. A dated spending bucket covers known or likely cash obligations such as a down payment, tuition or tax payment, with securities maturing before payment deadlines if suitable. A long-horizon bucket can accept market volatility when sufficient time and savings capacity exist. Bucket naming is not a special investment product or a guarantee of return.",
+        "Start with a household that has $18,000 total accessible cash, a $6,000 emergency minimum and $12,000 planned home closing funds. These two goals consume the entire $18,000. The presence of a separate brokerage account showing $5,000 in stocks should not lead the planner to count the same $5,000 twice unless that account genuinely is surplus to the stated obligations. An illiquid annuity with surrender penalties cannot be treated as an immediately accessible emergency reserve merely because it has an account value.",
+        "Buckets should be operationally mapped to actual account and transfer rules. Identify insured bank deposit limits, securities settlement cycles, available withdrawal dates, tax treatment, transfer holds and access by a partner or trustee under relevant legal terms. A savings balance visible on a phone is not necessarily liquid at the hour a closing attorney needs a certified payment. Different bucket investments may require different counterparties and records.",
+        "An allocation policy should specify how to replenish reserves after unexpected spending. If a $2,500 car repair reduces an $18,000 protected cash pool to $15,500, that cash shortfall must be reflected before new long-term investments are made. The reserve cannot remain fictional $18,000 in the plan while the bank balance has fallen. Goal segmentation is an accounting discipline as much as a behavioral tool."
+      ],
+      "worked": [
+        "Starting accessible cash $18,000, emergency reserve $6,000 and closing fund $12,000.",
+        "Unassigned investable surplus $18,000−$6,000−$12,000=$0.",
+        "Unexpected essential repair $2,500 reduces total pool to $15,500.",
+        "If goal amounts are unchanged, reserve shortfall becomes $2,500.",
+        "Funding shortfalls should be disclosed and replenished before assuming speculative surplus."
+      ],
+      "practice": [
+        [
+          "Why should a brokerage position with a volatile market price not automatically be placed in the emergency bucket?",
+          "A required sale can coincide with a drawdown, settlement delay or tax event, so current market value may not become reliable immediate bill-paying cash."
+        ],
+        [
+          "How should a funding plan change after a documented $2,500 emergency expense from fully allocated savings?",
+          "Reduce recorded accessible funds, identify which bucket was drawn down and establish a feasible replenishment plan rather than double counting the original balance."
+        ]
+      ]
+    },
+    {
+      "title": "Funding ratios, present value and the liability-aware balance sheet",
+      "body": [
+        "Many investment presentations focus only on asset growth, but households have financial liabilities and future expense targets. The funding ratio compares available qualifying assets with the present value or scheduled face amount of a defined obligation, using consistent units. For cash due in six months, the useful practical measure may be immediately available dollar funding rather than discounted long-run expected portfolio value. Retirement plans often use present values based on actuarial and discount assumptions, making the ratio sensitive to rates and life expectancy.",
+        "Imagine a ten-year objective with annual end-year $10,000 payments for five years beginning in year six. At a hypothetical 4% effective annual discount rate, the present value is the sum of cash flows in years six to ten; it cannot simply be listed as $50,000 available today. A household holding $35,000 liquid assets toward this goal may or may not be fully funded depending on discount, inflation, risk, contributions and other assets. Use an auditable timeline rather than one scalar 'goal progress' number.",
+        "Another household plans a $20,000 house reserve due in two years and has $12,000 dedicated bank savings now. A simple undiscounted funded fraction is 60%. If it saves $250 each month for 24 months, new contributions total $6,000, bringing nominal dedicated funds to $18,000 before yields and taxes, still below $20,000. A market forecast cannot be counted as a guaranteed $2,000 bridge. A decision might require $333.33 monthly new contributions instead under a zero-return simplification.",
+        "Where objectives use real purchasing-power targets, increase the planned nominal bill under inflation scenarios or discount the portfolio into consistent real units. Housing market prices, down-payment requirements and closing fees may not rise at the same rate as CPI. A robust funded ratio has downside sensitivity and a plan for revising contributions, deadline or desired property cost."
+      ],
+      "worked": [
+        "House goal $20,000, funded assets $12,000 ⇒ simple current funded ratio 60%.",
+        "Twenty-four monthly contributions ×$250=$6,000, nominal total $18,000 before growth.",
+        "Projected shortfall versus $20,000 target is $2,000 before returns and costs.",
+        "From $12,000 to $20,000 over 24 zero-return monthly deposits requires $8,000/24≈$333.33 monthly.",
+        "Future obligations and investment balances must be compared at matching dates and purchasing-power units."
+      ],
+      "practice": [
+        [
+          "Why must a funding ratio state the valuation date and which assets qualify as available?",
+          "A current stock price, a future expected investment return and an insured deposit have different cash dates, uncertainty and restrictions, so treating them identically distorts obligation coverage."
+        ],
+        [
+          "How can a household respond to a $2,000 two-year home-fund forecast shortfall without increasing market risk?",
+          "Increase the affordable monthly contribution, modify the purchase budget or delay timing, or use verified eligible assistance; do not rely on a guaranteed speculative return."
+        ]
+      ]
+    },
+    {
+      "title": "Strategic allocation, tactical tilts and the role of expected returns",
+      "body": [
+        "Strategic asset allocation is a rules-based target informed by the investor's return objective, risk capacity, available assets and time horizon. Tactical tilts deviate from that target based on changing expected valuations or economic forecasts; they can earn extra returns in favorable conditions but also create timing, tax and implementation risks. A portfolio holding equities because of a diversified twenty-year plan is different from moving all cash to stocks because a commentator predicts a rally next month.",
+        "Expected portfolio return in a simple one-period model is the weighted sum of component expected returns. If stocks have an illustrative 7% expectation, bonds 3% and cash 2%, a 60/30/10 mix has expected return 0.6×7%+0.3×3%+0.1×2%=5.3%. This is an arithmetic expectation under assumed inputs, not a forecast that next year's account must grow by 5.3%. Risk and correlation determine the spread around that expectation.",
+        "Costs matter in strategic and tactical allocation. A 1% portfolio-level advisory and fund-fee drag may materially reduce long-run compounding. Repeated tactical changes can generate taxable realized gains, bid-ask spreads and opportunity cost while the investor is out of the market. A forecast must be evaluated after expenses and compared with a passive strategic baseline on the same risk basis, rather than just select the strategy's best historical window.",
+        "Investment policy should name permitted ranges around targets and evidence needed to change strategic weights. An investor may reasonably reduce equity exposure when a home goal approaches or risk capacity changes; that is not market timing if the change follows a known liability. Altering target weights because of daily social-media price predictions is a different and much less reliable strategy."
+      ],
+      "worked": [
+        "Target stocks 60%×7% expected=4.2 percentage points.",
+        "Target bonds 30%×3% expected=.9 point; cash 10%×2%=.2 point.",
+        "Total illustrative arithmetic expected portfolio return=5.3%.",
+        "A 1% annual cost on $40,000 is $400 initially under simple unchanged-balance approximation.",
+        "The expected value does not bound downside or guarantee any annual result."
+      ],
+      "practice": [
+        [
+          "Why is a weighted expected return of 5.3% not a promised yearly investment outcome?",
+          "Expected returns are assumption-based averages over uncertain outcomes; realized market prices, correlations, fees and inflation can make actual one-year results very different."
+        ],
+        [
+          "How does reducing equities as a fixed home deadline approaches differ from a tactical call predicting a market decline?",
+          "The first reflects lower financial loss capacity due to a dated obligation, while the second relies on uncertain market timing information."
+        ]
+      ]
+    },
+    {
+      "title": "Glide paths, lifecycle changes and sequence risk",
+      "body": [
+        "A glide path changes strategic exposure as the time to an objective shrinks. A retirement plan can gradually adjust stock, bond and cash weights to avoid relying on long-run averages just before withdrawals begin. A home purchase fund might have a simpler policy: once the closing amount is realistically earmarked, progressively reduce price risk until the funds are available as cash on the required date. The correct glide path is based on liabilities and other income, not an automatic percentage linked only to age.",
+        "Sequence-of-returns risk means that losses early in a withdrawal period can do disproportionate damage because the owner must sell more assets to support spending. An account beginning with $100,000 and withdrawing $10,000 after a 30% loss has $60,000 remaining in this simplified scenario. A later 30% recovery raises it only to $78,000 before further withdrawals. A different ordering of identical returns and withdrawals can yield a different final amount even if the mathematical average return is the same.",
+        "The relevant risk is not simply account volatility but shortfall probability when cash is due. A retirement income portfolio can combine liquidity reserves with long-run growth assets and periodically refill reserves under defined conditions. However, a cash bucket does not create new capital; selling investments to refill it during a depressed market may still realize losses. Stress the total balance sheet across early loss, late loss, higher inflation and longer life expectancy.",
+        "A professional glide-path justification identifies withdrawal amounts, timing, inflation assumptions, pensions and Social Security, tax account access, healthcare contingency and bequest priorities. For a Connecticut household aiming to leave a home to a daughter, the plan should consider debt service and trustee cash requirements alongside the inheritance value, without treating an illiquid property as ready-to-spend cash."
+      ],
+      "worked": [
+        "Retirement portfolio initial $100,000; first-year market shock −30% ⇒ $70,000.",
+        "Withdrawal $10,000 after the shock ⇒ $60,000 remaining.",
+        "Following +30% return ⇒ $60,000×1.30=$78,000 without later withdrawal.",
+        "Arithmetic reversal of a −30% market move requires a +42.857% gain to recover the original value before withdrawals.",
+        "Withdrawal order can materially change final wealth even for identical multi-year return sets."
+      ],
+      "practice": [
+        [
+          "Why is sequence risk especially serious near the beginning of retirement?",
+          "Early withdrawals after losses sell more shares and reduce the capital available for future recovery, so the order of returns and cash flows changes sustainable spending."
+        ],
+        [
+          "Why should a long-term real estate inheritance plan include cash and mortgage servicing needs?",
+          "The property may carry liens, taxes, insurance and repairs; intended beneficiaries could need cash to preserve or sell it rather than merely receive title."
+        ]
+      ]
+    },
+    {
+      "title": "Formal allocation rationale and a documented downside decision",
+      "body": [
+        "An academic asset allocation decision should be defendable before a market movement occurs. Define each goal's amount, date, purchasing-power assumption and loss tolerance. Show current qualified assets, expected contributions, minimum cash buffer and possible income interruptions. Assign an investment category to each pool only after those obligations are measurable. The chosen allocation need not maximize historical average return; it must survive the household's plausible adverse outcomes.",
+        "Consider $40,000 long-term investable capital at a proposed 70/20/10 mix, plus a fully segregated $18,000 emergency and home-closing cash pool. Under an equity shock of −35%, bonds −5% and cash unchanged, long-term assets become $28,000×.65+$8,000×.95+$4,000=$29,800, a 25.5% loss or $10,200. The protected $18,000 cash is not itself a hedge creating positive portfolio return; it serves another purpose and should not be described as available for risk contributions.",
+        "Develop three scenarios: ordinary, adverse market and simultaneous income interruption. In the adverse case, quantify how much liquid cash remains after a deductible and whether the closing can still occur. In the income case, reduce planned contributions rather than assume household deposits continue despite unemployment. In each scenario show the rule that triggers a decision: pause investing, replenish reserve, reduce discretionary spending or revise purchase timing.",
+        "Conclude with an allocation memo including rationale, holding limits, diversification, tax location, implementation fees, rebalancing rules and review cadence. An observer should be able to test the student's calculations and understand what new evidence would cause the policy to change. This lays the foundation for quantitative covariance, risk contributions and formal investment policy construction in the next sections."
+      ],
+      "worked": [
+        "Long-run portfolio $40,000: stock $28,000, bond $8,000, cash $4,000.",
+        "Stress stocks −35% ⇒ $18,200; bonds −5% ⇒ $7,600; cash $4,000 unchanged.",
+        "End value $29,800, loss $10,200 or 25.5%.",
+        "Separate fully funded $18,000 closing and emergency cash stays outside long-run risk budget.",
+        "Change in household income can reduce future contributions independent of portfolio returns."
+      ],
+      "practice": [
+        [
+          "Why is including emergency cash in the equity portfolio denominator potentially misleading?",
+          "It may make percentage risk look smaller while exposing or double counting money needed for essential spending and a separate dated obligation."
+        ],
+        [
+          "What makes a written allocation policy more robust than changing positions whenever the stock market falls?",
+          "Predefined goals, loss limits, cash buffers and review triggers encourage decisions based on actual household constraints rather than fear or short-term price predictions."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFA 2026 portfolio planning and construction",
+      "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/basics-of-portfolio-planning-and-construction"
+    ],
+    [
+      "Investor.gov Asset Allocation and Diversification",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "Investor.gov beginner guide to allocation and rebalancing",
+      "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset"
+    ],
+    [
+      "CFPB home purchase funds and affordability",
+      "https://www.consumerfinance.gov/owning-a-home/"
+    ],
+    [
+      "Investor.gov Investor Goals",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-goals"
+    ],
+    [
+      "CFA suitability and IPS",
+      "https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-iii-c"
+    ]
+  ],
+  "assessment": {
+    "title": "Three-bucket funding and strategic allocation investment committee",
+    "prompt": "For a fictional Connecticut household with $18,000 earmarked for a $6,000 immediate emergency reserve and $12,000 closing, assess whether any cash is available for long-term risk assets. For a separate $40,000 retirement portfolio, implement 70/20/10 allocation and compute stress under stocks −35%, bonds −5%. Compute target return in 60/30/10 with stock 7%, bonds 3%, cash 2% assumed expectations. Model twenty-four deposits of $250 toward a $20,000 target with $12,000 initially. Distinguish capacity from willingness, funding gaps, glide path, inflation and sequence risk.",
+    "rubric": [
+      "Liability mapping and cash segmentation (25%)",
+      "Allocation arithmetic and goal stress (25%)",
+      "Risk capacity and sequence analysis (20%)",
+      "Implementation and policy constraints (20%)",
+      "Primary sources and judgment under downside (10%)"
+    ]
+  }
+}
