@@ -252,6 +252,32 @@
           "Demand an explicit dated asset/liability and cash-flow model, actual contract and loan documents, tax analysis, alternative costs and an independent professional review before irreversible transfers."
         ]
       ]
+    },
+    {
+      "title": "Audit defense: document control, deadline risk and red-flag detection",
+      "body": [
+        "A tax strategy can be mathematically attractive and still fail because the taxpayer cannot establish facts required by law. Keep evidence of genuine asset ownership, bank transfers, loan terms, market valuations, actual business purpose, expenses and beneficiary elections. Maintain signed contracts and contemporaneous records rather than reconstructing ownership after a lender, insurer, beneficiary or revenue authority raises a question. A trust instrument unsigned by the proper parties, an unrecorded deed or an undocumented loan can destroy the claimed legal outcome.",
+        "Time matters in tax and investment planning. A business deduction may require correct capitalization and period recognition; a 1031 exchange has statutory identification and completion deadlines; estimated tax payments have installment dates; home-sale exclusion tests use dates of occupancy and ownership; a trust transfer can trigger separate loan terms. A document signed after a relevant deadline does not prove the statutory condition existed earlier. Create an event calendar with owner, required proof and the agency or counterparty that must accept the act.",
+        "Recognize red flags: 'guaranteed tax-free' personal spending, 'all debt eliminated by trust,' fake charitable deductions, cash-value life loans advertised as free because cash values still earn interest, and claims that a new LLC deducts all household consumption. The IRS warns against abusive trust tax evasion schemes and emphasizes substance rather than form. A trustworthy adviser specifies which rule applies, what is conditional, who bears liability, how fees are paid and what happens if forecasts fail.",
+        "Build an audit committee packet with a one-page financial conclusion and appendices for asset and debt ledgers, tax computation, lender constraints, contract assumptions, downside stress and primary source references. In a contested tax issue, obtain independent qualified tax and legal opinions instead of relying only on the seller of a financial product. The purpose is not fear of complexity; it is that a sophisticated plan must survive inspection from multiple systems before it can protect a family."
+      ],
+      "worked": [
+        "Record homeowner deed, $220,000 first loan and $12,000 assistance lien with dates and payoff terms.",
+        "Document $12,000 policy borrowing, 7% interest, premiums and five-year capitalized loan cost separately.",
+        "Record property adjusted tax basis and any appraisals supporting valuation; compute gain separately from cash.",
+        "List sources for any Section 121, 1031, trust or policy-loan treatment before representing it as a benefit.",
+        "Use a calendar to track federal/CT return payment dates, 1031 deadlines where actually applicable and insurer policy renewal or premium dates."
+      ],
+      "practice": [
+        [
+          "What makes an insurance-and-trust home-purchase recommendation independently auditable?",
+          "Provide dated contracts, policies, premium and loan statements, title documents, appraisals, lender consent or program terms, tax-basis records, legal sources and quantified stress alternatives."
+        ],
+        [
+          "Why should taxpayers be suspicious when a promoter says an LLC or trust can legally deduct all their normal personal expenses?",
+          "The claim ignores income assignment and expense-character rules, contradicts the IRS's abusive-trust guidance, and is often unaccompanied by verifiable statutory eligibility."
+        ]
+      ]
     }
   ],
   "sourceRefs": [
