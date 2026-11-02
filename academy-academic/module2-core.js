@@ -1,5 +1,5 @@
 /* Wealth Lab · Module 2 Academic reader and five independent calculation labs · 2026-11-01.
-   Read-only instructional content; no localStorage writes; preserves all original lesson state. */
+   Read-only instructional content; does not write to browser storage; preserves all original lesson state. */
 (function(){
 "use strict";
 const data=window.WealthLabAcademicM2Data;
