@@ -18,6 +18,8 @@ on:
       - academy-gold-insurance-labs.js
       - academy-gold-tax-labs.js
       - 'academy-chapters/**'
+      - 'academy-academic/**'
+      - scripts/check-module1-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -47,6 +49,8 @@ on:
       - academy-gold-insurance-labs.js
       - academy-gold-tax-labs.js
       - 'academy-chapters/**'
+      - 'academy-academic/**'
+      - scripts/check-module1-academic.mjs
       - sw.js
       - manifest.webmanifest
       - scripts/check-lesson-reader.mjs
@@ -84,3 +88,4 @@ jobs:
           node scripts/check-gold-investing.mjs
           node scripts/check-gold-insurance.mjs
           node scripts/check-gold-tax.mjs
+          node scripts/check-module1-academic.mjs
