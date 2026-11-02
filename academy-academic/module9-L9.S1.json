@@ -1,0 +1,239 @@
+{
+  "id": "L9.S1",
+  "title": "Bonds and Yield",
+  "subtitle": "Promised cash flows, interest-rate sensitivity, credit pricing, portfolio duration and fixed-income claims",
+  "prerequisites": [
+    "L7.S2 term structures and bond price mathematics",
+    "L7.S3 present value and annuities",
+    "L8.S2 corporate cash flow and debt"
+  ],
+  "objectives": [
+    "Separate coupon, current yield, yield to maturity and realized returns",
+    "Price fixed coupon and zero coupon cash flows with consistent time conventions",
+    "Calculate duration approximations and bond fund stress",
+    "Assess credit spreads and issuer capacity to repay",
+    "Explain callable, inflation-indexed and floating rate bonds",
+    "Design a bond ladder consistent with dated household liabilities"
+  ],
+  "sections": [
+    {
+      "title": "The bond contract: cash-flow rights before yield quotes",
+      "body": [
+        "A bond is a contractual debt claim. The indenture or offering terms identify issuer, face value, coupon mechanism, principal repayment, maturity, seniority, collateral, optional redemption, covenants, payment frequency and possible default procedures. Unlike common equity, the holder ordinarily has a contractual payment claim, but payment is only as reliable as the obligor and any legally effective guarantee. Credit risk is not eliminated by the phrase fixed income. Government, municipal, corporate, mortgage-backed and high-yield bonds have materially different issuer and structural risks.",
+        "Cash flow schedules must be built before comparing quoted yields. A $1,000 face bond with a 4% annual coupon pays $40 each year under an annual-payment hypothetical. A real Treasury note typically pays semiannually, so the actual coupon dates, accrued interest and yield convention require adjustment. Market price can differ from par: a buyer might pay $950 to receive $40 cash coupons and eventual $1,000 par if payments are made as promised. A bond's quoted face amount is not its current resale price.",
+        "Debtholder priority is specific to the instrument. Secured bonds may have claims to identified collateral; unsecured senior obligations can rank ahead of subordinated debt; preferred stock and common equity have other priorities. Priority does not guarantee recovery, particularly when collateral value falls or legal costs consume proceeds. Review the offering document and issuer filings, not an issuer's brand reputation alone.",
+        "For household asset matching, identify when cash must arrive and what happens if the security cannot be sold at a fair price before then. A bond due in twenty years may pay predictable coupons but be unsuitable for cash due at next year's home closing. The goal is reliable, date-matched spendable resources rather than a maximized yield quote."
+      ],
+      "worked": [
+        "Face value $1,000 and annual coupon rate 4% gives $40 per year under the stated annual-pay example.",
+        "If the price is $950, cash current yield=$40/$950≈4.2105%.",
+        "The remaining $50 discount to expected face repayment is not included in current yield.",
+        "Yield to maturity accounts for coupon timing and principal repayment at a rate equating price and promised flows.",
+        "Default, early calls and transaction costs can break the promised-flow calculation."
+      ],
+      "practice": [
+        [
+          "Why does a bond trading at $950 have a current yield different from its contractual coupon rate?",
+          "The coupon rate is $40 divided by $1,000 face value, while current yield is $40 divided by the $950 price actually paid."
+        ],
+        [
+          "Why is the bond indenture essential even when a bond is advertised with an attractive stated yield?",
+          "The indenture sets seniority, collateral, repayment dates, call rights and protections; the same yield can hide very different default and cash-flow risks."
+        ]
+      ]
+    },
+    {
+      "title": "Price, current yield, yield to maturity and total realized return",
+      "body": [
+        "Coupon rate, current yield, yield to maturity (YTM) and realized return answer different questions. The coupon rate measures contracted periodic payment relative to face; current yield compares annual cash coupon to the market purchase price; YTM discounts all promised coupons plus principal to the purchase price. YTM ordinarily assumes the issuer performs under the defined terms, and it is not the actual return an investor necessarily realizes upon an early sale or reinvestment of coupons.",
+        "The price of an annual-pay bond with coupon C, face F, yield y and n remaining annual payments is P=Σ(C/(1+y)^t)+F/(1+y)^n for t=1 to n. If $1,000 face pays $40 yearly for three years and market required yield is 5%, model price is about $972.77, below face. At a 3% yield, the same contractual cash flows have a higher price. Yield and market price generally move in opposite directions under otherwise unchanged contract and credit assumptions.",
+        "A bond purchased for $950 and sold for $960 after one year with $40 coupon generates a simple pretax holding-period return ($960−$950+$40)/$950≈5.263%. That is not YTM because the principal was not held to final scheduled repayment. A fund advertising a yield also has share price and management expenses that affect investors. Comparisons should match total realized cash flow, tax and horizon rather than one quoted yield column.",
+        "Quote conventions can introduce more differences: clean versus dirty price with accrued interest, nominal versus effective yield, semiannual convention, call-adjusted yield and zero coupon discount rates. For a bond issued at a discount, tax treatment can include original issue discount under statutory rules. State all calculation conventions alongside a result; precision without these conditions is misleading."
+      ],
+      "worked": [
+        "$1,000 face annual coupon $40 for three years at 5% discount rate ⇒ PV≈$972.77.",
+        "Bond bought at $950, later sold at $960 and pays $40 coupon ⇒ one-year pretax total cash return≈5.2632%.",
+        "Current yield on purchase=$40/$950≈4.2105%, distinct from realized return.",
+        "YTM would solve all promised future dated cash flows against the $950 acquisition price.",
+        "An early sale at a lower quote could produce a negative realized return despite positive coupons."
+      ],
+      "practice": [
+        [
+          "Why should an investor not treat yield to maturity as a guarantee of realized wealth?",
+          "Issuer payment, reinvestment, taxes, trading costs, optional redemption and whether the investor actually holds to maturity can differ from the simplifying YTM premises."
+        ],
+        [
+          "Why can a bond price fall while its current yield rises?",
+          "The contractual cash coupon stays the same while a lower market price makes coupon divided by price larger, often reflecting changed rate or credit risk."
+        ]
+      ]
+    },
+    {
+      "title": "Duration, convexity and the difference between an individual bond and a fund",
+      "body": [
+        "Duration captures the market price sensitivity of a stream of cash flows to yield changes. Under a small parallel shock, modified duration D gives ΔP/P≈−D×Δy, with yield change expressed as a decimal. A portfolio with modified duration six and $20,000 market value exposed to a +0.75 percentage-point yield shift has an approximate price loss of 4.5%, or $900 before coupon income, convexity, credit effects and fund flows. The model is not a predicted maximum loss or a guaranteed exact response.",
+        "Convexity corrects part of the nonlinear price/yield relationship: a second-order approximation includes ½×convexity×(Δy)^2. Callable bonds and mortgage-backed claims can have changing effective duration and negative convexity because borrowers or issuers can prepay when refinancing becomes favorable. Market stress can also increase bid-ask spreads and impair the ability to sell near a calculated value.",
+        "An individual bond held to final maturity with full payment returns its contractual face value, but it can still have issuer default, purchasing-power and opportunity-cost risk. A traditional open-ended bond fund generally rolls holdings to maintain a strategy and has no single date when the investor's original share purchase is repaid at par. Fund NAV can decline as interest rates rise, and selling shares to pay a mortgage closing cost crystallizes the then-current market quote.",
+        "Analyze duration together with a liability schedule: money needed in three months belongs in highly liquid short-maturity holdings, not an intermediate-duration bond fund merely because that fund currently yields more. Bonds can still serve a long-run portfolio as diversifiers and cash-flow sources, but the maturity, liquidity and credit exposure should match the household obligation."
+      ],
+      "worked": [
+        "Bond portfolio $20,000; modified duration six, yield rises 75 bps =.0075.",
+        "Approximate percentage price effect −6×.0075=−4.5%.",
+        "Approximate price loss $20,000×.045=$900, resulting mark $19,100 before other factors.",
+        "A 100-bp yield decrease would produce approximate +6% before convexity under a symmetric linear approximation.",
+        "Individual bond maturity cash flows and fund share NAV are different claims."
+      ],
+      "practice": [
+        [
+          "How does duration six differ from saying the bond is due in six years?",
+          "Duration weights discounted cash-flow timing and approximates sensitivity; its years are not simply the legal maturity and can shift with yield and options."
+        ],
+        [
+          "Why does a bond fund normally not promise to repay each shareholder's purchase price on a fixed maturity date?",
+          "A continuing fund has changing holdings and a market-priced net asset value, unlike one specified individual security's promised principal at its scheduled maturity."
+        ]
+      ]
+    },
+    {
+      "title": "Credit spreads, defaults, recovery and issuer financial capacity",
+      "body": [
+        "A bond yield contains more than a risk-free time value. Corporate spreads may reflect expected default probability, loss given default, liquidity, tax, optionality and risk premiums. If comparable Treasury yield is 4% and a corporate security's market yield is 6%, a 200-basis-point spread does not guarantee 2% more realized wealth. A downturn may simultaneously raise spreads and reduce credit recovery. The appropriate analysis examines both quoted compensation and the issuer's ability to pay.",
+        "A simplified expected-credit-loss calculation is annual default probability × loss-given-default × exposure, though timing and correlated risk make real bond credit pricing more complicated. At an illustrative 3% default probability and 60% loss severity, one-year expected principal loss is 1.8% of exposure. For $10,000 exposure, that is $180 in a stylized one-year model. This is neither a forecast nor a complete risk-adjusted return because risk premiums, maturity and recovery timing matter.",
+        "Evaluate interest coverage, net debt, unencumbered assets, maturity ladders, covenant headroom and refinancing access. A firm may report positive net income but lack cash when a large bond issue becomes due. A bond marketed as 'senior' may still have recovery lower than expected when assets are pledged or liabilities are more complex than a brochure indicates. Issuer rating agency grades are opinions about credit, not government guarantees.",
+        "Stress total wealth when spreads widen. A corporate bond fund may lose value even when Treasury rates fall, if credit risk spreads increase more. A household relying on cash at closing should avoid assuming a high-yield bond provides the liquidity and certainty of an insured deposit. Research actual offering documents and credit financial statements."
+      ],
+      "worked": [
+        "Fictional corporate yield 6%, comparable Treasury 4% ⇒ 2 percentage points spread =200 bps.",
+        "Simplified probability of default 3% and loss severity 60% ⇒ expected annual loss 1.8% of principal.",
+        "On $10,000 exposure, stylized expected loss $180; actual outcomes can include zero loss or far more.",
+        "Net carry after expected losses is not reliably 6%−1.8% because risk premium, taxes and market price affect results.",
+        "A spread widening can reduce price before a legal default happens."
+      ],
+      "practice": [
+        [
+          "Why is a 200-basis-point corporate spread not an investment profit guarantee?",
+          "It compensates for issuer default, losses, liquidity, options and other priced risks; the actual credit outcome and resale price are uncertain."
+        ],
+        [
+          "Which statements help test a corporate issuer's bond repayment capacity?",
+          "Cash flow, debt maturity schedule, interest expense, balance-sheet collateral, covenants and access to refinancing, read with the actual issue terms."
+        ]
+      ]
+    },
+    {
+      "title": "Calls, floating rates, inflation-indexed principal and bond structural risk",
+      "body": [
+        "Bond contracts can change expected cash flows through call provisions, put rights, floating-rate resets, sinking funds and inflation indexation. A callable issuer may redeem early when yields fall, removing the holder's attractive coupon and forcing reinvestment at lower available rates. A floating-rate note may reset with an index and spread, reducing some interest-rate sensitivity but exposing income to future short-rate changes, issuer credit and floor/cap terms.",
+        "TIPS adjust Treasury principal under an inflation-index mechanism using CPI; they offer particular maturity protections for eligible individual securities, but their market value can decline before maturity when real yields rise. A TIPS mutual fund can decline with market prices even if the underlying securities adjust principal. Expected inflation, real rates, tax treatment and liquidity all matter. A fixed coupon bond exposes the investor to inflation erosion of purchasing power, even if the issuer pays every stated nominal dollar.",
+        "Compare a $1,000 face callable bond with 6% coupon and a call at par in year two. If it is called after two years, annual coupons of $60 are paid for only those years before principal return; the investor does not receive an imaginary decade of 6% coupons simply because the legal maturity was initially ten years. Yield-to-call and yield-to-worst methods can highlight this risk, but actual call decisions remain contingent and market yields can move.",
+        "Bond structures should be matched with an investor's goal and tax treatment. Municipals can have complex federal and state tax consequences, including AMT or taxability depending on issues. Taxable US Treasury interest generally avoids state and local income tax, but this tax treatment is separate from credit, maturity and price risk. A tax advantage should not justify concentrating essential home funds in long-duration or poorly understood bonds."
+      ],
+      "worked": [
+        "Illustrative 6% annual coupon on $1,000 face gives $60 annually.",
+        "If called at par after year two, holder gets two modeled $60 coupons plus $1,000 redemption at call, not eight further coupons.",
+        "A 5% annual price inflation factor reduces real purchasing power of unchanged $1,000 maturity proceeds over time.",
+        "TIPS principal adjusts by index mechanism, but a fund's market NAV can fall before intended withdrawal.",
+        "Evaluate yield to call/worst where relevant instead of citing final stated maturity alone."
+      ],
+      "practice": [
+        [
+          "Why can a callable bond perform worse than its quoted long-maturity coupon seems to promise during falling rates?",
+          "The issuer may redeem early, so the investor loses future high coupon cash flows and must reinvest at then-available rates."
+        ],
+        [
+          "Does a TIPS or floating-rate bond eliminate all interest-rate or liquidity risk?",
+          "No. Real yield market repricing, credit structure, reset spreads, sale timing and instrument-specific terms remain material."
+        ]
+      ]
+    },
+    {
+      "title": "Tax-adjusted fixed income and state-level household choices",
+      "body": [
+        "Taxable-equivalent yield compares taxable and tax-exempt investments under a specified investor tax rate and correct legal exemptions. If a fictional municipal pays 3% federal tax-exempt income and a comparable fully taxable instrument pays 4%, a 22% marginal federal tax rate yields 4%×(1−.22)=3.12% on the taxable instrument, before state tax, NIIT and other rules. Under those stated assumptions the 4% fully taxable yield has slightly higher federal after-tax income. The municipal may also face credit, market and state tax risks; nominal after-tax yield alone is not enough.",
+        "Interest on US Treasury bills, notes and bonds is generally taxable federally but exempt from state and local income taxes. Bank CD interest is generally federal taxable income and may face state income tax. Municipal bond interest can be federally exempt on qualifying issues yet not always exempt from a given state's tax. A Connecticut household should verify actual tax status rather than classify every product with the word Treasury or municipal as uniformly untaxed.",
+        "Interest, premiums, discounts, original issue discount and capital gains can have different reporting. A bond bought at a large secondary discount can produce tax consequences beyond coupon interest, and Treasury inflation adjustments may produce reporting before cash is received in some taxable-account situations. Use IRS Publication 550, TreasuryDirect tax guidance and a qualified tax professional when dealing with specific issues.",
+        "Choose a security only after confirming the date cash is needed, the source of payment, expected tax treatment, yield convention, credit risk and marketable sale conditions. A home closing goal should not be subordinated to speculative attempts to improve after-tax return by a few basis points."
+      ],
+      "worked": [
+        "Fully taxable bond yields 4%; marginal federal rate hypothetically 22% ⇒ simplified after-federal-tax 3.12%.",
+        "Qualifying municipal yields 3% federal exempt under assumptions; taxable-equivalent yield=3%/(1−.22)≈3.846%.",
+        "The 4% fully taxable offer exceeds the federal taxable-equivalent 3.846% under this simplified comparison.",
+        "State taxes, issuer credit, maturity and market liquidity could reverse the economic ranking.",
+        "Treasury interest generally is federal-taxable but exempt from state and local income taxation."
+      ],
+      "practice": [
+        [
+          "What does the taxable-equivalent yield of a municipal bond measure?",
+          "The pretax yield a fully taxable bond would need to match the municipal's assumed after-federal-tax interest income at the specified investor tax rate."
+        ],
+        [
+          "Why does federally tax-exempt interest not automatically make a municipal bond the safest cash equivalent?",
+          "Issuer default, market value, liquidity, alternative minimum tax or state tax treatment and call terms may still make the investment unsuitable."
+        ]
+      ]
+    },
+    {
+      "title": "Bond ladder and issuer-specific fixed-income investment policy",
+      "body": [
+        "A ladder holds individual bonds or certificates with staggered maturity dates, aiming to make principal available when planned expenses arrive and to spread reinvestment timing. The design does not remove default or inflation risk; buying too long a maturity for a known obligation still creates sale-price exposure. A practical maturity-matching plan marks emergency funds as immediately available, a three-month expense fund as dated liquid resources, and medium-term future cash as laddered claims with appropriate issuer and account protection.",
+        "Suppose a Connecticut family expects $12,000 closing cash in a year and $6,000 emergency reserve immediately. A proposed plan holding all $18,000 in an intermediate bond fund at duration six creates price uncertainty on the whole balance. A +1 percentage point parallel yield shock approximates a 6% or $1,080 price decline before fund income and other factors. An alternative separate immediately liquid reserve and one-year suitable maturity instrument reduces rate exposure, though still requires exact instrument and account review.",
+        "Bond-ladder modeling should include purchase price, face amount due, coupon payment schedule, accrued interest and any maturity default, plus reinvestment options. A $1,000 face bill purchased for $980 and paid at $1,000 maturity has $20 interest at maturity under simplified assumptions. That is $20/$980≈2.0408% over the holding period, not automatically an annual 2.0408% yield unless the holding period is a year. Compare quoted bank APY and government bill auction yield only after converting conventions.",
+        "The final fixed-income policy documents issuer limits, maturity dates, taxes, inflation, credit spreads, account protections, a no-forced-sale rule and the exact role of each holding. It should clearly distinguish a ladder of individual debt contracts from a continuously reinvesting pooled bond fund. Students must explain why a higher advertised coupon is not enough to override a near-term cash deadline."
+      ],
+      "worked": [
+        "Cash target $12,000 due in 12 months and emergency reserve $6,000 available immediately.",
+        "Hypothetical duration-six bond fund for entire $18,000, +100 bps yield shock ⇒ linear mark decline 6% or $1,080.",
+        "Bill bought $980 redeeming $1,000 ⇒ $20 holding-period interest if paid.",
+        "Holding-period gain $20/$980≈2.0408%; annualization requires exact time to maturity.",
+        "Document near-term access and issuer payment instead of assuming quoted fund yield becomes cash."
+      ],
+      "practice": [
+        [
+          "What is the principal planning advantage of aligning a bond's maturity to a known expense date?",
+          "A maturity-matched payment can reduce the need to sell at an unfavorable interim market price, subject to credit, terms and account availability."
+        ],
+        [
+          "Why is a ladder of individual maturities not the same claim as ownership of a bond mutual fund?",
+          "Individual holdings promise security-specific cash dates, while fund investors own fluctuating portfolio shares and do not receive par of their original investment at a single predetermined date."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "SEC Investor.gov Bond Basics and Risk",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds"
+    ],
+    [
+      "TreasuryDirect Understanding Pricing",
+      "https://www.treasurydirect.gov/marketable-securities/understanding-pricing/"
+    ],
+    [
+      "TreasuryDirect TIPS",
+      "https://www.treasurydirect.gov/marketable-securities/tips/"
+    ],
+    [
+      "FINRA Bonds and Fixed Income",
+      "https://www.finra.org/investors/investing/investment-products/bonds"
+    ],
+    [
+      "IRS Publication 550",
+      "https://www.irs.gov/publications/p550"
+    ],
+    [
+      "TreasuryDirect Tax Forms",
+      "https://www.treasurydirect.gov/marketable-securities/tax-forms-and-withholding/"
+    ]
+  ],
+  "assessment": {
+    "title": "Fixed-income claims, yield conventions and mortgage cash policy",
+    "prompt": "Price a three-year $1,000 face annual-coupon bond at 5% discount, compute current yield on a $950 purchase, one-year return on sale at $960, duration-six exposure under +75 bps, and stylized corporate expected loss given a 3% default probability and 60% severity. Compare federal after-tax yields on taxable and exempt instruments. Build a $12,000 home-closing plus $6,000 emergency liquidity ladder with explicit maturities and issuer limits. Critique callable and fund exposures using primary documents.",
+    "rubric": [
+      "Contract and yield-definition correctness (20%)",
+      "Bond price and duration mathematics (25%)",
+      "Credit, optionality and liquidity stress (25%)",
+      "Tax and maturity-matched cash design (20%)",
+      "Sources and scenario transparency (10%)"
+    ]
+  }
+}
