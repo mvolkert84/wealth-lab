@@ -31,7 +31,7 @@ for(const [i,id] of ids.entries()){
 }
 assert.equal(sections,32);assert.equal(questions,64);assert.ok(words>=5600);
 assert.equal(d.capstone.tasks.length,20);assert.ok(d.capstone.answers.length>=14&&d.capstone.sources.length>=7);
-assert.ok(e.WealthLabAcademicM16Markup('L16.S4').includes('Module 16 cumulative'));
+assert.ok(e.WealthLabAcademicM16Markup('L16.S4').includes('Module 16 comprehensive financial planning final capstone'));
 assert.ok(e.WealthLabAcademicM16Markup('L1.S1').includes('unavailable'));
 assert.ok(html.includes("||m.id==='M16')?['Learn','Examples','Try It','Academic','Notes']"));
 assert.ok(html.includes('WealthLabAcademicM16Markup?.(s.id)'));
