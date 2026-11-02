@@ -1,0 +1,240 @@
+{
+  "id": "L10.S2",
+  "title": "Diversification and Correlation",
+  "subtitle": "Covariance, portfolio variance, factor exposure, concentration and tail risk",
+  "prerequisites": [
+    "L7.S3 compounded returns and financial mathematics",
+    "L8.S1 issuer exposure and equity risk",
+    "L9.S3 fund holdings and look-through concentration"
+  ],
+  "objectives": [
+    "Distinguish systematic and diversifiable risk",
+    "Compute return covariance, variance, standard deviation and correlation",
+    "Apply the two-asset portfolio risk formula accurately",
+    "Assess correlation shifts, market stress and covariance estimation error",
+    "Quantify hidden industry and income concentrations",
+    "Interpret Sharpe ratio and VaR limitations with nonnormal scenarios",
+    "Build a defensible asset-class correlation and shock matrix"
+  ],
+  "sections": [
+    {
+      "title": "Diversification works through economic exposures, not ticker quantity",
+      "body": [
+        "Diversification reduces vulnerability to independent issuer failures by spreading ownership across distinct economic cash-flow sources. It cannot remove broad recessions, inflation surprises, systemic funding shocks or changes in required investment returns. A person who owns five funds tracking the same large-cap index may effectively hold one equity exposure multiplied across five wrappers. Looking through holdings and business cycles is necessary to judge whether a second security truly changes portfolio risk.",
+        "Two risks are commonly distinguished: systematic risk, associated with broad market or shared macroeconomic factors, and issuer-specific risk such as one company's fraud, product recall or bankruptcy. Adding securities can dilute issuer-specific loss if positions are not perfectly correlated, but company events may cluster within industries and geographic regions. Holding more positions always adds complexity and trading or tax administration; it does not guarantee an optimal exposure or positive market return.",
+        "Consider two funds, with $6,000 in fund A and $4,000 in fund B, both tracking exactly the same stock index. If that benchmark falls 30% and tracking differences are ignored, the $10,000 portfolio loses $3,000: its market exposure is still 100% equity. A different ticker name, expense ratio or share class does not create a negative correlation or an independent return source. By contrast, a cash reserve earmarked for a liability solves an actual separate risk because its purpose is access when market prices decline.",
+        "Academic diversification must identify holdings, sector weights, equity duration, fixed-income maturity and credit, currencies, leverage and employment links. The proper starting point is a portfolio map of asset drivers and dates, not simply counting mutual fund positions. Marketwide shocks can dominate all the other sources even when historical correlations were modest."
+      ],
+      "worked": [
+        "Fund A $6,000 and Fund B $4,000, both exactly same index ⇒ 100% look-through equity exposure.",
+        "Underlying index −30% ⇒ combined portfolio $7,000 under simplifying assumptions.",
+        "Dollar loss −$3,000; different fund names do not avoid it.",
+        "A single-sector risk factor can affect many holdings simultaneously.",
+        "Diversification aims to manage distributions of loss, not assure profit."
+      ],
+      "practice": [
+        [
+          "Why do two ETFs tracking the identical index produce little marginal diversification?",
+          "Their underlying economic exposures are nearly the same, so the same market movement can affect both regardless of wrapper or ticker."
+        ],
+        [
+          "Can issuer diversification remove a recession-wide stock market decline?",
+          "No. Broad market and macroeconomic risks remain and can affect large groups of companies together, particularly during stressed funding conditions."
+        ]
+      ]
+    },
+    {
+      "title": "Expected value, variance and covariance definitions",
+      "body": [
+        "A quantitative portfolio model describes uncertain returns using random variables. Expected return is the probability-weighted average of modeled returns, not a guaranteed realized result. Variance measures average squared deviation from an expected return; standard deviation is the positive square root of variance and shares the return unit. Covariance measures whether deviations in two returns move together, while correlation standardizes covariance by the product of the two standard deviations and ordinarily lies between −1 and +1.",
+        "For two securities A and B with possible economic states, expected return is Σp_s R_s. Covariance is Σp_s(R_A,s−μ_A)(R_B,s−μ_B) under a population state-probability framework. Historical sample covariance requires a different denominator convention and depends on the observation period and data cleaning. Switching between monthly and annual return standard deviations without rescaling can create serious risk errors. Percent returns should be converted consistently into decimal units before mathematical operations.",
+        "Suppose illustrative assets have expected returns 7% and 3%, annual standard deviations 20% and 8%, and annual correlation .25. Covariance is .25×.20×.08=.004 in decimal return-squared units. An investor reading the number .004 as 0.4% annual return would be confusing a squared statistical quantity with an expected monetary gain. The same covariance under positive volatility implies the assets often move partly together, but not always or in an exactly linear way.",
+        "Correlation is a historical or modeled descriptor, not a stable contractual fact. Returns can become much more correlated during a crisis, when investors sell multiple assets for liquidity. Covariance estimates based on a short calm period can understate the loss when stock and bond prices fall simultaneously. Use sensitivity intervals and stress scenarios rather than selecting one precise value as the permanent structure of financial markets."
+      ],
+      "worked": [
+        "Expected stock return μA=7%, bond μB=3%.",
+        "Standard deviations σA=20%=.20, σB=8%=.08.",
+        "Correlation ρ=.25 ⇒ covariance=.25×.20×.08=.004 decimal-return squared.",
+        "Correlation can change without a change in asset name or legal classification.",
+        "Expected return, volatility and covariance must be given matching observation intervals."
+      ],
+      "practice": [
+        [
+          "Why is covariance not expressed in the same units as a simple annual percentage return?",
+          "Covariance multiplies deviations from two returns, producing a return-squared unit; converting it to correlation divides by two standard deviations."
+        ],
+        [
+          "What is the danger of using only a short calm historical period to estimate asset correlations?",
+          "Stressed economic conditions may produce materially different correlations and volatilities, so the model can understate joint downside losses."
+        ]
+      ]
+    },
+    {
+      "title": "Derive the two-asset portfolio risk equation",
+      "body": [
+        "With portfolio weights wA and wB summing to one, one-period portfolio return is wA RA+wB RB. Expanding the variance of that weighted sum yields σp²=wA²σA²+wB²σB²+2wAwBρσAσB. The covariance term makes portfolio risk depend on how assets move jointly, not merely their individual standard deviations. This fundamental equation also reveals why low or negative correlations can improve variance without necessarily increasing forecast return.",
+        "Use 60% in stocks and 40% bonds, with illustrative annual standard deviations 20% and 8%, and correlation .25. Stock variance contribution in the expansion is .6²×.2²=.0144, bond term .4²×.08²=.001024, and covariance cross term 2×.6×.4×.25×.20×.08=.00192. Total portfolio variance .017344, and standard deviation sqrt(.017344)≈13.1697%. Weighted average individual volatility 15.2% would be the wrong result for this correlation structure.",
+        "Change correlation to +1 while keeping the same weights and individual volatilities. Portfolio standard deviation becomes .6×20%+.4×8%=15.2%. If correlation drops toward zero or negative, modeled variance declines further. Yet lower standard deviation does not guarantee no losses. A portfolio can have fat-tailed returns and a substantial maximum drawdown while displaying modest ordinary-period standard deviation.",
+        "The result is a mathematical conditional model rather than a promise the market provides the assumed correlations. Portfolio volatility should be evaluated alongside cash shortfall probability, worst reasonable drawdown, concentration and asset duration. A household whose risk budget is a maximum $2,000 loss on a $12,000 closing fund should not assume a 13% annual standard deviation makes the investment date-safe."
+      ],
+      "worked": [
+        "Weights 60% stocks, 40% bonds; annual σ=.20 and .08, correlation .25.",
+        "Stock term .6²×.2²=.0144; bond term .4²×.08²=.001024.",
+        "Cross term 2×.6×.4×.25×.20×.08=.00192.",
+        "Portfolio variance=.017344, volatility=sqrt(.017344)≈13.1697%.",
+        "Perfect positive correlation would give volatility 15.2% under unchanged assumptions."
+      ],
+      "practice": [
+        [
+          "Why does the formula contain a correlation term rather than just averaging the two individual volatilities?",
+          "Portfolio fluctuations depend on simultaneous asset deviations; covariance captures offsetting or reinforcing price movement across holdings."
+        ],
+        [
+          "Does estimated 13.17% annual portfolio volatility mean annual returns cannot fall below −13.17%?",
+          "No. Standard deviation is a dispersion parameter, not an absolute bound; actual tails, correlations and forced cash flows can produce larger losses."
+        ]
+      ]
+    },
+    {
+      "title": "Correlation regimes, stress testing and changing risk estimates",
+      "body": [
+        "Historical covariance matrices are sensitive to the return sample, asset proxies, frequency, look-back horizon and market regime. Equity and government bond correlation can be negative during some growth scares but positive during inflation shocks when both equity valuations and bond prices fall. Currency hedges, credit duration and leverage can change relationships further. Portfolio construction should ask what economic force makes each asset rise or fall rather than assume permanent risk cancellation.",
+        "Create a scenario table in addition to a covariance table. Scenario A is ordinary growth with stocks +8% and bonds +3%; Scenario B is recession with stocks −35% and bonds +5%; Scenario C is inflation shock with stocks −25% and bonds −12%. A 60/40 portfolio in these three independent illustrations returns +6%, −19% and −19.8% respectively, before costs and taxes. A simple volatility calculation from prior quiet years can miss simultaneous price declines.",
+        "Distinguish scenario modeling from probability-weighted forecasts. The above shock scenarios are plausible examples, not observations from a live 2026 market or assigned probabilities. A stress matrix can include unemployment, a home price decline, liquidity spread widening and rising borrowing costs together. Since stress events can correlate across a person's salary, car, mortgage collateral and investments, the household balance sheet is the true object of risk management.",
+        "Model uncertainty should be displayed explicitly. A decision based on one estimated correlation .25 should be tested at −.25, +.25 and +.75, and under combinations of higher asset volatilities. This sensitivity is especially valuable when an optimizer recommends unrealistically high leverage or a narrow asset with an apparently low historical volatility. A robust allocation survives a range of uncertain parameters."
+      ],
+      "worked": [
+        "60/40 portfolio, stock +8%, bond +3% ⇒ .6×8+.4×3=6%.",
+        "Recession stock −35%, bond +5% ⇒ −21%+2%=−19%.",
+        "Inflation shock stock −25%, bond −12% ⇒ −15%−4.8%=−19.8%.",
+        "Simultaneous losses can exceed the investor's capacity even when historical average correlation appeared favorable.",
+        "Scenarios require both asset-return and household cash-flow considerations."
+      ],
+      "practice": [
+        [
+          "Why can stocks and bonds decline together during a particular economic shock?",
+          "Inflation and required-yield repricing can reduce equity valuations and fixed-income prices simultaneously, making correlation regime-dependent."
+        ],
+        [
+          "What is the role of an adverse scenario relative to a historical covariance estimate?",
+          "It tests economic conditions and joint losses that historical sampling or smooth normal models may underrepresent, especially when a liability date cannot change."
+        ]
+      ]
+    },
+    {
+      "title": "Risk concentration, employer exposure and factor look-through",
+      "body": [
+        "Portfolio risk includes more than assets listed at a broker. A worker whose compensation and job security depend on a technology employer already bears economic exposure to that industry. Owning employer stock or a narrow technology index may concentrate salary risk and financial assets in the same downturn. A family owning a leveraged house in one Connecticut town may also be exposed to local property values, labor conditions and insurance costs, even if the home is not a line item in the securities portfolio.",
+        "Look-through concentration calculates holdings across overlapping funds. Suppose fund A and fund B each represent half the account, and the same issuer group represents 40% of A and 60% of B. Combined exposure is .5×.4+.5×.6=.5, or 50% of the account. Counting the two fund wrappers as two diversified positions conceals a large shared factor. Sector and country weights can similarly overlap even when fund indexes have different names.",
+        "Concentration may amplify loss. In a $20,000 portfolio, a single stock at 35% weight contributes $7,000 exposure. If that stock loses 60% and all other holdings are flat, portfolio loss is $4,200 or 21%. This ignores spillovers to other assets and employment that can worsen the outcome. A formal investment policy may impose maximum issuer, employer stock and sector allocations and require a defined response when drift exceeds these limits.",
+        "Some diversifiers can be illiquid or expensive. Alternative investments may report smoother appraised values than publicly traded securities and can still share underlying leverage or property market risk. A low reported quarterly correlation does not create cash to pay a sudden closing bill. Portfolio policy must balance correlation improvement with legal redemption restrictions and total economic fees."
+      ],
+      "worked": [
+        "Portfolio $20,000 and single issuer 35% ⇒ exposure $7,000.",
+        "Issuer suffers −60% while others flat ⇒ loss $4,200, portfolio −21%.",
+        "Two equal funds with 40% and 60% common issuer-group exposure ⇒ combined 50% group weight.",
+        "Employer income and home collateral can amplify the same regional or industry downturn.",
+        "Fund count and low reported correlation are not substitutes for look-through ownership analysis."
+      ],
+      "practice": [
+        [
+          "What hidden risk arises when a worker invests heavily in shares of the same employer who pays their wages?",
+          "A company-specific or industry shock can affect both financial investments and future income, creating concentrated total household risk."
+        ],
+        [
+          "How can two diversified-looking funds leave half the total account in one issuer group?",
+          "Overlapping underlying holdings compound exposure; the common-group weight is the weighted sum of each fund's holdings, not determined by wrapper count."
+        ]
+      ]
+    },
+    {
+      "title": "Sharpe ratio, VaR, expected shortfall and what they omit",
+      "body": [
+        "Risk-adjusted performance statistics can support comparisons only when definitions and data are consistent. The Sharpe ratio is (portfolio expected or average excess return relative to a defined risk-free rate)/portfolio volatility over the matching horizon. A portfolio with modeled annual return 8%, cash proxy 2% and standard deviation 15% has Sharpe (8−2)/15=.4. This is not a return, a probability of loss or a contractual performance guarantee. Negative ratios and short noisy records require especially careful interpretation.",
+        "Value at Risk (VaR) at a specified confidence and horizon estimates a loss threshold exceeded with some probability under the model, not a maximum possible loss. For a one-year normal-return toy model with expected return 5%, standard deviation 15% and 5% lower-tail z≈−1.645, lower return quantile is 5%−1.645×15%≈−19.675%. On $20,000 that approximates a $3,935 loss at the 5th percentile, under extremely strong normal-distribution assumptions. Losses beyond that threshold remain possible.",
+        "Expected shortfall or conditional VaR examines average loss beyond a chosen tail threshold, making it often more informative about extreme downside. A simple historical maximum drawdown measures peak-to-trough decline across an observed path, not the next period's worst-case loss. All such measures are vulnerable to stale price samples, regime changes, autocorrelation and hidden leverage. Model outputs should be cross-checked with scenarios that do not rely on normal distributions.",
+        "Be precise about the investor's question. Annual VaR might be relevant for risk capital but is a poor direct measure of whether a $12,000 home closing can be financed next Tuesday. The timing and minimum required dollars are more actionable than one aggregate statistical parameter. A good portfolio analysis states horizon, confidence, input sources and a stop-or-replenish rule when household obligations are threatened."
+      ],
+      "worked": [
+        "Modeled annual portfolio return 8%, comparison cash proxy 2%, volatility 15%.",
+        "Sharpe ratio (8−2)/15=.40 under matching units.",
+        "Normal toy lower 5% quantile=5%−1.645×15%≈−19.675%.",
+        "On $20,000, modeled 5% tail threshold loss ≈$3,935.",
+        "A 95% VaR does not cap the worst possible loss at $3,935."
+      ],
+      "practice": [
+        [
+          "Why does a 95% Value at Risk number not mean a portfolio cannot lose more than the displayed amount?",
+          "By definition the threshold can be exceeded in the remaining tail, and model assumptions can fail; VaR is not a worst-case bound."
+        ],
+        [
+          "How can two portfolios with similar annual volatility carry different household risks?",
+          "Liquidity, concentrated exposures, return tails, correlation with wages, tax and withdrawal timing can differ even when standard deviations are similar."
+        ]
+      ]
+    },
+    {
+      "title": "Quantitative portfolio committee: validate rather than worship an optimizer",
+      "body": [
+        "A modern optimizer can solve for portfolio weights based on expected returns, covariances and constraints, but mathematically optimal weights can be economically fragile when inputs are estimated inaccurately. Mean-variance optimization often amplifies small forecast differences into corner portfolios with extreme asset allocations or short positions. Constraining individual positions, leverage and turnover and testing multiple market regimes can improve robustness, but every numerical output remains conditional.",
+        "An academic recommendation should give a clear covariance matrix, the date and method used to estimate it, the proposed asset weights, and a stress table including both recession and inflation shocks. The student should demonstrate positive semidefinite covariance when modeling more than two assets and ensure weights sum to the stated total, avoiding impossible negative variances. It should also compare gross expected return with expected return after fees and taxes, while acknowledging that fee savings do not remove market risk.",
+        "Take a 60/40 model with stock σ20%, bond σ8%, correlation .25 and expected returns 7%/3%. The simple portfolio expected return is .6×7%+.4×3%=5.4%; portfolio standard deviation from the earlier variance formula is approximately 13.17%. An optimizer might recommend a different mix after modestly changing bond expected return or correlation. The committee must ask whether such sensitivity is justified by real evidence or is an artifact of input estimation noise.",
+        "Close with an explicit suitability decision. An equity-heavy portfolio may be tolerable for long-term retirement surplus but not for a down-payment reserve. The student should provide evidence that accessible cash remains funded after a combined market, job and emergency-spending shock. In education and professional practice, realistic constraints and audited arithmetic are more valuable than an impressive chart with invented precision."
+      ],
+      "worked": [
+        "Expected stock 7%, bond 3%, weights 60/40 ⇒ expected return 5.4%.",
+        "Portfolio volatility for σ20%/8%, ρ=.25 is approximately 13.1697%.",
+        "Adverse shock stock −35%, bond +5% ⇒ portfolio −19%.",
+        "Separate due-date cash reserve must remain outside risk optimization unless loss capacity is documented.",
+        "A sensitivity matrix should test whether recommended allocations move drastically under small input revisions."
+      ],
+      "practice": [
+        [
+          "Why may a mean-variance optimizer produce unstable or concentrated allocations?",
+          "Estimated expected returns and covariances contain error, and optimization can magnify tiny differences unless robust constraints and economic judgment are applied."
+        ],
+        [
+          "What should the final risk memorandum contain beyond an expected-return and volatility chart?",
+          "Liquidity obligations, actual holdings, parameter sources, concentration, tax and cost assumptions, adverse scenarios and explicit implementation and review limits."
+        ]
+      ]
+    }
+  ],
+  "sourceRefs": [
+    [
+      "CFA 2026 Portfolio Management Curriculum",
+      "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/basics-of-portfolio-planning-and-construction"
+    ],
+    [
+      "Investor.gov Asset Allocation Diversification",
+      "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    ],
+    [
+      "CFA Portfolio Risk and Return learning materials",
+      "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam"
+    ],
+    [
+      "Investor.gov Index Funds and ETF Risks",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds"
+    ],
+    [
+      "Investor.gov Understanding Risk",
+      "https://www.investor.gov/introduction-investing/investing-basics/investment-risk"
+    ],
+    [
+      "FINRA Diversification and Asset Allocation",
+      "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification"
+    ]
+  ],
+  "assessment": {
+    "title": "Portfolio covariance, correlated household loss and risk-budget committee",
+    "prompt": "Calculate covariance for stock σ20%, bond σ8% and correlation .25, then 60/40 expected return and standard deviation. Recompute volatility for ρ=−.25, +.25 and +.75. Stress stock/bond outcomes of +8/+3, −35/+5, −25/−12. Quantify issuer concentration at 35% of $20,000 with −60% security loss, Sharpe (8−2)/15 and normal VaR with expected 5%, σ15% and z=−1.645. Explain limits of VaR and optimization, and portfolio suitability for a dated $12,000 home purchase.",
+    "rubric": [
+      "Covariance and return definition (20%)",
+      "Portfolio variance with correlation sensitivity (25%)",
+      "Market and household downside stress (25%)",
+      "Risk statistics and model limitations (20%)",
+      "Reproducible primary sources and decision rules (10%)"
+    ]
+  }
+}
