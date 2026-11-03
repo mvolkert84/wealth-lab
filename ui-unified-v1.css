@@ -181,3 +181,112 @@
 @media(prefers-reduced-motion:reduce){
  #app > nav.bottom button{transition:none;}
 }
+
+
+/* Notebook category cards · mobile photo/titling fix
+   Small phones need two meaningful image columns, not three cropped labels.
+   Keep all six approved notebook photographs and custom notebook styles. */
+#app .wlnb .wlnb-book-grid{
+ display:grid;
+ min-width:0;
+ gap:12px !important;
+ align-items:stretch;
+}
+#app .wlnb .wlnb-book-grid > .wlnb-book{
+ box-sizing:border-box;
+ display:flex;
+ flex-direction:column;
+ justify-content:flex-end;
+ align-items:center;
+ min-width:0;
+ width:100%;
+ max-width:100%;
+ overflow:hidden;
+ padding:14px 12px 15px;
+ border-radius:15px;
+ border:1px solid #779873;
+ background-size:cover !important;
+ background-repeat:no-repeat !important;
+ background-position:center center !important;
+ isolation:isolate;
+ filter:none !important;
+ box-shadow:inset 0 0 0 1px rgba(0,18,12,.16);
+}
+#app .wlnb .wlnb-book-grid > .wlnb-book::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ z-index:-1;
+ pointer-events:none;
+ background:linear-gradient(180deg,rgba(0,18,11,.01) 12%,rgba(0,18,11,.12) 42%,rgba(0,15,10,.78) 76%,rgba(0,14,9,.95) 100%) !important;
+}
+#app .wlnb .wlnb-book-grid > .wlnb-book strong{
+ display:block;
+ box-sizing:border-box;
+ min-width:0;
+ max-width:100%;
+ width:100%;
+ margin:0;
+ padding:0 1px;
+ font:700 clamp(15px,2.1vw,21px)/1.18 Georgia,"Times New Roman",serif;
+ text-align:center;
+ color:#fff1da;
+ text-shadow:0 2px 5px #00150de8;
+ white-space:normal;
+ overflow-wrap:anywhere;
+ word-break:normal;
+ text-wrap:balance;
+}
+#app .wlnb .wlnb-book-grid > .wlnb-book small{
+ display:block;
+ min-width:0;
+ max-width:100%;
+ margin-top:8px;
+ font:500 clamp(11px,1.3vw,13px)/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;
+ color:#f1eee3;
+ text-align:center;
+ white-space:normal;
+ overflow-wrap:anywhere;
+ text-shadow:0 2px 4px #00170fcf;
+}
+#app .wlnb .wlnb-book-grid > .wlnb-book:focus-visible{
+ outline:3px solid #f4d28a;
+ outline-offset:2px;
+}
+@media(max-width:729px){
+ #app .wlnb .wlnb-notebooks .wlnb-book-grid,
+ #app .wlnb .wlnb-detail .wlnb-book-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:11px !important;
+ }
+ #app .wlnb .wlnb-book-grid > .wlnb-book{
+  height:clamp(158px,41vw,218px) !important;
+  min-height:158px !important;
+  padding:12px 9px 14px !important;
+ }
+ #app .wlnb .wlnb-book-grid > .wlnb-book strong{
+  font-size:clamp(14px,3.6vw,18px) !important;
+  line-height:1.2;
+ }
+ #app .wlnb .wlnb-book-grid > .wlnb-book small{
+  font-size:clamp(11px,2.7vw,12px) !important;
+ }
+}
+@media(max-width:359px){
+ #app .wlnb .wlnb-book-grid{gap:8px !important;}
+ #app .wlnb .wlnb-book-grid > .wlnb-book{
+  padding-inline:7px !important;
+ }
+ #app .wlnb .wlnb-book-grid > .wlnb-book strong{
+  font-size:14px !important;
+ }
+}
+@media(min-width:730px){
+ #app .wlnb .wlnb-book-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+ }
+ #app .wlnb .wlnb-book-grid > .wlnb-book{
+  height:clamp(172px,21vw,225px) !important;
+  min-height:172px !important;
+ }
+}
