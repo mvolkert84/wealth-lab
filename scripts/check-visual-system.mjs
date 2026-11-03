@@ -43,7 +43,7 @@ assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length,'Visual s
 const styles=[...html.matchAll(/<link\s+rel="stylesheet"\s+href="([^"]+)"/g)].map(m=>m[1]);
 assert.ok(styles.length>1,'External stylesheets missing');
 assert.ok(styles.at(-2)?.startsWith('./visual-polish-v1.css?v=6.0.0'),'Shared visual system must precede the final app-wide UI unification layer');
-assert.ok(styles.at(-1)?.startsWith('./ui-unified-v1.css?v=1.0.0'),'The unified navigation, thumbnail and typography overrides must load last');
+assert.ok(styles.at(-1)?.startsWith('./ui-unified-v1.css?v=1.1.0'),'The unified navigation, thumbnail and typography overrides must load last');
 assert.ok(html.includes('<meta name="theme-color" content="#031915">'),'Browser theme must be emerald');
 assert.equal(manifest.background_color.toLowerCase(),'#031915');
 assert.equal(manifest.theme_color.toLowerCase(),'#031915');

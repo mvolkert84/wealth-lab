@@ -3,7 +3,7 @@ import {readFileSync,existsSync} from 'node:fs';
 import {Script,runInNewContext} from 'node:vm';
 const read=f=>readFileSync(new URL('../'+f,import.meta.url),'utf8');
 const app=read('index.html'),css=read('ui-unified-v1.css'),sw=read('sw.js'),thumbs=read('learn-thumbnails.css');
-assert.ok(app.includes('<link rel="stylesheet" href="./ui-unified-v1.css?v=1.0.0">'));
+assert.ok(app.includes('<link rel="stylesheet" href="./ui-unified-v1.css?v=1.1.0">'));
 assert.ok(sw.includes("'./ui-unified-v1.css'"),'PWA precache missing final stylesheet');
 assert.ok(sw.includes('ui-v1'),'Cache version not updated');
 assert.ok(app.includes("const STORE='wealthlab-state-v1'"),'Old learning data storage key altered');
