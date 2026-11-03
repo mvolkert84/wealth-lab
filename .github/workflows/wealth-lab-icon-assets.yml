@@ -1,0 +1,37 @@
+name: Generate Wealth Lab PWA icon sizes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'icons/icon-192.png'
+      - '.github/workflows/wealth-lab-icon-assets.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate 512px standard and maskable icons
+        run: |
+          python -m pip install --disable-pip-version-check Pillow==11.3.0
+          python - <<'PY'
+          from PIL import Image
+          source = Image.open('icons/icon-192.png').convert('RGBA')
+          full = source.resize((512, 512), Image.Resampling.LANCZOS)
+          full.save('icons/icon-512.png', optimize=True)
+          background = Image.new('RGBA', (512, 512), (3, 25, 21, 255))
+          safe = source.resize((340, 340), Image.Resampling.LANCZOS)
+          background.alpha_composite(safe, (86, 86))
+          background.convert('RGB').save('icons/icon-512-maskable.png', optimize=True)
+          PY
+      - name: Commit generated PWA icon variants
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icons/icon-512.png icons/icon-512-maskable.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate Wealth Lab logo 512px and maskable icons"
+            git push
+          fi
