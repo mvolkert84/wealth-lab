@@ -5,7 +5,7 @@ const html=read('index.html'),legacy=read('notebook-v1.css'),unified=read('ui-un
 const assets=['home','invest','taxes','insurance','retirement','estate'];
 for(const name of assets){
  assert.ok(existsSync(new URL('../assets/notebook-'+name+'.webp',import.meta.url)),'Missing photo for notebook: '+name);
- assert.ok(legacy.includes('.wlnb-book--'+name+'{background-image:url("./assets/notebook-'+name+'.webp")!important}'),'Approved notebook artwork must stay mapped: '+name);
+ assert.ok(legacy.includes('.wlnb-book--'+name+'{background-image:url("./assets/notebook-'+name+'.webp")!important'),'Approved notebook artwork must stay mapped: '+name);
 }
 assert.ok(html.includes('class="wlnb-book wlnb-book--${b.custom?\'custom\':b.id}"'),'Notebook card markup changed');
 assert.ok((html.match(/class="wlnb-book wlnb-book--/g)||[]).length>=2,'Cards must exist on Notebook landing and All Notebooks page');
